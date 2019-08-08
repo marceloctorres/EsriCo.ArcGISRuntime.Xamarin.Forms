@@ -23,7 +23,7 @@ namespace BehaviorsSampleApp
     {
       InitializeComponent();
 
-      await NavigationService.NavigateAsync("NavigationPage/MapPage");
+      await NavigationService.NavigateAsync("NavigationPage/MainPage");
     }
 
     protected override void RegisterTypes(IContainerRegistry containerRegistry)

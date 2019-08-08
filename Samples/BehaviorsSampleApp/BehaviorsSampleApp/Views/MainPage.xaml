@@ -5,8 +5,8 @@
              x:Class="BehaviorsSampleApp.Views.MainPage"
              Title="{Binding Title}">
   <Grid BackgroundColor="Red">
-    <!--<esriUI:MapView Map="{Binding Map}">
+    <esriUI:MapView Map="{Binding Map}">
       
-    </esriUI:MapView>-->
+    </esriUI:MapView>
   </Grid>
 </ContentPage>
