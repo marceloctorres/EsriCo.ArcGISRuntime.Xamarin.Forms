@@ -1,11 +1,8 @@
-﻿using System;
-using System.Windows.Input;
-
-using Esri.ArcGISRuntime.Mapping;
+﻿using Esri.ArcGISRuntime.Mapping;
 using Esri.ArcGISRuntime.Xamarin.Forms;
-
 using Prism.Behaviors;
-
+using System;
+using System.Windows.Input;
 using Xamarin.Forms;
 
 namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors

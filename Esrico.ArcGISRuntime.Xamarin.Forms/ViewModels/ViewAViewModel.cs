@@ -1,8 +1,4 @@
-﻿using Prism.Commands;
-using Prism.Mvvm;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Prism.Mvvm;
 
 namespace EsriCo.ArcGISRuntime.Xamarin.Forms.ViewModels
 {

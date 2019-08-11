@@ -1,15 +1,13 @@
-﻿using System;
-using System.Linq;
-using System.Collections.Generic;
-using System.Text;
-using System.Windows.Input;
+﻿using Esri.ArcGISRuntime.Data;
+using Esri.ArcGISRuntime.Mapping;
+using Esri.ArcGISRuntime.Symbology;
 using Esri.ArcGISRuntime.UI;
 using Esri.ArcGISRuntime.Xamarin.Forms;
 using Prism.Behaviors;
+using System.Collections.Generic;
+using System.Linq;
+using System.Windows.Input;
 using Xamarin.Forms;
-using Esri.ArcGISRuntime.Symbology;
-using Esri.ArcGISRuntime.Mapping;
-using Esri.ArcGISRuntime.Data;
 
 namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
 {
@@ -135,7 +133,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
         {
           var identifyResults = new IdentifyResults();
 
-          if(GraphicsOverlays != null && GraphicsOverlays.Count > 0)
+          if (GraphicsOverlays != null && GraphicsOverlays.Count > 0)
           {
             var identifyGraphicOverlayResults = await AssociatedObject.IdentifyGraphicsOverlaysAsync(
               e.Position,
@@ -156,14 +154,14 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
                                     .ToList(); ;
             }
           }
-          if(Layers != null && Layers.Count > 0)
+          if (Layers != null && Layers.Count > 0)
           {
             var identifyLayerResults = await AssociatedObject.IdentifyLayersAsync(
               e.Position,
               Tolerance,
               ReturnOnlyPopups,
               MaxResults);
-            if(identifyLayerResults != null)
+            if (identifyLayerResults != null)
             {
               identifyResults
                 .GeoElementResults
@@ -187,8 +185,8 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
             }
 
             foreach (var ir in identifyLayerResults)
-              {
-              }
+            {
+            }
           }
           this.Command.Execute(identifyResults);
         }

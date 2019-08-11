@@ -1,13 +1,8 @@
-﻿using System;
-using System.Runtime.CompilerServices;
-
-using Esri.ArcGISRuntime.Mapping;
+﻿using Esri.ArcGISRuntime.Mapping;
 using Esri.ArcGISRuntime.Xamarin.Forms;
-
 using EsriCo.ArcGISRuntime.Xamarin.Forms.Extensions;
-
 using Prism.Behaviors;
-
+using System.Runtime.CompilerServices;
 using Xamarin.Forms;
 
 /// <summary>
@@ -24,8 +19,8 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
     /// 
     /// </summary>
     public static readonly BindableProperty ViewpointProperty = BindableProperty.Create(
-      nameof(Viewpoint), 
-      typeof(Viewpoint), 
+      nameof(Viewpoint),
+      typeof(Viewpoint),
       typeof(SetViewpointBehavior));
 
     /// <summary>

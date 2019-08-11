@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:svg="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+             mc:Ignorable="d"
+             x:Class="EsriCo.ArcGISRuntime.Xamarin.Forms.Views.IdentifyView"
+             x:Name="IdentifyContentView">
+  <ContentView.Resources>
+    <ResourceDictionary>
+      <svg:SvgImageSourceConverter x:Key="SvgImageSourceConverter" />
+    </ResourceDictionary>
+  </ContentView.Resources>
+  <ContentView.Content>
+    <Grid Margin="0" 
+          ColumnSpacing="0" 
+          RowSpacing="0">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="*" />
+        <RowDefinition Height="Auto" />
+      </Grid.RowDefinitions>
+      <Frame x:Name="TitleBar"
+             Margin="0"
+             Padding="0"
+             HorizontalOptions="FillAndExpand"
+             VerticalOptions="FillAndExpand"
+             BorderColor="{Binding TitleBorderColor,Source={x:Reference IdentifyContentView}}"
+             BackgroundColor="{Binding TitleBackgroundColor,Source={x:Reference IdentifyContentView}}"
+             HasShadow="True"
+             CornerRadius="0">
+        <Grid Margin="5" 
+              ColumnSpacing="0">
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+          </Grid.ColumnDefinitions>
+          <Label x:Name="TitleText" 
+                 Margin="0"
+                 Text="{Binding Title,Source={x:Reference IdentifyContentView}}"
+                 TextColor="{Binding TitleTextColor,Source={x:Reference IdentifyContentView}}"
+                 HorizontalOptions="StartAndExpand"
+                 VerticalOptions="CenterAndExpand"
+                 HorizontalTextAlignment="Start"
+                 VerticalTextAlignment="Center">
+          </Label>
+          <Image Source="{Binding SvgPrevious, Converter={StaticResource SvgImageSourceConverter}}" 
+                 Grid.Column="1" />
+          <Button x:Name="Previous"
+                  WidthRequest="40"
+                  HeightRequest="40"
+                  ImageSource="{Binding SvgPrevious, Converter={StaticResource SvgImageSourceConverter}}"
+                  Grid.Column="1">
+          </Button>
+          <Button x:Name="Next"
+                  WidthRequest="40"
+                  HeightRequest="40"
+                  ImageSource="{Binding SvgNext, Converter={StaticResource SvgImageSourceConverter}}"
+                  Grid.Column="2">
+          </Button>
+          <Button x:Name="Close"
+                  WidthRequest="40"
+                  HeightRequest="40"
+                  ImageSource="{Binding SvgClose, Converter={StaticResource SvgImageSourceConverter}}"
+                  Grid.Column="3">
+          </Button>
+        </Grid>
+      </Frame>
+      <Frame Grid.Row="1"
+             CornerRadius="0"
+             BackgroundColor="White"
+             Padding="0"
+             Margin="0"
+             HorizontalOptions="FillAndExpand"
+             VerticalOptions="FillAndExpand">
+        <ScrollView Margin="0">
+          <ListView>
+            
+          </ListView>
+        </ScrollView>
+      </Frame>
+      <Frame x:Name="StatusBar"
+             Margin="0"
+             Padding="0"
+             Grid.Row="2"
+             CornerRadius="0"
+             HorizontalOptions="FillAndExpand"
+             VerticalOptions="FillAndExpand"
+             BackgroundColor="Green">
+        <Label Text="Pie" Margin="5"/>
+      </Frame>
+    </Grid>
+  </ContentView.Content>
+</ContentView>

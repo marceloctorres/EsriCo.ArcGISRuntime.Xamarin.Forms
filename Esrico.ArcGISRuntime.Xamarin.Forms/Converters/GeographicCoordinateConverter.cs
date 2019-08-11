@@ -1,8 +1,6 @@
-﻿using System;
+﻿using Esri.ArcGISRuntime.Geometry;
+using System;
 using System.Globalization;
-
-using Esri.ArcGISRuntime.Geometry;
-
 using Xamarin.Forms;
 
 namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Converters
@@ -26,7 +24,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Converters
       {
         return ((double)value).ToDms((string)parameter);
       }
-      else if(value.GetType() == typeof(MapPoint) && targetType == typeof(string))
+      else if (value.GetType() == typeof(MapPoint) && targetType == typeof(string))
       {
         return ((MapPoint)value).ToDms();
       }

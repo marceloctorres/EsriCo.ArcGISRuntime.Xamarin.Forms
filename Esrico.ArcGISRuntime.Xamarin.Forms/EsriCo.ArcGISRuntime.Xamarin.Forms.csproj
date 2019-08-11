@@ -5,10 +5,29 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Icons\cross-circular-button-outline.svg" />
+    <None Remove="Icons\left-arrow-angle-in-circular-button.svg" />
+    <None Remove="Icons\right-arrow-circular-button.svg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Icons\cross-circular-button-outline.svg" />
+    <EmbeddedResource Include="Icons\left-arrow-angle-in-circular-button.svg" />
+    <EmbeddedResource Include="Icons\right-arrow-circular-button.svg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Esri.ArcGISRuntime.Xamarin.Forms" Version="100.5.0" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+    <PackageReference Include="Xamarin.FFImageLoading.Svg.Forms" Version="2.4.11.982" />
     <PackageReference Include="Xamarin.Forms" Version="4.1.0.673156" />
     <PackageReference Include="Prism.Forms" Version="7.2.0.1367" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Views\IdentifyView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
 
 </Project>

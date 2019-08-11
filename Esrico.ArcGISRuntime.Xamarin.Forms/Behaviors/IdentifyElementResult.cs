@@ -34,7 +34,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
 
     public IdentifyGeoElementResult()
     {
-      
+
     }
 
   }

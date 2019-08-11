@@ -1,9 +1,6 @@
-﻿using System.Runtime.CompilerServices;
-
-using Esri.ArcGISRuntime.Xamarin.Forms;
-
+﻿using Esri.ArcGISRuntime.Xamarin.Forms;
 using Prism.Behaviors;
-
+using System.Runtime.CompilerServices;
 using Xamarin.Forms;
 
 namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
