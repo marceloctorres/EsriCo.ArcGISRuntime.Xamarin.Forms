@@ -2,11 +2,15 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:esriUI="clr-namespace:Esri.ArcGISRuntime.Xamarin.Forms;assembly=Esri.ArcGISRuntime.Xamarin.Forms"
+             xmlns:esrico="clr-namespace:EsriCo.ArcGISRuntime.Xamarin.Forms.Views;assembly=Esrico.ArcGISRuntime.Xamarin.Forms"
              x:Class="BehaviorsSampleApp.Views.MainPage"
              Title="{Binding Title}">
-  <Grid BackgroundColor="Red">
+  <Grid>
     <esriUI:MapView Map="{Binding Map}">
-      
     </esriUI:MapView>
+    <esrico:IdentifyView x:Name="IdentifyView"
+                         WidthRequest="500"
+                         HorizontalOptions="StartAndExpand"
+                         VerticalOptions="StartAndExpand" />
   </Grid>
 </ContentPage>

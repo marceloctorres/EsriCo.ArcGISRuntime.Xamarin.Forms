@@ -1,4 +1,6 @@
 ﻿
+using System;
+using Esri.ArcGISRuntime.Mapping.Popups;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -11,6 +13,31 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Views
     public string SvgPrevious = "left-arrow-in-circular-button.svg";
     public string SvgNext = "right-arrow-in-circular-button.svg";
     public string SvgClose = "cross-circular-button-outline.svg";
+
+    /// <summary>
+    /// 
+    /// </summary>
+    public static readonly BindableProperty PopupManagerProperty = BindableProperty.Create(
+      nameof(PopupManager),
+      typeof(PopupManager),
+      typeof(IdentifyView), 
+      propertyChanged: PopupManagerChanged);
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="bindable"></param>
+    /// <param name="oldValue"></param>
+    /// <param name="newValue"></param>
+    private static void PopupManagerChanged(BindableObject bindable, object oldValue, object newValue)
+    {
+      if(bindable is IdentifyView)
+      {
+        var identifyView = bindable as IdentifyView;
+        var popupManager = identifyView.PopupManager;
+      }
+
+    }
 
     /// <summary>
     /// 
@@ -37,6 +64,15 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Views
       nameof(Title),
       typeof(string),
       typeof(IdentifyView));
+
+    /// <summary>
+    /// 
+    /// </summary>
+    public PopupManager PopupManager
+    {
+      get => (PopupManager)GetValue(PopupManagerProperty);
+      set => SetValue(PopupManagerProperty, value);
+    }
 
     /// <summary>
     /// 
@@ -80,6 +116,15 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Views
     public IdentifyView()
     {
       InitializeComponent();
+      InitProperties();
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    private void InitProperties()
+    {
+      TitleBackgroundColor = Color.White;
     }
   }
 }

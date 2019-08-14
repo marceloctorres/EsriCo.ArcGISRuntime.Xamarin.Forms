@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29102.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Esrico.ArcGISRuntime.Xamarin.Forms", "Esrico.ArcGISRuntime.Xamarin.Forms\Esrico.ArcGISRuntime.Xamarin.Forms.csproj", "{5D573677-A759-4CCD-A4C1-C1B3CA2FF14F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EsriCo.ArcGISRuntime.Xamarin.Forms", "Esrico.ArcGISRuntime.Xamarin.Forms\EsriCo.ArcGISRuntime.Xamarin.Forms.csproj", "{5D573677-A759-4CCD-A4C1-C1B3CA2FF14F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{93AE8F8A-C80E-4DA7-B9FA-9A23665F2444}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BehaviorsSampleApp", "Samples\BehaviorsSampleApp\BehaviorsSampleApp\BehaviorsSampleApp.csproj", "{A6550F54-1FE1-4F7B-9F54-142ABE0563F9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BehaviorsSampleApp", "Samples\BehaviorsSampleApp\BehaviorsSampleApp\BehaviorsSampleApp.csproj", "{A6550F54-1FE1-4F7B-9F54-142ABE0563F9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BehaviorsSampleApp.Android", "Samples\BehaviorsSampleApp\BehaviorsSampleApp.Android\BehaviorsSampleApp.Android.csproj", "{2CD99720-25F4-4B0F-9BA3-1CA0D446967E}"
 EndProject

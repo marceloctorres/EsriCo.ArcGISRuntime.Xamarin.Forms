@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+                    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                    mc:Ignorable="d"
+                    x:Class="EsriCo.ArcGISRuntime.Xamarin.Forms.ResourceDictionary">
+
+  <OnPlatform x:Key="NormalFont"
+              x:TypeArguments="Font">
+    <On Platform="iOS"
+        Value="Micro" />
+    <On Platform="Android"
+        Value="Small" />
+    <On Platform="UWP"
+        Value="Segoe UI Light, 12" />
+  </OnPlatform>
+
+  <OnPlatform x:Key="BoldFont"
+              x:TypeArguments="Font">
+    <On Platform="iOS"
+        Value="Bold,Micro" />
+    <On Platform="Android"
+        Value="Bold,Small" />
+    <On Platform="UWP"
+        Value="Segoe UI Light,Bold,12" />
+  </OnPlatform>
+
+  <OnPlatform x:Key="TitleFont"
+              x:TypeArguments="Font">
+    <On Platform="iOS"
+        Value="Bold,Small" />
+    <On Platform="Android"
+        Value="Bold,Medium" />
+    <On Platform="UWP"
+        Value="Segoe UI Light,Bold,14" />
+  </OnPlatform>
+
+  <Style x:Key="NormalLabel"
+         TargetType="Label">
+    <Setter Property="Font">
+      <Setter.Value>
+        <StaticResource Key="NormalFont" />
+      </Setter.Value>
+    </Setter>
+  </Style>
+
+  <Style x:Key="BoldLabel"
+         TargetType="Label">
+    <Setter Property="Font">
+      <Setter.Value>
+        <StaticResource Key="BoldFont" />
+      </Setter.Value>
+    </Setter>
+  </Style>
+
+  <Style x:Key="TitleLabel"
+         TargetType="Label">
+    <Setter Property="Font">
+      <Setter.Value>
+        <StaticResource Key="TitleFont" />
+      </Setter.Value>
+    </Setter>
+  </Style>
+
+</ResourceDictionary>

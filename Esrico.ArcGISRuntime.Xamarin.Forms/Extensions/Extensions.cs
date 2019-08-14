@@ -1,7 +1,12 @@
 ﻿using Esri.ArcGISRuntime.Geometry;
 using Esri.ArcGISRuntime.Mapping;
+
 using System;
 using System.Diagnostics;
+using System.IO;
+using System.Linq;
+using System.Reflection;
+using Xamarin.Forms;
 
 namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Extensions
 {
@@ -67,6 +72,48 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Extensions
           vp.TargetScale.Equals(center.TargetScale)));
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="imageString"></param>
+    /// <returns></returns>
+    public static ImageSource ToImageSource(this string imageString)
+    {
+      byte[] bytes = Convert.FromBase64String(imageString);
+      return ImageSource.FromStream(() => new MemoryStream(bytes));
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="s"></param>
+    /// <returns></returns>
+    public static string ToBase64String(this Stream s)
+    {
+      byte[] bytes = null;
+      using (var ms = new MemoryStream())
+      {
+        s.CopyTo(ms);
+        bytes = ms.ToArray();
+      }
+      return Convert.ToBase64String(bytes);
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="assembly"></param>
+    /// <param name="resource"></param>
+    /// <returns></returns>
+    public static Stream GetStreamEmbeddedResource(this Assembly assembly, string resource)
+    {
+      var fullName = assembly.GetManifestResourceNames().Where(s => s.Contains(resource)).FirstOrDefault();
+      if (!string.IsNullOrEmpty(fullName))
+      {
+        return assembly.GetManifestResourceStream(fullName);
+      }
+      return null;
+    }
 
   }
 }
