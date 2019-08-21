@@ -1,6 +1,10 @@
 ﻿
 using System;
+using System.Linq;
+using System.Windows.Input;
 using Esri.ArcGISRuntime.Mapping.Popups;
+using EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors;
+using Prism.Commands;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -9,35 +13,14 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Views
   [XamlCompilation(XamlCompilationOptions.Compile)]
   public partial class IdentifyView : ContentView
   {
-
-    public string SvgPrevious = "left-arrow-in-circular-button.svg";
-    public string SvgNext = "right-arrow-in-circular-button.svg";
-    public string SvgClose = "cross-circular-button-outline.svg";
-
     /// <summary>
     /// 
     /// </summary>
-    public static readonly BindableProperty PopupManagerProperty = BindableProperty.Create(
-      nameof(PopupManager),
-      typeof(PopupManager),
-      typeof(IdentifyView), 
-      propertyChanged: PopupManagerChanged);
-
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <param name="bindable"></param>
-    /// <param name="oldValue"></param>
-    /// <param name="newValue"></param>
-    private static void PopupManagerChanged(BindableObject bindable, object oldValue, object newValue)
-    {
-      if(bindable is IdentifyView)
-      {
-        var identifyView = bindable as IdentifyView;
-        var popupManager = identifyView.PopupManager;
-      }
-
-    }
+    public static readonly BindableProperty IdentifyResultsProperty = BindableProperty.Create(
+      nameof(IdentifyResults),
+      typeof(IdentifyResults),
+      typeof(IdentifyView),
+      propertyChanged:OnIdentifyResultsChanged);
 
     /// <summary>
     /// 
@@ -45,7 +28,8 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Views
     public static readonly BindableProperty TitleBorderColorProperty = BindableProperty.Create(
       nameof(TitleBorderColor),
       typeof(Color),
-      typeof(IdentifyView));
+      typeof(IdentifyView), 
+      defaultValue: null);
 
     /// <summary>
     /// 
@@ -53,25 +37,38 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Views
     public static readonly BindableProperty TitleBackgroundColorProperty = BindableProperty.Create(
       nameof(TitleBackgroundColor),
       typeof(Color),
-      typeof(IdentifyView));
-
-    public static readonly BindableProperty TitleTextColorProperty = BindableProperty.Create(
-      nameof(TitleTextColor),
-      typeof(Color),
-      typeof(IdentifyView));
-
-    public static readonly BindableProperty TitleProperty = BindableProperty.Create(
-      nameof(Title),
-      typeof(string),
-      typeof(IdentifyView));
+      typeof(IdentifyView),
+      defaultValue: Color.White);
 
     /// <summary>
     /// 
     /// </summary>
-    public PopupManager PopupManager
+    public static readonly BindableProperty TitleTextColorProperty = BindableProperty.Create(
+      nameof(TitleTextColor),
+      typeof(Color),
+      typeof(IdentifyView),
+      defaultValue: Color.Black);
+
+    /// <summary>
+    /// 
+    /// </summary>
+    public IdentifyResults IdentifyResults
     {
-      get => (PopupManager)GetValue(PopupManagerProperty);
-      set => SetValue(PopupManagerProperty, value);
+      get => (IdentifyResults)GetValue(IdentifyResultsProperty);
+      set => SetValue(IdentifyResultsProperty, value);
+    }
+
+    private PopupManager _popupManager;
+    /// <summary>
+    /// 
+    /// </summary>
+    public PopupManager PopupManager {
+      get => _popupManager;
+      set
+      {
+        _popupManager = value;
+        OnPropertyChanged(nameof(PopupManager));
+      }
     }
 
     /// <summary>
@@ -104,11 +101,22 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Views
     /// <summary>
     /// 
     /// </summary>
-    public string Title
-    {
-      get => (string)GetValue(TitleProperty);
-      set => SetValue(TitleProperty, value);
-    }
+    public ICommand PreviousResultCommand { get; private set; }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    public ICommand NextResultCommand { get; private set; }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    public ICommand HideViewCommand { get; private set; }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    private int CurrentElementIndex { get; set; }
 
     /// <summary>
     /// 
@@ -116,15 +124,87 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Views
     public IdentifyView()
     {
       InitializeComponent();
-      InitProperties();
     }
 
     /// <summary>
     /// 
     /// </summary>
-    private void InitProperties()
+    /// <param name="bindable"></param>
+    /// <param name="oldValue"></param>
+    /// <param name="newValue"></param>
+    private static void OnIdentifyResultsChanged(BindableObject bindable, object oldValue, object newValue)
     {
-      TitleBackgroundColor = Color.White;
+      var identifyView = bindable as IdentifyView;
+      if (newValue is IdentifyResults identifyResults && identifyResults.GeoElementResults.Count > 0)
+      {
+        Popup popup;
+        var geoElementResult = identifyResults.GeoElementResults.First();
+        if (geoElementResult.Layer is IPopupSource)
+        {
+          var popupSource = geoElementResult.Layer as IPopupSource;
+          var popupDefinition = popupSource.PopupDefinition;
+          popup = new Popup(geoElementResult.GeoElement, popupDefinition);
+        }
+        else
+        {
+          popup = Popup.FromGeoElement(geoElementResult.GeoElement);
+        }
+        if (popup != null)
+        {
+          identifyView.PopupManager = new PopupManager(popup as Popup);
+        }
+      }
+    }
+
+    private static void GetPopupManager (IdentifyView identifyView, IdentifyResults identifyResults)
+    {
+      Popup popup;
+      var geoElementResult = identifyResults.GeoElementResults.First();
+      if (geoElementResult.Layer is IPopupSource)
+      {
+        var popupSource = geoElementResult.Layer as IPopupSource;
+        var popupDefinition = popupSource.PopupDefinition;
+        popup = new Popup(geoElementResult.GeoElement, popupDefinition);
+      }
+      else
+      {
+        popup = Popup.FromGeoElement(geoElementResult.GeoElement);
+      }
+      if (popup != null)
+      {
+        identifyView.PopupManager = new PopupManager(popup as Popup);
+      }
+
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    private void PreviousResulteClicked(object sender, EventArgs e)
+    {
+
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    private void NextResultClicked(object sender, EventArgs e)
+    {
+
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    private void HideViewClicked(object sender, EventArgs e)
+    {
+      IsVisible = false;
     }
   }
 }

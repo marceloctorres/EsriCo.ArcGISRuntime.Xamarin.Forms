@@ -13,7 +13,7 @@
     <On Platform="Android"
         Value="Small" />
     <On Platform="UWP"
-        Value="Segoe UI Light, 12" />
+        Value="Segoe UI Light,14" />
   </OnPlatform>
 
   <OnPlatform x:Key="BoldFont"
@@ -23,7 +23,7 @@
     <On Platform="Android"
         Value="Bold,Small" />
     <On Platform="UWP"
-        Value="Segoe UI Light,Bold,12" />
+        Value="Segoe UI Light,Bold,14" />
   </OnPlatform>
 
   <OnPlatform x:Key="TitleFont"
@@ -33,7 +33,7 @@
     <On Platform="Android"
         Value="Bold,Medium" />
     <On Platform="UWP"
-        Value="Segoe UI Light,Bold,14" />
+        Value="Segoe UI Light,Bold,16" />
   </OnPlatform>
 
   <Style x:Key="NormalLabel"

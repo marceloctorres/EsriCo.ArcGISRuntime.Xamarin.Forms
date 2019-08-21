@@ -7,7 +7,7 @@
              xmlns:root="clr-namespace:EsriCo.ArcGISRuntime.Xamarin.Forms"
              mc:Ignorable="d"
              MinimumWidthRequest="300"
-             WidthRequest="500"
+             WidthRequest="400"
              x:Class="EsriCo.ArcGISRuntime.Xamarin.Forms.Views.IdentifyView"
              x:Name="IdentifyContentView">
   <ContentView.Resources>
@@ -42,12 +42,6 @@
                CornerRadius="0">
           <Grid Margin="5"
                 ColumnSpacing="5">
-            <Grid.ColumnDefinitions>
-              <ColumnDefinition Width="*" />
-              <ColumnDefinition Width="Auto" />
-              <ColumnDefinition Width="Auto" />
-              <ColumnDefinition Width="Auto" />
-            </Grid.ColumnDefinitions>
             <Label x:Name="TitleText"
                    Margin="0"
                    Style="{StaticResource TitleLabel}"
@@ -58,18 +52,6 @@
                    HorizontalTextAlignment="Start"
                    VerticalTextAlignment="Center">
             </Label>
-            <views:IconView Grid.Column="1"
-                            WidthRequest="24"
-                            HeightRequest="24"
-                            ResourceId="prev.svg" />
-            <views:IconView Grid.Column="2"
-                            WidthRequest="24"
-                            HeightRequest="24"
-                            ResourceId="next.svg" />
-            <views:IconView Grid.Column="3"
-                            WidthRequest="24"
-                            HeightRequest="24"
-                            ResourceId="close.svg" />
           </Grid>
         </Frame>
         <Frame Grid.Row="1"
@@ -80,40 +62,65 @@
                Margin="0"
                HorizontalOptions="FillAndExpand"
                VerticalOptions="FillAndExpand">
-          <ListView Margin="5,5,5,10"
-                    SeparatorVisibility="None"
-                    HasUnevenRows="True"
-                    SelectionMode="None"
-                    ItemsSource="{Binding DisplayedFields}">
-            <ListView.ItemTemplate>
-              <DataTemplate>
-                <ViewCell>
-                  <Grid Margin="0"
+          <Grid>
+            <Grid.RowDefinitions>
+              <RowDefinition Height="*" />
+              <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <ScrollView Margin="0"
+                        IsClippedToBounds="True"
+                        VerticalOptions="Fill">
+              <ListView Margin="5,5,5,10"
+                        SeparatorVisibility="Default"
                         HorizontalOptions="FillAndExpand"
-                        ColumnSpacing="0"
-                        RowSpacing="0">
-                    <Grid.RowDefinitions>
-                      <RowDefinition Height="Auto" />
-                      <RowDefinition Height="Auto" />
-                    </Grid.RowDefinitions>
-                    <Label Text="{Binding Field.Label, StringFormat='\{0\} :'}"
-                           Style="{StaticResource BoldLabel}"
-                           Margin="0"
-                           HorizontalOptions="FillAndExpand"
-                           VerticalOptions="EndAndExpand">
-                    </Label>
-                    <Label Text="{Binding FormattedValue}"
-                           Style="{StaticResource NormalLabel}"
-                           Grid.Row="1"
-                           Margin="0"
-                           HorizontalOptions="FillAndExpand"
-                           VerticalOptions="StartAndExpand">
-                    </Label>
-                  </Grid>
-                </ViewCell>
-              </DataTemplate>
-            </ListView.ItemTemplate>
-          </ListView>
+                        VerticalOptions="Start"
+                        HorizontalScrollBarVisibility="Never"
+                        VerticalScrollBarVisibility="Never"
+                        HasUnevenRows="True"
+                        SelectionMode="None"
+                        ItemsSource="{Binding DisplayedFields}">
+                <ListView.ItemTemplate>
+                  <DataTemplate>
+                    <ViewCell>
+                      <Grid Margin="5"
+                            HorizontalOptions="FillAndExpand"
+                            ColumnSpacing="0"
+                            RowSpacing="0">
+                        <Grid.RowDefinitions>
+                          <RowDefinition Height="Auto" />
+                          <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Label Text="{Binding Field.Label, StringFormat='\{0\} :'}"
+                               Style="{StaticResource BoldLabel}"
+                               Margin="0"
+                               HorizontalOptions="FillAndExpand"
+                               VerticalOptions="EndAndExpand">
+                        </Label>
+                        <Label Text="{Binding FormattedValue}"
+                               Style="{StaticResource NormalLabel}"
+                               Grid.Row="1"
+                               Margin="0"
+                               HorizontalOptions="FillAndExpand"
+                               VerticalOptions="StartAndExpand">
+                        </Label>
+                      </Grid>
+                    </ViewCell>
+                  </DataTemplate>
+                </ListView.ItemTemplate>
+              </ListView>
+            </ScrollView>
+            <StackLayout Grid.Row="1" 
+                         Orientation="Horizontal"
+                         Spacing="5"
+                         Padding="5">
+              <Button Text="Anterior"
+                      Clicked="PreviousResulteClicked"/>
+              <Button Text="Siguiente"
+                      Command="{Binding NextResultCommand,Source={x:Reference IdentifyContentView}}"/>
+              <Button Text="Cerrar"
+                      Clicked="HideViewClicked"/>
+            </StackLayout> 
+          </Grid>
         </Frame>
         <Frame x:Name="StatusBar"
                Grid.Row="2"

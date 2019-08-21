@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Views\IconView.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="Icons\close.svg" />
     <None Remove="Icons\next.svg" />
     <None Remove="Icons\prev.svg" />
@@ -19,9 +23,6 @@
   <ItemGroup>
     <PackageReference Include="Esri.ArcGISRuntime.Xamarin.Forms" Version="100.5.0" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
-    <PackageReference Include="SkiaSharp.Extended" Version="1.60.0" />
-    <PackageReference Include="SkiaSharp.Svg" Version="1.60.0" />
-    <PackageReference Include="SkiaSharp.Views.Forms" Version="1.68.0" />
     <PackageReference Include="Xamarin.Forms" Version="4.1.0.673156" />
     <PackageReference Include="Prism.Forms" Version="7.2.0.1367" />
   </ItemGroup>
@@ -33,6 +34,10 @@
     <EmbeddedResource Update="Views\IdentifyView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ViewModels\" />
   </ItemGroup>
 
 </Project>
