@@ -58,19 +58,6 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Views
       set => SetValue(IdentifyResultsProperty, value);
     }
 
-    private PopupManager _popupManager;
-    /// <summary>
-    /// 
-    /// </summary>
-    public PopupManager PopupManager {
-      get => _popupManager;
-      set
-      {
-        _popupManager = value;
-        OnPropertyChanged(nameof(PopupManager));
-      }
-    }
-
     /// <summary>
     /// 
     /// </summary>
@@ -96,6 +83,42 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Views
     {
       get => (Color)GetValue(TitleTextColorProperty);
       set => SetValue(TitleTextColorProperty, value);
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    private PopupManager _popupManager;
+
+    /// <summary>
+    /// 
+    /// </summary>
+    public PopupManager PopupManager
+    {
+      get => _popupManager;
+      set
+      {
+        _popupManager = value;
+        OnPropertyChanged(nameof(PopupManager));
+      }
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    private string _statusText;
+
+    /// <summary>
+    /// 
+    /// </summary>
+    public string StatusText
+    {
+      get => _statusText;
+      set
+      {
+        _statusText = value;
+        OnPropertyChanged(nameof(StatusText));
+      }
     }
 
     /// <summary>
@@ -135,31 +158,22 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Views
     private static void OnIdentifyResultsChanged(BindableObject bindable, object oldValue, object newValue)
     {
       var identifyView = bindable as IdentifyView;
-      if (newValue is IdentifyResults identifyResults && identifyResults.GeoElementResults.Count > 0)
-      {
-        Popup popup;
-        var geoElementResult = identifyResults.GeoElementResults.First();
-        if (geoElementResult.Layer is IPopupSource)
-        {
-          var popupSource = geoElementResult.Layer as IPopupSource;
-          var popupDefinition = popupSource.PopupDefinition;
-          popup = new Popup(geoElementResult.GeoElement, popupDefinition);
-        }
-        else
-        {
-          popup = Popup.FromGeoElement(geoElementResult.GeoElement);
-        }
-        if (popup != null)
-        {
-          identifyView.PopupManager = new PopupManager(popup as Popup);
-        }
-      }
+      var identifyResults = newValue as IdentifyResults;
+      identifyView.CurrentElementIndex = 0;
+      identifyView.NextButton.IsEnabled = identifyResults.GeoElementResults.Count > 1;
+      identifyView.PreviousButton.IsEnabled = false;
+      GetPopupManager(identifyView, identifyResults);
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="identifyView"></param>
+    /// <param name="identifyResults"></param>
     private static void GetPopupManager (IdentifyView identifyView, IdentifyResults identifyResults)
     {
       Popup popup;
-      var geoElementResult = identifyResults.GeoElementResults.First();
+      var geoElementResult = identifyResults.GeoElementResults.ElementAt(identifyView.CurrentElementIndex);
       if (geoElementResult.Layer is IPopupSource)
       {
         var popupSource = geoElementResult.Layer as IPopupSource;
@@ -174,7 +188,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Views
       {
         identifyView.PopupManager = new PopupManager(popup as Popup);
       }
-
+      identifyView.StatusText = $"{identifyView.CurrentElementIndex + 1} / {identifyResults.GeoElementResults.Count}";
     }
 
     /// <summary>
@@ -184,7 +198,10 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Views
     /// <param name="e"></param>
     private void PreviousResulteClicked(object sender, EventArgs e)
     {
-
+      CurrentElementIndex -= 1;
+      PreviousButton.IsEnabled = CurrentElementIndex > 0;
+      NextButton.IsEnabled = CurrentElementIndex < IdentifyResults.GeoElementResults.Count - 1;
+      GetPopupManager(this, IdentifyResults);
     }
 
     /// <summary>
@@ -194,7 +211,11 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Views
     /// <param name="e"></param>
     private void NextResultClicked(object sender, EventArgs e)
     {
-
+      CurrentElementIndex += 1;
+      NextButton.IsEnabled = CurrentElementIndex < IdentifyResults.GeoElementResults.Count - 1;
+      PreviousButton.IsEnabled = CurrentElementIndex > 0;
+      GetPopupManager(this, IdentifyResults);
+  
     }
 
     /// <summary>

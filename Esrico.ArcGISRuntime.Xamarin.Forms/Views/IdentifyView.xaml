@@ -3,11 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:views="clr-namespace:EsriCo.ArcGISRuntime.Xamarin.Forms.Views"
              xmlns:root="clr-namespace:EsriCo.ArcGISRuntime.Xamarin.Forms"
              mc:Ignorable="d"
              MinimumWidthRequest="300"
-             WidthRequest="400"
+             WidthRequest="350"
              x:Class="EsriCo.ArcGISRuntime.Xamarin.Forms.Views.IdentifyView"
              x:Name="IdentifyContentView">
   <ContentView.Resources>
@@ -113,10 +112,12 @@
                          Orientation="Horizontal"
                          Spacing="5"
                          Padding="5">
-              <Button Text="Anterior"
+              <Button x:Name="PreviousButton"
+                      Text="Anterior"
                       Clicked="PreviousResulteClicked"/>
-              <Button Text="Siguiente"
-                      Command="{Binding NextResultCommand,Source={x:Reference IdentifyContentView}}"/>
+              <Button x:Name="NextButton"
+                      Text="Siguiente"
+                      Clicked="NextResultClicked"/>
               <Button Text="Cerrar"
                       Clicked="HideViewClicked"/>
             </StackLayout> 
@@ -133,8 +134,8 @@
                HasShadow="False"
                CornerRadius="0">
           <Label Margin="0"
-                 Text=" "
-                 Style="{StaticResource TitleLabel}"
+                 Text="{Binding StatusText,Source={x:Reference IdentifyContentView}} "
+                 Style="{StaticResource NormalLabel}"
                  TextColor="{Binding TitleTextColor,Source={x:Reference IdentifyContentView}}"
                  HorizontalOptions="StartAndExpand"
                  VerticalOptions="CenterAndExpand"
