@@ -8,7 +8,7 @@ using Prism.Commands;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Views
+namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
 {
   [XamlCompilation(XamlCompilationOptions.Compile)]
   public partial class IdentifyView : ContentView

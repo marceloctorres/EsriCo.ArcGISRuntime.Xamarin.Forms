@@ -1,5 +1,4 @@
-﻿using EsriCo.ArcGISRuntime.Xamarin.Forms.Views;
-using Prism.Ioc;
+﻿using Prism.Ioc;
 using Prism.Modularity;
 
 namespace EsriCo.ArcGISRuntime.Xamarin.Forms

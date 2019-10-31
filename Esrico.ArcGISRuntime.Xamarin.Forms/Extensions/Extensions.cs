@@ -8,8 +8,14 @@ using System.Linq;
 using System.Reflection;
 using Xamarin.Forms;
 
+/// <summary>
+/// 
+/// </summary>
 namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Extensions
 {
+  /// <summary>
+  /// 
+  /// </summary>
   public static class Extensions
   {
     /// <summary>
@@ -47,6 +53,12 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Extensions
       return $"Y:{mapPoint.Y.ToDms("Y")}, X:{mapPoint.X.ToDms("X")}";
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="vp"></param>
+    /// <param name="otro"></param>
+    /// <returns></returns>
     public static bool AreEquals(this Viewpoint vp, Viewpoint otro)
     {
 

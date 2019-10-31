@@ -2,10 +2,17 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Version>1.0.8</Version>
+    <Authors>mtorres</Authors>
+    <Company>Esri Colombia</Company>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Configurations>Debug;Release;Release.Android;Release.UWP</Configurations>
+    <PackageId>EsriCo.ArcGISRuntime.Xamarin.Forms</PackageId>
+    <Product>EsriCo.ArcGISRuntime.Xamarin.Forms</Product>
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Views\IconView.cs" />
+    <Compile Remove="UI\IconView.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -21,9 +28,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Esri.ArcGISRuntime.Xamarin.Forms" Version="100.5.0" />
+    <PackageReference Include="Esri.ArcGISRuntime.Xamarin.Forms" Version="100.6.0" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
-    <PackageReference Include="Xamarin.Forms" Version="4.1.0.673156" />
+    <PackageReference Include="Xamarin.Forms" Version="4.3.0.947036" />
     <PackageReference Include="Prism.Forms" Version="7.2.0.1367" />
   </ItemGroup>
 
@@ -31,7 +38,10 @@
     <EmbeddedResource Update="ResourceDictionary.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\IdentifyView.xaml">
+    <EmbeddedResource Update="UI\IdentifyView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\TableOfContentsView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

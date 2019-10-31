@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:root="clr-namespace:EsriCo.ArcGISRuntime.Xamarin.Forms"
+             mc:Ignorable="d"
+             HorizontalOptions="EndAndExpand"
+             VerticalOptions="FillAndExpand"
+             Margin="10"
+             MinimumWidthRequest="400"
+             WidthRequest="350"
+             x:Name="LegendContentView"
+             x:Class="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.LegendView">
+  <ContentView.Resources>
+    <ResourceDictionary>
+      <ResourceDictionary.MergedDictionaries>
+        <root:ResourceDictionary />
+      </ResourceDictionary.MergedDictionaries>
+    </ResourceDictionary>
+  </ContentView.Resources>
+  <ContentView.Content>
+    <Frame Margin="5"
+           Padding="0"
+           BorderColor="Black"
+           CornerRadius="0"
+           HasShadow="True">
+      <Grid Margin="1"
+            ColumnSpacing="0"
+            RowSpacing="0">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="Auto" />
+          <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Frame x:Name="TitleBar"
+               Margin="0"
+               Padding="0"
+               HorizontalOptions="FillAndExpand"
+               VerticalOptions="FillAndExpand"
+               BorderColor="{Binding TitleBorderColor,Source={x:Reference LegendContentView}}"
+               BackgroundColor="{Binding TitleBackgroundColor,Source={x:Reference LegendContentView}}"
+               IsVisible="{Binding IsTitleVisible,Source={x:Reference LegendContentView}}"
+               HasShadow="False"
+               CornerRadius="0">
+          <Grid Margin="5"
+                ColumnSpacing="5">
+            <Label x:Name="TitleText"
+                   Margin="0"
+                   Style="{StaticResource TitleLabel}"
+                   Text="{Binding Title,Source={x:Reference LegendContentView}}"
+                   TextColor="{Binding TitleTextColor,Source={x:Reference LegendContentView}}"
+                   HorizontalOptions="Start"
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalTextAlignment="Start"
+                   VerticalTextAlignment="Center"></Label>
+          </Grid>
+        </Frame>
+        <Frame Grid.Row="1"
+               CornerRadius="0"
+               BackgroundColor="White"
+               Padding="0"
+               Margin="0"
+               HorizontalOptions="FillAndExpand"
+               VerticalOptions="FillAndExpand">
+          <Grid>
+            <Grid.RowDefinitions>
+              <RowDefinition Height="*" />
+              <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <ListView Margin="5,5,5,10"
+                      IsGroupingEnabled="True"
+                      SeparatorVisibility="Default"
+                      HorizontalOptions="FillAndExpand"
+                      HorizontalScrollBarVisibility="Never"
+                      VerticalScrollBarVisibility="Never"
+                      HasUnevenRows="True"
+                      SelectionMode="None"
+                      ItemsSource="{Binding LayerInfosList,Source={x:Reference LegendContentView}}">
+              <ListView.GroupHeaderTemplate>
+                <DataTemplate>
+                  <ViewCell IsEnabled="False">
+                    <StackLayout Orientation="Vertical">
+                      <Label Grid.Column="0"
+                             Grid.Row="0"
+                             Text="{Binding GroupLayerInfo.Layer.Name}"
+                             Style="{StaticResource BoldLabel}"
+                             VerticalOptions="Center" />
+                      <ListView Grid.Row="1"
+                                Grid.ColumnSpan="2"
+                                Margin="1"
+                                BackgroundColor="Azure"
+                                HasUnevenRows="True"
+                                HorizontalScrollBarVisibility="Never"
+                                VerticalScrollBarVisibility="Never"
+                                SelectionMode="None"
+                                ItemsSource="{Binding GroupLayerInfo.LegendImageInfos}">
+                        <ListView.ItemTemplate>
+                          <DataTemplate>
+                            <ViewCell IsEnabled="False">
+                              <StackLayout Orientation="Horizontal">
+                                <Image Source="{Binding ImageSource}"
+                                       Margin="5"
+                                       BackgroundColor="Transparent"
+                                       VerticalOptions="CenterAndExpand" />
+                                <Label Grid.Column="1"
+                                       Text="{Binding Name}" />
+                              </StackLayout>
+                            </ViewCell>
+                          </DataTemplate>
+                        </ListView.ItemTemplate>
+                      </ListView>
+                    </StackLayout>
+                  </ViewCell>
+                </DataTemplate>
+              </ListView.GroupHeaderTemplate>
+              <ListView.ItemTemplate>
+                <DataTemplate>
+                  <ViewCell>
+                    <Grid Margin="20,5,5,5"
+                          HorizontalOptions="FillAndExpand">
+                      <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.6*" />
+                        <ColumnDefinition Width="0.4*" />
+                      </Grid.ColumnDefinitions>
+                      <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                      </Grid.RowDefinitions>
+                      <Label  Grid.Column="0"
+                              Style="{StaticResource NormalLabel}"
+                              Text="{Binding Layer.Name}"
+                              VerticalOptions="Center" />
+                      <Label Grid.Column="1"
+                             Grid.Row="0"
+                             TextColor="Blue"
+                             Text="{Binding Layer.Name}" />
+                    </Grid>
+                  </ViewCell>
+                </DataTemplate>
+              </ListView.ItemTemplate>
+            </ListView>
+            <StackLayout Grid.Row="1"
+                         Orientation="Horizontal"
+                         Spacing="5"
+                         Padding="5">
+              <Button Text="Cerrar"
+                      Clicked="HideViewClicked" />
+            </StackLayout>
+          </Grid>
+        </Frame>
+      </Grid>
+    </Frame>
+  </ContentView.Content>
+</ContentView>

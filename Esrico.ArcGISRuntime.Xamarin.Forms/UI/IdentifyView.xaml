@@ -7,7 +7,7 @@
              mc:Ignorable="d"
              MinimumWidthRequest="300"
              WidthRequest="350"
-             x:Class="EsriCo.ArcGISRuntime.Xamarin.Forms.Views.IdentifyView"
+             x:Class="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.IdentifyView"
              x:Name="IdentifyContentView">
   <ContentView.Resources>
     <ResourceDictionary>
@@ -49,8 +49,7 @@
                    HorizontalOptions="Start"
                    VerticalOptions="CenterAndExpand"
                    HorizontalTextAlignment="Start"
-                   VerticalTextAlignment="Center">
-            </Label>
+                   VerticalTextAlignment="Center"></Label>
           </Grid>
         </Frame>
         <Frame Grid.Row="1"
@@ -66,61 +65,55 @@
               <RowDefinition Height="*" />
               <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
-            <ScrollView Margin="0"
-                        IsClippedToBounds="True"
-                        VerticalOptions="Fill">
-              <ListView Margin="5,5,5,10"
-                        SeparatorVisibility="Default"
-                        HorizontalOptions="FillAndExpand"
-                        VerticalOptions="Start"
-                        HorizontalScrollBarVisibility="Never"
-                        VerticalScrollBarVisibility="Never"
-                        HasUnevenRows="True"
-                        SelectionMode="None"
-                        ItemsSource="{Binding DisplayedFields}">
-                <ListView.ItemTemplate>
-                  <DataTemplate>
-                    <ViewCell>
-                      <Grid Margin="5"
-                            HorizontalOptions="FillAndExpand"
-                            ColumnSpacing="0"
-                            RowSpacing="0">
-                        <Grid.RowDefinitions>
-                          <RowDefinition Height="Auto" />
-                          <RowDefinition Height="Auto" />
-                        </Grid.RowDefinitions>
-                        <Label Text="{Binding Field.Label, StringFormat='\{0\} :'}"
-                               Style="{StaticResource BoldLabel}"
-                               Margin="0"
-                               HorizontalOptions="FillAndExpand"
-                               VerticalOptions="EndAndExpand">
-                        </Label>
-                        <Label Text="{Binding FormattedValue}"
-                               Style="{StaticResource NormalLabel}"
-                               Grid.Row="1"
-                               Margin="0"
-                               HorizontalOptions="FillAndExpand"
-                               VerticalOptions="StartAndExpand">
-                        </Label>
-                      </Grid>
-                    </ViewCell>
-                  </DataTemplate>
-                </ListView.ItemTemplate>
-              </ListView>
-            </ScrollView>
-            <StackLayout Grid.Row="1" 
+            <ListView Margin="5,5,5,10"
+                      SeparatorVisibility="Default"
+                      HorizontalOptions="FillAndExpand"
+                      VerticalOptions="Start"
+                      HorizontalScrollBarVisibility="Never"
+                      VerticalScrollBarVisibility="Never"
+                      HasUnevenRows="True"
+                      SelectionMode="None"
+                      ItemsSource="{Binding DisplayedFields}">
+              <ListView.ItemTemplate>
+                <DataTemplate>
+                  <ViewCell>
+                    <Grid Margin="5"
+                          HorizontalOptions="FillAndExpand"
+                          ColumnSpacing="0"
+                          RowSpacing="0">
+                      <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                      </Grid.RowDefinitions>
+                      <Label Text="{Binding Field.Label, StringFormat='\{0\} :'}"
+                             Style="{StaticResource BoldLabel}"
+                             Margin="0"
+                             HorizontalOptions="FillAndExpand"
+                             VerticalOptions="EndAndExpand"></Label>
+                      <Label Text="{Binding FormattedValue}"
+                             Style="{StaticResource NormalLabel}"
+                             Grid.Row="1"
+                             Margin="0"
+                             HorizontalOptions="FillAndExpand"
+                             VerticalOptions="StartAndExpand"></Label>
+                    </Grid>
+                  </ViewCell>
+                </DataTemplate>
+              </ListView.ItemTemplate>
+            </ListView>
+            <StackLayout Grid.Row="1"
                          Orientation="Horizontal"
                          Spacing="5"
                          Padding="5">
               <Button x:Name="PreviousButton"
                       Text="Anterior"
-                      Clicked="PreviousResulteClicked"/>
+                      Clicked="PreviousResulteClicked" />
               <Button x:Name="NextButton"
                       Text="Siguiente"
-                      Clicked="NextResultClicked"/>
+                      Clicked="NextResultClicked" />
               <Button Text="Cerrar"
-                      Clicked="HideViewClicked"/>
-            </StackLayout> 
+                      Clicked="HideViewClicked" />
+            </StackLayout>
           </Grid>
         </Frame>
         <Frame x:Name="StatusBar"
