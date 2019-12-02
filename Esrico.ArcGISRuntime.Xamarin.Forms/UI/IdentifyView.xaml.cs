@@ -11,7 +11,7 @@ using Xamarin.Forms.Xaml;
 namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
 {
   [XamlCompilation(XamlCompilationOptions.Compile)]
-  public partial class IdentifyView : ContentView
+  public partial class IdentifyView : PanelView
   {
     /// <summary>
     /// 
@@ -22,32 +22,6 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
       typeof(IdentifyView),
       propertyChanged:OnIdentifyResultsChanged);
 
-    /// <summary>
-    /// 
-    /// </summary>
-    public static readonly BindableProperty TitleBorderColorProperty = BindableProperty.Create(
-      nameof(TitleBorderColor),
-      typeof(Color),
-      typeof(IdentifyView), 
-      defaultValue: null);
-
-    /// <summary>
-    /// 
-    /// </summary>
-    public static readonly BindableProperty TitleBackgroundColorProperty = BindableProperty.Create(
-      nameof(TitleBackgroundColor),
-      typeof(Color),
-      typeof(IdentifyView),
-      defaultValue: Color.White);
-
-    /// <summary>
-    /// 
-    /// </summary>
-    public static readonly BindableProperty TitleTextColorProperty = BindableProperty.Create(
-      nameof(TitleTextColor),
-      typeof(Color),
-      typeof(IdentifyView),
-      defaultValue: Color.Black);
 
     /// <summary>
     /// 
@@ -56,33 +30,6 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     {
       get => (IdentifyResults)GetValue(IdentifyResultsProperty);
       set => SetValue(IdentifyResultsProperty, value);
-    }
-
-    /// <summary>
-    /// 
-    /// </summary>
-    public Color TitleBorderColor
-    {
-      get => (Color)GetValue(TitleBorderColorProperty);
-      set => SetValue(TitleBorderColorProperty, value);
-    }
-
-    /// <summary>
-    /// 
-    /// </summary>
-    public Color TitleBackgroundColor
-    {
-      get => (Color)GetValue(TitleBackgroundColorProperty);
-      set => SetValue(TitleBackgroundColorProperty, value);
-    }
-
-    /// <summary>
-    /// 
-    /// </summary>
-    public Color TitleTextColor
-    {
-      get => (Color)GetValue(TitleTextColorProperty);
-      set => SetValue(TitleTextColorProperty, value);
     }
 
     /// <summary>
