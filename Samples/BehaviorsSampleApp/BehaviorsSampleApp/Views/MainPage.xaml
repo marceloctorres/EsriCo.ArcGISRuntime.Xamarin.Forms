@@ -21,6 +21,8 @@
                                 Title="Leyenda"
                                 IsVisible="{Binding IsLegendVisible}" />-->
     <esrico:PanelView TitleText="Panel View"
+                      TitleBackgroundColor="Blue"
+                      TitleTextColor="White"
                       StatusText="Status"
                       Margin="10"
                       CloseButtonLabel="Cerrar"
@@ -39,7 +41,7 @@
     </esrico:PanelView>
     <StackLayout Grid.Row="1" 
                  Orientation="Horizontal">
-      <Button Text="Tabla de Contenido"
+      <Button Text="Ver Panel"
               Command="{Binding TOCCommand}" />
       <!--<Button Text="Leyenda"
               Command="{Binding LegendCommand}" />-->

@@ -49,6 +49,7 @@
               <ColumnDefinition Width="auto" />
             </Grid.ColumnDefinitions>
             <Label Margin="0"
+                   Style="{StaticResource TitleLabel}"
                    Text="{Binding TitleText, Source={x:Reference view}}"
                    TextColor="{Binding TitleTextColor,Source={x:Reference view}}"
                    HorizontalOptions="Start"
@@ -109,6 +110,7 @@
             <Label Margin="0"
                    Text="" />
             <Label Margin="0"
+                   Style="{StaticResource NormalLabel}"
                    Text="{Binding StatusText,Source={x:Reference view}} "
                    TextColor="{Binding StatusTextColor,Source={x:Reference view}}"
                    HorizontalOptions="StartAndExpand"
