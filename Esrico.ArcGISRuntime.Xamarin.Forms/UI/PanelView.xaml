@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:root="clr-namespace:EsriCo.ArcGISRuntime.Xamarin.Forms"
+             mc:Ignorable="d"
+             x:Class="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView"
+             x:Name="view"
+             HorizontalOptions="EndAndExpand"
+             VerticalOptions="FillAndExpand"
+             WidthRequest="500"
+             MinimumWidthRequest="300">
+  <ContentView.Resources>
+    <ResourceDictionary>
+      <ResourceDictionary.MergedDictionaries>
+        <root:ResourceDictionary />
+      </ResourceDictionary.MergedDictionaries>
+    </ResourceDictionary>
+  </ContentView.Resources>
+  <ContentView.Content>
+    <Frame x:Name="PanelFrame"
+           Margin="0"
+           Padding="0"
+           BorderColor="{Binding TitleBorderColor, Source={x:Reference view}}"
+           CornerRadius="0"
+           HasShadow="True">
+      <Grid Margin="1"
+            ColumnSpacing="0"
+            RowSpacing="0">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="Auto" />
+          <RowDefinition Height="*" />
+          <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Frame x:Name="TitleBarFrame"
+               Margin="0"
+               Padding="2"
+               HorizontalOptions="FillAndExpand"
+               VerticalOptions="FillAndExpand"
+               BorderColor="{Binding TitleBorderColor, Source={x:Reference view}}"
+               BackgroundColor="{Binding TitleBackgroundColor, Source={x:Reference view}}"
+               HasShadow="False"
+               CornerRadius="0">
+          <Grid Margin="5"
+                ColumnSpacing="5">
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="*" />
+              <ColumnDefinition Width="auto" />
+            </Grid.ColumnDefinitions>
+            <Label Margin="0"
+                   Text="{Binding TitleText, Source={x:Reference view}}"
+                   TextColor="{Binding TitleTextColor,Source={x:Reference view}}"
+                   HorizontalOptions="Start"
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalTextAlignment="Start"
+                   VerticalTextAlignment="Center" />
+            <Button Grid.Column="1"
+                    ContentLayout="Left,0"
+                    Padding="0"
+                    Margin="0"
+                    BackgroundColor="Transparent"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    ImageSource="{Binding CloseButtonImage,Source={x:Reference view}}"
+                    Clicked="OnCloseButtonClicked" />
+          </Grid>
+        </Frame>
+        <Frame x:Name="BodyFrame"
+               Grid.Row="1"
+               CornerRadius="0"
+               Padding="2"
+               Margin="0"
+               BorderColor="{Binding BodyBorderColor,Source={x:Reference view}}"
+               BackgroundColor="{Binding BodyBackgroundColor,Source={x:Reference view}}"
+               HorizontalOptions="FillAndExpand"
+               VerticalOptions="FillAndExpand">
+          <Grid>
+            <Grid.RowDefinitions>
+              <RowDefinition Height="auto" />
+              <RowDefinition Height="*" />
+              <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+            <ContentView x:Name="HeaderContentView"
+                         HorizontalOptions="FillAndExpand"
+                         VerticalOptions="StartAndExpand" />
+            <ContentView x:Name="BodyContentView"
+                         Grid.Row="1"
+                         HorizontalOptions="FillAndExpand"
+                         VerticalOptions="FillAndExpand" />
+            <ContentView x:Name="FooterContentView"
+                         Grid.Row="2"
+                         HorizontalOptions="FillAndExpand"
+                         VerticalOptions="FillAndExpand" />
+          </Grid>
+        </Frame>
+        <Frame x:Name="StatusBarFrame"
+               Grid.Row="2"
+               Margin="0"
+               Padding="2"
+               BorderColor="{Binding StatusBorderColor,Source={x:Reference view}}"
+               BackgroundColor="{Binding StatusBackgroundColor,Source={x:Reference view}}"
+               HorizontalOptions="FillAndExpand"
+               VerticalOptions="FillAndExpand"
+               HasShadow="False"
+               CornerRadius="0">
+          <StackLayout Orientation="Horizontal"
+                       Spacing="2">
+            <Label Margin="0"
+                   Text="" />
+            <Label Margin="0"
+                   Text="{Binding StatusText,Source={x:Reference view}} "
+                   TextColor="{Binding StatusTextColor,Source={x:Reference view}}"
+                   HorizontalOptions="StartAndExpand"
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalTextAlignment="Start"
+                   VerticalTextAlignment="Center" />
+          </StackLayout>
+        </Frame>
+      </Grid>
+    </Frame>
+  </ContentView.Content>
+</ContentView>

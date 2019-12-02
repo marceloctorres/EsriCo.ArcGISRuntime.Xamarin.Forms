@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Windows.Input;
 
 namespace BehaviorsSampleApp.ViewModels
 {
@@ -18,11 +19,35 @@ namespace BehaviorsSampleApp.ViewModels
       set { SetProperty(ref _map, value); }
     }
 
+    private bool _visible;
+
+    public bool IsLegendVisible
+    {
+      get => _visible;
+      set => SetProperty(ref _visible, value);
+    }
+
+    public ICommand LegendCommand { get; private set; }
+
+    public ICommand TOCCommand { get; private set; }
+
     public MainPageViewModel(INavigationService navigationService)
         : base(navigationService)
     {
       Title = "Main Page";
+      IsLegendVisible = false;
       Map = new Map(Basemap.CreateTopographicVector());
+      Map.OperationalLayers.Add(new FeatureLayer(new Uri("https://services1.arcgis.com/7S16A7PAFcmSmqJA/ArcGIS/rest/services/InspeccionPublica/FeatureServer/3")));
+      Map.OperationalLayers.Add(new FeatureLayer(new Uri("https://services1.arcgis.com/7S16A7PAFcmSmqJA/ArcGIS/rest/services/InspeccionPublica/FeatureServer/2")));
+      Map.OperationalLayers.Add(new FeatureLayer(new Uri("https://services1.arcgis.com/7S16A7PAFcmSmqJA/ArcGIS/rest/services/InspeccionPublica/FeatureServer/1")));
+      Map.OperationalLayers.Add(new FeatureLayer(new Uri("https://services1.arcgis.com/7S16A7PAFcmSmqJA/ArcGIS/rest/services/InspeccionPublica/FeatureServer/0")));
+
+      TOCCommand = new DelegateCommand(() =>
+      {
+        IsLegendVisible = !IsLegendVisible;
+      });
+
     }
+
   }
 }

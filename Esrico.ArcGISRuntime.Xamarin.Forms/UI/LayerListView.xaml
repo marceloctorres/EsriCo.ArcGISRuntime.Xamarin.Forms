@@ -1,24 +1,10 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:root="clr-namespace:EsriCo.ArcGISRuntime.Xamarin.Forms"
              mc:Ignorable="d"
-             HorizontalOptions="EndAndExpand"
-             VerticalOptions="FillAndExpand"
-             Margin="10"
-             MinimumWidthRequest="400"
-             WidthRequest="350"
-             x:Name="LegendContentView"
-             x:Class="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.LegendView">
-  <ContentView.Resources>
-    <ResourceDictionary>
-      <ResourceDictionary.MergedDictionaries>
-        <root:ResourceDictionary />
-      </ResourceDictionary.MergedDictionaries>
-    </ResourceDictionary>
-  </ContentView.Resources>
+             x:Class="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.LayerListView">
   <ContentView.Content>
     <Frame Margin="5"
            Padding="0"
@@ -37,9 +23,9 @@
                Padding="0"
                HorizontalOptions="FillAndExpand"
                VerticalOptions="FillAndExpand"
-               BorderColor="{Binding TitleBorderColor,Source={x:Reference LegendContentView}}"
-               BackgroundColor="{Binding TitleBackgroundColor,Source={x:Reference LegendContentView}}"
-               IsVisible="{Binding IsTitleVisible,Source={x:Reference LegendContentView}}"
+               BorderColor="{Binding TitleBorderColor,Source={x:Reference this}}"
+               BackgroundColor="{Binding TitleBackgroundColor,Source={x:Reference this}}"
+               IsVisible="{Binding IsTitleVisible,Source={x:Reference this}}"
                HasShadow="False"
                CornerRadius="0">
           <Grid Margin="5"
@@ -47,8 +33,8 @@
             <Label x:Name="TitleText"
                    Margin="0"
                    Style="{StaticResource TitleLabel}"
-                   Text="{Binding Title,Source={x:Reference LegendContentView}}"
-                   TextColor="{Binding TitleTextColor,Source={x:Reference LegendContentView}}"
+                   Text="{Binding Title,Source={x:Reference this}}"
+                   TextColor="{Binding TitleTextColor,Source={x:Reference this}}"
                    HorizontalOptions="Start"
                    VerticalOptions="CenterAndExpand"
                    HorizontalTextAlignment="Start"
@@ -57,7 +43,7 @@
         </Frame>
         <Frame Grid.Row="1"
                CornerRadius="0"
-               BackgroundColor="White"
+               BackgroundColor="LightPink"
                Padding="0"
                Margin="0"
                HorizontalOptions="FillAndExpand"
@@ -67,10 +53,85 @@
               <RowDefinition Height="*" />
               <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
-            <ListView Margin="5,5,5,10"
+            <CollectionView Margin="5,5,5,10"
+                            Grid.Row="0"
+                            IsGrouped="True"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="FillAndExpand"
+                            HorizontalScrollBarVisibility="Never"
+                            VerticalScrollBarVisibility="Never"
+                            ItemSizingStrategy="MeasureAllItems"
+                            SelectionMode="None"
+                            ItemsSource="{Binding LayerInfosList,Source={x:Reference this}}">
+              <CollectionView.GroupHeaderTemplate>
+                <DataTemplate>
+                  <Grid>
+                    <Grid.RowDefinitions>
+                      <RowDefinition Height="Auto" />
+                      <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Label Grid.Row="0"
+                           Margin="1"
+                           Text="{Binding GroupLayerInfo.Layer.Name}"
+                           Style="{StaticResource BoldLabel}"
+                           HorizontalOptions="FillAndExpand"
+                           HorizontalTextAlignment="Start"
+                           VerticalOptions="Center" />
+                    <ListView Grid.Row="1"
+                              Margin="1"
+                              SeparatorVisibility="None"
+                              BackgroundColor="Azure"
+                              HasUnevenRows="True"
+                              HorizontalOptions="FillAndExpand"
+                              VerticalOptions="Start"
+                              HorizontalScrollBarVisibility="Never"
+                              VerticalScrollBarVisibility="Never"
+                              SelectionMode="None"
+                              ItemTemplate="{Binding LayerItemTemplate. {x:Reference this}}"
+                              ItemsSource="{Binding GroupLayerInfo.LegendImageInfos}">
+                    </ListView>
+                    <!--<CollectionView Grid.Row="1"
+                                    Margin="1"
+                                    BackgroundColor="Azure"
+                                    HorizontalOptions="FillAndExpand"
+                                    VerticalOptions="Start"
+                                    HorizontalScrollBarVisibility="Never"
+                                    VerticalScrollBarVisibility="Never"
+                                    SelectionMode="None"
+                                    ItemSizingStrategy="None"
+                                    ItemsSource="{Binding GroupLayerInfo.LegendImageInfos}">
+                      <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                          <Grid>
+                            <Grid.ColumnDefinitions>
+                              <ColumnDefinition Width="Auto" />
+                              <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Image Grid.Column ="0" 
+                                   Source="{Binding ImageSource}"
+                                   Margin="5"
+                                   BackgroundColor="Transparent"
+                                   HorizontalOptions="CenterAndExpand"
+                                   VerticalOptions="CenterAndExpand" />
+                            <Label Grid.Column="1"
+                                   HorizontalTextAlignment="Start"
+                                   HorizontalOptions="StartAndExpand"
+                                   VerticalOptions="CenterAndExpand"
+                                   Text="{Binding Name}" />
+                          </Grid>
+                        </DataTemplate>
+                      </CollectionView.ItemTemplate>
+                    </CollectionView>-->
+                  </Grid>
+                </DataTemplate>
+              </CollectionView.GroupHeaderTemplate>
+            </CollectionView>
+            <!--<ListView Grid.Row ="0" 
+                      Margin="5,5,5,10"
                       IsGroupingEnabled="True"
-                      SeparatorVisibility="Default"
+                      SeparatorVisibility="None"
                       HorizontalOptions="FillAndExpand"
+                      VerticalOptions="Start"
                       HorizontalScrollBarVisibility="Never"
                       VerticalScrollBarVisibility="Never"
                       HasUnevenRows="True"
@@ -82,22 +143,24 @@
                     <Grid>
                       <Grid.RowDefinitions>
                         <RowDefinition Height="Auto" />
-                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
                       </Grid.RowDefinitions>
                       <Label Grid.Column="0"
                              Grid.Row="0"
+                             Margin="1"
                              Text="{Binding GroupLayerInfo.Layer.Name}"
                              Style="{StaticResource BoldLabel}"
+                             HorizontalOptions="FillAndExpand"
+                             HorizontalTextAlignment="Start"
                              VerticalOptions="Center" />
-                      <ListView x:Name="ListaInterna"
-                                Grid.Row="1"
-                                Grid.ColumnSpan="2"
+                      <ListView Grid.Row="1"
                                 Margin="1"
+                                SeparatorVisibility="None"
+                                BackgroundColor="Azure"
                                 HasUnevenRows="True"
                                 HorizontalScrollBarVisibility="Never"
                                 VerticalScrollBarVisibility="Never"
                                 SelectionMode="None"
-                                ItemAppearing="ListView_ItemAppearing"
                                 ItemsSource="{Binding GroupLayerInfo.LegendImageInfos}">
                         <ListView.ItemTemplate>
                           <DataTemplate>
@@ -115,8 +178,6 @@
                         </ListView.ItemTemplate>
                       </ListView>
                     </Grid>
-                    <!--<StackLayout Orientation="Vertical">
-                    </StackLayout>-->
                   </ViewCell>
                 </DataTemplate>
               </ListView.GroupHeaderTemplate>
@@ -145,7 +206,7 @@
                   </ViewCell>
                 </DataTemplate>
               </ListView.ItemTemplate>
-            </ListView>
+            </ListView>-->
             <StackLayout Grid.Row="1"
                          Orientation="Horizontal"
                          Spacing="5"

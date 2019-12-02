@@ -17,12 +17,14 @@
 
   <ItemGroup>
     <None Remove="Icons\close.svg" />
+    <None Remove="Icons\ic_close.png" />
     <None Remove="Icons\next.svg" />
     <None Remove="Icons\prev.svg" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="Icons\close.svg" />
+    <EmbeddedResource Include="Icons\ic_close.png" />
     <EmbeddedResource Include="Icons\prev.svg" />
     <EmbeddedResource Include="Icons\next.svg" />
   </ItemGroup>
@@ -39,6 +41,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="UI\IdentifyView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\PanelView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="UI\TableOfContentsView.xaml">

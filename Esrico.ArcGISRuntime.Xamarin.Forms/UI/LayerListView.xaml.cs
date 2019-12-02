@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Threading.Tasks;
+
 using Esri.ArcGISRuntime.Mapping;
 
 using EsriCo.ArcGISRuntime.Xamarin.Forms.Model;
@@ -13,26 +14,16 @@ using Xamarin.Forms.Xaml;
 namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
 {
   [XamlCompilation(XamlCompilationOptions.Compile)]
-  public partial class LegendView : ContentView
+  public partial class LayerListView : ContentView
   {
-
     /// <summary>
     /// 
     /// </summary>
     public static readonly BindableProperty IsTitleVisibleProperty = BindableProperty.Create(
       nameof(IsTitleVisible),
       typeof(bool),
-      typeof(LegendView),
+      typeof(LayerListView),
       defaultValue: false);
-
-    public new static readonly BindableProperty IsVisibleProperty = BindableProperty.Create(
-      nameof(IsVisible),
-      typeof(bool),
-      typeof(LegendView), 
-      defaultBindingMode:BindingMode.TwoWay,
-      propertyChanged: OnIsVisibleChanged,
-      defaultValue: false);
-
 
     /// <summary>
     /// 
@@ -40,50 +31,68 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     public static readonly BindableProperty MapProperty = BindableProperty.Create(
       nameof(Map),
       typeof(Map),
-      typeof(LegendView),
+      typeof(LayerListView),
       propertyChanged: OnMapChanged,
       defaultValue: null);
 
     /// <summary>
     /// 
     /// </summary>
-    public static readonly BindableProperty TitleProperty = BindableProperty.Create(
+    protected static readonly BindableProperty TitleProperty = BindableProperty.Create(
       nameof(Title),
       typeof(string),
-      typeof(LegendView),
-      defaultValue: "Table of Contents");
+      typeof(LayerListView),
+      defaultValue: "Layer List View");
 
     /// <summary>
     /// 
     /// </summary>
-    public static readonly BindableProperty TitleBorderColorProperty = BindableProperty.Create(
+    protected static readonly BindableProperty TitleBorderColorProperty = BindableProperty.Create(
       nameof(TitleBorderColor),
       typeof(Color),
-      typeof(LegendView),
+      typeof(LayerListView),
       defaultValue: null);
 
     /// <summary>
     /// 
     /// </summary>
-    public static readonly BindableProperty TitleBackgroundColorProperty = BindableProperty.Create(
+    protected static readonly BindableProperty TitleBackgroundColorProperty = BindableProperty.Create(
       nameof(TitleBackgroundColor),
       typeof(Color),
-      typeof(LegendView),
+      typeof(LayerListView),
       defaultValue: Color.White);
 
     /// <summary>
     /// 
     /// </summary>
-    public static readonly BindableProperty TitleTextColorProperty = BindableProperty.Create(
+    protected static readonly BindableProperty TitleTextColorProperty = BindableProperty.Create(
       nameof(TitleTextColor),
       typeof(Color),
-      typeof(LegendView),
+      typeof(LayerListView),
       defaultValue: Color.Black);
 
     /// <summary>
     /// 
     /// </summary>
-    public string Title
+    public static BindableProperty LayerItemTemplateProperty = BindableProperty.Create(
+      nameof(LayerItemTemplate), 
+      typeof(View), 
+      typeof(LayerListView), 
+      propertyChanged: null);
+
+    /// <summary>
+    /// 
+    /// </summary>
+    public DataTemplate LayerItemTemplate
+    {
+      get { return (DataTemplate)GetValue(LayerItemTemplateProperty); }
+      set { SetValue(LayerItemTemplateProperty, value); }
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    public virtual string Title
     {
       get => (string)GetValue(TitleProperty);
       set => SetValue(TitleProperty, value);
@@ -92,7 +101,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    public bool IsTitleVisible
+    public virtual bool IsTitleVisible
     {
       get => (bool)GetValue(IsTitleVisibleProperty);
       set => SetValue(IsTitleVisibleProperty, value);
@@ -101,16 +110,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    public new bool IsVisible
-    {
-      get => (bool)GetValue(IsVisibleProperty);
-      set => SetValue(IsVisibleProperty, value);
-    }
-
-    /// <summary>
-    /// 
-    /// </summary>
-    public Map Map
+    public virtual Map Map
     {
       get => (Map)GetValue(MapProperty);
       set => SetValue(MapProperty, value);
@@ -119,7 +119,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    public Color TitleBorderColor
+    public virtual Color TitleBorderColor
     {
       get => (Color)GetValue(TitleBorderColorProperty);
       set => SetValue(TitleBorderColorProperty, value);
@@ -128,7 +128,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    public Color TitleBackgroundColor
+    public virtual Color TitleBackgroundColor
     {
       get => (Color)GetValue(TitleBackgroundColorProperty);
       set => SetValue(TitleBackgroundColorProperty, value);
@@ -137,7 +137,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    public Color TitleTextColor
+    public virtual Color TitleTextColor
     {
       get => (Color)GetValue(TitleTextColorProperty);
       set => SetValue(TitleTextColorProperty, value);
@@ -148,7 +148,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    public ObservableCollection<LayerInfos> LayerInfosList
+    public virtual ObservableCollection<LayerInfos> LayerInfosList
     {
       get => _layerInfosList;
       set
@@ -158,24 +158,6 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
       }
     }
 
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <param name="bindable"></param>
-    /// <param name="oldValue"></param>
-    /// <param name="newValue"></param>
-    private static void OnIsVisibleChanged(BindableObject bindable, object oldValue, object newValue)
-    {
-      var legendView = bindable as LegendView;
-      var newVisible = (bool)newValue;
-
-      legendView.SetIsVisible(newVisible);
-    }
-
-    private void SetIsVisible(bool visible)
-    {
-      base.IsVisible = visible;
-    }
 
     /// <summary>
     /// 
@@ -185,9 +167,8 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="newValue"></param>
     private static void OnMapChanged(BindableObject bindable, object oldValue, object newValue)
     {
-      var legendView = bindable as LegendView;
-      var map = newValue as Map;
-      GetLayers(legendView, map);
+      var view = bindable as LayerListView;
+      GetLayers(view);
     }
 
     /// <summary>
@@ -195,7 +176,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// </summary>
     /// <param name="map"></param>
     /// <returns></returns>
-    private async Task<List<LayerInfos>> GetLayerInfos()
+    protected virtual async Task<List<LayerInfos>> GetLayerInfos()
     {
       if (Map == null)
       {
@@ -250,24 +231,32 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// </summary>
     /// <param name="legendView"></param>
     /// <param name="map"></param>
-    private async static void GetLayers(LegendView legendView, Map map)
+    protected async static void GetLayers(LayerListView view)
     {
-      // var layerInfos = await legendView.GetLayerInfos();
-      var layerInfos = await Device.InvokeOnMainThreadAsync(() => legendView.GetLayerInfos());
-      if (layerInfos != null)
+      try
       {
-        legendView.LayerInfosList = new ObservableCollection<LayerInfos>(layerInfos);
+        var layerInfos = await Device.InvokeOnMainThreadAsync(() => view.GetLayerInfos());
+        if (layerInfos != null)
+        {
+          view.LayerInfosList = new ObservableCollection<LayerInfos>(layerInfos);
+        }
+        else
+        {
+          view.LayerInfosList = null;
+        }
       }
-      else
+      catch
       {
-        legendView.LayerInfosList = null;
+        view.LayerInfosList = null;
       }
     }
 
-    public LegendView()
+    /// <summary>
+    /// 
+    /// </summary>
+    public LayerListView()
     {
       InitializeComponent();
-      base.IsVisible = false;
     }
 
     /// <summary>
@@ -275,19 +264,9 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
-    private void HideViewClicked(object sender, EventArgs e)
+    protected virtual void HideViewClicked(object sender, EventArgs e)
     {
       IsVisible = false;
-    }
-
-    private void ListView_ItemAppearing(object sender, ItemVisibilityEventArgs e)
-    {
-      if (sender is ListView listView)
-      {
-        var list = (List<LegendImageInfo>)listView.ItemsSource;
-        var height = list.Count * 32;
-        listView.HeightRequest = height;
-      }
     }
   }
 }

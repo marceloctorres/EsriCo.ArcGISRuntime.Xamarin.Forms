@@ -49,7 +49,7 @@
                    HorizontalOptions="Start"
                    VerticalOptions="CenterAndExpand"
                    HorizontalTextAlignment="Start"
-                   VerticalTextAlignment="Center"></Label>
+                   VerticalTextAlignment="Center" />
           </Grid>
         </Frame>
         <Frame Grid.Row="1"
