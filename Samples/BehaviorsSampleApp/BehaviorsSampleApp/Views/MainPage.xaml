@@ -10,8 +10,7 @@
       <RowDefinition Height="*" />
       <RowDefinition Height="Auto" />
     </Grid.RowDefinitions>
-    <esriUI:MapView Map="{Binding Map}">
-    </esriUI:MapView>
+    <esriUI:MapView Map="{Binding Map}"></esriUI:MapView>
     <!--<esrico:LegendView Map="{Binding Map}" 
                        IsTitleVisible="true"
                        Title="Leyenda"
@@ -20,7 +19,7 @@
                                 IsTitleVisible="true"
                                 Title="Leyenda"
                                 IsVisible="{Binding IsLegendVisible}" />-->
-    <esrico:PanelView TitleText="Panel View"
+    <!--<esrico:PanelView TitleText="Panel View"
                       TitleBackgroundColor="Blue"
                       TitleTextColor="White"
                       StatusText="Status"
@@ -38,8 +37,28 @@
       <esrico:PanelView.FooterContent>
         <Label Text="Footer" />
       </esrico:PanelView.FooterContent>
-    </esrico:PanelView>
-    <StackLayout Grid.Row="1" 
+    </esrico:PanelView>-->
+    <esrico:ListPanelView TitleText="List Panel View"
+                          Margin="10"
+                          ItemsSource="{Binding Map.OperationalLayers}"
+                          IsVisible="{Binding IsLegendVisible}">
+      <esrico:ListPanelView.ItemTemplate>
+        <DataTemplate>
+          <ViewCell>
+            <Grid>
+              <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="auto" />
+              </Grid.ColumnDefinitions>
+              <Label Text="{Binding Name}" />
+              <Switch Grid.Column="1"
+                      IsToggled="{Binding IsVisible}" />
+            </Grid>
+          </ViewCell>
+        </DataTemplate>
+      </esrico:ListPanelView.ItemTemplate>
+    </esrico:ListPanelView>
+    <StackLayout Grid.Row="1"
                  Orientation="Horizontal">
       <Button Text="Ver Panel"
               Command="{Binding TOCCommand}" />

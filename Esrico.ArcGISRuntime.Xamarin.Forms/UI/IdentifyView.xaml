@@ -42,8 +42,7 @@
                CornerRadius="0">
           <Grid Margin="5"
                 ColumnSpacing="5">
-            <Label x:Name="TitleText"
-                   Margin="0"
+            <Label Margin="0"
                    Style="{StaticResource TitleLabel}"
                    Text="{Binding PopupManager.Title,Source={x:Reference IdentifyContentView}}"
                    TextColor="{Binding TitleTextColor,Source={x:Reference IdentifyContentView}}"

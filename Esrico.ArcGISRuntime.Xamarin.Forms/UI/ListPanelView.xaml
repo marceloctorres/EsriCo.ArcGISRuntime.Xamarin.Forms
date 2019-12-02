@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ui:PanelView xmlns="http://xamarin.com/schemas/2014/forms"
+              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+              xmlns:ui="clr-namespace:EsriCo.ArcGISRuntime.Xamarin.Forms.UI"
+              mc:Ignorable="d"
+              x:Class="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.ListPanelView"
+              x:Name="panelview">
+  <ui:PanelView.BodyContent>
+    <Grid>
+      <ListView Margin="5,5,5,10"
+                SeparatorVisibility="Default"
+                HorizontalOptions="FillAndExpand"
+                HorizontalScrollBarVisibility="Never"
+                VerticalScrollBarVisibility="Never"
+                HasUnevenRows="True"
+                SelectionMode="None"
+                IsGroupingEnabled="{Binding IsGroupingEnabled,Source={x:Reference panelview}}"
+                ItemsSource="{Binding ItemsSource,Source={x:Reference panelview}}"
+                ItemTemplate="{Binding ItemTemplate, Source={x:Reference panelview}}"
+                GroupHeaderTemplate="{Binding GroupHeaderTemplate,Source={x:Reference panelview}}"
+                HeaderTemplate="{Binding HeaderTemplate,Source={x:Reference panelview}}"
+                FooterTemplate="{Binding FooterTemplate,Source={x:Reference panelview}}" />
+    </Grid>
+  </ui:PanelView.BodyContent>
+</ui:PanelView>

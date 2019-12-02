@@ -27,6 +27,12 @@ namespace BehaviorsSampleApp.ViewModels
       set => SetProperty(ref _visible, value);
     }
 
+    private List<Layer> _layers;
+    public List<Layer> Layers { 
+      get => _layers; 
+      set => SetProperty(ref _layers, value); 
+    }
+
     public ICommand LegendCommand { get; private set; }
 
     public ICommand TOCCommand { get; private set; }
@@ -41,6 +47,8 @@ namespace BehaviorsSampleApp.ViewModels
       Map.OperationalLayers.Add(new FeatureLayer(new Uri("https://services1.arcgis.com/7S16A7PAFcmSmqJA/ArcGIS/rest/services/InspeccionPublica/FeatureServer/2")));
       Map.OperationalLayers.Add(new FeatureLayer(new Uri("https://services1.arcgis.com/7S16A7PAFcmSmqJA/ArcGIS/rest/services/InspeccionPublica/FeatureServer/1")));
       Map.OperationalLayers.Add(new FeatureLayer(new Uri("https://services1.arcgis.com/7S16A7PAFcmSmqJA/ArcGIS/rest/services/InspeccionPublica/FeatureServer/0")));
+
+      Layers = Map.OperationalLayers.ToList();
 
       TOCCommand = new DelegateCommand(() =>
       {

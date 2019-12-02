@@ -53,24 +53,6 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    private string _statusText;
-
-    /// <summary>
-    /// 
-    /// </summary>
-    public string StatusText
-    {
-      get => _statusText;
-      set
-      {
-        _statusText = value;
-        OnPropertyChanged(nameof(StatusText));
-      }
-    }
-
-    /// <summary>
-    /// 
-    /// </summary>
     public ICommand PreviousResultCommand { get; private set; }
 
     /// <summary>
