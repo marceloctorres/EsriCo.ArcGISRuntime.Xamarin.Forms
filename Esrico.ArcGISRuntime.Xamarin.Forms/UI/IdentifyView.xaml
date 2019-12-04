@@ -1,141 +1,50 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ui:PanelView xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:root="clr-namespace:EsriCo.ArcGISRuntime.Xamarin.Forms"
-             xmlns:ui="clr-namespace:EsriCo.ArcGISRuntime.Xamarin.Forms.UI"
-             mc:Ignorable="d"
-             MinimumWidthRequest="300"
-             WidthRequest="350"
-             x:Class="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.IdentifyView"
-             x:Name="IdentifyContentView">
-  <ContentView.Resources>
-    <ResourceDictionary>
-      <ResourceDictionary.MergedDictionaries>
-        <root:ResourceDictionary />
-      </ResourceDictionary.MergedDictionaries>
-    </ResourceDictionary>
-  </ContentView.Resources>
-  <ContentView.Content>
-    <Frame Margin="5"
-           Padding="0"
-           BorderColor="Black"
-           CornerRadius="0"
-           HasShadow="True">
-      <Grid Margin="1"
-            ColumnSpacing="0"
-            RowSpacing="0">
-        <Grid.RowDefinitions>
-          <RowDefinition Height="Auto" />
-          <RowDefinition Height="*" />
-          <RowDefinition Height="Auto" />
-        </Grid.RowDefinitions>
-        <Frame x:Name="TitleBar"
-               Margin="0"
-               Padding="0"
-               HorizontalOptions="FillAndExpand"
-               VerticalOptions="FillAndExpand"
-               BorderColor="{Binding TitleBorderColor,Source={x:Reference IdentifyContentView}}"
-               BackgroundColor="{Binding TitleBackgroundColor,Source={x:Reference IdentifyContentView}}"
-               HasShadow="False"
-               CornerRadius="0">
-          <Grid Margin="5"
-                ColumnSpacing="5">
-            <Label Margin="0"
-                   Style="{StaticResource TitleLabel}"
-                   Text="{Binding PopupManager.Title,Source={x:Reference IdentifyContentView}}"
-                   TextColor="{Binding TitleTextColor,Source={x:Reference IdentifyContentView}}"
-                   HorizontalOptions="Start"
-                   VerticalOptions="CenterAndExpand"
-                   HorizontalTextAlignment="Start"
-                   VerticalTextAlignment="Center" />
-          </Grid>
-        </Frame>
-        <Frame Grid.Row="1"
-               BindingContext="{Binding PopupManager, Source={x:Reference IdentifyContentView}}"
-               CornerRadius="0"
-               BackgroundColor="White"
-               Padding="0"
-               Margin="0"
-               HorizontalOptions="FillAndExpand"
-               VerticalOptions="FillAndExpand">
-          <Grid>
-            <Grid.RowDefinitions>
-              <RowDefinition Height="*" />
-              <RowDefinition Height="Auto" />
-            </Grid.RowDefinitions>
-            <ListView Margin="5,5,5,10"
-                      SeparatorVisibility="Default"
-                      HorizontalOptions="FillAndExpand"
-                      VerticalOptions="Start"
-                      HorizontalScrollBarVisibility="Never"
-                      VerticalScrollBarVisibility="Never"
-                      HasUnevenRows="True"
-                      SelectionMode="None"
-                      ItemsSource="{Binding DisplayedFields}">
-              <ListView.ItemTemplate>
-                <DataTemplate>
-                  <ViewCell>
-                    <Grid Margin="5"
-                          HorizontalOptions="FillAndExpand"
-                          ColumnSpacing="0"
-                          RowSpacing="0">
-                      <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto" />
-                        <RowDefinition Height="Auto" />
-                      </Grid.RowDefinitions>
-                      <Label Text="{Binding Field.Label, StringFormat='\{0\} :'}"
-                             Style="{StaticResource BoldLabel}"
-                             Margin="0"
-                             HorizontalOptions="FillAndExpand"
-                             VerticalOptions="EndAndExpand"></Label>
-                      <Label Text="{Binding FormattedValue}"
-                             Style="{StaticResource NormalLabel}"
-                             Grid.Row="1"
-                             Margin="0"
-                             HorizontalOptions="FillAndExpand"
-                             VerticalOptions="StartAndExpand"></Label>
-                    </Grid>
-                  </ViewCell>
-                </DataTemplate>
-              </ListView.ItemTemplate>
-            </ListView>
-            <StackLayout Grid.Row="1"
-                         Orientation="Horizontal"
-                         Spacing="5"
-                         Padding="5">
-              <Button x:Name="PreviousButton"
-                      Text="Anterior"
-                      Clicked="PreviousResulteClicked" />
-              <Button x:Name="NextButton"
-                      Text="Siguiente"
-                      Clicked="NextResultClicked" />
-              <Button Text="Cerrar"
-                      Clicked="HideViewClicked" />
-            </StackLayout>
-          </Grid>
-        </Frame>
-        <Frame x:Name="StatusBar"
-               Grid.Row="2"
-               Margin="0"
-               Padding="0"
-               HorizontalOptions="FillAndExpand"
-               VerticalOptions="FillAndExpand"
-               BorderColor="{Binding TitleBorderColor,Source={x:Reference IdentifyContentView}}"
-               BackgroundColor="{Binding TitleBackgroundColor,Source={x:Reference IdentifyContentView}}"
-               HasShadow="False"
-               CornerRadius="0">
-          <Label Margin="0"
-                 Text="{Binding StatusText,Source={x:Reference IdentifyContentView}} "
+<ui:ListPanelView xmlns="http://xamarin.com/schemas/2014/forms"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                  xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+                  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                  xmlns:ui="clr-namespace:EsriCo.ArcGISRuntime.Xamarin.Forms.UI"
+                  mc:Ignorable="d"
+                  x:Class="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.IdentifyView"
+                  x:Name="listview"
+                  ItemsSource="{Binding PopupManager.DisplayedFields,Source={x:Reference listview}}">
+  <ui:ListPanelView.ItemTemplate>
+    <DataTemplate>
+      <ViewCell>
+        <Grid Margin="5"
+              HorizontalOptions="FillAndExpand"
+              ColumnSpacing="0"
+              RowSpacing="0">
+          <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+          </Grid.RowDefinitions>
+          <Label Text="{Binding Field.Label, StringFormat='\{0\} :'}"
+                 Style="{StaticResource BoldLabel}"
+                 Margin="0"
+                 HorizontalOptions="FillAndExpand"
+                 VerticalOptions="EndAndExpand"></Label>
+          <Label Text="{Binding FormattedValue}"
                  Style="{StaticResource NormalLabel}"
-                 TextColor="{Binding TitleTextColor,Source={x:Reference IdentifyContentView}}"
-                 HorizontalOptions="StartAndExpand"
-                 VerticalOptions="CenterAndExpand"
-                 HorizontalTextAlignment="Start"
-                 VerticalTextAlignment="Center" />
-        </Frame>
-      </Grid>
-    </Frame>
-  </ContentView.Content>
-</ui:PanelView>
+                 Grid.Row="1"
+                 Margin="0"
+                 HorizontalOptions="FillAndExpand"
+                 VerticalOptions="StartAndExpand"></Label>
+        </Grid>
+      </ViewCell>
+    </DataTemplate>
+  </ui:ListPanelView.ItemTemplate>
+  <ui:ListPanelView.FooterContent>
+    <StackLayout Grid.Row="1"
+                 Orientation="Horizontal"
+                 Spacing="5"
+                 Padding="5">
+      <Button x:Name="PreviousButton"
+              Text="Anterior"
+              Clicked="PreviousResulteClicked" />
+      <Button x:Name="NextButton"
+              Text="Siguiente"
+              Clicked="NextResultClicked" />
+    </StackLayout>
+  </ui:ListPanelView.FooterContent>
+</ui:ListPanelView>

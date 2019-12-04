@@ -174,7 +174,6 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
       }
     }
 
-
     /// <summary>
     /// 
     /// </summary>
@@ -240,7 +239,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
       nameof(TitleBackgroundColor),
       typeof(Color),
       typeof(PanelView),
-      defaultValue: Color.Gray);
+      defaultValue: Color.White);
 
     /// <summary>
     /// 
@@ -347,7 +346,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
       nameof(StatusBackgroundColor),
       typeof(Color),
       typeof(PanelView),
-      defaultValue: Color.LightGray);
+      defaultValue: Color.White);
 
     /// <summary>
     /// 

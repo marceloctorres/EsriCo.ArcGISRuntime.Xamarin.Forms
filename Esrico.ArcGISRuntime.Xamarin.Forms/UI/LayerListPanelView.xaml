@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ui:ListPanelView xmlns="http://xamarin.com/schemas/2014/forms"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                  xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+                  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                  xmlns:ui="clr-namespace:EsriCo.ArcGISRuntime.Xamarin.Forms.UI"
+                  mc:Ignorable="d"
+                  x:Class="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.LayerListPanelView"
+                  x:Name="listview"
+                  IsGroupingEnabled="True"
+                  IsStatusVisible="False"
+                  ItemsSource="{Binding LayerInfosList,Source={x:Reference listview}}"> 
+  <ui:ListPanelView.ItemTemplate>
+      <DataTemplate>
+      <ViewCell IsEnabled="False">
+        <Label Text="Hello Xamarin.Forms!" />
+      </ViewCell>
+      </DataTemplate>
+  </ui:ListPanelView.ItemTemplate>
+  <ui:ListPanelView.GroupHeaderTemplate>
+    <DataTemplate>
+      <ViewCell>
+        <Label Text="{Binding GroupLayerInfo.Layer.Name}"
+               Style="{StaticResource BoldLabel}"
+               VerticalOptions="Center" />
+      </ViewCell>
+    </DataTemplate>
+  </ui:ListPanelView.GroupHeaderTemplate>
+</ui:ListPanelView>

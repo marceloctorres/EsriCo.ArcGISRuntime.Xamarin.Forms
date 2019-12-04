@@ -2,6 +2,7 @@
 using System;
 using System.Linq;
 using System.Windows.Input;
+using Esri.ArcGISRuntime.Mapping;
 using Esri.ArcGISRuntime.Mapping.Popups;
 using EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors;
 using Prism.Commands;
@@ -11,7 +12,7 @@ using Xamarin.Forms.Xaml;
 namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
 {
   [XamlCompilation(XamlCompilationOptions.Compile)]
-  public partial class IdentifyView : PanelView
+  public partial class IdentifyView : ListPanelView
   {
     /// <summary>
     /// 
@@ -20,7 +21,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
       nameof(IdentifyResults),
       typeof(IdentifyResults),
       typeof(IdentifyView),
-      propertyChanged:OnIdentifyResultsChanged);
+      propertyChanged: OnIdentifyResultsChanged);
 
 
     /// <summary>
@@ -49,21 +50,6 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
         OnPropertyChanged(nameof(PopupManager));
       }
     }
-
-    /// <summary>
-    /// 
-    /// </summary>
-    public ICommand PreviousResultCommand { get; private set; }
-
-    /// <summary>
-    /// 
-    /// </summary>
-    public ICommand NextResultCommand { get; private set; }
-
-    /// <summary>
-    /// 
-    /// </summary>
-    public ICommand HideViewCommand { get; private set; }
 
     /// <summary>
     /// 
@@ -101,23 +87,37 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="identifyResults"></param>
     private static void GetPopupManager (IdentifyView identifyView, IdentifyResults identifyResults)
     {
-      Popup popup;
-      var geoElementResult = identifyResults.GeoElementResults.ElementAt(identifyView.CurrentElementIndex);
-      if (geoElementResult.Layer is IPopupSource)
+      try
       {
-        var popupSource = geoElementResult.Layer as IPopupSource;
-        var popupDefinition = popupSource.PopupDefinition;
-        popup = new Popup(geoElementResult.GeoElement, popupDefinition);
+        Popup popup;
+        var geoElementResult = identifyResults.GeoElementResults.ElementAt(identifyView.CurrentElementIndex);
+        identifyView.TitleText = (geoElementResult.Layer is FeatureLayer) ?
+          (geoElementResult.Layer as FeatureLayer).FeatureTable.DisplayName : string.Empty;
+
+        if (geoElementResult.Layer is IPopupSource)
+        {
+          var popupSource = geoElementResult.Layer as IPopupSource;
+          var popupDefinition = popupSource.PopupDefinition;
+          popup = popupDefinition != null ?
+            new Popup(geoElementResult.GeoElement, popupDefinition) :
+            Popup.FromGeoElement(geoElementResult.GeoElement);
+        }
+        else 
+        {
+          popup = Popup.FromGeoElement(geoElementResult.GeoElement);
+        }
+        if (popup != null)
+        {
+          var popManager = new PopupManager(popup as Popup);
+          identifyView.PopupManager = popManager;
+        }
+        identifyView.StatusText = $"{identifyView.CurrentElementIndex + 1} / {identifyResults.GeoElementResults.Count}";
       }
-      else
+      catch (Exception ex)
       {
-        popup = Popup.FromGeoElement(geoElementResult.GeoElement);
+        Console.WriteLine(ex.Message);
       }
-      if (popup != null)
-      {
-        identifyView.PopupManager = new PopupManager(popup as Popup);
-      }
-      identifyView.StatusText = $"{identifyView.CurrentElementIndex + 1} / {identifyResults.GeoElementResults.Count}";
+
     }
 
     /// <summary>

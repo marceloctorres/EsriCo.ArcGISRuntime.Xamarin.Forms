@@ -8,14 +8,15 @@
               x:Class="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.ListPanelView"
               x:Name="panelview">
   <ui:PanelView.BodyContent>
-    <Grid>
+    <Grid BindingContext="{Binding ListBindingContext,Source={x:Reference panelview}}"
+          BindingContextChanged="ListView_BindingContextChanged">
       <ListView Margin="5,5,5,10"
                 SeparatorVisibility="Default"
                 HorizontalOptions="FillAndExpand"
                 HorizontalScrollBarVisibility="Never"
                 VerticalScrollBarVisibility="Never"
                 HasUnevenRows="True"
-                SelectionMode="None"
+                SelectionMode="None" 
                 IsGroupingEnabled="{Binding IsGroupingEnabled,Source={x:Reference panelview}}"
                 ItemsSource="{Binding ItemsSource,Source={x:Reference panelview}}"
                 ItemTemplate="{Binding ItemTemplate, Source={x:Reference panelview}}"

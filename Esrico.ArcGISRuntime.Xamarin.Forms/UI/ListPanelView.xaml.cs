@@ -32,13 +32,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     public static readonly BindableProperty ItemsSourceProperty = BindableProperty.Create(
       nameof(ItemsSource),
       typeof(IEnumerable),
-      typeof(ListPanelView), propertyChanged:OnItemsSourceChanged);
-
-    private static void OnItemsSourceChanged(BindableObject bindable, object oldValue, object newValue)
-    {
-      var listPanelView = bindable as ListPanelView;
-      Console.WriteLine(listPanelView.ListBindingContext);
-    }
+      typeof(ListPanelView));
 
     /// <summary>
     /// 
@@ -141,6 +135,11 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     public ListPanelView()
     {
       InitializeComponent();
+    }
+
+    private void ListView_BindingContextChanged(object sender, EventArgs e)
+    {
+      Console.WriteLine(sender);
     }
   }
 }

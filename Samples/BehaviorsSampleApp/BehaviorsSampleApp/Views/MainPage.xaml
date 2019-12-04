@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:esriUI="clr-namespace:Esri.ArcGISRuntime.Xamarin.Forms;assembly=Esri.ArcGISRuntime.Xamarin.Forms"
              xmlns:esrico="clr-namespace:EsriCo.ArcGISRuntime.Xamarin.Forms.UI;assembly=Esrico.ArcGISRuntime.Xamarin.Forms"
+             xmlns:bh="clr-namespace:EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors;assembly=EsriCo.ArcGISRuntime.Xamarin.Forms"
              x:Class="BehaviorsSampleApp.Views.MainPage"
              Title="{Binding Title}">
   <Grid>
@@ -10,55 +11,27 @@
       <RowDefinition Height="*" />
       <RowDefinition Height="Auto" />
     </Grid.RowDefinitions>
-    <esriUI:MapView Map="{Binding Map}"></esriUI:MapView>
-    <!--<esrico:LegendView Map="{Binding Map}" 
-                       IsTitleVisible="true"
-                       Title="Leyenda"
+    <esriUI:MapView x:Name="mapView"
+                    Map="{Binding Map}">
+      <esriUI:MapView.Behaviors>
+        <bh:IdentifyBehavior Layers="{Binding Layers}"
+                             Command="{Binding IdentificarCommand}" />
+      </esriUI:MapView.Behaviors>
+    </esriUI:MapView>
+    <esrico:IdentifyView IdentifyResults="{Binding IdentifyResults}"
+                         HorizontalOptions="StartAndExpand"
+                         IsVisible="{Binding IsLegendVisible}">
+    </esrico:IdentifyView>
+    <esrico:LegendView MapView="{Binding Source={x:Reference mapView}}"
+                       IsStatusVisible="False"
+                       TitleText="Leyenda"
                        IsVisible="{Binding IsLegendVisible}" />
-    <esrico:TableOfContentsView Map="{Binding Map}"
-                                IsTitleVisible="true"
-                                Title="Leyenda"
-                                IsVisible="{Binding IsLegendVisible}" />-->
-    <!--<esrico:PanelView TitleText="Panel View"
-                      TitleBackgroundColor="Blue"
-                      TitleTextColor="White"
-                      StatusText="Status"
-                      Margin="10"
-                      CloseButtonLabel="Cerrar"
-                      IsVisible="{Binding IsLegendVisible}">
-      <esrico:PanelView.HeaderContent>
-        <Label Text="Header" />
-      </esrico:PanelView.HeaderContent>
-      <esrico:PanelView.BodyContent>
-        <Label Text="Body"
-               HorizontalOptions="CenterAndExpand"
-               VerticalOptions="CenterAndExpand" />
-      </esrico:PanelView.BodyContent>
-      <esrico:PanelView.FooterContent>
-        <Label Text="Footer" />
-      </esrico:PanelView.FooterContent>
-    </esrico:PanelView>-->
-    <esrico:ListPanelView TitleText="List Panel View"
-                          Margin="10"
-                          ItemsSource="{Binding Map.OperationalLayers}"
-                          IsVisible="{Binding IsLegendVisible}">
-      <esrico:ListPanelView.ItemTemplate>
-        <DataTemplate>
-          <ViewCell>
-            <Grid>
-              <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="auto" />
-              </Grid.ColumnDefinitions>
-              <Label Text="{Binding Name}" />
-              <Switch Grid.Column="1"
-                      IsToggled="{Binding IsVisible}" />
-            </Grid>
-          </ViewCell>
-        </DataTemplate>
-      </esrico:ListPanelView.ItemTemplate>
-    </esrico:ListPanelView>
+    <esrico:TableOfContentsView MapView="{Binding Source={x:Reference mapView}}"
+                                TitleText="Tabla de Contenido"
+                                HorizontalOptions="CenterAndExpand"
+                                IsVisible="{Binding IsLegendVisible}" />
     <StackLayout Grid.Row="1"
+                 Margin="10"
                  Orientation="Horizontal">
       <Button Text="Ver Panel"
               Command="{Binding TOCCommand}" />

@@ -1,4 +1,6 @@
-﻿using Esri.ArcGISRuntime.Mapping;
+﻿using Esri.ArcGISRuntime.Geometry;
+using Esri.ArcGISRuntime.Mapping;
+using EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors;
 using Prism.Commands;
 using Prism.Mvvm;
 using Prism.Navigation;
@@ -33,16 +35,32 @@ namespace BehaviorsSampleApp.ViewModels
       set => SetProperty(ref _layers, value); 
     }
 
+    private IdentifyResults _identifyResults;
+
+    /// <summary>
+    /// 
+    /// </summary>
+    public IdentifyResults IdentifyResults
+    {
+      get { return _identifyResults; }
+      set { SetProperty(ref _identifyResults, value); }
+    }
+
     public ICommand LegendCommand { get; private set; }
 
     public ICommand TOCCommand { get; private set; }
+
+    public ICommand IdentificarCommand { get; private set; }
 
     public MainPageViewModel(INavigationService navigationService)
         : base(navigationService)
     {
       Title = "Main Page";
       IsLegendVisible = false;
-      Map = new Map(Basemap.CreateTopographicVector());
+      Map = new Map(Basemap.CreateTopographicVector())
+      {
+        InitialViewpoint = new Viewpoint(new MapPoint(-74.042492, 4.660555, SpatialReferences.Wgs84), 5000)
+      };
       Map.OperationalLayers.Add(new FeatureLayer(new Uri("https://services1.arcgis.com/7S16A7PAFcmSmqJA/ArcGIS/rest/services/InspeccionPublica/FeatureServer/3")));
       Map.OperationalLayers.Add(new FeatureLayer(new Uri("https://services1.arcgis.com/7S16A7PAFcmSmqJA/ArcGIS/rest/services/InspeccionPublica/FeatureServer/2")));
       Map.OperationalLayers.Add(new FeatureLayer(new Uri("https://services1.arcgis.com/7S16A7PAFcmSmqJA/ArcGIS/rest/services/InspeccionPublica/FeatureServer/1")));
@@ -55,6 +73,14 @@ namespace BehaviorsSampleApp.ViewModels
         IsLegendVisible = !IsLegendVisible;
       });
 
+      IdentificarCommand = new DelegateCommand<IdentifyResults>((o) =>
+      {
+        if (o.GeoElementResults.Count > 0)
+        {
+          IdentifyResults = o;
+          IsLegendVisible = true;
+        }
+      });
     }
 
   }

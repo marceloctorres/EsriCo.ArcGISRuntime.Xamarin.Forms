@@ -13,6 +13,13 @@
 
   <ItemGroup>
     <Compile Remove="UI\IconView.cs" />
+    <Compile Remove="UI\LayerLegendView.xaml.cs" />
+    <Compile Remove="UI\LayerListView.xaml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="UI\LayerLegendView.xaml" />
+    <EmbeddedResource Remove="UI\LayerListView.xaml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -41,6 +48,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="UI\IdentifyView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\LayerListPanelView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="UI\ListPanelView.xaml">

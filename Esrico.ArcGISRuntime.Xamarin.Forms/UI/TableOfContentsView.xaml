@@ -1,140 +1,53 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:root="clr-namespace:EsriCo.ArcGISRuntime.Xamarin.Forms"
-             mc:Ignorable="d"
-             HorizontalOptions="EndAndExpand"
-             VerticalOptions="FillAndExpand"
-             Margin="10"
-             MinimumWidthRequest="400"
-             WidthRequest="350"
-             x:Class="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.TableOfContentsView"
-             x:Name="TOCContentView">
-  <ContentView.Resources>
-    <ResourceDictionary>
-      <ResourceDictionary.MergedDictionaries>
-        <root:ResourceDictionary />
-      </ResourceDictionary.MergedDictionaries>
-    </ResourceDictionary>
-  </ContentView.Resources>
-  <ContentView.Content>
-    <Frame Margin="5"
-           Padding="0"
-           BorderColor="Black"
-           CornerRadius="0"
-           HasShadow="True">
-      <Grid Margin="1"
-            ColumnSpacing="0"
-            RowSpacing="0">
-        <Grid.RowDefinitions>
-          <RowDefinition Height="Auto" />
-          <RowDefinition Height="*" />
-        </Grid.RowDefinitions>
-        <Frame x:Name="TitleBar"
-               Margin="0"
-               Padding="0"
-               HorizontalOptions="FillAndExpand"
-               VerticalOptions="FillAndExpand"
-               BorderColor="{Binding TitleBorderColor,Source={x:Reference TOCContentView}}"
-               BackgroundColor="{Binding TitleBackgroundColor,Source={x:Reference TOCContentView}}"
-               IsVisible="{Binding IsTitleVisible,Source={x:Reference TOCContentView}}"
-               HasShadow="False"
-               CornerRadius="0">
-          <Grid Margin="5"
-                ColumnSpacing="5">
-            <Label x:Name="TitleText"
-                   Margin="0"
-                   Style="{StaticResource TitleLabel}"
-                   Text="{Binding Title,Source={x:Reference TOCContentView}}"
-                   TextColor="{Binding TitleTextColor,Source={x:Reference TOCContentView}}"
-                   HorizontalOptions="Start"
-                   VerticalOptions="CenterAndExpand"
-                   HorizontalTextAlignment="Start"
-                   VerticalTextAlignment="Center"></Label>
-          </Grid>
-        </Frame>
-        <Frame Grid.Row="1"
-               CornerRadius="0"
-               BackgroundColor="White"
-               Padding="0"
-               Margin="0"
-               HorizontalOptions="FillAndExpand"
-               VerticalOptions="FillAndExpand">
-          <Grid>
-            <Grid.RowDefinitions>
-              <RowDefinition Height="*" />
-              <RowDefinition Height="Auto" />
-            </Grid.RowDefinitions>
-            <ListView Margin="5,5,5,10"
-                        IsGroupingEnabled="True"
-                        SeparatorVisibility="Default"
-                        HorizontalOptions="FillAndExpand"
-                        VerticalOptions="Start"
-                        HorizontalScrollBarVisibility="Never"
-                        VerticalScrollBarVisibility="Never"
-                        HasUnevenRows="True"
-                        SelectionMode="None"
-                        ItemsSource="{Binding LayerInfosList,Source={x:Reference TOCContentView}}">
-                <ListView.GroupHeaderTemplate>
-                  <DataTemplate>
-                    <ViewCell>
-                      <Grid Margin="5"
-                            HorizontalOptions="FillAndExpand">
-                        <Grid.ColumnDefinitions>
-                          <ColumnDefinition Width="*" />
-                          <ColumnDefinition Width="Auto" />
-                        </Grid.ColumnDefinitions>
-                        <Label Grid.Column="0"
-                               Text="{Binding GroupLayerInfo.Layer.Name}"
-                               Style="{StaticResource BoldLabel}"
-                               VerticalOptions="Center"></Label>
-                        <Switch Grid.Column="1"
-                                IsToggled="{Binding GroupLayerInfo.Layer.IsVisible,Mode=TwoWay}"
-                                VerticalOptions="Center" />
-                      </Grid>
-                    </ViewCell>
-                  </DataTemplate>
-                </ListView.GroupHeaderTemplate>
-                <ListView.ItemTemplate>
-                  <DataTemplate>
-                    <ViewCell>
-                      <Grid Margin="20,5,5,5"
-                            HorizontalOptions="FillAndExpand">
-                        <Grid.ColumnDefinitions>
-                          <ColumnDefinition Width="0.6*" />
-                          <ColumnDefinition Width="0.4*" />
-                        </Grid.ColumnDefinitions>
-                        <Grid.RowDefinitions>
-                          <RowDefinition Height="Auto" />
-                          <RowDefinition Height="Auto" />
-                        </Grid.RowDefinitions>
-                        <Label  Grid.Column="0"
-                                Style="{StaticResource NormalLabel}"
-                                Text="{Binding Layer.Name}"
-                                IsEnabled="{Binding ParentInfo.Layer.IsVisible}"
-                                VerticalOptions="Center">
-                        </Label>
-                        <Switch Grid.Column="1"
-                                IsToggled="{Binding Layer.IsVisible, Mode=TwoWay}"
-                                IsEnabled="{Binding ParentInfo.Layer.IsVisilbe}"
-                                VerticalOptions="Center" />
-                      </Grid>
-                    </ViewCell>
-                  </DataTemplate>
-                </ListView.ItemTemplate>
-              </ListView>
-            <StackLayout Grid.Row="1"
-                         Orientation="Horizontal"
-                         Spacing="5"
-                         Padding="5">
-              <Button Text="Cerrar" 
-                      Clicked="HideViewClicked" />
-            </StackLayout>
-          </Grid>
-        </Frame>
-      </Grid>
-    </Frame>
-  </ContentView.Content>
-</ContentView>
+<ui:LayerListPanelView xmlns="http://xamarin.com/schemas/2014/forms"
+                       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                       xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+                       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                       xmlns:ui="clr-namespace:EsriCo.ArcGISRuntime.Xamarin.Forms.UI"
+                       mc:Ignorable="d"
+                       x:Class="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.TableOfContentsView"
+                       x:Name="layerview">
+  <ui:LayerListPanelView.ItemTemplate>
+    <DataTemplate>
+      <ViewCell>
+        <Grid Margin="20,5,5,5"
+              HorizontalOptions="FillAndExpand">
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="auto" />
+          </Grid.ColumnDefinitions>
+          <Label  Grid.Column="0"
+                  Style="{StaticResource NormalLabel}"
+                  Text="{Binding Layer.Name}"
+                  IsEnabled="{Binding ParentInfo.Layer.IsVisible}"
+                  VerticalOptions="Center" />
+          <Switch Grid.Column="1"
+                  IsToggled="{Binding Layer.IsVisible, Mode=TwoWay}"
+                  IsEnabled="{Binding ParentInfo.Layer.IsVisilbe}"
+                  VerticalOptions="Center" />
+        </Grid>
+      </ViewCell>
+    </DataTemplate>
+  </ui:LayerListPanelView.ItemTemplate>
+  <ui:LayerListPanelView.GroupHeaderTemplate>
+    <DataTemplate>
+      <ViewCell>
+        <Grid Margin="5"
+              HorizontalOptions="FillAndExpand">
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="auto" />
+          </Grid.ColumnDefinitions>
+          <Label Grid.Column="0"
+                 Text="{Binding GroupLayerInfo.Layer.Name}"
+                 Style="{StaticResource BoldLabel}"
+                 VerticalOptions="Center" />
+          <Switch Grid.Column="1"
+                  IsToggled="{Binding GroupLayerInfo.Layer.IsVisible,Mode=TwoWay}"
+                  HorizontalOptions="EndAndExpand"
+                  VerticalOptions="Center" />
+        </Grid>
+      </ViewCell>
+    </DataTemplate>
+  </ui:LayerListPanelView.GroupHeaderTemplate>
+</ui:LayerListPanelView>
