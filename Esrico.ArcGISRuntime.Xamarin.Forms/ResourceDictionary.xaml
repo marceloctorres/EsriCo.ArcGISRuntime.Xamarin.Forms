@@ -61,5 +61,46 @@
       </Setter.Value>
     </Setter>
   </Style>
-
+  
+  <Style x:Key="TitleBarToolButton"
+         TargetType="Button">
+    <Setter Property="ContentLayout"
+            Value="Left,0" />
+    <Setter Property="HorizontalOptions"
+            Value="CenterAndExpand" />
+    <Setter Property="VerticalOptions"
+            Value="CenterAndExpand" />
+    <Setter Property="BorderWidth"
+            Value="1" />
+    <Setter Property="Margin"
+            Value="0" />
+    <Setter Property="Padding"
+            Value="0" />
+    <Setter Property="BackgroundColor"
+            Value="Transparent" />
+    <Setter Property="HeightRequest">
+      <Setter.Value>
+        <OnPlatform x:TypeArguments="x:Double">
+          <On Platform="iOS"
+              Value="32" />
+          <On Platform="Android"
+              Value="32" />
+          <On Platform="UWP"
+              Value="32" />
+        </OnPlatform>
+      </Setter.Value>
+    </Setter>
+    <Setter Property="WidthRequest">
+      <Setter.Value>
+        <OnPlatform x:TypeArguments="x:Double">
+          <On Platform="iOS"
+              Value="32" />
+          <On Platform="Android"
+              Value="32" />
+          <On Platform="UWP"
+              Value="32" />
+        </OnPlatform>
+      </Setter.Value>
+    </Setter>
+  </Style>
 </ResourceDictionary>

@@ -138,6 +138,42 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
+    public static readonly BindableProperty IsHeaderVisibleProperty = BindableProperty.Create(
+      nameof(IsHeaderVisible),
+      typeof(bool),
+      typeof(PanelView),
+      defaultValue: false);
+
+    /// <summary>
+    /// 
+    /// </summary>
+    public bool IsHeaderVisible
+    {
+      get => (bool)GetValue(IsHeaderVisibleProperty);
+      set => SetValue(IsHeaderVisibleProperty, value);
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    public static readonly BindableProperty IsFooterVisibleProperty = BindableProperty.Create(
+      nameof(IsFooterVisible),
+      typeof(bool),
+      typeof(PanelView),
+      defaultValue: false);
+
+    /// <summary>
+    /// 
+    /// </summary>
+    public bool IsFooterVisible
+    {
+      get => (bool)GetValue(IsFooterVisibleProperty);
+      set => SetValue(IsFooterVisibleProperty, value);
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
     public static readonly BindableProperty FooterContentProperty = BindableProperty.Create(
       nameof(FooterContent),
       typeof(View),
@@ -220,7 +256,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
       nameof(TitleBorderColor),
       typeof(Color),
       typeof(PanelView),
-      defaultValue: Color.Black);
+      defaultValue: null);
 
     /// <summary>
     /// 
@@ -310,7 +346,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
       nameof(BodyBorderColor),
       typeof(Color),
       typeof(PanelView),
-      defaultValue: Color.Black);
+      defaultValue: null);
 
     /// <summary>
     /// 
@@ -364,7 +400,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
       nameof(StatusBorderColor),
       typeof(Color),
       typeof(PanelView),
-      defaultValue: Color.Black);
+      defaultValue: null);
 
     /// <summary>
     /// 

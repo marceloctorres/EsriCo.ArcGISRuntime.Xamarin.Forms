@@ -23,16 +23,34 @@ namespace BehaviorsSampleApp.ViewModels
 
     private bool _visible;
 
-    public bool IsLegendVisible
+    public bool IsIdentifyVisible
     {
       get => _visible;
       set => SetProperty(ref _visible, value);
     }
 
+    private bool _tocVisible;
+
+    public bool IsTOCVisible
+    {
+      get => _tocVisible;
+      set => SetProperty(ref _tocVisible, value);
+    }
+
+    private bool _legendVisible;
+
+    public bool IsLegendVisible
+    {
+      get => _legendVisible;
+      set => SetProperty(ref _legendVisible, value);
+    }
+
+
     private List<Layer> _layers;
-    public List<Layer> Layers { 
-      get => _layers; 
-      set => SetProperty(ref _layers, value); 
+    public List<Layer> Layers
+    {
+      get => _layers;
+      set => SetProperty(ref _layers, value);
     }
 
     private IdentifyResults _identifyResults;
@@ -68,19 +86,22 @@ namespace BehaviorsSampleApp.ViewModels
 
       Layers = Map.OperationalLayers.ToList();
 
-      TOCCommand = new DelegateCommand(() =>
-      {
-        IsLegendVisible = !IsLegendVisible;
-      });
-
-      IdentificarCommand = new DelegateCommand<IdentifyResults>((o) =>
-      {
-        if (o.GeoElementResults.Count > 0)
+      LegendCommand = new DelegateCommand(() =>
         {
-          IdentifyResults = o;
-          IsLegendVisible = true;
-        }
-      });
+          IsLegendVisible = !IsLegendVisible;
+        });
+      TOCCommand = new DelegateCommand(() =>
+        {
+          IsTOCVisible = !IsTOCVisible;
+        });
+      IdentificarCommand = new DelegateCommand<IdentifyResults>((o) =>
+        {
+          if (o.GeoElementResults.Count > 0)
+          {
+            IdentifyResults = o;
+            IsIdentifyVisible = true;
+          }
+        });
     }
 
   }

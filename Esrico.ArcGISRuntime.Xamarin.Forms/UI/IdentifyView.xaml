@@ -7,29 +7,28 @@
                   mc:Ignorable="d"
                   x:Class="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.IdentifyView"
                   x:Name="listview"
+                  IsFooterVisible="True"
                   ItemsSource="{Binding PopupManager.DisplayedFields,Source={x:Reference listview}}">
   <ui:ListPanelView.ItemTemplate>
     <DataTemplate>
-      <ViewCell>
+      <ViewCell IsEnabled="False">
         <Grid Margin="5"
-              HorizontalOptions="FillAndExpand"
-              ColumnSpacing="0"
-              RowSpacing="0">
+              HorizontalOptions="FillAndExpand">
           <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
           </Grid.RowDefinitions>
           <Label Text="{Binding Field.Label, StringFormat='\{0\} :'}"
                  Style="{StaticResource BoldLabel}"
                  Margin="0"
                  HorizontalOptions="FillAndExpand"
-                 VerticalOptions="EndAndExpand"></Label>
+                 VerticalOptions="EndAndExpand" />
           <Label Text="{Binding FormattedValue}"
                  Style="{StaticResource NormalLabel}"
                  Grid.Row="1"
                  Margin="0"
                  HorizontalOptions="FillAndExpand"
-                 VerticalOptions="StartAndExpand"></Label>
+                 VerticalOptions="StartAndExpand" />
         </Grid>
       </ViewCell>
     </DataTemplate>

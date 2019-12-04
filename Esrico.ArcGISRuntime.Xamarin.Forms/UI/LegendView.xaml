@@ -10,7 +10,7 @@
   <ui:LayerListPanelView.ItemTemplate>
     <DataTemplate>
       <ViewCell>
-        <Grid Margin="20,5,5,5"
+        <Grid Margin="5"
               HorizontalOptions="FillAndExpand">
           <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0.6*" />
@@ -35,20 +35,21 @@
   <ui:LayerListPanelView.GroupHeaderTemplate>
     <DataTemplate>
       <ViewCell IsEnabled="False">
-        <Grid>
+        <Grid Margin="5"
+              HorizontalOptions="FillAndExpand"> 
           <Grid.RowDefinitions>
             <RowDefinition Height="auto" />
             <RowDefinition Height="auto" />
           </Grid.RowDefinitions>
-          <Label Grid.Column="0"
-                 Grid.Row="0"
+          <Label Grid.Row="0"
+                 Margin="0"
                  Text="{Binding GroupLayerInfo.Layer.Name}"
                  Style="{StaticResource BoldLabel}"
                  VerticalOptions="Center" />
           <ListView x:Name="innerListView"
                     Grid.Row="1"
-                    Grid.ColumnSpan="2"
-                    Margin="1"
+                    Margin="0"
+                    SeparatorVisibility="None"
                     HasUnevenRows="True"
                     HorizontalScrollBarVisibility="Never"
                     VerticalScrollBarVisibility="Never"
@@ -57,15 +58,27 @@
                     ItemsSource="{Binding GroupLayerInfo.LegendImageInfos}">
             <ListView.ItemTemplate>
               <DataTemplate>
-                <ViewCell IsEnabled="False">
-                  <StackLayout Orientation="Horizontal">
+                <ViewCell IsEnabled="False"
+                          Height="25">
+                  <Grid ColumnSpacing="5"
+                        HorizontalOptions="FillAndExpand">
+                    <Grid.ColumnDefinitions>
+                      <ColumnDefinition Width="auto" />
+                      <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
                     <Image Source="{Binding ImageSource}"
-                           Margin="5"
+                           Margin="1"
                            BackgroundColor="Transparent"
+                           HorizontalOptions="EndAndExpand"
                            VerticalOptions="CenterAndExpand" />
                     <Label Grid.Column="1"
-                           Text="{Binding Name}" />
-                  </StackLayout>
+                           Style="{StaticResource NormalLabel}"
+                           Text="{Binding Name}"
+                           Margin="1"
+                           HorizontalOptions="StartAndExpand"
+                           VerticalOptions="CenterAndExpand"
+                           VerticalTextAlignment="Center" />
+                  </Grid>
                 </ViewCell>
               </DataTemplate>
             </ListView.ItemTemplate>

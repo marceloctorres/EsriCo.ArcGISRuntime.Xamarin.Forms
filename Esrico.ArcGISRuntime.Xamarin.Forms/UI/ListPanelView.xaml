@@ -10,8 +10,8 @@
   <ui:PanelView.BodyContent>
     <Grid BindingContext="{Binding ListBindingContext,Source={x:Reference panelview}}"
           BindingContextChanged="ListView_BindingContextChanged">
-      <ListView Margin="5,5,5,10"
-                SeparatorVisibility="Default"
+      <ListView Margin="5"
+                SeparatorVisibility="None"
                 HorizontalOptions="FillAndExpand"
                 HorizontalScrollBarVisibility="Never"
                 VerticalScrollBarVisibility="Never"

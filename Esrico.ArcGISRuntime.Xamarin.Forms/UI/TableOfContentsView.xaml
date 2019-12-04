@@ -10,7 +10,7 @@
   <ui:LayerListPanelView.ItemTemplate>
     <DataTemplate>
       <ViewCell>
-        <Grid Margin="20,5,5,5"
+        <Grid Margin="5"
               HorizontalOptions="FillAndExpand">
           <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
@@ -22,8 +22,9 @@
                   IsEnabled="{Binding ParentInfo.Layer.IsVisible}"
                   VerticalOptions="Center" />
           <Switch Grid.Column="1"
-                  IsToggled="{Binding Layer.IsVisible, Mode=TwoWay}"
+                  IsToggled="{Binding Layer.IsVisible,Mode=TwoWay}"
                   IsEnabled="{Binding ParentInfo.Layer.IsVisilbe}"
+                  HorizontalOptions="EndAndExpand"
                   VerticalOptions="Center" />
         </Grid>
       </ViewCell>
@@ -31,7 +32,7 @@
   </ui:LayerListPanelView.ItemTemplate>
   <ui:LayerListPanelView.GroupHeaderTemplate>
     <DataTemplate>
-      <ViewCell>
+      <ViewCell IsEnabled="False">
         <Grid Margin="5"
               HorizontalOptions="FillAndExpand">
           <Grid.ColumnDefinitions>

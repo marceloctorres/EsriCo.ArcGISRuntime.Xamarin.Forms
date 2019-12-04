@@ -20,7 +20,7 @@
     </esriUI:MapView>
     <esrico:IdentifyView IdentifyResults="{Binding IdentifyResults}"
                          HorizontalOptions="StartAndExpand"
-                         IsVisible="{Binding IsLegendVisible}">
+                         IsVisible="{Binding IsIdentifyVisible}">
     </esrico:IdentifyView>
     <esrico:LegendView MapView="{Binding Source={x:Reference mapView}}"
                        IsStatusVisible="False"
@@ -29,14 +29,14 @@
     <esrico:TableOfContentsView MapView="{Binding Source={x:Reference mapView}}"
                                 TitleText="Tabla de Contenido"
                                 HorizontalOptions="CenterAndExpand"
-                                IsVisible="{Binding IsLegendVisible}" />
+                                IsVisible="{Binding IsTOCVisible}" />
     <StackLayout Grid.Row="1"
                  Margin="10"
                  Orientation="Horizontal">
-      <Button Text="Ver Panel"
+      <Button Text="Tabla de Contenido"
               Command="{Binding TOCCommand}" />
-      <!--<Button Text="Leyenda"
-              Command="{Binding LegendCommand}" />-->
+      <Button Text="Leyenda"
+              Command="{Binding LegendCommand}" />
     </StackLayout>
   </Grid>
 </ContentPage>

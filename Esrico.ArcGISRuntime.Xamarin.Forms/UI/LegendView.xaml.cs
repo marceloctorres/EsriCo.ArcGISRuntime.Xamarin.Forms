@@ -15,9 +15,11 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
   [XamlCompilation(XamlCompilationOptions.Compile)]
   public partial class LegendView : LayerListPanelView
   {
+    public double ItemRenderHeight { get; set; }
 
     public LegendView()
     {
+      ItemRenderHeight = 25;
       InitializeComponent();
     }
 
@@ -26,7 +28,8 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
       if (sender is ListView listView)
       {
         var list = (List<LegendImageInfo>)listView.ItemsSource;
-        var height = list.Count * 32;
+        var template = listView.ItemTemplate;
+        var height = list.Count * ItemRenderHeight;
         listView.HeightRequest = height;
       }
     }
