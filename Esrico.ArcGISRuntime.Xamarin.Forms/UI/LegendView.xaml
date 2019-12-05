@@ -9,7 +9,7 @@
                        x:Class="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.LegendView">
   <ui:LayerListPanelView.ItemTemplate>
     <DataTemplate>
-      <ViewCell>
+      <ViewCell IsEnabled="True">
         <Grid Margin="5"
               HorizontalOptions="FillAndExpand">
           <Grid.ColumnDefinitions>
@@ -34,7 +34,7 @@
   </ui:LayerListPanelView.ItemTemplate>
   <ui:LayerListPanelView.GroupHeaderTemplate>
     <DataTemplate>
-      <ViewCell IsEnabled="False">
+      <ViewCell IsEnabled="True">
         <Grid Margin="5"
               HorizontalOptions="FillAndExpand"> 
           <Grid.RowDefinitions>

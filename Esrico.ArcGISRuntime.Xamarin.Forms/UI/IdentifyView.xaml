@@ -11,7 +11,7 @@
                   ItemsSource="{Binding PopupManager.DisplayedFields,Source={x:Reference listview}}">
   <ui:ListPanelView.ItemTemplate>
     <DataTemplate>
-      <ViewCell IsEnabled="False">
+      <ViewCell IsEnabled="True">
         <Grid Margin="5"
               HorizontalOptions="FillAndExpand">
           <Grid.RowDefinitions>
