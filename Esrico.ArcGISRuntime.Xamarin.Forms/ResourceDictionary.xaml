@@ -71,7 +71,7 @@
     <Setter Property="VerticalOptions"
             Value="CenterAndExpand" />
     <Setter Property="BorderWidth"
-            Value="1" />
+            Value="0" />
     <Setter Property="Margin"
             Value="0" />
     <Setter Property="Padding"
