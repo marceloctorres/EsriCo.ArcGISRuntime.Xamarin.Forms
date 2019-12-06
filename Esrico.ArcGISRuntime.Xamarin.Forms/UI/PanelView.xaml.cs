@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Input;
+
 using EsriCo.ArcGISRuntime.Xamarin.Forms.Extensions;
-using Prism.Commands;
+
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -530,33 +525,23 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     {
       if (Parent is View parentView)
       {
-
         switch (e.StatusType)
         {
-          case GestureStatus.Started:
-            break;
-          case GestureStatus.Canceled:
-            break;
           case GestureStatus.Running:
             var bounds = Bounds;
             var parentBounds = parentView.Bounds;
-            var x1 = x + e.TotalX + bounds.X;
-            var y1 = y + e.TotalY + bounds.Y;
-            var x2 = x1 + bounds.Width;
-            var y2 = y1 + bounds.Height;
 
-            Content.TranslationX = x1 >= 0 ?
-              x2 <= parentBounds.Width ?
+            Content.TranslationX = x + e.TotalX + bounds.X >= 0 ?
+              x + e.TotalX + bounds.X + bounds.Width <= parentBounds.Width ?
                 x + e.TotalX :
                 parentBounds.Width + parentBounds.X - bounds.Width - bounds.X :
               parentBounds.X - bounds.X;
-            Content.TranslationY = y1 >= 0 ?
-              y2 <= parentBounds.Height ?
+            Content.TranslationY = y + e.TotalY + bounds.Y >= 0 ?
+              y + e.TotalY + bounds.Y + bounds.Height <= parentBounds.Height ?
                 y + e.TotalY :
                 parentBounds.Height + parentBounds.Y - bounds.Height - bounds.Y :
               parentBounds.Y - bounds.Y;
             break;
-
           case GestureStatus.Completed:
             x = Content.TranslationX;
             y = Content.TranslationY;
