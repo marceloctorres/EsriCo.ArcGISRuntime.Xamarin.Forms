@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-
+using System.Threading.Tasks;
 using Esri.ArcGISRuntime.Mapping;
 
 using Prism.Mvvm;
@@ -75,7 +75,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Model
     /// 
     /// </summary>
     /// <param name="legendInfos"></param>
-    public async void SetLegendInfos(IEnumerable<LegendInfo> legendInfos)
+    public async Task SetLegendInfos(IEnumerable<LegendInfo> legendInfos)
     {
       if (LegendImageInfos == null)
       {

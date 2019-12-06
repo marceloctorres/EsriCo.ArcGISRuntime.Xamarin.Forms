@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
+
 using Esri.ArcGISRuntime.Mapping;
 using Esri.ArcGISRuntime.Xamarin.Forms;
+
 using EsriCo.ArcGISRuntime.Xamarin.Forms.Model;
+
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -65,7 +66,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// 
     /// </summary>
     private Map Map { get; set; }
-    
+
     /// <summary>
     /// 
     /// </summary>
@@ -92,6 +93,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     {
       Map = map;
       var layerInfos = await Device.InvokeOnMainThreadAsync(() => GetLayerInfos());
+      //var layerInfos = await GetLayerInfos();
       LayerInfosList = layerInfos != null ?
         new ObservableCollection<LayerInfos>(layerInfos) :
         null;
@@ -103,51 +105,47 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <returns></returns>
     private async Task<List<LayerInfos>> GetLayerInfos()
     {
-      if (Map == null)
-      {
-        return null;
-      }
-      else
+      if (Map != null)
       {
         var listLayerInfos = new List<LayerInfos>();
         Map.Loaded += (o, e) =>
-        {
-          Map.OperationalLayers
-            .ToList()
-            .ForEach(ol =>
-            {
-              ol.LoadAsync();
-              var layerInfos = new LayerInfos()
-              {
-                GroupLayerInfo = new LayerInfo { Layer = ol }
-              };
-              ol.SublayerContents
-              .ToList()
-              .ForEach(sl =>
-              {
-                layerInfos.SubLayerInfos.Add(new LayerInfo()
-                {
-                  ParentInfo = layerInfos.GroupLayerInfo,
-                  Layer = sl as Layer
-                });
-              });
-              listLayerInfos.Add(layerInfos);
-            });
-        };
-        await Map.LoadAsync();
-        listLayerInfos
-          .ForEach(async li =>
           {
-            var legendInfos = await li.GroupLayerInfo.Layer.GetLegendInfosAsync();
-            li.GroupLayerInfo.SetLegendInfos(legendInfos);
-            li.SubLayerInfos
-              .ForEach(async sli =>
-              {
-                var subLegendInfos = await sli.Layer.GetLegendInfosAsync();
-                sli.SetLegendInfos(subLegendInfos);
+            Map.OperationalLayers
+              .ToList()
+              .ForEach(async ol =>
+                {
+                var layerInfos = new LayerInfos()
+                  {
+                    GroupLayerInfo = new LayerInfo { Layer = ol }
+                  };
+                  ol.SublayerContents
+                  .ToList()
+                  .ForEach(sl =>
+                    {
+                      layerInfos.SubLayerInfos.Add(new LayerInfo()
+                      {
+                        ParentInfo = layerInfos.GroupLayerInfo,
+                        Layer = sl as Layer
+                      });
+                    });
+                  listLayerInfos.Add(layerInfos);
+
+                  var legendInfos = await layerInfos.GroupLayerInfo.Layer.GetLegendInfosAsync();
+                  await layerInfos.GroupLayerInfo.SetLegendInfos(legendInfos);
+                  layerInfos.SubLayerInfos
+                    .ForEach(async sli =>
+                      {
+                        var subLegendInfos = await sli.Layer.GetLegendInfosAsync();
+                        await sli.SetLegendInfos(subLegendInfos);
+                      });
               });
-          });
+          };
+        await Map.LoadAsync();
         return listLayerInfos;
+      }
+      else
+      {
+        return null;
       }
     }
 

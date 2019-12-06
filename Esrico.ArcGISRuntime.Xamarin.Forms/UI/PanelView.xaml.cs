@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,6 +15,24 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
   [XamlCompilation(XamlCompilationOptions.Compile)]
   public partial class PanelView : ContentView
   {
+    /// <summary>
+    /// 
+    /// </summary>
+    public static readonly BindableProperty IsManagedProperty = BindableProperty.Create(
+      nameof(IsManaged),
+      typeof(bool),
+      typeof(PanelView), 
+      defaultValue: true);
+
+    /// <summary>
+    /// 
+    /// </summary>
+    public bool IsManaged
+    {
+      get => (bool)GetValue(IsManagedProperty);
+      set => SetValue(IsManagedProperty, value);
+    }
+
     /// <summary>
     /// 
     /// </summary>
@@ -94,6 +113,12 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     private void SetVisible(bool visible)
     {
       base.IsVisible = visible;
+      Content.TranslationX = 0;
+      Content.TranslationY = 0;
+      if(visible && IsManaged)
+      {
+        MessagingCenter.Send<PanelView>(this, "IsVisible");
+      }
     }
 
     /// <summary>
@@ -472,6 +497,16 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
       InitializeComponent();
       base.IsVisible = false;
       CloseButtonImage = ImageSource.FromStream(() => this.GetType().Assembly.GetStreamEmbeddedResource(@"ic_close"));
+      if (IsManaged)
+      {
+        MessagingCenter.Subscribe<PanelView>(this, "IsVisible", (panel) =>
+        {
+          if (!ReferenceEquals(this, panel) && IsManaged && IsVisible && panel.IsVisible)
+          {
+            IsVisible = false;
+          }
+        });
+      }
     }
 
     /// <summary>
@@ -482,6 +517,52 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     private void OnCloseButtonClicked(object sender, EventArgs e)
     {
       IsVisible = false;
+    }
+
+    double x, y;
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    private void OnPanUpdated(object sender, PanUpdatedEventArgs e)
+    {
+      if (Parent is View parentView)
+      {
+
+        switch (e.StatusType)
+        {
+          case GestureStatus.Started:
+            break;
+          case GestureStatus.Canceled:
+            break;
+          case GestureStatus.Running:
+            var bounds = Bounds;
+            var parentBounds = parentView.Bounds;
+            var x1 = x + e.TotalX + bounds.X;
+            var y1 = y + e.TotalY + bounds.Y;
+            var x2 = x1 + bounds.Width;
+            var y2 = y1 + bounds.Height;
+
+            Content.TranslationX = x1 >= 0 ?
+              x2 <= parentBounds.Width ?
+                x + e.TotalX :
+                parentBounds.Width + parentBounds.X - bounds.Width - bounds.X :
+              parentBounds.X - bounds.X;
+            Content.TranslationY = y1 >= 0 ?
+              y2 <= parentBounds.Height ?
+                y + e.TotalY :
+                parentBounds.Height + parentBounds.Y - bounds.Height - bounds.Y :
+              parentBounds.Y - bounds.Y;
+            break;
+
+          case GestureStatus.Completed:
+            x = Content.TranslationX;
+            y = Content.TranslationY;
+            break;
+        }
+      }
     }
   }
 }

@@ -12,6 +12,9 @@
              VerticalOptions="FillAndExpand"
              MinimumWidthRequest="300"
              WidthRequest="350">
+  <ContentView.GestureRecognizers>
+    <PanGestureRecognizer PanUpdated="OnPanUpdated" />
+  </ContentView.GestureRecognizers>
   <ContentView.Resources>
     <ResourceDictionary>
       <ResourceDictionary.MergedDictionaries>

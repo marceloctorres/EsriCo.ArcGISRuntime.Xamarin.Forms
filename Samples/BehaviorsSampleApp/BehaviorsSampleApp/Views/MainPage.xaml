@@ -11,6 +11,7 @@
       <RowDefinition Height="*" />
       <RowDefinition Height="Auto" />
     </Grid.RowDefinitions>
+    <Grid IsClippedToBounds="True">
     <esriUI:MapView x:Name="mapView"
                     Map="{Binding Map}">
       <esriUI:MapView.Behaviors>
@@ -20,6 +21,7 @@
     </esriUI:MapView>
     <esrico:IdentifyView IdentifyResults="{Binding IdentifyResults}"
                          HorizontalOptions="StartAndExpand"
+                         IsManaged="False"
                          IsVisible="{Binding IsIdentifyVisible}">
     </esrico:IdentifyView>
     <esrico:LegendView MapView="{Binding Source={x:Reference mapView}}"
@@ -30,6 +32,7 @@
                                 TitleText="Tabla de Contenido"
                                 HorizontalOptions="CenterAndExpand"
                                 IsVisible="{Binding IsTOCVisible}" />
+    </Grid>
     <StackLayout Grid.Row="1"
                  Margin="10"
                  Orientation="Horizontal">
