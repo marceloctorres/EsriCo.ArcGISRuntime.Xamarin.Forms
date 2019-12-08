@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:root="clr-namespace:EsriCo.ArcGISRuntime.Xamarin.Forms"
+             mc:Ignorable="d"
+             x:Name="view"
+             HorizontalOptions="End"
+             VerticalOptions="Start"
+             x:Class="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.NavigationBarView">
+  <ContentView.Resources>
+    <ResourceDictionary>
+      <ResourceDictionary.MergedDictionaries>
+        <root:ResourceDictionary />
+      </ResourceDictionary.MergedDictionaries>
+    </ResourceDictionary>
+  </ContentView.Resources>
+  <ContentView.Content>
+    <Grid RowSpacing="0"
+          ColumnSpacing="0"
+          Margin="10"
+          Padding="0">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="*" />
+        <RowDefinition Height="*" />
+        <RowDefinition Height="*" />
+      </Grid.RowDefinitions>
+      <Button Clicked="ZoomInButtonClicked"
+              Style="{StaticResource ToolButton}"
+              Image="{Binding ZoomInButtonImage,Source={x:Reference view}}"/>
+      <Button Grid.Row="1"
+              Clicked="HomeButtonClicked"
+              Style="{StaticResource ToolButton}"
+              Image="{Binding HomeButtonImage,Source={x:Reference view}}"/>
+      <Button Grid.Row="2"
+              Clicked="ZoomOutButtonClicked"
+              Style="{StaticResource ToolButton}"
+              Image="{Binding ZoomOutButtonImage,Source={x:Reference view}}"/>
+    </Grid>
+  </ContentView.Content>
+</ContentView>

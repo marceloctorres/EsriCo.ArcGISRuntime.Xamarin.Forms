@@ -12,30 +12,33 @@
       <RowDefinition Height="Auto" />
     </Grid.RowDefinitions>
     <Grid IsClippedToBounds="True">
-    <esriUI:MapView x:Name="mapView"
-                    Map="{Binding Map}">
-      <esriUI:MapView.Behaviors>
-        <bh:IdentifyBehavior Layers="{Binding Layers}"
-                             Command="{Binding IdentificarCommand}" />
-      </esriUI:MapView.Behaviors>
-    </esriUI:MapView>
-    <esrico:IdentifyView IdentifyResults="{Binding IdentifyResults}"
-                         HorizontalOptions="StartAndExpand"
-                         IsManaged="False"
-                         IsVisible="{Binding IsIdentifyVisible}">
-    </esrico:IdentifyView>
-    <esrico:LegendView MapView="{Binding Source={x:Reference mapView}}"
-                       IsStatusVisible="False"
-                       TitleText="Leyenda"
-                       IsVisible="{Binding IsLegendVisible}" />
-    <esrico:TableOfContentsView MapView="{Binding Source={x:Reference mapView}}"
-                                TitleText="Tabla de Contenido"
-                                HorizontalOptions="CenterAndExpand"
-                                IsVisible="{Binding IsTOCVisible}" />
+      <esriUI:MapView x:Name="mapView"
+                      Map="{Binding Map}">
+        <esriUI:MapView.Behaviors>
+          <bh:IdentifyBehavior Layers="{Binding Layers}"
+                               Command="{Binding IdentificarCommand}" />
+        </esriUI:MapView.Behaviors>
+      </esriUI:MapView>
+      <esrico:NavigationBarView MapView="{Binding Source={x:Reference mapView}}" />
+      <esrico:IdentifyView IdentifyResults="{Binding IdentifyResults}"
+                           HorizontalOptions="StartAndExpand"
+                           IsManaged="False"
+                           IsVisible="{Binding IsIdentifyVisible}" />
+      <esrico:LegendView MapView="{Binding Source={x:Reference mapView}}"
+                         IsStatusVisible="False"
+                         TitleText="Leyenda"
+                         IsVisible="{Binding IsLegendVisible}" />
+      <esrico:TableOfContentsView MapView="{Binding Source={x:Reference mapView}}"
+                                  TitleText="Tabla de Contenido"
+                                  HorizontalOptions="CenterAndExpand"
+                                  IsVisible="{Binding IsTOCVisible}" />
+      <esrico:DrawingStatusView MapView="{Binding Source={x:Reference mapView}}" />
     </Grid>
     <StackLayout Grid.Row="1"
                  Margin="10"
                  Orientation="Horizontal">
+      <Button Text="Cargar Mapa"
+              Command="{Binding LoadMapCommand}" />
       <Button Text="Tabla de Contenido"
               Command="{Binding TOCCommand}" />
       <Button Text="Leyenda"

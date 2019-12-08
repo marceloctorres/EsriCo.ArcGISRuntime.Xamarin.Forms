@@ -103,4 +103,47 @@
       </Setter.Value>
     </Setter>
   </Style>
+  <Style x:Key="ToolButton"
+         TargetType="Button">
+    <Setter Property="ContentLayout"
+            Value="Left,0" />
+    <Setter Property="HorizontalOptions"
+            Value="Center" />
+    <Setter Property="VerticalOptions"
+            Value="Center" />
+    <Setter Property="BorderWidth"
+            Value="1" />
+    <Setter Property="BorderColor"
+            Value="Black" />
+    <Setter Property="Margin"
+            Value="0" />
+    <Setter Property="Padding"
+            Value="0" />
+    <Setter Property="BackgroundColor"
+            Value="Transparent" />
+    <Setter Property="HeightRequest">
+      <Setter.Value>
+        <OnPlatform x:TypeArguments="x:Double">
+          <On Platform="iOS"
+              Value="35" />
+          <On Platform="Android"
+              Value="35" />
+          <On Platform="UWP"
+              Value="38" />
+        </OnPlatform>
+      </Setter.Value>
+    </Setter>
+    <Setter Property="WidthRequest">
+      <Setter.Value>
+        <OnPlatform x:TypeArguments="x:Double">
+          <On Platform="iOS"
+              Value="35" />
+          <On Platform="Android"
+              Value="35" />
+          <On Platform="UWP"
+              Value="38" />
+        </OnPlatform>
+      </Setter.Value>
+    </Setter>
+  </Style>
 </ResourceDictionary>

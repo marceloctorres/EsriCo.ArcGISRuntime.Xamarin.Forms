@@ -26,6 +26,9 @@
   <ItemGroup>
     <None Remove="Icons\close.svg" />
     <None Remove="Icons\ic_close.png" />
+    <None Remove="Icons\ic_home.png" />
+    <None Remove="Icons\ic_minus.png" />
+    <None Remove="Icons\ic_plus.png" />
     <None Remove="Icons\next.svg" />
     <None Remove="Icons\prev.svg" />
   </ItemGroup>
@@ -33,19 +36,25 @@
   <ItemGroup>
     <EmbeddedResource Include="Icons\close.svg" />
     <EmbeddedResource Include="Icons\ic_close.png" />
+    <EmbeddedResource Include="Icons\ic_home.png" />
+    <EmbeddedResource Include="Icons\ic_minus.png" />
+    <EmbeddedResource Include="Icons\ic_plus.png" />
     <EmbeddedResource Include="Icons\prev.svg" />
     <EmbeddedResource Include="Icons\next.svg" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Esri.ArcGISRuntime.Xamarin.Forms" Version="100.6.0" />
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
-    <PackageReference Include="Xamarin.Forms" Version="4.3.0.947036" />
-    <PackageReference Include="Prism.Forms" Version="7.2.0.1367" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="Xamarin.Forms" Version="4.3.0.991221" />
+    <PackageReference Include="Prism.Forms" Version="7.2.0.1422" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Update="ResourceDictionary.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\DrawingStatusView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="UI\IdentifyView.xaml">
@@ -55,6 +64,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="UI\ListPanelView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\NavigationBarView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="UI\PanelView.xaml">

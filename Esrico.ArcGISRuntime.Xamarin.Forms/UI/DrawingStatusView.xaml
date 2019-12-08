@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Name="view"
+             x:Class="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawingStatusView"
+             HorizontalOptions="FillAndExpand">
+  <ContentView.Content>
+    <StackLayout x:Name="Indicador"
+                 Margin="0"
+                 Padding="5"
+                 HorizontalOptions="FillAndExpand"
+                 VerticalOptions="CenterAndExpand">
+      <ActivityIndicator IsRunning="{Binding IsVisible, Source={x:Reference view}}"
+                         IsVisible="{Binding IsVisible, Source={x:Reference view}}" />
+    </StackLayout>
+  </ContentView.Content>
+</ContentView>
