@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace EsriCo.ArcGISRuntime.Xamarin.Forms {
+namespace BehaviorsSampleApp.Resx {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources", typeof(AppResources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("BehaviorsSampleApp.Resx.AppResources", typeof(AppResources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,65 +61,92 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Cancel.
+        ///   Busca una cadena traducida similar a Was Cancelled!!!.
         /// </summary>
-        public static string CancelButtonText {
+        public static string CancelLoginText {
             get {
-                return ResourceManager.GetString("CancelButtonText", resourceCulture);
+                return ResourceManager.GetString("CancelLoginText", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Hide Password:.
+        ///   Busca una cadena traducida similar a Close.
         /// </summary>
-        public static string HidePasswordLabelText {
+        public static string CloseButtonText {
             get {
-                return ResourceManager.GetString("HidePasswordLabelText", resourceCulture);
+                return ResourceManager.GetString("CloseButtonText", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Log In.
+        ///   Busca una cadena traducida similar a Sample App.
         /// </summary>
-        public static string LogInButtonText {
+        public static string DialogTitle {
             get {
-                return ResourceManager.GetString("LogInButtonText", resourceCulture);
+                return ResourceManager.GetString("DialogTitle", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Log In.
+        ///   Busca una cadena traducida similar a Legend.
         /// </summary>
-        public static string LoginLabelText {
+        public static string LegendButtonText {
             get {
-                return ResourceManager.GetString("LoginLabelText", resourceCulture);
+                return ResourceManager.GetString("LegendButtonText", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Password:.
+        ///   Busca una cadena traducida similar a Legend.
         /// </summary>
-        public static string PasswordLabelText {
+        public static string LegendPanelTitleText {
             get {
-                return ResourceManager.GetString("PasswordLabelText", resourceCulture);
+                return ResourceManager.GetString("LegendPanelTitleText", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Processing....
+        ///   Busca una cadena traducida similar a Load Map....
         /// </summary>
-        public static string ProcessingMessageLabelText {
+        public static string LoadMapButtonText {
             get {
-                return ResourceManager.GetString("ProcessingMessageLabelText", resourceCulture);
+                return ResourceManager.GetString("LoadMapButtonText", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Username:.
+        ///   Busca una cadena traducida similar a Map Page.
         /// </summary>
-        public static string UsernameLabelText {
+        public static string MapPageTitle {
             get {
-                return ResourceManager.GetString("UsernameLabelText", resourceCulture);
+                return ResourceManager.GetString("MapPageTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Working....
+        /// </summary>
+        public static string ProcessingMessageText {
+            get {
+                return ResourceManager.GetString("ProcessingMessageText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Table of Content.
+        /// </summary>
+        public static string TOCButtonText {
+            get {
+                return ResourceManager.GetString("TOCButtonText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Table of Content.
+        /// </summary>
+        public static string TOCPanelTitleText {
+            get {
+                return ResourceManager.GetString("TOCPanelTitleText", resourceCulture);
             }
         }
     }

@@ -48,25 +48,6 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    public static readonly BindableProperty CloseButtonLabelProperty = BindableProperty.Create(
-      nameof(CloseButtonLabel),
-      typeof(string),
-      typeof(PanelView),
-      defaultValue: "Close");
-
-    /// <summary>
-    /// 
-    /// </summary>
-    public string CloseButtonLabel
-    {
-      get => (string)GetValue(CloseButtonLabelProperty);
-      set => SetValue(CloseButtonLabelProperty, value);
-    }
-
-
-    /// <summary>
-    /// 
-    /// </summary>
     public new static readonly BindableProperty IsVisibleProperty = BindableProperty.Create(
       nameof(IsVisible),
       typeof(bool),

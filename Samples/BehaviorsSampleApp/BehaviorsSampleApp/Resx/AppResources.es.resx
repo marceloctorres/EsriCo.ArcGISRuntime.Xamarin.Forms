@@ -117,26 +117,34 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="CancelButtonText" xml:space="preserve">
-    <value>Cancel</value>
+  <data name="CancelLoginText" xml:space="preserve">
+    <value>Se canceló!!!</value>
   </data>
-  <data name="HidePasswordLabelText" xml:space="preserve">
-    <value>Hide Password:</value>
+  <data name="CloseButtonText" xml:space="preserve">
+    <value>Cerrar</value>
   </data>
-  <data name="LogInButtonText" xml:space="preserve">
-    <value>Log In</value>
+  <data name="DialogTitle" xml:space="preserve">
+    <value>Sample App</value>
   </data>
-  <data name="LoginLabelText" xml:space="preserve">
-    <value>Log In</value>
-    <comment>LogInLabel</comment>
+  <data name="LegendButtonText" xml:space="preserve">
+    <value>Leyenda</value>
   </data>
-  <data name="PasswordLabelText" xml:space="preserve">
-    <value>Password:</value>
+  <data name="LegendPanelTitleText" xml:space="preserve">
+    <value>Leyenda</value>
   </data>
-  <data name="ProcessingMessageLabelText" xml:space="preserve">
-    <value>Processing...</value>
+  <data name="LoadMapButtonText" xml:space="preserve">
+    <value>Cargar Mapa...</value>
   </data>
-  <data name="UsernameLabelText" xml:space="preserve">
-    <value>Username:</value>
+  <data name="MapPageTitle" xml:space="preserve">
+    <value>Página del Mapa</value>
+  </data>
+  <data name="ProcessingMessageText" xml:space="preserve">
+    <value>Trabajando...</value>
+  </data>
+  <data name="TOCButtonText" xml:space="preserve">
+    <value>Tabla de Contenido</value>
+  </data>
+  <data name="TOCPanelTitleText" xml:space="preserve">
+    <value>Tabla de Contenido</value>
   </data>
 </root>

@@ -52,7 +52,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
       try
       {
         InitializeComponent();
-        ProcessingMessage = "Processing";
+        ProcessingMessage = AppResources.ProcessingMessageLabelText;
       }
       catch (Exception ex)
       {

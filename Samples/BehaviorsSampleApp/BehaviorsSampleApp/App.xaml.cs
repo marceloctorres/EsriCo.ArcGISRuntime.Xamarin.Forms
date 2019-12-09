@@ -4,6 +4,8 @@ using BehaviorsSampleApp.ViewModels;
 using BehaviorsSampleApp.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using System.Globalization;
+using System;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace BehaviorsSampleApp

@@ -98,7 +98,6 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
       try
       {
         InitializeComponent();
-        var texto = AppResources.LoginLabelText;
         IsPasswordHidden = true;
       }
       catch (Exception ex)

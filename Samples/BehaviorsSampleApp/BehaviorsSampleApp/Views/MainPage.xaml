@@ -2,11 +2,12 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="http://prismlibrary.com"
+             xmlns:resx="clr-namespace:BehaviorsSampleApp.Resx"
              xmlns:esriUI="clr-namespace:Esri.ArcGISRuntime.Xamarin.Forms;assembly=Esri.ArcGISRuntime.Xamarin.Forms"
              xmlns:esrico="clr-namespace:EsriCo.ArcGISRuntime.Xamarin.Forms.UI;assembly=Esrico.ArcGISRuntime.Xamarin.Forms"
              xmlns:bh="clr-namespace:EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors;assembly=EsriCo.ArcGISRuntime.Xamarin.Forms"
              x:Class="BehaviorsSampleApp.Views.MainPage"
-             Title="{Binding Title}">
+             Title="{x:Static resx:AppResources.MapPageTitle}">
   <Grid>
     <Grid.RowDefinitions>
       <RowDefinition Height="*" />
@@ -33,7 +34,7 @@
                         CancelCommand="{Binding CancelCommand}" />
       <esrico:NavigationBarView MapView="{Binding Source={x:Reference mapView}}" />
       <esrico:ProcessingView x:Name="processingview"
-                             ProcessingMessage="Trabajando"
+                             ProcessingMessage="{x:Static resx:AppResources.ProcessingMessageText}"
                              IsProcessing="{Binding IsProcessing}" />
       <esrico:IdentifyView IdentifyResults="{Binding IdentifyResults}"
                            HorizontalOptions="StartAndExpand"
@@ -41,10 +42,10 @@
                            IsVisible="{Binding IsIdentifyVisible}" />
       <esrico:LegendView MapView="{Binding Source={x:Reference mapView}}"
                          IsStatusVisible="False"
-                         TitleText="Leyenda"
+                         TitleText="{x:Static resx:AppResources.LegendPanelTitleText}"
                          IsVisible="{Binding IsLegendVisible}" />
       <esrico:TableOfContentsView MapView="{Binding Source={x:Reference mapView}}"
-                                  TitleText="Tabla de Contenido"
+                                  TitleText="{x:Static resx:AppResources.TOCPanelTitleText}"
                                   HorizontalOptions="CenterAndExpand"
                                   IsVisible="{Binding IsTOCVisible}" />
       <esrico:DrawingStatusView MapView="{Binding Source={x:Reference mapView}}" />
@@ -53,18 +54,12 @@
     <StackLayout Grid.Row="1"
                  Margin="10"
                  Orientation="Horizontal">
-      <Button Text="Cargar Mapa"
+      <Button Text="{x:Static resx:AppResources.LoadMapButtonText}"
               Command="{Binding LoadMapCommand}" />
-      <Button Text="Tabla de Contenido"
+      <Button Text="{x:Static resx:AppResources.TOCButtonText}"
               Command="{Binding TOCCommand}" />
-      <Button Text="Leyenda"
+      <Button Text="{x:Static resx:AppResources.LegendButtonText}"
               Command="{Binding LegendCommand}" />
-      <Label Text="{Binding IsProcessing, Source={x:Reference processingview}}"
-             VerticalOptions="CenterAndExpand" />
-      <Label Text="{Binding IsVisible, Source={x:Reference logingview}}"
-             VerticalOptions="CenterAndExpand" />
-      <Label Text="{Binding IsLoginVisible}"
-             VerticalOptions="CenterAndExpand" />
     </StackLayout>
   </Grid>
 </ContentPage>

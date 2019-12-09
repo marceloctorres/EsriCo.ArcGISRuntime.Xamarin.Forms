@@ -117,7 +117,34 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="LoginLabelText" xml:space="preserve">
-    <value>Inicio de Sesión</value>
+  <data name="CancelLoginText" xml:space="preserve">
+    <value>Was Cancelled!!!</value>
+  </data>
+  <data name="CloseButtonText" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="DialogTitle" xml:space="preserve">
+    <value>Sample App</value>
+  </data>
+  <data name="LegendButtonText" xml:space="preserve">
+    <value>Legend</value>
+  </data>
+  <data name="LegendPanelTitleText" xml:space="preserve">
+    <value>Legend</value>
+  </data>
+  <data name="LoadMapButtonText" xml:space="preserve">
+    <value>Load Map...</value>
+  </data>
+  <data name="MapPageTitle" xml:space="preserve">
+    <value>Map Page</value>
+  </data>
+  <data name="ProcessingMessageText" xml:space="preserve">
+    <value>Working...</value>
+  </data>
+  <data name="TOCButtonText" xml:space="preserve">
+    <value>Table of Content</value>
+  </data>
+  <data name="TOCPanelTitleText" xml:space="preserve">
+    <value>Table of Content</value>
   </data>
 </root>

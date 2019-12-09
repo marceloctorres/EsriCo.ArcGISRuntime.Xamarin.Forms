@@ -118,25 +118,24 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="CancelButtonText" xml:space="preserve">
-    <value>Cancel</value>
+    <value>Cancelar</value>
   </data>
   <data name="HidePasswordLabelText" xml:space="preserve">
-    <value>Hide Password:</value>
+    <value>Ocultar Contraseña:</value>
   </data>
   <data name="LogInButtonText" xml:space="preserve">
-    <value>Log In</value>
+    <value>Iniciar Sesión</value>
   </data>
   <data name="LoginLabelText" xml:space="preserve">
-    <value>Log In</value>
-    <comment>LogInLabel</comment>
+    <value>Inicio de Sesión</value>
   </data>
   <data name="PasswordLabelText" xml:space="preserve">
-    <value>Password:</value>
+    <value>Contraseña:</value>
   </data>
   <data name="ProcessingMessageLabelText" xml:space="preserve">
-    <value>Processing...</value>
+    <value>Procesando...</value>
   </data>
   <data name="UsernameLabelText" xml:space="preserve">
-    <value>Username:</value>
+    <value>Usuario:</value>
   </data>
 </root>

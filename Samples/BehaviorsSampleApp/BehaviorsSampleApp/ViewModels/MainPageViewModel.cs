@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Input;
-
+using BehaviorsSampleApp.Resx;
 using Esri.ArcGISRuntime.Geometry;
 using Esri.ArcGISRuntime.Mapping;
 
@@ -118,6 +118,8 @@ namespace BehaviorsSampleApp.ViewModels
       IsTOCVisible = false;
       IsIdentifyVisible = false;
       IsLoginVisible = false;
+      User = "mtorres";
+      Password = "qwertyuiop54321$%&";
 
       GeoViewTappedCommand = new DelegateCommand(() =>
       {
@@ -127,11 +129,15 @@ namespace BehaviorsSampleApp.ViewModels
       LegendCommand = new DelegateCommand(() =>
         {
           IsLegendVisible = !IsLegendVisible;
-        });
+        }, () => { 
+          return Map != null;
+        }).ObservesProperty(() => Map);
       TOCCommand = new DelegateCommand(() =>
         {
           IsTOCVisible = !IsTOCVisible;
-        });
+        }, () => {
+          return Map != null;
+        }).ObservesProperty(() => Map);
       IdentificarCommand = new DelegateCommand<IdentifyResults>((o) =>
         {
           if (o.GeoElementResults.Count > 0)
@@ -170,7 +176,9 @@ namespace BehaviorsSampleApp.ViewModels
       CancelCommand = new DelegateCommand(async () =>
        {
          IsLoginVisible = false;
-         await PageDialogService.DisplayAlertAsync("Inicio Sesión", "Se canceló", "Cerrar");
+         await PageDialogService.DisplayAlertAsync(AppResources.DialogTitle, 
+           AppResources.CancelLoginText, 
+           AppResources.CloseButtonText);
        });
     }
 

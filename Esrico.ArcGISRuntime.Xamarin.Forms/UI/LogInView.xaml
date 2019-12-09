@@ -42,7 +42,7 @@
                 HorizontalOptions="Fill"
                 VerticalOptions="StartAndExpand"
                 BackgroundColor="White">
-            <Label Text="Inicio Sesión"
+            <Label Text="{x:Static root:AppResources.LoginLabelText}"
                    FontAttributes="Bold"
                    TextColor="Black" />
           </Grid>
@@ -50,9 +50,9 @@
                        Margin="10"
                        Padding="2"
                        Grid.Row="1">
-            <Label Text="Usuario:" />
+            <Label Text="{x:Static root:AppResources.UsernameLabelText}" />
             <Entry Text="{Binding Username, Source={x:Reference view}}" />
-            <Label Text="Contraseña" />
+            <Label Text="{x:Static root:AppResources.PasswordLabelText}" />
             <Entry IsPassword="{Binding IsPasswordHidden, Source={x:Reference view}}"
                    Text="{Binding Password, Source={x:Reference view}}" />
           </StackLayout>
@@ -60,7 +60,7 @@
                        Margin="10"
                        Padding="2"
                        Orientation="Horizontal">
-            <Label Text="Ocultar Contraseña"
+            <Label Text="{x:Static root:AppResources.HidePasswordLabelText}"
                    HorizontalOptions="End"
                    VerticalOptions="CenterAndExpand" />
             <Switch IsToggled="{Binding IsPasswordHidden, Source={x:Reference view}}"
@@ -71,9 +71,9 @@
                        Margin="10"
                        Padding="2"
                        Grid.Row="3">
-            <Button Text="Iniciar Sesión"
+            <Button Text="{x:Static root:AppResources.LogInButtonText}"
                     Command="{Binding LogInCommand, Source={x:Reference view}}" />
-            <Button Text="Cancelar"
+            <Button Text="{x:Static root:AppResources.CancelButtonText}"
                     Command="{Binding CancelCommand, Source={x:Reference view}}" />
           </StackLayout>
         </Grid>
