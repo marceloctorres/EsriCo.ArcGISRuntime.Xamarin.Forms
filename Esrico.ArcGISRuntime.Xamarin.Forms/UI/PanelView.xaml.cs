@@ -1,5 +1,5 @@
 ﻿using System;
-
+using System.Diagnostics;
 using EsriCo.ArcGISRuntime.Xamarin.Forms.Extensions;
 
 using Xamarin.Forms;
@@ -512,17 +512,16 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
           case GestureStatus.Running:
             var bounds = Bounds;
             var parentBounds = parentView.Bounds;
-
             Content.TranslationX = x + e.TotalX + bounds.X >= 0 ?
               x + e.TotalX + bounds.X + bounds.Width <= parentBounds.Width ?
                 x + e.TotalX :
-                parentBounds.Width + parentBounds.X - bounds.Width - bounds.X :
-              parentBounds.X - bounds.X;
+                parentBounds.Width - bounds.Width - bounds.X :
+              - bounds.X;
             Content.TranslationY = y + e.TotalY + bounds.Y >= 0 ?
               y + e.TotalY + bounds.Y + bounds.Height <= parentBounds.Height ?
                 y + e.TotalY :
-                parentBounds.Height + parentBounds.Y - bounds.Height - bounds.Y :
-              parentBounds.Y - bounds.Y;
+                parentBounds.Height - bounds.Height - bounds.Y :
+              - bounds.Y;
             break;
           case GestureStatus.Completed:
             x = Content.TranslationX;

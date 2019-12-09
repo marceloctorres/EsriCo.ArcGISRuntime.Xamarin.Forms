@@ -28,7 +28,6 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
       if (sender is ListView listView)
       {
         var list = (List<LegendImageInfo>)listView.ItemsSource;
-        var template = listView.ItemTemplate;
         var height = list.Count * ItemRenderHeight;
         listView.HeightRequest = height;
       }
