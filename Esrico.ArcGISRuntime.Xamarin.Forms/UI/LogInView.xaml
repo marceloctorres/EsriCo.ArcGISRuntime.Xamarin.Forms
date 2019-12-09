@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:root="clr-namespace:EsriCo.ArcGISRuntime.Xamarin.Forms"
+             mc:Ignorable="d"
+             x:Class="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.LogInView"
+             x:Name="view">
+  <ContentView.Resources>
+    <ResourceDictionary>
+      <ResourceDictionary.MergedDictionaries>
+        <root:ResourceDictionary />
+      </ResourceDictionary.MergedDictionaries>
+    </ResourceDictionary>
+  </ContentView.Resources>
+  <ContentView.Content>
+    <Frame Margin="0"
+           Padding="10"
+           BackgroundColor="{StaticResource DarkGrayTransparent}"
+           HorizontalOptions="FillAndExpand"
+           VerticalOptions="FillAndExpand">
+      <Frame Margin="0"
+             Padding="2"
+             WidthRequest="500"
+             HorizontalOptions="CenterAndExpand"
+             VerticalOptions="CenterAndExpand"
+             OutlineColor="Black">
+        <Grid Margin="0"
+              Padding="0"
+              HorizontalOptions="Fill"
+              VerticalOptions="StartAndExpand"
+              BackgroundColor="White">
+          <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+          </Grid.RowDefinitions>
+          <Grid Margin="0"
+                Padding="5"
+                HorizontalOptions="Fill"
+                VerticalOptions="StartAndExpand"
+                BackgroundColor="White">
+            <Label Text="Inicio Sesión"
+                   FontAttributes="Bold"
+                   TextColor="Black" />
+          </Grid>
+          <StackLayout Orientation="Vertical"
+                       Margin="10"
+                       Padding="2"
+                       Grid.Row="1">
+            <Label Text="Usuario:" />
+            <Entry Text="{Binding Username, Source={x:Reference view}}" />
+            <Label Text="Contraseña" />
+            <Entry IsPassword="{Binding IsPasswordHidden, Source={x:Reference view}}"
+                   Text="{Binding Password, Source={x:Reference view}}" />
+          </StackLayout>
+          <StackLayout Grid.Row="2"
+                       Margin="10"
+                       Padding="2"
+                       Orientation="Horizontal">
+            <Label Text="Ocultar Contraseña"
+                   HorizontalOptions="End"
+                   VerticalOptions="CenterAndExpand" />
+            <Switch IsToggled="{Binding IsPasswordHidden, Source={x:Reference view}}"
+                    HorizontalOptions="Start"
+                    VerticalOptions="CenterAndExpand" />
+          </StackLayout>
+          <StackLayout Orientation="Horizontal"
+                       Margin="10"
+                       Padding="2"
+                       Grid.Row="3">
+            <Button Text="Iniciar Sesión"
+                    Command="{Binding LogInCommand, Source={x:Reference view}}" />
+            <Button Text="Cancelar"
+                    Command="{Binding CancelCommand, Source={x:Reference view}}" />
+          </StackLayout>
+        </Grid>
+      </Frame>
+    </Frame>
+  </ContentView.Content>
+</ContentView>

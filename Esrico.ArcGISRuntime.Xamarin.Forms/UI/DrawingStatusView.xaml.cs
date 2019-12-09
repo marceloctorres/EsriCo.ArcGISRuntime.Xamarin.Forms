@@ -74,6 +74,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     public DrawingStatusView()
     {
       InitializeComponent();
+      IsVisible = false;
     }
   }
 }

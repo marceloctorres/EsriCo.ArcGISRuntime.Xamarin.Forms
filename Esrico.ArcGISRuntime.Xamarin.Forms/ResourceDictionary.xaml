@@ -5,6 +5,14 @@
                     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
                     mc:Ignorable="d"
                     x:Class="EsriCo.ArcGISRuntime.Xamarin.Forms.ResourceDictionary">
+  <Color x:Key="DarkGrayTransparent">
+    <x:Arguments>
+      <x:Double>0.8</x:Double>
+      <x:Double>0.8</x:Double>
+      <x:Double>0.8</x:Double>
+      <x:Double>0.5</x:Double>
+    </x:Arguments>
+  </Color>
   <OnPlatform x:Key="NormalFont"
               x:TypeArguments="Font">
     <On Platform="iOS"

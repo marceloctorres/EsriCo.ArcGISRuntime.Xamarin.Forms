@@ -126,7 +126,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
 
     private async void GeoViewTapped(object sender, GeoViewInputEventArgs e)
     {
-      if (Command != null)
+      if (Command != null && AssociatedObject.Map != null)
       {
         object item = null;
         if (Command.CanExecute(item))

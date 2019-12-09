@@ -10,16 +10,34 @@ using EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors;
 
 using Prism.Commands;
 using Prism.Navigation;
+using Prism.Services;
 
 namespace BehaviorsSampleApp.ViewModels
 {
   public class MainPageViewModel : ViewModelBase
   {
     private Map _map;
+
     public Map Map
     {
       get { return _map; }
       set { SetProperty(ref _map, value); }
+    }
+
+    private bool _isLoginVisible;
+
+    public bool IsLoginVisible
+    {
+      get => _isLoginVisible;
+      set => SetProperty(ref _isLoginVisible, value);
+    }
+
+    private bool _processing; 
+    
+    public bool IsProcessing
+    {
+      get => _processing;
+      set => SetProperty(ref _processing, value);
     }
 
     private bool _visible;
@@ -46,7 +64,6 @@ namespace BehaviorsSampleApp.ViewModels
       set => SetProperty(ref _legendVisible, value);
     }
 
-
     private List<Layer> _layers;
     public List<Layer> Layers
     {
@@ -56,14 +73,31 @@ namespace BehaviorsSampleApp.ViewModels
 
     private IdentifyResults _identifyResults;
 
-    /// <summary>
-    /// 
-    /// </summary>
     public IdentifyResults IdentifyResults
     {
       get { return _identifyResults; }
       set { SetProperty(ref _identifyResults, value); }
     }
+
+    private string _user;
+
+    public string User
+    {
+      get => _user;
+      set => SetProperty(ref _user, value);
+    }
+
+    private string _password;
+
+    public string Password
+    {
+      get => _password;
+      set => SetProperty(ref _password, value);
+    }
+
+    public ICommand LogInCommand { get; private set; }
+
+    public ICommand CancelCommand { get; private set; }
 
     public ICommand LegendCommand { get; private set; }
 
@@ -73,11 +107,22 @@ namespace BehaviorsSampleApp.ViewModels
 
     public ICommand LoadMapCommand { get; private set; }
 
-    public MainPageViewModel(INavigationService navigationService)
-        : base(navigationService)
+    public ICommand GeoViewTappedCommand { get; private set; }
+
+    public MainPageViewModel(INavigationService navigationService, IPageDialogService pageDialogService)
+        : base(navigationService, pageDialogService)
     {
-      Title = "Main Page";
+      Title = "Map Page";
       IsLegendVisible = false;
+      IsProcessing = false;
+      IsTOCVisible = false;
+      IsIdentifyVisible = false;
+      IsLoginVisible = false;
+
+      GeoViewTappedCommand = new DelegateCommand(() =>
+      {
+        IsProcessing = true;
+      });
 
       LegendCommand = new DelegateCommand(() =>
         {
@@ -94,28 +139,39 @@ namespace BehaviorsSampleApp.ViewModels
             IdentifyResults = o;
             IsIdentifyVisible = true;
           }
+          IsProcessing = false;
         });
       LoadMapCommand = new DelegateCommand(() =>
       {
         if(Map!= null)
         {
           Map = null;
+          IsLoginVisible = false;
         }
         else
         {
-          Map = new Map(Basemap.CreateTopographicVector())
-          {
-            InitialViewpoint = new Viewpoint(new MapPoint(-74.042492, 4.660555, SpatialReferences.Wgs84), 5000)
-          };
-          Map.OperationalLayers.Add(new FeatureLayer(new Uri("https://services1.arcgis.com/7S16A7PAFcmSmqJA/ArcGIS/rest/services/InspeccionPublica/FeatureServer/3")));
-          Map.OperationalLayers.Add(new FeatureLayer(new Uri("https://services1.arcgis.com/7S16A7PAFcmSmqJA/ArcGIS/rest/services/InspeccionPublica/FeatureServer/2")));
-          Map.OperationalLayers.Add(new FeatureLayer(new Uri("https://services1.arcgis.com/7S16A7PAFcmSmqJA/ArcGIS/rest/services/InspeccionPublica/FeatureServer/1")));
-          Map.OperationalLayers.Add(new FeatureLayer(new Uri("https://services1.arcgis.com/7S16A7PAFcmSmqJA/ArcGIS/rest/services/InspeccionPublica/FeatureServer/0")));
-
-          Layers = Map.OperationalLayers.ToList();
-
+          IsLoginVisible = true;
         }
       });
+      LogInCommand = new DelegateCommand(() =>
+      {
+        IsLoginVisible = false;
+        Map = new Map(Basemap.CreateTopographicVector())
+        {
+          InitialViewpoint = new Viewpoint(new MapPoint(-74.042492, 4.660555, SpatialReferences.Wgs84), 5000)
+        };
+        Map.OperationalLayers.Add(new FeatureLayer(new Uri("https://services1.arcgis.com/7S16A7PAFcmSmqJA/ArcGIS/rest/services/InspeccionPublica/FeatureServer/3")));
+        Map.OperationalLayers.Add(new FeatureLayer(new Uri("https://services1.arcgis.com/7S16A7PAFcmSmqJA/ArcGIS/rest/services/InspeccionPublica/FeatureServer/2")));
+        Map.OperationalLayers.Add(new FeatureLayer(new Uri("https://services1.arcgis.com/7S16A7PAFcmSmqJA/ArcGIS/rest/services/InspeccionPublica/FeatureServer/1")));
+        Map.OperationalLayers.Add(new FeatureLayer(new Uri("https://services1.arcgis.com/7S16A7PAFcmSmqJA/ArcGIS/rest/services/InspeccionPublica/FeatureServer/0")));
+
+        Layers = Map.OperationalLayers.ToList();
+      });
+      CancelCommand = new DelegateCommand(async () =>
+       {
+         IsLoginVisible = false;
+         await PageDialogService.DisplayAlertAsync("Inicio Sesión", "Se canceló", "Cerrar");
+       });
     }
 
   }

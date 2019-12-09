@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
              xmlns:esriUI="clr-namespace:Esri.ArcGISRuntime.Xamarin.Forms;assembly=Esri.ArcGISRuntime.Xamarin.Forms"
              xmlns:esrico="clr-namespace:EsriCo.ArcGISRuntime.Xamarin.Forms.UI;assembly=Esrico.ArcGISRuntime.Xamarin.Forms"
              xmlns:bh="clr-namespace:EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors;assembly=EsriCo.ArcGISRuntime.Xamarin.Forms"
@@ -14,12 +15,26 @@
     <Grid IsClippedToBounds="True">
       <esriUI:MapView x:Name="mapView"
                       Map="{Binding Map}">
+        <esriUI:MapView.InteractionOptions IsRotateEnabled="false" />
+        <esriUI:MapView.BackgroundGrid IsVisible="false" />
         <esriUI:MapView.Behaviors>
           <bh:IdentifyBehavior Layers="{Binding Layers}"
                                Command="{Binding IdentificarCommand}" />
+          <prism:EventToCommandBehavior EventName="GeoViewTapped"
+                                        CommandParameter="Location"
+                                        Command="{Binding GeoViewTappedCommand}" />
         </esriUI:MapView.Behaviors>
       </esriUI:MapView>
+      <esrico:LogInView IsVisible="{Binding IsLoginVisible}"
+                        x:Name="logingview"
+                        Username="{Binding User}"
+                        Password="{Binding Password}"
+                        LogInCommand="{Binding LogInCommand}"
+                        CancelCommand="{Binding CancelCommand}" />
       <esrico:NavigationBarView MapView="{Binding Source={x:Reference mapView}}" />
+      <esrico:ProcessingView x:Name="processingview"
+                             ProcessingMessage="Trabajando"
+                             IsProcessing="{Binding IsProcessing}" />
       <esrico:IdentifyView IdentifyResults="{Binding IdentifyResults}"
                            HorizontalOptions="StartAndExpand"
                            IsManaged="False"
@@ -33,6 +48,7 @@
                                   HorizontalOptions="CenterAndExpand"
                                   IsVisible="{Binding IsTOCVisible}" />
       <esrico:DrawingStatusView MapView="{Binding Source={x:Reference mapView}}" />
+      
     </Grid>
     <StackLayout Grid.Row="1"
                  Margin="10"
@@ -43,6 +59,12 @@
               Command="{Binding TOCCommand}" />
       <Button Text="Leyenda"
               Command="{Binding LegendCommand}" />
+      <Label Text="{Binding IsProcessing, Source={x:Reference processingview}}"
+             VerticalOptions="CenterAndExpand" />
+      <Label Text="{Binding IsVisible, Source={x:Reference logingview}}"
+             VerticalOptions="CenterAndExpand" />
+      <Label Text="{Binding IsLoginVisible}"
+             VerticalOptions="CenterAndExpand" />
     </StackLayout>
   </Grid>
 </ContentPage>

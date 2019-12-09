@@ -72,8 +72,8 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
       typeof(bool),
       typeof(PanelView),
       defaultBindingMode: BindingMode.TwoWay,
-      propertyChanged: OnIsVisibleChanged,
-      defaultValue: false);
+      defaultValue: true,
+      propertyChanged: OnIsVisibleChanged);
 
     /// <summary>
     /// 
@@ -95,9 +95,11 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
       var panelView = bindable as PanelView;
       bool newVisible = (bool)newValue;
       bool oldVisible = (bool)oldValue;
+      panelView.SetVisible(newVisible);
+
       if (newVisible != oldVisible)
       {
-        panelView.SetVisible(newVisible);
+        
       }
     }
 
@@ -110,7 +112,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
       base.IsVisible = visible;
       Content.TranslationX = 0;
       Content.TranslationY = 0;
-      if(visible && IsManaged)
+      if (visible && IsManaged)
       {
         MessagingCenter.Send<PanelView>(this, "IsVisible");
       }
@@ -490,7 +492,6 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     public PanelView()
     {
       InitializeComponent();
-      base.IsVisible = false;
       CloseButtonImage = ImageSource.FromStream(() => this.GetType().Assembly.GetStreamEmbeddedResource(@"ic_close"));
       if (IsManaged)
       {
@@ -509,7 +510,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
-    private void OnCloseButtonClicked(object sender, EventArgs e)
+    protected virtual void OnCloseButtonClicked(object sender, EventArgs e)
     {
       IsVisible = false;
     }
