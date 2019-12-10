@@ -9,8 +9,8 @@
     <Configurations>Debug;Release;Release.Android;Release.UWP</Configurations>
     <PackageId>EsriCo.ArcGISRuntime.Xamarin.Forms</PackageId>
     <Product>EsriCo.ArcGISRuntime.Xamarin.Forms</Product>
-    <AssemblyVersion>1.2.0.1</AssemblyVersion>
-    <FileVersion>1.2.0.1</FileVersion>
+    <AssemblyVersion>1.2.1.0</AssemblyVersion>
+    <FileVersion>1.2.1.0</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>

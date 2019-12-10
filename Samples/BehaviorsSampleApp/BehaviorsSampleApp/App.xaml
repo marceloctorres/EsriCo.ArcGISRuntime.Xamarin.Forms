@@ -4,9 +4,21 @@
              xmlns:prism="clr-namespace:Prism.Unity;assembly=Prism.Unity.Forms"
              x:Class="BehaviorsSampleApp.App">
 	<Application.Resources>
+    <Style TargetType="Label">
+      <Setter Property="TextColor"
+              Value="Black" />
+    </Style>
+    <Style TargetType="Entry">
+      <Setter Property="TextColor"
+              Value="Black" />
+    </Style>
+    <Style TargetType="Switch">
+      <Setter Property="OnColor"
+              Value="LightGray" />
+    </Style>
     <Style TargetType="NavigationPage">
       <Setter Property="BarBackgroundColor"
-              Value="LightGray" />
+              Value="Gray" />
       <Setter Property="BarTextColor"
               Value="White" />
       <Setter Property="BackgroundColor"
