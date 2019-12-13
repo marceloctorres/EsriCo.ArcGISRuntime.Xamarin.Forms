@@ -103,6 +103,13 @@ namespace BehaviorsSampleApp.ViewModels
       set { SetProperty(ref _isIdentifyMenuVisible, value); }
     }
 
+    private int _currentElementIndex;
+    public int CurrentElementIndex
+    {
+      get => _currentElementIndex; 
+      set => SetProperty(ref _currentElementIndex, value); 
+    }
+
     public ICommand LogInCommand { get; private set; }
 
     public ICommand CancelCommand { get; private set; }
@@ -124,7 +131,6 @@ namespace BehaviorsSampleApp.ViewModels
     public MainPageViewModel(INavigationService navigationService, IPageDialogService pageDialogService)
         : base(navigationService, pageDialogService)
     {
-      Title = "Map Page";
       IsLegendVisible = false;
       IsProcessing = false;
       IsTOCVisible = false;
@@ -135,7 +141,7 @@ namespace BehaviorsSampleApp.ViewModels
       ApprovalCommand = new DelegateCommand(async () => {
         IsIdentifyMenuVisible = false;
         await PageDialogService.DisplayAlertAsync(AppResources.DialogTitle,
-          AppResources.ApprovalMessage,
+          $"{AppResources.ApprovalMessage} {CurrentElementIndex}",
           AppResources.CloseButtonText);
       });
       ShowIdentifyMenuCommand = new DelegateCommand(() =>

@@ -36,10 +36,12 @@
       <esrico:ProcessingView x:Name="processingview"
                              ProcessingMessage="{x:Static resx:AppResources.ProcessingMessageText}"
                              IsProcessing="{Binding IsProcessing}" />
-      <esrico:IdentifyView IdentifyResults="{Binding IdentifyResults}"
+      <esrico:IdentifyView x:Name="identifyview" 
+                           IdentifyResults="{Binding IdentifyResults}"
                            HorizontalOptions="StartAndExpand"
                            IsManaged="False"
                            IsHeaderVisible="True"
+                           CurrentElementIndex="{Binding CurrentElementIndex}"
                            IsVisible="{Binding IsIdentifyVisible}">
         <esrico:IdentifyView.HeaderContent>
           <Grid ColumnSpacing="0"
