@@ -1,11 +1,12 @@
 ﻿
 using System;
 using System.Linq;
-using System.Windows.Input;
+
 using Esri.ArcGISRuntime.Mapping;
 using Esri.ArcGISRuntime.Mapping.Popups;
+
 using EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors;
-using Prism.Commands;
+
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -54,7 +55,19 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    private int CurrentElementIndex { get; set; }
+    public static readonly BindableProperty CurrentElementIndexProperty = BindableProperty.Create(
+      nameof(CurrentElementIndex),
+      typeof(int),
+      typeof(IdentifyView),
+      defaultBindingMode: BindingMode.OneWayToSource);
+
+    /// <summary>
+    /// 
+    /// </summary>
+    public int CurrentElementIndex { 
+      get => (int)GetValue(CurrentElementIndexProperty);
+      set => SetValue(CurrentElementIndexProperty, value); 
+    }
 
     /// <summary>
     /// 
