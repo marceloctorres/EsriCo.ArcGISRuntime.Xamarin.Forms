@@ -20,7 +20,7 @@
         <esriUI:MapView.BackgroundGrid IsVisible="false" />
         <esriUI:MapView.Behaviors>
           <bh:IdentifyBehavior Layers="{Binding Layers}"
-                               Command="{Binding IdentificarCommand}" />
+                               Command="{Binding   IdentificarCommand}" />
           <prism:EventToCommandBehavior EventName="GeoViewTapped"
                                         CommandParameter="Location"
                                         Command="{Binding GeoViewTappedCommand}" />
@@ -39,7 +39,31 @@
       <esrico:IdentifyView IdentifyResults="{Binding IdentifyResults}"
                            HorizontalOptions="StartAndExpand"
                            IsManaged="False"
-                           IsVisible="{Binding IsIdentifyVisible}" />
+                           IsHeaderVisible="True"
+                           IsVisible="{Binding IsIdentifyVisible}">
+        <esrico:IdentifyView.HeaderContent>
+          <Grid ColumnSpacing="0"
+                RowSpacing="0"
+                Margin="0">
+            <Grid.RowDefinitions>
+              <RowDefinition Height="auto" />
+              <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <ImageButton Source="{StaticResource MenuImage}"
+                         Command="{Binding ShowIdentifyMenuCommand}"
+                         HorizontalOptions="Start"
+                         Margin="5,5,0,0" />
+            <StackLayout Orientation="Vertical"
+                         Margin="0"
+                         Grid.Row="1"
+                         IsVisible="{Binding IsIdentifyMenuVisible}">
+              <Button Text="{x:Static resx:AppResources.ApprovalButtonText}"
+                      Command="{Binding ApprovalCommand}"
+                      BackgroundColor="Transparent" />
+            </StackLayout>
+          </Grid>
+        </esrico:IdentifyView.HeaderContent>
+      </esrico:IdentifyView>
       <esrico:LegendView MapView="{Binding Source={x:Reference mapView}}"
                          IsStatusVisible="False"
                          TitleText="{x:Static resx:AppResources.LegendPanelTitleText}"
@@ -49,7 +73,6 @@
                                   HorizontalOptions="CenterAndExpand"
                                   IsVisible="{Binding IsTOCVisible}" />
       <esrico:DrawingStatusView MapView="{Binding Source={x:Reference mapView}}" />
-      
     </Grid>
     <StackLayout Grid.Row="1"
                  Margin="10"

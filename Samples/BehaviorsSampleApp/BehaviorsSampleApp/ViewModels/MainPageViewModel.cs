@@ -11,6 +11,7 @@ using EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors;
 using Prism.Commands;
 using Prism.Navigation;
 using Prism.Services;
+using Xamarin.Forms;
 
 namespace BehaviorsSampleApp.ViewModels
 {
@@ -95,6 +96,13 @@ namespace BehaviorsSampleApp.ViewModels
       set => SetProperty(ref _password, value);
     }
 
+    private bool _isIdentifyMenuVisible;
+    public bool IsIdentifyMenuVisible
+    {
+      get { return _isIdentifyMenuVisible; }
+      set { SetProperty(ref _isIdentifyMenuVisible, value); }
+    }
+
     public ICommand LogInCommand { get; private set; }
 
     public ICommand CancelCommand { get; private set; }
@@ -109,6 +117,10 @@ namespace BehaviorsSampleApp.ViewModels
 
     public ICommand GeoViewTappedCommand { get; private set; }
 
+    public ICommand ShowIdentifyMenuCommand { get; private set; }
+
+    public ICommand ApprovalCommand { get; private set; }
+
     public MainPageViewModel(INavigationService navigationService, IPageDialogService pageDialogService)
         : base(navigationService, pageDialogService)
     {
@@ -120,6 +132,16 @@ namespace BehaviorsSampleApp.ViewModels
       IsLoginVisible = false;
       User = "mtorres";
       Password = "qwertyuiop54321$%&";
+      ApprovalCommand = new DelegateCommand(async () => {
+        IsIdentifyMenuVisible = false;
+        await PageDialogService.DisplayAlertAsync(AppResources.DialogTitle,
+          AppResources.ApprovalMessage,
+          AppResources.CloseButtonText);
+      });
+      ShowIdentifyMenuCommand = new DelegateCommand(() =>
+        {
+          IsIdentifyMenuVisible = !IsIdentifyMenuVisible;
+        });
 
       GeoViewTappedCommand = new DelegateCommand(() =>
       {

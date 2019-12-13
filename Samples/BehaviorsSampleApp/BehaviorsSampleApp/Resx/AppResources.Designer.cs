@@ -61,6 +61,24 @@ namespace BehaviorsSampleApp.Resx {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Approval.
+        /// </summary>
+        public static string ApprovalButtonText {
+            get {
+                return ResourceManager.GetString("ApprovalButtonText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Element index selected: .
+        /// </summary>
+        public static string ApprovalMessage {
+            get {
+                return ResourceManager.GetString("ApprovalMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Was Cancelled!!!.
         /// </summary>
         public static string CancelLoginText {

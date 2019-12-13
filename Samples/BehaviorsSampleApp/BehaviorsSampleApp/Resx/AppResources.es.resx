@@ -117,6 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ApprovalButtonText" xml:space="preserve">
+    <value>Aprobación</value>
+  </data>
+  <data name="ApprovalMessage" xml:space="preserve">
+    <value>Indice del elemento seleccionado:</value>
+  </data>
   <data name="CancelLoginText" xml:space="preserve">
     <value>Se canceló!!!</value>
   </data>
