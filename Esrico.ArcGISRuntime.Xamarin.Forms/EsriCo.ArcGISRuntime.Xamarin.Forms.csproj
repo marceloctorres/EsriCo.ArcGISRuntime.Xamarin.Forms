@@ -12,8 +12,8 @@
     <AssemblyVersion>1.2.2.0</AssemblyVersion>
     <FileVersion>1.2.2.0</FileVersion>
     <RepositoryUrl>https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms</RepositoryUrl>
-    <PackageReleaseNotes>Extens Xamarin.Forms ArcGIS Runtime SDK for .NET</PackageReleaseNotes>
-    <Description>Extens Xamarin.Forms ArcGIS Runtime SDK for .NET</Description>
+    <PackageReleaseNotes>Extends Xamarin.Forms ArcGIS Runtime SDK for .NET</PackageReleaseNotes>
+    <Description>Extends Xamarin.Forms ArcGIS Runtime SDK for .NET</Description>
   </PropertyGroup>
 
   <ItemGroup>
@@ -28,23 +28,17 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="Icons\close.svg" />
     <None Remove="Icons\ic_close.png" />
     <None Remove="Icons\ic_home.png" />
     <None Remove="Icons\ic_minus.png" />
     <None Remove="Icons\ic_plus.png" />
-    <None Remove="Icons\next.svg" />
-    <None Remove="Icons\prev.svg" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="Icons\close.svg" />
     <EmbeddedResource Include="Icons\ic_close.png" />
     <EmbeddedResource Include="Icons\ic_home.png" />
     <EmbeddedResource Include="Icons\ic_minus.png" />
     <EmbeddedResource Include="Icons\ic_plus.png" />
-    <EmbeddedResource Include="Icons\prev.svg" />
-    <EmbeddedResource Include="Icons\next.svg" />
   </ItemGroup>
 
   <ItemGroup>
