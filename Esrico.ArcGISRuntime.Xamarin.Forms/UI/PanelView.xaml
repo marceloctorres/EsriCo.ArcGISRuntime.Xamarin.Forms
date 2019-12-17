@@ -40,9 +40,9 @@
               ColumnSpacing="0"
               RowSpacing="0">
           <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
+            <RowDefinition Height="auto" />
             <RowDefinition Height="*" />
-            <RowDefinition Height="Auto" />
+            <RowDefinition Height="auto" />
           </Grid.RowDefinitions>
           <Frame x:Name="TitleBarFrame"
                  Margin="1"
@@ -84,7 +84,7 @@
                  BackgroundColor="{Binding BodyBackgroundColor,Source={x:Reference view}}"
                  HorizontalOptions="FillAndExpand"
                  VerticalOptions="FillAndExpand">
-            <Grid>
+            <Grid RowSpacing="0">
               <Grid.RowDefinitions>
                 <RowDefinition Height="auto" />
                 <RowDefinition Height="*" />
@@ -92,17 +92,20 @@
               </Grid.RowDefinitions>
               <ContentView x:Name="HeaderContentView"
                            IsVisible="{Binding IsHeaderVisible,Source={x:Reference view}}"
+                           Margin="0"
                            HorizontalOptions="FillAndExpand"
-                           VerticalOptions="StartAndExpand" />
+                           VerticalOptions="Start" />
               <ContentView x:Name="BodyContentView"
                            Grid.Row="1"
+                           Margin="0"
                            HorizontalOptions="FillAndExpand"
                            VerticalOptions="FillAndExpand" />
               <ContentView x:Name="FooterContentView"
                            IsVisible="{Binding IsFooterVisible,Source={x:Reference view}}"
                            Grid.Row="2"
+                           Margin="0"
                            HorizontalOptions="FillAndExpand"
-                           VerticalOptions="FillAndExpand" />
+                           VerticalOptions="End" />
             </Grid>
           </Frame>
           <Frame x:Name="StatusBarFrame"

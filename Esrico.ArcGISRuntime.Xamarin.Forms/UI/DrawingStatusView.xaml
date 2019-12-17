@@ -13,7 +13,8 @@
                  Margin="0"
                  Padding="5">
       <ActivityIndicator IsRunning="{Binding IsVisible, Source={x:Reference view}}"
-                         IsVisible="{Binding IsVisible, Source={x:Reference view}}" />
+                         IsVisible="{Binding IsVisible, Source={x:Reference view}}"
+                         Color="{Binding IndicatorColor, Source={x:Reference view}}"/>
     </StackLayout>
   </ContentView.Content>
 </ContentView>

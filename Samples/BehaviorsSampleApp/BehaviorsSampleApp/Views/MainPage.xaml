@@ -75,6 +75,91 @@
                                   HorizontalOptions="CenterAndExpand"
                                   IsVisible="{Binding IsTOCVisible}" />
       <esrico:DrawingStatusView MapView="{Binding Source={x:Reference mapView}}" />
+      <esrico:PanelView x:Name="AprobacionView"
+                        TitleText="Aprobación"
+                        IsStatusVisible="False"
+                        IsHeaderVisible="False"
+                        IsFooterVisible="False"
+                        IsVisible="True">
+        <esrico:PanelView.BodyContent>
+          <Grid>
+            <Frame IsVisible="True"
+                   HasShadow="False"
+                   BackgroundColor="Gray">
+              <ActivityIndicator HorizontalOptions="CenterAndExpand"
+                                 VerticalOptions="CenterAndExpand"
+                                 FlowDirection="MatchParent"
+                                 Visual="Material"
+                                 IsRunning="True" 
+                                 Color="Black" />
+            </Frame>
+            <StackLayout Orientation="Vertical"
+                         Margin="0"
+                         HorizontalOptions="FillAndExpand"
+                         VerticalOptions="StartAndExpand">
+              <Label Text="Interesados: "
+                     HorizontalOptions="Fill"
+                     Margin="5" />
+              <Frame Grid.Row="0"
+                     HorizontalOptions="Fill"
+                     VerticalOptions="StartAndExpand"
+                     BorderColor="Black"
+                     HeightRequest="250"
+                     Padding="0"
+                     Margin="5">
+                <ListView Grid.Row="1"
+                          Margin="0"
+                          HorizontalOptions="FillAndExpand"
+                          VerticalOptions="FillAndExpand"
+                          SelectionMode="None"
+                          ItemsSource="{Binding Aprobacion.Interesados}">
+                  <!--<ListView.HeaderTemplate>
+                  <DataTemplate>
+                    <ViewCell>
+                      <Label Text="Header" />
+                      -->
+                  <!--<Grid Padding="0"
+                            Margin="0">
+                        <Grid.ColumnDefinitions>
+                          <ColumnDefinition Width="0.5*" />
+                          <ColumnDefinition Width="0.5*" />
+                        </Grid.ColumnDefinitions>
+                        <Label Text="Nombres"
+                               Margin="5"
+                               Grid.Column="0" />
+                        <Label Text="Apellidos"
+                               Margin="5"
+                               Grid.Column="1" />
+                      </Grid>-->
+                  <!--
+                    </ViewCell>
+                  </DataTemplate>
+                </ListView.HeaderTemplate>-->
+                  <ListView.ItemTemplate>
+                    <DataTemplate>
+                      <ViewCell>
+                        <Grid Padding="0"
+                              Margin="0">
+                          <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.5*" />
+                            <ColumnDefinition Width="0.5*" />
+                          </Grid.ColumnDefinitions>
+                          <Label Text="{Binding Attributes[nombres]}"
+                                 Margin="5"
+                                 Grid.Column="0" />
+                          <Label Text="{Binding Attributes[apellidos]}"
+                                 Margin="5"
+                                 Grid.Column="1" />
+                        </Grid>
+                      </ViewCell>
+                    </DataTemplate>
+                  </ListView.ItemTemplate>
+                </ListView>
+              </Frame>
+            </StackLayout>
+          </Grid>
+        </esrico:PanelView.BodyContent>
+      </esrico:PanelView>
     </Grid>
     <StackLayout Grid.Row="1"
                  Margin="10"

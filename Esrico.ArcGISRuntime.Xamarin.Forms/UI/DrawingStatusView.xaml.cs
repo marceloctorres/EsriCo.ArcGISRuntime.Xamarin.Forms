@@ -12,10 +12,27 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
+    public static readonly BindableProperty IndicatorColorProperty = BindableProperty.Create(
+      nameof(IndicatorColorProperty),
+      typeof(Color),
+      typeof(DrawingStatusView));
+
+    /// <summary>
+    /// 
+    /// </summary>
+    public Color IndicatorColor
+    {
+      get => (Color)GetValue(IndicatorColorProperty);
+      set => SetValue(IndicatorColorProperty, value);
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
     public static readonly BindableProperty MapViewProperty = BindableProperty.Create(
       nameof(MapView),
       typeof(MapView),
-      typeof(LayerListPanelView),
+      typeof(DrawingStatusView),
       propertyChanged: OnMapViewPropertyChanged);
 
     /// <summary>
@@ -75,6 +92,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     {
       InitializeComponent();
       IsVisible = false;
+      IndicatorColor = (Color)ActivityIndicator.ColorProperty.DefaultValue;
     }
   }
 }

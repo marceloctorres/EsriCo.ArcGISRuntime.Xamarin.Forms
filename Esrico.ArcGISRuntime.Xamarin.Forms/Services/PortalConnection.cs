@@ -172,6 +172,18 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     /// <summary>
     /// 
     /// </summary>
+    /// <param name="webMapId"></param>
+    /// <returns></returns>
+    public async Task<Map> GetMap(string webMapId)
+    {
+      var item = await PortalItem.CreateAsync(Portal, webMapId);
+      return new Map(item);
+    }
+
+
+    /// <summary>
+    /// 
+    /// </summary>
     /// <returns></returns>
     public bool IsCredentialNull()
     {
