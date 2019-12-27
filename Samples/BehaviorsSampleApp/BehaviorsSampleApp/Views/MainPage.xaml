@@ -74,7 +74,7 @@
                                   TitleText="{x:Static resx:AppResources.TOCPanelTitleText}"
                                   HorizontalOptions="CenterAndExpand"
                                   IsVisible="{Binding IsTOCVisible}" />
-      <esrico:DrawingStatusView MapView="{Binding Source={x:Reference mapView}}" />
+      <esrico:DrawingStatusView MapView="{Binding Source={x:Reference mapView}}" IndicatorColor="Black"/>
       <esrico:PanelView x:Name="AprobacionView"
                         TitleText="Aprobación"
                         IsStatusVisible="False"

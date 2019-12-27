@@ -2278,6 +2278,188 @@ namespace BehaviorsSampleApp.Droid
 			global::Prism.Resource.Styleable.View_paddingEnd = global::BehaviorsSampleApp.Droid.Resource.Styleable.View_paddingEnd;
 			global::Prism.Resource.Styleable.View_paddingStart = global::BehaviorsSampleApp.Droid.Resource.Styleable.View_paddingStart;
 			global::Prism.Resource.Styleable.View_theme = global::BehaviorsSampleApp.Droid.Resource.Styleable.View_theme;
+			global::Xamarin.Essentials.Resource.Attribute.alpha = global::BehaviorsSampleApp.Droid.Resource.Attribute.alpha;
+			global::Xamarin.Essentials.Resource.Attribute.coordinatorLayoutStyle = global::BehaviorsSampleApp.Droid.Resource.Attribute.coordinatorLayoutStyle;
+			global::Xamarin.Essentials.Resource.Attribute.font = global::BehaviorsSampleApp.Droid.Resource.Attribute.font;
+			global::Xamarin.Essentials.Resource.Attribute.fontProviderAuthority = global::BehaviorsSampleApp.Droid.Resource.Attribute.fontProviderAuthority;
+			global::Xamarin.Essentials.Resource.Attribute.fontProviderCerts = global::BehaviorsSampleApp.Droid.Resource.Attribute.fontProviderCerts;
+			global::Xamarin.Essentials.Resource.Attribute.fontProviderFetchStrategy = global::BehaviorsSampleApp.Droid.Resource.Attribute.fontProviderFetchStrategy;
+			global::Xamarin.Essentials.Resource.Attribute.fontProviderFetchTimeout = global::BehaviorsSampleApp.Droid.Resource.Attribute.fontProviderFetchTimeout;
+			global::Xamarin.Essentials.Resource.Attribute.fontProviderPackage = global::BehaviorsSampleApp.Droid.Resource.Attribute.fontProviderPackage;
+			global::Xamarin.Essentials.Resource.Attribute.fontProviderQuery = global::BehaviorsSampleApp.Droid.Resource.Attribute.fontProviderQuery;
+			global::Xamarin.Essentials.Resource.Attribute.fontStyle = global::BehaviorsSampleApp.Droid.Resource.Attribute.fontStyle;
+			global::Xamarin.Essentials.Resource.Attribute.fontVariationSettings = global::BehaviorsSampleApp.Droid.Resource.Attribute.fontVariationSettings;
+			global::Xamarin.Essentials.Resource.Attribute.fontWeight = global::BehaviorsSampleApp.Droid.Resource.Attribute.fontWeight;
+			global::Xamarin.Essentials.Resource.Attribute.keylines = global::BehaviorsSampleApp.Droid.Resource.Attribute.keylines;
+			global::Xamarin.Essentials.Resource.Attribute.layout_anchor = global::BehaviorsSampleApp.Droid.Resource.Attribute.layout_anchor;
+			global::Xamarin.Essentials.Resource.Attribute.layout_anchorGravity = global::BehaviorsSampleApp.Droid.Resource.Attribute.layout_anchorGravity;
+			global::Xamarin.Essentials.Resource.Attribute.layout_behavior = global::BehaviorsSampleApp.Droid.Resource.Attribute.layout_behavior;
+			global::Xamarin.Essentials.Resource.Attribute.layout_dodgeInsetEdges = global::BehaviorsSampleApp.Droid.Resource.Attribute.layout_dodgeInsetEdges;
+			global::Xamarin.Essentials.Resource.Attribute.layout_insetEdge = global::BehaviorsSampleApp.Droid.Resource.Attribute.layout_insetEdge;
+			global::Xamarin.Essentials.Resource.Attribute.layout_keyline = global::BehaviorsSampleApp.Droid.Resource.Attribute.layout_keyline;
+			global::Xamarin.Essentials.Resource.Attribute.statusBarBackground = global::BehaviorsSampleApp.Droid.Resource.Attribute.statusBarBackground;
+			global::Xamarin.Essentials.Resource.Attribute.ttcIndex = global::BehaviorsSampleApp.Droid.Resource.Attribute.ttcIndex;
+			global::Xamarin.Essentials.Resource.Color.browser_actions_bg_grey = global::BehaviorsSampleApp.Droid.Resource.Color.browser_actions_bg_grey;
+			global::Xamarin.Essentials.Resource.Color.browser_actions_divider_color = global::BehaviorsSampleApp.Droid.Resource.Color.browser_actions_divider_color;
+			global::Xamarin.Essentials.Resource.Color.browser_actions_text_color = global::BehaviorsSampleApp.Droid.Resource.Color.browser_actions_text_color;
+			global::Xamarin.Essentials.Resource.Color.browser_actions_title_color = global::BehaviorsSampleApp.Droid.Resource.Color.browser_actions_title_color;
+			global::Xamarin.Essentials.Resource.Color.notification_action_color_filter = global::BehaviorsSampleApp.Droid.Resource.Color.notification_action_color_filter;
+			global::Xamarin.Essentials.Resource.Color.notification_icon_bg_color = global::BehaviorsSampleApp.Droid.Resource.Color.notification_icon_bg_color;
+			global::Xamarin.Essentials.Resource.Color.ripple_material_light = global::BehaviorsSampleApp.Droid.Resource.Color.ripple_material_light;
+			global::Xamarin.Essentials.Resource.Color.secondary_text_default_material_light = global::BehaviorsSampleApp.Droid.Resource.Color.secondary_text_default_material_light;
+			global::Xamarin.Essentials.Resource.Dimension.browser_actions_context_menu_max_width = global::BehaviorsSampleApp.Droid.Resource.Dimension.browser_actions_context_menu_max_width;
+			global::Xamarin.Essentials.Resource.Dimension.browser_actions_context_menu_min_padding = global::BehaviorsSampleApp.Droid.Resource.Dimension.browser_actions_context_menu_min_padding;
+			global::Xamarin.Essentials.Resource.Dimension.compat_button_inset_horizontal_material = global::BehaviorsSampleApp.Droid.Resource.Dimension.compat_button_inset_horizontal_material;
+			global::Xamarin.Essentials.Resource.Dimension.compat_button_inset_vertical_material = global::BehaviorsSampleApp.Droid.Resource.Dimension.compat_button_inset_vertical_material;
+			global::Xamarin.Essentials.Resource.Dimension.compat_button_padding_horizontal_material = global::BehaviorsSampleApp.Droid.Resource.Dimension.compat_button_padding_horizontal_material;
+			global::Xamarin.Essentials.Resource.Dimension.compat_button_padding_vertical_material = global::BehaviorsSampleApp.Droid.Resource.Dimension.compat_button_padding_vertical_material;
+			global::Xamarin.Essentials.Resource.Dimension.compat_control_corner_material = global::BehaviorsSampleApp.Droid.Resource.Dimension.compat_control_corner_material;
+			global::Xamarin.Essentials.Resource.Dimension.compat_notification_large_icon_max_height = global::BehaviorsSampleApp.Droid.Resource.Dimension.compat_notification_large_icon_max_height;
+			global::Xamarin.Essentials.Resource.Dimension.compat_notification_large_icon_max_width = global::BehaviorsSampleApp.Droid.Resource.Dimension.compat_notification_large_icon_max_width;
+			global::Xamarin.Essentials.Resource.Dimension.notification_action_icon_size = global::BehaviorsSampleApp.Droid.Resource.Dimension.notification_action_icon_size;
+			global::Xamarin.Essentials.Resource.Dimension.notification_action_text_size = global::BehaviorsSampleApp.Droid.Resource.Dimension.notification_action_text_size;
+			global::Xamarin.Essentials.Resource.Dimension.notification_big_circle_margin = global::BehaviorsSampleApp.Droid.Resource.Dimension.notification_big_circle_margin;
+			global::Xamarin.Essentials.Resource.Dimension.notification_content_margin_start = global::BehaviorsSampleApp.Droid.Resource.Dimension.notification_content_margin_start;
+			global::Xamarin.Essentials.Resource.Dimension.notification_large_icon_height = global::BehaviorsSampleApp.Droid.Resource.Dimension.notification_large_icon_height;
+			global::Xamarin.Essentials.Resource.Dimension.notification_large_icon_width = global::BehaviorsSampleApp.Droid.Resource.Dimension.notification_large_icon_width;
+			global::Xamarin.Essentials.Resource.Dimension.notification_main_column_padding_top = global::BehaviorsSampleApp.Droid.Resource.Dimension.notification_main_column_padding_top;
+			global::Xamarin.Essentials.Resource.Dimension.notification_media_narrow_margin = global::BehaviorsSampleApp.Droid.Resource.Dimension.notification_media_narrow_margin;
+			global::Xamarin.Essentials.Resource.Dimension.notification_right_icon_size = global::BehaviorsSampleApp.Droid.Resource.Dimension.notification_right_icon_size;
+			global::Xamarin.Essentials.Resource.Dimension.notification_right_side_padding_top = global::BehaviorsSampleApp.Droid.Resource.Dimension.notification_right_side_padding_top;
+			global::Xamarin.Essentials.Resource.Dimension.notification_small_icon_background_padding = global::BehaviorsSampleApp.Droid.Resource.Dimension.notification_small_icon_background_padding;
+			global::Xamarin.Essentials.Resource.Dimension.notification_small_icon_size_as_large = global::BehaviorsSampleApp.Droid.Resource.Dimension.notification_small_icon_size_as_large;
+			global::Xamarin.Essentials.Resource.Dimension.notification_subtext_size = global::BehaviorsSampleApp.Droid.Resource.Dimension.notification_subtext_size;
+			global::Xamarin.Essentials.Resource.Dimension.notification_top_pad = global::BehaviorsSampleApp.Droid.Resource.Dimension.notification_top_pad;
+			global::Xamarin.Essentials.Resource.Dimension.notification_top_pad_large_text = global::BehaviorsSampleApp.Droid.Resource.Dimension.notification_top_pad_large_text;
+			global::Xamarin.Essentials.Resource.Drawable.notification_action_background = global::BehaviorsSampleApp.Droid.Resource.Drawable.notification_action_background;
+			global::Xamarin.Essentials.Resource.Drawable.notification_bg = global::BehaviorsSampleApp.Droid.Resource.Drawable.notification_bg;
+			global::Xamarin.Essentials.Resource.Drawable.notification_bg_low = global::BehaviorsSampleApp.Droid.Resource.Drawable.notification_bg_low;
+			global::Xamarin.Essentials.Resource.Drawable.notification_bg_low_normal = global::BehaviorsSampleApp.Droid.Resource.Drawable.notification_bg_low_normal;
+			global::Xamarin.Essentials.Resource.Drawable.notification_bg_low_pressed = global::BehaviorsSampleApp.Droid.Resource.Drawable.notification_bg_low_pressed;
+			global::Xamarin.Essentials.Resource.Drawable.notification_bg_normal = global::BehaviorsSampleApp.Droid.Resource.Drawable.notification_bg_normal;
+			global::Xamarin.Essentials.Resource.Drawable.notification_bg_normal_pressed = global::BehaviorsSampleApp.Droid.Resource.Drawable.notification_bg_normal_pressed;
+			global::Xamarin.Essentials.Resource.Drawable.notification_icon_background = global::BehaviorsSampleApp.Droid.Resource.Drawable.notification_icon_background;
+			global::Xamarin.Essentials.Resource.Drawable.notification_template_icon_bg = global::BehaviorsSampleApp.Droid.Resource.Drawable.notification_template_icon_bg;
+			global::Xamarin.Essentials.Resource.Drawable.notification_template_icon_low_bg = global::BehaviorsSampleApp.Droid.Resource.Drawable.notification_template_icon_low_bg;
+			global::Xamarin.Essentials.Resource.Drawable.notification_tile_bg = global::BehaviorsSampleApp.Droid.Resource.Drawable.notification_tile_bg;
+			global::Xamarin.Essentials.Resource.Drawable.notify_panel_notification_icon_bg = global::BehaviorsSampleApp.Droid.Resource.Drawable.notify_panel_notification_icon_bg;
+			global::Xamarin.Essentials.Resource.Id.action_container = global::BehaviorsSampleApp.Droid.Resource.Id.action_container;
+			global::Xamarin.Essentials.Resource.Id.action_divider = global::BehaviorsSampleApp.Droid.Resource.Id.action_divider;
+			global::Xamarin.Essentials.Resource.Id.action_image = global::BehaviorsSampleApp.Droid.Resource.Id.action_image;
+			global::Xamarin.Essentials.Resource.Id.action_text = global::BehaviorsSampleApp.Droid.Resource.Id.action_text;
+			global::Xamarin.Essentials.Resource.Id.actions = global::BehaviorsSampleApp.Droid.Resource.Id.actions;
+			global::Xamarin.Essentials.Resource.Id.all = global::BehaviorsSampleApp.Droid.Resource.Id.all;
+			global::Xamarin.Essentials.Resource.Id.async = global::BehaviorsSampleApp.Droid.Resource.Id.async;
+			global::Xamarin.Essentials.Resource.Id.blocking = global::BehaviorsSampleApp.Droid.Resource.Id.blocking;
+			global::Xamarin.Essentials.Resource.Id.bottom = global::BehaviorsSampleApp.Droid.Resource.Id.bottom;
+			global::Xamarin.Essentials.Resource.Id.browser_actions_header_text = global::BehaviorsSampleApp.Droid.Resource.Id.browser_actions_header_text;
+			global::Xamarin.Essentials.Resource.Id.browser_actions_menu_item_icon = global::BehaviorsSampleApp.Droid.Resource.Id.browser_actions_menu_item_icon;
+			global::Xamarin.Essentials.Resource.Id.browser_actions_menu_item_text = global::BehaviorsSampleApp.Droid.Resource.Id.browser_actions_menu_item_text;
+			global::Xamarin.Essentials.Resource.Id.browser_actions_menu_items = global::BehaviorsSampleApp.Droid.Resource.Id.browser_actions_menu_items;
+			global::Xamarin.Essentials.Resource.Id.browser_actions_menu_view = global::BehaviorsSampleApp.Droid.Resource.Id.browser_actions_menu_view;
+			global::Xamarin.Essentials.Resource.Id.center = global::BehaviorsSampleApp.Droid.Resource.Id.center;
+			global::Xamarin.Essentials.Resource.Id.center_horizontal = global::BehaviorsSampleApp.Droid.Resource.Id.center_horizontal;
+			global::Xamarin.Essentials.Resource.Id.center_vertical = global::BehaviorsSampleApp.Droid.Resource.Id.center_vertical;
+			global::Xamarin.Essentials.Resource.Id.chronometer = global::BehaviorsSampleApp.Droid.Resource.Id.chronometer;
+			global::Xamarin.Essentials.Resource.Id.clip_horizontal = global::BehaviorsSampleApp.Droid.Resource.Id.clip_horizontal;
+			global::Xamarin.Essentials.Resource.Id.clip_vertical = global::BehaviorsSampleApp.Droid.Resource.Id.clip_vertical;
+			global::Xamarin.Essentials.Resource.Id.end = global::BehaviorsSampleApp.Droid.Resource.Id.end;
+			global::Xamarin.Essentials.Resource.Id.fill = global::BehaviorsSampleApp.Droid.Resource.Id.fill;
+			global::Xamarin.Essentials.Resource.Id.fill_horizontal = global::BehaviorsSampleApp.Droid.Resource.Id.fill_horizontal;
+			global::Xamarin.Essentials.Resource.Id.fill_vertical = global::BehaviorsSampleApp.Droid.Resource.Id.fill_vertical;
+			global::Xamarin.Essentials.Resource.Id.forever = global::BehaviorsSampleApp.Droid.Resource.Id.forever;
+			global::Xamarin.Essentials.Resource.Id.icon = global::BehaviorsSampleApp.Droid.Resource.Id.icon;
+			global::Xamarin.Essentials.Resource.Id.icon_group = global::BehaviorsSampleApp.Droid.Resource.Id.icon_group;
+			global::Xamarin.Essentials.Resource.Id.info = global::BehaviorsSampleApp.Droid.Resource.Id.info;
+			global::Xamarin.Essentials.Resource.Id.italic = global::BehaviorsSampleApp.Droid.Resource.Id.italic;
+			global::Xamarin.Essentials.Resource.Id.left = global::BehaviorsSampleApp.Droid.Resource.Id.left;
+			global::Xamarin.Essentials.Resource.Id.line1 = global::BehaviorsSampleApp.Droid.Resource.Id.line1;
+			global::Xamarin.Essentials.Resource.Id.line3 = global::BehaviorsSampleApp.Droid.Resource.Id.line3;
+			global::Xamarin.Essentials.Resource.Id.none = global::BehaviorsSampleApp.Droid.Resource.Id.none;
+			global::Xamarin.Essentials.Resource.Id.normal = global::BehaviorsSampleApp.Droid.Resource.Id.normal;
+			global::Xamarin.Essentials.Resource.Id.notification_background = global::BehaviorsSampleApp.Droid.Resource.Id.notification_background;
+			global::Xamarin.Essentials.Resource.Id.notification_main_column = global::BehaviorsSampleApp.Droid.Resource.Id.notification_main_column;
+			global::Xamarin.Essentials.Resource.Id.notification_main_column_container = global::BehaviorsSampleApp.Droid.Resource.Id.notification_main_column_container;
+			global::Xamarin.Essentials.Resource.Id.right = global::BehaviorsSampleApp.Droid.Resource.Id.right;
+			global::Xamarin.Essentials.Resource.Id.right_icon = global::BehaviorsSampleApp.Droid.Resource.Id.right_icon;
+			global::Xamarin.Essentials.Resource.Id.right_side = global::BehaviorsSampleApp.Droid.Resource.Id.right_side;
+			global::Xamarin.Essentials.Resource.Id.start = global::BehaviorsSampleApp.Droid.Resource.Id.start;
+			global::Xamarin.Essentials.Resource.Id.tag_transition_group = global::BehaviorsSampleApp.Droid.Resource.Id.tag_transition_group;
+			global::Xamarin.Essentials.Resource.Id.tag_unhandled_key_event_manager = global::BehaviorsSampleApp.Droid.Resource.Id.tag_unhandled_key_event_manager;
+			global::Xamarin.Essentials.Resource.Id.tag_unhandled_key_listeners = global::BehaviorsSampleApp.Droid.Resource.Id.tag_unhandled_key_listeners;
+			global::Xamarin.Essentials.Resource.Id.text = global::BehaviorsSampleApp.Droid.Resource.Id.text;
+			global::Xamarin.Essentials.Resource.Id.text2 = global::BehaviorsSampleApp.Droid.Resource.Id.text2;
+			global::Xamarin.Essentials.Resource.Id.time = global::BehaviorsSampleApp.Droid.Resource.Id.time;
+			global::Xamarin.Essentials.Resource.Id.title = global::BehaviorsSampleApp.Droid.Resource.Id.title;
+			global::Xamarin.Essentials.Resource.Id.top = global::BehaviorsSampleApp.Droid.Resource.Id.top;
+			global::Xamarin.Essentials.Resource.Integer.status_bar_notification_info_maxnum = global::BehaviorsSampleApp.Droid.Resource.Integer.status_bar_notification_info_maxnum;
+			global::Xamarin.Essentials.Resource.Layout.browser_actions_context_menu_page = global::BehaviorsSampleApp.Droid.Resource.Layout.browser_actions_context_menu_page;
+			global::Xamarin.Essentials.Resource.Layout.browser_actions_context_menu_row = global::BehaviorsSampleApp.Droid.Resource.Layout.browser_actions_context_menu_row;
+			global::Xamarin.Essentials.Resource.Layout.notification_action = global::BehaviorsSampleApp.Droid.Resource.Layout.notification_action;
+			global::Xamarin.Essentials.Resource.Layout.notification_action_tombstone = global::BehaviorsSampleApp.Droid.Resource.Layout.notification_action_tombstone;
+			global::Xamarin.Essentials.Resource.Layout.notification_template_custom_big = global::BehaviorsSampleApp.Droid.Resource.Layout.notification_template_custom_big;
+			global::Xamarin.Essentials.Resource.Layout.notification_template_icon_group = global::BehaviorsSampleApp.Droid.Resource.Layout.notification_template_icon_group;
+			global::Xamarin.Essentials.Resource.Layout.notification_template_part_chronometer = global::BehaviorsSampleApp.Droid.Resource.Layout.notification_template_part_chronometer;
+			global::Xamarin.Essentials.Resource.Layout.notification_template_part_time = global::BehaviorsSampleApp.Droid.Resource.Layout.notification_template_part_time;
+			global::Xamarin.Essentials.Resource.String.status_bar_notification_info_overflow = global::BehaviorsSampleApp.Droid.Resource.String.status_bar_notification_info_overflow;
+			global::Xamarin.Essentials.Resource.Style.TextAppearance_Compat_Notification = global::BehaviorsSampleApp.Droid.Resource.Style.TextAppearance_Compat_Notification;
+			global::Xamarin.Essentials.Resource.Style.TextAppearance_Compat_Notification_Info = global::BehaviorsSampleApp.Droid.Resource.Style.TextAppearance_Compat_Notification_Info;
+			global::Xamarin.Essentials.Resource.Style.TextAppearance_Compat_Notification_Line2 = global::BehaviorsSampleApp.Droid.Resource.Style.TextAppearance_Compat_Notification_Line2;
+			global::Xamarin.Essentials.Resource.Style.TextAppearance_Compat_Notification_Time = global::BehaviorsSampleApp.Droid.Resource.Style.TextAppearance_Compat_Notification_Time;
+			global::Xamarin.Essentials.Resource.Style.TextAppearance_Compat_Notification_Title = global::BehaviorsSampleApp.Droid.Resource.Style.TextAppearance_Compat_Notification_Title;
+			global::Xamarin.Essentials.Resource.Style.Widget_Compat_NotificationActionContainer = global::BehaviorsSampleApp.Droid.Resource.Style.Widget_Compat_NotificationActionContainer;
+			global::Xamarin.Essentials.Resource.Style.Widget_Compat_NotificationActionText = global::BehaviorsSampleApp.Droid.Resource.Style.Widget_Compat_NotificationActionText;
+			global::Xamarin.Essentials.Resource.Style.Widget_Support_CoordinatorLayout = global::BehaviorsSampleApp.Droid.Resource.Style.Widget_Support_CoordinatorLayout;
+			global::Xamarin.Essentials.Resource.Xml.xamarin_essentials_fileprovider_file_paths = global::BehaviorsSampleApp.Droid.Resource.Xml.xamarin_essentials_fileprovider_file_paths;
+			global::Xamarin.Essentials.Resource.Styleable.ColorStateListItem = global::BehaviorsSampleApp.Droid.Resource.Styleable.ColorStateListItem;
+			global::Xamarin.Essentials.Resource.Styleable.ColorStateListItem_alpha = global::BehaviorsSampleApp.Droid.Resource.Styleable.ColorStateListItem_alpha;
+			global::Xamarin.Essentials.Resource.Styleable.ColorStateListItem_android_alpha = global::BehaviorsSampleApp.Droid.Resource.Styleable.ColorStateListItem_android_alpha;
+			global::Xamarin.Essentials.Resource.Styleable.ColorStateListItem_android_color = global::BehaviorsSampleApp.Droid.Resource.Styleable.ColorStateListItem_android_color;
+			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout = global::BehaviorsSampleApp.Droid.Resource.Styleable.CoordinatorLayout;
+			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_keylines = global::BehaviorsSampleApp.Droid.Resource.Styleable.CoordinatorLayout_keylines;
+			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::BehaviorsSampleApp.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground;
+			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_Layout = global::BehaviorsSampleApp.Droid.Resource.Styleable.CoordinatorLayout_Layout;
+			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity = global::BehaviorsSampleApp.Droid.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity;
+			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor = global::BehaviorsSampleApp.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor;
+			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity = global::BehaviorsSampleApp.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity;
+			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior = global::BehaviorsSampleApp.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior;
+			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges = global::BehaviorsSampleApp.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges;
+			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge = global::BehaviorsSampleApp.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge;
+			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline = global::BehaviorsSampleApp.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamily = global::BehaviorsSampleApp.Droid.Resource.Styleable.FontFamily;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderAuthority = global::BehaviorsSampleApp.Droid.Resource.Styleable.FontFamily_fontProviderAuthority;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderCerts = global::BehaviorsSampleApp.Droid.Resource.Styleable.FontFamily_fontProviderCerts;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderFetchStrategy = global::BehaviorsSampleApp.Droid.Resource.Styleable.FontFamily_fontProviderFetchStrategy;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderFetchTimeout = global::BehaviorsSampleApp.Droid.Resource.Styleable.FontFamily_fontProviderFetchTimeout;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderPackage = global::BehaviorsSampleApp.Droid.Resource.Styleable.FontFamily_fontProviderPackage;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderQuery = global::BehaviorsSampleApp.Droid.Resource.Styleable.FontFamily_fontProviderQuery;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamilyFont = global::BehaviorsSampleApp.Droid.Resource.Styleable.FontFamilyFont;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamilyFont_android_font = global::BehaviorsSampleApp.Droid.Resource.Styleable.FontFamilyFont_android_font;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamilyFont_android_fontStyle = global::BehaviorsSampleApp.Droid.Resource.Styleable.FontFamilyFont_android_fontStyle;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamilyFont_android_fontVariationSettings = global::BehaviorsSampleApp.Droid.Resource.Styleable.FontFamilyFont_android_fontVariationSettings;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamilyFont_android_fontWeight = global::BehaviorsSampleApp.Droid.Resource.Styleable.FontFamilyFont_android_fontWeight;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamilyFont_android_ttcIndex = global::BehaviorsSampleApp.Droid.Resource.Styleable.FontFamilyFont_android_ttcIndex;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamilyFont_font = global::BehaviorsSampleApp.Droid.Resource.Styleable.FontFamilyFont_font;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamilyFont_fontStyle = global::BehaviorsSampleApp.Droid.Resource.Styleable.FontFamilyFont_fontStyle;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamilyFont_fontVariationSettings = global::BehaviorsSampleApp.Droid.Resource.Styleable.FontFamilyFont_fontVariationSettings;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamilyFont_fontWeight = global::BehaviorsSampleApp.Droid.Resource.Styleable.FontFamilyFont_fontWeight;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamilyFont_ttcIndex = global::BehaviorsSampleApp.Droid.Resource.Styleable.FontFamilyFont_ttcIndex;
+			global::Xamarin.Essentials.Resource.Styleable.GradientColor = global::BehaviorsSampleApp.Droid.Resource.Styleable.GradientColor;
+			global::Xamarin.Essentials.Resource.Styleable.GradientColor_android_centerColor = global::BehaviorsSampleApp.Droid.Resource.Styleable.GradientColor_android_centerColor;
+			global::Xamarin.Essentials.Resource.Styleable.GradientColor_android_centerX = global::BehaviorsSampleApp.Droid.Resource.Styleable.GradientColor_android_centerX;
+			global::Xamarin.Essentials.Resource.Styleable.GradientColor_android_centerY = global::BehaviorsSampleApp.Droid.Resource.Styleable.GradientColor_android_centerY;
+			global::Xamarin.Essentials.Resource.Styleable.GradientColor_android_endColor = global::BehaviorsSampleApp.Droid.Resource.Styleable.GradientColor_android_endColor;
+			global::Xamarin.Essentials.Resource.Styleable.GradientColor_android_endX = global::BehaviorsSampleApp.Droid.Resource.Styleable.GradientColor_android_endX;
+			global::Xamarin.Essentials.Resource.Styleable.GradientColor_android_endY = global::BehaviorsSampleApp.Droid.Resource.Styleable.GradientColor_android_endY;
+			global::Xamarin.Essentials.Resource.Styleable.GradientColor_android_gradientRadius = global::BehaviorsSampleApp.Droid.Resource.Styleable.GradientColor_android_gradientRadius;
+			global::Xamarin.Essentials.Resource.Styleable.GradientColor_android_startColor = global::BehaviorsSampleApp.Droid.Resource.Styleable.GradientColor_android_startColor;
+			global::Xamarin.Essentials.Resource.Styleable.GradientColor_android_startX = global::BehaviorsSampleApp.Droid.Resource.Styleable.GradientColor_android_startX;
+			global::Xamarin.Essentials.Resource.Styleable.GradientColor_android_startY = global::BehaviorsSampleApp.Droid.Resource.Styleable.GradientColor_android_startY;
+			global::Xamarin.Essentials.Resource.Styleable.GradientColor_android_tileMode = global::BehaviorsSampleApp.Droid.Resource.Styleable.GradientColor_android_tileMode;
+			global::Xamarin.Essentials.Resource.Styleable.GradientColor_android_type = global::BehaviorsSampleApp.Droid.Resource.Styleable.GradientColor_android_type;
+			global::Xamarin.Essentials.Resource.Styleable.GradientColorItem = global::BehaviorsSampleApp.Droid.Resource.Styleable.GradientColorItem;
+			global::Xamarin.Essentials.Resource.Styleable.GradientColorItem_android_color = global::BehaviorsSampleApp.Droid.Resource.Styleable.GradientColorItem_android_color;
+			global::Xamarin.Essentials.Resource.Styleable.GradientColorItem_android_offset = global::BehaviorsSampleApp.Droid.Resource.Styleable.GradientColorItem_android_offset;
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_fade_in = global::BehaviorsSampleApp.Droid.Resource.Animation.abc_fade_in;
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_fade_out = global::BehaviorsSampleApp.Droid.Resource.Animation.abc_fade_out;
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_grow_fade_in_from_bottom = global::BehaviorsSampleApp.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;
@@ -14449,6 +14631,22 @@ namespace BehaviorsSampleApp.Droid
 			}
 			
 			private Styleable()
+			{
+			}
+		}
+		
+		public partial class Xml
+		{
+			
+			// aapt resource value: 0x7F100000
+			public const int xamarin_essentials_fileprovider_file_paths = 2131755008;
+			
+			static Xml()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Xml()
 			{
 			}
 		}

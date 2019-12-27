@@ -1,7 +1,7 @@
 ﻿
 using System;
 using System.Linq;
-
+using Esri.ArcGISRuntime.Data;
 using Esri.ArcGISRuntime.Mapping;
 using Esri.ArcGISRuntime.Mapping.Popups;
 
@@ -87,9 +87,14 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     {
       var identifyView = bindable as IdentifyView;
       var identifyResults = newValue as IdentifyResults;
+      var oldidentifyResults = oldValue as IdentifyResults;
+
+      identifyView.ClearSelection(oldidentifyResults);
+
       identifyView.CurrentElementIndex = 0;
       identifyView.NextButton.IsEnabled = identifyResults.GeoElementResults.Count > 1;
       identifyView.PreviousButton.IsEnabled = false;
+
       GetPopupManager(identifyView, identifyResults);
     }
 
@@ -104,8 +109,11 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
       {
         Popup popup;
         var geoElementResult = identifyResults.GeoElementResults.ElementAt(identifyView.CurrentElementIndex);
+        (geoElementResult.Layer as FeatureLayer).SelectFeature(geoElementResult.GeoElement as Feature);
+
         identifyView.TitleText = (geoElementResult.Layer is FeatureLayer) ?
-          (geoElementResult.Layer as FeatureLayer).FeatureTable.DisplayName : string.Empty;
+          (geoElementResult.Layer as FeatureLayer).FeatureTable.DisplayName : 
+          string.Empty;
 
         if (geoElementResult.Layer is IPopupSource)
         {
@@ -136,10 +144,23 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
+    private void ClearSelection(IdentifyResults identifyResuls = null) { 
+    
+      if(identifyResuls == null) {
+        identifyResuls = IdentifyResults;
+      }
+      var geoElementResult = identifyResuls.GeoElementResults.ElementAt(CurrentElementIndex);
+      (geoElementResult.Layer as FeatureLayer).ClearSelection();
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
     private void PreviousResulteClicked(object sender, EventArgs e)
-    {
+   {
+      ClearSelection();
       CurrentElementIndex -= 1;
       PreviousButton.IsEnabled = CurrentElementIndex > 0;
       NextButton.IsEnabled = CurrentElementIndex < IdentifyResults.GeoElementResults.Count - 1;
@@ -153,6 +174,8 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="e"></param>
     private void NextResultClicked(object sender, EventArgs e)
     {
+      ClearSelection();
+
       CurrentElementIndex += 1;
       NextButton.IsEnabled = CurrentElementIndex < IdentifyResults.GeoElementResults.Count - 1;
       PreviousButton.IsEnabled = CurrentElementIndex > 0;
@@ -168,6 +191,8 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     private void HideViewClicked(object sender, EventArgs e)
     {
       IsVisible = false;
+
+      ClearSelection();
     }
   }
 }

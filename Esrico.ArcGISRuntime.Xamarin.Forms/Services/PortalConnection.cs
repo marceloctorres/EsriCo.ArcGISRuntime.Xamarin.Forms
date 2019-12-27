@@ -137,7 +137,9 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
       await AddCredential();
 
       Portal = await ArcGISPortal.CreateAsync(new Uri(BaseUrl));
-      ArcGISRuntimeEnvironment.SetLicense(Portal.PortalInfo.LicenseInfo);
+      var licenseInfo = await Portal.GetLicenseInfoAsync();
+
+      ArcGISRuntimeEnvironment.SetLicense(licenseInfo); 
 
       PortalUser = Portal.User;
       UserImage = PortalUser.ThumbnailUri != null ?
@@ -194,9 +196,20 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     /// 
     /// </summary>
     /// <returns></returns>
+    [Obsolete()]
     public string LicenseInfoJson()
     {
       return Portal.PortalInfo.LicenseInfo.ToJson();
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <returns></returns>
+    public async Task<string> GetLicenseInfoJsonAsync()
+    {
+      var licenseInfo = await Portal.GetLicenseInfoAsync();
+      return licenseInfo.ToJson();
     }
 
     /// <summary>

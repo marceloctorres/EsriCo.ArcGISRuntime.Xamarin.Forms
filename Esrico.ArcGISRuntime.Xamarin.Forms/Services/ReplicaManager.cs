@@ -341,12 +341,12 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     /// 
     /// </summary>
     /// <param name="map"></param>
-    /// <param name="refresh"></param>
     /// <param name="jobHandler"></param>
     /// <param name="progressHandler"></param>
+    /// 
     /// <returns></returns>
-    public async Task<SynchronizeReplicaResult> SynchronizeReplica (Map map, bool refresh, 
-      EventHandler<JobChangedEventArgs> jobHandler, EventHandler<ProgressChangedEventArgs> progressHandler)
+    public async Task<SynchronizeReplicaResult> SynchronizeReplica(Map map, EventHandler<JobChangedEventArgs> jobHandler,
+      EventHandler<ProgressChangedEventArgs> progressHandler)
     {
       var errors = new List<SyncReplicaErrorResult>();
       var task = await OfflineMapSyncTask.CreateAsync(map);
