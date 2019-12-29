@@ -36,13 +36,17 @@
       <esrico:ProcessingView x:Name="processingview"
                              ProcessingMessage="{x:Static resx:AppResources.ProcessingMessageText}"
                              IsProcessing="{Binding IsProcessing}" />
-      <esrico:IdentifyView x:Name="identifyview" 
+      <esrico:IdentifyView x:Name="identifyview"
                            IdentifyResults="{Binding IdentifyResults}"
                            HorizontalOptions="StartAndExpand"
                            IsManaged="False"
                            IsHeaderVisible="True"
                            CurrentElementIndex="{Binding CurrentElementIndex}"
                            IsVisible="{Binding IsIdentifyVisible}">
+        <esrico:IdentifyView.Behaviors>
+          <prism:EventToCommandBehavior EventName="Closed"
+                                        Command="{Binding CloseCommand}" />
+        </esrico:IdentifyView.Behaviors>
         <esrico:IdentifyView.HeaderContent>
           <Grid ColumnSpacing="0"
                 RowSpacing="0"
@@ -74,25 +78,16 @@
                                   TitleText="{x:Static resx:AppResources.TOCPanelTitleText}"
                                   HorizontalOptions="CenterAndExpand"
                                   IsVisible="{Binding IsTOCVisible}" />
-      <esrico:DrawingStatusView MapView="{Binding Source={x:Reference mapView}}" IndicatorColor="Black"/>
+      <esrico:DrawingStatusView MapView="{Binding Source={x:Reference mapView}}"
+                                IndicatorColor="Black" />
       <esrico:PanelView x:Name="AprobacionView"
                         TitleText="Aprobación"
                         IsStatusVisible="False"
                         IsHeaderVisible="False"
                         IsFooterVisible="False"
-                        IsVisible="True">
+                        IsVisible="{Binding IsApprovalPanelVisible}">
         <esrico:PanelView.BodyContent>
           <Grid>
-            <Frame IsVisible="True"
-                   HasShadow="False"
-                   BackgroundColor="Gray">
-              <ActivityIndicator HorizontalOptions="CenterAndExpand"
-                                 VerticalOptions="CenterAndExpand"
-                                 FlowDirection="MatchParent"
-                                 Visual="Material"
-                                 IsRunning="True" 
-                                 Color="Black" />
-            </Frame>
             <StackLayout Orientation="Vertical"
                          Margin="0"
                          HorizontalOptions="FillAndExpand"
@@ -113,28 +108,25 @@
                           VerticalOptions="FillAndExpand"
                           SelectionMode="None"
                           ItemsSource="{Binding Aprobacion.Interesados}">
-                  <!--<ListView.HeaderTemplate>
-                  <DataTemplate>
-                    <ViewCell>
-                      <Label Text="Header" />
-                      -->
-                  <!--<Grid Padding="0"
-                            Margin="0">
-                        <Grid.ColumnDefinitions>
-                          <ColumnDefinition Width="0.5*" />
-                          <ColumnDefinition Width="0.5*" />
-                        </Grid.ColumnDefinitions>
-                        <Label Text="Nombres"
-                               Margin="5"
-                               Grid.Column="0" />
-                        <Label Text="Apellidos"
-                               Margin="5"
-                               Grid.Column="1" />
-                      </Grid>-->
-                  <!--
-                    </ViewCell>
-                  </DataTemplate>
-                </ListView.HeaderTemplate>-->
+                  <ListView.HeaderTemplate>
+                    <DataTemplate>
+                      <ContentView>
+                        <Grid Padding="0"
+                              Margin="0">
+                          <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.5*" />
+                            <ColumnDefinition Width="0.5*" />
+                          </Grid.ColumnDefinitions>
+                          <Label Text="Nombres"
+                                 Margin="5"
+                                 Grid.Column="0" />
+                          <Label Text="Apellidos"
+                                 Margin="5"
+                                 Grid.Column="1" />
+                        </Grid>
+                      </ContentView>
+                    </DataTemplate>
+                  </ListView.HeaderTemplate>
                   <ListView.ItemTemplate>
                     <DataTemplate>
                       <ViewCell>
@@ -157,6 +149,16 @@
                 </ListView>
               </Frame>
             </StackLayout>
+            <Frame IsVisible="True"
+                   HasShadow="False"
+                   BackgroundColor="Gray">
+              <ActivityIndicator HorizontalOptions="CenterAndExpand"
+                                 VerticalOptions="CenterAndExpand"
+                                 FlowDirection="MatchParent"
+                                 Visual="Material"
+                                 IsRunning="True"
+                                 Color="Black" />
+            </Frame>
           </Grid>
         </esrico:PanelView.BodyContent>
       </esrico:PanelView>

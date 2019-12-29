@@ -103,6 +103,14 @@ namespace BehaviorsSampleApp.ViewModels
       set { SetProperty(ref _isIdentifyMenuVisible, value); }
     }
 
+    private bool _isApprovalPanelVisible;
+
+    public bool IsApprovalPanelVisible
+    {
+      get { return _isApprovalPanelVisible; }
+      set { SetProperty(ref _isApprovalPanelVisible, value); }
+    }
+
     private int _currentElementIndex;
     public int CurrentElementIndex
     {
@@ -128,6 +136,8 @@ namespace BehaviorsSampleApp.ViewModels
 
     public ICommand ApprovalCommand { get; private set; }
 
+    public ICommand CloseCommand { get; private set; }
+
     public MainPageViewModel(INavigationService navigationService, IPageDialogService pageDialogService)
         : base(navigationService, pageDialogService)
     {
@@ -138,12 +148,18 @@ namespace BehaviorsSampleApp.ViewModels
       IsLoginVisible = false;
       User = "mtorres";
       Password = "qwertyuiop54321$%&";
+
       ApprovalCommand = new DelegateCommand(async () => {
         IsIdentifyMenuVisible = false;
+        IsApprovalPanelVisible = true;
         await PageDialogService.DisplayAlertAsync(AppResources.DialogTitle,
           $"{AppResources.ApprovalMessage} {CurrentElementIndex}",
           AppResources.CloseButtonText);
       });
+      CloseCommand = new DelegateCommand(() =>
+        {
+          IsApprovalPanelVisible = false;
+        }); 
       ShowIdentifyMenuCommand = new DelegateCommand(() =>
         {
           IsIdentifyMenuVisible = !IsIdentifyMenuVisible;
@@ -160,12 +176,14 @@ namespace BehaviorsSampleApp.ViewModels
         }, () => { 
           return Map != null;
         }).ObservesProperty(() => Map);
+
       TOCCommand = new DelegateCommand(() =>
         {
           IsTOCVisible = !IsTOCVisible;
         }, () => {
           return Map != null;
         }).ObservesProperty(() => Map);
+
       IdentificarCommand = new DelegateCommand<IdentifyResults>((o) =>
         {
           if (o.GeoElementResults.Count > 0)
@@ -175,6 +193,7 @@ namespace BehaviorsSampleApp.ViewModels
           }
           IsProcessing = false;
         });
+
       LoadMapCommand = new DelegateCommand(() =>
       {
         if(Map!= null)

@@ -64,9 +64,10 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    public int CurrentElementIndex { 
+    public int CurrentElementIndex
+    {
       get => (int)GetValue(CurrentElementIndexProperty);
-      set => SetValue(CurrentElementIndexProperty, value); 
+      set => SetValue(CurrentElementIndexProperty, value);
     }
 
     /// <summary>
@@ -103,7 +104,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// </summary>
     /// <param name="identifyView"></param>
     /// <param name="identifyResults"></param>
-    private static void GetPopupManager (IdentifyView identifyView, IdentifyResults identifyResults)
+    private static void GetPopupManager(IdentifyView identifyView, IdentifyResults identifyResults)
     {
       try
       {
@@ -112,7 +113,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
         (geoElementResult.Layer as FeatureLayer).SelectFeature(geoElementResult.GeoElement as Feature);
 
         identifyView.TitleText = (geoElementResult.Layer is FeatureLayer) ?
-          (geoElementResult.Layer as FeatureLayer).FeatureTable.DisplayName : 
+          (geoElementResult.Layer as FeatureLayer).FeatureTable.DisplayName :
           string.Empty;
 
         if (geoElementResult.Layer is IPopupSource)
@@ -123,7 +124,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
             new Popup(geoElementResult.GeoElement, popupDefinition) :
             Popup.FromGeoElement(geoElementResult.GeoElement);
         }
-        else 
+        else
         {
           popup = Popup.FromGeoElement(geoElementResult.GeoElement);
         }
@@ -144,9 +145,11 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    private void ClearSelection(IdentifyResults identifyResuls = null) { 
-    
-      if(identifyResuls == null) {
+    private void ClearSelection(IdentifyResults identifyResuls = null)
+    {
+
+      if (identifyResuls == null)
+      {
         identifyResuls = IdentifyResults;
       }
       var geoElementResult = identifyResuls.GeoElementResults.ElementAt(CurrentElementIndex);
@@ -159,7 +162,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="sender"></param>
     /// <param name="e"></param>
     private void PreviousResulteClicked(object sender, EventArgs e)
-   {
+    {
       ClearSelection();
       CurrentElementIndex -= 1;
       PreviousButton.IsEnabled = CurrentElementIndex > 0;
@@ -180,7 +183,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
       NextButton.IsEnabled = CurrentElementIndex < IdentifyResults.GeoElementResults.Count - 1;
       PreviousButton.IsEnabled = CurrentElementIndex > 0;
       GetPopupManager(this, IdentifyResults);
-  
+
     }
 
     /// <summary>
@@ -188,10 +191,9 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
-    private void HideViewClicked(object sender, EventArgs e)
+    protected override void OnCloseButtonClicked(object sender, EventArgs e)
     {
-      IsVisible = false;
-
+      base.OnCloseButtonClicked(sender, e);
       ClearSelection();
     }
   }

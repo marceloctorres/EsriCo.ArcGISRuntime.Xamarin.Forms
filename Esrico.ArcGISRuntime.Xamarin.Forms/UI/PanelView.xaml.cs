@@ -10,6 +10,9 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
   [XamlCompilation(XamlCompilationOptions.Compile)]
   public partial class PanelView : ContentView
   {
+
+    public event EventHandler Closed; 
+
     /// <summary>
     /// 
     /// </summary>
@@ -80,7 +83,6 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
 
       if (newVisible != oldVisible)
       {
-        
       }
     }
 
@@ -494,6 +496,15 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     protected virtual void OnCloseButtonClicked(object sender, EventArgs e)
     {
       IsVisible = false;
+      OnPanelClosed();
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    protected virtual void OnPanelClosed()
+    {
+      Closed?.Invoke(this, new EventArgs());
     }
 
     double x, y;
