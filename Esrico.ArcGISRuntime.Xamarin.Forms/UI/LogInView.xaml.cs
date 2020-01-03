@@ -46,7 +46,8 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     public static readonly BindableProperty UsernameProperty = BindableProperty.Create(
       nameof(Username),
       typeof(string),
-      typeof(LogInView));
+      typeof(LogInView), 
+      defaultBindingMode: BindingMode.TwoWay);
 
     /// <summary>
     /// 
@@ -63,7 +64,8 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     public static readonly BindableProperty PasswordProperty = BindableProperty.Create(
       nameof(Password),
       typeof(string),
-      typeof(LogInView));
+      typeof(LogInView),
+      defaultBindingMode: BindingMode.TwoWay);
 
     /// <summary>
     /// 

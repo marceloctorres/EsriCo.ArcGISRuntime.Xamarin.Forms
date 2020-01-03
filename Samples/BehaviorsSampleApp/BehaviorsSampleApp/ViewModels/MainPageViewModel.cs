@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
+using System.Threading.Tasks;
 using System.Windows.Input;
 using BehaviorsSampleApp.Resx;
 using Esri.ArcGISRuntime.Geometry;
@@ -118,6 +120,17 @@ namespace BehaviorsSampleApp.ViewModels
       set => SetProperty(ref _currentElementIndex, value); 
     }
 
+    private bool _isApprovalActivityVisible;
+    
+    /// <summary>
+    /// 
+    /// </summary>
+    public bool IsApprovalActivityVisible
+    {
+      get { return _isApprovalActivityVisible; }
+      set { SetProperty(ref _isApprovalActivityVisible, value); }
+    }
+
     public ICommand LogInCommand { get; private set; }
 
     public ICommand CancelCommand { get; private set; }
@@ -152,14 +165,18 @@ namespace BehaviorsSampleApp.ViewModels
       ApprovalCommand = new DelegateCommand(async () => {
         IsIdentifyMenuVisible = false;
         IsApprovalPanelVisible = true;
+        IsApprovalActivityVisible = true;
+
         await PageDialogService.DisplayAlertAsync(AppResources.DialogTitle,
           $"{AppResources.ApprovalMessage} {CurrentElementIndex}",
           AppResources.CloseButtonText);
+        IsApprovalActivityVisible = false;
       });
       CloseCommand = new DelegateCommand(() =>
         {
           IsApprovalPanelVisible = false;
         }); 
+
       ShowIdentifyMenuCommand = new DelegateCommand(() =>
         {
           IsIdentifyMenuVisible = !IsIdentifyMenuVisible;

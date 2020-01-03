@@ -4,6 +4,8 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:root="clr-namespace:EsriCo.ArcGISRuntime.Xamarin.Forms"
+             WidthRequest="500"
+             MinimumWidthRequest="300"
              mc:Ignorable="d"
              x:Class="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.LogInView"
              x:Name="view">
@@ -22,7 +24,6 @@
            VerticalOptions="FillAndExpand">
       <Frame Margin="0"
              Padding="2"
-             WidthRequest="500"
              HorizontalOptions="CenterAndExpand"
              VerticalOptions="CenterAndExpand"
              OutlineColor="Black">

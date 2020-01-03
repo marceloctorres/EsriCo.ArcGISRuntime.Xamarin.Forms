@@ -123,6 +123,9 @@
   <data name="ApprovalMessage" xml:space="preserve">
     <value>Indice del elemento seleccionado:</value>
   </data>
+  <data name="ApprovalPanelTitle" xml:space="preserve">
+    <value>Apobación</value>
+  </data>
   <data name="CancelLoginText" xml:space="preserve">
     <value>Se canceló!!!</value>
   </data>
@@ -146,6 +149,15 @@
   </data>
   <data name="ProcessingMessageText" xml:space="preserve">
     <value>Trabajando...</value>
+  </data>
+  <data name="SignaturaPanelTitle" xml:space="preserve">
+    <value>Firma</value>
+  </data>
+  <data name="SignaturePadViewCaptionText" xml:space="preserve">
+    <value>Firme sobre la línea</value>
+  </data>
+  <data name="SignaturePadViewClearText" xml:space="preserve">
+    <value>Limpiar</value>
   </data>
   <data name="TOCButtonText" xml:space="preserve">
     <value>Tabla de Contenido</value>

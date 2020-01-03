@@ -4,6 +4,14 @@
              xmlns:prism="clr-namespace:Prism.Unity;assembly=Prism.Unity.Forms"
              x:Class="BehaviorsSampleApp.App">
 	<Application.Resources>
+    <Color x:Key="DarkGrayTransparent">
+      <x:Arguments>
+        <x:Double>0.8</x:Double>
+        <x:Double>0.8</x:Double>
+        <x:Double>0.8</x:Double>
+        <x:Double>0.5</x:Double>
+      </x:Arguments>
+    </Color>
     <Style TargetType="Label">
       <Setter Property="TextColor"
               Value="Black" />

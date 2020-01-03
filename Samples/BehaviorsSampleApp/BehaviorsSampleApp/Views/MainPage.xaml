@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="http://prismlibrary.com"
              xmlns:resx="clr-namespace:BehaviorsSampleApp.Resx"
+             xmlns:ctr="clr-namespace:SignaturePad.Forms;assembly=SignaturePad.Forms"
              xmlns:esriUI="clr-namespace:Esri.ArcGISRuntime.Xamarin.Forms;assembly=Esri.ArcGISRuntime.Xamarin.Forms"
              xmlns:esrico="clr-namespace:EsriCo.ArcGISRuntime.Xamarin.Forms.UI;assembly=Esrico.ArcGISRuntime.Xamarin.Forms"
              xmlns:bh="clr-namespace:EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors;assembly=EsriCo.ArcGISRuntime.Xamarin.Forms"
@@ -27,16 +28,16 @@
         </esriUI:MapView.Behaviors>
       </esriUI:MapView>
       <esrico:LogInView IsVisible="{Binding IsLoginVisible}"
-                        x:Name="logingview"
+                        x:Name="logingView"
                         Username="{Binding User}"
                         Password="{Binding Password}"
                         LogInCommand="{Binding LogInCommand}"
                         CancelCommand="{Binding CancelCommand}" />
       <esrico:NavigationBarView MapView="{Binding Source={x:Reference mapView}}" />
-      <esrico:ProcessingView x:Name="processingview"
+      <esrico:ProcessingView x:Name="processingView"
                              ProcessingMessage="{x:Static resx:AppResources.ProcessingMessageText}"
                              IsProcessing="{Binding IsProcessing}" />
-      <esrico:IdentifyView x:Name="identifyview"
+      <esrico:IdentifyView x:Name="identifyView"
                            IdentifyResults="{Binding IdentifyResults}"
                            HorizontalOptions="StartAndExpand"
                            IsManaged="False"
@@ -80,8 +81,8 @@
                                   IsVisible="{Binding IsTOCVisible}" />
       <esrico:DrawingStatusView MapView="{Binding Source={x:Reference mapView}}"
                                 IndicatorColor="Black" />
-      <esrico:PanelView x:Name="AprobacionView"
-                        TitleText="Aprobación"
+      <esrico:PanelView x:Name="approvalView"
+                        TitleText="{x:Static resx:AppResources.ApprovalPanelTitle}"
                         IsStatusVisible="False"
                         IsHeaderVisible="False"
                         IsFooterVisible="False"
@@ -149,9 +150,9 @@
                 </ListView>
               </Frame>
             </StackLayout>
-            <Frame IsVisible="True"
+            <Frame IsVisible="{Binding IsApprovalActivityVisible}"
                    HasShadow="False"
-                   BackgroundColor="Gray">
+                   BackgroundColor="{StaticResource DarkGrayTransparent}">
               <ActivityIndicator HorizontalOptions="CenterAndExpand"
                                  VerticalOptions="CenterAndExpand"
                                  FlowDirection="MatchParent"
@@ -161,6 +162,26 @@
             </Frame>
           </Grid>
         </esrico:PanelView.BodyContent>
+      </esrico:PanelView>
+      <esrico:PanelView x:Name="signatureView"
+                        Margin="100,20"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand"
+                        TitleText="{x:Static resx:AppResources.SignaturaPanelTitle}"
+                        IsStatusVisible="False"
+                        IsHeaderVisible="False"
+                        IsFooterVisible="False">
+        <esrico:PanelView.BodyContent>
+          <Grid>
+            <ctr:SignaturePadView HorizontalOptions="FillAndExpand"
+                                  SignatureLineWidth="3"
+                                  StrokeWidth="5"
+                                  ClearText="{x:Static resx:AppResources.SignaturePadViewClearText}"
+                                  CaptionText="{x:Static resx:AppResources.SignaturePadViewCaptionText}"
+                                  VerticalOptions="FillAndExpand" />
+          </Grid>
+        </esrico:PanelView.BodyContent>
+        
       </esrico:PanelView>
     </Grid>
     <StackLayout Grid.Row="1"

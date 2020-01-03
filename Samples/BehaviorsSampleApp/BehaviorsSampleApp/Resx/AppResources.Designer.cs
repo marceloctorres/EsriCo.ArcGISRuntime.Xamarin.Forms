@@ -79,6 +79,15 @@ namespace BehaviorsSampleApp.Resx {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Approval.
+        /// </summary>
+        public static string ApprovalPanelTitle {
+            get {
+                return ResourceManager.GetString("ApprovalPanelTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Was Cancelled!!!.
         /// </summary>
         public static string CancelLoginText {
@@ -147,6 +156,33 @@ namespace BehaviorsSampleApp.Resx {
         public static string ProcessingMessageText {
             get {
                 return ResourceManager.GetString("ProcessingMessageText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Signature.
+        /// </summary>
+        public static string SignaturaPanelTitle {
+            get {
+                return ResourceManager.GetString("SignaturaPanelTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Sign above the line.
+        /// </summary>
+        public static string SignaturePadViewCaptionText {
+            get {
+                return ResourceManager.GetString("SignaturePadViewCaptionText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Clear.
+        /// </summary>
+        public static string SignaturePadViewClearText {
+            get {
+                return ResourceManager.GetString("SignaturePadViewClearText", resourceCulture);
             }
         }
         
