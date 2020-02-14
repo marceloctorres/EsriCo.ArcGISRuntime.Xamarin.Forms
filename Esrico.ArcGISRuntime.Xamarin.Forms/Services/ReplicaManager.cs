@@ -211,30 +211,42 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     /// <returns></returns>
     public async Task<ValidateReplicaResult> ValidateReplica(Map map, Viewpoint viewpoint)
     {
-      var baseLayer = map.Basemap.BaseLayers.FirstOrDefault() as ArcGISTiledLayer;
-      var basemapUrl = baseLayer.Source.AbsoluteUri;
-      var newBasemapUrl = basemapUrl.Contains("services.arcgisonline") ?
-        basemapUrl.Replace("services.arcgisonline", "tiledbasemaps.arcgis") :
-        basemapUrl;
-      var task = await ExportTileCacheTask.CreateAsync(new Uri(newBasemapUrl));
+      var firstLayer = map.Basemap.BaseLayers.FirstOrDefault() as Layer;
+      string basemapUrl = string.Empty;
 
-      var param = await task.CreateDefaultExportTileCacheParametersAsync(viewpoint.TargetGeometry, MinScale, MaxScale);
-      var job = task.EstimateTileCacheSize(param);
-      try
+      if(firstLayer is ArcGISTiledLayer)
       {
-        var result = await job.GetResultAsync();
-        return new ValidateReplicaResult
+        var baseLayer = firstLayer as ArcGISTiledLayer;
+        basemapUrl = baseLayer.Source.AbsoluteUri;
+      }
+      if(!string.IsNullOrEmpty(basemapUrl))
+      {
+        var newBasemapUrl = basemapUrl.Contains("services.arcgisonline") ?
+          basemapUrl.Replace("services.arcgisonline", "tiledbasemaps.arcgis") :
+          basemapUrl;
+        var task = await ExportTileCacheTask.CreateAsync(new Uri(newBasemapUrl));
+
+        var param = await task.CreateDefaultExportTileCacheParametersAsync(viewpoint.TargetGeometry, MinScale, MaxScale);
+        var job = task.EstimateTileCacheSize(param);
+
+        try
         {
-          Valid = result.TileCount < task.ServiceInfo.MaxExportTilesCount,
-          Tiles = (int)result.TileCount,
-          Size = result.FileSize
-        };
+          var result = await job.GetResultAsync();
+          return new ValidateReplicaResult
+          {
+            Valid = result.TileCount < task.ServiceInfo.MaxExportTilesCount,
+            Tiles = (int)result.TileCount,
+            Size = result.FileSize
+          };
+        }
+        catch (ArcGISRuntimeException ex)
+        {
+          Debug.WriteLine(ex.Message);
+          return new ValidateReplicaResult();
+        }
+
       }
-      catch (ArcGISRuntimeException ex)
-      {
-        Debug.WriteLine(ex.Message);
-        return new ValidateReplicaResult();
-      }
+      return new ValidateReplicaResult() { Valid = true };
     }
 
     /// <summary>

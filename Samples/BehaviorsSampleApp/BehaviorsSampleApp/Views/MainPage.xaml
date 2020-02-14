@@ -21,14 +21,14 @@
         <esriUI:MapView.BackgroundGrid IsVisible="false" />
         <esriUI:MapView.Behaviors>
           <bh:IdentifyBehavior Layers="{Binding Layers}"
-                               Command="{Binding   IdentificarCommand}" />
+                               Command="{Binding IdentificarCommand}" />
           <prism:EventToCommandBehavior EventName="GeoViewTapped"
                                         CommandParameter="Location"
                                         Command="{Binding GeoViewTappedCommand}" />
         </esriUI:MapView.Behaviors>
       </esriUI:MapView>
-      <esrico:LogInView IsVisible="{Binding IsLoginVisible}"
-                        x:Name="logingView"
+      <esrico:LogInView x:Name="logingView"
+                        IsVisible="{Binding IsLoginVisible}"
                         Username="{Binding User}"
                         Password="{Binding Password}"
                         LogInCommand="{Binding LogInCommand}"
@@ -79,8 +79,6 @@
                                   TitleText="{x:Static resx:AppResources.TOCPanelTitleText}"
                                   HorizontalOptions="CenterAndExpand"
                                   IsVisible="{Binding IsTOCVisible}" />
-      <esrico:DrawingStatusView MapView="{Binding Source={x:Reference mapView}}"
-                                IndicatorColor="Black" />
       <esrico:PanelView x:Name="approvalView"
                         TitleText="{x:Static resx:AppResources.ApprovalPanelTitle}"
                         IsStatusVisible="False"
@@ -183,6 +181,8 @@
         </esrico:PanelView.BodyContent>
         
       </esrico:PanelView>
+      <esrico:DrawingStatusView MapView="{Binding Source={x:Reference mapView}}"
+                                IndicatorColor="Black" />
     </Grid>
     <StackLayout Grid.Row="1"
                  Margin="10"
