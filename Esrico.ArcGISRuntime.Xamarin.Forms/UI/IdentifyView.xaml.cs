@@ -147,7 +147,6 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// </summary>
     private void ClearSelection(IdentifyResults identifyResuls = null)
     {
-
       if (identifyResuls == null)
       {
         identifyResuls = IdentifyResults;

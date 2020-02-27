@@ -33,7 +33,8 @@
                         Password="{Binding Password}"
                         LogInCommand="{Binding LogInCommand}"
                         CancelCommand="{Binding CancelCommand}" />
-      <esrico:NavigationBarView MapView="{Binding Source={x:Reference mapView}}" />
+      <esrico:NavigationBarView MapView="{Binding Source={x:Reference mapView}}"
+                                ZoomInButtonImage="{StaticResource MenuImage}" />
       <esrico:ProcessingView x:Name="processingView"
                              ProcessingMessage="{x:Static resx:AppResources.ProcessingMessageText}"
                              IsProcessing="{Binding IsProcessing}" />

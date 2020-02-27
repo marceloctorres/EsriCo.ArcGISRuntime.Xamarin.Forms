@@ -206,6 +206,11 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     /// <summary>
     /// 
     /// </summary>
+    public MobileMapPackage MobileMapPackage { get; set; }
+
+    /// <summary>
+    /// 
+    /// </summary>
     /// <param name="map"></param>
     /// <param name="viewpoint"></param>
     /// <returns></returns>
@@ -445,6 +450,12 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
           }
         }
       }
+
+      if (MobileMapPackage != null)
+      {
+        MobileMapPackage.Close();
+      }
+
       await DeleteReplicaFolder();
       return sb.ToString();
     }
@@ -479,7 +490,6 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
               {
                 if (file.Contains(".geodatabase"))
                 {
-                  
                   var gdb = await Geodatabase.OpenAsync(file);
                   gdb.Close();
                 }
@@ -493,12 +503,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
           }
           Directory.Delete(f);
         }
-        var files = Directory.GetFiles(folderPath);
-        foreach (var file in files)
-        {
-          File.Delete(file);
-        }
-        Directory.Delete(folderPath);
+        Directory.Delete(folderPath, true);
       }
       catch (Exception ex)
       {
@@ -527,9 +532,9 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     public async Task<Map> GetReplicaMap()
     {
       var pathToOutputPackage = GetReplicaFullPath();
-      var mobileMapPackage = await MobileMapPackage.OpenAsync(pathToOutputPackage);
+      MobileMapPackage = await MobileMapPackage.OpenAsync(pathToOutputPackage);
 
-      return mobileMapPackage.Maps.FirstOrDefault();
+      return MobileMapPackage.Maps.FirstOrDefault();
     }
 
     /// <summary>
