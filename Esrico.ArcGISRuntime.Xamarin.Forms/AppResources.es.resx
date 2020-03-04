@@ -120,6 +120,21 @@
   <data name="CancelButtonText" xml:space="preserve">
     <value>Cancelar</value>
   </data>
+  <data name="DeleteReplicaMessageCantDelete" xml:space="preserve">
+    <value>No se pudo eliminar registro de Réplica Id:</value>
+  </data>
+  <data name="DeleteReplicaMessageDeleted" xml:space="preserve">
+    <value>Se eliminó registro de Réplica Id:</value>
+  </data>
+  <data name="DeleteReplicaMessageDone" xml:space="preserve">
+    <value>Replica eliminada</value>
+  </data>
+  <data name="DownloadReplicaOkMessageMap" xml:space="preserve">
+    <value>Mapa</value>
+  </data>
+  <data name="DownloadReplicaOkMessageSaved" xml:space="preserve">
+    <value>guardado</value>
+  </data>
   <data name="HidePasswordLabelText" xml:space="preserve">
     <value>Ocultar Contraseña:</value>
   </data>

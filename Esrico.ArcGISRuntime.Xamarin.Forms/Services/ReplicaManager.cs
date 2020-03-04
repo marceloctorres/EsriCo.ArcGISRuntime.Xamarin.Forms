@@ -325,7 +325,10 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
         var generateOfflineMapResults = await job.GetResultAsync();
         if (!generateOfflineMapResults.HasErrors)
         {
-          var okMessage = $"Mapa {generateOfflineMapResults.MobileMapPackage.Item.Title} guardado.";
+          var okMessage = $"{AppResources.DownloadReplicaOkMessageMap} " + 
+            $"{generateOfflineMapResults.MobileMapPackage.Item.Title} " + 
+            $"{AppResources.DownloadReplicaOkMessageSaved}.";
+          MobileMapPackage = generateOfflineMapResults.MobileMapPackage;
           return new DownloadReplicaResult
           {
             Map = generateOfflineMapResults.OfflineMap,
@@ -432,12 +435,12 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
             await task.UnregisterGeodatabaseAsync(gdb);
 
             gdb.Close();
-            sb.Append($"Se eliminó el registro de la Réplica {syncId}. ");
+            sb.Append($"{AppResources.DeleteReplicaMessageDeleted} {syncId}.");
           }
           catch (ArcGISWebException ex)
           {
             Debug.WriteLine(ex.Message);
-            sb.Append($"No se pudo eliminar el registro de la Réplica {syncId}.");
+            sb.Append($"{AppResources.DeleteReplicaMessageCantDelete} {syncId}.");
           }
           catch
           {
@@ -446,14 +449,9 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
           finally
           {
             gdb.Close();
-            sb.Append("Se eliminó la replica.");
+            sb.Append($"{AppResources.DeleteReplicaMessageDone}.");
           }
         }
-      }
-
-      if (MobileMapPackage != null)
-      {
-        MobileMapPackage.Close();
       }
 
       await DeleteReplicaFolder();
@@ -493,7 +491,6 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
                   var gdb = await Geodatabase.OpenAsync(file);
                   gdb.Close();
                 }
-                File.Delete(file);
               }
               catch (Exception ex)
               {
@@ -501,7 +498,10 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
               }
             }
           }
-          Directory.Delete(f);
+        }
+        if (MobileMapPackage != null)
+        {
+          MobileMapPackage.Close();
         }
         Directory.Delete(folderPath, true);
       }

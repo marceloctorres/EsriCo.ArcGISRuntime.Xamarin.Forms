@@ -70,6 +70,51 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Cant&apos; delete Replica Register Id:.
+        /// </summary>
+        public static string DeleteReplicaMessageCantDelete {
+            get {
+                return ResourceManager.GetString("DeleteReplicaMessageCantDelete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Replica Register deleted Id: .
+        /// </summary>
+        public static string DeleteReplicaMessageDeleted {
+            get {
+                return ResourceManager.GetString("DeleteReplicaMessageDeleted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Replica deleted.
+        /// </summary>
+        public static string DeleteReplicaMessageDone {
+            get {
+                return ResourceManager.GetString("DeleteReplicaMessageDone", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Map.
+        /// </summary>
+        public static string DownloadReplicaOkMessageMap {
+            get {
+                return ResourceManager.GetString("DownloadReplicaOkMessageMap", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a saved.
+        /// </summary>
+        public static string DownloadReplicaOkMessageSaved {
+            get {
+                return ResourceManager.GetString("DownloadReplicaOkMessageSaved", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Hide Password:.
         /// </summary>
         public static string HidePasswordLabelText {
