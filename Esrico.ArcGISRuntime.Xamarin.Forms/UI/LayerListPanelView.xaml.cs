@@ -102,38 +102,37 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    private List<LayerInfos> GetLayerInfosFromLoadedMap()
+    private async Task<List<LayerInfos>> GetLayerInfosFromLoadedMap()
     {
       var listLayerInfos = new List<LayerInfos>();
-      Map.OperationalLayers
-        .ToList()
-        .ForEach(async ol =>
-        {
-          var layerInfos = new LayerInfos()
-          {
-            GroupLayerInfo = new LayerInfo { Layer = ol }
-          };
-          ol.SublayerContents
-                .ToList()
-                .ForEach(sl =>
-            {
-              layerInfos.SubLayerInfos.Add(new LayerInfo()
-              {
-                ParentInfo = layerInfos.GroupLayerInfo,
-                Layer = sl as Layer
-              });
-            });
-          listLayerInfos.Add(layerInfos);
 
-          var legendInfos = await layerInfos.GroupLayerInfo.Layer.GetLegendInfosAsync();
-          await layerInfos.GroupLayerInfo.SetLegendInfos(legendInfos);
-          layerInfos.SubLayerInfos
-                  .ForEach(async sli =>
+      foreach(var ol in Map.OperationalLayers)
+      {
+        var layerInfos = new LayerInfos()
+        {
+          GroupLayerInfo = new LayerInfo { Layer = ol }
+        };
+        ol.SublayerContents
+              .ToList()
+              .ForEach(sl =>
               {
-                var subLegendInfos = await sli.Layer.GetLegendInfosAsync();
-                await sli.SetLegendInfos(subLegendInfos);
+                layerInfos.SubLayerInfos.Add(new LayerInfo()
+                {
+                  ParentInfo = layerInfos.GroupLayerInfo,
+                  Layer = sl as Layer
+                });
               });
-        });
+        listLayerInfos.Add(layerInfos);
+
+        var legendInfos = await layerInfos.GroupLayerInfo.Layer.GetLegendInfosAsync();
+        await layerInfos.GroupLayerInfo.SetLegendInfos(legendInfos);
+
+        foreach (var sli in layerInfos.SubLayerInfos)
+        {
+          var subLegendInfos = await sli.Layer.GetLegendInfosAsync();
+          await sli.SetLegendInfos(subLegendInfos);
+        }
+      }
       return listLayerInfos;
     }
 
@@ -145,19 +144,19 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     {
       if (Map != null)
       {
-        if(Map.LoadStatus != LoadStatus.Loaded)
+        if (Map.LoadStatus != LoadStatus.Loaded)
         {
           var listLayerInfos = new List<LayerInfos>();
-          Map.Loaded += (o, e) =>
+          Map.Loaded += async (o, e) =>
           {
-            listLayerInfos = GetLayerInfosFromLoadedMap();
+            listLayerInfos = await GetLayerInfosFromLoadedMap();
           };
           await Map.LoadAsync();
           return listLayerInfos;
         }
         else
         {
-          return GetLayerInfosFromLoadedMap();
+          return await GetLayerInfosFromLoadedMap();
         }
       }
       else
