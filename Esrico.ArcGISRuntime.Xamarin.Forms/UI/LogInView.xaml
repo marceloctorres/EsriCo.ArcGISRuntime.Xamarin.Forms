@@ -26,6 +26,7 @@
              Padding="2"
              HorizontalOptions="CenterAndExpand"
              VerticalOptions="CenterAndExpand"
+             WidthRequest="{Binding Source={x:Reference view}, Path=WidthRequest}"
              OutlineColor="Black">
         <Grid Margin="0"
               Padding="0"

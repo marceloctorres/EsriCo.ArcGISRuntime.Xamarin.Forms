@@ -153,6 +153,9 @@
   <data name="SignaturaPanelTitle" xml:space="preserve">
     <value>Signature</value>
   </data>
+  <data name="SignatureButtonText" xml:space="preserve">
+    <value>Signature</value>
+  </data>
   <data name="SignaturePadViewCaptionText" xml:space="preserve">
     <value>Sign above the line</value>
   </data>

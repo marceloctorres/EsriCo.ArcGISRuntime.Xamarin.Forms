@@ -169,6 +169,15 @@ namespace BehaviorsSampleApp.Resx {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Signature.
+        /// </summary>
+        public static string SignatureButtonText {
+            get {
+                return ResourceManager.GetString("SignatureButtonText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Sign above the line.
         /// </summary>
         public static string SignaturePadViewCaptionText {

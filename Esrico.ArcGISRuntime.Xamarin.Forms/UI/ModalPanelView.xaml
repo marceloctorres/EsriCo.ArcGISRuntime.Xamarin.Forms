@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ui:PanelView xmlns="http://xamarin.com/schemas/2014/forms"
+              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+              xmlns:ui="clr-namespace:EsriCo.ArcGISRuntime.Xamarin.Forms.UI"
+              xmlns:root="clr-namespace:EsriCo.ArcGISRuntime.Xamarin.Forms"
+              mc:Ignorable="d"
+              Padding="0"
+              Margin="0"
+              x:Class="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.ModalPanelView">
+  <ContentView.Resources>
+    <ResourceDictionary>
+      <ResourceDictionary.MergedDictionaries>
+        <root:ResourceDictionary />
+      </ResourceDictionary.MergedDictionaries>
+    </ResourceDictionary>
+  </ContentView.Resources>
+</ui:PanelView>

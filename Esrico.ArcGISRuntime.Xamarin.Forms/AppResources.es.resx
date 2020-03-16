@@ -150,6 +150,9 @@
   <data name="ProcessingMessageLabelText" xml:space="preserve">
     <value>Procesando...</value>
   </data>
+  <data name="SignatureButtonText" xml:space="preserve">
+    <value>Firma</value>
+  </data>
   <data name="UsernameLabelText" xml:space="preserve">
     <value>Usuario:</value>
   </data>

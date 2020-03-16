@@ -131,6 +131,17 @@ namespace BehaviorsSampleApp.ViewModels
       set { SetProperty(ref _isApprovalActivityVisible, value); }
     }
 
+    public bool _isSignatureVisible;
+
+    /// <summary>
+    /// 
+    /// </summary>
+    public bool IsSignatureVisible
+    {
+      get => _isSignatureVisible;
+      set => SetProperty(ref _isSignatureVisible, value);
+    }
+
     public ICommand LogInCommand { get; private set; }
 
     public ICommand CancelCommand { get; private set; }
@@ -151,6 +162,8 @@ namespace BehaviorsSampleApp.ViewModels
 
     public ICommand CloseCommand { get; private set; }
 
+    public ICommand SignatureCommand { get; private set; }
+
     public MainPageViewModel(INavigationService navigationService, IPageDialogService pageDialogService)
         : base(navigationService, pageDialogService)
     {
@@ -159,6 +172,7 @@ namespace BehaviorsSampleApp.ViewModels
       IsTOCVisible = false;
       IsIdentifyVisible = false;
       IsLoginVisible = false;
+      IsSignatureVisible = false;
       User = "mtorres";
       Password = "qwertyuiop54321$%&";
 
@@ -172,6 +186,11 @@ namespace BehaviorsSampleApp.ViewModels
           AppResources.CloseButtonText);
         IsApprovalActivityVisible = false;
       });
+      SignatureCommand = new DelegateCommand(() =>
+      {
+        IsSignatureVisible = true;
+      });
+
       CloseCommand = new DelegateCommand(() =>
         {
           IsApprovalPanelVisible = false;
@@ -237,12 +256,12 @@ namespace BehaviorsSampleApp.ViewModels
 
         Layers = Map.OperationalLayers.ToList();
       });
-      CancelCommand = new DelegateCommand(async () =>
+      CancelCommand = new DelegateCommand(() =>
        {
          IsLoginVisible = false;
-         await PageDialogService.DisplayAlertAsync(AppResources.DialogTitle, 
-           AppResources.CancelLoginText, 
-           AppResources.CloseButtonText);
+         //await PageDialogService.DisplayAlertAsync(AppResources.DialogTitle, 
+         //  AppResources.CancelLoginText, 
+         //  AppResources.CloseButtonText);
        });
     }
 

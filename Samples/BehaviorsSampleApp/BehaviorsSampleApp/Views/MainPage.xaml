@@ -14,7 +14,8 @@
       <RowDefinition Height="*" />
       <RowDefinition Height="Auto" />
     </Grid.RowDefinitions>
-    <Grid IsClippedToBounds="True">
+    <Grid IsClippedToBounds="True"
+          Padding="0">
       <esriUI:MapView x:Name="mapView"
                       Map="{Binding Map}">
         <esriUI:MapView.InteractionOptions IsRotateEnabled="false" />
@@ -28,6 +29,7 @@
         </esriUI:MapView.Behaviors>
       </esriUI:MapView>
       <esrico:LogInView x:Name="logingView"
+                        WidthRequest="500"
                         IsVisible="{Binding IsLoginVisible}"
                         Username="{Binding User}"
                         Password="{Binding Password}"
@@ -162,14 +164,15 @@
           </Grid>
         </esrico:PanelView.BodyContent>
       </esrico:PanelView>
-      <esrico:PanelView x:Name="signatureView"
-                        Margin="100,20"
-                        HorizontalOptions="FillAndExpand"
-                        VerticalOptions="FillAndExpand"
-                        TitleText="{x:Static resx:AppResources.SignaturaPanelTitle}"
-                        IsStatusVisible="False"
-                        IsHeaderVisible="False"
-                        IsFooterVisible="False">
+      <esrico:ModalPanelView x:Name="signatureView"
+                             IsVisible="{Binding IsSignatureVisible}"
+                             Margin="100,20"
+                             HorizontalOptions="FillAndExpand"
+                             VerticalOptions="FillAndExpand"
+                             TitleText="{x:Static resx:AppResources.SignaturaPanelTitle}"
+                             IsStatusVisible="False"
+                             IsHeaderVisible="False"
+                             IsFooterVisible="False">
         <esrico:PanelView.BodyContent>
           <Grid>
             <ctr:SignaturePadView HorizontalOptions="FillAndExpand"
@@ -180,8 +183,7 @@
                                   VerticalOptions="FillAndExpand" />
           </Grid>
         </esrico:PanelView.BodyContent>
-        
-      </esrico:PanelView>
+      </esrico:ModalPanelView>
       <esrico:DrawingStatusView MapView="{Binding Source={x:Reference mapView}}"
                                 IndicatorColor="Black" />
     </Grid>
@@ -194,6 +196,8 @@
               Command="{Binding TOCCommand}" />
       <Button Text="{x:Static resx:AppResources.LegendButtonText}"
               Command="{Binding LegendCommand}" />
+      <Button Text="{x:Static resx:AppResources.SignatureButtonText}"
+              Command="{Binding SignatureCommand}" />
     </StackLayout>
   </Grid>
 </ContentPage>
