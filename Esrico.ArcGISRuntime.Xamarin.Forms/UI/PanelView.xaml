@@ -24,6 +24,7 @@
   </ContentView.Resources>
   <ContentView.Content>
     <Frame HorizontalOptions="FillAndExpand"
+           Padding="0"
            VerticalOptions="FillAndExpand"
            BackgroundColor="Transparent">
       <Frame x:Name="ExternalPanelFrame"
