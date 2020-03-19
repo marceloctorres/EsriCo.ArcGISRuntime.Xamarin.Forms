@@ -186,7 +186,7 @@
           </Grid>
         </esrico:PanelView.BodyContent>
       </esrico:ModalPanelView>
-      <esrico:DrawingStatusView MapView="{Binding Source={x:Reference mapView}}"
+      <esrico:DrawingStatusView MapView="{Binding Source={x:Reference mapView}}" 
                                 IndicatorColor="Black" />
     </Grid>
     <StackLayout Grid.Row="1"
