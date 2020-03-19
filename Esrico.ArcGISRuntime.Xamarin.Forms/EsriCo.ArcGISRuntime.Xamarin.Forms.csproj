@@ -5,7 +5,7 @@
     <Version>1.2.3.0</Version>
     <Authors>mtorres</Authors>
     <Company>Esri Colombia</Company>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <Configurations>Debug;Release;Release.Android;Release.UWP</Configurations>
     <PackageId>EsriCo.ArcGISRuntime.Xamarin.Forms</PackageId>
     <Product>EsriCo.ArcGISRuntime.Xamarin.Forms</Product>
