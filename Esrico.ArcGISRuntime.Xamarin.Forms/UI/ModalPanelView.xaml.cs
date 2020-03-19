@@ -14,7 +14,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
   [XamlCompilation(XamlCompilationOptions.Compile)]
   public partial class ModalPanelView : PanelView
   {
-    private string ColorKey = "DarkGrayTransparent";
+    private readonly string ColorKey = "DarkGrayTransparent";
 
     private Frame ModalFrame { get; set; }
 

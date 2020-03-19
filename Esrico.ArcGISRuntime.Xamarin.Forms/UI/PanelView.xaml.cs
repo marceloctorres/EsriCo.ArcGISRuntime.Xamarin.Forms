@@ -527,12 +527,12 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
               x + e.TotalX + bounds.X + bounds.Width <= parentBounds.Width ?
                 x + e.TotalX :
                 parentBounds.Width - bounds.Width - bounds.X :
-              - bounds.X;
+              -bounds.X;
             Content.TranslationY = y + e.TotalY + bounds.Y >= 0 ?
               y + e.TotalY + bounds.Y + bounds.Height <= parentBounds.Height ?
                 y + e.TotalY :
                 parentBounds.Height - bounds.Height - bounds.Y :
-              - bounds.Y;
+              -bounds.Y;
             break;
           case GestureStatus.Completed:
             x = Content.TranslationX;

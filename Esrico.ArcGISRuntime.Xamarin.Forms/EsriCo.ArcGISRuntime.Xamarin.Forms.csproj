@@ -2,15 +2,15 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Version>1.2.2.12</Version>
+    <Version>1.2.2</Version>
     <Authors>mtorres</Authors>
     <Company>Esri Colombia</Company>
-    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Configurations>Debug;Release;Release.Android;Release.UWP</Configurations>
     <PackageId>EsriCo.ArcGISRuntime.Xamarin.Forms</PackageId>
     <Product>EsriCo.ArcGISRuntime.Xamarin.Forms</Product>
-    <AssemblyVersion>1.2.2.12</AssemblyVersion>
-    <FileVersion>1.2.2.12</FileVersion>
+    <AssemblyVersion>1.2.2.*</AssemblyVersion>
+    <FileVersion>1.2.2</FileVersion>
     <RepositoryUrl>https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms</RepositoryUrl>
     <PackageReleaseNotes>Extends Xamarin.Forms ArcGIS Runtime SDK for .NET</PackageReleaseNotes>
     <Description>Extends Xamarin.Forms ArcGIS Runtime SDK for .NET</Description>
@@ -29,16 +29,28 @@
 
   <ItemGroup>
     <None Remove="Icons\ic_close.png" />
+    <None Remove="Icons\ic_erase.png" />
     <None Remove="Icons\ic_home.png" />
     <None Remove="Icons\ic_minus.png" />
     <None Remove="Icons\ic_plus.png" />
+    <None Remove="Icons\ic_point.png" />
+    <None Remove="Icons\ic_polygon.png" />
+    <None Remove="Icons\ic_polyline.png" />
+    <None Remove="Icons\ic_rectangle.png" />
+    <None Remove="Icons\ic_user.png" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="Icons\ic_close.png" />
+    <EmbeddedResource Include="Icons\ic_erase.png" />
     <EmbeddedResource Include="Icons\ic_home.png" />
     <EmbeddedResource Include="Icons\ic_minus.png" />
     <EmbeddedResource Include="Icons\ic_plus.png" />
+    <EmbeddedResource Include="Icons\ic_point.png" />
+    <EmbeddedResource Include="Icons\ic_polygon.png" />
+    <EmbeddedResource Include="Icons\ic_polyline.png" />
+    <EmbeddedResource Include="Icons\ic_rectangle.png" />
+    <EmbeddedResource Include="Icons\ic_user.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -59,6 +71,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="UI\DrawingStatusView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\DrawToolBarView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="UI\IdentifyView.xaml">
@@ -96,6 +111,9 @@
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>AppResources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="UI\DrawToolBarView.xaml.cs">
+      <DependentUpon>DrawToolBarView.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 

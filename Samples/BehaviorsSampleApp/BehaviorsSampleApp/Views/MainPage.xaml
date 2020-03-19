@@ -28,6 +28,10 @@
                                         Command="{Binding GeoViewTappedCommand}" />
         </esriUI:MapView.Behaviors>
       </esriUI:MapView>
+      <esrico:NavigationBarView MapView="{Binding Source={x:Reference mapView}}" />
+      <esrico:DrawToolBarView MapView="{Binding Source={x:Reference mapView}}" 
+                              IsDrawing="{Binding IsDrawing}" 
+                              Orientation="Vertical" />
       <esrico:LogInView x:Name="logingView"
                         WidthRequest="500"
                         IsVisible="{Binding IsLoginVisible}"
@@ -35,8 +39,6 @@
                         Password="{Binding Password}"
                         LogInCommand="{Binding LogInCommand}"
                         CancelCommand="{Binding CancelCommand}" />
-      <esrico:NavigationBarView MapView="{Binding Source={x:Reference mapView}}"
-                                ZoomInButtonImage="{StaticResource MenuImage}" />
       <esrico:ProcessingView x:Name="processingView"
                              ProcessingMessage="{x:Static resx:AppResources.ProcessingMessageText}"
                              IsProcessing="{Binding IsProcessing}" />
