@@ -1,6 +1,7 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Linq;
-
+using System.Threading.Tasks;
 using Esri.ArcGISRuntime.Geometry;
 using Esri.ArcGISRuntime.Symbology;
 using Esri.ArcGISRuntime.UI;
@@ -27,7 +28,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
       nameof(Color),
       typeof(Color),
       typeof(DrawToolBarView),
-      defaultValue:Color.DarkCyan);
+      defaultValue: Color.DarkCyan);
 
     /// <summary>
     /// 
@@ -42,9 +43,9 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// 
     /// </summary>
     public static readonly BindableProperty OrientationProperty = BindableProperty.Create(
-      nameof(Orientation), 
-      typeof(StackOrientation), 
-      typeof(DrawToolBarView), 
+      nameof(Orientation),
+      typeof(StackOrientation),
+      typeof(DrawToolBarView),
       defaultValue: StackOrientation.Horizontal, propertyChanged: OnOrientationChanged);
 
     /// <summary>
@@ -58,7 +59,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
       var view = bindable as DrawToolBarView;
       var oldOrientation = (StackOrientation)oldValue;
       var newOrientation = (StackOrientation)newValue;
-      if(oldOrientation != newOrientation)
+      if (oldOrientation != newOrientation)
       {
         view.SetControlTemplate(newOrientation);
       }
@@ -70,11 +71,11 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="orientation"></param>
     private void SetControlTemplate(StackOrientation orientation)
     {
-     if(orientation == StackOrientation.Horizontal)
+      if (orientation == StackOrientation.Horizontal)
       {
         ControlTemplate = (ControlTemplate)Resources["HorizontalLayoutTemplate"];
       }
-     else
+      else
       {
         ControlTemplate = (ControlTemplate)Resources["VerticalLayoutTemplate"];
       }
@@ -93,10 +94,10 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// 
     /// </summary>
     public static readonly BindableProperty IsDrawingProperty = BindableProperty.Create(
-      nameof(IsDrawing), 
-      typeof(bool), 
-      typeof(DrawToolBarView), 
-      defaultValue: false, 
+      nameof(IsDrawing),
+      typeof(bool),
+      typeof(DrawToolBarView),
+      defaultValue: false,
       defaultBindingMode: BindingMode.OneWayToSource);
 
     /// <summary>
@@ -161,14 +162,14 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     public void CheckMap(MapView mapView)
     {
       IsVisible = mapView != null && mapView.Map != null;
-      if(IsVisible)
+      if (IsVisible)
       {
-        if(mapView.GraphicsOverlays == null)
+        if (mapView.GraphicsOverlays == null)
         {
           mapView.GraphicsOverlays = new GraphicsOverlayCollection();
         }
         var graphicsOverlay = mapView.GraphicsOverlays.Where(g => g.Id == DrawGrapichsOverlayId).FirstOrDefault();
-        if(graphicsOverlay == null)
+        if (graphicsOverlay == null)
         {
           DrawGraphicsOverlay.Graphics.Clear();
           mapView.GraphicsOverlays.Add(DrawGraphicsOverlay);
@@ -361,9 +362,9 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// </summary>
     public SketchEditor SketchEditor
     {
-      get => _sketchEditor; 
+      get => _sketchEditor;
       set
-      { 
+      {
         _sketchEditor = value;
         OnPropertyChanged(nameof(SketchEditor));
       }
@@ -402,10 +403,57 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="e"></param>
     private void SketchEditor_GeometryChanged(object sender, GeometryChangedEventArgs e)
     {
-      if(e.NewGeometry is MapPoint)
+      if (e.NewGeometry is MapPoint)
       {
         SketchEditor.Stop();
       }
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="mode"></param>
+    /// <returns></returns>
+    private async Task DrawGeometry(SketchCreationMode mode)
+    {
+      try
+      {
+        if (IsDrawing)
+        {
+          SketchEditor.Stop();
+          if (SketchEditor.CancelCommand.CanExecute(null))
+          {
+            SketchEditor.CancelCommand.Execute(null);
+          }
+        }
+        IsDrawing = true;
+        var geometry = await SketchEditor.StartAsync(mode, false);
+        Symbol symbol = null;
+        switch (mode)
+        {
+          case SketchCreationMode.Point:
+            symbol = PointSymbol();
+            break;
+          case SketchCreationMode.Polyline:
+            symbol = PolylineSymbol();
+            break;
+          default:
+            symbol = PolygonSymbol();
+            break;
+        }
+        DrawGraphicsOverlay.Graphics.Add(new Graphic() { Geometry = geometry, Symbol = symbol });
+        IsDrawing = false;
+
+      }
+      catch(TaskCanceledException ex)
+      {
+        Debug.WriteLine(ex.Message);
+      }
+      catch(Exception ex)
+      {
+        Debug.WriteLine(ex.Message);
+      }
+
     }
 
     /// <summary>
@@ -415,13 +463,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="e"></param>
     private async void DrawPointToolClicked(object sender, EventArgs e)
     {
-      if(!IsDrawing)
-      {
-        IsDrawing = true;
-        var geometry = await SketchEditor.StartAsync(SketchCreationMode.Point, false);
-        DrawGraphicsOverlay.Graphics.Add(new Graphic() { Geometry = geometry, Symbol = PointSymbol() });
-        IsDrawing = false;
-      }
+      await DrawGeometry(SketchCreationMode.Point);
     }
 
     /// <summary>
@@ -431,13 +473,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="e"></param>
     private async void DrawPolylineToolClicked(object sender, EventArgs e)
     {
-      if(!IsDrawing)
-      {
-        IsDrawing = true;
-        var geometry = await SketchEditor.StartAsync(SketchCreationMode.Polyline, false);
-        DrawGraphicsOverlay.Graphics.Add(new Graphic() { Geometry = geometry, Symbol = PolylineSymbol() });
-        IsDrawing = false;
-      }
+      await DrawGeometry(SketchCreationMode.Polyline);
     }
 
     /// <summary>
@@ -446,14 +482,8 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="sender"></param>
     /// <param name="e"></param>
     private async void DrawPolygonToolClicked(object sender, EventArgs e)
-    {
-      if (!IsDrawing)
-      {
-        IsDrawing = true;
-        var geometry = await SketchEditor.StartAsync(SketchCreationMode.Polygon, false);
-        DrawGraphicsOverlay.Graphics.Add(new Graphic() { Geometry = geometry, Symbol = PolygonSymbol() });
-        IsDrawing = false;
-      }
+    { 
+      await DrawGeometry(SketchCreationMode.Polygon);
     }
 
     /// <summary>
@@ -463,14 +493,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="e"></param>
     private async void DrawRectangleToolClicked(object sender, EventArgs e)
     {
-      if (!IsDrawing)
-      {
-        IsDrawing = true;
-        var geometry = await SketchEditor.StartAsync(SketchCreationMode.Rectangle, false);
-        DrawGraphicsOverlay.Graphics.Add(new Graphic() { Geometry = geometry, Symbol = PolygonSymbol() });
-        IsDrawing = false;
-      }
-
+      await DrawGeometry(SketchCreationMode.Rectangle);
     }
 
     /// <summary>
@@ -481,6 +504,10 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     private void DrawEraseToolClicked(object sender, EventArgs e)
     {
       DrawGraphicsOverlay.Graphics.Clear();
+      if (SketchEditor.CancelCommand.CanExecute(null))
+      {
+        SketchEditor.CancelCommand.Execute(null);
+      }
     }
 
     /// <summary>
@@ -504,7 +531,6 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <returns></returns>
     private Symbol PolylineSymbol()
     {
-      var symbol = SketchEditor.Style.LineSymbol;
       return new SimpleLineSymbol()
       {
         Color = Color,
@@ -519,7 +545,6 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <returns></returns>
     private Symbol PolygonSymbol()
     {
-      var symbol = SketchEditor.Style.LineSymbol;
       var fillColor = Color.FromArgb(128, Color);
       return new SimpleFillSymbol()
       {
@@ -527,7 +552,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
         Outline = new SimpleLineSymbol()
         {
           Color = Color.DarkCyan,
-          Style =SimpleLineSymbolStyle.Solid,
+          Style = SimpleLineSymbolStyle.Solid,
           Width = 2
         },
         Style = SimpleFillSymbolStyle.Solid
