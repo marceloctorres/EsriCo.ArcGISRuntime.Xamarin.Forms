@@ -122,7 +122,8 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     public static readonly BindableProperty ZoomInButtonImageProperty = BindableProperty.Create(
       nameof(ZoomInButtonImage),
       typeof(ImageSource),
-      typeof(NavigationBarView), propertyChanged:OnZoomInButtonImageChanged);
+      typeof(NavigationBarView), 
+      propertyChanged:OnZoomInButtonImageChanged);
 
     /// <summary>
     /// 
@@ -225,6 +226,9 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
       }
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
     private async void SetMapInitialViewpoint()
     {
       if(MapView.Map != null)
@@ -253,6 +257,11 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
       }
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
     private void HomeButtonClicked(object sender, EventArgs e)
     {
       if (HomeCommand != null)
@@ -268,6 +277,11 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
       }
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
     private void ZoomOutButtonClicked(object sender, EventArgs e)
     {
       if (ZoomOutCommand != null)

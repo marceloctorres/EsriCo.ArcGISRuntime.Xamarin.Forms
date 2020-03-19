@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:root="clr-namespace:EsriCo.ArcGISRuntime.Xamarin.Forms"
+             mc:Ignorable="d"
+             x:Name="view"
+             x:Class="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView"
+             HorizontalOptions="Start"
+             VerticalOptions="Start">
+  <ContentView.Resources>
+    <ResourceDictionary>
+      <Button x:Key="DrawPointTool"
+              Clicked="DrawPointToolClicked"
+              Style="{StaticResource ToolButton}"
+              Image="{Binding DrawPointToolImage, Source={x:Reference view}}" />
+      <Button x:Key="DrawPolylineTool"
+              Clicked="DrawPolylineToolClicked"
+              Style="{StaticResource ToolButton}"
+              Image="{Binding DrawPolylineToolImage, Source={x:Reference view}}" />
+      <Button x:Key="DrawPolygonTool"
+              Clicked="DrawPolygonToolClicked"
+              Style="{StaticResource ToolButton}"
+              Image="{Binding DrawPolygonToolImage, Source={x:Reference view}}" />
+      <Button x:Key="DrawRectangleTool"
+              Clicked="DrawRectangleToolClicked"
+              Style="{StaticResource ToolButton}"
+              Image="{Binding DrawRectangleToolImage, Source={x:Reference view}}" />
+      <Button x:Key="DrawEraseTool"
+              Clicked="DrawEraseToolClicked"
+              Style="{StaticResource ToolButton}"
+              Image="{Binding DrawEraseToolImage, Source={x:Reference view}}" />
+      <ControlTemplate x:Key="HorizontalLayoutTemplate">
+        <Grid BackgroundColor="Transparent"
+              Margin="10">
+          <StackLayout Orientation="Horizontal" 
+                       Spacing="1">
+            <StaticResource Key="DrawPointTool" />
+            <StaticResource Key="DrawPolylineTool" />
+            <StaticResource Key="DrawPolygonTool" />
+            <StaticResource Key="DrawRectangleTool" />
+            <StaticResource Key="DrawEraseTool" />
+          </StackLayout>
+        </Grid>
+      </ControlTemplate>
+      <ControlTemplate x:Key="VerticalLayoutTemplate">
+        <Grid BackgroundColor="Transparent"
+              Margin="10">
+          <StackLayout Orientation="Vertical" 
+                       Spacing="1"
+                       BackgroundColor="Transparent">
+            <StaticResource Key="DrawPointTool" />
+            <StaticResource Key="DrawPolylineTool" />
+            <StaticResource Key="DrawPolygonTool" />
+            <StaticResource Key="DrawRectangleTool" />
+            <StaticResource Key="DrawEraseTool" />
+          </StackLayout>
+        </Grid>
+      </ControlTemplate>
+      <ResourceDictionary.MergedDictionaries>
+        <root:ResourceDictionary />
+      </ResourceDictionary.MergedDictionaries>
+    </ResourceDictionary>
+  </ContentView.Resources>
+  <ContentView.ControlTemplate>
+    <StaticResource Key="HorizontalLayoutTemplate" />
+  </ContentView.ControlTemplate>
+</ContentView>

@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Input;
+
 using BehaviorsSampleApp.Resx;
+
 using Esri.ArcGISRuntime.Geometry;
 using Esri.ArcGISRuntime.Mapping;
 
@@ -13,7 +13,6 @@ using EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors;
 using Prism.Commands;
 using Prism.Navigation;
 using Prism.Services;
-using Xamarin.Forms;
 
 namespace BehaviorsSampleApp.ViewModels
 {
@@ -25,6 +24,17 @@ namespace BehaviorsSampleApp.ViewModels
     {
       get { return _map; }
       set { SetProperty(ref _map, value); }
+    }
+
+    private bool _isDrawing;
+
+    /// <summary>
+    /// 
+    /// </summary>
+    public bool IsDrawing
+    {
+      get => _isDrawing;
+      set => SetProperty(ref _isDrawing, value);
     }
 
     private bool _isLoginVisible;
@@ -184,7 +194,9 @@ namespace BehaviorsSampleApp.ViewModels
         await PageDialogService.DisplayAlertAsync(AppResources.DialogTitle,
           $"{AppResources.ApprovalMessage} {CurrentElementIndex}",
           AppResources.CloseButtonText);
+
         IsApprovalActivityVisible = false;
+
       });
       SignatureCommand = new DelegateCommand(() =>
       {
@@ -203,7 +215,10 @@ namespace BehaviorsSampleApp.ViewModels
 
       GeoViewTappedCommand = new DelegateCommand(() =>
       {
-        IsProcessing = true;
+        if (!IsDrawing)
+        {
+          IsProcessing = true;
+        }
       });
 
       LegendCommand = new DelegateCommand(() =>
@@ -222,6 +237,8 @@ namespace BehaviorsSampleApp.ViewModels
 
       IdentificarCommand = new DelegateCommand<IdentifyResults>((o) =>
         {
+          if (IsDrawing) return;
+
           if (o.GeoElementResults.Count > 0)
           {
             IdentifyResults = o;
