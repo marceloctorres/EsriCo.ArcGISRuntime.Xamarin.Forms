@@ -14,9 +14,9 @@
     <RepositoryUrl>https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms</RepositoryUrl>
     <PackageReleaseNotes>Extends Xamarin.Forms ArcGIS Runtime SDK for .NET</PackageReleaseNotes>
     <Description>Extends Xamarin.Forms ArcGIS Runtime SDK for .NET</Description>
-    <PackageLicenseFile></PackageLicenseFile>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageTags>xamarin xamarin.forms arcgis runtime sdk esri dotnet mtorres marceloctorres.net mtorres_esrico</PackageTags>
-    <PackageLicenseExpression>https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/master/LICENSE</PackageLicenseExpression>
+    <PackageLicenseExpression></PackageLicenseExpression>
     <Copyright>Esri Colombia 2020</Copyright>
     <PackageProjectUrl>https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms</PackageProjectUrl>
     <RepositoryType>Git</RepositoryType>
@@ -44,6 +44,10 @@
     <None Remove="Icons\ic_polyline.png" />
     <None Remove="Icons\ic_rectangle.png" />
     <None Remove="Icons\ic_user.png" />
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
   <ItemGroup>
