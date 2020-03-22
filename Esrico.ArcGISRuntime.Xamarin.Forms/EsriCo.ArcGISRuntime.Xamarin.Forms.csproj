@@ -64,6 +64,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="docfx.console" Version="2.51.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Esri.ArcGISRuntime.Xamarin.Forms" Version="100.7.0" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
     <PackageReference Include="Xamarin.Controls.SignaturePad.Forms" Version="3.0.0" />
@@ -113,6 +117,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="src\" />
     <Folder Include="ViewModels\" />
   </ItemGroup>
 
