@@ -6,10 +6,11 @@
           "files": [
             "**.csproj"
           ],
-          "src": "C:\\Users\\mtorres\\source\\repos\\EsricoXamarinForms\\Esrico.ArcGISRuntime.Xamarin.Forms"
+          "exclude": [ "**/bin/**", "**/obj/**" ],
+          "src": "..\\Esrico.ArcGISRuntime.Xamarin.Forms"
         }
       ],
-      "dest": "api",
+      "dest": "../docs/output/api",
       "disableGitFeatures": false,
       "disableDefaultFilter": false
     }
@@ -23,6 +24,7 @@
         ]
       },
       {
+        "src": "../docs/",
         "files": [
           "articles/**.md",
           "articles/**/toc.yml",
@@ -33,6 +35,7 @@
     ],
     "resource": [
       {
+        "src": "../docs/",
         "files": [
           "images/**"
         ]
@@ -40,6 +43,7 @@
     ],
     "overwrite": [
       {
+        "src": "../docs/",
         "files": [
           "apidoc/**.md"
         ],
@@ -49,12 +53,14 @@
         ]
       }
     ],
-    "dest": "_site",
+    "dest": "../docs/output/_site",
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],
     "template": [
-      "default"
+      "default",
+      "../docs/template-override"
     ],
+    "xrefService": [ "https://xref.docs.microsoft.com/query?uid={uid}" ],
     "postProcessors": [],
     "markdownEngineName": "markdig",
     "noLangKeyword": false,

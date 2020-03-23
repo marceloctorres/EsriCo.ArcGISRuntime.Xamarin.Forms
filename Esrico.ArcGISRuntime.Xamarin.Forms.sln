@@ -19,7 +19,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NugetPackage", "NugetPackag
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{29BA308B-B5BC-4CFC-84C1-4E065BE54C86}"
 	ProjectSection(SolutionItems) = preProject
-		Docs\index.md = Docs\index.md
+		Docs\docfx.json = Docs\docfx.json
 	EndProjectSection
 EndProject
 Global

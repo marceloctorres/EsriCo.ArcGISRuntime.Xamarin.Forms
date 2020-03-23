@@ -23,6 +23,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="src\**" />
+    <EmbeddedResource Remove="src\**" />
+    <None Remove="src\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Remove="UI\IconView.cs" />
     <Compile Remove="UI\LayerLegendView.xaml.cs" />
     <Compile Remove="UI\LayerListView.xaml.cs" />
@@ -117,7 +123,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="src\" />
     <Folder Include="ViewModels\" />
   </ItemGroup>
 
@@ -131,5 +136,7 @@
       <DependentUpon>DrawToolBarView.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties docfx_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
 
 </Project>
