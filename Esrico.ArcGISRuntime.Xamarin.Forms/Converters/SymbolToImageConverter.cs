@@ -14,7 +14,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Converters
   /// <summary>
   /// 
   /// </summary>
-  public class SymboToImageConverter : IValueConverter
+  public class SymbolToImageConverter : IValueConverter
   {
     /// <summary>
     /// 
