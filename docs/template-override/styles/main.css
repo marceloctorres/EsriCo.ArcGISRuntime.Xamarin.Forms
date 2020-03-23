@@ -1,10 +1,10 @@
 .breadcrumb > li > a {
-  color: #f8f8f8;
+  color: blue;
 }
 
 .navbar-default {
   background-color: blue;
-  border-color: #e7e7e7
+  border-color: blue;
 }
 
 .article {
