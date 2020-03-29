@@ -11,7 +11,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
   public partial class PanelView : ContentView
   {
 
-    public event EventHandler Closed; 
+    public event EventHandler Closed;
 
     /// <summary>
     /// 
@@ -19,7 +19,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     public static readonly BindableProperty IsManagedProperty = BindableProperty.Create(
       nameof(IsManaged),
       typeof(bool),
-      typeof(PanelView), 
+      typeof(PanelView),
       defaultValue: true);
 
     /// <summary>
@@ -81,7 +81,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
       bool oldVisible = (bool)oldValue;
       panelView.SetVisible(newVisible);
 
-      if (newVisible != oldVisible)
+      if(newVisible != oldVisible)
       {
       }
     }
@@ -95,7 +95,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
       base.IsVisible = visible;
       Content.TranslationX = 0;
       Content.TranslationY = 0;
-      if (visible && IsManaged)
+      if(visible && IsManaged)
       {
         MessagingCenter.Send<PanelView>(this, "IsVisible");
       }
@@ -127,7 +127,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="newValue"></param>
     private static void OnHeaderContentChanged(BindableObject bindable, object oldValue, object newValue)
     {
-      if (!ReferenceEquals(newValue, bindable))
+      if(!ReferenceEquals(newValue, bindable))
       {
         var panelView = (PanelView)bindable;
         var newView = (View)newValue;
@@ -202,7 +202,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="newValue"></param>
     private static void OnFooterContentChanged(BindableObject bindable, object oldValue, object newValue)
     {
-      if (!ReferenceEquals(newValue, bindable))
+      if(!ReferenceEquals(newValue, bindable))
       {
         var panelView = (PanelView)bindable;
         var newView = (View)newValue;
@@ -241,7 +241,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="newValue"></param>
     private static void OnBodyContentPropertyChanged(BindableObject bindable, object oldValue, object newValue)
     {
-      if (!ReferenceEquals(newValue, bindable))
+      if(!ReferenceEquals(newValue, bindable))
       {
         var panelView = (PanelView)bindable;
         var newView = (View)newValue;
@@ -476,11 +476,11 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     {
       InitializeComponent();
       CloseButtonImage = ImageSource.FromStream(() => this.GetType().Assembly.GetStreamEmbeddedResource(@"ic_close"));
-      if (IsManaged)
+      if(IsManaged)
       {
         MessagingCenter.Subscribe<PanelView>(this, "IsVisible", (panel) =>
         {
-          if (!ReferenceEquals(this, panel) && IsManaged && IsVisible && panel.IsVisible)
+          if(!ReferenceEquals(this, panel) && IsManaged && IsVisible && panel.IsVisible)
           {
             IsVisible = false;
           }
@@ -516,27 +516,28 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="e"></param>
     private void OnPanUpdated(object sender, PanUpdatedEventArgs e)
     {
-      if (Parent is View parentView)
+      if(Parent is View parentView)
       {
-        switch (e.StatusType)
+        var bounds = Bounds;
+        var parentBounds = parentView.Bounds;
+
+        switch(e.StatusType)
         {
           case GestureStatus.Running:
-            var bounds = Bounds;
-            var parentBounds = parentView.Bounds;
-            Content.TranslationX = x + e.TotalX + bounds.X >= 0 ?
+            TranslationX = x + e.TotalX + bounds.X >= 0 ?
               x + e.TotalX + bounds.X + bounds.Width <= parentBounds.Width ?
                 x + e.TotalX :
                 parentBounds.Width - bounds.Width - bounds.X :
               -bounds.X;
-            Content.TranslationY = y + e.TotalY + bounds.Y >= 0 ?
+            TranslationY = y + e.TotalY + bounds.Y >= 0 ?
               y + e.TotalY + bounds.Y + bounds.Height <= parentBounds.Height ?
                 y + e.TotalY :
                 parentBounds.Height - bounds.Height - bounds.Y :
               -bounds.Y;
             break;
           case GestureStatus.Completed:
-            x = Content.TranslationX;
-            y = Content.TranslationY;
+            x = TranslationX;
+            y = TranslationY;
             break;
         }
       }

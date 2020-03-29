@@ -2,8 +2,10 @@
 <ContentView xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:prism="http://prismlibrary.com"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:root="clr-namespace:EsriCo.ArcGISRuntime.Xamarin.Forms"
+             xmlns:viewmodel="clr-namespace:EsriCo.ArcGISRuntime.Xamarin.Forms.ViewModels"
              mc:Ignorable="d"
              x:Name="view"
              x:Class="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView"
@@ -19,6 +21,10 @@
               Clicked="DrawPolylineToolClicked"
               Style="{StaticResource ToolButton}"
               Image="{Binding DrawPolylineToolImage, Source={x:Reference view}}" />
+      <Button x:Key="DrawFreehandLineTool"
+              Clicked="DrawFreehandLineToolClicked"
+              Style="{StaticResource ToolButton}"
+              Image="{Binding DrawFreehandLineToolImage, Source={x:Reference view}}" />
       <Button x:Key="DrawPolygonTool"
               Clicked="DrawPolygonToolClicked"
               Style="{StaticResource ToolButton}"
@@ -27,6 +33,10 @@
               Clicked="DrawRectangleToolClicked"
               Style="{StaticResource ToolButton}"
               Image="{Binding DrawRectangleToolImage, Source={x:Reference view}}" />
+      <Button x:Key="DrawTextTool"
+              Clicked="DrawTextToolClicked"
+              Style="{StaticResource ToolButton}"
+              Image="{Binding DrawTextToolImage, Source={x:Reference view}}" />
       <Button x:Key="DrawEraseTool"
               Clicked="DrawEraseToolClicked"
               Style="{StaticResource ToolButton}"
@@ -38,8 +48,10 @@
                        Spacing="1">
             <StaticResource Key="DrawPointTool" />
             <StaticResource Key="DrawPolylineTool" />
+            <StaticResource Key="DrawFreehandLineTool" />
             <StaticResource Key="DrawPolygonTool" />
             <StaticResource Key="DrawRectangleTool" />
+            <StaticResource Key="DrawTextTool" />
             <StaticResource Key="DrawEraseTool" />
           </StackLayout>
         </Grid>
@@ -52,8 +64,10 @@
                        BackgroundColor="Transparent">
             <StaticResource Key="DrawPointTool" />
             <StaticResource Key="DrawPolylineTool" />
+            <StaticResource Key="DrawFreehandLineTool" />
             <StaticResource Key="DrawPolygonTool" />
             <StaticResource Key="DrawRectangleTool" />
+            <StaticResource Key="DrawTextTool" />
             <StaticResource Key="DrawEraseTool" />
           </StackLayout>
         </Grid>

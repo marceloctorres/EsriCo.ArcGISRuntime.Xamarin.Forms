@@ -61,6 +61,15 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a .
+        /// </summary>
+        public static string Any {
+            get {
+                return ResourceManager.GetString("Any", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Cancel.
         /// </summary>
         public static string CancelButtonText {
@@ -142,6 +151,15 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a OK.
+        /// </summary>
+        public static string OKButtonText {
+            get {
+                return ResourceManager.GetString("OKButtonText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Password:.
         /// </summary>
         public static string PasswordLabelText {
@@ -156,6 +174,15 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms {
         public static string ProcessingMessageLabelText {
             get {
                 return ResourceManager.GetString("ProcessingMessageLabelText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Text:.
+        /// </summary>
+        public static string TextLabelText {
+            get {
+                return ResourceManager.GetString("TextLabelText", resourceCulture);
             }
         }
         

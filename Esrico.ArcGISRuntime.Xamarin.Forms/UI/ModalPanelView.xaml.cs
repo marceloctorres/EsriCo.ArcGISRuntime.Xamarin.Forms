@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
 
 using Xamarin.Forms;
-using Xamarin.Forms.Internals;
 using Xamarin.Forms.Xaml;
 
 namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -87,8 +82,10 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     {
       if (Parent is Layout<View> layout)
       {
-        if (layout.Children.Contains(ModalFrame))
+        if(layout.Children.Contains(ModalFrame))
+        {
           layout.Children.Remove(ModalFrame);
+        } 
       }
     }
   }
