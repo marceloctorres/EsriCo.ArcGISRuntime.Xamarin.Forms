@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ui:ModalPanelView xmlns="http://xamarin.com/schemas/2014/forms"
+                   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                   xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+                   xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                   xmlns:root="clr-namespace:EsriCo.ArcGISRuntime.Xamarin.Forms"
+                   xmlns:ui="clr-namespace:EsriCo.ArcGISRuntime.Xamarin.Forms.UI"
+                   mc:Ignorable="d"
+                   x:Class="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawTextToolDialog"
+                   x:Name="dialog"
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand"
+                   IsStatusVisible="False"
+                   IsTitleVisible="False"
+                   WidthRequest="350">
+  <ui:ModalPanelView.BodyContent>
+    <StackLayout Padding="10"
+                 Spacing="5">
+      <Label Text="{x:Static root:AppResources.TextLabelText}" />
+      <Entry Text="{Binding Source={x:Reference dialog}, Path=Text}" />
+      <StackLayout Orientation="Horizontal"
+                   Padding="0,5"
+                   Spacing="5">
+        <Button Text="{x:Static root:AppResources.OKButtonText}" Clicked="OKButton_Clicked"/>
+        <Button Text="{x:Static root:AppResources.CancelButtonText}" Clicked="CloseButton_Clicked"/>
+      </StackLayout>
+    </StackLayout>
+  </ui:ModalPanelView.BodyContent>
+</ui:ModalPanelView>

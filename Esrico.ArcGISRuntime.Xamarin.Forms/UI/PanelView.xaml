@@ -23,10 +23,10 @@
     </ResourceDictionary>
   </ContentView.Resources>
   <ContentView.Content>
-    <Frame HorizontalOptions="FillAndExpand"
+    <!--<Frame HorizontalOptions="FillAndExpand"
            Padding="0"
            VerticalOptions="FillAndExpand"
-           BackgroundColor="Transparent">
+           BackgroundColor="Transparent">-->
       <Frame x:Name="ExternalPanelFrame"
              Padding="1"
              CornerRadius="0"
@@ -142,6 +142,6 @@
           </Grid>
         </Frame>
       </Frame>
-    </Frame>
+    <!--</Frame>-->
   </ContentView.Content>
 </ContentView>

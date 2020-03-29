@@ -28,6 +28,8 @@
                                         Command="{Binding GeoViewTappedCommand}" />
         </esriUI:MapView.Behaviors>
       </esriUI:MapView>
+      <esrico:DrawingStatusView MapView="{Binding Source={x:Reference mapView}}"
+                                IndicatorColor="Black" />
       <esrico:NavigationBarView MapView="{Binding Source={x:Reference mapView}}" />
       <esrico:DrawToolBarView MapView="{Binding Source={x:Reference mapView}}" 
                               IsDrawing="{Binding IsDrawing}" 
@@ -39,9 +41,6 @@
                         Password="{Binding Password}"
                         LogInCommand="{Binding LogInCommand}"
                         CancelCommand="{Binding CancelCommand}" />
-      <esrico:ProcessingView x:Name="processingView"
-                             ProcessingMessage="{x:Static resx:AppResources.ProcessingMessageText}"
-                             IsProcessing="{Binding IsProcessing}" />
       <esrico:IdentifyView x:Name="identifyView"
                            IdentifyResults="{Binding IdentifyResults}"
                            HorizontalOptions="StartAndExpand"
@@ -186,8 +185,9 @@
           </Grid>
         </esrico:PanelView.BodyContent>
       </esrico:ModalPanelView>
-      <esrico:DrawingStatusView MapView="{Binding Source={x:Reference mapView}}" 
-                                IndicatorColor="Black" />
+      <esrico:ProcessingView x:Name="processingView"
+                             ProcessingMessage="{x:Static resx:AppResources.ProcessingMessageText}"
+                             IsProcessing="{Binding IsProcessing}" />
     </Grid>
     <StackLayout Grid.Row="1"
                  Margin="10"

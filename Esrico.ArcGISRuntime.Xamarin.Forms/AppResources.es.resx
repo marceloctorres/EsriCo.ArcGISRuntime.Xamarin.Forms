@@ -144,6 +144,9 @@
   <data name="LoginLabelText" xml:space="preserve">
     <value>Inicio de Sesión</value>
   </data>
+  <data name="OKButtonText" xml:space="preserve">
+    <value>Aceptar</value>
+  </data>
   <data name="PasswordLabelText" xml:space="preserve">
     <value>Contraseña:</value>
   </data>
@@ -152,6 +155,9 @@
   </data>
   <data name="SignatureButtonText" xml:space="preserve">
     <value>Firma</value>
+  </data>
+  <data name="TextLabelText" xml:space="preserve">
+    <value>Texto:</value>
   </data>
   <data name="UsernameLabelText" xml:space="preserve">
     <value>Usuario:</value>

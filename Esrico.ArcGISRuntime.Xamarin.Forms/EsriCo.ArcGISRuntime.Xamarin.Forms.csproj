@@ -40,8 +40,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="Icons\ic_cancel.png" />
     <None Remove="Icons\ic_close.png" />
+    <None Remove="Icons\ic_complete.png" />
     <None Remove="Icons\ic_erase.png" />
+    <None Remove="Icons\ic_freehandline.png" />
     <None Remove="Icons\ic_home.png" />
     <None Remove="Icons\ic_minus.png" />
     <None Remove="Icons\ic_plus.png" />
@@ -49,6 +52,9 @@
     <None Remove="Icons\ic_polygon.png" />
     <None Remove="Icons\ic_polyline.png" />
     <None Remove="Icons\ic_rectangle.png" />
+    <None Remove="Icons\ic_redo.png" />
+    <None Remove="Icons\ic_text.png" />
+    <None Remove="Icons\ic_undo.png" />
     <None Remove="Icons\ic_user.png" />
     <None Include="..\LICENSE">
       <Pack>True</Pack>
@@ -57,8 +63,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="Icons\ic_cancel.png" />
     <EmbeddedResource Include="Icons\ic_close.png" />
+    <EmbeddedResource Include="Icons\ic_complete.png" />
     <EmbeddedResource Include="Icons\ic_erase.png" />
+    <EmbeddedResource Include="Icons\ic_freehandline.png" />
     <EmbeddedResource Include="Icons\ic_home.png" />
     <EmbeddedResource Include="Icons\ic_minus.png" />
     <EmbeddedResource Include="Icons\ic_plus.png" />
@@ -66,6 +75,9 @@
     <EmbeddedResource Include="Icons\ic_polygon.png" />
     <EmbeddedResource Include="Icons\ic_polyline.png" />
     <EmbeddedResource Include="Icons\ic_rectangle.png" />
+    <EmbeddedResource Include="Icons\ic_redo.png" />
+    <EmbeddedResource Include="Icons\ic_text.png" />
+    <EmbeddedResource Include="Icons\ic_undo.png" />
     <EmbeddedResource Include="Icons\ic_user.png" />
   </ItemGroup>
 
@@ -91,6 +103,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="UI\DrawingStatusView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\DrawTextToolDialog.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="UI\DrawToolBarView.xaml">
@@ -123,10 +138,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="ViewModels\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Compile Update="AppResources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -135,6 +146,10 @@
     <Compile Update="UI\DrawToolBarView.xaml.cs">
       <DependentUpon>DrawToolBarView.xaml</DependentUpon>
     </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ViewModels\" />
   </ItemGroup>
 
   <ProjectExtensions><VisualStudio><UserProperties docfx_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
