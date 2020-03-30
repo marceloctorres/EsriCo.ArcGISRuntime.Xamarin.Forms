@@ -148,6 +148,9 @@
     <value>Log In</value>
     <comment>LogInLabel</comment>
   </data>
+  <data name="MeasurementTitleText" xml:space="preserve">
+    <value>Measurement</value>
+  </data>
   <data name="OKButtonText" xml:space="preserve">
     <value>OK</value>
   </data>

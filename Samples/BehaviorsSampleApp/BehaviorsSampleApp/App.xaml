@@ -20,10 +20,6 @@
       <Setter Property="TextColor"
               Value="Black" />
     </Style>
-    <Style TargetType="Switch">
-      <Setter Property="OnColor"
-              Value="LightGray" />
-    </Style>
     <Style TargetType="NavigationPage">
       <Setter Property="BarBackgroundColor"
               Value="Gray" />

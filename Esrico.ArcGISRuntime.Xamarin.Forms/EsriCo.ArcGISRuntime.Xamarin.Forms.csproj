@@ -123,6 +123,9 @@
     <EmbeddedResource Update="UI\LogInView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="UI\MeasurementView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="UI\NavigationBarView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -145,6 +148,9 @@
     </Compile>
     <Compile Update="UI\DrawToolBarView.xaml.cs">
       <DependentUpon>DrawToolBarView.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="UI\MeasurementView.xaml.cs">
+      <DependentUpon>MeasurementView.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 

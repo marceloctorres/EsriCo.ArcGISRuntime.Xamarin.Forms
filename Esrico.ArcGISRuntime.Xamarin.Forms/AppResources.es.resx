@@ -144,6 +144,9 @@
   <data name="LoginLabelText" xml:space="preserve">
     <value>Inicio de Sesión</value>
   </data>
+  <data name="MeasurementTitleText" xml:space="preserve">
+    <value>Medición</value>
+  </data>
   <data name="OKButtonText" xml:space="preserve">
     <value>Aceptar</value>
   </data>

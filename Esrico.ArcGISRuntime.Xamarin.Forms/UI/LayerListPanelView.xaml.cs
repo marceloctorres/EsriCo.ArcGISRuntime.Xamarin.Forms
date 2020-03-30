@@ -85,6 +85,8 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
       }
     }
 
+    private bool CollectionHandlerAdded;
+
     /// <summary>
     /// 
     /// </summary>
@@ -92,11 +94,46 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     public async void SetMap(Map map)
     {
       Map = map;
-      var layerInfos = await Device.InvokeOnMainThreadAsync(() => GetLayerInfos());
-      //var layerInfos = await GetLayerInfos();
-      LayerInfosList = layerInfos != null ?
-        new ObservableCollection<LayerInfos>(layerInfos) :
-        null;
+      if(map.OperationalLayers.Count > 0)
+      {
+        await SetLayerInfos();
+      }
+      else
+      {
+        if(!CollectionHandlerAdded)
+        {
+          Map.OperationalLayers.CollectionChanged += async (o, e) =>
+          {
+            await SetLayerInfos();
+          };
+          CollectionHandlerAdded = true;
+        }
+      }
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <returns></returns>
+    private async Task SetLayerInfosFromLoadedMap()
+    {
+      //var layerInfos = await Device.InvokeOnMainThreadAsync(() => GetLayerInfos());
+      var layerInfos = await GetLayerInfosFromLoadedMap();
+      ////LayerInfosList =  layerInfos != null ?
+      ////  new ObservableCollection<LayerInfos>(layerInfos) :
+      ////  null;
+      if(LayerInfosList == null)
+      {
+        LayerInfosList = new ObservableCollection<LayerInfos>(layerInfos);
+      }
+      else
+      {
+        LayerInfosList.Clear();
+        foreach(var layerInfo in layerInfos)
+        {
+          LayerInfosList.Add(layerInfo);
+        }
+      }
     }
 
     /// <summary>
@@ -140,28 +177,22 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// 
     /// </summary>
     /// <returns></returns>
-    private async Task<List<LayerInfos>> GetLayerInfos()
+    private async Task SetLayerInfos()
     {
       if (Map != null)
       {
         if (Map.LoadStatus != LoadStatus.Loaded)
         {
-          var listLayerInfos = new List<LayerInfos>();
           Map.Loaded += async (o, e) =>
           {
-            listLayerInfos = await GetLayerInfosFromLoadedMap();
+            await SetLayerInfosFromLoadedMap();
           };
           await Map.LoadAsync();
-          return listLayerInfos;
         }
         else
         {
-          return await GetLayerInfosFromLoadedMap();
+          await SetLayerInfosFromLoadedMap();
         }
-      }
-      else
-      {
-        return null;
       }
     }
 

@@ -151,6 +151,15 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Measurement.
+        /// </summary>
+        public static string MeasurementTitleText {
+            get {
+                return ResourceManager.GetString("MeasurementTitleText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a OK.
         /// </summary>
         public static string OKButtonText {

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ui:PanelView xmlns="http://xamarin.com/schemas/2014/forms"
+              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+              xmlns:ui="clr-namespace:EsriCo.ArcGISRuntime.Xamarin.Forms.UI"
+              xmlns:root="clr-namespace:EsriCo.ArcGISRuntime.Xamarin.Forms"
+              mc:Ignorable="d"
+              x:Class="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.MeasurementBarView"
+              TitleText="{x:Static root:AppResources.MeasurementTitleText}"
+              IsStatusVisible="False">
+  <ui:PanelView.BodyContent>
+    <Grid>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+      </Grid.RowDefinitions>
+    </Grid>
+  </ui:PanelView.BodyContent>
+</ui:PanelView>
