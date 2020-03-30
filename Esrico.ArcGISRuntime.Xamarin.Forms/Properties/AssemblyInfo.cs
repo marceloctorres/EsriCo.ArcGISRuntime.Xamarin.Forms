@@ -1,3 +1,3 @@
 ﻿using System.Resources;
 
-[assembly:NeutralResourcesLanguage("es")]
+[assembly: NeutralResourcesLanguage("es")]

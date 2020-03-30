@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Globalization;
 using System.Threading.Tasks;
+
 using Esri.ArcGISRuntime.Symbology;
-using Esri.ArcGISRuntime.UI;
 
 using Xamarin.Forms;
 
@@ -55,9 +55,6 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Converters
     /// <param name="parameter"></param>
     /// <param name="culture"></param>
     /// <returns></returns>
-    public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
-    {
-      throw new NotImplementedException();
-    }
+    public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture) => throw new NotImplementedException();
   }
 }

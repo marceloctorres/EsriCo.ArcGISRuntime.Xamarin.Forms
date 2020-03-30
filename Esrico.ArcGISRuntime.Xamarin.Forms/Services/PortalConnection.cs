@@ -30,8 +30,8 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     /// </summary>
     public string User
     {
-      get { return _user; }
-      set { SetProperty(ref _user, value); }
+      get => _user;
+      set => SetProperty(ref _user, value);
     }
 
     private string _password;
@@ -41,8 +41,8 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     /// </summary>
     public string Password
     {
-      get { return _password; }
-      set { SetProperty(ref _password, value); }
+      get => _password;
+      set => SetProperty(ref _password, value);
     }
 
     private string _userName;
@@ -52,8 +52,8 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     /// </summary>
     public string UserName
     {
-      get { return _userName; }
-      set { SetProperty(ref _userName, value); }
+      get => _userName;
+      set => SetProperty(ref _userName, value);
     }
 
     private ImageSource _imageSource;
@@ -63,8 +63,8 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     /// </summary>
     public ImageSource UserImage
     {
-      get { return _imageSource; }
-      set { SetProperty(ref _imageSource, value); }
+      get => _imageSource;
+      set => SetProperty(ref _imageSource, value);
     }
 
     private string _imageUserString;
@@ -74,18 +74,20 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     /// </summary>
     public string UserImageString
     {
-      get { return _imageUserString; }
-      set { SetProperty(ref _imageUserString, value); }
+      get => _imageUserString;
+      set => SetProperty(ref _imageUserString, value);
     }
 
     private string _baseUrl;
     /// <summary>
     /// 
     /// </summary>
-    public string BaseUrl 
-    { get => _baseUrl; 
-      set {
-        if (_baseUrl != value)
+    public string BaseUrl
+    {
+      get => _baseUrl;
+      set
+      {
+        if(_baseUrl != value)
         {
           _baseUrl = value;
         }
@@ -124,10 +126,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     /// <summary>
     /// 
     /// </summary>
-    public PortalConnection()
-    {
-      TokenAuthenticationType = TokenAuthenticationType.ArcGISToken;
-    }
+    public PortalConnection() => TokenAuthenticationType = TokenAuthenticationType.ArcGISToken;
 
     /// <summary>
     /// 
@@ -139,7 +138,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
       Portal = await ArcGISPortal.CreateAsync(new Uri(BaseUrl));
       var licenseInfo = await Portal.GetLicenseInfoAsync();
 
-      ArcGISRuntimeEnvironment.SetLicense(licenseInfo); 
+      ArcGISRuntimeEnvironment.SetLicense(licenseInfo);
 
       PortalUser = Portal.User;
       UserImage = PortalUser.ThumbnailUri != null ?
@@ -187,20 +186,14 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     /// 
     /// </summary>
     /// <returns></returns>
-    public bool IsCredentialNull()
-    {
-      return Credential == null;
-    }
+    public bool IsCredentialNull() => Credential == null;
 
     /// <summary>
     /// 
     /// </summary>
     /// <returns></returns>
     [Obsolete()]
-    public string LicenseInfoJson()
-    {
-      return Portal.PortalInfo.LicenseInfo.ToJson();
-    }
+    public string LicenseInfoJson() => Portal.PortalInfo.LicenseInfo.ToJson();
 
     /// <summary>
     /// 

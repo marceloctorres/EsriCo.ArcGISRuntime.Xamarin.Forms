@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
-using System.Threading.Tasks;
-using Esri.ArcGISRuntime.Mapping;
+﻿using System.Collections.Generic;
 
 using EsriCo.ArcGISRuntime.Xamarin.Forms.Model;
 
@@ -25,7 +20,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
 
     private void OnInnerListViewItemAppearing(object sender, ItemVisibilityEventArgs e)
     {
-      if (sender is ListView listView)
+      if(sender is ListView listView)
       {
         var list = (List<LegendImageInfo>)listView.ItemsSource;
         var height = list.Count * ItemRenderHeight;

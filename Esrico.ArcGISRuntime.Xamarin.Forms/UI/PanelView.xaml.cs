@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Diagnostics;
+
 using EsriCo.ArcGISRuntime.Xamarin.Forms.Extensions;
 
 using Xamarin.Forms;
@@ -51,7 +51,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    public new static readonly BindableProperty IsVisibleProperty = BindableProperty.Create(
+    public static new readonly BindableProperty IsVisibleProperty = BindableProperty.Create(
       nameof(IsVisible),
       typeof(bool),
       typeof(PanelView),
@@ -475,7 +475,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     public PanelView()
     {
       InitializeComponent();
-      CloseButtonImage = ImageSource.FromStream(() => this.GetType().Assembly.GetStreamEmbeddedResource(@"ic_close"));
+      CloseButtonImage = ImageSource.FromStream(() => GetType().Assembly.GetStreamEmbeddedResource(@"ic_close"));
       if(IsManaged)
       {
         MessagingCenter.Subscribe<PanelView>(this, "IsVisible", (panel) =>
@@ -502,12 +502,9 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    protected virtual void OnPanelClosed()
-    {
-      Closed?.Invoke(this, new EventArgs());
-    }
+    protected virtual void OnPanelClosed() => Closed?.Invoke(this, new EventArgs());
 
-    double x, y;
+    private double x, y;
 
     /// <summary>
     /// 

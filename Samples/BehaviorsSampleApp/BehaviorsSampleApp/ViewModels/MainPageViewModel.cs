@@ -22,8 +22,8 @@ namespace BehaviorsSampleApp.ViewModels
 
     public Map Map
     {
-      get { return _map; }
-      set { SetProperty(ref _map, value); }
+      get => _map;
+      set => SetProperty(ref _map, value);
     }
 
     private bool _isDrawing;
@@ -45,8 +45,8 @@ namespace BehaviorsSampleApp.ViewModels
       set => SetProperty(ref _isLoginVisible, value);
     }
 
-    private bool _processing; 
-    
+    private bool _processing;
+
     public bool IsProcessing
     {
       get => _processing;
@@ -88,8 +88,8 @@ namespace BehaviorsSampleApp.ViewModels
 
     public IdentifyResults IdentifyResults
     {
-      get { return _identifyResults; }
-      set { SetProperty(ref _identifyResults, value); }
+      get => _identifyResults;
+      set => SetProperty(ref _identifyResults, value);
     }
 
     private string _user;
@@ -111,34 +111,34 @@ namespace BehaviorsSampleApp.ViewModels
     private bool _isIdentifyMenuVisible;
     public bool IsIdentifyMenuVisible
     {
-      get { return _isIdentifyMenuVisible; }
-      set { SetProperty(ref _isIdentifyMenuVisible, value); }
+      get => _isIdentifyMenuVisible;
+      set => SetProperty(ref _isIdentifyMenuVisible, value);
     }
 
     private bool _isApprovalPanelVisible;
 
     public bool IsApprovalPanelVisible
     {
-      get { return _isApprovalPanelVisible; }
-      set { SetProperty(ref _isApprovalPanelVisible, value); }
+      get => _isApprovalPanelVisible;
+      set => SetProperty(ref _isApprovalPanelVisible, value);
     }
 
     private int _currentElementIndex;
     public int CurrentElementIndex
     {
-      get => _currentElementIndex; 
-      set => SetProperty(ref _currentElementIndex, value); 
+      get => _currentElementIndex;
+      set => SetProperty(ref _currentElementIndex, value);
     }
 
     private bool _isApprovalActivityVisible;
-    
+
     /// <summary>
     /// 
     /// </summary>
     public bool IsApprovalActivityVisible
     {
-      get { return _isApprovalActivityVisible; }
-      set { SetProperty(ref _isApprovalActivityVisible, value); }
+      get => _isApprovalActivityVisible;
+      set => SetProperty(ref _isApprovalActivityVisible, value);
     }
 
     public bool _isSignatureVisible;
@@ -186,7 +186,8 @@ namespace BehaviorsSampleApp.ViewModels
       User = "mtorres";
       Password = "qwertyuiop54321$%&";
 
-      ApprovalCommand = new DelegateCommand(async () => {
+      ApprovalCommand = new DelegateCommand(async () =>
+      {
         IsIdentifyMenuVisible = false;
         IsApprovalPanelVisible = true;
         IsApprovalActivityVisible = true;
@@ -206,7 +207,7 @@ namespace BehaviorsSampleApp.ViewModels
       CloseCommand = new DelegateCommand(() =>
         {
           IsApprovalPanelVisible = false;
-        }); 
+        });
 
       ShowIdentifyMenuCommand = new DelegateCommand(() =>
         {
@@ -215,7 +216,7 @@ namespace BehaviorsSampleApp.ViewModels
 
       GeoViewTappedCommand = new DelegateCommand(() =>
       {
-        if (!IsDrawing)
+        if(!IsDrawing)
         {
           IsProcessing = true;
         }
@@ -224,22 +225,25 @@ namespace BehaviorsSampleApp.ViewModels
       LegendCommand = new DelegateCommand(() =>
         {
           IsLegendVisible = !IsLegendVisible;
-        }, () => { 
+        }, () =>
+        {
           return Map != null;
         }).ObservesProperty(() => Map);
 
       TOCCommand = new DelegateCommand(() =>
         {
           IsTOCVisible = !IsTOCVisible;
-        }, () => {
+        }, () =>
+        {
           return Map != null;
         }).ObservesProperty(() => Map);
 
       IdentificarCommand = new DelegateCommand<IdentifyResults>((o) =>
         {
-          if (IsDrawing) return;
+          if(IsDrawing)
+            return;
 
-          if (o.GeoElementResults.Count > 0)
+          if(o.GeoElementResults.Count > 0)
           {
             IdentifyResults = o;
             IsIdentifyVisible = true;
@@ -249,7 +253,7 @@ namespace BehaviorsSampleApp.ViewModels
 
       LoadMapCommand = new DelegateCommand(() =>
       {
-        if(Map!= null)
+        if(Map != null)
         {
           Map = null;
           IsLoginVisible = false;

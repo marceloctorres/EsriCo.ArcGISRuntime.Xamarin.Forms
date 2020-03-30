@@ -2,6 +2,7 @@
 using System.Threading.Tasks;
 
 using Newtonsoft.Json;
+
 using Xamarin.Essentials;
 
 namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -14,7 +15,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     /// <summary>
     /// 
     /// </summary>
-    public string FileName { get; set; } 
+    public string FileName { get; set; }
 
     /// <summary>
     /// 
@@ -35,10 +36,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     /// 
     /// </summary>
     /// <returns></returns>
-    public virtual async Task Load()
-    {
-      await Task.Delay(0);
-    }
+    public virtual async Task Load() => await Task.Delay(0);
 
     /// <summary>
     /// 
@@ -55,7 +53,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
         var t = configuration.GetType();
         var propertyInfos = t.GetProperties();
 
-        foreach (var pi in propertyInfos)
+        foreach(var pi in propertyInfos)
         {
           object value = pi.GetValue(configuration);
           pi.SetValue(this, value);
@@ -72,7 +70,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     protected async Task WriteTextFile(string filename, string text)
     {
       var filePath = Path.Combine(Folder, filename);
-      using (StreamWriter writer = File.CreateText(filePath))
+      using(StreamWriter writer = File.CreateText(filePath))
       {
         await writer.WriteAsync(text);
       }
@@ -88,7 +86,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
       var filePath = Path.Combine(Folder, filename);
       if(File.Exists(filePath))
       {
-        using (StreamReader reader = File.OpenText(filePath))
+        using(StreamReader reader = File.OpenText(filePath))
         {
           return await reader.ReadToEndAsync();
         }
@@ -100,9 +98,6 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     /// <summary>
     /// 
     /// </summary>
-    public ConfigurationInfo()
-    {
-      Folder = FileSystem.AppDataDirectory;
-    }
+    public ConfigurationInfo() => Folder = FileSystem.AppDataDirectory;
   }
 }

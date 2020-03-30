@@ -2,6 +2,7 @@
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Threading.Tasks;
+
 using Esri.ArcGISRuntime;
 using Esri.ArcGISRuntime.Mapping;
 using Esri.ArcGISRuntime.Xamarin.Forms;
@@ -43,9 +44,9 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     private static void OnMapViewPropertyChanged(BindableObject bindable, object oldValue, object newValue)
     {
       var panelView = bindable as LayerListPanelView;
-      if (newValue is MapView newMapView)
+      if(newValue is MapView newMapView)
       {
-        if (newMapView.Map != null)
+        if(newMapView.Map != null)
         {
           panelView.SetMap(newMapView.Map);
         }
@@ -53,7 +54,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
         {
           newMapView.PropertyChanged += (s, e) =>
           {
-            if (e.PropertyName == nameof(newMapView.Map) && newMapView.Map != null)
+            if(e.PropertyName == nameof(newMapView.Map) && newMapView.Map != null)
             {
               panelView.SetMap(newMapView.Map);
             }
@@ -164,7 +165,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
         var legendInfos = await layerInfos.GroupLayerInfo.Layer.GetLegendInfosAsync();
         await layerInfos.GroupLayerInfo.SetLegendInfos(legendInfos);
 
-        foreach (var sli in layerInfos.SubLayerInfos)
+        foreach(var sli in layerInfos.SubLayerInfos)
         {
           var subLegendInfos = await sli.Layer.GetLegendInfosAsync();
           await sli.SetLegendInfos(subLegendInfos);
@@ -179,9 +180,9 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <returns></returns>
     private async Task SetLayerInfos()
     {
-      if (Map != null)
+      if(Map != null)
       {
-        if (Map.LoadStatus != LoadStatus.Loaded)
+        if(Map.LoadStatus != LoadStatus.Loaded)
         {
           Map.Loaded += async (o, e) =>
           {
@@ -196,9 +197,6 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
       }
     }
 
-    public LayerListPanelView()
-    {
-      InitializeComponent();
-    }
+    public LayerListPanelView() => InitializeComponent();
   }
 }

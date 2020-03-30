@@ -46,7 +46,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     public static readonly BindableProperty UsernameProperty = BindableProperty.Create(
       nameof(Username),
       typeof(string),
-      typeof(LogInView), 
+      typeof(LogInView),
       defaultBindingMode: BindingMode.TwoWay);
 
     /// <summary>
@@ -76,7 +76,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
       set => SetValue(PasswordProperty, value);
     }
 
-    private bool _isPasswordHidden; 
+    private bool _isPasswordHidden;
 
     /// <summary>
     /// 
@@ -102,7 +102,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
         InitializeComponent();
         IsPasswordHidden = true;
       }
-      catch (Exception ex)
+      catch(Exception ex)
       {
         Console.WriteLine(ex.Message);
       }

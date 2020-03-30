@@ -28,8 +28,8 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
     /// </summary>
     public Layer Layer
     {
-      get { return _layer; }
-      set { SetProperty(ref _layer, value); }
+      get => _layer;
+      set => SetProperty(ref _layer, value);
     }
 
     public IdentifyGeoElementResult()

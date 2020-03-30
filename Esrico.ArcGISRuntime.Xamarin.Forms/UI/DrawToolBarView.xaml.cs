@@ -62,7 +62,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
       var view = bindable as DrawToolBarView;
       var oldOrientation = (StackOrientation)oldValue;
       var newOrientation = (StackOrientation)newValue;
-      if (oldOrientation != newOrientation)
+      if(oldOrientation != newOrientation)
       {
         view.SetControlTemplate(newOrientation);
       }
@@ -74,13 +74,13 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="orientation"></param>
     private void SetControlTemplate(StackOrientation orientation)
     {
-      if (orientation == StackOrientation.Horizontal)
+      if(orientation == StackOrientation.Horizontal)
       {
-        ControlTemplate = (ControlTemplate)Resources["HorizontalLayoutTemplate"];
+        ControlTemplate = (ControlTemplate)Resources[ "HorizontalLayoutTemplate" ];
       }
       else
       {
-        ControlTemplate = (ControlTemplate)Resources["VerticalLayoutTemplate"];
+        ControlTemplate = (ControlTemplate)Resources[ "VerticalLayoutTemplate" ];
       }
     }
 
@@ -139,9 +139,9 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     private static void OnMapViewPropertyChanged(BindableObject bindable, object oldValue, object newValue)
     {
       var panelView = bindable as DrawToolBarView;
-      if (newValue is MapView newMapView)
+      if(newValue is MapView newMapView)
       {
-        if (newMapView.Map != null)
+        if(newMapView.Map != null)
         {
           panelView.CheckMap(newMapView);
         }
@@ -149,7 +149,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
         {
           newMapView.PropertyChanged += (s, e) =>
           {
-            if (e.PropertyName == nameof(newMapView.Map))
+            if(e.PropertyName == nameof(newMapView.Map))
             {
               panelView.CheckMap(newMapView);
             }
@@ -165,14 +165,14 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     public void CheckMap(MapView mapView)
     {
       IsVisible = mapView != null && mapView.Map != null;
-      if (IsVisible)
+      if(IsVisible)
       {
-        if (mapView.GraphicsOverlays == null)
+        if(mapView.GraphicsOverlays == null)
         {
           mapView.GraphicsOverlays = new GraphicsOverlayCollection();
         }
         var graphicsOverlay = mapView.GraphicsOverlays.Where(g => g.Id == DrawGrapichsOverlayId).FirstOrDefault();
-        if (graphicsOverlay == null)
+        if(graphicsOverlay == null)
         {
           DrawGraphicsOverlay.Graphics.Clear();
           mapView.GraphicsOverlays.Add(DrawGraphicsOverlay);
@@ -209,7 +209,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     private static void OnDrawPointToolImageChanged(BindableObject bindable, object oldValue, object newValue)
     {
       var view = bindable as NavigationBarView;
-      if (newValue == null)
+      if(newValue == null)
       {
         view.ZoomInButtonImage = ImageSource.FromStream(() =>
           typeof(DrawToolBarView).Assembly.GetStreamEmbeddedResource(@"ic_point"));
@@ -243,7 +243,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     private static void OnDrawPolylineToolImageChanged(BindableObject bindable, object oldValue, object newValue)
     {
       var view = bindable as NavigationBarView;
-      if (newValue == null)
+      if(newValue == null)
       {
         view.ZoomInButtonImage = ImageSource.FromStream(() =>
           typeof(DrawToolBarView).Assembly.GetStreamEmbeddedResource(@"ic_polyline"));
@@ -277,7 +277,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     private static void OnDrawPolygonToolImageChanged(BindableObject bindable, object oldValue, object newValue)
     {
       var view = bindable as NavigationBarView;
-      if (newValue == null)
+      if(newValue == null)
       {
         view.ZoomInButtonImage = ImageSource.FromStream(() =>
           typeof(DrawToolBarView).Assembly.GetStreamEmbeddedResource(@"ic_polygon"));
@@ -311,7 +311,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     private static void OnDrawRectangleToolImageChanged(BindableObject bindable, object oldValue, object newValue)
     {
       var view = bindable as NavigationBarView;
-      if (newValue == null)
+      if(newValue == null)
       {
         view.ZoomInButtonImage = ImageSource.FromStream(() =>
           typeof(DrawToolBarView).Assembly.GetStreamEmbeddedResource(@"ic_rectangle"));
@@ -345,7 +345,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     private static void OnDrawEraseToolImageChanged(BindableObject bindable, object oldValue, object newValue)
     {
       var view = bindable as NavigationBarView;
-      if (newValue == null)
+      if(newValue == null)
       {
         view.ZoomInButtonImage = ImageSource.FromStream(() =>
           typeof(DrawToolBarView).Assembly.GetStreamEmbeddedResource(@"ic_erase"));
@@ -555,30 +555,21 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// </summary>7
     /// <param name="sender"></param>
     /// <param name="e"></param>
-    private async void DrawPointToolClicked(object sender, EventArgs e)
-    {
-      await DrawGeometry(SketchCreationMode.Multipoint);
-    }
+    private async void DrawPointToolClicked(object sender, EventArgs e) => await DrawGeometry(SketchCreationMode.Multipoint);
 
     /// <summary>
     /// 
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
-    private async void DrawPolylineToolClicked(object sender, EventArgs e)
-    {
-      await DrawGeometry(SketchCreationMode.Polyline);
-    }
+    private async void DrawPolylineToolClicked(object sender, EventArgs e) => await DrawGeometry(SketchCreationMode.Polyline);
 
     /// <summary>
     /// 
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
-    private async void DrawFreehandLineToolClicked(object sender, EventArgs e)
-    {
-      await DrawGeometry(SketchCreationMode.FreehandLine);
-    }
+    private async void DrawFreehandLineToolClicked(object sender, EventArgs e) => await DrawGeometry(SketchCreationMode.FreehandLine);
 
     /// <summary>
     /// 
@@ -601,30 +592,21 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// 
     /// </summary>
     /// <param name="text"></param>
-    private async void DrawText(string text)
-    {
-      await DrawGeometry(SketchCreationMode.Point, text);
-    }
+    private async void DrawText(string text) => await DrawGeometry(SketchCreationMode.Point, text);
 
     /// <summary>
     /// 
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
-    private async void DrawPolygonToolClicked(object sender, EventArgs e)
-    { 
-      await DrawGeometry(SketchCreationMode.Polygon);
-    }
+    private async void DrawPolygonToolClicked(object sender, EventArgs e) => await DrawGeometry(SketchCreationMode.Polygon);
 
     /// <summary>
     /// 
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
-    private async void DrawRectangleToolClicked(object sender, EventArgs e)
-    {
-      await DrawGeometry(SketchCreationMode.Rectangle);
-    }
+    private async void DrawRectangleToolClicked(object sender, EventArgs e) => await DrawGeometry(SketchCreationMode.Rectangle);
 
     /// <summary>
     /// 
@@ -634,7 +616,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     private void DrawEraseToolClicked(object sender, EventArgs e)
     {
       DrawGraphicsOverlay.Graphics.Clear();
-      if (SketchEditor.CancelCommand.CanExecute(null))
+      if(SketchEditor.CancelCommand.CanExecute(null))
       {
         SketchEditor.CancelCommand.Execute(null);
       }
@@ -659,15 +641,12 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// 
     /// </summary>
     /// <returns></returns>
-    private Symbol PolylineSymbol()
+    private Symbol PolylineSymbol() => new SimpleLineSymbol()
     {
-      return new SimpleLineSymbol()
-      {
-        Color = Color,
-        Style = SimpleLineSymbolStyle.Solid,
-        Width = 2
-      };
-    }
+      Color = Color,
+      Style = SimpleLineSymbolStyle.Solid,
+      Width = 2
+    };
 
     /// <summary>
     /// 
@@ -693,16 +672,13 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// 
     /// </summary>
     /// <returns></returns>
-    private Symbol TextSymbol(string text)
+    private Symbol TextSymbol(string text) => new TextSymbol()
     {
-      return new TextSymbol()
-      {
-        Text = text,
-        Color = Color.Black,
-        HorizontalAlignment = HorizontalAlignment.Center,
-        VerticalAlignment = VerticalAlignment.Middle,
-        Size = 20
-      };
-    }
+      Text = text,
+      Color = Color.Black,
+      HorizontalAlignment = HorizontalAlignment.Center,
+      VerticalAlignment = VerticalAlignment.Middle,
+      Size = 20
+    };
   }
 }

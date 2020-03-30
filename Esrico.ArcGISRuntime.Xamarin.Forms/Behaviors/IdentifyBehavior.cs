@@ -1,12 +1,15 @@
-﻿using Esri.ArcGISRuntime.Data;
+﻿using System.Collections.Generic;
+using System.Linq;
+using System.Windows.Input;
+
+using Esri.ArcGISRuntime.Data;
 using Esri.ArcGISRuntime.Mapping;
 using Esri.ArcGISRuntime.Symbology;
 using Esri.ArcGISRuntime.UI;
 using Esri.ArcGISRuntime.Xamarin.Forms;
+
 using Prism.Behaviors;
-using System.Collections.Generic;
-using System.Linq;
-using System.Windows.Input;
+
 using Xamarin.Forms;
 
 namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
@@ -126,14 +129,14 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
 
     private async void GeoViewTapped(object sender, GeoViewInputEventArgs e)
     {
-      if (Command != null && AssociatedObject.Map != null)
+      if(Command != null && AssociatedObject.Map != null)
       {
         object item = null;
-        if (Command.CanExecute(item))
+        if(Command.CanExecute(item))
         {
           var identifyResults = new IdentifyResults();
 
-          if (GraphicsOverlays != null && GraphicsOverlays.Count > 0)
+          if(GraphicsOverlays != null && GraphicsOverlays.Count > 0)
           {
             var identifyGraphicOverlayResults = await AssociatedObject.IdentifyGraphicsOverlaysAsync(
               e.Position,
@@ -141,7 +144,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
               ReturnOnlyPopups,
               MaxResults);
 
-            if (identifyGraphicOverlayResults != null)
+            if(identifyGraphicOverlayResults != null)
             {
               identifyResults
                 .GraphicsResults = (from r in identifyGraphicOverlayResults
@@ -151,17 +154,18 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
                                       .ToArray()
                                       .Contains(g.GraphicsOverlay.Id)
                                     select new IdentifyGraphicResult() { Graphic = g })
-                                    .ToList(); ;
+                                    .ToList();
+              ;
             }
           }
-          if (Layers != null && Layers.Count > 0)
+          if(Layers != null && Layers.Count > 0)
           {
             var identifyLayerResults = await AssociatedObject.IdentifyLayersAsync(
               e.Position,
               Tolerance,
               ReturnOnlyPopups,
               MaxResults);
-            if (identifyLayerResults != null)
+            if(identifyLayerResults != null)
             {
               identifyResults
                 .GeoElementResults
@@ -184,11 +188,11 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
                          });
             }
 
-            foreach (var ir in identifyLayerResults)
+            foreach(var ir in identifyLayerResults)
             {
             }
           }
-          this.Command.Execute(identifyResults);
+          Command.Execute(identifyResults);
         }
       }
     }

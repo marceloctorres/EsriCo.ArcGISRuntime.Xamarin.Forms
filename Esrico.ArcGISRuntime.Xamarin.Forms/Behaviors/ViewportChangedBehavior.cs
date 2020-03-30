@@ -1,8 +1,11 @@
-﻿using Esri.ArcGISRuntime.Mapping;
-using Esri.ArcGISRuntime.Xamarin.Forms;
-using Prism.Behaviors;
-using System;
+﻿using System;
 using System.Windows.Input;
+
+using Esri.ArcGISRuntime.Mapping;
+using Esri.ArcGISRuntime.Xamarin.Forms;
+
+using Prism.Behaviors;
+
 using Xamarin.Forms;
 
 namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
@@ -34,14 +37,14 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
 
     private void Bindable_ViewpointChanged(object sender, EventArgs e)
     {
-      if (Command != null)
+      if(Command != null)
       {
-        if (AssociatedObject != null)
+        if(AssociatedObject != null)
         {
           var currentViewpoint = AssociatedObject.GetCurrentViewpoint(ViewpointType.BoundingGeometry);
-          if (this.Command.CanExecute(currentViewpoint))
+          if(Command.CanExecute(currentViewpoint))
           {
-            this.Command.Execute(currentViewpoint);
+            Command.Execute(currentViewpoint);
           }
         }
       }

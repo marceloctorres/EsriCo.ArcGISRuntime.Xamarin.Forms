@@ -1,10 +1,6 @@
-﻿using Prism.Commands;
-using Prism.Mvvm;
+﻿using Prism.Mvvm;
 using Prism.Navigation;
 using Prism.Services;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace BehaviorsSampleApp.ViewModels
 {
@@ -18,8 +14,8 @@ namespace BehaviorsSampleApp.ViewModels
     private string _title;
     public string Title
     {
-      get { return _title; }
-      set { SetProperty(ref _title, value); }
+      get => _title;
+      set => SetProperty(ref _title, value);
     }
 
     public ViewModelBase(INavigationService navigationService, IPageDialogService pageDialogService)

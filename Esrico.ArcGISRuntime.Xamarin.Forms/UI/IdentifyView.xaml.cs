@@ -1,6 +1,7 @@
 ﻿
 using System;
 using System.Linq;
+
 using Esri.ArcGISRuntime.Data;
 using Esri.ArcGISRuntime.Mapping;
 using Esri.ArcGISRuntime.Mapping.Popups;
@@ -73,10 +74,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    public IdentifyView()
-    {
-      InitializeComponent();
-    }
+    public IdentifyView() => InitializeComponent();
 
     /// <summary>
     /// 
@@ -116,7 +114,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
           (geoElementResult.Layer as FeatureLayer).FeatureTable.DisplayName :
           string.Empty;
 
-        if (geoElementResult.Layer is IPopupSource)
+        if(geoElementResult.Layer is IPopupSource)
         {
           var popupSource = geoElementResult.Layer as IPopupSource;
           var popupDefinition = popupSource.PopupDefinition;
@@ -128,14 +126,14 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
         {
           popup = Popup.FromGeoElement(geoElementResult.GeoElement);
         }
-        if (popup != null)
+        if(popup != null)
         {
           var popManager = new PopupManager(popup as Popup);
           identifyView.PopupManager = popManager;
         }
         identifyView.StatusText = $"{identifyView.CurrentElementIndex + 1} / {identifyResults.GeoElementResults.Count}";
       }
-      catch (Exception ex)
+      catch(Exception ex)
       {
         Console.WriteLine(ex.Message);
       }
@@ -147,7 +145,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// </summary>
     private void ClearSelection(IdentifyResults identifyResuls = null)
     {
-      if (identifyResuls == null)
+      if(identifyResuls == null)
       {
         identifyResuls = IdentifyResults;
       }

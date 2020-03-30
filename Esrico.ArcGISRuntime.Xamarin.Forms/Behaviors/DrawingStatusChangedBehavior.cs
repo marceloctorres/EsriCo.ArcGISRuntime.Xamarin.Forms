@@ -1,7 +1,10 @@
-﻿using Esri.ArcGISRuntime.UI;
+﻿using System.Windows.Input;
+
+using Esri.ArcGISRuntime.UI;
 using Esri.ArcGISRuntime.Xamarin.Forms;
+
 using Prism.Behaviors;
-using System.Windows.Input;
+
 using Xamarin.Forms;
 
 namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
@@ -52,10 +55,10 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
     /// <param name="e"></param>
     private void Bindable_DrawStatusChanged(object sender, DrawStatusChangedEventArgs e)
     {
-      if (Command != null)
+      if(Command != null)
       {
         bool inProgress = e.Status == DrawStatus.InProgress;
-        if (Command.CanExecute(inProgress))
+        if(Command.CanExecute(inProgress))
         {
           Command.Execute(inProgress);
         }

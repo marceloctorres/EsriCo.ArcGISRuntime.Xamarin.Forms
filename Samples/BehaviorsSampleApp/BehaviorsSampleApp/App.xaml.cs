@@ -1,11 +1,11 @@
-﻿using Prism;
-using Prism.Ioc;
-using BehaviorsSampleApp.ViewModels;
+﻿using BehaviorsSampleApp.ViewModels;
 using BehaviorsSampleApp.Views;
+
+using Prism;
+using Prism.Ioc;
+
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using System.Globalization;
-using System;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace BehaviorsSampleApp

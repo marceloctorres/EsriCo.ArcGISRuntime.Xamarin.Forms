@@ -1,5 +1,4 @@
-﻿using System;
-using Esri.ArcGISRuntime.UI;
+﻿using Esri.ArcGISRuntime.UI;
 using Esri.ArcGISRuntime.Xamarin.Forms;
 
 using Xamarin.Forms;
@@ -84,11 +83,11 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="newMapView"></param>
     public void AddDrawStatusChangedHandler(MapView oldMapView, MapView newMapView)
     {
-      if (oldMapView != null)
+      if(oldMapView != null)
       {
         oldMapView.DrawStatusChanged -= MapViewDrawStatusChanged;
       }
-      if (newMapView != null)
+      if(newMapView != null)
       {
         newMapView.DrawStatusChanged += MapViewDrawStatusChanged;
       }
@@ -99,10 +98,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
-    private void MapViewDrawStatusChanged(object sender, Esri.ArcGISRuntime.UI.DrawStatusChangedEventArgs e)
-    {
-      IsVisible = e.Status == DrawStatus.InProgress;
-    }
+    private void MapViewDrawStatusChanged(object sender, DrawStatusChangedEventArgs e) => IsVisible = e.Status == DrawStatus.InProgress;
 
     /// <summary>
     /// 

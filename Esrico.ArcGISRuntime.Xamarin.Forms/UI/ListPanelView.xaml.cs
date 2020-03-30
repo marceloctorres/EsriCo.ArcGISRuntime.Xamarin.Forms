@@ -50,7 +50,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
       nameof(IsGroupingEnabled),
       typeof(bool),
       typeof(ListPanelView),
-      defaultValue:false);
+      defaultValue: false);
 
     /// <summary>
     /// 
@@ -132,14 +132,8 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    public ListPanelView()
-    {
-      InitializeComponent();
-    }
+    public ListPanelView() => InitializeComponent();
 
-    private void ListView_BindingContextChanged(object sender, EventArgs e)
-    {
-      Console.WriteLine(sender);
-    }
+    private void ListView_BindingContextChanged(object sender, EventArgs e) => Console.WriteLine(sender);
   }
 }

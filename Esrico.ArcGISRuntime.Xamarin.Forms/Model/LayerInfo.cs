@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+
 using Esri.ArcGISRuntime.Mapping;
 
 using Prism.Mvvm;
@@ -50,7 +51,8 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Model
     /// <summary>
     /// 
     /// </summary>
-    public Layer Layer {
+    public Layer Layer
+    {
       get => _layer;
       set => SetProperty(ref _layer, value);
     }
@@ -58,7 +60,8 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Model
     /// <summary>
     /// 
     /// </summary>
-    public LayerInfo ParentInfo {
+    public LayerInfo ParentInfo
+    {
       get => _parentInfoLayer;
       set => SetProperty(ref _parentInfoLayer, value);
     }
@@ -66,7 +69,8 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Model
     /// <summary>
     /// 
     /// </summary>
-    public List<LegendImageInfo> LegendImageInfos {
+    public List<LegendImageInfo> LegendImageInfos
+    {
       get => _legendInfos;
       set => SetProperty(ref _legendInfos, value);
     }
@@ -77,7 +81,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Model
     /// <param name="legendInfos"></param>
     public async Task SetLegendInfos(IEnumerable<LegendInfo> legendInfos)
     {
-      if (LegendImageInfos == null)
+      if(LegendImageInfos == null)
       {
         LegendImageInfos = new List<LegendImageInfo>();
       }

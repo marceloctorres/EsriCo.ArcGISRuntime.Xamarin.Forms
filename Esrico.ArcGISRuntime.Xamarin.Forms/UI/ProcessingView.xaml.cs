@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -18,8 +14,8 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     public static readonly BindableProperty IsProcessingProperty = BindableProperty.Create(
       nameof(IsProcessing),
       typeof(bool),
-      typeof(ProcessingView), 
-      defaultValue:false);
+      typeof(ProcessingView),
+      defaultValue: false);
 
     /// <summary>
     /// 
@@ -35,7 +31,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// </summary>
     public static readonly BindableProperty ProcessingMessageProperty = BindableProperty.Create(
       nameof(ProcessingMessage),
-      typeof(string), 
+      typeof(string),
       typeof(ProcessingView));
 
     /// <summary>
@@ -54,7 +50,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
         InitializeComponent();
         ProcessingMessage = AppResources.ProcessingMessageLabelText;
       }
-      catch (Exception ex)
+      catch(Exception ex)
       {
         Console.WriteLine(ex.Message);
       }

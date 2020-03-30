@@ -1,11 +1,12 @@
-﻿using Esri.ArcGISRuntime.Geometry;
-using Esri.ArcGISRuntime.Mapping;
-
-using System;
+﻿using System;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+
+using Esri.ArcGISRuntime.Geometry;
+using Esri.ArcGISRuntime.Mapping;
+
 using Xamarin.Forms;
 
 /// <summary>
@@ -30,7 +31,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Extensions
       var sign = Math.Sign(value);
       value = Math.Abs(value);
 
-      if (!string.IsNullOrEmpty(axis))
+      if(!string.IsNullOrEmpty(axis))
       {
         sSing = axis.ToUpper() == "X" ? sign > 0 ? "E" : "W" : sign > 0 ? "N" : "S";
         sign = 1;
@@ -48,10 +49,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Extensions
     /// </summary>
     /// <param name="mapPoint"></param>
     /// <returns></returns>
-    public static string ToDms(this MapPoint mapPoint)
-    {
-      return $"Y:{mapPoint.Y.ToDms("Y")}, X:{mapPoint.X.ToDms("X")}";
-    }
+    public static string ToDms(this MapPoint mapPoint) => $"Y:{mapPoint.Y.ToDms("Y")}, X:{mapPoint.X.ToDms("X")}";
 
     /// <summary>
     /// 
@@ -77,12 +75,9 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Extensions
     /// <param name="bounds"></param>
     /// <param name="center"></param>
     /// <returns></returns>
-    public static bool AreEquals(this Viewpoint vp, Viewpoint bounds, Viewpoint center)
-    {
-      return (vp.TargetGeometry.IsEqual(bounds.TargetGeometry) ||
+    public static bool AreEquals(this Viewpoint vp, Viewpoint bounds, Viewpoint center) => (vp.TargetGeometry.IsEqual(bounds.TargetGeometry) ||
         (vp.TargetGeometry.IsEqual(center.TargetGeometry) &&
           vp.TargetScale.Equals(center.TargetScale)));
-    }
 
     /// <summary>
     /// 
@@ -103,7 +98,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Extensions
     public static string ToBase64String(this Stream s)
     {
       byte[] bytes = null;
-      using (var ms = new MemoryStream())
+      using(var ms = new MemoryStream())
       {
         s.CopyTo(ms);
         bytes = ms.ToArray();
@@ -120,7 +115,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Extensions
     public static Stream GetStreamEmbeddedResource(this Assembly assembly, string resource)
     {
       var fullName = assembly.GetManifestResourceNames().Where(s => s.Contains(resource)).FirstOrDefault();
-      if (!string.IsNullOrEmpty(fullName))
+      if(!string.IsNullOrEmpty(fullName))
       {
         return assembly.GetManifestResourceStream(fullName);
       }

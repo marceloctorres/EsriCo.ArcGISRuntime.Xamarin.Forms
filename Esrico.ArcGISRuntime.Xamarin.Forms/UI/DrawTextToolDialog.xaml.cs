@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Input;
-using Xamarin.Forms;
+
 using Xamarin.Forms.Xaml;
 
 namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -34,7 +30,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     private void OKButton_Clicked(object sender, EventArgs e)
     {
       IsVisible = false;
-      if(AcceptCommand !=null)
+      if(AcceptCommand != null)
       {
         if(AcceptCommand.CanExecute(null))
         {
@@ -48,9 +44,6 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
-    private void CloseButton_Clicked(object sender, EventArgs e)
-    {
-      IsVisible = false;
-    }
+    private void CloseButton_Clicked(object sender, EventArgs e) => IsVisible = false;
   }
 }

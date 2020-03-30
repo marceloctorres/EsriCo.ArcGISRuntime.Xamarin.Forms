@@ -1,6 +1,8 @@
-﻿using Esri.ArcGISRuntime.Geometry;
-using System;
+﻿using System;
 using System.Globalization;
+
+using Esri.ArcGISRuntime.Geometry;
+
 using Xamarin.Forms;
 
 namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Converters
@@ -20,11 +22,11 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Converters
     /// <returns></returns>
     public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
     {
-      if (value.GetType() == typeof(double) && targetType == typeof(string))
+      if(value.GetType() == typeof(double) && targetType == typeof(string))
       {
         return ((double)value).ToDms((string)parameter);
       }
-      else if (value.GetType() == typeof(MapPoint) && targetType == typeof(string))
+      else if(value.GetType() == typeof(MapPoint) && targetType == typeof(string))
       {
         return ((MapPoint)value).ToDms();
       }
@@ -39,10 +41,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Converters
     /// <param name="parameter"></param>
     /// <param name="culture"></param>
     /// <returns></returns>
-    public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
-    {
-      throw new NotImplementedException();
-    }
+    public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture) => throw new NotImplementedException();
 
   }
 }
