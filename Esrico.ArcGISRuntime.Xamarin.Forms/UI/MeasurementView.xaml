@@ -7,14 +7,51 @@
               xmlns:root="clr-namespace:EsriCo.ArcGISRuntime.Xamarin.Forms"
               mc:Ignorable="d"
               x:Class="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.MeasurementBarView"
+              x:Name="measureView"
               TitleText="{x:Static root:AppResources.MeasurementTitleText}"
               IsStatusVisible="False">
+  <ui:PanelView.Resources>
+    <ResourceDictionary>
+      <ResourceDictionary.MergedDictionaries>
+        <root:ResourceDictionary />
+      </ResourceDictionary.MergedDictionaries>
+    </ResourceDictionary>
+  </ui:PanelView.Resources>
   <ui:PanelView.BodyContent>
-    <Grid>
+    <Grid Margin="5">
       <Grid.RowDefinitions>
         <RowDefinition Height="Auto" />
         <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
       </Grid.RowDefinitions>
+      <Grid Grid.Row="0" ColumnSpacing="2">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="Auto" />
+          <ColumnDefinition Width="Auto" />
+          <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+        <Button x:Name="PointMeasurementTool" 
+                Grid.Column="0"
+                Clicked="PointMeasurementToolClicked"
+                Style="{StaticResource ToolButton}"
+                Image="{Binding PointMeasurementToolImage, Source={x:Reference measureView}}" />
+        <Button x:Name="LineMeasurementTool"
+                Grid.Column="1"
+                Clicked="LineMeasurementToolClicked"
+                Style="{StaticResource ToolButton}"
+                Image="{Binding LineMeasurementToolImage, Source={x:Reference measureView}}" />
+        <Button x:Name="AreaMeasurementTool"
+                Grid.Column="2"
+                Clicked="AreaMeasurementToolClicked"
+                Style="{StaticResource ToolButton}"
+                Image="{Binding AreaMeasurementToolImage, Source={x:Reference measureView}}" />
+      </Grid>
+      <Picker Grid.Row="1">
+        
+      </Picker>
+      <Label Text="{Binding ResultText, Source={x:Reference measureView}}"
+             HorizontalOptions="FillAndExpand" 
+             HorizontalTextAlignment="Center"/>
     </Grid>
   </ui:PanelView.BodyContent>
 </ui:PanelView>

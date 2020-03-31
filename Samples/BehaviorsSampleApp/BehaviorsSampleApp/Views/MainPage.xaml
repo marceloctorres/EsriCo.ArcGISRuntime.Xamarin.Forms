@@ -33,7 +33,14 @@
       <esrico:NavigationBarView MapView="{Binding Source={x:Reference mapView}}" />
       <esrico:DrawToolBarView MapView="{Binding Source={x:Reference mapView}}" 
                               IsDrawing="{Binding IsDrawing}" 
+                              Color="Green"
                               Orientation="Vertical" />
+      <esrico:MeasurementBarView MapView="{Binding Source={x:Reference mapView}}"
+                                 HorizontalOptions="CenterAndExpand"
+                                 VerticalOptions="StartAndExpand"
+                                 Margin="10"
+                                 Color="DarkBlue"
+                                 IsDrawing="{Binding IsDrawing}" />
       <esrico:LogInView x:Name="logingView"
                         WidthRequest="500"
                         IsVisible="{Binding IsLoginVisible}"

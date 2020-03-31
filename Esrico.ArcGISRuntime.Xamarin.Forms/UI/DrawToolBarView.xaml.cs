@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Diagnostics;
+using System.ComponentModel;
 using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Input;
 
-using Esri.ArcGISRuntime.Symbology;
 using Esri.ArcGISRuntime.UI;
 using Esri.ArcGISRuntime.Xamarin.Forms;
 
@@ -15,10 +13,11 @@ using Prism.Commands;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-using Color = System.Drawing.Color;
-
 namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
 {
+  /// <summary>
+  /// 
+  /// </summary>
   [XamlCompilation(XamlCompilationOptions.Compile)]
   public partial class DrawToolBarView : ContentView
   {
@@ -27,10 +26,14 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// </summary>
     private const string DrawGrapichsOverlayId = "DrawGraphicsOverlay";
 
+    /// <summary>
+    /// 
+    /// </summary>
     public static readonly BindableProperty ColorProperty = BindableProperty.Create(
       nameof(Color),
       typeof(Color),
       typeof(DrawToolBarView),
+      propertyChanged: OnColorPropertyChanged,
       defaultValue: Color.DarkCyan);
 
     /// <summary>
@@ -41,6 +44,23 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
       get => (Color)GetValue(ColorProperty);
       set => SetValue(ColorProperty, value);
     }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="bindable"></param>
+    /// <param name="oldValue"></param>
+    /// <param name="newValue"></param>
+    private static void OnColorPropertyChanged(BindableObject bindable, object oldValue, object newValue)
+    {
+      var view = bindable as DrawToolBarView;
+      if(newValue != null)
+      {
+        view.Color = (Color)newValue;
+        view.DrawingProcess.Color = view.Color;
+      }
+    }
+
 
     /// <summary>
     /// 
@@ -174,11 +194,15 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
         var graphicsOverlay = mapView.GraphicsOverlays.Where(g => g.Id == DrawGrapichsOverlayId).FirstOrDefault();
         if(graphicsOverlay == null)
         {
-          DrawGraphicsOverlay.Graphics.Clear();
-          mapView.GraphicsOverlays.Add(DrawGraphicsOverlay);
+          DrawingProcess.DrawGraphicsOverlay.Graphics.Clear();
+          mapView.GraphicsOverlays.Add(DrawingProcess.DrawGraphicsOverlay);
         }
-        mapView.SketchEditor = SketchEditor;
-        SketchEditor.Style.FeedbackVertexSymbol = null;
+        if(mapView.SketchEditor == null)
+        {
+          mapView.SketchEditor = new SketchEditor();
+        }
+        DrawingProcess.SketchEditor = mapView.SketchEditor;
+        DrawingProcess.SketchEditor.GeometryChanged += SketchEditor_GeometryChanged;
       }
     }
 
@@ -208,10 +232,10 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="newValue"></param>
     private static void OnDrawPointToolImageChanged(BindableObject bindable, object oldValue, object newValue)
     {
-      var view = bindable as NavigationBarView;
+      var view = bindable as DrawToolBarView;
       if(newValue == null)
       {
-        view.ZoomInButtonImage = ImageSource.FromStream(() =>
+        view.DrawPointToolImage = ImageSource.FromStream(() =>
           typeof(DrawToolBarView).Assembly.GetStreamEmbeddedResource(@"ic_point"));
       }
     }
@@ -242,10 +266,10 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="newValue"></param>
     private static void OnDrawPolylineToolImageChanged(BindableObject bindable, object oldValue, object newValue)
     {
-      var view = bindable as NavigationBarView;
+      var view = bindable as DrawToolBarView;
       if(newValue == null)
       {
-        view.ZoomInButtonImage = ImageSource.FromStream(() =>
+        view.DrawPolylineToolImage = ImageSource.FromStream(() =>
           typeof(DrawToolBarView).Assembly.GetStreamEmbeddedResource(@"ic_polyline"));
       }
     }
@@ -276,10 +300,10 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="newValue"></param>
     private static void OnDrawPolygonToolImageChanged(BindableObject bindable, object oldValue, object newValue)
     {
-      var view = bindable as NavigationBarView;
+      var view = bindable as DrawToolBarView;
       if(newValue == null)
       {
-        view.ZoomInButtonImage = ImageSource.FromStream(() =>
+        view.DrawPolygonToolImage = ImageSource.FromStream(() =>
           typeof(DrawToolBarView).Assembly.GetStreamEmbeddedResource(@"ic_polygon"));
       }
     }
@@ -310,10 +334,10 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="newValue"></param>
     private static void OnDrawRectangleToolImageChanged(BindableObject bindable, object oldValue, object newValue)
     {
-      var view = bindable as NavigationBarView;
+      var view = bindable as DrawToolBarView;
       if(newValue == null)
       {
-        view.ZoomInButtonImage = ImageSource.FromStream(() =>
+        view.DrawRectangleToolImage = ImageSource.FromStream(() =>
           typeof(DrawToolBarView).Assembly.GetStreamEmbeddedResource(@"ic_rectangle"));
       }
     }
@@ -344,10 +368,10 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="newValue"></param>
     private static void OnDrawEraseToolImageChanged(BindableObject bindable, object oldValue, object newValue)
     {
-      var view = bindable as NavigationBarView;
+      var view = bindable as DrawToolBarView;
       if(newValue == null)
       {
-        view.ZoomInButtonImage = ImageSource.FromStream(() =>
+        view.DrawEraseToolImage = ImageSource.FromStream(() =>
           typeof(DrawToolBarView).Assembly.GetStreamEmbeddedResource(@"ic_erase"));
       }
     }
@@ -378,10 +402,10 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="newValue"></param>
     private static void DrawFreehandLineToolImageChanged(BindableObject bindable, object oldValue, object newValue)
     {
-      var view = bindable as NavigationBarView;
+      var view = bindable as DrawToolBarView;
       if(newValue == null)
       {
-        view.ZoomInButtonImage = ImageSource.FromStream(() =>
+        view.DrawFreehandLineToolImage = ImageSource.FromStream(() =>
           typeof(DrawToolBarView).Assembly.GetStreamEmbeddedResource(@"ic_erase"));
       }
     }
@@ -412,32 +436,11 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="newValue"></param>
     private static void DrawTextToolImageChanged(BindableObject bindable, object oldValue, object newValue)
     {
-      var view = bindable as NavigationBarView;
+      var view = bindable as DrawToolBarView;
       if(newValue == null)
       {
-        view.ZoomInButtonImage = ImageSource.FromStream(() =>
+        view.DrawTextToolImage = ImageSource.FromStream(() =>
           typeof(DrawToolBarView).Assembly.GetStreamEmbeddedResource(@"ic_text"));
-      }
-    }
-
-    /// <summary>
-    /// 
-    /// </summary>
-    private SketchEditor _sketchEditor;
-
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <summary>
-    /// 
-    /// </summary>
-    public SketchEditor SketchEditor
-    {
-      get => _sketchEditor;
-      set
-      {
-        _sketchEditor = value;
-        OnPropertyChanged(nameof(SketchEditor));
       }
     }
 
@@ -454,7 +457,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    private GraphicsOverlay DrawGraphicsOverlay { get; set; }
+    private DrawingProcess DrawingProcess { get; set; }
 
     /// <summary>
     /// 
@@ -472,14 +475,28 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
       DrawFreehandLineToolImage = ImageSource.FromStream(() => GetType().Assembly.GetStreamEmbeddedResource(@"ic_freehandline"));
       DrawTextToolImage = ImageSource.FromStream(() => GetType().Assembly.GetStreamEmbeddedResource(@"ic_text"));
 
-      DrawGraphicsOverlay = new GraphicsOverlay()
+      DrawingProcess = new DrawingProcess()
       {
-        Id = DrawGrapichsOverlayId
+        Color = Color,
+        DrawGraphicsOverlay = new GraphicsOverlay() { Id = DrawGrapichsOverlayId }
       };
-      SketchEditor = new SketchEditor();
-      SketchEditor.GeometryChanged += SketchEditor_GeometryChanged;
+      DrawingProcess.PropertyChanged += DrawingProcess_PropertyChanged;
+
       OKCommand = new DelegateCommand<string>((s) => DrawText(s));
       Dialog = new DrawTextToolDialog() { AcceptCommand = OKCommand };
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    private void DrawingProcess_PropertyChanged(object sender, PropertyChangedEventArgs e)
+    { 
+      if(e.PropertyName == nameof(DrawingProcess.IsDrawing))
+      {
+        IsDrawing = DrawingProcess.IsDrawing;
+      }
     }
 
     /// <summary>
@@ -493,83 +510,27 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
 
     /// <summary>
     /// 
-    /// </summary>
-    /// <param name="mode"></param>
-    /// <returns></returns>
-    private async Task DrawGeometry(SketchCreationMode mode, string text = null)
-    {
-      try
-      {
-        //if (IsDrawing)
-        //{
-        //  SketchEditor.Stop();
-        //  if (SketchEditor.CancelCommand.CanExecute(null))
-        //  {
-        //    SketchEditor.CancelCommand.Execute(null);
-        //  }
-        //}
-        IsDrawing = true;
-        var geometry = await SketchEditor.StartAsync(mode, false);
-        Symbol symbol = null;
-
-        if(!string.IsNullOrEmpty(text))
-        {
-          symbol = TextSymbol(text);
-        }
-        else
-        {
-          switch(mode)
-          {
-            case SketchCreationMode.Point:
-              symbol = PointSymbol();
-              break;
-            case SketchCreationMode.Multipoint:
-              symbol = PointSymbol();
-              break;
-            case SketchCreationMode.Polyline:
-              symbol = PolylineSymbol();
-              break;
-            case SketchCreationMode.FreehandLine:
-              symbol = PolylineSymbol();
-              break;
-            default:
-              symbol = PolygonSymbol();
-              break;
-          }
-        }
-        DrawGraphicsOverlay.Graphics.Add(new Graphic() { Geometry = geometry, Symbol = symbol });
-        IsDrawing = false;
-      }
-      catch(TaskCanceledException ex)
-      {
-        Debug.WriteLine(ex.Message);
-      }
-      catch(Exception ex)
-      {
-        Debug.WriteLine(ex.Message);
-      }
-    }
-
-    /// <summary>
-    /// 
     /// </summary>7
     /// <param name="sender"></param>
     /// <param name="e"></param>
-    private async void DrawPointToolClicked(object sender, EventArgs e) => await DrawGeometry(SketchCreationMode.Multipoint);
+    private async void DrawPointToolClicked(object sender, EventArgs e) =>
+      await DrawingProcess.DrawGeometry(SketchCreationMode.Point);
 
     /// <summary>
     /// 
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
-    private async void DrawPolylineToolClicked(object sender, EventArgs e) => await DrawGeometry(SketchCreationMode.Polyline);
+    private async void DrawPolylineToolClicked(object sender, EventArgs e) =>
+      await DrawingProcess.DrawGeometry(SketchCreationMode.Polyline);
 
     /// <summary>
     /// 
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
-    private async void DrawFreehandLineToolClicked(object sender, EventArgs e) => await DrawGeometry(SketchCreationMode.FreehandLine);
+    private async void DrawFreehandLineToolClicked(object sender, EventArgs e) =>
+      await DrawingProcess.DrawGeometry(SketchCreationMode.FreehandLine);
 
     /// <summary>
     /// 
@@ -592,21 +553,24 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// 
     /// </summary>
     /// <param name="text"></param>
-    private async void DrawText(string text) => await DrawGeometry(SketchCreationMode.Point, text);
+    private async void DrawText(string text) =>
+      await DrawingProcess.DrawGeometry(SketchCreationMode.Point, text);
 
     /// <summary>
     /// 
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
-    private async void DrawPolygonToolClicked(object sender, EventArgs e) => await DrawGeometry(SketchCreationMode.Polygon);
+    private async void DrawPolygonToolClicked(object sender, EventArgs e) =>
+      await DrawingProcess.DrawGeometry(SketchCreationMode.Polygon);
 
     /// <summary>
     /// 
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
-    private async void DrawRectangleToolClicked(object sender, EventArgs e) => await DrawGeometry(SketchCreationMode.Rectangle);
+    private async void DrawRectangleToolClicked(object sender, EventArgs e) =>
+      await DrawingProcess.DrawGeometry(SketchCreationMode.Rectangle);
 
     /// <summary>
     /// 
@@ -615,70 +579,11 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="e"></param>
     private void DrawEraseToolClicked(object sender, EventArgs e)
     {
-      DrawGraphicsOverlay.Graphics.Clear();
-      if(SketchEditor.CancelCommand.CanExecute(null))
+      DrawingProcess.DrawGraphicsOverlay.Graphics.Clear();
+      if(DrawingProcess.SketchEditor.CancelCommand.CanExecute(null))
       {
-        SketchEditor.CancelCommand.Execute(null);
+        DrawingProcess.SketchEditor.CancelCommand.Execute(null);
       }
     }
-
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <returns></returns>
-    private Symbol PointSymbol()
-    {
-      var fillColor = Color.FromArgb(128, Color);
-      return new SimpleMarkerSymbol()
-      {
-        Color = fillColor,
-        Size = 20,
-        Style = SimpleMarkerSymbolStyle.Circle
-      };
-    }
-
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <returns></returns>
-    private Symbol PolylineSymbol() => new SimpleLineSymbol()
-    {
-      Color = Color,
-      Style = SimpleLineSymbolStyle.Solid,
-      Width = 2
-    };
-
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <returns></returns>
-    private Symbol PolygonSymbol()
-    {
-      var fillColor = Color.FromArgb(128, Color);
-      return new SimpleFillSymbol()
-      {
-        Color = fillColor,
-        Outline = new SimpleLineSymbol()
-        {
-          Color = Color.DarkCyan,
-          Style = SimpleLineSymbolStyle.Solid,
-          Width = 2
-        },
-        Style = SimpleFillSymbolStyle.Solid
-      };
-    }
-
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <returns></returns>
-    private Symbol TextSymbol(string text) => new TextSymbol()
-    {
-      Text = text,
-      Color = Color.Black,
-      HorizontalAlignment = HorizontalAlignment.Center,
-      VerticalAlignment = VerticalAlignment.Middle,
-      Size = 20
-    };
   }
 }
