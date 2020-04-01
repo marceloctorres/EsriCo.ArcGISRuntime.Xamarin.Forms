@@ -1,13 +1,12 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Diagnostics;
-using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 
 using Esri.ArcGISRuntime.Geometry;
 using Esri.ArcGISRuntime.Symbology;
 using Esri.ArcGISRuntime.UI;
-using Prism.Commands;
+using Esri.ArcGISRuntime.Xamarin.Forms;
 using Prism.Mvvm;
 
 using Color = System.Drawing.Color;
@@ -20,6 +19,14 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
   /// </summary>
   internal class DrawingProcess : BindableBase
   {
+    /// <summary>
+    /// 
+    /// </summary>
+    internal MapView MapView { get; set;  }
+
+    /// <summary>
+    /// 
+    /// </summary>
     internal Color Color { get; set; }
 
     /// <summary>
@@ -87,6 +94,8 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
       try
       {
         IsDrawing = true;
+        MapView.SketchEditor = SketchEditor;
+
         var geometry = await SketchEditor.StartAsync(mode, false);
         Symbol symbol = null;
 
@@ -121,7 +130,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
           }
         }
         DrawGraphicsOverlay?.Graphics.Add(new Graphic() { Geometry = geometry, Symbol = symbol });
-        // IsDrawing = false;
+        IsDrawing = false;
       }
       catch(TaskCanceledException ex)
       {
@@ -130,6 +139,10 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
       catch(Exception ex)
       {
         Debug.WriteLine(ex.Message);
+      }
+      finally
+      {
+        IsDrawing = false;
       }
     }
 
@@ -218,5 +231,5 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
       }
     }
   }
-  
+
 }

@@ -118,23 +118,10 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <returns></returns>
     private async Task SetLayerInfosFromLoadedMap()
     {
-      //var layerInfos = await Device.InvokeOnMainThreadAsync(() => GetLayerInfos());
-      var layerInfos = await GetLayerInfosFromLoadedMap();
-      ////LayerInfosList =  layerInfos != null ?
-      ////  new ObservableCollection<LayerInfos>(layerInfos) :
-      ////  null;
-      if(LayerInfosList == null)
-      {
-        LayerInfosList = new ObservableCollection<LayerInfos>(layerInfos);
-      }
-      else
-      {
-        LayerInfosList.Clear();
-        foreach(var layerInfo in layerInfos)
-        {
-          LayerInfosList.Add(layerInfo);
-        }
-      }
+      var layerInfos = await Device.InvokeOnMainThreadAsync(() => GetLayerInfosFromLoadedMap());
+      LayerInfosList = layerInfos != null ?
+        new ObservableCollection<LayerInfos>(layerInfos) :
+        null;
     }
 
     /// <summary>

@@ -151,6 +151,15 @@ namespace BehaviorsSampleApp.Resx {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Measurement.
+        /// </summary>
+        public static string MeasurementButtonText {
+            get {
+                return ResourceManager.GetString("MeasurementButtonText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Working....
         /// </summary>
         public static string ProcessingMessageText {

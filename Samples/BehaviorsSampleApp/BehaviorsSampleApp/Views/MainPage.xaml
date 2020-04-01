@@ -36,6 +36,7 @@
                               Color="Green"
                               Orientation="Vertical" />
       <esrico:MeasurementBarView MapView="{Binding Source={x:Reference mapView}}"
+                                 IsVisible="{Binding IsMeasurementViewVisible}"
                                  HorizontalOptions="CenterAndExpand"
                                  VerticalOptions="StartAndExpand"
                                  Margin="10"
@@ -51,7 +52,6 @@
       <esrico:IdentifyView x:Name="identifyView"
                            IdentifyResults="{Binding IdentifyResults}"
                            HorizontalOptions="StartAndExpand"
-                           IsManaged="False"
                            IsHeaderVisible="True"
                            CurrentElementIndex="{Binding CurrentElementIndex}"
                            IsVisible="{Binding IsIdentifyVisible}">
@@ -83,11 +83,13 @@
         </esrico:IdentifyView.HeaderContent>
       </esrico:IdentifyView>
       <esrico:LegendView MapView="{Binding Source={x:Reference mapView}}"
+                         IsManaged="True"
                          IsStatusVisible="False"
                          TitleText="{x:Static resx:AppResources.LegendPanelTitleText}"
                          IsVisible="{Binding IsLegendVisible}" />
       <esrico:TableOfContentsView MapView="{Binding Source={x:Reference mapView}}"
                                   TitleText="{x:Static resx:AppResources.TOCPanelTitleText}"
+                                  IsManaged="True"
                                   HorizontalOptions="CenterAndExpand"
                                   IsVisible="{Binding IsTOCVisible}" />
       <esrico:PanelView x:Name="approvalView"
@@ -95,6 +97,7 @@
                         IsStatusVisible="False"
                         IsHeaderVisible="False"
                         IsFooterVisible="False"
+                        IsManaged="True"
                         IsVisible="{Binding IsApprovalPanelVisible}">
         <esrico:PanelView.BodyContent>
           <Grid>
@@ -178,6 +181,7 @@
                              HorizontalOptions="FillAndExpand"
                              VerticalOptions="FillAndExpand"
                              TitleText="{x:Static resx:AppResources.SignaturaPanelTitle}"
+                             IsManaged="True"
                              IsStatusVisible="False"
                              IsHeaderVisible="False"
                              IsFooterVisible="False">
@@ -207,6 +211,8 @@
               Command="{Binding LegendCommand}" />
       <Button Text="{x:Static resx:AppResources.SignatureButtonText}"
               Command="{Binding SignatureCommand}" />
+      <Button Text="{x:Static resx:AppResources.MeasurementButtonText}"
+              Command="{Binding MeasurementCommand}" />
     </StackLayout>
   </Grid>
 </ContentPage>

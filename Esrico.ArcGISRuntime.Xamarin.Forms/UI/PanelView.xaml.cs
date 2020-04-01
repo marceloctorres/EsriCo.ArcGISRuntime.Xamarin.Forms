@@ -1,5 +1,5 @@
 ﻿using System;
-
+using System.Runtime.CompilerServices;
 using EsriCo.ArcGISRuntime.Xamarin.Forms.Extensions;
 
 using Xamarin.Forms;
@@ -20,7 +20,20 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
       nameof(IsManaged),
       typeof(bool),
       typeof(PanelView),
-      defaultValue: true);
+      propertyChanged: OnIsManagedPropertyChanged, 
+      defaultValue: false);
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="bindable"></param>
+    /// <param name="oldValue"></param>
+    /// <param name="newValue"></param>
+    private static void OnIsManagedPropertyChanged(BindableObject bindable, object oldValue, object newValue)
+    {
+      var view = bindable as PanelView;
+      view.IsManaged = (bool)newValue;
+    }
 
     /// <summary>
     /// 
@@ -476,16 +489,13 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     {
       InitializeComponent();
       CloseButtonImage = ImageSource.FromStream(() => GetType().Assembly.GetStreamEmbeddedResource(@"ic_close"));
-      if(IsManaged)
+      MessagingCenter.Subscribe<PanelView>(this, "IsVisible", (panel) =>
       {
-        MessagingCenter.Subscribe<PanelView>(this, "IsVisible", (panel) =>
+        if(!ReferenceEquals(this, panel) && IsManaged && IsVisible && panel.IsVisible)
         {
-          if(!ReferenceEquals(this, panel) && IsManaged && IsVisible && panel.IsVisible)
-          {
-            IsVisible = false;
-          }
-        });
-      }
+          IsVisible = false;
+        }
+      });
     }
 
     /// <summary>

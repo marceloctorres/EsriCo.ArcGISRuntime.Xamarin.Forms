@@ -1,8 +1,9 @@
 ﻿using System;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.Linq;
 using System.Windows.Input;
-
+using Esri.ArcGISRuntime.Geometry;
 using Esri.ArcGISRuntime.UI;
 using Esri.ArcGISRuntime.Xamarin.Forms;
 
@@ -197,12 +198,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
           DrawingProcess.DrawGraphicsOverlay.Graphics.Clear();
           mapView.GraphicsOverlays.Add(DrawingProcess.DrawGraphicsOverlay);
         }
-        if(mapView.SketchEditor == null)
-        {
-          mapView.SketchEditor = new SketchEditor();
-        }
-        DrawingProcess.SketchEditor = mapView.SketchEditor;
-        DrawingProcess.SketchEditor.GeometryChanged += SketchEditor_GeometryChanged;
+        DrawingProcess.MapView = mapView;
       }
     }
 
@@ -447,6 +443,41 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
+    public static readonly BindableProperty DrawNoneToolImageProperty = BindableProperty.Create(
+      nameof(DrawNoneToolImage),
+      typeof(ImageSource),
+      typeof(DrawToolBarView),
+      propertyChanged: DrawNoneToolImageChanged);
+
+    /// <summary>
+    /// 
+    /// </summary>
+    public ImageSource DrawNoneToolImage
+    {
+      get => (ImageSource)GetValue(DrawNoneToolImageProperty);
+      set => SetValue(DrawNoneToolImageProperty, value);
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="bindable"></param>
+    /// <param name="oldValue"></param>
+    /// <param name="newValue"></param>
+    private static void DrawNoneToolImageChanged(BindableObject bindable, object oldValue, object newValue)
+    {
+      var view = bindable as DrawToolBarView;
+      if(newValue == null)
+      {
+        view.DrawNoneToolImage = ImageSource.FromStream(() =>
+          typeof(DrawToolBarView).Assembly.GetStreamEmbeddedResource(@"ic_cancel"));
+      }
+    }
+
+
+    /// <summary>
+    /// 
+    /// </summary>
     public ICommand OKCommand { get; set; }
 
     /// <summary>
@@ -458,6 +489,11 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// 
     /// </summary>
     private DrawingProcess DrawingProcess { get; set; }
+    
+    /// <summary>
+    /// 
+    /// </summary>
+    public Geometry Geometry { get; private set; }
 
     /// <summary>
     /// 
@@ -474,12 +510,15 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
       DrawEraseToolImage = ImageSource.FromStream(() => GetType().Assembly.GetStreamEmbeddedResource(@"ic_erase"));
       DrawFreehandLineToolImage = ImageSource.FromStream(() => GetType().Assembly.GetStreamEmbeddedResource(@"ic_freehandline"));
       DrawTextToolImage = ImageSource.FromStream(() => GetType().Assembly.GetStreamEmbeddedResource(@"ic_text"));
+      DrawNoneToolImage = ImageSource.FromStream(() => GetType().Assembly.GetStreamEmbeddedResource(@"ic_cancel"));
 
       DrawingProcess = new DrawingProcess()
       {
+        SketchEditor = new SketchEditor(),
         Color = Color,
         DrawGraphicsOverlay = new GraphicsOverlay() { Id = DrawGrapichsOverlayId }
       };
+      DrawingProcess.SketchEditor.GeometryChanged += SketchEditor_GeometryChanged;
       DrawingProcess.PropertyChanged += DrawingProcess_PropertyChanged;
 
       OKCommand = new DelegateCommand<string>((s) => DrawText(s));
@@ -492,8 +531,8 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="sender"></param>
     /// <param name="e"></param>
     private void DrawingProcess_PropertyChanged(object sender, PropertyChangedEventArgs e)
-    { 
-      if(e.PropertyName == nameof(DrawingProcess.IsDrawing))
+    {
+      if(e.PropertyName == nameof(DrawingProcess.IsDrawing) && DrawingProcess.IsDrawing)
       {
         IsDrawing = DrawingProcess.IsDrawing;
       }
@@ -506,6 +545,16 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="e"></param>
     private void SketchEditor_GeometryChanged(object sender, GeometryChangedEventArgs e)
     {
+      Debug.WriteLine("x");
+      Debug.WriteLine($"NewGeometry: {e.NewGeometry.ToJson()}");
+      if(Geometry != null && Geometry.Equals(e.NewGeometry))
+      {
+        IsDrawing = false;
+      }
+      else
+      {
+        Geometry = e.NewGeometry;
+      }
     }
 
     /// <summary>
@@ -584,6 +633,16 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
       {
         DrawingProcess.SketchEditor.CancelCommand.Execute(null);
       }
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    private void DrawNoneToolClicked(object sender, EventArgs e)
+    {
+      IsDrawing = false;
     }
   }
 }

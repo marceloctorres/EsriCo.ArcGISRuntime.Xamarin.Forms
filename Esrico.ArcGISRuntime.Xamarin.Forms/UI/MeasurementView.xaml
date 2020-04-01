@@ -9,6 +9,8 @@
               x:Class="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.MeasurementBarView"
               x:Name="measureView"
               TitleText="{x:Static root:AppResources.MeasurementTitleText}"
+              Closed="MeasureViewClosed"
+              WidthRequest="450"
               IsStatusVisible="False">
   <ui:PanelView.Resources>
     <ResourceDictionary>
@@ -29,6 +31,8 @@
           <ColumnDefinition Width="Auto" />
           <ColumnDefinition Width="Auto" />
           <ColumnDefinition Width="Auto" />
+          <ColumnDefinition Width="Auto" />
+          <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
         <Button x:Name="PointMeasurementTool" 
                 Grid.Column="0"
@@ -45,11 +49,21 @@
                 Clicked="AreaMeasurementToolClicked"
                 Style="{StaticResource ToolButton}"
                 Image="{Binding AreaMeasurementToolImage, Source={x:Reference measureView}}" />
+        <Button x:Name="NoneMeasurementTool"
+                Grid.Column="3"
+                Clicked="NoneMeasurementToolClicked"
+                Style="{StaticResource ToolButton}"
+                Image="{Binding NoneMeasurementToolImage, Source={x:Reference measureView}}" />
+        <Picker Grid.Column="4"
+                ItemDisplayBinding="{Binding DisplayName}"
+                SelectedIndexChanged="PickerSelectedIndexChanged"
+                ItemsSource="{Binding Units, Source={x:Reference measureView}}"
+                SelectedItem="{Binding SelectedUnit, Source={x:Reference measureView}, Mode=TwoWay}" />
       </Grid>
-      <Picker Grid.Row="1">
-        
-      </Picker>
-      <Label Text="{Binding ResultText, Source={x:Reference measureView}}"
+      <Label Grid.Row="2" 
+             Text="{Binding ResultText, Source={x:Reference measureView}}"
+             FontSize="20"
+             FontAttributes="Bold"
              HorizontalOptions="FillAndExpand" 
              HorizontalTextAlignment="Center"/>
     </Grid>

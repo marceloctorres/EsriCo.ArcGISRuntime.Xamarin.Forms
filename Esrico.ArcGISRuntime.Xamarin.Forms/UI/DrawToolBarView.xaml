@@ -5,7 +5,6 @@
              xmlns:prism="http://prismlibrary.com"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:root="clr-namespace:EsriCo.ArcGISRuntime.Xamarin.Forms"
-             xmlns:viewmodel="clr-namespace:EsriCo.ArcGISRuntime.Xamarin.Forms.ViewModels"
              mc:Ignorable="d"
              x:Name="view"
              x:Class="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView"
@@ -41,6 +40,10 @@
               Clicked="DrawEraseToolClicked"
               Style="{StaticResource ToolButton}"
               Image="{Binding DrawEraseToolImage, Source={x:Reference view}}" />
+      <Button x:Key="DrawNoneTool"
+              Clicked="DrawNoneToolClicked"
+              Style="{StaticResource ToolButton}"
+              Image="{Binding DrawNoneToolImage, Source={x:Reference view}}" />
       <ControlTemplate x:Key="HorizontalLayoutTemplate">
         <Grid BackgroundColor="Transparent"
               Margin="10">
@@ -53,6 +56,7 @@
             <StaticResource Key="DrawRectangleTool" />
             <StaticResource Key="DrawTextTool" />
             <StaticResource Key="DrawEraseTool" />
+            <StaticResource Key="DrawNoneTool" />
           </StackLayout>
         </Grid>
       </ControlTemplate>
@@ -69,6 +73,7 @@
             <StaticResource Key="DrawRectangleTool" />
             <StaticResource Key="DrawTextTool" />
             <StaticResource Key="DrawEraseTool" />
+            <StaticResource Key="DrawNoneTool" />
           </StackLayout>
         </Grid>
       </ControlTemplate>

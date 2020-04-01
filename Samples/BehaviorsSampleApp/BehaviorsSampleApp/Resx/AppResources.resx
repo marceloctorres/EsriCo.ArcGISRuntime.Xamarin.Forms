@@ -147,6 +147,9 @@
   <data name="MapPageTitle" xml:space="preserve">
     <value>Map Page</value>
   </data>
+  <data name="MeasurementButtonText" xml:space="preserve">
+    <value>Measurement</value>
+  </data>
   <data name="ProcessingMessageText" xml:space="preserve">
     <value>Working...</value>
   </data>

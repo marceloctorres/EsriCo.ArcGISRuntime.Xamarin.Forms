@@ -123,6 +123,14 @@ namespace BehaviorsSampleApp.ViewModels
       set => SetProperty(ref _isApprovalPanelVisible, value);
     }
 
+    private bool _isMeasurementViewVisible;
+
+    public bool IsMeasurementViewVisible
+    {
+      get => _isMeasurementViewVisible;
+      set => SetProperty(ref _isMeasurementViewVisible, value);
+    }
+
     private int _currentElementIndex;
     public int CurrentElementIndex
     {
@@ -174,6 +182,8 @@ namespace BehaviorsSampleApp.ViewModels
 
     public ICommand SignatureCommand { get; private set; }
 
+    public ICommand MeasurementCommand { get; private set; }
+
     public MainPageViewModel(INavigationService navigationService, IPageDialogService pageDialogService)
         : base(navigationService, pageDialogService)
     {
@@ -185,6 +195,15 @@ namespace BehaviorsSampleApp.ViewModels
       IsSignatureVisible = false;
       User = "mtorres";
       Password = "qwertyuiop54321$%&";
+      IsMeasurementViewVisible = false;
+
+      MeasurementCommand = new DelegateCommand(() =>
+      {
+        IsMeasurementViewVisible = !IsMeasurementViewVisible;
+      }, () =>
+      {
+        return Map != null;
+      }).ObservesProperty(() => Map);
 
       ApprovalCommand = new DelegateCommand(async () =>
       {

@@ -61,6 +61,15 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Acres.
+        /// </summary>
+        public static string Acres {
+            get {
+                return ResourceManager.GetString("Acres", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a .
         /// </summary>
         public static string Any {
@@ -75,6 +84,33 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms {
         public static string CancelButtonText {
             get {
                 return ResourceManager.GetString("CancelButtonText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Decimal Degrees.
+        /// </summary>
+        public static string DecimalDegrees {
+            get {
+                return ResourceManager.GetString("DecimalDegrees", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Degrees,Decimal Minutes.
+        /// </summary>
+        public static string DegreesDecimalMinutes {
+            get {
+                return ResourceManager.GetString("DegreesDecimalMinutes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Degrees,Minutes,Seconds.
+        /// </summary>
+        public static string DegreesMinutesSeconds {
+            get {
+                return ResourceManager.GetString("DegreesMinutesSeconds", resourceCulture);
             }
         }
         
@@ -124,11 +160,38 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Feet.
+        /// </summary>
+        public static string Feet {
+            get {
+                return ResourceManager.GetString("Feet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Hectares.
+        /// </summary>
+        public static string Hectares {
+            get {
+                return ResourceManager.GetString("Hectares", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Hide Password:.
         /// </summary>
         public static string HidePasswordLabelText {
             get {
                 return ResourceManager.GetString("HidePasswordLabelText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Kilometers.
+        /// </summary>
+        public static string Kilometers {
+            get {
+                return ResourceManager.GetString("Kilometers", resourceCulture);
             }
         }
         
@@ -160,6 +223,24 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Meters.
+        /// </summary>
+        public static string Meters {
+            get {
+                return ResourceManager.GetString("Meters", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Miles.
+        /// </summary>
+        public static string Miles {
+            get {
+                return ResourceManager.GetString("Miles", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a OK.
         /// </summary>
         public static string OKButtonText {
@@ -187,6 +268,51 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a SquareFeet.
+        /// </summary>
+        public static string SquareFeet {
+            get {
+                return ResourceManager.GetString("SquareFeet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a SquareKilometers.
+        /// </summary>
+        public static string SquareKilometers {
+            get {
+                return ResourceManager.GetString("SquareKilometers", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a SquareMeters.
+        /// </summary>
+        public static string SquareMeters {
+            get {
+                return ResourceManager.GetString("SquareMeters", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a SquareMiles.
+        /// </summary>
+        public static string SquareMiles {
+            get {
+                return ResourceManager.GetString("SquareMiles", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a SquareYards.
+        /// </summary>
+        public static string SquareYards {
+            get {
+                return ResourceManager.GetString("SquareYards", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Text:.
         /// </summary>
         public static string TextLabelText {
@@ -201,6 +327,15 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms {
         public static string UsernameLabelText {
             get {
                 return ResourceManager.GetString("UsernameLabelText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Yards.
+        /// </summary>
+        public static string Yards {
+            get {
+                return ResourceManager.GetString("Yards", resourceCulture);
             }
         }
     }

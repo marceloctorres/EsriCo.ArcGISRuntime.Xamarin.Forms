@@ -117,11 +117,23 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Acres" xml:space="preserve">
+    <value>Acres</value>
+  </data>
   <data name="Any" xml:space="preserve">
     <value />
   </data>
   <data name="CancelButtonText" xml:space="preserve">
     <value>Cancel</value>
+  </data>
+  <data name="DecimalDegrees" xml:space="preserve">
+    <value>Decimal Degrees</value>
+  </data>
+  <data name="DegreesDecimalMinutes" xml:space="preserve">
+    <value>Degrees,Decimal Minutes</value>
+  </data>
+  <data name="DegreesMinutesSeconds" xml:space="preserve">
+    <value>Degrees,Minutes,Seconds</value>
   </data>
   <data name="DeleteReplicaMessageCantDelete" xml:space="preserve">
     <value>Cant' delete Replica Register Id:</value>
@@ -138,8 +150,17 @@
   <data name="DownloadReplicaOkMessageSaved" xml:space="preserve">
     <value>saved</value>
   </data>
+  <data name="Feet" xml:space="preserve">
+    <value>Feet</value>
+  </data>
+  <data name="Hectares" xml:space="preserve">
+    <value>Hectares</value>
+  </data>
   <data name="HidePasswordLabelText" xml:space="preserve">
     <value>Hide Password:</value>
+  </data>
+  <data name="Kilometers" xml:space="preserve">
+    <value>Kilometers</value>
   </data>
   <data name="LogInButtonText" xml:space="preserve">
     <value>Log In</value>
@@ -151,6 +172,12 @@
   <data name="MeasurementTitleText" xml:space="preserve">
     <value>Measurement</value>
   </data>
+  <data name="Meters" xml:space="preserve">
+    <value>Meters</value>
+  </data>
+  <data name="Miles" xml:space="preserve">
+    <value>Miles</value>
+  </data>
   <data name="OKButtonText" xml:space="preserve">
     <value>OK</value>
   </data>
@@ -160,10 +187,28 @@
   <data name="ProcessingMessageLabelText" xml:space="preserve">
     <value>Processing...</value>
   </data>
+  <data name="SquareFeet" xml:space="preserve">
+    <value>SquareFeet</value>
+  </data>
+  <data name="SquareKilometers" xml:space="preserve">
+    <value>SquareKilometers</value>
+  </data>
+  <data name="SquareMeters" xml:space="preserve">
+    <value>SquareMeters</value>
+  </data>
+  <data name="SquareMiles" xml:space="preserve">
+    <value>SquareMiles</value>
+  </data>
+  <data name="SquareYards" xml:space="preserve">
+    <value>SquareYards</value>
+  </data>
   <data name="TextLabelText" xml:space="preserve">
     <value>Text:</value>
   </data>
   <data name="UsernameLabelText" xml:space="preserve">
     <value>Username:</value>
+  </data>
+  <data name="Yards" xml:space="preserve">
+    <value>Yards</value>
   </data>
 </root>
