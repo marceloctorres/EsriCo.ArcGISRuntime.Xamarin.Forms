@@ -85,10 +85,8 @@
       <esrico:LegendView MapView="{Binding Source={x:Reference mapView}}"
                          IsManaged="True"
                          IsStatusVisible="False"
-                         TitleText="{x:Static resx:AppResources.LegendPanelTitleText}"
                          IsVisible="{Binding IsLegendVisible}" />
       <esrico:TableOfContentsView MapView="{Binding Source={x:Reference mapView}}"
-                                  TitleText="{x:Static resx:AppResources.TOCPanelTitleText}"
                                   IsManaged="True"
                                   HorizontalOptions="CenterAndExpand"
                                   IsVisible="{Binding IsTOCVisible}" />

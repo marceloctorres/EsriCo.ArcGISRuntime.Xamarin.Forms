@@ -7,6 +7,7 @@ using Esri.ArcGISRuntime.Geometry;
 using Esri.ArcGISRuntime.Symbology;
 using Esri.ArcGISRuntime.UI;
 using Esri.ArcGISRuntime.Xamarin.Forms;
+
 using Prism.Mvvm;
 
 using Color = System.Drawing.Color;
@@ -22,7 +23,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    internal MapView MapView { get; set;  }
+    internal MapView MapView { get; set; }
 
     /// <summary>
     /// 
@@ -184,7 +185,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
         Color = fillColor,
         Outline = new SimpleLineSymbol()
         {
-          Color = Color.DarkCyan,
+          Color = Color,
           Style = SimpleLineSymbolStyle.Solid,
           Width = 2
         },

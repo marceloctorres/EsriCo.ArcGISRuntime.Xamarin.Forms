@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Runtime.CompilerServices;
+
 using EsriCo.ArcGISRuntime.Xamarin.Forms.Extensions;
 
 using Xamarin.Forms;
@@ -20,7 +20,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
       nameof(IsManaged),
       typeof(bool),
       typeof(PanelView),
-      propertyChanged: OnIsManagedPropertyChanged, 
+      propertyChanged: OnIsManagedPropertyChanged,
       defaultValue: false);
 
     /// <summary>

@@ -5,8 +5,10 @@
                        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
                        xmlns:ui="clr-namespace:EsriCo.ArcGISRuntime.Xamarin.Forms.UI"
                        mc:Ignorable="d"
+                       xmlns:root="clr-namespace:EsriCo.ArcGISRuntime.Xamarin.Forms"
                        x:Class="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.TableOfContentsView"
-                       x:Name="layerview">
+                       x:Name="layerview"
+                       TitleText="{x:Static root:AppResources.TOCPanelTitleText}">
   <ui:LayerListPanelView.ItemTemplate>
     <DataTemplate>
       <ViewCell  IsEnabled="True">

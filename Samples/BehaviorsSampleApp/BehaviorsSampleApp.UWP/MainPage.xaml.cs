@@ -1,37 +1,23 @@
 ﻿using Prism;
 using Prism.Ioc;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
-using Windows.UI.Xaml;
-using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Navigation;
 
 namespace BehaviorsSampleApp.UWP
 {
-    public sealed partial class MainPage
+  public sealed partial class MainPage
+  {
+    public MainPage()
     {
-        public MainPage()
-        {
-            this.InitializeComponent();
+      InitializeComponent();
 
-            LoadApplication(new BehaviorsSampleApp.App(new UwpInitializer()));
-        }
+      LoadApplication(new BehaviorsSampleApp.App(new UwpInitializer()));
     }
+  }
 
-    public class UwpInitializer : IPlatformInitializer
+  public class UwpInitializer : IPlatformInitializer
+  {
+    public void RegisterTypes(IContainerRegistry containerRegistry)
     {
-        public void RegisterTypes(IContainerRegistry containerRegistry)
-        {
-            // Register any platform specific implementations
-        }
+      // Register any platform specific implementations
     }
+  }
 }

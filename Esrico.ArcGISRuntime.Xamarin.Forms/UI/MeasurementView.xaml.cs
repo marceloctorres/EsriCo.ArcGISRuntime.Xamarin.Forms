@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.ComponentModel;
-using System.Diagnostics;
 using System.Linq;
 
 using Esri.ArcGISRuntime.Geometry;
@@ -13,6 +11,7 @@ using EsriCo.ArcGISRuntime.Xamarin.Forms.Extensions;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+
 using EsriGeometry = Esri.ArcGISRuntime.Geometry;
 
 namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -395,11 +394,11 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     {
       InitializeComponent();
       IsVisible = false;
-
-      PointMeasurementToolImage = ImageSource.FromStream(() => GetType().Assembly.GetStreamEmbeddedResource(@"ic_coord"));
-      LineMeasurementToolImage = ImageSource.FromStream(() => GetType().Assembly.GetStreamEmbeddedResource(@"ic_distance"));
-      AreaMeasurementToolImage = ImageSource.FromStream(() => GetType().Assembly.GetStreamEmbeddedResource(@"ic_area"));
-      NoneMeasurementToolImage = ImageSource.FromStream(() => GetType().Assembly.GetStreamEmbeddedResource(@"ic_cancel"));
+      var asm = GetType().Assembly;
+      PointMeasurementToolImage = ImageSource.FromStream(() => asm.GetStreamEmbeddedResource(@"ic_coord"));
+      LineMeasurementToolImage = ImageSource.FromStream(() => asm.GetStreamEmbeddedResource(@"ic_distance"));
+      AreaMeasurementToolImage = ImageSource.FromStream(() => asm.GetStreamEmbeddedResource(@"ic_area"));
+      NoneMeasurementToolImage = ImageSource.FromStream(() => asm.GetStreamEmbeddedResource(@"ic_cancel"));
 
       AngularUnits = new List<UnitItem>()
       {
@@ -407,7 +406,6 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
         new UnitItem() { DisplayName = AppResources.DegreesDecimalMinutes, Key = "DegreesDecimalMinutes", Value = LatitudeLongitudeFormat.DegreesDecimalMinutes},
         new UnitItem() { DisplayName = AppResources.DegreesMinutesSeconds, Key = "DegreesMinutesSeconds", Value = LatitudeLongitudeFormat.DegreesMinutesSeconds }
       };
-
       LinearUnits = new List<UnitItem>()
       {
         new UnitItem() { DisplayName = AppResources.Meters, Key = "Meters", Value = EsriGeometry.LinearUnits.Meters},
@@ -458,10 +456,10 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
-    private void SketchEditor_GeometryChanged(object sender, GeometryChangedEventArgs e) 
+    private void SketchEditor_GeometryChanged(object sender, GeometryChangedEventArgs e)
     {
       Geometry = e.NewGeometry;
-      if(Geometry is Polyline) 
+      if(Geometry is Polyline)
       {
         PolylineCreated(Geometry);
       }
@@ -643,19 +641,13 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
-    private void MeasureViewClosed(object sender, EventArgs e)
-    {
-      ClearMeasurement();
-    }
+    private void MeasureViewClosed(object sender, EventArgs e) => ClearMeasurement();
 
     /// <summary>
     /// 
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
-    private void NoneMeasurementToolClicked(object sender, EventArgs e)
-    {
-      ClearMeasurement();
-    }
+    private void NoneMeasurementToolClicked(object sender, EventArgs e) => ClearMeasurement();
   }
 }

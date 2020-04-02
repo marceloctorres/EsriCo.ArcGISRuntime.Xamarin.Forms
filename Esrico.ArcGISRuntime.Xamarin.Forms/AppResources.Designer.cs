@@ -196,6 +196,15 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Legend.
+        /// </summary>
+        public static string LegendPanelTitleText {
+            get {
+                return ResourceManager.GetString("LegendPanelTitleText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Log In.
         /// </summary>
         public static string LogInButtonText {
@@ -268,7 +277,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a SquareFeet.
+        ///   Busca una cadena traducida similar a Square Feet.
         /// </summary>
         public static string SquareFeet {
             get {
@@ -277,7 +286,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a SquareKilometers.
+        ///   Busca una cadena traducida similar a Square Kilometers.
         /// </summary>
         public static string SquareKilometers {
             get {
@@ -286,7 +295,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a SquareMeters.
+        ///   Busca una cadena traducida similar a Square Meters.
         /// </summary>
         public static string SquareMeters {
             get {
@@ -295,7 +304,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a SquareMiles.
+        ///   Busca una cadena traducida similar a Square Miles.
         /// </summary>
         public static string SquareMiles {
             get {
@@ -304,7 +313,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a SquareYards.
+        ///   Busca una cadena traducida similar a Square Yards.
         /// </summary>
         public static string SquareYards {
             get {
@@ -318,6 +327,15 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms {
         public static string TextLabelText {
             get {
                 return ResourceManager.GetString("TextLabelText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Table of Contents.
+        /// </summary>
+        public static string TOCPanelTitleText {
+            get {
+                return ResourceManager.GetString("TOCPanelTitleText", resourceCulture);
             }
         }
         

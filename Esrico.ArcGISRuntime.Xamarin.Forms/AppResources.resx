@@ -162,6 +162,9 @@
   <data name="Kilometers" xml:space="preserve">
     <value>Kilometers</value>
   </data>
+  <data name="LegendPanelTitleText" xml:space="preserve">
+    <value>Legend</value>
+  </data>
   <data name="LogInButtonText" xml:space="preserve">
     <value>Log In</value>
   </data>
@@ -188,22 +191,25 @@
     <value>Processing...</value>
   </data>
   <data name="SquareFeet" xml:space="preserve">
-    <value>SquareFeet</value>
+    <value>Square Feet</value>
   </data>
   <data name="SquareKilometers" xml:space="preserve">
-    <value>SquareKilometers</value>
+    <value>Square Kilometers</value>
   </data>
   <data name="SquareMeters" xml:space="preserve">
-    <value>SquareMeters</value>
+    <value>Square Meters</value>
   </data>
   <data name="SquareMiles" xml:space="preserve">
-    <value>SquareMiles</value>
+    <value>Square Miles</value>
   </data>
   <data name="SquareYards" xml:space="preserve">
-    <value>SquareYards</value>
+    <value>Square Yards</value>
   </data>
   <data name="TextLabelText" xml:space="preserve">
     <value>Text:</value>
+  </data>
+  <data name="TOCPanelTitleText" xml:space="preserve">
+    <value>Table of Contents</value>
   </data>
   <data name="UsernameLabelText" xml:space="preserve">
     <value>Username:</value>

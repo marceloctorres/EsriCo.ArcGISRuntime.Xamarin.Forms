@@ -4,9 +4,11 @@
                        xmlns:d="http://xamarin.com/schemas/2014/forms/design"
                        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
                        xmlns:ui="clr-namespace:EsriCo.ArcGISRuntime.Xamarin.Forms.UI"
+                       xmlns:root="clr-namespace:EsriCo.ArcGISRuntime.Xamarin.Forms"
                        mc:Ignorable="d"
                        x:Name="listsview"
-                       x:Class="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.LegendView">
+                       x:Class="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.LegendView"
+                       TitleText="{x:Static root:AppResources.LegendPanelTitleText}">
   <ui:LayerListPanelView.ItemTemplate>
     <DataTemplate>
       <ViewCell IsEnabled="True">
