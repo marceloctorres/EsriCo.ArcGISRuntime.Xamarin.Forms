@@ -29,7 +29,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     {
       var resource = Resources.MergedDictionaries
         .Where(r => r.ContainsKey(ColorKey))
-        .Select(r => r[ ColorKey ]).FirstOrDefault();
+        .Select(r => r[ColorKey]).FirstOrDefault();
       Color backColor = resource != null ? (Color)resource : Color.Gray;
       ModalFrame = new Frame()
       {

@@ -98,11 +98,11 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     {
       if(orientation == StackOrientation.Horizontal)
       {
-        ControlTemplate = (ControlTemplate)Resources[ "HorizontalLayoutTemplate" ];
+        ControlTemplate = (ControlTemplate)Resources["HorizontalLayoutTemplate"];
       }
       else
       {
-        ControlTemplate = (ControlTemplate)Resources[ "VerticalLayoutTemplate" ];
+        ControlTemplate = (ControlTemplate)Resources["VerticalLayoutTemplate"];
       }
     }
 
