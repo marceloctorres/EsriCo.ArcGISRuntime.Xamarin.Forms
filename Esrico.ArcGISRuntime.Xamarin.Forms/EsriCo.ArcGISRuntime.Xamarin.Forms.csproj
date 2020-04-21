@@ -20,6 +20,7 @@
     <Copyright>Esri Colombia 2020</Copyright>
     <PackageProjectUrl>https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms</PackageProjectUrl>
     <RepositoryType>Git</RepositoryType>
+    <NeutralLanguage></NeutralLanguage>
   </PropertyGroup>
 
   <ItemGroup>
