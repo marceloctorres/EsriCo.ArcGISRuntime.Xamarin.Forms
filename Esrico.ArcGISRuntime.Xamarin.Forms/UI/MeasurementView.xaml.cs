@@ -266,8 +266,8 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="map"></param>
     public void CheckMap(MapView mapView)
     {
-      IsVisible = mapView != null && mapView.Map != null;
-      if(IsVisible)
+      IsVisible = IsVisible && mapView != null && mapView.Map != null;
+      if(mapView != null && mapView.Map != null)
       {
         if(mapView.GraphicsOverlays == null)
         {
