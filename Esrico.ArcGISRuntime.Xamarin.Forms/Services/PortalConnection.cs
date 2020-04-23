@@ -131,9 +131,19 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     /// <summary>
     /// 
     /// </summary>
+    /// <returns></returns>
+    [Obsolete()]
     public async Task SingIn()
     {
-      await AddCredential();
+      await SingInAsync();
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    public async Task SingInAsync()
+    {
+      await AddCredentialAsync();
 
       Portal = await ArcGISPortal.CreateAsync(new Uri(BaseUrl));
       var licenseInfo = await Portal.GetLicenseInfoAsync();
@@ -164,7 +174,17 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     /// 
     /// </summary>
     /// <returns></returns>
+    [Obsolete()]
     public async Task<Map> GetMap()
+    {
+      return await GetMapAsync();
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <returns></returns>
+    public async Task<Map> GetMapAsync()
     {
       var item = await PortalItem.CreateAsync(Portal, WebMapId);
       return new Map(item);
@@ -175,12 +195,22 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     /// </summary>
     /// <param name="webMapId"></param>
     /// <returns></returns>
+    [Obsolete()]
     public async Task<Map> GetMap(string webMapId)
+    {
+      return await GetMapAsync(webMapId);
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="webMapId"></param>
+    /// <returns></returns>
+    public async Task<Map> GetMapAsync(string webMapId)
     {
       var item = await PortalItem.CreateAsync(Portal, webMapId);
       return new Map(item);
     }
-
 
     /// <summary>
     /// 
@@ -231,7 +261,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     /// 
     /// </summary>
     /// <returns></returns>
-    private async Task AddCredential()
+    private async Task AddCredentialAsync()
     {
       try
       {
