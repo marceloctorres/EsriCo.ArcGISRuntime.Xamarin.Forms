@@ -92,6 +92,31 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
+    /// <returns></returns>
+
+    private async Task SetLoadedMap()
+    {
+      if(Map.OperationalLayers.Count > 0)
+      {
+        await SetLayerInfos();
+      }
+      else
+      {
+        if(!CollectionHandlerAdded)
+        {
+          Map.OperationalLayers.CollectionChanged += async (o, e) =>
+          {
+            await SetLayerInfos();
+          };
+          CollectionHandlerAdded = true;
+        }
+      }
+
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
     /// <param name="map"></param>
     public async void SetMap(Map map)
     {
@@ -100,20 +125,17 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
         if(map != null)
         {
           Map = map;
-          if(map.OperationalLayers.Count > 0)
+          if(Map.LoadStatus != LoadStatus.Loaded)
           {
-            await SetLayerInfos();
+            Map.Loaded += async (o, e) =>
+            {
+              await SetLoadedMap();
+            };
+            await Map.LoadAsync();
           }
           else
           {
-            if(!CollectionHandlerAdded)
-            {
-              Map.OperationalLayers.CollectionChanged += async (o, e) =>
-              {
-                await SetLayerInfos();
-              };
-              CollectionHandlerAdded = true;
-            }
+            await SetLoadedMap();
           }
         }
       }
