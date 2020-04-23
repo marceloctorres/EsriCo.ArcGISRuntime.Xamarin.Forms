@@ -94,20 +94,23 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="map"></param>
     public async void SetMap(Map map)
     {
-      Map = map;
-      if(map.OperationalLayers.Count > 0)
+      if(map != null)
       {
-        await SetLayerInfos();
-      }
-      else
-      {
-        if(!CollectionHandlerAdded)
+        Map = map;
+        if(map.OperationalLayers.Count > 0)
         {
-          Map.OperationalLayers.CollectionChanged += async (o, e) =>
+          await SetLayerInfos();
+        }
+        else
+        {
+          if(!CollectionHandlerAdded)
           {
-            await SetLayerInfos();
-          };
-          CollectionHandlerAdded = true;
+            Map.OperationalLayers.CollectionChanged += async (o, e) =>
+            {
+              await SetLayerInfos();
+            };
+            CollectionHandlerAdded = true;
+          }
         }
       }
     }

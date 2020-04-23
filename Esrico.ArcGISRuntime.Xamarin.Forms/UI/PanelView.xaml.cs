@@ -1,5 +1,5 @@
 ﻿using System;
-
+using System.Diagnostics;
 using EsriCo.ArcGISRuntime.Xamarin.Forms.Extensions;
 
 using Xamarin.Forms;
@@ -527,9 +527,15 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
       {
         var bounds = Bounds;
         var parentBounds = parentView.Bounds;
+        var x0 = 0.0;
+        var y0 = 0.0;
 
         switch(e.StatusType)
         {
+          case GestureStatus.Started:
+            x0 = bounds.Left;
+            y0 = bounds.Top;
+            break;
           case GestureStatus.Running:
             TranslationX = x + e.TotalX + bounds.X >= 0 ?
               x + e.TotalX + bounds.X + bounds.Width <= parentBounds.Width ?
@@ -541,6 +547,11 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
                 y + e.TotalY :
                 parentBounds.Height - bounds.Height - bounds.Y :
               -bounds.Y;
+
+#if DEBUG
+            Debug.WriteLine($"X={bounds.X}, Y={bounds.Y} R:Top=({bounds.Left}, {bounds.Top}, {bounds.Right}, {bounds.Bottom})");
+            Console.WriteLine($"X={bounds.X}, Y={bounds.Y} R:Top=({bounds.Left}, {bounds.Top}, {bounds.Right}, {bounds.Bottom})");
+#endif
             break;
           case GestureStatus.Completed:
             x = TranslationX;
