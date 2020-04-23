@@ -9,7 +9,7 @@ using Esri.ArcGISRuntime.Geometry;
 using Esri.ArcGISRuntime.Mapping;
 
 using EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors;
-
+using EsriCo.ArcGISRuntime.Xamarin.Forms.Services;
 using Prism.Commands;
 using Prism.Navigation;
 using Prism.Services;
@@ -184,6 +184,8 @@ namespace BehaviorsSampleApp.ViewModels
 
     public ICommand MeasurementCommand { get; private set; }
 
+    public PortalConnection Portal { get; private set; }
+
     public MainPageViewModel(INavigationService navigationService, IPageDialogService pageDialogService)
         : base(navigationService, pageDialogService)
     {
@@ -285,19 +287,19 @@ namespace BehaviorsSampleApp.ViewModels
       LogInCommand = new DelegateCommand(() =>
       {
         IsLoginVisible = false;
-        Map = new Map(Basemap.CreateTopographicVector())
-        {
-          InitialViewpoint = new Viewpoint(new MapPoint(-74.042492, 4.660555, SpatialReferences.Wgs84), 5000)
-        };
-        FeatureLayer[] layers =
-        {
-          new FeatureLayer(new Uri("https://services1.arcgis.com/7S16A7PAFcmSmqJA/ArcGIS/rest/services/InspeccionPublica/FeatureServer/3")),
-          new FeatureLayer(new Uri("https://services1.arcgis.com/7S16A7PAFcmSmqJA/ArcGIS/rest/services/InspeccionPublica/FeatureServer/2")),
-          new FeatureLayer(new Uri("https://services1.arcgis.com/7S16A7PAFcmSmqJA/ArcGIS/rest/services/InspeccionPublica/FeatureServer/1")),
-          new FeatureLayer(new Uri("https://services1.arcgis.com/7S16A7PAFcmSmqJA/ArcGIS/rest/services/InspeccionPublica/FeatureServer/0"))
-        };
-        Map.OperationalLayers.AddRange(layers);
-        Layers = Map.OperationalLayers.ToList();
+        InitMap();
+        //Map = new Map(Basemap.CreateTopographicVector())
+        //{
+        //  InitialViewpoint = new Viewpoint(new MapPoint(-74.042492, 4.660555, SpatialReferences.Wgs84), 5000)
+        //};
+        //FeatureLayer[] layers =
+        //{
+        //  new FeatureLayer(new Uri("https://services1.arcgis.com/7S16A7PAFcmSmqJA/ArcGIS/rest/services/InspeccionPublica/FeatureServer/3")),
+        //  new FeatureLayer(new Uri("https://services1.arcgis.com/7S16A7PAFcmSmqJA/ArcGIS/rest/services/InspeccionPublica/FeatureServer/2")),
+        //  new FeatureLayer(new Uri("https://services1.arcgis.com/7S16A7PAFcmSmqJA/ArcGIS/rest/services/InspeccionPublica/FeatureServer/1")),
+        //  new FeatureLayer(new Uri("https://services1.arcgis.com/7S16A7PAFcmSmqJA/ArcGIS/rest/services/InspeccionPublica/FeatureServer/0"))
+        //};
+        //Map.OperationalLayers.AddRange(layers);
       });
       CancelCommand = new DelegateCommand(() =>
        {
@@ -306,6 +308,29 @@ namespace BehaviorsSampleApp.ViewModels
          //  AppResources.CancelLoginText, 
          //  AppResources.CloseButtonText);
        });
+
+      Portal = new PortalConnection
+      {
+        User = "mctorres",
+        Password = "m4rc3l025202$$",
+        BaseUrl = "https://www.arcgis.com/sharing/rest",
+      };
+
+      InitPortal();
+    }
+
+    private async void InitPortal()
+    {
+      await Portal.SingInAsync();
+    }
+
+    private async void InitMap()
+    {
+      Portal.WebMapId = "d847253ac7384eb4a41308c6c0edf3e6";
+      var map = await Portal.GetMapAsync();
+      Map = map;
+
+      Layers = Map.OperationalLayers.ToList();
     }
 
   }
