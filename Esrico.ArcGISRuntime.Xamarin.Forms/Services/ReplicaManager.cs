@@ -208,7 +208,19 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     /// <param name="map"></param>
     /// <param name="viewpoint"></param>
     /// <returns></returns>
+    [Obsolete]
     public async Task<ValidateReplicaResult> ValidateReplica(Map map, Viewpoint viewpoint)
+    {
+      return await ValidateReplicaAsync(map, viewpoint);
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="map"></param>
+    /// <param name="viewpoint"></param>
+    /// <returns></returns>
+    public async Task<ValidateReplicaResult> ValidateReplicaAsync(Map map, Viewpoint viewpoint)
     {
       var firstLayer = map.Basemap.BaseLayers.FirstOrDefault() as Layer;
       string basemapUrl = string.Empty;
@@ -256,7 +268,22 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     /// <param name="jobHandler"></param>
     /// <param name="progressHandler"></param>
     /// <returns></returns>
+    [Obsolete]
     public async Task<DownloadReplicaResult> DownloadReplica(Map map, Viewpoint viewpoint,
+      EventHandler<JobChangedEventArgs> jobHandler, EventHandler<ProgressChangedEventArgs> progressHandler)
+    {
+      return await DownloadReplicaAsync(map, viewpoint, jobHandler, progressHandler);
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="map"></param>
+    /// <param name="viewpoint"></param>
+    /// <param name="jobHandler"></param>
+    /// <param name="progressHandler"></param>
+    /// <returns></returns>
+    public async Task<DownloadReplicaResult> DownloadReplicaAsync(Map map, Viewpoint viewpoint,
       EventHandler<JobChangedEventArgs> jobHandler, EventHandler<ProgressChangedEventArgs> progressHandler)
     {
       ValidateReplicaFolderPath();
@@ -358,9 +385,24 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     /// <param name="map"></param>
     /// <param name="jobHandler"></param>
     /// <param name="progressHandler"></param>
+    /// <returns></returns>
+    [Obsolete]
+    public async Task<SynchronizeReplicaResult> SynchronizeReplica(Map map, EventHandler<JobChangedEventArgs> jobHandler,
+      EventHandler<ProgressChangedEventArgs> progressHandler)
+    {
+      return await SynchronizeReplicaAsync(map, jobHandler, progressHandler);
+    }
+
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="map"></param>
+    /// <param name="jobHandler"></param>
+    /// <param name="progressHandler"></param>
     /// 
     /// <returns></returns>
-    public async Task<SynchronizeReplicaResult> SynchronizeReplica(Map map, EventHandler<JobChangedEventArgs> jobHandler,
+    public async Task<SynchronizeReplicaResult> SynchronizeReplicaAsync(Map map, EventHandler<JobChangedEventArgs> jobHandler,
       EventHandler<ProgressChangedEventArgs> progressHandler)
     {
       var errors = new List<SyncReplicaErrorResult>();
@@ -413,7 +455,18 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     /// </summary>
     /// <param name="map"></param>
     /// <returns></returns>
+    [Obsolete]
     public async Task<string> DeleteReplica(Map map)
+    {
+      return await DeleteReplicaAsync(map);
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="map"></param>
+    /// <returns></returns>
+    public async Task<string> DeleteReplicaAsync(Map map)
     {
       var sb = new StringBuilder();
       var geodatabases = GetGeodatabases(map);
@@ -449,7 +502,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
         }
       }
 
-      await DeleteReplicaFolder();
+      await DeleteReplicaFolderAsync();
       return sb.ToString();
     }
 
@@ -457,13 +510,33 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     /// 
     /// </summary>
     /// <returns></returns>
-    public async Task DeleteReplica() => await DeleteReplicaFolder();
+    [Obsolete]
+    public async Task DeleteReplica()
+    {
+      await DeleteReplicaAsync();
+    }
 
     /// <summary>
     /// 
     /// </summary>
     /// <returns></returns>
+    public async Task DeleteReplicaAsync() => await DeleteReplicaFolderAsync();
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <returns></returns>
+    [Obsolete]
     public async Task DeleteReplicaFolder()
+    {
+      await DeleteReplicaFolderAsync();
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <returns></returns>
+    public async Task DeleteReplicaFolderAsync()
     {
       var folderPath = GetReplicaFullPath();
       try
@@ -521,7 +594,17 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     /// 
     /// </summary>
     /// <returns></returns>
+    [Obsolete]
     public async Task<Map> GetReplicaMap()
+    {
+      return await GetReplicaMapAsync();
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <returns></returns>
+    public async Task<Map> GetReplicaMapAsync()
     {
       var pathToOutputPackage = GetReplicaFullPath();
       MobileMapPackage = await MobileMapPackage.OpenAsync(pathToOutputPackage);

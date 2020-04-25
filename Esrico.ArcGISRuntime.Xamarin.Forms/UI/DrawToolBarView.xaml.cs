@@ -566,7 +566,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="sender"></param>
     /// <param name="e"></param>
     private async void DrawPointToolClicked(object sender, EventArgs e) =>
-      await DrawingProcess.DrawGeometry(SketchCreationMode.Point);
+      await DrawingProcess.DrawGeometryAsync(SketchCreationMode.Point);
 
     /// <summary>
     /// 
@@ -574,7 +574,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="sender"></param>
     /// <param name="e"></param>
     private async void DrawPolylineToolClicked(object sender, EventArgs e) =>
-      await DrawingProcess.DrawGeometry(SketchCreationMode.Polyline);
+      await DrawingProcess.DrawGeometryAsync(SketchCreationMode.Polyline);
 
     /// <summary>
     /// 
@@ -582,7 +582,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="sender"></param>
     /// <param name="e"></param>
     private async void DrawFreehandLineToolClicked(object sender, EventArgs e) =>
-      await DrawingProcess.DrawGeometry(SketchCreationMode.FreehandLine);
+      await DrawingProcess.DrawGeometryAsync(SketchCreationMode.FreehandLine);
 
     /// <summary>
     /// 
@@ -606,7 +606,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// </summary>
     /// <param name="text"></param>
     private async void DrawText(string text) =>
-      await DrawingProcess.DrawGeometry(SketchCreationMode.Point, text);
+      await DrawingProcess.DrawGeometryAsync(SketchCreationMode.Point, text);
 
     /// <summary>
     /// 
@@ -614,7 +614,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="sender"></param>
     /// <param name="e"></param>
     private async void DrawPolygonToolClicked(object sender, EventArgs e) =>
-      await DrawingProcess.DrawGeometry(SketchCreationMode.Polygon);
+      await DrawingProcess.DrawGeometryAsync(SketchCreationMode.Polygon);
 
     /// <summary>
     /// 
@@ -622,7 +622,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="sender"></param>
     /// <param name="e"></param>
     private async void DrawRectangleToolClicked(object sender, EventArgs e) =>
-      await DrawingProcess.DrawGeometry(SketchCreationMode.Rectangle);
+      await DrawingProcess.DrawGeometryAsync(SketchCreationMode.Rectangle);
 
     /// <summary>
     /// 

@@ -90,7 +90,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
         /// </summary>
         /// <param name="mode"></param>
         /// <returns></returns>
-        internal async Task DrawGeometry(SketchCreationMode mode, string text = null)
+        internal async Task DrawGeometryAsync(SketchCreationMode mode, string text = null)
         {
             try
             {

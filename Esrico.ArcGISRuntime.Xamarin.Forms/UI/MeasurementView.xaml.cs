@@ -557,7 +557,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
             }
             SelectedUnit = SelectedAngularUnit;
 
-            await DrawingProcess.DrawGeometry(SketchCreationMode.Point);
+            await DrawingProcess.DrawGeometryAsync(SketchCreationMode.Point);
         }
 
 
@@ -578,7 +578,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
                 SelectedLinearUnit = LinearUnits.Where(u => u.Key == nameof(EsriGeometry.LinearUnits.Kilometers)).FirstOrDefault();
             }
             SelectedUnit = SelectedLinearUnit;
-            await DrawingProcess.DrawGeometry(SketchCreationMode.Polyline);
+            await DrawingProcess.DrawGeometryAsync(SketchCreationMode.Polyline);
         }
 
         /// <summary>
@@ -599,7 +599,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
             }
             SelectedUnit = SelectedAreaUnit;
 
-            await DrawingProcess.DrawGeometry(SketchCreationMode.Polygon);
+            await DrawingProcess.DrawGeometryAsync(SketchCreationMode.Polygon);
         }
 
         /// <summary>
