@@ -133,10 +133,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     /// </summary>
     /// <returns></returns>
     [Obsolete()]
-    public async Task SingIn()
-    {
-      await SingInAsync();
-    }
+    public async Task SingIn() => await SingInAsync();
 
     /// <summary>
     /// 
@@ -175,10 +172,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     /// </summary>
     /// <returns></returns>
     [Obsolete()]
-    public async Task<Map> GetMap()
-    {
-      return await GetMapAsync();
-    }
+    public async Task<Map> GetMap() => await GetMapAsync();
 
     /// <summary>
     /// 
@@ -196,10 +190,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     /// <param name="webMapId"></param>
     /// <returns></returns>
     [Obsolete()]
-    public async Task<Map> GetMap(string webMapId)
-    {
-      return await GetMapAsync(webMapId);
-    }
+    public async Task<Map> GetMap(string webMapId) => await GetMapAsync(webMapId);
 
     /// <summary>
     /// 
