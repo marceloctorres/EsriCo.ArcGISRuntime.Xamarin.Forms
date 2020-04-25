@@ -26,26 +26,26 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     /// 
     /// </summary>
     /// <returns></returns>
-    public async Task Save()
+    public async Task SaveAsync()
     {
       string json = JsonConvert.SerializeObject(this);
-      await WriteTextFile(FileName, json);
+      await WriteTextFileAsync(FileName, json);
     }
 
     /// <summary>
     /// 
     /// </summary>
     /// <returns></returns>
-    public virtual async Task Load() => await Task.Delay(0);
+    public virtual async Task LoadAsync() => await Task.Delay(0);
 
     /// <summary>
     /// 
     /// </summary>
     /// <typeparam name="T"></typeparam>
     /// <returns></returns>
-    protected virtual async Task Load<T>() where T : ConfigurationInfo
+    protected virtual async Task LoadAsync<T>() where T : ConfigurationInfo
     {
-      var json = await ReadTextFile(FileName);
+      var json = await ReadTextFileAsync(FileName);
       if(!string.IsNullOrEmpty(json))
       {
         T configuration = JsonConvert.DeserializeObject<T>(json);
@@ -67,7 +67,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     /// <param name="filename"></param>
     /// <param name="text"></param>
     /// <returns></returns>
-    protected async Task WriteTextFile(string filename, string text)
+    protected async Task WriteTextFileAsync(string filename, string text)
     {
       var filePath = Path.Combine(Folder, filename);
       using(StreamWriter writer = File.CreateText(filePath))
@@ -81,7 +81,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     /// </summary>
     /// <param name="filename"></param>
     /// <returns></returns>
-    protected async Task<string> ReadTextFile(string filename)
+    protected async Task<string> ReadTextFileAsync(string filename)
     {
       var filePath = Path.Combine(Folder, filename);
       if(File.Exists(filePath))

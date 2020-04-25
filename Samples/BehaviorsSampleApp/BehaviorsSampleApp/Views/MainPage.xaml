@@ -211,6 +211,8 @@
               Command="{Binding SignatureCommand}" />
       <Button Text="{x:Static resx:AppResources.MeasurementButtonText}"
               Command="{Binding MeasurementCommand}" />
+      <Button Text="Busqueda"
+              Command="{Binding BusquedaCommand}" />
     </StackLayout>
   </Grid>
 </ContentPage>

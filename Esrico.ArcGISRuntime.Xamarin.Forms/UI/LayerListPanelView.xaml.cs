@@ -94,11 +94,11 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// </summary>
     /// <returns></returns>
 
-    private async Task SetLoadedMap()
+    private async Task SetLoadedMapAsync()
     {
       if(Map.OperationalLayers.Count > 0)
       {
-        await SetLayerInfos();
+        await SetLayerInfosAsync();
       }
       else
       {
@@ -106,7 +106,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
         {
           Map.OperationalLayers.CollectionChanged += async (o, e) =>
           {
-            await SetLayerInfos();
+            await SetLayerInfosAsync();
           };
           CollectionHandlerAdded = true;
         }
@@ -118,7 +118,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// 
     /// </summary>
     /// <param name="map"></param>
-    public async void SetMap(Map map)
+    protected async void SetMap(Map map)
     {
       try
       {
@@ -129,13 +129,13 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
           {
             Map.Loaded += async (o, e) =>
             {
-              await SetLoadedMap();
+              await SetLoadedMapAsync();
             };
             await Map.LoadAsync();
           }
           else
           {
-            await SetLoadedMap();
+            await SetLoadedMapAsync();
           }
         }
       }
@@ -149,9 +149,9 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// 
     /// </summary>
     /// <returns></returns>
-    private async Task SetLayerInfosFromLoadedMap()
+    private async Task SetLayerInfosFromLoadedMapAsync()
     {
-      var layerInfos = await Device.InvokeOnMainThreadAsync(() => GetLayerInfosFromLoadedMap());
+      var layerInfos = await Device.InvokeOnMainThreadAsync(() => GetLayerInfosFromLoadedMapAsync());
       LayerInfosList = layerInfos != null ?
         new ObservableCollection<LayerInfos>(layerInfos) :
         null;
@@ -160,7 +160,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    private async Task<List<LayerInfos>> GetLayerInfosFromLoadedMap()
+    private async Task<List<LayerInfos>> GetLayerInfosFromLoadedMapAsync()
     {
       var listLayerInfos = new List<LayerInfos>();
 
@@ -183,12 +183,12 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
         listLayerInfos.Add(layerInfos);
 
         var legendInfos = await layerInfos.GroupLayerInfo.Layer.GetLegendInfosAsync();
-        await layerInfos.GroupLayerInfo.SetLegendInfos(legendInfos);
+        await layerInfos.GroupLayerInfo.SetLegendInfosAsync(legendInfos);
 
         foreach(var sli in layerInfos.SubLayerInfos)
         {
           var subLegendInfos = await sli.Layer.GetLegendInfosAsync();
-          await sli.SetLegendInfos(subLegendInfos);
+          await sli.SetLegendInfosAsync(subLegendInfos);
         }
       }
       return listLayerInfos;
@@ -198,7 +198,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// 
     /// </summary>
     /// <returns></returns>
-    private async Task SetLayerInfos()
+    private async Task SetLayerInfosAsync()
     {
       if(Map != null)
       {
@@ -206,13 +206,13 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
         {
           Map.Loaded += async (o, e) =>
           {
-            await SetLayerInfosFromLoadedMap();
+            await SetLayerInfosFromLoadedMapAsync();
           };
           await Map.LoadAsync();
         }
         else
         {
-          await SetLayerInfosFromLoadedMap();
+          await SetLayerInfosFromLoadedMapAsync();
         }
       }
     }

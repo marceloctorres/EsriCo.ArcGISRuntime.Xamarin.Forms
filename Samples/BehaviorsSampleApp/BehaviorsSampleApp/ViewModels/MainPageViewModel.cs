@@ -1,15 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Input;
 
 using BehaviorsSampleApp.Resx;
 
-using Esri.ArcGISRuntime.Geometry;
+using Esri.ArcGISRuntime.Data;
 using Esri.ArcGISRuntime.Mapping;
 
 using EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors;
 using EsriCo.ArcGISRuntime.Xamarin.Forms.Services;
+
 using Prism.Commands;
 using Prism.Navigation;
 using Prism.Services;
@@ -184,6 +184,8 @@ namespace BehaviorsSampleApp.ViewModels
 
     public ICommand MeasurementCommand { get; private set; }
 
+    public ICommand BusquedaCommand { get; private set; }
+
     public PortalConnection Portal { get; private set; }
 
     public MainPageViewModel(INavigationService navigationService, IPageDialogService pageDialogService)
@@ -308,6 +310,53 @@ namespace BehaviorsSampleApp.ViewModels
          //  AppResources.CancelLoginText, 
          //  AppResources.CloseButtonText);
        });
+      BusquedaCommand = new DelegateCommand(async () =>
+      {
+        var featureLayer = Map.OperationalLayers
+          .Where(l =>
+          {
+            if(l is FeatureLayer)
+            {
+              var lyr = l as FeatureLayer;
+              return lyr.FeatureTable.TableName == "Predio";
+            }
+            return false;
+          })
+          .Select(l => l as FeatureLayer)
+          .FirstOrDefault();
+        var resultados = new List<Feature>();
+        if(featureLayer != null)
+        {
+          var queryParameters = new QueryParameters
+          {
+            WhereClause = $"nombe_unidad_espacial LIKE '%Argentina%'"
+          };
+
+          var results = await featureLayer.FeatureTable.QueryFeaturesAsync(queryParameters);
+          foreach(var r in results)
+          {
+            var agsFeature = (ArcGISFeature)r;
+            if(agsFeature.LoadStatus != Esri.ArcGISRuntime.LoadStatus.Loaded)
+            {
+              await agsFeature.RetryLoadAsync();
+            }
+            resultados.Add(r);
+          }
+        }
+
+        var identifyResults = new IdentifyResults
+        {
+          GeoElementResults = resultados
+          .Select(r => new IdentifyGeoElementResult
+          {
+            GeoElement = r,
+            Layer = featureLayer
+          })
+          .ToList()
+        };
+        IdentifyResults = identifyResults;
+        IsIdentifyVisible = true;
+      });
 
       Portal = new PortalConnection
       {
@@ -319,18 +368,21 @@ namespace BehaviorsSampleApp.ViewModels
       InitPortal();
     }
 
-    private async void InitPortal()
-    {
-      await Portal.SingInAsync();
-    }
+    private async void InitPortal() => await Portal.SingInAsync();
 
     private async void InitMap()
     {
       Portal.WebMapId = "d847253ac7384eb4a41308c6c0edf3e6";
       var map = await Portal.GetMapAsync();
       Map = map;
-
-      Layers = Map.OperationalLayers.ToList();
+      Map.Loaded += (o, e) =>
+      {
+        Layers = Map.OperationalLayers.ToList();
+      };
+      if(Map.LoadStatus == Esri.ArcGISRuntime.LoadStatus.NotLoaded)
+      {
+        await Map.LoadAsync();
+      }
     }
 
   }

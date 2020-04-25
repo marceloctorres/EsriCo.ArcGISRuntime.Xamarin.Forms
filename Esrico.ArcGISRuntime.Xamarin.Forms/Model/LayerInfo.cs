@@ -79,7 +79,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Model
     /// 
     /// </summary>
     /// <param name="legendInfos"></param>
-    public async Task SetLegendInfos(IEnumerable<LegendInfo> legendInfos)
+    public async Task SetLegendInfosAsync(IEnumerable<LegendInfo> legendInfos)
     {
       if(LegendImageInfos == null)
       {

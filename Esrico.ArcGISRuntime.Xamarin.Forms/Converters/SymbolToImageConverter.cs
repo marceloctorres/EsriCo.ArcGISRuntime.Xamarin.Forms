@@ -29,7 +29,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Converters
       if(value is Symbol && targetType == typeof(ImageSource))
       {
         var symbol = (Symbol)value;
-        var task = GetImage(symbol);
+        var task = GetImageAsync(symbol);
         var awaiter = task.GetAwaiter();
         awaiter.OnCompleted(() =>
         {
@@ -40,7 +40,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Converters
       return value;
     }
 
-    private async Task<ImageSource> GetImage(Symbol symbol)
+    private async Task<ImageSource> GetImageAsync(Symbol symbol)
     {
       var imageData = await symbol.CreateSwatchAsync();
       var stream = await imageData.GetEncodedBufferAsync();
