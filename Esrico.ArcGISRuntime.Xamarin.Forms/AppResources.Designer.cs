@@ -70,6 +70,15 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Add Portal.
+        /// </summary>
+        public static string AddPortalButtonText {
+            get {
+                return ResourceManager.GetString("AddPortalButtonText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a .
         /// </summary>
         public static string Any {
@@ -84,6 +93,15 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms {
         public static string CancelButtonText {
             get {
                 return ResourceManager.GetString("CancelButtonText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Close.
+        /// </summary>
+        public static string CloseButtonText {
+            get {
+                return ResourceManager.GetString("CloseButtonText", resourceCulture);
             }
         }
         
@@ -264,6 +282,15 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms {
         public static string PasswordLabelText {
             get {
                 return ResourceManager.GetString("PasswordLabelText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Portals.
+        /// </summary>
+        public static string PortalsLabelText {
+            get {
+                return ResourceManager.GetString("PortalsLabelText", resourceCulture);
             }
         }
         

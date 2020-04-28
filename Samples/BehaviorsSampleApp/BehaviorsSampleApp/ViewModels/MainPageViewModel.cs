@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Windows.Input;
 
@@ -149,7 +150,7 @@ namespace BehaviorsSampleApp.ViewModels
       set => SetProperty(ref _isApprovalActivityVisible, value);
     }
 
-    public bool _isSignatureVisible;
+    private bool _isSignatureVisible;
 
     /// <summary>
     /// 
@@ -158,6 +159,28 @@ namespace BehaviorsSampleApp.ViewModels
     {
       get => _isSignatureVisible;
       set => SetProperty(ref _isSignatureVisible, value);
+    }
+
+    private bool _isPortalsPanelVisible;
+
+    /// <summary>
+    /// 
+    /// </summary>
+    public bool IsPortalPanelVisible
+    {
+      get => _isPortalsPanelVisible;
+      set => SetProperty(ref _isPortalsPanelVisible, value);
+    }
+
+    private List<PortalConnection> _portals;
+
+    /// <summary>
+    /// 
+    /// </summary>
+    public List<PortalConnection> Portals
+    {
+      get => _portals;
+      set => SetProperty(ref _portals, value);
     }
 
     public ICommand LogInCommand { get; private set; }
@@ -186,6 +209,8 @@ namespace BehaviorsSampleApp.ViewModels
 
     public ICommand BusquedaCommand { get; private set; }
 
+    public ICommand PortalsCommand { get; private set; }
+
     public PortalConnection Portal { get; private set; }
 
     public MainPageViewModel(INavigationService navigationService, IPageDialogService pageDialogService)
@@ -197,9 +222,16 @@ namespace BehaviorsSampleApp.ViewModels
       IsIdentifyVisible = false;
       IsLoginVisible = false;
       IsSignatureVisible = false;
-      User = "mtorres";
-      Password = "qwertyuiop54321$%&";
+      IsPortalPanelVisible = false;
+
+      User = "mctorres";
+      Password = "m4rc3l025202$$";
       IsMeasurementViewVisible = false;
+
+      PortalsCommand = new DelegateCommand(() =>
+      {
+        IsPortalPanelVisible = !IsPortalPanelVisible;
+      });
 
       MeasurementCommand = new DelegateCommand(() =>
       {
@@ -358,17 +390,39 @@ namespace BehaviorsSampleApp.ViewModels
         IsIdentifyVisible = true;
       });
 
-      Portal = new PortalConnection
+      Portals = new List<PortalConnection>()
       {
-        User = "mctorres",
-        Password = "m4rc3l025202$$",
-        BaseUrl = "https://www.arcgis.com/sharing/rest",
+        new PortalConnection
+        {
+          User = "mctorres",
+          Password = "m4rc3l025202$$",
+          BaseUrl = "https://www.arcgis.com",
+        },
+        new PortalConnection
+        {
+          User = "mctorres",
+          Password = "m4rc3l025202$$",
+          BaseUrl = "https://project-esri-co.maps.arcgis.com",
+        },
+        new PortalConnection
+        {
+          User = "mtorres",
+          Password = "m4rc3l025202$$",
+          BaseUrl = "https://age1071.eastus.cloudapp.azure.com/portal",
+        },
       };
+      Portal = Portals[0];
 
       InitPortal();
     }
 
-    private async void InitPortal() => await Portal.SingInAsync();
+    private async void InitPortal() 
+    {
+      foreach(var p in Portals)
+      {
+        await p.SingInAsync();
+      }
+    }
 
     private async void InitMap()
     {

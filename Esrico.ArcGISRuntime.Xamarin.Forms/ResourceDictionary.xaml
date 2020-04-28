@@ -13,6 +13,16 @@
       <x:Double>0.5</x:Double>
     </x:Arguments>
   </Color>
+  <OnPlatform x:Key="SmallFont"
+              x:TypeArguments="Font">
+    <On Platform="iOS"
+        Value="Micro" />
+    <On Platform="Android"
+        Value="Micro" />
+    <On Platform="UWP"
+        Value="Segoe UI Light,12" />
+  </OnPlatform>
+  
   <OnPlatform x:Key="NormalFont"
               x:TypeArguments="Font">
     <On Platform="iOS"
@@ -22,7 +32,6 @@
     <On Platform="UWP"
         Value="Segoe UI Light,14" />
   </OnPlatform>
-
   <OnPlatform x:Key="BoldFont"
               x:TypeArguments="Font">
     <On Platform="iOS"
@@ -42,7 +51,15 @@
     <On Platform="UWP"
         Value="Segoe UI Light,Bold,16" />
   </OnPlatform>
-
+  
+  <Style x:Key="SmallLabel"
+         TargetType="Label">
+    <Setter Property="Font">
+      <Setter.Value>
+        <StaticResource Key="SmallFont" />
+      </Setter.Value>
+    </Setter>
+  </Style>
   <Style x:Key="NormalLabel"
          TargetType="Label">
     <Setter Property="Font">

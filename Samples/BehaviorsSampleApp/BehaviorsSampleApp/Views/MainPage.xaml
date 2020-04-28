@@ -194,6 +194,8 @@
           </Grid>
         </esrico:PanelView.BodyContent>
       </esrico:ModalPanelView>
+      <esrico:PortalConnectionsView PortalConnections="{Binding Portals}"
+                                    IsVisible="{Binding IsPortalPanelVisible}" />
       <esrico:ProcessingView x:Name="processingView"
                              ProcessingMessage="{x:Static resx:AppResources.ProcessingMessageText}"
                              IsProcessing="{Binding IsProcessing}" />
@@ -213,6 +215,8 @@
               Command="{Binding MeasurementCommand}" />
       <Button Text="Busqueda"
               Command="{Binding BusquedaCommand}" />
+      <Button Text="Portales"
+              Command="{Binding PortalsCommand}" />
     </StackLayout>
   </Grid>
 </ContentPage>

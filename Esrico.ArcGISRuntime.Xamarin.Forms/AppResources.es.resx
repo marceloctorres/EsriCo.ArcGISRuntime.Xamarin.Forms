@@ -120,8 +120,14 @@
   <data name="Acres" xml:space="preserve">
     <value>Acres</value>
   </data>
+  <data name="AddPortalButtonText" xml:space="preserve">
+    <value>Agregar Portal</value>
+  </data>
   <data name="CancelButtonText" xml:space="preserve">
     <value>Cancelar</value>
+  </data>
+  <data name="CloseButtonText" xml:space="preserve">
+    <value>Cerrar</value>
   </data>
   <data name="DecimalDegrees" xml:space="preserve">
     <value>Grados Decimales</value>
@@ -182,6 +188,9 @@
   </data>
   <data name="PasswordLabelText" xml:space="preserve">
     <value>Contraseña:</value>
+  </data>
+  <data name="PortalsLabelText" xml:space="preserve">
+    <value>Portales</value>
   </data>
   <data name="ProcessingMessageLabelText" xml:space="preserve">
     <value>Procesando...</value>
