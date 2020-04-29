@@ -376,6 +376,15 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Web Maps.
+        /// </summary>
+        public static string WebMapsLabelText {
+            get {
+                return ResourceManager.GetString("WebMapsLabelText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Yards.
         /// </summary>
         public static string Yards {

@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -387,6 +389,53 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
       {
         throw;
       }
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="groupTitle"></param>
+    /// <returns></returns>
+    public PortalGroup GetGroupAsync(string groupTitle)
+    {
+      if(PortalUser != null)
+      {
+        var groups = PortalUser.Groups;
+        return groups.Where(g => g.Title == groupTitle).FirstOrDefault();
+      }
+      return null;
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="group"></param>
+    /// <returns></returns>
+    public async Task<List<PortalItem>> GetWebMapItemsByGroupAsync(PortalGroup group)
+    {
+      var portalQueryParams = new PortalQueryParameters($"type:\"web map\" group:{group.GroupId}")
+      {
+        SortField = "Title",
+        SortOrder = PortalQuerySortOrder.Ascending,
+      };
+      var results = await Portal.FindItemsAsync(portalQueryParams);
+      return results.Results.ToList();
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="group"></param>
+    /// <param name="itemTitle"></param>
+    /// <returns></returns>
+    public async Task<PortalItem> GetWebMapItemByGroupAndTitleAsync(PortalGroup group, string itemTitle)
+    {
+      var webMapItems = await GetWebMapItemsByGroupAsync(group);
+      if(webMapItems != null)
+      {
+        return webMapItems.Where(i => i.Title == itemTitle).FirstOrDefault();
+      }
+      return null;
     }
   }
 }

@@ -424,20 +424,28 @@ namespace BehaviorsSampleApp.ViewModels
       }
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
     private async void InitMap()
     {
-      Portal.WebMapId = "d847253ac7384eb4a41308c6c0edf3e6";
-      var map = await Portal.GetMapAsync();
-      Map = map;
-      Map.Loaded += (o, e) =>
+      var group = Portal.GetGroupAsync("Inspección Pública");
+      var webMapItem = await Portal.GetWebMapItemByGroupAndTitleAsync(group, "Inspección Pública");
+
+      if(webMapItem != null)
       {
-        Layers = Map.OperationalLayers.ToList();
-      };
-      if(Map.LoadStatus == Esri.ArcGISRuntime.LoadStatus.NotLoaded)
-      {
-        await Map.LoadAsync();
+        Portal.WebMapId = webMapItem.ItemId;
+        var map = await Portal.GetMapAsync();
+        Map = map;
+        Map.Loaded += (o, e) =>
+        {
+          Layers = Map.OperationalLayers.ToList();
+        };
+        if(Map.LoadStatus == Esri.ArcGISRuntime.LoadStatus.NotLoaded)
+        {
+          await Map.LoadAsync();
+        }
       }
     }
-
   }
 }

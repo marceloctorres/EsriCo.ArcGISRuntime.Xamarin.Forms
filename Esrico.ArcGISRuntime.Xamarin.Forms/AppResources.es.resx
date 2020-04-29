@@ -222,6 +222,9 @@
   <data name="UsernameLabelText" xml:space="preserve">
     <value>Usuario:</value>
   </data>
+  <data name="WebMapsLabelText" xml:space="preserve">
+    <value>Mapas Web</value>
+  </data>
   <data name="Yards" xml:space="preserve">
     <value>Yardas</value>
   </data>
