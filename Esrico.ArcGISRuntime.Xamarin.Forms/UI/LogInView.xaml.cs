@@ -91,7 +91,6 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
             }
         }
 
-
         /// <summary>
         /// 
         /// </summary>

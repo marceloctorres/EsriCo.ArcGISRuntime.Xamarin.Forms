@@ -120,8 +120,14 @@
   <data name="Acres" xml:space="preserve">
     <value>Acres</value>
   </data>
+  <data name="AddPortalButtonText" xml:space="preserve">
+    <value>Agregar Portal</value>
+  </data>
   <data name="CancelButtonText" xml:space="preserve">
     <value>Cancelar</value>
+  </data>
+  <data name="CloseButtonText" xml:space="preserve">
+    <value>Cerrar</value>
   </data>
   <data name="DecimalDegrees" xml:space="preserve">
     <value>Grados Decimales</value>
@@ -141,6 +147,9 @@
   <data name="DeleteReplicaMessageDone" xml:space="preserve">
     <value>Replica eliminada</value>
   </data>
+  <data name="DescriptionStringFormat" xml:space="preserve">
+    <value>Descripción: {0}</value>
+  </data>
   <data name="DownloadReplicaOkMessageMap" xml:space="preserve">
     <value>Mapa</value>
   </data>
@@ -149,6 +158,9 @@
   </data>
   <data name="Feet" xml:space="preserve">
     <value>Pies</value>
+  </data>
+  <data name="GroupLabelText" xml:space="preserve">
+    <value>Grupo: </value>
   </data>
   <data name="Hectares" xml:space="preserve">
     <value>Hectáreas</value>
@@ -161,6 +173,9 @@
   </data>
   <data name="LegendPanelTitleText" xml:space="preserve">
     <value>Leyenda</value>
+  </data>
+  <data name="LoadMapButtonText" xml:space="preserve">
+    <value>Cargar Mapa</value>
   </data>
   <data name="LogInButtonText" xml:space="preserve">
     <value>Iniciar Sesión</value>
@@ -177,11 +192,20 @@
   <data name="Miles" xml:space="preserve">
     <value>Millas</value>
   </data>
+  <data name="ModifiedDateStringFormat" xml:space="preserve">
+    <value>Última Modificación: {0:yyyy-MM-dd}</value>
+  </data>
   <data name="OKButtonText" xml:space="preserve">
     <value>Aceptar</value>
   </data>
+  <data name="OwnerStringFormat" xml:space="preserve">
+    <value>Propietario: {0}</value>
+  </data>
   <data name="PasswordLabelText" xml:space="preserve">
     <value>Contraseña:</value>
+  </data>
+  <data name="PortalsLabelText" xml:space="preserve">
+    <value>Portales</value>
   </data>
   <data name="ProcessingMessageLabelText" xml:space="preserve">
     <value>Procesando...</value>
@@ -207,11 +231,17 @@
   <data name="TextLabelText" xml:space="preserve">
     <value>Texto:</value>
   </data>
+  <data name="TitleStringFormat" xml:space="preserve">
+    <value>Título: {0}</value>
+  </data>
   <data name="TOCPanelTitleText" xml:space="preserve">
     <value>Tabla de Contenido</value>
   </data>
   <data name="UsernameLabelText" xml:space="preserve">
     <value>Usuario:</value>
+  </data>
+  <data name="WebMapsLabelText" xml:space="preserve">
+    <value>Mapas Web</value>
   </data>
   <data name="Yards" xml:space="preserve">
     <value>Yardas</value>
