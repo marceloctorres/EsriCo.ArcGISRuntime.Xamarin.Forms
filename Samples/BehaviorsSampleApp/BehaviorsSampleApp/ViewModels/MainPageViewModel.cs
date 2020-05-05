@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Windows.Input;
@@ -7,6 +8,7 @@ using BehaviorsSampleApp.Resx;
 
 using Esri.ArcGISRuntime.Data;
 using Esri.ArcGISRuntime.Mapping;
+using Esri.ArcGISRuntime.Portal;
 
 using EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors;
 using EsriCo.ArcGISRuntime.Xamarin.Forms.Services;
@@ -172,6 +174,28 @@ namespace BehaviorsSampleApp.ViewModels
       set => SetProperty(ref _isPortalsPanelVisible, value);
     }
 
+    private bool _isPortalWebMapsVisible;
+
+    /// <summary>
+    /// 
+    /// </summary>
+    public bool IsPortalWebMapsVisible
+    {
+      get => _isPortalWebMapsVisible;
+      set => SetProperty(ref _isPortalWebMapsVisible, value);
+    }
+
+    private PortalConnection _portalConnection;
+
+    /// <summary>
+    /// 
+    /// </summary>
+    private PortalConnection PortalConnection
+    {
+      get => _portalConnection;
+      set => SetProperty(ref _portalConnection, value);
+    }
+
     private List<PortalConnection> _portals;
 
     /// <summary>
@@ -181,6 +205,39 @@ namespace BehaviorsSampleApp.ViewModels
     {
       get => _portals;
       set => SetProperty(ref _portals, value);
+    }
+
+    private List<PortalItem> _webMapItems;
+
+    /// <summary>
+    /// 
+    /// </summary>
+    public List<PortalItem> WebMapItems
+    {
+      get => _webMapItems;
+      set => SetProperty(ref _webMapItems, value);
+    }
+
+    private string _groupName;
+
+    /// <summary>
+    /// 
+    /// </summary>
+    public string GroupName
+    {
+      get => _groupName;
+      set => SetProperty(ref _groupName, value);
+    }
+
+    private PortalItem _selectedWebMapItem;
+
+    /// <summary>
+    /// 
+    /// </summary>
+    public PortalItem SelectedWebMapItem
+    {
+      get => _selectedWebMapItem;
+      set => SetProperty(ref _selectedWebMapItem, value);
     }
 
     public ICommand LogInCommand { get; private set; }
@@ -193,7 +250,7 @@ namespace BehaviorsSampleApp.ViewModels
 
     public ICommand IdentificarCommand { get; private set; }
 
-    public ICommand LoadMapCommand { get; private set; }
+    public ICommand LoginCommand { get; private set; }
 
     public ICommand GeoViewTappedCommand { get; private set; }
 
@@ -211,7 +268,11 @@ namespace BehaviorsSampleApp.ViewModels
 
     public ICommand PortalsCommand { get; private set; }
 
-    public PortalConnection Portal { get; private set; }
+    public ICommand WebMapsCommand { get; private set; }
+
+    public ICommand AddWebMapItemCommand { get; private set; }
+
+    public ICommand CloseWepMapsViewCommand { get; private set; }
 
     public MainPageViewModel(INavigationService navigationService, IPageDialogService pageDialogService)
         : base(navigationService, pageDialogService)
@@ -227,6 +288,22 @@ namespace BehaviorsSampleApp.ViewModels
       User = "mctorres";
       Password = "m4rc3l025202$$";
       IsMeasurementViewVisible = false;
+
+      CloseWepMapsViewCommand = new DelegateCommand(() =>
+      {
+        IsPortalWebMapsVisible = false;
+      });
+
+      AddWebMapItemCommand = new DelegateCommand(() =>
+      {
+        IsPortalWebMapsVisible = false;
+        InitMap();
+      });
+
+      WebMapsCommand = new DelegateCommand(() =>
+      {
+        IsPortalWebMapsVisible = !IsPortalWebMapsVisible;
+      });
 
       PortalsCommand = new DelegateCommand(() =>
       {
@@ -254,15 +331,16 @@ namespace BehaviorsSampleApp.ViewModels
         IsApprovalActivityVisible = false;
 
       });
+
       SignatureCommand = new DelegateCommand(() =>
       {
         IsSignatureVisible = true;
       });
 
       CloseCommand = new DelegateCommand(() =>
-        {
+      {
           IsApprovalPanelVisible = false;
-        });
+      });
 
       ShowIdentifyMenuCommand = new DelegateCommand(() =>
         {
@@ -306,7 +384,7 @@ namespace BehaviorsSampleApp.ViewModels
           IsProcessing = false;
         });
 
-      LoadMapCommand = new DelegateCommand(() =>
+      LoginCommand = new DelegateCommand(() =>
       {
         if(Map != null)
         {
@@ -318,30 +396,41 @@ namespace BehaviorsSampleApp.ViewModels
           IsLoginVisible = true;
         }
       });
-      LogInCommand = new DelegateCommand(() =>
+
+      LogInCommand = new DelegateCommand(async () =>
       {
+        IsProcessing = true;
         IsLoginVisible = false;
-        InitMap();
-        //Map = new Map(Basemap.CreateTopographicVector())
-        //{
-        //  InitialViewpoint = new Viewpoint(new MapPoint(-74.042492, 4.660555, SpatialReferences.Wgs84), 5000)
-        //};
-        //FeatureLayer[] layers =
-        //{
-        //  new FeatureLayer(new Uri("https://services1.arcgis.com/7S16A7PAFcmSmqJA/ArcGIS/rest/services/InspeccionPublica/FeatureServer/3")),
-        //  new FeatureLayer(new Uri("https://services1.arcgis.com/7S16A7PAFcmSmqJA/ArcGIS/rest/services/InspeccionPublica/FeatureServer/2")),
-        //  new FeatureLayer(new Uri("https://services1.arcgis.com/7S16A7PAFcmSmqJA/ArcGIS/rest/services/InspeccionPublica/FeatureServer/1")),
-        //  new FeatureLayer(new Uri("https://services1.arcgis.com/7S16A7PAFcmSmqJA/ArcGIS/rest/services/InspeccionPublica/FeatureServer/0"))
-        //};
-        //Map.OperationalLayers.AddRange(layers);
+        try
+        {
+          
+          GroupName = "Inspección Pública";
+          PortalConnection = new PortalConnection
+          {
+            BaseUrl = "https://www.arcgis.com",
+            User = User,
+            Password = Password
+          };
+          await PortalConnection.SingInAsync();
+          var group = PortalConnection.GetGroupAsync(GroupName);
+          WebMapItems = await PortalConnection.GetWebMapItemsByGroupAsync(group);
+        }
+        catch(Exception ex)
+        {
+          Debug.WriteLine(ex.Message);
+          await pageDialogService.DisplayAlertAsync("Error", ex.Message, "Cerrar");
+        }
+        finally
+        {
+          IsProcessing = false;
+        }
       });
+
       CancelCommand = new DelegateCommand(() =>
        {
          IsLoginVisible = false;
-         //await PageDialogService.DisplayAlertAsync(AppResources.DialogTitle, 
-         //  AppResources.CancelLoginText, 
-         //  AppResources.CloseButtonText);
        });
+
       BusquedaCommand = new DelegateCommand(async () =>
       {
         var featureLayer = Map.OperationalLayers
@@ -411,17 +500,6 @@ namespace BehaviorsSampleApp.ViewModels
           BaseUrl = "https://age1071.eastus.cloudapp.azure.com/portal",
         },
       };
-      Portal = Portals[0];
-
-      InitPortal();
-    }
-
-    private async void InitPortal() 
-    {
-      foreach(var p in Portals)
-      {
-        await p.SingInAsync();
-      }
     }
 
     /// <summary>
@@ -429,23 +507,17 @@ namespace BehaviorsSampleApp.ViewModels
     /// </summary>
     private async void InitMap()
     {
-      var group = Portal.GetGroupAsync("Inspección Pública");
-      var webMapItem = await Portal.GetWebMapItemByGroupAndTitleAsync(group, "Inspección Pública");
-
-      if(webMapItem != null)
+      IsProcessing = true;
+      if(SelectedWebMapItem != null)
       {
-        Portal.WebMapId = webMapItem.ItemId;
-        var map = await Portal.GetMapAsync();
+        PortalConnection.WebMapId = SelectedWebMapItem.ItemId;
+        var map = await PortalConnection.GetMapAsync();
         Map = map;
-        Map.Loaded += (o, e) =>
-        {
-          Layers = Map.OperationalLayers.ToList();
-        };
+        Map.Loaded += (o, e) => Layers = Map.OperationalLayers.ToList();
         if(Map.LoadStatus == Esri.ArcGISRuntime.LoadStatus.NotLoaded)
-        {
-          await Map.LoadAsync();
-        }
+        { await Map.LoadAsync(); }
       }
+      IsProcessing = false;
     }
   }
 }

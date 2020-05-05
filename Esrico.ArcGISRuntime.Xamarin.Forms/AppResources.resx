@@ -123,9 +123,6 @@
   <data name="AddPortalButtonText" xml:space="preserve">
     <value>Add Portal</value>
   </data>
-  <data name="Any" xml:space="preserve">
-    <value />
-  </data>
   <data name="CancelButtonText" xml:space="preserve">
     <value>Cancel</value>
   </data>
@@ -150,6 +147,9 @@
   <data name="DeleteReplicaMessageDone" xml:space="preserve">
     <value>Replica deleted</value>
   </data>
+  <data name="DescriptionStringFormat" xml:space="preserve">
+    <value>Description: {0}</value>
+  </data>
   <data name="DownloadReplicaOkMessageMap" xml:space="preserve">
     <value>Map</value>
   </data>
@@ -158,6 +158,9 @@
   </data>
   <data name="Feet" xml:space="preserve">
     <value>Feet</value>
+  </data>
+  <data name="GroupLabelText" xml:space="preserve">
+    <value>Group: </value>
   </data>
   <data name="Hectares" xml:space="preserve">
     <value>Hectares</value>
@@ -170,6 +173,9 @@
   </data>
   <data name="LegendPanelTitleText" xml:space="preserve">
     <value>Legend</value>
+  </data>
+  <data name="LoadMapButtonText" xml:space="preserve">
+    <value>Load Map</value>
   </data>
   <data name="LogInButtonText" xml:space="preserve">
     <value>Log In</value>
@@ -187,8 +193,14 @@
   <data name="Miles" xml:space="preserve">
     <value>Miles</value>
   </data>
+  <data name="ModifiedDateStringFormat" xml:space="preserve">
+    <value>Last Update: {0:yyyy-MM-dd}</value>
+  </data>
   <data name="OKButtonText" xml:space="preserve">
     <value>OK</value>
+  </data>
+  <data name="OwnerStringFormat" xml:space="preserve">
+    <value>Owner: {0}</value>
   </data>
   <data name="PasswordLabelText" xml:space="preserve">
     <value>Password:</value>
@@ -216,6 +228,9 @@
   </data>
   <data name="TextLabelText" xml:space="preserve">
     <value>Text:</value>
+  </data>
+  <data name="TitleStringFormat" xml:space="preserve">
+    <value>Title: {0}</value>
   </data>
   <data name="TOCPanelTitleText" xml:space="preserve">
     <value>Table of Contents</value>

@@ -49,6 +49,12 @@
                         Password="{Binding Password}"
                         LogInCommand="{Binding LogInCommand}"
                         CancelCommand="{Binding CancelCommand}" />
+      <esrico:PortalWebMapsView IsVisible="{Binding IsPortalWebMapsVisible}"
+                                GroupName="{Binding GroupName}"
+                                WebMapItems="{Binding WebMapItems}"
+                                SelectedItem="{Binding SelectedWebMapItem}"
+                                LoadMapCommand="{Binding AddWebMapItemCommand}"
+                                CloseCommand="{Binding CloseWepMapsViewCommand}"/>
       <esrico:IdentifyView x:Name="identifyView"
                            IdentifyResults="{Binding IdentifyResults}"
                            HorizontalOptions="StartAndExpand"
@@ -203,8 +209,10 @@
     <StackLayout Grid.Row="1"
                  Margin="10"
                  Orientation="Horizontal">
-      <Button Text="{x:Static resx:AppResources.LoadMapButtonText}"
-              Command="{Binding LoadMapCommand}" />
+      <Button Text="{x:Static resx:AppResources.LogInButtonText}"
+              Command="{Binding LoginCommand}" />
+      <Button Text="{x:Static resx:AppResources.WebMapsButtonText}"
+              Command="{Binding WebMapsCommand}" />
       <Button Text="{x:Static resx:AppResources.TOCButtonText}"
               Command="{Binding TOCCommand}" />
       <Button Text="{x:Static resx:AppResources.LegendButtonText}"

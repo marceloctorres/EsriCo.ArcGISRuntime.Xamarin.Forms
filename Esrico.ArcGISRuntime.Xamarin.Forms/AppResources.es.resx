@@ -147,6 +147,9 @@
   <data name="DeleteReplicaMessageDone" xml:space="preserve">
     <value>Replica eliminada</value>
   </data>
+  <data name="DescriptionStringFormat" xml:space="preserve">
+    <value>Descripción: {0}</value>
+  </data>
   <data name="DownloadReplicaOkMessageMap" xml:space="preserve">
     <value>Mapa</value>
   </data>
@@ -155,6 +158,9 @@
   </data>
   <data name="Feet" xml:space="preserve">
     <value>Pies</value>
+  </data>
+  <data name="GroupLabelText" xml:space="preserve">
+    <value>Grupo: </value>
   </data>
   <data name="Hectares" xml:space="preserve">
     <value>Hectáreas</value>
@@ -167,6 +173,9 @@
   </data>
   <data name="LegendPanelTitleText" xml:space="preserve">
     <value>Leyenda</value>
+  </data>
+  <data name="LoadMapButtonText" xml:space="preserve">
+    <value>Cargar Mapa</value>
   </data>
   <data name="LogInButtonText" xml:space="preserve">
     <value>Iniciar Sesión</value>
@@ -183,8 +192,14 @@
   <data name="Miles" xml:space="preserve">
     <value>Millas</value>
   </data>
+  <data name="ModifiedDateStringFormat" xml:space="preserve">
+    <value>Última Modificación: {0:yyyy-MM-dd}</value>
+  </data>
   <data name="OKButtonText" xml:space="preserve">
     <value>Aceptar</value>
+  </data>
+  <data name="OwnerStringFormat" xml:space="preserve">
+    <value>Propietario: {0}</value>
   </data>
   <data name="PasswordLabelText" xml:space="preserve">
     <value>Contraseña:</value>
@@ -215,6 +230,9 @@
   </data>
   <data name="TextLabelText" xml:space="preserve">
     <value>Texto:</value>
+  </data>
+  <data name="TitleStringFormat" xml:space="preserve">
+    <value>Título: {0}</value>
   </data>
   <data name="TOCPanelTitleText" xml:space="preserve">
     <value>Tabla de Contenido</value>

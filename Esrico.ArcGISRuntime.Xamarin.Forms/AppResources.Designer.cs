@@ -79,15 +79,6 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a .
-        /// </summary>
-        public static string Any {
-            get {
-                return ResourceManager.GetString("Any", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Busca una cadena traducida similar a Cancel.
         /// </summary>
         public static string CancelButtonText {
@@ -160,6 +151,15 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Description: {0}.
+        /// </summary>
+        public static string DescriptionStringFormat {
+            get {
+                return ResourceManager.GetString("DescriptionStringFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Map.
         /// </summary>
         public static string DownloadReplicaOkMessageMap {
@@ -183,6 +183,15 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms {
         public static string Feet {
             get {
                 return ResourceManager.GetString("Feet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Group: .
+        /// </summary>
+        public static string GroupLabelText {
+            get {
+                return ResourceManager.GetString("GroupLabelText", resourceCulture);
             }
         }
         
@@ -219,6 +228,15 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms {
         public static string LegendPanelTitleText {
             get {
                 return ResourceManager.GetString("LegendPanelTitleText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Load Map.
+        /// </summary>
+        public static string LoadMapButtonText {
+            get {
+                return ResourceManager.GetString("LoadMapButtonText", resourceCulture);
             }
         }
         
@@ -268,11 +286,29 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Last Update: {0:yyyy-MM-dd}.
+        /// </summary>
+        public static string ModifiedDateStringFormat {
+            get {
+                return ResourceManager.GetString("ModifiedDateStringFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a OK.
         /// </summary>
         public static string OKButtonText {
             get {
                 return ResourceManager.GetString("OKButtonText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Owner: {0}.
+        /// </summary>
+        public static string OwnerStringFormat {
+            get {
+                return ResourceManager.GetString("OwnerStringFormat", resourceCulture);
             }
         }
         
@@ -354,6 +390,15 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms {
         public static string TextLabelText {
             get {
                 return ResourceManager.GetString("TextLabelText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Title: {0}.
+        /// </summary>
+        public static string TitleStringFormat {
+            get {
+                return ResourceManager.GetString("TitleStringFormat", resourceCulture);
             }
         }
         

@@ -142,6 +142,15 @@ namespace BehaviorsSampleApp.Resx {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Log In....
+        /// </summary>
+        public static string LogInButtonText {
+            get {
+                return ResourceManager.GetString("LogInButtonText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Map Page.
         /// </summary>
         public static string MapPageTitle {
@@ -219,6 +228,15 @@ namespace BehaviorsSampleApp.Resx {
         public static string TOCPanelTitleText {
             get {
                 return ResourceManager.GetString("TOCPanelTitleText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Web Maps....
+        /// </summary>
+        public static string WebMapsButtonText {
+            get {
+                return ResourceManager.GetString("WebMapsButtonText", resourceCulture);
             }
         }
     }

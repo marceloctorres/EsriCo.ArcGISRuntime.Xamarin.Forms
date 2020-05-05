@@ -171,4 +171,15 @@
       </Setter.Value>
     </Setter>
   </Style>
+  <Style x:Key="SeparatorBoxView"
+         TargetType="BoxView">
+    <Setter Property="Margin"
+            Value="0" />
+    <Setter Property="BackgroundColor"
+            Value="Black" />
+    <Setter Property="HeightRequest"
+            Value="1" />
+    <Setter Property="HorizontalOptions"
+            Value="FillAndExpand" />
+  </Style>
 </ResourceDictionary>

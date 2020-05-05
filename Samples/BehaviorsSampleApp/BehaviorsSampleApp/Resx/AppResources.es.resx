@@ -144,6 +144,9 @@
   <data name="LoadMapButtonText" xml:space="preserve">
     <value>Cargar Mapa...</value>
   </data>
+  <data name="LogInButtonText" xml:space="preserve">
+    <value>Iniciar de Sesión...</value>
+  </data>
   <data name="MapPageTitle" xml:space="preserve">
     <value>Página del Mapa</value>
   </data>
@@ -170,5 +173,8 @@
   </data>
   <data name="TOCPanelTitleText" xml:space="preserve">
     <value>Tabla de Contenido</value>
+  </data>
+  <data name="WebMapsButtonText" xml:space="preserve">
+    <value>Mapas Web...</value>
   </data>
 </root>

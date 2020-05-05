@@ -1,11 +1,13 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:root="clr-namespace:EsriCo.ArcGISRuntime.Xamarin.Forms"
              mc:Ignorable="d"
-             x:Class="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PortalWebMapsView" 
+             WidthRequest="600"
+             HeightRequest="500"
+             x:Class="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PortalWebMapsView"
              x:Name="view">
   <ContentView.Resources>
     <ResourceDictionary>
@@ -13,6 +15,21 @@
         <root:ResourceDictionary />
       </ResourceDictionary.MergedDictionaries>
     </ResourceDictionary>
+    <Style TargetType="Grid">
+      <Setter Property="VisualStateManager.VisualStateGroups">
+        <VisualStateGroupList>
+          <VisualStateGroup x:Name="CommonStates">
+            <VisualState x:Name="Normal" />
+            <VisualState x:Name="Selected">
+              <VisualState.Setters>
+                <Setter Property="BackgroundColor"
+                        Value="Gray" />
+              </VisualState.Setters>
+            </VisualState>
+          </VisualStateGroup>
+        </VisualStateGroupList>
+      </Setter>
+    </Style>
   </ContentView.Resources>
   <ContentView.Content>
     <Frame Margin="0"
@@ -35,18 +52,120 @@
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
           </Grid.RowDefinitions>
-          <Grid Margin="0"
-                Padding="5"
-                HorizontalOptions="Fill"
-                VerticalOptions="StartAndExpand"
+          <Grid Margin="5"
+                Padding="0"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="CenterAndExpand"
                 BackgroundColor="White">
-            <Label Text="{x:Static root:AppResources.WebMapsLabelText}"
-                   Style="{StaticResource TitleFont}"
-                   FontAttributes="Bold"
-                   TextColor="Black" />
+            <Label HorizontalOptions="FillAndExpand"
+                   VerticalOptions="FillAndExpand"
+                   HorizontalTextAlignment="Start"
+                   VerticalTextAlignment="Center"
+                   Text="{x:Static root:AppResources.WebMapsLabelText}"
+                   Style="{StaticResource TitleLabel}" />
           </Grid>
+          <BoxView Grid.Row="1"
+                   Style="{StaticResource SeparatorBoxView}" />
+          <Grid Grid.Row="2"
+                Margin="5"
+                ColumnSpacing="5">
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="Auto" />
+              <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="0"
+                   HorizontalTextAlignment="End"
+                   VerticalTextAlignment="Center"
+                   Text="{x:Static root:AppResources.GroupLabelText}"
+                   Style="{StaticResource BoldLabel}" />
+            <Label Grid.Column="1"
+                   HorizontalOptions="FillAndExpand"
+                   HorizontalTextAlignment="Start"
+                   VerticalOptions="CenterAndExpand"
+                   VerticalTextAlignment="Center"
+                   Text="{Binding Path=GroupName, Source={x:Reference view}}"
+                   Style="{StaticResource NormalLabel}" />
+          </Grid>
+          <CollectionView Grid.Row="3"
+                          Margin="5"
+                          SelectionMode="Single"
+                          ItemSizingStrategy="MeasureFirstItem"
+                          SelectedItem="{Binding SelectedItem,Source={x:Reference view}}"
+                          ItemsSource="{Binding WebMapItems,Source={x:Reference view}}">
+            <CollectionView.ItemsLayout>
+              <LinearItemsLayout Orientation="Vertical"
+                                 ItemSpacing="5" />
+            </CollectionView.ItemsLayout>
+            <CollectionView.ItemTemplate>
+              <DataTemplate>
+                <Frame Margin="0"
+                      Padding="5"
+                      BorderColor="Black"
+                      CornerRadius="0">
+                  <Grid BackgroundColor="Transparent">
+                    <Grid.ColumnDefinitions>
+                      <ColumnDefinition Width="Auto" />
+                      <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions> 
+                    <Grid.RowDefinitions>
+                      <RowDefinition Height="Auto" />
+                      <RowDefinition Height="Auto" />
+                      <RowDefinition Height="Auto" />
+                      <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Image Grid.RowSpan="4"
+                           Source="{Binding ThumbnailUri}"
+                           HorizontalOptions="CenterAndExpand"
+                           VerticalOptions="CenterAndExpand"
+                           WidthRequest="128"
+                           HeightRequest="96" />
+                    <Label Grid.Column="1"
+                           HorizontalTextAlignment="Start"
+                           VerticalOptions="CenterAndExpand"
+                           VerticalTextAlignment="Center"
+                           Text="{Binding Title,StringFormat={x:Static root:AppResources.TitleStringFormat}}"
+                           Style="{StaticResource BoldLabel}" />
+                    <Label Grid.Row="1"
+                           Grid.Column="1"
+                           HorizontalTextAlignment="Start"
+                           VerticalOptions="CenterAndExpand"
+                           VerticalTextAlignment="Center"
+                           Text="{Binding Description,StringFormat={x:Static root:AppResources.DescriptionStringFormat}}"
+                           Style="{StaticResource NormalLabel}" />
+                    <Label Grid.Row="2"
+                           Grid.Column="1"
+                           HorizontalTextAlignment="Start"
+                           VerticalOptions="CenterAndExpand"
+                           VerticalTextAlignment="Center"
+                           Text="{Binding Owner,StringFormat={x:Static root:AppResources.OwnerStringFormat}}"
+                           Style="{StaticResource NormalLabel}" />
+                    <Label Grid.Row="3"
+                           Grid.Column="1"
+                           HorizontalTextAlignment="Start"
+                           VerticalOptions="CenterAndExpand"
+                           VerticalTextAlignment="Center"
+                           Text="{Binding Modified,StringFormat={x:Static root:AppResources.ModifiedDateStringFormat}}"
+                           Style="{StaticResource NormalLabel}" />
+                  </Grid>
+                </Frame>
+              </DataTemplate>
+            </CollectionView.ItemTemplate>
+          </CollectionView>
+          <BoxView Grid.Row="4"
+                   Style="{StaticResource SeparatorBoxView}" />
+          <StackLayout Grid.Row="5"
+                       Orientation="Horizontal"
+                       Margin="10"
+                       Padding="2">
+            <Button Text="{x:Static root:AppResources.LoadMapButtonText}"
+                    Command="{Binding LoadMapCommand, Source={x:Reference view}}" />
+            <Button Text="{x:Static root:AppResources.CloseButtonText}"
+                    Command="{Binding CloseCommand, Source={x:Reference view}}" />
+          </StackLayout>
         </Grid>
       </Frame>
     </Frame>
