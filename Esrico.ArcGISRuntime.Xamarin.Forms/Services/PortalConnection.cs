@@ -396,7 +396,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     /// </summary>
     /// <param name="groupTitle"></param>
     /// <returns></returns>
-    public PortalGroup GetGroupAsync(string groupTitle)
+    public PortalGroup GetGroup(string groupTitle)
     {
       if(PortalUser != null)
       {
