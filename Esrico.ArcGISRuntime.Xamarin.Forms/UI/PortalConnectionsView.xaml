@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:root="clr-namespace:EsriCo.ArcGISRuntime.Xamarin.Forms"
+             WidthRequest="500"
+             HeightRequest="800"
+             mc:Ignorable="d"
+             x:Class="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PortalConnectionsView"
+             x:Name="view">
+  <ContentView.Resources>
+    <ResourceDictionary>
+      <ResourceDictionary.MergedDictionaries>
+        <root:ResourceDictionary />
+      </ResourceDictionary.MergedDictionaries>
+    </ResourceDictionary>
+  </ContentView.Resources>
+  <ContentView.Content>
+    <Frame Margin="0"
+           Padding="10"
+           BackgroundColor="{StaticResource DarkGrayTransparent}"
+           HorizontalOptions="FillAndExpand"
+           VerticalOptions="FillAndExpand">
+      <Frame Margin="0"
+             Padding="2"
+             HorizontalOptions="CenterAndExpand"
+             VerticalOptions="CenterAndExpand"
+             WidthRequest="{Binding Source={x:Reference view}, Path=WidthRequest}"
+             OutlineColor="Black">
+        <Grid Margin="0"
+              Padding="0"
+              HorizontalOptions="Fill"
+              VerticalOptions="StartAndExpand"
+              BackgroundColor="White">
+          <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+          </Grid.RowDefinitions>
+          <Grid Margin="0"
+                Padding="5"
+                HorizontalOptions="Fill"
+                VerticalOptions="StartAndExpand"
+                BackgroundColor="White">
+            <Label Text="{x:Static root:AppResources.PortalsLabelText}"
+                   Style="{StaticResource TitleFont}"
+                   FontAttributes="Bold"
+                   TextColor="Black" />
+          </Grid>
+          <StackLayout Grid.Row="1"
+                       Margin="5"
+                       HorizontalOptions="FillAndExpand"
+                       VerticalOptions="StartAndExpand"
+                       BindableLayout.ItemsSource="{Binding PortalConnections,Source={x:Reference view}}">
+            <BindableLayout.ItemTemplate>
+              <DataTemplate>
+                <Grid>
+                  <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                  </Grid.RowDefinitions>
+                  <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                  </Grid.ColumnDefinitions>
+                  <Image Grid.Column="0"
+                         Grid.Row="0"
+                         Grid.RowSpan="4"
+                         HorizontalOptions="CenterAndExpand"
+                         VerticalOptions="CenterAndExpand"
+                         HeightRequest="96"
+                         WidthRequest="96"
+                         Source="{Binding UserImage}" />
+                  <RelativeLayout Grid.Column="2"
+                                  Grid.Row="0"
+                                  BackgroundColor="LightGray"
+                                  Grid.RowSpan="4"
+                                  WidthRequest="96"
+                                  HeightRequest="96">
+                    <Image RelativeLayout.HeightConstraint="{ConstraintExpression
+                            Type=RelativeToParent,
+                            Property=Height,
+                            Factor=1,
+                            Constant=0}"
+                           RelativeLayout.WidthConstraint="{ConstraintExpression
+                            Type=RelativeToParent,
+                            Property=Width,
+                            Factor=1,
+                            Constant=0}"
+                           Source="{Binding PortalImage}" />
+                    <Image RelativeLayout.HeightConstraint="{ConstraintExpression
+                            Type=RelativeToParent,
+                            Property=Height,
+                            Factor=0.333,
+                            Constant=0}"
+                           RelativeLayout.WidthConstraint="{ConstraintExpression
+                            Type=RelativeToParent,
+                            Property=Width,
+                            Factor=0.333,
+                            Constant=0}"
+                           RelativeLayout.XConstraint="{ConstraintExpression 
+                            Type=RelativeToParent,
+                            Property=Width,
+                            Factor=0.667,
+                            Constant=0}"
+                           Source="{Binding ActiveImage,Source={x:Reference view}}" />
+                    <Image RelativeLayout.HeightConstraint="{ConstraintExpression
+                            Type=RelativeToParent,
+                            Property=Height,
+                            Factor=0.333,
+                            Constant=0}"
+                           RelativeLayout.WidthConstraint="{ConstraintExpression
+                            Type=RelativeToParent,
+                            Property=Width,
+                            Factor=0.333,
+                            Constant=0}"
+                           RelativeLayout.XConstraint="{ConstraintExpression 
+                            Type=RelativeToParent,
+                            Property=Width,
+                            Factor=0.667,
+                            Constant=0}"
+                           RelativeLayout.YConstraint="{ConstraintExpression 
+                            Type=RelativeToParent,
+                            Property=Height,
+                            Factor=0.667,
+                            Constant=0}"
+                           Source="{Binding LoginImage, Source={x:Reference view}}" />
+                  </RelativeLayout>
+                  <Label Grid.Row="0"
+                         Grid.Column="1"
+                         Text="{Binding UserName}" 
+                         Style="{StaticResource BoldLabel}"/>
+                  <Label Grid.Row="1"
+                         Grid.Column="1"
+                         Text="{Binding User}"
+                         Style="{StaticResource NormalLabel}"/>
+                  <Label Grid.Row="2"
+                         Grid.Column="1"
+                         Text="{Binding OrganizationName}"
+                         Style="{StaticResource NormalLabel}" />
+                  <Label Grid.Row="3"
+                         Grid.Column="1"
+                         Text="{Binding BaseUrl}"
+                         Style="{StaticResource SmallLabel}" />
+                </Grid>
+              </DataTemplate>
+            </BindableLayout.ItemTemplate>
+          </StackLayout>
+          <StackLayout Grid.Row="2"
+                       Orientation="Horizontal"
+                       Margin="10"
+                       Padding="2">
+            <Button Text="{x:Static root:AppResources.AddPortalButtonText}"
+                    Command="{Binding AddAccountCommand, Source={x:Reference view}}" />
+            <Button Text="{x:Static root:AppResources.CloseButtonText}"
+                    Command="{Binding CloseCommand, Source={x:Reference view}}" />
+          </StackLayout>
+        </Grid>
+      </Frame>
+    </Frame>
+  </ContentView.Content>
+</ContentView>

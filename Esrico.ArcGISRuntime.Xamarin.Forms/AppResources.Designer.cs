@@ -70,11 +70,11 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a .
+        ///   Busca una cadena traducida similar a Add Portal.
         /// </summary>
-        public static string Any {
+        public static string AddPortalButtonText {
             get {
-                return ResourceManager.GetString("Any", resourceCulture);
+                return ResourceManager.GetString("AddPortalButtonText", resourceCulture);
             }
         }
         
@@ -84,6 +84,15 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms {
         public static string CancelButtonText {
             get {
                 return ResourceManager.GetString("CancelButtonText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Close.
+        /// </summary>
+        public static string CloseButtonText {
+            get {
+                return ResourceManager.GetString("CloseButtonText", resourceCulture);
             }
         }
         
@@ -142,6 +151,15 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Description: {0}.
+        /// </summary>
+        public static string DescriptionStringFormat {
+            get {
+                return ResourceManager.GetString("DescriptionStringFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Map.
         /// </summary>
         public static string DownloadReplicaOkMessageMap {
@@ -165,6 +183,15 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms {
         public static string Feet {
             get {
                 return ResourceManager.GetString("Feet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Group: .
+        /// </summary>
+        public static string GroupLabelText {
+            get {
+                return ResourceManager.GetString("GroupLabelText", resourceCulture);
             }
         }
         
@@ -201,6 +228,15 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms {
         public static string LegendPanelTitleText {
             get {
                 return ResourceManager.GetString("LegendPanelTitleText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Load Map.
+        /// </summary>
+        public static string LoadMapButtonText {
+            get {
+                return ResourceManager.GetString("LoadMapButtonText", resourceCulture);
             }
         }
         
@@ -250,6 +286,15 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Last Update: {0:yyyy-MM-dd}.
+        /// </summary>
+        public static string ModifiedDateStringFormat {
+            get {
+                return ResourceManager.GetString("ModifiedDateStringFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a OK.
         /// </summary>
         public static string OKButtonText {
@@ -259,11 +304,29 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Owner: {0}.
+        /// </summary>
+        public static string OwnerStringFormat {
+            get {
+                return ResourceManager.GetString("OwnerStringFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Password:.
         /// </summary>
         public static string PasswordLabelText {
             get {
                 return ResourceManager.GetString("PasswordLabelText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Portals.
+        /// </summary>
+        public static string PortalsLabelText {
+            get {
+                return ResourceManager.GetString("PortalsLabelText", resourceCulture);
             }
         }
         
@@ -331,6 +394,15 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Title: {0}.
+        /// </summary>
+        public static string TitleStringFormat {
+            get {
+                return ResourceManager.GetString("TitleStringFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Table of Contents.
         /// </summary>
         public static string TOCPanelTitleText {
@@ -345,6 +417,15 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms {
         public static string UsernameLabelText {
             get {
                 return ResourceManager.GetString("UsernameLabelText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Web Maps.
+        /// </summary>
+        public static string WebMapsLabelText {
+            get {
+                return ResourceManager.GetString("WebMapsLabelText", resourceCulture);
             }
         }
         
