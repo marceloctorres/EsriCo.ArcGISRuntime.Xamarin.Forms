@@ -1,5 +1,5 @@
 # Esri Colombia ArcGIS Runtime Tools for Xamarin.Forms
-Esri Colombia ArcGIS Runtime Tools for Xamarin.Forms contains custom ControlViews and other type of components tools that enable extend 
+Esri Colombia ArcGIS Runtime Tools for Xamarin.Forms contains custom ControlViews and other type of component tools that enable extend 
 [Xamarin.Forms Esri ArcGIS Runtime SDK for .NET](https://developers.arcgis.com/net/latest/forms/guide/guide-home.htm)
 
 Anyone can use these tools in any project by installing latest release of the Nuget Package:
@@ -8,9 +8,9 @@ Anyone can use these tools in any project by installing latest release of the Nu
 ## Features
 ### UI 
 - **DrawingStatusView**: Shows an activity indicator while map redraws.
-- **DrawingToolBarView**: Shows a Toolbar that enables draw points, polylines, polygons and rectangle on the map.
+- **DrawingToolBarView**: Shows a Toolbar that enables draw points, polylines, polygons and rectangles on the map.
 - **IndentifyView**: Shows a PanelView with the attributes of features tapped on the map.
-- **LegendView**: Shows a PanelView with a list of the legend of each layer of the map.
+- **LegendView**: Shows a PanelView with a list of legend of each layer of the map.
 - **LogInView**: Shows a View to get credentials to connect to a portal.
 - **ModalPanelView**: Customizable modal PanelView.
 - **NavigationBarView**: Toolbar to zoom in, zoom out or go the initial extend on the map.
