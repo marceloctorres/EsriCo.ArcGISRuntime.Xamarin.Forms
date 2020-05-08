@@ -1,0 +1,1473 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PanelView
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PanelView
+   ">
+    <meta name="generator" content="docfx 2.52.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView">
+  
+  
+  <h1 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView" class="text-break">Class PanelView
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.bindableobject">BindableObject</a></div>
+    <div class="level2"><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.element">Element</a></div>
+    <div class="level3"><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.navigableelement">NavigableElement</a></div>
+    <div class="level4"><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.visualelement">VisualElement</a></div>
+    <div class="level5"><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.view">View</a></div>
+    <div class="level6"><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.layout">Layout</a></div>
+    <div class="level7"><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.templatedview">TemplatedView</a></div>
+    <div class="level8"><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.contentview">ContentView</a></div>
+    <div class="level9"><span class="xref">PanelView</span></div>
+      <div class="level10"><a class="xref" href="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.ListPanelView.html">ListPanelView</a></div>
+      <div class="level10"><a class="xref" href="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.MeasurementBarView.html">MeasurementBarView</a></div>
+      <div class="level10"><a class="xref" href="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.ModalPanelView.html">ModalPanelView</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged">INotifyPropertyChanged</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.ianimatable">IAnimatable</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.itabstopelement">ITabStopElement</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.iviewcontroller">IViewController</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.ivisualelementcontroller">IVisualElementController</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.ielementcontroller">IElementController</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.internals.igesturecontroller">IGestureController</a></div>
+    <div><span class="xref">Xamarin.Forms.IGestureRecognizers</span></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.ilayout">ILayout</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.ilayoutcontroller">ILayoutController</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.html">EsriCo.ArcGISRuntime.Xamarin.Forms.UI</a></h6>
+  <h6><strong>Assembly</strong>: EsriCo.ArcGISRuntime.Xamarin.Forms.dll</h6>
+  <h5 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[XamlCompilation(XamlCompilationOptions.Compile)]
+[XamlFilePath(&quot;UI\\PanelView.xaml&quot;)]
+public class PanelView : ContentView, INotifyPropertyChanged, IDynamicResourceHandler, IElement, INameScope, INavigationProxy, IStyleSelectable, IAnimatable, IResourcesProvider, IStyleElement, IFlowDirectionController, IPropertyPropagationController, IVisualController, ITabStopElement, IStylable, IViewController, IVisualElementController, IElementController, IGestureController, IGestureRecognizers, ILayout, ILayoutController, IPaddingElement, IControlTemplated</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView__ctor.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs/#L489">View Source</a>
+  </span>
+  <a id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView__ctor_" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.#ctor*"></a>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView__ctor" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.#ctor">PanelView()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PanelView()</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_BodyBackgroundColorProperty.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.BodyBackgroundColorProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs/#L382">View Source</a>
+  </span>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_BodyBackgroundColorProperty" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.BodyBackgroundColorProperty">BodyBackgroundColorProperty</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly BindableProperty BodyBackgroundColorProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.bindableproperty">BindableProperty</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_BodyBorderColorProperty.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.BodyBorderColorProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs/#L364">View Source</a>
+  </span>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_BodyBorderColorProperty" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.BodyBorderColorProperty">BodyBorderColorProperty</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly BindableProperty BodyBorderColorProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.bindableproperty">BindableProperty</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_BodyContentProperty.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.BodyContentProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs/#L235">View Source</a>
+  </span>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_BodyContentProperty" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.BodyContentProperty">BodyContentProperty</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly BindableProperty BodyContentProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.bindableproperty">BindableProperty</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_CloseButtonImageProperty.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.CloseButtonImageProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs/#L51">View Source</a>
+  </span>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_CloseButtonImageProperty" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.CloseButtonImageProperty">CloseButtonImageProperty</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly BindableProperty CloseButtonImageProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.bindableproperty">BindableProperty</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_FooterContentProperty.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.FooterContentProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs/#L196">View Source</a>
+  </span>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_FooterContentProperty" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.FooterContentProperty">FooterContentProperty</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly BindableProperty FooterContentProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.bindableproperty">BindableProperty</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_HeaderContentProperty.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.HeaderContentProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs/#L121">View Source</a>
+  </span>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_HeaderContentProperty" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.HeaderContentProperty">HeaderContentProperty</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly BindableProperty HeaderContentProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.bindableproperty">BindableProperty</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_IsFooterVisibleProperty.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.IsFooterVisibleProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs/#L178">View Source</a>
+  </span>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_IsFooterVisibleProperty" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.IsFooterVisibleProperty">IsFooterVisibleProperty</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly BindableProperty IsFooterVisibleProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.bindableproperty">BindableProperty</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_IsHeaderVisibleProperty.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.IsHeaderVisibleProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs/#L160">View Source</a>
+  </span>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_IsHeaderVisibleProperty" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.IsHeaderVisibleProperty">IsHeaderVisibleProperty</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly BindableProperty IsHeaderVisibleProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.bindableproperty">BindableProperty</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_IsManagedProperty.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.IsManagedProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs/#L20">View Source</a>
+  </span>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_IsManagedProperty" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.IsManagedProperty">IsManagedProperty</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly BindableProperty IsManagedProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.bindableproperty">BindableProperty</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_IsStatusVisibleProperty.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.IsStatusVisibleProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs/#L471">View Source</a>
+  </span>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_IsStatusVisibleProperty" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.IsStatusVisibleProperty">IsStatusVisibleProperty</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly BindableProperty IsStatusVisibleProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.bindableproperty">BindableProperty</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_IsTitleVisibleProperty.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.IsTitleVisibleProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs/#L346">View Source</a>
+  </span>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_IsTitleVisibleProperty" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.IsTitleVisibleProperty">IsTitleVisibleProperty</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly BindableProperty IsTitleVisibleProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.bindableproperty">BindableProperty</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_IsVisibleProperty.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.IsVisibleProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs/#L68">View Source</a>
+  </span>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_IsVisibleProperty" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.IsVisibleProperty">IsVisibleProperty</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly BindableProperty IsVisibleProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.bindableproperty">BindableProperty</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_StatusBackgroundColorProperty.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.StatusBackgroundColorProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs/#L400">View Source</a>
+  </span>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_StatusBackgroundColorProperty" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.StatusBackgroundColorProperty">StatusBackgroundColorProperty</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly BindableProperty StatusBackgroundColorProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.bindableproperty">BindableProperty</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_StatusBorderColorProperty.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.StatusBorderColorProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs/#L418">View Source</a>
+  </span>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_StatusBorderColorProperty" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.StatusBorderColorProperty">StatusBorderColorProperty</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly BindableProperty StatusBorderColorProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.bindableproperty">BindableProperty</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_StatusTextColorProperty.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.StatusTextColorProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs/#L436">View Source</a>
+  </span>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_StatusTextColorProperty" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.StatusTextColorProperty">StatusTextColorProperty</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly BindableProperty StatusTextColorProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.bindableproperty">BindableProperty</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_StatusTextProperty.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.StatusTextProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs/#L454">View Source</a>
+  </span>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_StatusTextProperty" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.StatusTextProperty">StatusTextProperty</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly BindableProperty StatusTextProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.bindableproperty">BindableProperty</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_TitleBackgroundColorProperty.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.TitleBackgroundColorProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs/#L293">View Source</a>
+  </span>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_TitleBackgroundColorProperty" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.TitleBackgroundColorProperty">TitleBackgroundColorProperty</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly BindableProperty TitleBackgroundColorProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.bindableproperty">BindableProperty</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_TitleBorderColorProperty.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.TitleBorderColorProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs/#L274">View Source</a>
+  </span>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_TitleBorderColorProperty" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.TitleBorderColorProperty">TitleBorderColorProperty</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly BindableProperty TitleBorderColorProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.bindableproperty">BindableProperty</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_TitleTextColorProperty.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.TitleTextColorProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs/#L311">View Source</a>
+  </span>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_TitleTextColorProperty" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.TitleTextColorProperty">TitleTextColorProperty</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly BindableProperty TitleTextColorProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.bindableproperty">BindableProperty</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_TitleTextProperty.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.TitleTextProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs/#L329">View Source</a>
+  </span>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_TitleTextProperty" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.TitleTextProperty">TitleTextProperty</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly BindableProperty TitleTextProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.bindableproperty">BindableProperty</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_BodyBackgroundColor.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.BodyBackgroundColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs/#L391">View Source</a>
+  </span>
+  <a id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_BodyBackgroundColor_" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.BodyBackgroundColor*"></a>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_BodyBackgroundColor" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.BodyBackgroundColor">BodyBackgroundColor</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color BodyBackgroundColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.color">Color</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_BodyBorderColor.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.BodyBorderColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs/#L373">View Source</a>
+  </span>
+  <a id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_BodyBorderColor_" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.BodyBorderColor*"></a>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_BodyBorderColor" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.BodyBorderColor">BodyBorderColor</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color BodyBorderColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.color">Color</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_BodyContent.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.BodyContent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs/#L244">View Source</a>
+  </span>
+  <a id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_BodyContent_" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.BodyContent*"></a>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_BodyContent" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.BodyContent">BodyContent</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public View BodyContent { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.view">View</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_CloseButtonImage.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.CloseButtonImage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs/#L59">View Source</a>
+  </span>
+  <a id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_CloseButtonImage_" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.CloseButtonImage*"></a>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_CloseButtonImage" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.CloseButtonImage">CloseButtonImage</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImageSource CloseButtonImage { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.imagesource">ImageSource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_FooterContent.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.FooterContent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs/#L205">View Source</a>
+  </span>
+  <a id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_FooterContent_" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.FooterContent*"></a>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_FooterContent" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.FooterContent">FooterContent</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public View FooterContent { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.view">View</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_HeaderContent.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.HeaderContent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs/#L130">View Source</a>
+  </span>
+  <a id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_HeaderContent_" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.HeaderContent*"></a>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_HeaderContent" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.HeaderContent">HeaderContent</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public View HeaderContent { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.view">View</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_IsFooterVisible.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.IsFooterVisible%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs/#L187">View Source</a>
+  </span>
+  <a id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_IsFooterVisible_" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.IsFooterVisible*"></a>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_IsFooterVisible" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.IsFooterVisible">IsFooterVisible</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsFooterVisible { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_IsHeaderVisible.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.IsHeaderVisible%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs/#L169">View Source</a>
+  </span>
+  <a id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_IsHeaderVisible_" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.IsHeaderVisible*"></a>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_IsHeaderVisible" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.IsHeaderVisible">IsHeaderVisible</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsHeaderVisible { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_IsManaged.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.IsManaged%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs/#L42">View Source</a>
+  </span>
+  <a id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_IsManaged_" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.IsManaged*"></a>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_IsManaged" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.IsManaged">IsManaged</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsManaged { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_IsStatusVisible.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.IsStatusVisible%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs/#L480">View Source</a>
+  </span>
+  <a id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_IsStatusVisible_" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.IsStatusVisible*"></a>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_IsStatusVisible" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.IsStatusVisible">IsStatusVisible</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsStatusVisible { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_IsTitleVisible.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.IsTitleVisible%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs/#L355">View Source</a>
+  </span>
+  <a id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_IsTitleVisible_" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.IsTitleVisible*"></a>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_IsTitleVisible" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.IsTitleVisible">IsTitleVisible</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsTitleVisible { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_IsVisible.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.IsVisible%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs/#L79">View Source</a>
+  </span>
+  <a id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_IsVisible_" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.IsVisible*"></a>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_IsVisible" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.IsVisible">IsVisible</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsVisible { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_StatusBackgroundColor.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.StatusBackgroundColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs/#L409">View Source</a>
+  </span>
+  <a id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_StatusBackgroundColor_" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.StatusBackgroundColor*"></a>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_StatusBackgroundColor" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.StatusBackgroundColor">StatusBackgroundColor</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color StatusBackgroundColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.color">Color</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_StatusBorderColor.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.StatusBorderColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs/#L427">View Source</a>
+  </span>
+  <a id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_StatusBorderColor_" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.StatusBorderColor*"></a>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_StatusBorderColor" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.StatusBorderColor">StatusBorderColor</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color StatusBorderColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.color">Color</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_StatusText.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.StatusText%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs/#L462">View Source</a>
+  </span>
+  <a id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_StatusText_" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.StatusText*"></a>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_StatusText" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.StatusText">StatusText</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string StatusText { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_StatusTextColor.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.StatusTextColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs/#L445">View Source</a>
+  </span>
+  <a id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_StatusTextColor_" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.StatusTextColor*"></a>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_StatusTextColor" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.StatusTextColor">StatusTextColor</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color StatusTextColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.color">Color</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_TitleBackgroundColor.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.TitleBackgroundColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs/#L302">View Source</a>
+  </span>
+  <a id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_TitleBackgroundColor_" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.TitleBackgroundColor*"></a>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_TitleBackgroundColor" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.TitleBackgroundColor">TitleBackgroundColor</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color TitleBackgroundColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.color">Color</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_TitleBorderColor.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.TitleBorderColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs/#L283">View Source</a>
+  </span>
+  <a id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_TitleBorderColor_" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.TitleBorderColor*"></a>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_TitleBorderColor" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.TitleBorderColor">TitleBorderColor</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color TitleBorderColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.color">Color</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_TitleText.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.TitleText%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs/#L337">View Source</a>
+  </span>
+  <a id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_TitleText_" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.TitleText*"></a>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_TitleText" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.TitleText">TitleText</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string TitleText { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_TitleTextColor.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.TitleTextColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs/#L320">View Source</a>
+  </span>
+  <a id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_TitleTextColor_" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.TitleTextColor*"></a>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_TitleTextColor" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.TitleTextColor">TitleTextColor</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color TitleTextColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.color">Color</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_OnCloseButtonClicked_System_Object_System_EventArgs_.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.OnCloseButtonClicked(System.Object%2CSystem.EventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs/#L507">View Source</a>
+  </span>
+  <a id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_OnCloseButtonClicked_" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.OnCloseButtonClicked*"></a>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_OnCloseButtonClicked_System_Object_System_EventArgs_" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.OnCloseButtonClicked(System.Object,System.EventArgs)">OnCloseButtonClicked(Object, EventArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnCloseButtonClicked(object sender, EventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">sender</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.eventargs">EventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_OnPanelClosed.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.OnPanelClosed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs/#L516">View Source</a>
+  </span>
+  <a id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_OnPanelClosed_" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.OnPanelClosed*"></a>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_OnPanelClosed" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.OnPanelClosed">OnPanelClosed()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnPanelClosed()</code></pre>
+  </div>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_Closed.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.Closed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs/#L15">View Source</a>
+  </span>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_Closed" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.Closed">Closed</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler Closed</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.eventhandler">EventHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged">System.ComponentModel.INotifyPropertyChanged</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.ianimatable">Xamarin.Forms.IAnimatable</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.itabstopelement">Xamarin.Forms.ITabStopElement</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.iviewcontroller">Xamarin.Forms.IViewController</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.ivisualelementcontroller">Xamarin.Forms.IVisualElementController</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.ielementcontroller">Xamarin.Forms.IElementController</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.internals.igesturecontroller">Xamarin.Forms.Internals.IGestureController</a>
+  </div>
+  <div>
+      <span class="xref">Xamarin.Forms.IGestureRecognizers</span>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.ilayout">Xamarin.Forms.ILayout</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.ilayoutcontroller">Xamarin.Forms.ILayoutController</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/obj/Release/netstandard2.0/UI/PanelView.xaml.g.cs/#L16" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,7 +1,7 @@
 {
   "metadata": [
     {
-      "dest": "../docs/output/api",
+      "dest": "../_docs/api",
       "disableDefaultFilter": false,
       "disableGitFeatures": false,
       "properties": { "TargetFramework": "netstandard2.0" },
@@ -11,7 +11,7 @@
           "files": [
             "**.csproj"
           ],
-          "src": "..\\Esrico.ArcGISRuntime.Xamarin.Forms"
+          "src": "../Esrico.ArcGISRuntime.Xamarin.Forms"
         }
       ]
     }
@@ -19,13 +19,14 @@
   "build": {
     "content": [
       {
+        "src": "../_docs/",
         "files": [
           "api/**.yml",
           "api/index.md"
         ]
       },
       {
-        "src": "../docs/",
+        "src": "../_docs/",
         "files": [
           "articles/**.md",
           "articles/**/toc.yml",
@@ -36,7 +37,7 @@
     ],
     "resource": [
       {
-        "src": "../docs/",
+        "src": "../_docs/",
         "files": [
           "images/**"
         ]
@@ -44,7 +45,7 @@
     ],
     "overwrite": [
       {
-        "src": "../docs/",
+        "src": "../_docs/",
         "files": [
           "apidoc/**.md"
         ],
@@ -54,12 +55,12 @@
         ]
       }
     ],
-    "dest": "../docs/output/_site",
+    "dest": "../docs",
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],
     "template": [
       "default",
-      "../docs/template-override"
+      "../_docs/template-override"
     ],
     "xrefService": [ "https://xref.docs.microsoft.com/query?uid={uid}" ],
     "postProcessors": [],

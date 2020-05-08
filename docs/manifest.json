@@ -1,0 +1,740 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/Users/mtorres/source/repos/EsricoXamarinForms/Esrico.ArcGISRuntime.Xamarin.Forms",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../_docs/api/EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.html",
+          "hash": "j5D6I6l/cZcvc596gdPWVQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../_docs/api/EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.CalloutInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.CalloutInfo.html",
+          "hash": "6W0okJFSQWYqRtFrCDmfHg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../_docs/api/EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.DrawingStatusChangedBehavior.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.DrawingStatusChangedBehavior.html",
+          "hash": "GWLZKGaGGNtSNbUqxEzdtQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../_docs/api/EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.IdentifyBehavior.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.IdentifyBehavior.html",
+          "hash": "bvNPJzGfnuGQHCDuYttQdw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../_docs/api/EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.IdentifyGeoElementResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.IdentifyGeoElementResult.html",
+          "hash": "C47/K4sZFJru9suHlBLZDw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../_docs/api/EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.IdentifyGraphicResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.IdentifyGraphicResult.html",
+          "hash": "S3gG9+WTs9zG0dbxVUZ3Sg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../_docs/api/EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.IdentifyResults.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.IdentifyResults.html",
+          "hash": "ZiLxv0bjQFd0tIuSd8E19Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../_docs/api/EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.SetViewpointBehavior.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.SetViewpointBehavior.html",
+          "hash": "A26E3GBMZbnob9l6Td/ycg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../_docs/api/EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ShowCalloutForGeoElementBehavior.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ShowCalloutForGeoElementBehavior.html",
+          "hash": "ubfahKTxWd/Pnev+s+6qQQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../_docs/api/EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.html",
+          "hash": "DJIkNiW0B+eijDda2ckWsg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../_docs/api/EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.html",
+          "hash": "NRBR2v8jiI+PIWM1Jo8LJg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../_docs/api/EsriCo.ArcGISRuntime.Xamarin.Forms.Converters.GeographicCoordinateConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Converters.GeographicCoordinateConverter.html",
+          "hash": "p/Wiv6t4HqoVPyi5J6iZbg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../_docs/api/EsriCo.ArcGISRuntime.Xamarin.Forms.Converters.SymbolToImageConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Converters.SymbolToImageConverter.html",
+          "hash": "BAlfGCVkn4hL/WumnKPh/A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../_docs/api/EsriCo.ArcGISRuntime.Xamarin.Forms.Converters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Converters.html",
+          "hash": "EPHXymZKOX7zaYBU992gKg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../_docs/api/EsriCo.ArcGISRuntime.Xamarin.Forms.Extensions.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Extensions.Extensions.html",
+          "hash": "CfI/he41siX38FQI92Ji/g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../_docs/api/EsriCo.ArcGISRuntime.Xamarin.Forms.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Extensions.html",
+          "hash": "M4Rdotc+aUr2UR+qshrOjg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../_docs/api/EsriCo.ArcGISRuntime.Xamarin.Forms.FormsModule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.FormsModule.html",
+          "hash": "euR/5ZQxWB1nP1lqtiKn6A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../_docs/api/EsriCo.ArcGISRuntime.Xamarin.Forms.LocalizeExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.LocalizeExtension.html",
+          "hash": "28mbzazdhBFXFGeQtCtRBg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../_docs/api/EsriCo.ArcGISRuntime.Xamarin.Forms.Model.LayerInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Model.LayerInfo.html",
+          "hash": "9TMjUhQxn+emYNqlDWTzQw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../_docs/api/EsriCo.ArcGISRuntime.Xamarin.Forms.Model.LayerInfos.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Model.LayerInfos.html",
+          "hash": "LeuZFiHKCynk7EoA3iSE+Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../_docs/api/EsriCo.ArcGISRuntime.Xamarin.Forms.Model.LegendImageInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Model.LegendImageInfo.html",
+          "hash": "kOsrAhm+SyzXBtiFD3oXsw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../_docs/api/EsriCo.ArcGISRuntime.Xamarin.Forms.Model.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Model.html",
+          "hash": "z3aru92Rwencny7IR/gDUg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../_docs/api/EsriCo.ArcGISRuntime.Xamarin.Forms.ResourceDictionary.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.ResourceDictionary.html",
+          "hash": "xdevcUKGG8NZmVbixW3aZw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../_docs/api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.html",
+          "hash": "sJfgN1h1FtUB3hKVFy0qMA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../_docs/api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.DownloadReplicaErrorResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.DownloadReplicaErrorResult.html",
+          "hash": "Ec/ZArvZtozZVq8WwH7Z/g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../_docs/api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.DownloadReplicaResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.DownloadReplicaResult.html",
+          "hash": "+Dgooezmz6jnOWwTZnEIew=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../_docs/api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.JobChangedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.JobChangedEventArgs.html",
+          "hash": "T66MJcFirUBABlgBaExicw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../_docs/api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.html",
+          "hash": "+AKSrAvMhpqLM12qE2LLIg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../_docs/api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ProgressChangedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ProgressChangedEventArgs.html",
+          "hash": "zcnj4sT+taT5O4dWBKdliQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../_docs/api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.html",
+          "hash": "IJHLLwHcPjKjznLqUhW/mw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../_docs/api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.SyncReplicaErrorResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.SyncReplicaErrorResult.html",
+          "hash": "RlFfJBw5yEzu2KFhJLShYw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../_docs/api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.SynchronizeReplicaResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.SynchronizeReplicaResult.html",
+          "hash": "68JTSI91of7DoDDykajMCQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../_docs/api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ValidateReplicaResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ValidateReplicaResult.html",
+          "hash": "Hhr2Q6RHa9N7bwOgTTS97g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../_docs/api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.html",
+          "hash": "A3d9BbAcU8xhqVSF02zWHQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../_docs/api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawTextToolDialog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawTextToolDialog.html",
+          "hash": "XrqCZ6V9VArR0Fgs7/9Tyw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../_docs/api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.html",
+          "hash": "CWVUH7fPhU0QlRL31ohzHA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../_docs/api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawingStatusView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawingStatusView.html",
+          "hash": "lygbP1ZI+DUivejoOs9URA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../_docs/api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.IdentifyView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.IdentifyView.html",
+          "hash": "5aS0iY9Kk/xUgyl9eh5fSQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../_docs/api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.LayerListPanelView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.LayerListPanelView.html",
+          "hash": "sMw2Z5EW/R4neabAujUL+g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../_docs/api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.LegendView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.LegendView.html",
+          "hash": "QT6Is4beR9gDG/Zh8DAiZA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../_docs/api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.ListPanelView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.ListPanelView.html",
+          "hash": "j4ElnloRvYzL5xAUu4qXMw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../_docs/api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.LogInView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.LogInView.html",
+          "hash": "9ohvV9zCrYUhh0G5QlSYtA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../_docs/api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.MeasurementBarView.UnitItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.MeasurementBarView.UnitItem.html",
+          "hash": "S92yKUmSUUguqNzqH4WAkw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../_docs/api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.MeasurementBarView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.MeasurementBarView.html",
+          "hash": "zgC5hCaQL6szbMfjd1seWw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../_docs/api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.ModalPanelView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.ModalPanelView.html",
+          "hash": "eN9wJTAo7Kb2tkL5kF+q1A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../_docs/api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.NavigationBarView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.NavigationBarView.html",
+          "hash": "GAI5hJwCPWQhzFVI7OVLPg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../_docs/api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.html",
+          "hash": "NOc/js2yKmqTw/5Andz69Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../_docs/api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PortalConnectionsView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PortalConnectionsView.html",
+          "hash": "5ql1srzQo+ZmSBLa0Qwj5Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../_docs/api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PortalWebMapsView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PortalWebMapsView.html",
+          "hash": "tSNdWqL3XasUVqbJYNiezQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../_docs/api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.ProcessingView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.ProcessingView.html",
+          "hash": "e9XWtzWaOR3D6gJXf6yocg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../_docs/api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.TableOfContentsView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.TableOfContentsView.html",
+          "hash": "ffQ4wCnXueJhQFZOgLmUIA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../_docs/api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.html",
+          "hash": "Dpgy0SwT+Hjj0/K3gTXDTQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../_docs/api/EsriCo.ArcGISRuntime.Xamarin.Forms.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.html",
+          "hash": "NdzlCg+Dy/b3dhjZqlMlVA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "../_docs/api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "c6lV3v/VdNKtB8anT/s7Vw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "../_docs/articles/myarticle.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/myarticle.html",
+          "hash": "Zt2mShpz4/h2Ogph1C826Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "../_docs/features.md",
+      "output": {
+        ".html": {
+          "relative_path": "features.html",
+          "hash": "jYCvSGfgn4Bd8LZORDliwg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "../_docs/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "3p8Af/LZI16y3SS5lOcyLA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Disable incremental build by force rebuild option.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "ForceRebuild"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 53,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: it's disabled.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
