@@ -1,0 +1,79 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/Users/mtorres/source/repos/EsricoXamarinForms/Esrico.ArcGISRuntime.Xamarin.Forms",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Conceptual",
+      "source_relative_path": "../_docs/articles/myarticle.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/myarticle.html",
+          "hash": "Zt2mShpz4/h2Ogph1C826Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "../_docs/features.md",
+      "output": {
+        ".html": {
+          "relative_path": "features.html",
+          "hash": "jYCvSGfgn4Bd8LZORDliwg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "../_docs/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "3p8Af/LZI16y3SS5lOcyLA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Disable incremental build by force rebuild option.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "ForceRebuild"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: it's disabled.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
