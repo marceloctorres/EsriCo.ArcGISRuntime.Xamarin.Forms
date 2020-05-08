@@ -1,0 +1,1037 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DrawToolBarView
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DrawToolBarView
+   ">
+    <meta name="generator" content="docfx 2.52.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView">
+  
+  
+  <h1 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView" class="text-break">Class DrawToolBarView
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.bindableobject">BindableObject</a></div>
+    <div class="level2"><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.element">Element</a></div>
+    <div class="level3"><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.navigableelement">NavigableElement</a></div>
+    <div class="level4"><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.visualelement">VisualElement</a></div>
+    <div class="level5"><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.view">View</a></div>
+    <div class="level6"><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.layout">Layout</a></div>
+    <div class="level7"><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.templatedview">TemplatedView</a></div>
+    <div class="level8"><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.contentview">ContentView</a></div>
+    <div class="level9"><span class="xref">DrawToolBarView</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged">INotifyPropertyChanged</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.ianimatable">IAnimatable</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.itabstopelement">ITabStopElement</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.iviewcontroller">IViewController</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.ivisualelementcontroller">IVisualElementController</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.ielementcontroller">IElementController</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.internals.igesturecontroller">IGestureController</a></div>
+    <div><span class="xref">Xamarin.Forms.IGestureRecognizers</span></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.ilayout">ILayout</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.ilayoutcontroller">ILayoutController</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.html">EsriCo.ArcGISRuntime.Xamarin.Forms.UI</a></h6>
+  <h6><strong>Assembly</strong>: EsriCo.ArcGISRuntime.Xamarin.Forms.dll</h6>
+  <h5 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[XamlCompilation(XamlCompilationOptions.Compile)]
+[XamlFilePath(&quot;UI\\DrawToolBarView.xaml&quot;)]
+public class DrawToolBarView : ContentView, INotifyPropertyChanged, IDynamicResourceHandler, IElement, INameScope, INavigationProxy, IStyleSelectable, IAnimatable, IResourcesProvider, IStyleElement, IFlowDirectionController, IPropertyPropagationController, IVisualController, ITabStopElement, IStylable, IViewController, IVisualElementController, IElementController, IGestureController, IGestureRecognizers, ILayout, ILayoutController, IPaddingElement, IControlTemplated</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView__ctor.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/DrawToolBarView.xaml.cs/#L502">View Source</a>
+  </span>
+  <a id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView__ctor_" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.#ctor*"></a>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView__ctor" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.#ctor">DrawToolBarView()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DrawToolBarView()</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_ColorProperty.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.ColorProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/DrawToolBarView.xaml.cs/#L34">View Source</a>
+  </span>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_ColorProperty" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.ColorProperty">ColorProperty</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly BindableProperty ColorProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.bindableproperty">BindableProperty</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_DrawEraseToolImageProperty.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.DrawEraseToolImageProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/DrawToolBarView.xaml.cs/#L345">View Source</a>
+  </span>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_DrawEraseToolImageProperty" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.DrawEraseToolImageProperty">DrawEraseToolImageProperty</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly BindableProperty DrawEraseToolImageProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.bindableproperty">BindableProperty</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_DrawFreehandLineToolImageProperty.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.DrawFreehandLineToolImageProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/DrawToolBarView.xaml.cs/#L379">View Source</a>
+  </span>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_DrawFreehandLineToolImageProperty" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.DrawFreehandLineToolImageProperty">DrawFreehandLineToolImageProperty</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly BindableProperty DrawFreehandLineToolImageProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.bindableproperty">BindableProperty</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_DrawNoneToolImageProperty.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.DrawNoneToolImageProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/DrawToolBarView.xaml.cs/#L447">View Source</a>
+  </span>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_DrawNoneToolImageProperty" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.DrawNoneToolImageProperty">DrawNoneToolImageProperty</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly BindableProperty DrawNoneToolImageProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.bindableproperty">BindableProperty</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_DrawPointToolImageProperty.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.DrawPointToolImageProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/DrawToolBarView.xaml.cs/#L209">View Source</a>
+  </span>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_DrawPointToolImageProperty" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.DrawPointToolImageProperty">DrawPointToolImageProperty</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly BindableProperty DrawPointToolImageProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.bindableproperty">BindableProperty</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_DrawPolygonToolImageProperty.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.DrawPolygonToolImageProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/DrawToolBarView.xaml.cs/#L277">View Source</a>
+  </span>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_DrawPolygonToolImageProperty" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.DrawPolygonToolImageProperty">DrawPolygonToolImageProperty</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly BindableProperty DrawPolygonToolImageProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.bindableproperty">BindableProperty</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_DrawPolylineToolImageProperty.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.DrawPolylineToolImageProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/DrawToolBarView.xaml.cs/#L243">View Source</a>
+  </span>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_DrawPolylineToolImageProperty" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.DrawPolylineToolImageProperty">DrawPolylineToolImageProperty</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly BindableProperty DrawPolylineToolImageProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.bindableproperty">BindableProperty</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_DrawRectangleToolImageProperty.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.DrawRectangleToolImageProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/DrawToolBarView.xaml.cs/#L311">View Source</a>
+  </span>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_DrawRectangleToolImageProperty" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.DrawRectangleToolImageProperty">DrawRectangleToolImageProperty</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly BindableProperty DrawRectangleToolImageProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.bindableproperty">BindableProperty</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_DrawTextToolImageProperty.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.DrawTextToolImageProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/DrawToolBarView.xaml.cs/#L413">View Source</a>
+  </span>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_DrawTextToolImageProperty" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.DrawTextToolImageProperty">DrawTextToolImageProperty</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly BindableProperty DrawTextToolImageProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.bindableproperty">BindableProperty</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_IsDrawingProperty.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.IsDrawingProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/DrawToolBarView.xaml.cs/#L121">View Source</a>
+  </span>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_IsDrawingProperty" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.IsDrawingProperty">IsDrawingProperty</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly BindableProperty IsDrawingProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.bindableproperty">BindableProperty</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_MapViewProperty.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.MapViewProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/DrawToolBarView.xaml.cs/#L140">View Source</a>
+  </span>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_MapViewProperty" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.MapViewProperty">MapViewProperty</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly BindableProperty MapViewProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.bindableproperty">BindableProperty</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_OrientationProperty.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.OrientationProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/DrawToolBarView.xaml.cs/#L70">View Source</a>
+  </span>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_OrientationProperty" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.OrientationProperty">OrientationProperty</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly BindableProperty OrientationProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.bindableproperty">BindableProperty</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_Color.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.Color%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/DrawToolBarView.xaml.cs/#L44">View Source</a>
+  </span>
+  <a id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_Color_" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.Color*"></a>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_Color" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.Color">Color</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color Color { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.color">Color</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_Dialog.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.Dialog%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/DrawToolBarView.xaml.cs/#L487">View Source</a>
+  </span>
+  <a id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_Dialog_" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.Dialog*"></a>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_Dialog" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.Dialog">Dialog</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ModalPanelView Dialog { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.ModalPanelView.html">ModalPanelView</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_DrawEraseToolImage.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.DrawEraseToolImage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/DrawToolBarView.xaml.cs/#L354">View Source</a>
+  </span>
+  <a id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_DrawEraseToolImage_" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.DrawEraseToolImage*"></a>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_DrawEraseToolImage" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.DrawEraseToolImage">DrawEraseToolImage</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImageSource DrawEraseToolImage { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.imagesource">ImageSource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_DrawFreehandLineToolImage.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.DrawFreehandLineToolImage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/DrawToolBarView.xaml.cs/#L388">View Source</a>
+  </span>
+  <a id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_DrawFreehandLineToolImage_" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.DrawFreehandLineToolImage*"></a>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_DrawFreehandLineToolImage" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.DrawFreehandLineToolImage">DrawFreehandLineToolImage</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImageSource DrawFreehandLineToolImage { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.imagesource">ImageSource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_DrawNoneToolImage.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.DrawNoneToolImage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/DrawToolBarView.xaml.cs/#L456">View Source</a>
+  </span>
+  <a id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_DrawNoneToolImage_" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.DrawNoneToolImage*"></a>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_DrawNoneToolImage" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.DrawNoneToolImage">DrawNoneToolImage</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImageSource DrawNoneToolImage { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.imagesource">ImageSource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_DrawPointToolImage.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.DrawPointToolImage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/DrawToolBarView.xaml.cs/#L218">View Source</a>
+  </span>
+  <a id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_DrawPointToolImage_" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.DrawPointToolImage*"></a>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_DrawPointToolImage" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.DrawPointToolImage">DrawPointToolImage</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImageSource DrawPointToolImage { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.imagesource">ImageSource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_DrawPolygonToolImage.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.DrawPolygonToolImage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/DrawToolBarView.xaml.cs/#L286">View Source</a>
+  </span>
+  <a id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_DrawPolygonToolImage_" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.DrawPolygonToolImage*"></a>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_DrawPolygonToolImage" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.DrawPolygonToolImage">DrawPolygonToolImage</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImageSource DrawPolygonToolImage { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.imagesource">ImageSource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_DrawPolylineToolImage.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.DrawPolylineToolImage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/DrawToolBarView.xaml.cs/#L252">View Source</a>
+  </span>
+  <a id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_DrawPolylineToolImage_" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.DrawPolylineToolImage*"></a>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_DrawPolylineToolImage" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.DrawPolylineToolImage">DrawPolylineToolImage</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImageSource DrawPolylineToolImage { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.imagesource">ImageSource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_DrawRectangleToolImage.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.DrawRectangleToolImage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/DrawToolBarView.xaml.cs/#L320">View Source</a>
+  </span>
+  <a id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_DrawRectangleToolImage_" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.DrawRectangleToolImage*"></a>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_DrawRectangleToolImage" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.DrawRectangleToolImage">DrawRectangleToolImage</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImageSource DrawRectangleToolImage { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.imagesource">ImageSource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_DrawTextToolImage.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.DrawTextToolImage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/DrawToolBarView.xaml.cs/#L422">View Source</a>
+  </span>
+  <a id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_DrawTextToolImage_" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.DrawTextToolImage*"></a>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_DrawTextToolImage" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.DrawTextToolImage">DrawTextToolImage</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImageSource DrawTextToolImage { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.imagesource">ImageSource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_Geometry.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.Geometry%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/DrawToolBarView.xaml.cs/#L497">View Source</a>
+  </span>
+  <a id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_Geometry_" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.Geometry*"></a>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_Geometry" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.Geometry">Geometry</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Geometry Geometry { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Esri.ArcGISRuntime.Geometry.Geometry</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_IsDrawing.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.IsDrawing%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/DrawToolBarView.xaml.cs/#L131">View Source</a>
+  </span>
+  <a id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_IsDrawing_" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.IsDrawing*"></a>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_IsDrawing" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.IsDrawing">IsDrawing</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDrawing { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_MapView.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.MapView%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/DrawToolBarView.xaml.cs/#L149">View Source</a>
+  </span>
+  <a id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_MapView_" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.MapView*"></a>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_MapView" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.MapView">MapView</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MapView MapView { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Esri.ArcGISRuntime.Xamarin.Forms.MapView</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_OKCommand.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.OKCommand%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/DrawToolBarView.xaml.cs/#L482">View Source</a>
+  </span>
+  <a id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_OKCommand_" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.OKCommand*"></a>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_OKCommand" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.OKCommand">OKCommand</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ICommand OKCommand { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.windows.input.icommand">ICommand</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_Orientation.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.Orientation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/DrawToolBarView.xaml.cs/#L112">View Source</a>
+  </span>
+  <a id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_Orientation_" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.Orientation*"></a>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_Orientation" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.Orientation">Orientation</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StackOrientation Orientation { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.stackorientation">StackOrientation</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_CheckMap_Esri_ArcGISRuntime_Xamarin_Forms_MapView_.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.CheckMap(Esri.ArcGISRuntime.Xamarin.Forms.MapView)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/UI/DrawToolBarView.xaml.cs/#L187">View Source</a>
+  </span>
+  <a id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_CheckMap_" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.CheckMap*"></a>
+  <h4 id="EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView_CheckMap_Esri_ArcGISRuntime_Xamarin_Forms_MapView_" data-uid="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.CheckMap(Esri.ArcGISRuntime.Xamarin.Forms.MapView)">CheckMap(MapView)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CheckMap(MapView mapView)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Esri.ArcGISRuntime.Xamarin.Forms.MapView</span></td>
+        <td><span class="parametername">mapView</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged">System.ComponentModel.INotifyPropertyChanged</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.ianimatable">Xamarin.Forms.IAnimatable</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.itabstopelement">Xamarin.Forms.ITabStopElement</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.iviewcontroller">Xamarin.Forms.IViewController</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.ivisualelementcontroller">Xamarin.Forms.IVisualElementController</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.ielementcontroller">Xamarin.Forms.IElementController</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.internals.igesturecontroller">Xamarin.Forms.Internals.IGestureController</a>
+  </div>
+  <div>
+      <span class="xref">Xamarin.Forms.IGestureRecognizers</span>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.ilayout">Xamarin.Forms.ILayout</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/xamarin.forms.ilayoutcontroller">Xamarin.Forms.ILayoutController</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/new/devbranch/apiSpec/new?filename=EsriCo_ArcGISRuntime_Xamarin_Forms_UI_DrawToolBarView.md&amp;value=---%0Auid%3A%20EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms/blob/devbranch/Esrico.ArcGISRuntime.Xamarin.Forms/obj/Release/netstandard2.0/UI/DrawToolBarView.xaml.g.cs/#L16" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

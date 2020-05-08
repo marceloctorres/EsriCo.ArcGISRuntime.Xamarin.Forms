@@ -1,0 +1,1666 @@
+### YamlMime:ManagedReference
+items:
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.ResourceDictionary
+  commentId: T:EsriCo.ArcGISRuntime.Xamarin.Forms.ResourceDictionary
+  id: ResourceDictionary
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms
+  children:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.ResourceDictionary.#ctor
+  langs:
+  - csharp
+  - vb
+  name: ResourceDictionary
+  nameWithType: ResourceDictionary
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.ResourceDictionary
+  type: Class
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/obj/Release/netstandard2.0/ResourceDictionary.xaml.g.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: ResourceDictionary
+    path: obj/Release/netstandard2.0/ResourceDictionary.xaml.g.cs
+    startLine: 15
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms
+  syntax:
+    content: >-
+      [XamlCompilation(XamlCompilationOptions.Compile)]
+
+      [XamlFilePath("ResourceDictionary.xaml")]
+
+      public class ResourceDictionary : ResourceDictionary, IResourceDictionary, IDictionary<string, object>, ICollection<KeyValuePair<string, object>>, IEnumerable<KeyValuePair<string, object>>, IEnumerable
+    content.vb: >-
+      <XamlCompilation(XamlCompilationOptions.Compile)>
+
+      <XamlFilePath("ResourceDictionary.xaml")>
+
+      Public Class ResourceDictionary
+          Inherits ResourceDictionary
+          Implements IResourceDictionary, IDictionary(Of String, Object), ICollection(Of KeyValuePair(Of String, Object)), IEnumerable(Of KeyValuePair(Of String, Object)), IEnumerable
+  inheritance:
+  - System.Object
+  - Xamarin.Forms.ResourceDictionary
+  implements:
+  - System.Collections.Generic.IDictionary{System.String,System.Object}
+  - System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,System.Object}}
+  - System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Object}}
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - Xamarin.Forms.ResourceDictionary.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String,System#Object}}#Add(System.Collections.Generic.KeyValuePair{System.String,System.Object})
+  - Xamarin.Forms.ResourceDictionary.Clear
+  - Xamarin.Forms.ResourceDictionary.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String,System#Object}}#Contains(System.Collections.Generic.KeyValuePair{System.String,System.Object})
+  - Xamarin.Forms.ResourceDictionary.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String,System#Object}}#CopyTo(System.Collections.Generic.KeyValuePair{System.String,System.Object}[],System.Int32)
+  - Xamarin.Forms.ResourceDictionary.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String,System#Object}}#Remove(System.Collections.Generic.KeyValuePair{System.String,System.Object})
+  - Xamarin.Forms.ResourceDictionary.Add(System.String,System.Object)
+  - Xamarin.Forms.ResourceDictionary.ContainsKey(System.String)
+  - Xamarin.Forms.ResourceDictionary.Remove(System.String)
+  - Xamarin.Forms.ResourceDictionary.System#Collections#IEnumerable#GetEnumerator
+  - Xamarin.Forms.ResourceDictionary.GetEnumerator
+  - Xamarin.Forms.ResourceDictionary.TryGetValue(System.String,System.Object@)
+  - Xamarin.Forms.ResourceDictionary.Add(Xamarin.Forms.Style)
+  - Xamarin.Forms.ResourceDictionary.Add(Xamarin.Forms.ResourceDictionary)
+  - Xamarin.Forms.ResourceDictionary.Add(Xamarin.Forms.StyleSheets.StyleSheet)
+  - Xamarin.Forms.ResourceDictionary.Source
+  - Xamarin.Forms.ResourceDictionary.MergedDictionaries
+  - Xamarin.Forms.ResourceDictionary.Count
+  - Xamarin.Forms.ResourceDictionary.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String,System#Object}}#IsReadOnly
+  - Xamarin.Forms.ResourceDictionary.Item(System.String)
+  - Xamarin.Forms.ResourceDictionary.Keys
+  - Xamarin.Forms.ResourceDictionary.Values
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: Xamarin.Forms.Xaml.XamlCompilationAttribute
+    ctor: Xamarin.Forms.Xaml.XamlCompilationAttribute.#ctor(Xamarin.Forms.Xaml.XamlCompilationOptions)
+    arguments:
+    - type: Xamarin.Forms.Xaml.XamlCompilationOptions
+      value: 2
+  - type: Xamarin.Forms.Xaml.XamlFilePathAttribute
+    ctor: Xamarin.Forms.Xaml.XamlFilePathAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: ResourceDictionary.xaml
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.ResourceDictionary.#ctor
+  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.ResourceDictionary.#ctor
+  id: '#ctor'
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.ResourceDictionary
+  langs:
+  - csharp
+  - vb
+  name: ResourceDictionary()
+  nameWithType: ResourceDictionary.ResourceDictionary()
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.ResourceDictionary.ResourceDictionary()
+  type: Constructor
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/ResourceDictionary.xaml.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: .ctor
+    path: ResourceDictionary.xaml.cs
+    startLine: 7
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms
+  syntax:
+    content: public ResourceDictionary()
+    content.vb: Public Sub New
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.ResourceDictionary.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms
+  commentId: N:EsriCo.ArcGISRuntime.Xamarin.Forms
+  name: EsriCo.ArcGISRuntime.Xamarin.Forms
+  nameWithType: EsriCo.ArcGISRuntime.Xamarin.Forms
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Xamarin.Forms.ResourceDictionary
+  commentId: T:Xamarin.Forms.ResourceDictionary
+  parent: Xamarin.Forms
+  isExternal: true
+  name: ResourceDictionary
+  nameWithType: ResourceDictionary
+  fullName: Xamarin.Forms.ResourceDictionary
+- uid: System.Collections.Generic.IDictionary{System.String,System.Object}
+  commentId: T:System.Collections.Generic.IDictionary{System.String,System.Object}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  name: IDictionary<String, Object>
+  nameWithType: IDictionary<String, Object>
+  fullName: System.Collections.Generic.IDictionary<System.String, System.Object>
+  nameWithType.vb: IDictionary(Of String, Object)
+  fullName.vb: System.Collections.Generic.IDictionary(Of System.String, System.Object)
+  name.vb: IDictionary(Of String, Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,System.Object}}
+  commentId: T:System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,System.Object}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ICollection`1
+  name: ICollection<KeyValuePair<String, Object>>
+  nameWithType: ICollection<KeyValuePair<String, Object>>
+  fullName: System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String, System.Object>>
+  nameWithType.vb: ICollection(Of KeyValuePair(Of String, Object))
+  fullName.vb: System.Collections.Generic.ICollection(Of System.Collections.Generic.KeyValuePair(Of System.String, System.Object))
+  name.vb: ICollection(Of KeyValuePair(Of String, Object))
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    nameWithType: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    nameWithType: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Object}}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Object}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<KeyValuePair<String, Object>>
+  nameWithType: IEnumerable<KeyValuePair<String, Object>>
+  fullName: System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<System.String, System.Object>>
+  nameWithType.vb: IEnumerable(Of KeyValuePair(Of String, Object))
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Collections.Generic.KeyValuePair(Of System.String, System.Object))
+  name.vb: IEnumerable(Of KeyValuePair(Of String, Object))
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    nameWithType: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    nameWithType: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.IEnumerable
+  commentId: T:System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.IEnumerable
+- uid: Xamarin.Forms.ResourceDictionary.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String,System#Object}}#Add(System.Collections.Generic.KeyValuePair{System.String,System.Object})
+  commentId: M:Xamarin.Forms.ResourceDictionary.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String,System#Object}}#Add(System.Collections.Generic.KeyValuePair{System.String,System.Object})
+  parent: Xamarin.Forms.ResourceDictionary
+  isExternal: true
+  name: ICollection<KeyValuePair<String, Object>>.Add(KeyValuePair<String, Object>)
+  nameWithType: ResourceDictionary.ICollection<KeyValuePair<String, Object>>.Add(KeyValuePair<String, Object>)
+  fullName: Xamarin.Forms.ResourceDictionary.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String, System.Object>>.Add(System.Collections.Generic.KeyValuePair<System.String, System.Object>)
+  nameWithType.vb: ResourceDictionary.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.Add(KeyValuePair(Of String, Object))
+  fullName.vb: Xamarin.Forms.ResourceDictionary.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.Add(System.Collections.Generic.KeyValuePair(Of System.String, System.Object))
+  name.vb: System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.Add(KeyValuePair(Of String, Object))
+  spec.csharp:
+  - uid: Xamarin.Forms.ResourceDictionary.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String,System#Object}}#Add(System.Collections.Generic.KeyValuePair{System.String,System.Object})
+    name: ICollection<KeyValuePair<String, Object>>.Add
+    nameWithType: ResourceDictionary.ICollection<KeyValuePair<String, Object>>.Add
+    fullName: Xamarin.Forms.ResourceDictionary.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String, System.Object>>.Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    nameWithType: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Xamarin.Forms.ResourceDictionary.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String,System#Object}}#Add(System.Collections.Generic.KeyValuePair{System.String,System.Object})
+    name: System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.Add
+    nameWithType: ResourceDictionary.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.Add
+    fullName: Xamarin.Forms.ResourceDictionary.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    nameWithType: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Xamarin.Forms.ResourceDictionary.Clear
+  commentId: M:Xamarin.Forms.ResourceDictionary.Clear
+  parent: Xamarin.Forms.ResourceDictionary
+  isExternal: true
+  name: Clear()
+  nameWithType: ResourceDictionary.Clear()
+  fullName: Xamarin.Forms.ResourceDictionary.Clear()
+  spec.csharp:
+  - uid: Xamarin.Forms.ResourceDictionary.Clear
+    name: Clear
+    nameWithType: ResourceDictionary.Clear
+    fullName: Xamarin.Forms.ResourceDictionary.Clear
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Xamarin.Forms.ResourceDictionary.Clear
+    name: Clear
+    nameWithType: ResourceDictionary.Clear
+    fullName: Xamarin.Forms.ResourceDictionary.Clear
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Xamarin.Forms.ResourceDictionary.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String,System#Object}}#Contains(System.Collections.Generic.KeyValuePair{System.String,System.Object})
+  commentId: M:Xamarin.Forms.ResourceDictionary.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String,System#Object}}#Contains(System.Collections.Generic.KeyValuePair{System.String,System.Object})
+  parent: Xamarin.Forms.ResourceDictionary
+  isExternal: true
+  name: ICollection<KeyValuePair<String, Object>>.Contains(KeyValuePair<String, Object>)
+  nameWithType: ResourceDictionary.ICollection<KeyValuePair<String, Object>>.Contains(KeyValuePair<String, Object>)
+  fullName: Xamarin.Forms.ResourceDictionary.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String, System.Object>>.Contains(System.Collections.Generic.KeyValuePair<System.String, System.Object>)
+  nameWithType.vb: ResourceDictionary.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.Contains(KeyValuePair(Of String, Object))
+  fullName.vb: Xamarin.Forms.ResourceDictionary.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.Contains(System.Collections.Generic.KeyValuePair(Of System.String, System.Object))
+  name.vb: System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.Contains(KeyValuePair(Of String, Object))
+  spec.csharp:
+  - uid: Xamarin.Forms.ResourceDictionary.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String,System#Object}}#Contains(System.Collections.Generic.KeyValuePair{System.String,System.Object})
+    name: ICollection<KeyValuePair<String, Object>>.Contains
+    nameWithType: ResourceDictionary.ICollection<KeyValuePair<String, Object>>.Contains
+    fullName: Xamarin.Forms.ResourceDictionary.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String, System.Object>>.Contains
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    nameWithType: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Xamarin.Forms.ResourceDictionary.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String,System#Object}}#Contains(System.Collections.Generic.KeyValuePair{System.String,System.Object})
+    name: System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.Contains
+    nameWithType: ResourceDictionary.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.Contains
+    fullName: Xamarin.Forms.ResourceDictionary.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.Contains
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    nameWithType: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Xamarin.Forms.ResourceDictionary.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String,System#Object}}#CopyTo(System.Collections.Generic.KeyValuePair{System.String,System.Object}[],System.Int32)
+  commentId: M:Xamarin.Forms.ResourceDictionary.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String,System#Object}}#CopyTo(System.Collections.Generic.KeyValuePair{System.String,System.Object}[],System.Int32)
+  parent: Xamarin.Forms.ResourceDictionary
+  isExternal: true
+  name: ICollection<KeyValuePair<String, Object>>.CopyTo(KeyValuePair<String, Object>[], Int32)
+  nameWithType: ResourceDictionary.ICollection<KeyValuePair<String, Object>>.CopyTo(KeyValuePair<String, Object>[], Int32)
+  fullName: Xamarin.Forms.ResourceDictionary.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String, System.Object>>.CopyTo(System.Collections.Generic.KeyValuePair<System.String, System.Object>[], System.Int32)
+  nameWithType.vb: ResourceDictionary.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.CopyTo(KeyValuePair(Of String, Object)(), Int32)
+  fullName.vb: Xamarin.Forms.ResourceDictionary.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.CopyTo(System.Collections.Generic.KeyValuePair(Of System.String, System.Object)(), System.Int32)
+  name.vb: System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.CopyTo(KeyValuePair(Of String, Object)(), Int32)
+  spec.csharp:
+  - uid: Xamarin.Forms.ResourceDictionary.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String,System#Object}}#CopyTo(System.Collections.Generic.KeyValuePair{System.String,System.Object}[],System.Int32)
+    name: ICollection<KeyValuePair<String, Object>>.CopyTo
+    nameWithType: ResourceDictionary.ICollection<KeyValuePair<String, Object>>.CopyTo
+    fullName: Xamarin.Forms.ResourceDictionary.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String, System.Object>>.CopyTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    nameWithType: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Xamarin.Forms.ResourceDictionary.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String,System#Object}}#CopyTo(System.Collections.Generic.KeyValuePair{System.String,System.Object}[],System.Int32)
+    name: System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.CopyTo
+    nameWithType: ResourceDictionary.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.CopyTo
+    fullName: Xamarin.Forms.ResourceDictionary.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.CopyTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    nameWithType: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Xamarin.Forms.ResourceDictionary.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String,System#Object}}#Remove(System.Collections.Generic.KeyValuePair{System.String,System.Object})
+  commentId: M:Xamarin.Forms.ResourceDictionary.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String,System#Object}}#Remove(System.Collections.Generic.KeyValuePair{System.String,System.Object})
+  parent: Xamarin.Forms.ResourceDictionary
+  isExternal: true
+  name: ICollection<KeyValuePair<String, Object>>.Remove(KeyValuePair<String, Object>)
+  nameWithType: ResourceDictionary.ICollection<KeyValuePair<String, Object>>.Remove(KeyValuePair<String, Object>)
+  fullName: Xamarin.Forms.ResourceDictionary.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String, System.Object>>.Remove(System.Collections.Generic.KeyValuePair<System.String, System.Object>)
+  nameWithType.vb: ResourceDictionary.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.Remove(KeyValuePair(Of String, Object))
+  fullName.vb: Xamarin.Forms.ResourceDictionary.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.Remove(System.Collections.Generic.KeyValuePair(Of System.String, System.Object))
+  name.vb: System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.Remove(KeyValuePair(Of String, Object))
+  spec.csharp:
+  - uid: Xamarin.Forms.ResourceDictionary.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String,System#Object}}#Remove(System.Collections.Generic.KeyValuePair{System.String,System.Object})
+    name: ICollection<KeyValuePair<String, Object>>.Remove
+    nameWithType: ResourceDictionary.ICollection<KeyValuePair<String, Object>>.Remove
+    fullName: Xamarin.Forms.ResourceDictionary.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String, System.Object>>.Remove
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    nameWithType: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Xamarin.Forms.ResourceDictionary.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String,System#Object}}#Remove(System.Collections.Generic.KeyValuePair{System.String,System.Object})
+    name: System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.Remove
+    nameWithType: ResourceDictionary.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.Remove
+    fullName: Xamarin.Forms.ResourceDictionary.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.Remove
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    nameWithType: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Xamarin.Forms.ResourceDictionary.Add(System.String,System.Object)
+  commentId: M:Xamarin.Forms.ResourceDictionary.Add(System.String,System.Object)
+  parent: Xamarin.Forms.ResourceDictionary
+  isExternal: true
+  name: Add(String, Object)
+  nameWithType: ResourceDictionary.Add(String, Object)
+  fullName: Xamarin.Forms.ResourceDictionary.Add(System.String, System.Object)
+  spec.csharp:
+  - uid: Xamarin.Forms.ResourceDictionary.Add(System.String,System.Object)
+    name: Add
+    nameWithType: ResourceDictionary.Add
+    fullName: Xamarin.Forms.ResourceDictionary.Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Xamarin.Forms.ResourceDictionary.Add(System.String,System.Object)
+    name: Add
+    nameWithType: ResourceDictionary.Add
+    fullName: Xamarin.Forms.ResourceDictionary.Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Xamarin.Forms.ResourceDictionary.ContainsKey(System.String)
+  commentId: M:Xamarin.Forms.ResourceDictionary.ContainsKey(System.String)
+  parent: Xamarin.Forms.ResourceDictionary
+  isExternal: true
+  name: ContainsKey(String)
+  nameWithType: ResourceDictionary.ContainsKey(String)
+  fullName: Xamarin.Forms.ResourceDictionary.ContainsKey(System.String)
+  spec.csharp:
+  - uid: Xamarin.Forms.ResourceDictionary.ContainsKey(System.String)
+    name: ContainsKey
+    nameWithType: ResourceDictionary.ContainsKey
+    fullName: Xamarin.Forms.ResourceDictionary.ContainsKey
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Xamarin.Forms.ResourceDictionary.ContainsKey(System.String)
+    name: ContainsKey
+    nameWithType: ResourceDictionary.ContainsKey
+    fullName: Xamarin.Forms.ResourceDictionary.ContainsKey
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Xamarin.Forms.ResourceDictionary.Remove(System.String)
+  commentId: M:Xamarin.Forms.ResourceDictionary.Remove(System.String)
+  parent: Xamarin.Forms.ResourceDictionary
+  isExternal: true
+  name: Remove(String)
+  nameWithType: ResourceDictionary.Remove(String)
+  fullName: Xamarin.Forms.ResourceDictionary.Remove(System.String)
+  spec.csharp:
+  - uid: Xamarin.Forms.ResourceDictionary.Remove(System.String)
+    name: Remove
+    nameWithType: ResourceDictionary.Remove
+    fullName: Xamarin.Forms.ResourceDictionary.Remove
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Xamarin.Forms.ResourceDictionary.Remove(System.String)
+    name: Remove
+    nameWithType: ResourceDictionary.Remove
+    fullName: Xamarin.Forms.ResourceDictionary.Remove
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Xamarin.Forms.ResourceDictionary.System#Collections#IEnumerable#GetEnumerator
+  commentId: M:Xamarin.Forms.ResourceDictionary.System#Collections#IEnumerable#GetEnumerator
+  parent: Xamarin.Forms.ResourceDictionary
+  isExternal: true
+  name: IEnumerable.GetEnumerator()
+  nameWithType: ResourceDictionary.IEnumerable.GetEnumerator()
+  fullName: Xamarin.Forms.ResourceDictionary.System.Collections.IEnumerable.GetEnumerator()
+  nameWithType.vb: ResourceDictionary.System.Collections.IEnumerable.GetEnumerator()
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+  spec.csharp:
+  - uid: Xamarin.Forms.ResourceDictionary.System#Collections#IEnumerable#GetEnumerator
+    name: IEnumerable.GetEnumerator
+    nameWithType: ResourceDictionary.IEnumerable.GetEnumerator
+    fullName: Xamarin.Forms.ResourceDictionary.System.Collections.IEnumerable.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Xamarin.Forms.ResourceDictionary.System#Collections#IEnumerable#GetEnumerator
+    name: System.Collections.IEnumerable.GetEnumerator
+    nameWithType: ResourceDictionary.System.Collections.IEnumerable.GetEnumerator
+    fullName: Xamarin.Forms.ResourceDictionary.System.Collections.IEnumerable.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Xamarin.Forms.ResourceDictionary.GetEnumerator
+  commentId: M:Xamarin.Forms.ResourceDictionary.GetEnumerator
+  parent: Xamarin.Forms.ResourceDictionary
+  isExternal: true
+  name: GetEnumerator()
+  nameWithType: ResourceDictionary.GetEnumerator()
+  fullName: Xamarin.Forms.ResourceDictionary.GetEnumerator()
+  spec.csharp:
+  - uid: Xamarin.Forms.ResourceDictionary.GetEnumerator
+    name: GetEnumerator
+    nameWithType: ResourceDictionary.GetEnumerator
+    fullName: Xamarin.Forms.ResourceDictionary.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Xamarin.Forms.ResourceDictionary.GetEnumerator
+    name: GetEnumerator
+    nameWithType: ResourceDictionary.GetEnumerator
+    fullName: Xamarin.Forms.ResourceDictionary.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Xamarin.Forms.ResourceDictionary.TryGetValue(System.String,System.Object@)
+  commentId: M:Xamarin.Forms.ResourceDictionary.TryGetValue(System.String,System.Object@)
+  parent: Xamarin.Forms.ResourceDictionary
+  isExternal: true
+  name: TryGetValue(String, Object)
+  nameWithType: ResourceDictionary.TryGetValue(String, Object)
+  fullName: Xamarin.Forms.ResourceDictionary.TryGetValue(System.String, System.Object)
+  spec.csharp:
+  - uid: Xamarin.Forms.ResourceDictionary.TryGetValue(System.String,System.Object@)
+    name: TryGetValue
+    nameWithType: ResourceDictionary.TryGetValue
+    fullName: Xamarin.Forms.ResourceDictionary.TryGetValue
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Xamarin.Forms.ResourceDictionary.TryGetValue(System.String,System.Object@)
+    name: TryGetValue
+    nameWithType: ResourceDictionary.TryGetValue
+    fullName: Xamarin.Forms.ResourceDictionary.TryGetValue
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Xamarin.Forms.ResourceDictionary.Add(Xamarin.Forms.Style)
+  commentId: M:Xamarin.Forms.ResourceDictionary.Add(Xamarin.Forms.Style)
+  parent: Xamarin.Forms.ResourceDictionary
+  isExternal: true
+  name: Add(Style)
+  nameWithType: ResourceDictionary.Add(Style)
+  fullName: Xamarin.Forms.ResourceDictionary.Add(Xamarin.Forms.Style)
+  spec.csharp:
+  - uid: Xamarin.Forms.ResourceDictionary.Add(Xamarin.Forms.Style)
+    name: Add
+    nameWithType: ResourceDictionary.Add
+    fullName: Xamarin.Forms.ResourceDictionary.Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Xamarin.Forms.Style
+    name: Style
+    nameWithType: Style
+    fullName: Xamarin.Forms.Style
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Xamarin.Forms.ResourceDictionary.Add(Xamarin.Forms.Style)
+    name: Add
+    nameWithType: ResourceDictionary.Add
+    fullName: Xamarin.Forms.ResourceDictionary.Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Xamarin.Forms.Style
+    name: Style
+    nameWithType: Style
+    fullName: Xamarin.Forms.Style
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Xamarin.Forms.ResourceDictionary.Add(Xamarin.Forms.ResourceDictionary)
+  commentId: M:Xamarin.Forms.ResourceDictionary.Add(Xamarin.Forms.ResourceDictionary)
+  parent: Xamarin.Forms.ResourceDictionary
+  isExternal: true
+  name: Add(ResourceDictionary)
+  nameWithType: ResourceDictionary.Add(ResourceDictionary)
+  fullName: Xamarin.Forms.ResourceDictionary.Add(Xamarin.Forms.ResourceDictionary)
+  spec.csharp:
+  - uid: Xamarin.Forms.ResourceDictionary.Add(Xamarin.Forms.ResourceDictionary)
+    name: Add
+    nameWithType: ResourceDictionary.Add
+    fullName: Xamarin.Forms.ResourceDictionary.Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Xamarin.Forms.ResourceDictionary
+    name: ResourceDictionary
+    nameWithType: ResourceDictionary
+    fullName: Xamarin.Forms.ResourceDictionary
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Xamarin.Forms.ResourceDictionary.Add(Xamarin.Forms.ResourceDictionary)
+    name: Add
+    nameWithType: ResourceDictionary.Add
+    fullName: Xamarin.Forms.ResourceDictionary.Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Xamarin.Forms.ResourceDictionary
+    name: ResourceDictionary
+    nameWithType: ResourceDictionary
+    fullName: Xamarin.Forms.ResourceDictionary
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Xamarin.Forms.ResourceDictionary.Add(Xamarin.Forms.StyleSheets.StyleSheet)
+  commentId: M:Xamarin.Forms.ResourceDictionary.Add(Xamarin.Forms.StyleSheets.StyleSheet)
+  parent: Xamarin.Forms.ResourceDictionary
+  isExternal: true
+  name: Add(StyleSheet)
+  nameWithType: ResourceDictionary.Add(StyleSheet)
+  fullName: Xamarin.Forms.ResourceDictionary.Add(Xamarin.Forms.StyleSheets.StyleSheet)
+  spec.csharp:
+  - uid: Xamarin.Forms.ResourceDictionary.Add(Xamarin.Forms.StyleSheets.StyleSheet)
+    name: Add
+    nameWithType: ResourceDictionary.Add
+    fullName: Xamarin.Forms.ResourceDictionary.Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Xamarin.Forms.StyleSheets.StyleSheet
+    name: StyleSheet
+    nameWithType: StyleSheet
+    fullName: Xamarin.Forms.StyleSheets.StyleSheet
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Xamarin.Forms.ResourceDictionary.Add(Xamarin.Forms.StyleSheets.StyleSheet)
+    name: Add
+    nameWithType: ResourceDictionary.Add
+    fullName: Xamarin.Forms.ResourceDictionary.Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Xamarin.Forms.StyleSheets.StyleSheet
+    name: StyleSheet
+    nameWithType: StyleSheet
+    fullName: Xamarin.Forms.StyleSheets.StyleSheet
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Xamarin.Forms.ResourceDictionary.Source
+  commentId: P:Xamarin.Forms.ResourceDictionary.Source
+  parent: Xamarin.Forms.ResourceDictionary
+  isExternal: true
+  name: Source
+  nameWithType: ResourceDictionary.Source
+  fullName: Xamarin.Forms.ResourceDictionary.Source
+- uid: Xamarin.Forms.ResourceDictionary.MergedDictionaries
+  commentId: P:Xamarin.Forms.ResourceDictionary.MergedDictionaries
+  parent: Xamarin.Forms.ResourceDictionary
+  isExternal: true
+  name: MergedDictionaries
+  nameWithType: ResourceDictionary.MergedDictionaries
+  fullName: Xamarin.Forms.ResourceDictionary.MergedDictionaries
+- uid: Xamarin.Forms.ResourceDictionary.Count
+  commentId: P:Xamarin.Forms.ResourceDictionary.Count
+  parent: Xamarin.Forms.ResourceDictionary
+  isExternal: true
+  name: Count
+  nameWithType: ResourceDictionary.Count
+  fullName: Xamarin.Forms.ResourceDictionary.Count
+- uid: Xamarin.Forms.ResourceDictionary.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String,System#Object}}#IsReadOnly
+  commentId: P:Xamarin.Forms.ResourceDictionary.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String,System#Object}}#IsReadOnly
+  parent: Xamarin.Forms.ResourceDictionary
+  isExternal: true
+  name: ICollection<KeyValuePair<String, Object>>.IsReadOnly
+  nameWithType: ResourceDictionary.ICollection<KeyValuePair<String, Object>>.IsReadOnly
+  fullName: Xamarin.Forms.ResourceDictionary.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String, System.Object>>.IsReadOnly
+  nameWithType.vb: ResourceDictionary.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.IsReadOnly
+  fullName.vb: Xamarin.Forms.ResourceDictionary.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.IsReadOnly
+  name.vb: System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.IsReadOnly
+- uid: Xamarin.Forms.ResourceDictionary.Item(System.String)
+  commentId: P:Xamarin.Forms.ResourceDictionary.Item(System.String)
+  parent: Xamarin.Forms.ResourceDictionary
+  isExternal: true
+  name: Item[String]
+  nameWithType: ResourceDictionary.Item[String]
+  fullName: Xamarin.Forms.ResourceDictionary.Item[System.String]
+  nameWithType.vb: ResourceDictionary.Item(String)
+  fullName.vb: Xamarin.Forms.ResourceDictionary.Item(System.String)
+  name.vb: Item(String)
+  spec.csharp:
+  - uid: Xamarin.Forms.ResourceDictionary.Item(System.String)
+    name: Item
+    nameWithType: ResourceDictionary.Item
+    fullName: Xamarin.Forms.ResourceDictionary.Item
+    isExternal: true
+  - name: '['
+    nameWithType: '['
+    fullName: '['
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ']'
+    nameWithType: ']'
+    fullName: ']'
+  spec.vb:
+  - uid: Xamarin.Forms.ResourceDictionary.Item(System.String)
+    name: Item
+    nameWithType: ResourceDictionary.Item
+    fullName: Xamarin.Forms.ResourceDictionary.Item
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Xamarin.Forms.ResourceDictionary.Keys
+  commentId: P:Xamarin.Forms.ResourceDictionary.Keys
+  parent: Xamarin.Forms.ResourceDictionary
+  isExternal: true
+  name: Keys
+  nameWithType: ResourceDictionary.Keys
+  fullName: Xamarin.Forms.ResourceDictionary.Keys
+- uid: Xamarin.Forms.ResourceDictionary.Values
+  commentId: P:Xamarin.Forms.ResourceDictionary.Values
+  parent: Xamarin.Forms.ResourceDictionary
+  isExternal: true
+  name: Values
+  nameWithType: ResourceDictionary.Values
+  fullName: Xamarin.Forms.ResourceDictionary.Values
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Xamarin.Forms
+  commentId: N:Xamarin.Forms
+  isExternal: true
+  name: Xamarin.Forms
+  nameWithType: Xamarin.Forms
+  fullName: Xamarin.Forms
+- uid: System.Collections.Generic.IDictionary`2
+  commentId: T:System.Collections.Generic.IDictionary`2
+  isExternal: true
+  name: IDictionary<TKey, TValue>
+  nameWithType: IDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>
+  nameWithType.vb: IDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
+  name.vb: IDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Collections.Generic.ICollection`1
+  commentId: T:System.Collections.Generic.ICollection`1
+  isExternal: true
+  name: ICollection<T>
+  nameWithType: ICollection<T>
+  fullName: System.Collections.Generic.ICollection<T>
+  nameWithType.vb: ICollection(Of T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T)
+  name.vb: ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.ResourceDictionary.#ctor*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.ResourceDictionary.#ctor
+  name: ResourceDictionary
+  nameWithType: ResourceDictionary.ResourceDictionary
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.ResourceDictionary.ResourceDictionary

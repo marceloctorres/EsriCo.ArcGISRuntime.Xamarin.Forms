@@ -1,7 +1,7 @@
 {
   "metadata": [
     {
-      "dest": "../docs/api",
+      "dest": "../_docs/api",
       "disableDefaultFilter": false,
       "disableGitFeatures": false,
       "properties": { "TargetFramework": "netstandard2.0" },
@@ -19,6 +19,7 @@
   "build": {
     "content": [
       {
+        "src": "../_docs/",
         "files": [
           "api/**.yml",
           "api/index.md"
