@@ -15,7 +15,7 @@
         <root:ResourceDictionary />
       </ResourceDictionary.MergedDictionaries>
     </ResourceDictionary>
-    <Style TargetType="Grid">
+    <Style TargetType="Frame">
       <Setter Property="VisualStateManager.VisualStateGroups">
         <VisualStateGroupList>
           <VisualStateGroup x:Name="CommonStates">
@@ -41,7 +41,7 @@
              Padding="2"
              HorizontalOptions="CenterAndExpand"
              VerticalOptions="CenterAndExpand"
-             WidthRequest="{Binding Source={x:Reference view}, Path=WidthRequest}"
+             WidthRequest="{Binding Source={x:Reference view},Path=WidthRequest}"
              OutlineColor="Black">
         <Grid Margin="0"
               Padding="0"

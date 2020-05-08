@@ -68,7 +68,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
       set => SetProperty(ref _userName, value);
     }
 
-    private string _organizationName; 
+    private string _organizationName;
 
     /// <summary>
     /// 
@@ -84,9 +84,9 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     /// <summary>
     /// 
     /// </summary>
-    public string OrganizationSubDomain 
-    { 
-      get => _organizationSubDomain; 
+    public string OrganizationSubDomain
+    {
+      get => _organizationSubDomain;
       set => SetProperty(ref _organizationSubDomain, value);
     }
 
@@ -150,10 +150,16 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     /// <summary>
     /// 
     /// </summary>
-    public DateTimeOffset TokenExpirationDateTime { 
-      get => _tokenExpirationDateTime; 
+    public DateTimeOffset TokenExpirationDateTime
+    {
+      get => _tokenExpirationDateTime;
       set => SetProperty(ref _tokenExpirationDateTime, value);
     }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    public bool SignedIn { get; private set; }
 
     /// <summary>
     /// 
@@ -163,32 +169,32 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     /// <summary>
     /// 
     /// </summary>
-    private string ServerRegisterUrl { get; set; }
+    public string ServerRegisterUrl { get; private set; }
 
     /// <summary>
     /// 
     /// </summary>
-    private TokenCredential Credential { get; set; }
+    public TokenCredential Credential { get; private set; }
 
     /// <summary>
     /// 
     /// </summary>
-    private ArcGISPortal Portal { get; set; }
+    public ArcGISPortal Portal { get; private set; }
 
     /// <summary>
     /// 
     /// </summary>
-    private PortalUser PortalUser { get; set; }
-  
-    /// <summary>
-    /// 
-    /// </summary>
-    private PortalInfo PortalInfo { get; set; }
+    public PortalUser PortalUser { get; private set; }
 
     /// <summary>
     /// 
     /// </summary>
-    private TokenAuthenticationType TokenAuthenticationType { get; set; }
+    public PortalInfo PortalInfo { get; private set; }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    public TokenAuthenticationType TokenAuthenticationType { get; private set; }
 
     /// <summary>
     /// 
@@ -204,7 +210,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     /// </summary>
     /// <returns></returns>
     [Obsolete()]
-    public async Task SingIn() => await SingInAsync();
+    public async Task SignIn() => await SignInAsync();
 
     /// <summary>
     /// 
@@ -215,8 +221,8 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     {
       var uriBuilder = new UriBuilder(baseUrl);
       uriBuilder.Path = !baseUrl.Contains("/sharing/rest") ?
-        string.Concat(uriBuilder.Path, uriBuilder.Path.EndsWith("/") ? 
-          "sharing/rest" : 
+        string.Concat(uriBuilder.Path, uriBuilder.Path.EndsWith("/") ?
+          "sharing/rest" :
           "/sharing/rest") :
         uriBuilder.Path;
       return uriBuilder.Uri.AbsoluteUri;
@@ -239,7 +245,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     /// <summary>
     /// 
     /// </summary>
-    public async Task SingInAsync()
+    public async Task SignInAsync()
     {
       try
       {
@@ -258,23 +264,26 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
         UserName = PortalUser.FullName;
         OrganizationName = PortalInfo.OrganizationName;
         OrganizationSubDomain = SubDomainUrl();
+        SignedIn = true;
       }
       catch(Exception ex)
       {
         Console.WriteLine(ex);
+        throw ex;
       }
     }
 
     /// <summary>
     /// 
     /// </summary>
-    public void SingOut()
+    public void SignOut()
     {
       AuthenticationManager.Current.RemoveCredential(Credential);
       Credential = null;
       UserName = string.Empty;
       UserImage = null;
       UserImageString = string.Empty;
+      SignedIn = false;
     }
 
     /// <summary>
