@@ -1,0 +1,14 @@
+.breadcrumb > li > a {
+  color: blue;
+}
+
+.navbar-default {
+  background-color: blue;
+  border-color: blue;
+}
+
+.article {
+  position: relative;
+  left: 120px;
+  width: 1000px;
+}

@@ -1,0 +1,1795 @@
+### YamlMime:ManagedReference
+items:
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ShowCalloutForGeoElementBehavior
+  commentId: T:EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ShowCalloutForGeoElementBehavior
+  id: ShowCalloutForGeoElementBehavior
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
+  children:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ShowCalloutForGeoElementBehavior.CalloutInfo
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ShowCalloutForGeoElementBehavior.CalloutInfoProperty
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ShowCalloutForGeoElementBehavior.OnPropertyChanged(System.String)
+  langs:
+  - csharp
+  - vb
+  name: ShowCalloutForGeoElementBehavior
+  nameWithType: ShowCalloutForGeoElementBehavior
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ShowCalloutForGeoElementBehavior
+  type: Class
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/Behaviors/ShowCalloutForGeoElementBehavior.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: ShowCalloutForGeoElementBehavior
+    path: Behaviors/ShowCalloutForGeoElementBehavior.cs
+    startLine: 13
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: 'public class ShowCalloutForGeoElementBehavior : BehaviorBase<MapView>, INotifyPropertyChanged, IDynamicResourceHandler, IAttachedObject'
+    content.vb: >-
+      Public Class ShowCalloutForGeoElementBehavior
+          Inherits BehaviorBase(Of MapView)
+          Implements INotifyPropertyChanged, IDynamicResourceHandler, IAttachedObject
+  inheritance:
+  - System.Object
+  - Xamarin.Forms.BindableObject
+  - Xamarin.Forms.Behavior
+  - Xamarin.Forms.Behavior{Esri.ArcGISRuntime.Xamarin.Forms.MapView}
+  - Prism.Behaviors.BehaviorBase{Esri.ArcGISRuntime.Xamarin.Forms.MapView}
+  implements:
+  - System.ComponentModel.INotifyPropertyChanged
+  inheritedMembers:
+  - Prism.Behaviors.BehaviorBase{Esri.ArcGISRuntime.Xamarin.Forms.MapView}.OnAttachedTo(Esri.ArcGISRuntime.Xamarin.Forms.MapView)
+  - Prism.Behaviors.BehaviorBase{Esri.ArcGISRuntime.Xamarin.Forms.MapView}.OnDetachingFrom(Esri.ArcGISRuntime.Xamarin.Forms.MapView)
+  - Prism.Behaviors.BehaviorBase{Esri.ArcGISRuntime.Xamarin.Forms.MapView}.OnBindingContextChanged
+  - Prism.Behaviors.BehaviorBase{Esri.ArcGISRuntime.Xamarin.Forms.MapView}.AssociatedObject
+  - Xamarin.Forms.Behavior{Esri.ArcGISRuntime.Xamarin.Forms.MapView}.OnAttachedTo(Xamarin.Forms.BindableObject)
+  - Xamarin.Forms.Behavior{Esri.ArcGISRuntime.Xamarin.Forms.MapView}.OnDetachingFrom(Xamarin.Forms.BindableObject)
+  - Xamarin.Forms.Behavior.AssociatedType
+  - Xamarin.Forms.BindableObject.BindingContextProperty
+  - Xamarin.Forms.BindableObject.ClearValue(Xamarin.Forms.BindableProperty)
+  - Xamarin.Forms.BindableObject.ClearValue(Xamarin.Forms.BindablePropertyKey)
+  - Xamarin.Forms.BindableObject.GetValue(Xamarin.Forms.BindableProperty)
+  - Xamarin.Forms.BindableObject.IsSet(Xamarin.Forms.BindableProperty)
+  - Xamarin.Forms.BindableObject.RemoveBinding(Xamarin.Forms.BindableProperty)
+  - Xamarin.Forms.BindableObject.SetBinding(Xamarin.Forms.BindableProperty,Xamarin.Forms.BindingBase)
+  - Xamarin.Forms.BindableObject.ApplyBindings
+  - Xamarin.Forms.BindableObject.OnPropertyChanging(System.String)
+  - Xamarin.Forms.BindableObject.UnapplyBindings
+  - Xamarin.Forms.BindableObject.SetValue(Xamarin.Forms.BindableProperty,System.Object)
+  - Xamarin.Forms.BindableObject.SetValue(Xamarin.Forms.BindablePropertyKey,System.Object)
+  - Xamarin.Forms.BindableObject.CoerceValue(Xamarin.Forms.BindableProperty)
+  - Xamarin.Forms.BindableObject.CoerceValue(Xamarin.Forms.BindablePropertyKey)
+  - Xamarin.Forms.BindableObject.Dispatcher
+  - Xamarin.Forms.BindableObject.BindingContext
+  - Xamarin.Forms.BindableObject.PropertyChanged
+  - Xamarin.Forms.BindableObject.PropertyChanging
+  - Xamarin.Forms.BindableObject.BindingContextChanged
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ShowCalloutForGeoElementBehavior.CalloutInfoProperty
+  commentId: F:EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ShowCalloutForGeoElementBehavior.CalloutInfoProperty
+  id: CalloutInfoProperty
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ShowCalloutForGeoElementBehavior
+  langs:
+  - csharp
+  - vb
+  name: CalloutInfoProperty
+  nameWithType: ShowCalloutForGeoElementBehavior.CalloutInfoProperty
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ShowCalloutForGeoElementBehavior.CalloutInfoProperty
+  type: Field
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/Behaviors/ShowCalloutForGeoElementBehavior.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: CalloutInfoProperty
+    path: Behaviors/ShowCalloutForGeoElementBehavior.cs
+    startLine: 18
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public static readonly BindableProperty CalloutInfoProperty
+    return:
+      type: Xamarin.Forms.BindableProperty
+    content.vb: Public Shared ReadOnly CalloutInfoProperty As BindableProperty
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ShowCalloutForGeoElementBehavior.CalloutInfo
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ShowCalloutForGeoElementBehavior.CalloutInfo
+  id: CalloutInfo
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ShowCalloutForGeoElementBehavior
+  langs:
+  - csharp
+  - vb
+  name: CalloutInfo
+  nameWithType: ShowCalloutForGeoElementBehavior.CalloutInfo
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ShowCalloutForGeoElementBehavior.CalloutInfo
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/Behaviors/ShowCalloutForGeoElementBehavior.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: CalloutInfo
+    path: Behaviors/ShowCalloutForGeoElementBehavior.cs
+    startLine: 24
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public CalloutInfo CalloutInfo { get; set; }
+    parameters: []
+    return:
+      type: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.CalloutInfo
+    content.vb: Public Property CalloutInfo As CalloutInfo
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ShowCalloutForGeoElementBehavior.CalloutInfo*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ShowCalloutForGeoElementBehavior.OnPropertyChanged(System.String)
+  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ShowCalloutForGeoElementBehavior.OnPropertyChanged(System.String)
+  id: OnPropertyChanged(System.String)
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ShowCalloutForGeoElementBehavior
+  langs:
+  - csharp
+  - vb
+  name: OnPropertyChanged(String)
+  nameWithType: ShowCalloutForGeoElementBehavior.OnPropertyChanged(String)
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ShowCalloutForGeoElementBehavior.OnPropertyChanged(System.String)
+  type: Method
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/Behaviors/ShowCalloutForGeoElementBehavior.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: OnPropertyChanged
+    path: Behaviors/ShowCalloutForGeoElementBehavior.cs
+    startLine: 34
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: protected override void OnPropertyChanged(string propertyName = null)
+    parameters:
+    - id: propertyName
+      type: System.String
+      description: ''
+    content.vb: Protected Overrides Sub OnPropertyChanged(propertyName As String = Nothing)
+  overridden: Xamarin.Forms.BindableObject.OnPropertyChanged(System.String)
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ShowCalloutForGeoElementBehavior.OnPropertyChanged*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+references:
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
+  commentId: N:EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
+  name: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
+  nameWithType: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Xamarin.Forms.BindableObject
+  commentId: T:Xamarin.Forms.BindableObject
+  parent: Xamarin.Forms
+  isExternal: true
+  name: BindableObject
+  nameWithType: BindableObject
+  fullName: Xamarin.Forms.BindableObject
+- uid: Xamarin.Forms.Behavior
+  commentId: T:Xamarin.Forms.Behavior
+  parent: Xamarin.Forms
+  isExternal: true
+  name: Behavior
+  nameWithType: Behavior
+  fullName: Xamarin.Forms.Behavior
+- uid: Xamarin.Forms.Behavior{Esri.ArcGISRuntime.Xamarin.Forms.MapView}
+  commentId: T:Xamarin.Forms.Behavior{Esri.ArcGISRuntime.Xamarin.Forms.MapView}
+  parent: Xamarin.Forms
+  definition: Xamarin.Forms.Behavior`1
+  name: Behavior<MapView>
+  nameWithType: Behavior<MapView>
+  fullName: Xamarin.Forms.Behavior<Esri.ArcGISRuntime.Xamarin.Forms.MapView>
+  nameWithType.vb: Behavior(Of MapView)
+  fullName.vb: Xamarin.Forms.Behavior(Of Esri.ArcGISRuntime.Xamarin.Forms.MapView)
+  name.vb: Behavior(Of MapView)
+  spec.csharp:
+  - uid: Xamarin.Forms.Behavior`1
+    name: Behavior
+    nameWithType: Behavior
+    fullName: Xamarin.Forms.Behavior
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Esri.ArcGISRuntime.Xamarin.Forms.MapView
+    name: MapView
+    nameWithType: MapView
+    fullName: Esri.ArcGISRuntime.Xamarin.Forms.MapView
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Xamarin.Forms.Behavior`1
+    name: Behavior
+    nameWithType: Behavior
+    fullName: Xamarin.Forms.Behavior
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Esri.ArcGISRuntime.Xamarin.Forms.MapView
+    name: MapView
+    nameWithType: MapView
+    fullName: Esri.ArcGISRuntime.Xamarin.Forms.MapView
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Prism.Behaviors.BehaviorBase{Esri.ArcGISRuntime.Xamarin.Forms.MapView}
+  commentId: T:Prism.Behaviors.BehaviorBase{Esri.ArcGISRuntime.Xamarin.Forms.MapView}
+  parent: Prism.Behaviors
+  definition: Prism.Behaviors.BehaviorBase`1
+  name: BehaviorBase<MapView>
+  nameWithType: BehaviorBase<MapView>
+  fullName: Prism.Behaviors.BehaviorBase<Esri.ArcGISRuntime.Xamarin.Forms.MapView>
+  nameWithType.vb: BehaviorBase(Of MapView)
+  fullName.vb: Prism.Behaviors.BehaviorBase(Of Esri.ArcGISRuntime.Xamarin.Forms.MapView)
+  name.vb: BehaviorBase(Of MapView)
+  spec.csharp:
+  - uid: Prism.Behaviors.BehaviorBase`1
+    name: BehaviorBase
+    nameWithType: BehaviorBase
+    fullName: Prism.Behaviors.BehaviorBase
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Esri.ArcGISRuntime.Xamarin.Forms.MapView
+    name: MapView
+    nameWithType: MapView
+    fullName: Esri.ArcGISRuntime.Xamarin.Forms.MapView
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Prism.Behaviors.BehaviorBase`1
+    name: BehaviorBase
+    nameWithType: BehaviorBase
+    fullName: Prism.Behaviors.BehaviorBase
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Esri.ArcGISRuntime.Xamarin.Forms.MapView
+    name: MapView
+    nameWithType: MapView
+    fullName: Esri.ArcGISRuntime.Xamarin.Forms.MapView
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ComponentModel.INotifyPropertyChanged
+  commentId: T:System.ComponentModel.INotifyPropertyChanged
+  parent: System.ComponentModel
+  isExternal: true
+  name: INotifyPropertyChanged
+  nameWithType: INotifyPropertyChanged
+  fullName: System.ComponentModel.INotifyPropertyChanged
+- uid: Prism.Behaviors.BehaviorBase{Esri.ArcGISRuntime.Xamarin.Forms.MapView}.OnAttachedTo(Esri.ArcGISRuntime.Xamarin.Forms.MapView)
+  commentId: M:Prism.Behaviors.BehaviorBase{Esri.ArcGISRuntime.Xamarin.Forms.MapView}.OnAttachedTo(Esri.ArcGISRuntime.Xamarin.Forms.MapView)
+  parent: Prism.Behaviors.BehaviorBase{Esri.ArcGISRuntime.Xamarin.Forms.MapView}
+  definition: Prism.Behaviors.BehaviorBase`1.OnAttachedTo(`0)
+  name: OnAttachedTo(MapView)
+  nameWithType: BehaviorBase<MapView>.OnAttachedTo(MapView)
+  fullName: Prism.Behaviors.BehaviorBase<Esri.ArcGISRuntime.Xamarin.Forms.MapView>.OnAttachedTo(Esri.ArcGISRuntime.Xamarin.Forms.MapView)
+  nameWithType.vb: BehaviorBase(Of MapView).OnAttachedTo(MapView)
+  fullName.vb: Prism.Behaviors.BehaviorBase(Of Esri.ArcGISRuntime.Xamarin.Forms.MapView).OnAttachedTo(Esri.ArcGISRuntime.Xamarin.Forms.MapView)
+  spec.csharp:
+  - uid: Prism.Behaviors.BehaviorBase`1.OnAttachedTo(`0)
+    name: OnAttachedTo
+    nameWithType: BehaviorBase<MapView>.OnAttachedTo
+    fullName: Prism.Behaviors.BehaviorBase<Esri.ArcGISRuntime.Xamarin.Forms.MapView>.OnAttachedTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Esri.ArcGISRuntime.Xamarin.Forms.MapView
+    name: MapView
+    nameWithType: MapView
+    fullName: Esri.ArcGISRuntime.Xamarin.Forms.MapView
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Prism.Behaviors.BehaviorBase`1.OnAttachedTo(`0)
+    name: OnAttachedTo
+    nameWithType: BehaviorBase(Of MapView).OnAttachedTo
+    fullName: Prism.Behaviors.BehaviorBase(Of Esri.ArcGISRuntime.Xamarin.Forms.MapView).OnAttachedTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Esri.ArcGISRuntime.Xamarin.Forms.MapView
+    name: MapView
+    nameWithType: MapView
+    fullName: Esri.ArcGISRuntime.Xamarin.Forms.MapView
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Prism.Behaviors.BehaviorBase{Esri.ArcGISRuntime.Xamarin.Forms.MapView}.OnDetachingFrom(Esri.ArcGISRuntime.Xamarin.Forms.MapView)
+  commentId: M:Prism.Behaviors.BehaviorBase{Esri.ArcGISRuntime.Xamarin.Forms.MapView}.OnDetachingFrom(Esri.ArcGISRuntime.Xamarin.Forms.MapView)
+  parent: Prism.Behaviors.BehaviorBase{Esri.ArcGISRuntime.Xamarin.Forms.MapView}
+  definition: Prism.Behaviors.BehaviorBase`1.OnDetachingFrom(`0)
+  name: OnDetachingFrom(MapView)
+  nameWithType: BehaviorBase<MapView>.OnDetachingFrom(MapView)
+  fullName: Prism.Behaviors.BehaviorBase<Esri.ArcGISRuntime.Xamarin.Forms.MapView>.OnDetachingFrom(Esri.ArcGISRuntime.Xamarin.Forms.MapView)
+  nameWithType.vb: BehaviorBase(Of MapView).OnDetachingFrom(MapView)
+  fullName.vb: Prism.Behaviors.BehaviorBase(Of Esri.ArcGISRuntime.Xamarin.Forms.MapView).OnDetachingFrom(Esri.ArcGISRuntime.Xamarin.Forms.MapView)
+  spec.csharp:
+  - uid: Prism.Behaviors.BehaviorBase`1.OnDetachingFrom(`0)
+    name: OnDetachingFrom
+    nameWithType: BehaviorBase<MapView>.OnDetachingFrom
+    fullName: Prism.Behaviors.BehaviorBase<Esri.ArcGISRuntime.Xamarin.Forms.MapView>.OnDetachingFrom
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Esri.ArcGISRuntime.Xamarin.Forms.MapView
+    name: MapView
+    nameWithType: MapView
+    fullName: Esri.ArcGISRuntime.Xamarin.Forms.MapView
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Prism.Behaviors.BehaviorBase`1.OnDetachingFrom(`0)
+    name: OnDetachingFrom
+    nameWithType: BehaviorBase(Of MapView).OnDetachingFrom
+    fullName: Prism.Behaviors.BehaviorBase(Of Esri.ArcGISRuntime.Xamarin.Forms.MapView).OnDetachingFrom
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Esri.ArcGISRuntime.Xamarin.Forms.MapView
+    name: MapView
+    nameWithType: MapView
+    fullName: Esri.ArcGISRuntime.Xamarin.Forms.MapView
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Prism.Behaviors.BehaviorBase{Esri.ArcGISRuntime.Xamarin.Forms.MapView}.OnBindingContextChanged
+  commentId: M:Prism.Behaviors.BehaviorBase{Esri.ArcGISRuntime.Xamarin.Forms.MapView}.OnBindingContextChanged
+  parent: Prism.Behaviors.BehaviorBase{Esri.ArcGISRuntime.Xamarin.Forms.MapView}
+  definition: Prism.Behaviors.BehaviorBase`1.OnBindingContextChanged
+  name: OnBindingContextChanged()
+  nameWithType: BehaviorBase<MapView>.OnBindingContextChanged()
+  fullName: Prism.Behaviors.BehaviorBase<Esri.ArcGISRuntime.Xamarin.Forms.MapView>.OnBindingContextChanged()
+  nameWithType.vb: BehaviorBase(Of MapView).OnBindingContextChanged()
+  fullName.vb: Prism.Behaviors.BehaviorBase(Of Esri.ArcGISRuntime.Xamarin.Forms.MapView).OnBindingContextChanged()
+  spec.csharp:
+  - uid: Prism.Behaviors.BehaviorBase`1.OnBindingContextChanged
+    name: OnBindingContextChanged
+    nameWithType: BehaviorBase<MapView>.OnBindingContextChanged
+    fullName: Prism.Behaviors.BehaviorBase<Esri.ArcGISRuntime.Xamarin.Forms.MapView>.OnBindingContextChanged
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Prism.Behaviors.BehaviorBase`1.OnBindingContextChanged
+    name: OnBindingContextChanged
+    nameWithType: BehaviorBase(Of MapView).OnBindingContextChanged
+    fullName: Prism.Behaviors.BehaviorBase(Of Esri.ArcGISRuntime.Xamarin.Forms.MapView).OnBindingContextChanged
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Prism.Behaviors.BehaviorBase{Esri.ArcGISRuntime.Xamarin.Forms.MapView}.AssociatedObject
+  commentId: P:Prism.Behaviors.BehaviorBase{Esri.ArcGISRuntime.Xamarin.Forms.MapView}.AssociatedObject
+  parent: Prism.Behaviors.BehaviorBase{Esri.ArcGISRuntime.Xamarin.Forms.MapView}
+  definition: Prism.Behaviors.BehaviorBase`1.AssociatedObject
+  name: AssociatedObject
+  nameWithType: BehaviorBase<MapView>.AssociatedObject
+  fullName: Prism.Behaviors.BehaviorBase<Esri.ArcGISRuntime.Xamarin.Forms.MapView>.AssociatedObject
+  nameWithType.vb: BehaviorBase(Of MapView).AssociatedObject
+  fullName.vb: Prism.Behaviors.BehaviorBase(Of Esri.ArcGISRuntime.Xamarin.Forms.MapView).AssociatedObject
+- uid: Xamarin.Forms.Behavior{Esri.ArcGISRuntime.Xamarin.Forms.MapView}.OnAttachedTo(Xamarin.Forms.BindableObject)
+  commentId: M:Xamarin.Forms.Behavior{Esri.ArcGISRuntime.Xamarin.Forms.MapView}.OnAttachedTo(Xamarin.Forms.BindableObject)
+  parent: Xamarin.Forms.Behavior{Esri.ArcGISRuntime.Xamarin.Forms.MapView}
+  definition: Xamarin.Forms.Behavior`1.OnAttachedTo(Xamarin.Forms.BindableObject)
+  name: OnAttachedTo(BindableObject)
+  nameWithType: Behavior<MapView>.OnAttachedTo(BindableObject)
+  fullName: Xamarin.Forms.Behavior<Esri.ArcGISRuntime.Xamarin.Forms.MapView>.OnAttachedTo(Xamarin.Forms.BindableObject)
+  nameWithType.vb: Behavior(Of MapView).OnAttachedTo(BindableObject)
+  fullName.vb: Xamarin.Forms.Behavior(Of Esri.ArcGISRuntime.Xamarin.Forms.MapView).OnAttachedTo(Xamarin.Forms.BindableObject)
+  spec.csharp:
+  - uid: Xamarin.Forms.Behavior`1.OnAttachedTo(Xamarin.Forms.BindableObject)
+    name: OnAttachedTo
+    nameWithType: Behavior<MapView>.OnAttachedTo
+    fullName: Xamarin.Forms.Behavior<Esri.ArcGISRuntime.Xamarin.Forms.MapView>.OnAttachedTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Xamarin.Forms.BindableObject
+    name: BindableObject
+    nameWithType: BindableObject
+    fullName: Xamarin.Forms.BindableObject
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Xamarin.Forms.Behavior`1.OnAttachedTo(Xamarin.Forms.BindableObject)
+    name: OnAttachedTo
+    nameWithType: Behavior(Of MapView).OnAttachedTo
+    fullName: Xamarin.Forms.Behavior(Of Esri.ArcGISRuntime.Xamarin.Forms.MapView).OnAttachedTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Xamarin.Forms.BindableObject
+    name: BindableObject
+    nameWithType: BindableObject
+    fullName: Xamarin.Forms.BindableObject
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Xamarin.Forms.Behavior{Esri.ArcGISRuntime.Xamarin.Forms.MapView}.OnDetachingFrom(Xamarin.Forms.BindableObject)
+  commentId: M:Xamarin.Forms.Behavior{Esri.ArcGISRuntime.Xamarin.Forms.MapView}.OnDetachingFrom(Xamarin.Forms.BindableObject)
+  parent: Xamarin.Forms.Behavior{Esri.ArcGISRuntime.Xamarin.Forms.MapView}
+  definition: Xamarin.Forms.Behavior`1.OnDetachingFrom(Xamarin.Forms.BindableObject)
+  name: OnDetachingFrom(BindableObject)
+  nameWithType: Behavior<MapView>.OnDetachingFrom(BindableObject)
+  fullName: Xamarin.Forms.Behavior<Esri.ArcGISRuntime.Xamarin.Forms.MapView>.OnDetachingFrom(Xamarin.Forms.BindableObject)
+  nameWithType.vb: Behavior(Of MapView).OnDetachingFrom(BindableObject)
+  fullName.vb: Xamarin.Forms.Behavior(Of Esri.ArcGISRuntime.Xamarin.Forms.MapView).OnDetachingFrom(Xamarin.Forms.BindableObject)
+  spec.csharp:
+  - uid: Xamarin.Forms.Behavior`1.OnDetachingFrom(Xamarin.Forms.BindableObject)
+    name: OnDetachingFrom
+    nameWithType: Behavior<MapView>.OnDetachingFrom
+    fullName: Xamarin.Forms.Behavior<Esri.ArcGISRuntime.Xamarin.Forms.MapView>.OnDetachingFrom
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Xamarin.Forms.BindableObject
+    name: BindableObject
+    nameWithType: BindableObject
+    fullName: Xamarin.Forms.BindableObject
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Xamarin.Forms.Behavior`1.OnDetachingFrom(Xamarin.Forms.BindableObject)
+    name: OnDetachingFrom
+    nameWithType: Behavior(Of MapView).OnDetachingFrom
+    fullName: Xamarin.Forms.Behavior(Of Esri.ArcGISRuntime.Xamarin.Forms.MapView).OnDetachingFrom
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Xamarin.Forms.BindableObject
+    name: BindableObject
+    nameWithType: BindableObject
+    fullName: Xamarin.Forms.BindableObject
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Xamarin.Forms.Behavior.AssociatedType
+  commentId: P:Xamarin.Forms.Behavior.AssociatedType
+  parent: Xamarin.Forms.Behavior
+  isExternal: true
+  name: AssociatedType
+  nameWithType: Behavior.AssociatedType
+  fullName: Xamarin.Forms.Behavior.AssociatedType
+- uid: Xamarin.Forms.BindableObject.BindingContextProperty
+  commentId: F:Xamarin.Forms.BindableObject.BindingContextProperty
+  parent: Xamarin.Forms.BindableObject
+  isExternal: true
+  name: BindingContextProperty
+  nameWithType: BindableObject.BindingContextProperty
+  fullName: Xamarin.Forms.BindableObject.BindingContextProperty
+- uid: Xamarin.Forms.BindableObject.ClearValue(Xamarin.Forms.BindableProperty)
+  commentId: M:Xamarin.Forms.BindableObject.ClearValue(Xamarin.Forms.BindableProperty)
+  parent: Xamarin.Forms.BindableObject
+  isExternal: true
+  name: ClearValue(BindableProperty)
+  nameWithType: BindableObject.ClearValue(BindableProperty)
+  fullName: Xamarin.Forms.BindableObject.ClearValue(Xamarin.Forms.BindableProperty)
+  spec.csharp:
+  - uid: Xamarin.Forms.BindableObject.ClearValue(Xamarin.Forms.BindableProperty)
+    name: ClearValue
+    nameWithType: BindableObject.ClearValue
+    fullName: Xamarin.Forms.BindableObject.ClearValue
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Xamarin.Forms.BindableProperty
+    name: BindableProperty
+    nameWithType: BindableProperty
+    fullName: Xamarin.Forms.BindableProperty
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Xamarin.Forms.BindableObject.ClearValue(Xamarin.Forms.BindableProperty)
+    name: ClearValue
+    nameWithType: BindableObject.ClearValue
+    fullName: Xamarin.Forms.BindableObject.ClearValue
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Xamarin.Forms.BindableProperty
+    name: BindableProperty
+    nameWithType: BindableProperty
+    fullName: Xamarin.Forms.BindableProperty
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Xamarin.Forms.BindableObject.ClearValue(Xamarin.Forms.BindablePropertyKey)
+  commentId: M:Xamarin.Forms.BindableObject.ClearValue(Xamarin.Forms.BindablePropertyKey)
+  parent: Xamarin.Forms.BindableObject
+  isExternal: true
+  name: ClearValue(BindablePropertyKey)
+  nameWithType: BindableObject.ClearValue(BindablePropertyKey)
+  fullName: Xamarin.Forms.BindableObject.ClearValue(Xamarin.Forms.BindablePropertyKey)
+  spec.csharp:
+  - uid: Xamarin.Forms.BindableObject.ClearValue(Xamarin.Forms.BindablePropertyKey)
+    name: ClearValue
+    nameWithType: BindableObject.ClearValue
+    fullName: Xamarin.Forms.BindableObject.ClearValue
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Xamarin.Forms.BindablePropertyKey
+    name: BindablePropertyKey
+    nameWithType: BindablePropertyKey
+    fullName: Xamarin.Forms.BindablePropertyKey
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Xamarin.Forms.BindableObject.ClearValue(Xamarin.Forms.BindablePropertyKey)
+    name: ClearValue
+    nameWithType: BindableObject.ClearValue
+    fullName: Xamarin.Forms.BindableObject.ClearValue
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Xamarin.Forms.BindablePropertyKey
+    name: BindablePropertyKey
+    nameWithType: BindablePropertyKey
+    fullName: Xamarin.Forms.BindablePropertyKey
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Xamarin.Forms.BindableObject.GetValue(Xamarin.Forms.BindableProperty)
+  commentId: M:Xamarin.Forms.BindableObject.GetValue(Xamarin.Forms.BindableProperty)
+  parent: Xamarin.Forms.BindableObject
+  isExternal: true
+  name: GetValue(BindableProperty)
+  nameWithType: BindableObject.GetValue(BindableProperty)
+  fullName: Xamarin.Forms.BindableObject.GetValue(Xamarin.Forms.BindableProperty)
+  spec.csharp:
+  - uid: Xamarin.Forms.BindableObject.GetValue(Xamarin.Forms.BindableProperty)
+    name: GetValue
+    nameWithType: BindableObject.GetValue
+    fullName: Xamarin.Forms.BindableObject.GetValue
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Xamarin.Forms.BindableProperty
+    name: BindableProperty
+    nameWithType: BindableProperty
+    fullName: Xamarin.Forms.BindableProperty
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Xamarin.Forms.BindableObject.GetValue(Xamarin.Forms.BindableProperty)
+    name: GetValue
+    nameWithType: BindableObject.GetValue
+    fullName: Xamarin.Forms.BindableObject.GetValue
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Xamarin.Forms.BindableProperty
+    name: BindableProperty
+    nameWithType: BindableProperty
+    fullName: Xamarin.Forms.BindableProperty
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Xamarin.Forms.BindableObject.IsSet(Xamarin.Forms.BindableProperty)
+  commentId: M:Xamarin.Forms.BindableObject.IsSet(Xamarin.Forms.BindableProperty)
+  parent: Xamarin.Forms.BindableObject
+  isExternal: true
+  name: IsSet(BindableProperty)
+  nameWithType: BindableObject.IsSet(BindableProperty)
+  fullName: Xamarin.Forms.BindableObject.IsSet(Xamarin.Forms.BindableProperty)
+  spec.csharp:
+  - uid: Xamarin.Forms.BindableObject.IsSet(Xamarin.Forms.BindableProperty)
+    name: IsSet
+    nameWithType: BindableObject.IsSet
+    fullName: Xamarin.Forms.BindableObject.IsSet
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Xamarin.Forms.BindableProperty
+    name: BindableProperty
+    nameWithType: BindableProperty
+    fullName: Xamarin.Forms.BindableProperty
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Xamarin.Forms.BindableObject.IsSet(Xamarin.Forms.BindableProperty)
+    name: IsSet
+    nameWithType: BindableObject.IsSet
+    fullName: Xamarin.Forms.BindableObject.IsSet
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Xamarin.Forms.BindableProperty
+    name: BindableProperty
+    nameWithType: BindableProperty
+    fullName: Xamarin.Forms.BindableProperty
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Xamarin.Forms.BindableObject.RemoveBinding(Xamarin.Forms.BindableProperty)
+  commentId: M:Xamarin.Forms.BindableObject.RemoveBinding(Xamarin.Forms.BindableProperty)
+  parent: Xamarin.Forms.BindableObject
+  isExternal: true
+  name: RemoveBinding(BindableProperty)
+  nameWithType: BindableObject.RemoveBinding(BindableProperty)
+  fullName: Xamarin.Forms.BindableObject.RemoveBinding(Xamarin.Forms.BindableProperty)
+  spec.csharp:
+  - uid: Xamarin.Forms.BindableObject.RemoveBinding(Xamarin.Forms.BindableProperty)
+    name: RemoveBinding
+    nameWithType: BindableObject.RemoveBinding
+    fullName: Xamarin.Forms.BindableObject.RemoveBinding
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Xamarin.Forms.BindableProperty
+    name: BindableProperty
+    nameWithType: BindableProperty
+    fullName: Xamarin.Forms.BindableProperty
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Xamarin.Forms.BindableObject.RemoveBinding(Xamarin.Forms.BindableProperty)
+    name: RemoveBinding
+    nameWithType: BindableObject.RemoveBinding
+    fullName: Xamarin.Forms.BindableObject.RemoveBinding
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Xamarin.Forms.BindableProperty
+    name: BindableProperty
+    nameWithType: BindableProperty
+    fullName: Xamarin.Forms.BindableProperty
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Xamarin.Forms.BindableObject.SetBinding(Xamarin.Forms.BindableProperty,Xamarin.Forms.BindingBase)
+  commentId: M:Xamarin.Forms.BindableObject.SetBinding(Xamarin.Forms.BindableProperty,Xamarin.Forms.BindingBase)
+  parent: Xamarin.Forms.BindableObject
+  isExternal: true
+  name: SetBinding(BindableProperty, BindingBase)
+  nameWithType: BindableObject.SetBinding(BindableProperty, BindingBase)
+  fullName: Xamarin.Forms.BindableObject.SetBinding(Xamarin.Forms.BindableProperty, Xamarin.Forms.BindingBase)
+  spec.csharp:
+  - uid: Xamarin.Forms.BindableObject.SetBinding(Xamarin.Forms.BindableProperty,Xamarin.Forms.BindingBase)
+    name: SetBinding
+    nameWithType: BindableObject.SetBinding
+    fullName: Xamarin.Forms.BindableObject.SetBinding
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Xamarin.Forms.BindableProperty
+    name: BindableProperty
+    nameWithType: BindableProperty
+    fullName: Xamarin.Forms.BindableProperty
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Xamarin.Forms.BindingBase
+    name: BindingBase
+    nameWithType: BindingBase
+    fullName: Xamarin.Forms.BindingBase
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Xamarin.Forms.BindableObject.SetBinding(Xamarin.Forms.BindableProperty,Xamarin.Forms.BindingBase)
+    name: SetBinding
+    nameWithType: BindableObject.SetBinding
+    fullName: Xamarin.Forms.BindableObject.SetBinding
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Xamarin.Forms.BindableProperty
+    name: BindableProperty
+    nameWithType: BindableProperty
+    fullName: Xamarin.Forms.BindableProperty
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Xamarin.Forms.BindingBase
+    name: BindingBase
+    nameWithType: BindingBase
+    fullName: Xamarin.Forms.BindingBase
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Xamarin.Forms.BindableObject.ApplyBindings
+  commentId: M:Xamarin.Forms.BindableObject.ApplyBindings
+  parent: Xamarin.Forms.BindableObject
+  isExternal: true
+  name: ApplyBindings()
+  nameWithType: BindableObject.ApplyBindings()
+  fullName: Xamarin.Forms.BindableObject.ApplyBindings()
+  spec.csharp:
+  - uid: Xamarin.Forms.BindableObject.ApplyBindings
+    name: ApplyBindings
+    nameWithType: BindableObject.ApplyBindings
+    fullName: Xamarin.Forms.BindableObject.ApplyBindings
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Xamarin.Forms.BindableObject.ApplyBindings
+    name: ApplyBindings
+    nameWithType: BindableObject.ApplyBindings
+    fullName: Xamarin.Forms.BindableObject.ApplyBindings
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Xamarin.Forms.BindableObject.OnPropertyChanging(System.String)
+  commentId: M:Xamarin.Forms.BindableObject.OnPropertyChanging(System.String)
+  parent: Xamarin.Forms.BindableObject
+  isExternal: true
+  name: OnPropertyChanging(String)
+  nameWithType: BindableObject.OnPropertyChanging(String)
+  fullName: Xamarin.Forms.BindableObject.OnPropertyChanging(System.String)
+  spec.csharp:
+  - uid: Xamarin.Forms.BindableObject.OnPropertyChanging(System.String)
+    name: OnPropertyChanging
+    nameWithType: BindableObject.OnPropertyChanging
+    fullName: Xamarin.Forms.BindableObject.OnPropertyChanging
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Xamarin.Forms.BindableObject.OnPropertyChanging(System.String)
+    name: OnPropertyChanging
+    nameWithType: BindableObject.OnPropertyChanging
+    fullName: Xamarin.Forms.BindableObject.OnPropertyChanging
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Xamarin.Forms.BindableObject.UnapplyBindings
+  commentId: M:Xamarin.Forms.BindableObject.UnapplyBindings
+  parent: Xamarin.Forms.BindableObject
+  isExternal: true
+  name: UnapplyBindings()
+  nameWithType: BindableObject.UnapplyBindings()
+  fullName: Xamarin.Forms.BindableObject.UnapplyBindings()
+  spec.csharp:
+  - uid: Xamarin.Forms.BindableObject.UnapplyBindings
+    name: UnapplyBindings
+    nameWithType: BindableObject.UnapplyBindings
+    fullName: Xamarin.Forms.BindableObject.UnapplyBindings
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Xamarin.Forms.BindableObject.UnapplyBindings
+    name: UnapplyBindings
+    nameWithType: BindableObject.UnapplyBindings
+    fullName: Xamarin.Forms.BindableObject.UnapplyBindings
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Xamarin.Forms.BindableObject.SetValue(Xamarin.Forms.BindableProperty,System.Object)
+  commentId: M:Xamarin.Forms.BindableObject.SetValue(Xamarin.Forms.BindableProperty,System.Object)
+  parent: Xamarin.Forms.BindableObject
+  isExternal: true
+  name: SetValue(BindableProperty, Object)
+  nameWithType: BindableObject.SetValue(BindableProperty, Object)
+  fullName: Xamarin.Forms.BindableObject.SetValue(Xamarin.Forms.BindableProperty, System.Object)
+  spec.csharp:
+  - uid: Xamarin.Forms.BindableObject.SetValue(Xamarin.Forms.BindableProperty,System.Object)
+    name: SetValue
+    nameWithType: BindableObject.SetValue
+    fullName: Xamarin.Forms.BindableObject.SetValue
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Xamarin.Forms.BindableProperty
+    name: BindableProperty
+    nameWithType: BindableProperty
+    fullName: Xamarin.Forms.BindableProperty
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Xamarin.Forms.BindableObject.SetValue(Xamarin.Forms.BindableProperty,System.Object)
+    name: SetValue
+    nameWithType: BindableObject.SetValue
+    fullName: Xamarin.Forms.BindableObject.SetValue
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Xamarin.Forms.BindableProperty
+    name: BindableProperty
+    nameWithType: BindableProperty
+    fullName: Xamarin.Forms.BindableProperty
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Xamarin.Forms.BindableObject.SetValue(Xamarin.Forms.BindablePropertyKey,System.Object)
+  commentId: M:Xamarin.Forms.BindableObject.SetValue(Xamarin.Forms.BindablePropertyKey,System.Object)
+  parent: Xamarin.Forms.BindableObject
+  isExternal: true
+  name: SetValue(BindablePropertyKey, Object)
+  nameWithType: BindableObject.SetValue(BindablePropertyKey, Object)
+  fullName: Xamarin.Forms.BindableObject.SetValue(Xamarin.Forms.BindablePropertyKey, System.Object)
+  spec.csharp:
+  - uid: Xamarin.Forms.BindableObject.SetValue(Xamarin.Forms.BindablePropertyKey,System.Object)
+    name: SetValue
+    nameWithType: BindableObject.SetValue
+    fullName: Xamarin.Forms.BindableObject.SetValue
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Xamarin.Forms.BindablePropertyKey
+    name: BindablePropertyKey
+    nameWithType: BindablePropertyKey
+    fullName: Xamarin.Forms.BindablePropertyKey
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Xamarin.Forms.BindableObject.SetValue(Xamarin.Forms.BindablePropertyKey,System.Object)
+    name: SetValue
+    nameWithType: BindableObject.SetValue
+    fullName: Xamarin.Forms.BindableObject.SetValue
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Xamarin.Forms.BindablePropertyKey
+    name: BindablePropertyKey
+    nameWithType: BindablePropertyKey
+    fullName: Xamarin.Forms.BindablePropertyKey
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Xamarin.Forms.BindableObject.CoerceValue(Xamarin.Forms.BindableProperty)
+  commentId: M:Xamarin.Forms.BindableObject.CoerceValue(Xamarin.Forms.BindableProperty)
+  parent: Xamarin.Forms.BindableObject
+  isExternal: true
+  name: CoerceValue(BindableProperty)
+  nameWithType: BindableObject.CoerceValue(BindableProperty)
+  fullName: Xamarin.Forms.BindableObject.CoerceValue(Xamarin.Forms.BindableProperty)
+  spec.csharp:
+  - uid: Xamarin.Forms.BindableObject.CoerceValue(Xamarin.Forms.BindableProperty)
+    name: CoerceValue
+    nameWithType: BindableObject.CoerceValue
+    fullName: Xamarin.Forms.BindableObject.CoerceValue
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Xamarin.Forms.BindableProperty
+    name: BindableProperty
+    nameWithType: BindableProperty
+    fullName: Xamarin.Forms.BindableProperty
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Xamarin.Forms.BindableObject.CoerceValue(Xamarin.Forms.BindableProperty)
+    name: CoerceValue
+    nameWithType: BindableObject.CoerceValue
+    fullName: Xamarin.Forms.BindableObject.CoerceValue
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Xamarin.Forms.BindableProperty
+    name: BindableProperty
+    nameWithType: BindableProperty
+    fullName: Xamarin.Forms.BindableProperty
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Xamarin.Forms.BindableObject.CoerceValue(Xamarin.Forms.BindablePropertyKey)
+  commentId: M:Xamarin.Forms.BindableObject.CoerceValue(Xamarin.Forms.BindablePropertyKey)
+  parent: Xamarin.Forms.BindableObject
+  isExternal: true
+  name: CoerceValue(BindablePropertyKey)
+  nameWithType: BindableObject.CoerceValue(BindablePropertyKey)
+  fullName: Xamarin.Forms.BindableObject.CoerceValue(Xamarin.Forms.BindablePropertyKey)
+  spec.csharp:
+  - uid: Xamarin.Forms.BindableObject.CoerceValue(Xamarin.Forms.BindablePropertyKey)
+    name: CoerceValue
+    nameWithType: BindableObject.CoerceValue
+    fullName: Xamarin.Forms.BindableObject.CoerceValue
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Xamarin.Forms.BindablePropertyKey
+    name: BindablePropertyKey
+    nameWithType: BindablePropertyKey
+    fullName: Xamarin.Forms.BindablePropertyKey
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Xamarin.Forms.BindableObject.CoerceValue(Xamarin.Forms.BindablePropertyKey)
+    name: CoerceValue
+    nameWithType: BindableObject.CoerceValue
+    fullName: Xamarin.Forms.BindableObject.CoerceValue
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Xamarin.Forms.BindablePropertyKey
+    name: BindablePropertyKey
+    nameWithType: BindablePropertyKey
+    fullName: Xamarin.Forms.BindablePropertyKey
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Xamarin.Forms.BindableObject.Dispatcher
+  commentId: P:Xamarin.Forms.BindableObject.Dispatcher
+  parent: Xamarin.Forms.BindableObject
+  isExternal: true
+  name: Dispatcher
+  nameWithType: BindableObject.Dispatcher
+  fullName: Xamarin.Forms.BindableObject.Dispatcher
+- uid: Xamarin.Forms.BindableObject.BindingContext
+  commentId: P:Xamarin.Forms.BindableObject.BindingContext
+  parent: Xamarin.Forms.BindableObject
+  isExternal: true
+  name: BindingContext
+  nameWithType: BindableObject.BindingContext
+  fullName: Xamarin.Forms.BindableObject.BindingContext
+- uid: Xamarin.Forms.BindableObject.PropertyChanged
+  commentId: E:Xamarin.Forms.BindableObject.PropertyChanged
+  parent: Xamarin.Forms.BindableObject
+  isExternal: true
+  name: PropertyChanged
+  nameWithType: BindableObject.PropertyChanged
+  fullName: Xamarin.Forms.BindableObject.PropertyChanged
+- uid: Xamarin.Forms.BindableObject.PropertyChanging
+  commentId: E:Xamarin.Forms.BindableObject.PropertyChanging
+  parent: Xamarin.Forms.BindableObject
+  isExternal: true
+  name: PropertyChanging
+  nameWithType: BindableObject.PropertyChanging
+  fullName: Xamarin.Forms.BindableObject.PropertyChanging
+- uid: Xamarin.Forms.BindableObject.BindingContextChanged
+  commentId: E:Xamarin.Forms.BindableObject.BindingContextChanged
+  parent: Xamarin.Forms.BindableObject
+  isExternal: true
+  name: BindingContextChanged
+  nameWithType: BindableObject.BindingContextChanged
+  fullName: Xamarin.Forms.BindableObject.BindingContextChanged
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Xamarin.Forms
+  commentId: N:Xamarin.Forms
+  isExternal: true
+  name: Xamarin.Forms
+  nameWithType: Xamarin.Forms
+  fullName: Xamarin.Forms
+- uid: Xamarin.Forms.Behavior`1
+  commentId: T:Xamarin.Forms.Behavior`1
+  isExternal: true
+  name: Behavior<T>
+  nameWithType: Behavior<T>
+  fullName: Xamarin.Forms.Behavior<T>
+  nameWithType.vb: Behavior(Of T)
+  fullName.vb: Xamarin.Forms.Behavior(Of T)
+  name.vb: Behavior(Of T)
+  spec.csharp:
+  - uid: Xamarin.Forms.Behavior`1
+    name: Behavior
+    nameWithType: Behavior
+    fullName: Xamarin.Forms.Behavior
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Xamarin.Forms.Behavior`1
+    name: Behavior
+    nameWithType: Behavior
+    fullName: Xamarin.Forms.Behavior
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Prism.Behaviors.BehaviorBase`1
+  commentId: T:Prism.Behaviors.BehaviorBase`1
+  isExternal: true
+  name: BehaviorBase<T>
+  nameWithType: BehaviorBase<T>
+  fullName: Prism.Behaviors.BehaviorBase<T>
+  nameWithType.vb: BehaviorBase(Of T)
+  fullName.vb: Prism.Behaviors.BehaviorBase(Of T)
+  name.vb: BehaviorBase(Of T)
+  spec.csharp:
+  - uid: Prism.Behaviors.BehaviorBase`1
+    name: BehaviorBase
+    nameWithType: BehaviorBase
+    fullName: Prism.Behaviors.BehaviorBase
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Prism.Behaviors.BehaviorBase`1
+    name: BehaviorBase
+    nameWithType: BehaviorBase
+    fullName: Prism.Behaviors.BehaviorBase
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Prism.Behaviors
+  commentId: N:Prism.Behaviors
+  isExternal: true
+  name: Prism.Behaviors
+  nameWithType: Prism.Behaviors
+  fullName: Prism.Behaviors
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: true
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+- uid: Prism.Behaviors.BehaviorBase`1.OnAttachedTo(`0)
+  commentId: M:Prism.Behaviors.BehaviorBase`1.OnAttachedTo(`0)
+  isExternal: true
+  name: OnAttachedTo(T)
+  nameWithType: BehaviorBase<T>.OnAttachedTo(T)
+  fullName: Prism.Behaviors.BehaviorBase<T>.OnAttachedTo(T)
+  nameWithType.vb: BehaviorBase(Of T).OnAttachedTo(T)
+  fullName.vb: Prism.Behaviors.BehaviorBase(Of T).OnAttachedTo(T)
+  spec.csharp:
+  - uid: Prism.Behaviors.BehaviorBase`1.OnAttachedTo(`0)
+    name: OnAttachedTo
+    nameWithType: BehaviorBase<T>.OnAttachedTo
+    fullName: Prism.Behaviors.BehaviorBase<T>.OnAttachedTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Prism.Behaviors.BehaviorBase`1.OnAttachedTo(`0)
+    name: OnAttachedTo
+    nameWithType: BehaviorBase(Of T).OnAttachedTo
+    fullName: Prism.Behaviors.BehaviorBase(Of T).OnAttachedTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Prism.Behaviors.BehaviorBase`1.OnDetachingFrom(`0)
+  commentId: M:Prism.Behaviors.BehaviorBase`1.OnDetachingFrom(`0)
+  isExternal: true
+  name: OnDetachingFrom(T)
+  nameWithType: BehaviorBase<T>.OnDetachingFrom(T)
+  fullName: Prism.Behaviors.BehaviorBase<T>.OnDetachingFrom(T)
+  nameWithType.vb: BehaviorBase(Of T).OnDetachingFrom(T)
+  fullName.vb: Prism.Behaviors.BehaviorBase(Of T).OnDetachingFrom(T)
+  spec.csharp:
+  - uid: Prism.Behaviors.BehaviorBase`1.OnDetachingFrom(`0)
+    name: OnDetachingFrom
+    nameWithType: BehaviorBase<T>.OnDetachingFrom
+    fullName: Prism.Behaviors.BehaviorBase<T>.OnDetachingFrom
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Prism.Behaviors.BehaviorBase`1.OnDetachingFrom(`0)
+    name: OnDetachingFrom
+    nameWithType: BehaviorBase(Of T).OnDetachingFrom
+    fullName: Prism.Behaviors.BehaviorBase(Of T).OnDetachingFrom
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Prism.Behaviors.BehaviorBase`1.OnBindingContextChanged
+  commentId: M:Prism.Behaviors.BehaviorBase`1.OnBindingContextChanged
+  isExternal: true
+  name: OnBindingContextChanged()
+  nameWithType: BehaviorBase<T>.OnBindingContextChanged()
+  fullName: Prism.Behaviors.BehaviorBase<T>.OnBindingContextChanged()
+  nameWithType.vb: BehaviorBase(Of T).OnBindingContextChanged()
+  fullName.vb: Prism.Behaviors.BehaviorBase(Of T).OnBindingContextChanged()
+  spec.csharp:
+  - uid: Prism.Behaviors.BehaviorBase`1.OnBindingContextChanged
+    name: OnBindingContextChanged
+    nameWithType: BehaviorBase<T>.OnBindingContextChanged
+    fullName: Prism.Behaviors.BehaviorBase<T>.OnBindingContextChanged
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Prism.Behaviors.BehaviorBase`1.OnBindingContextChanged
+    name: OnBindingContextChanged
+    nameWithType: BehaviorBase(Of T).OnBindingContextChanged
+    fullName: Prism.Behaviors.BehaviorBase(Of T).OnBindingContextChanged
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Prism.Behaviors.BehaviorBase`1.AssociatedObject
+  commentId: P:Prism.Behaviors.BehaviorBase`1.AssociatedObject
+  isExternal: true
+  name: AssociatedObject
+  nameWithType: BehaviorBase<T>.AssociatedObject
+  fullName: Prism.Behaviors.BehaviorBase<T>.AssociatedObject
+  nameWithType.vb: BehaviorBase(Of T).AssociatedObject
+  fullName.vb: Prism.Behaviors.BehaviorBase(Of T).AssociatedObject
+- uid: Xamarin.Forms.Behavior`1.OnAttachedTo(Xamarin.Forms.BindableObject)
+  commentId: M:Xamarin.Forms.Behavior`1.OnAttachedTo(Xamarin.Forms.BindableObject)
+  isExternal: true
+  name: OnAttachedTo(BindableObject)
+  nameWithType: Behavior<T>.OnAttachedTo(BindableObject)
+  fullName: Xamarin.Forms.Behavior<T>.OnAttachedTo(Xamarin.Forms.BindableObject)
+  nameWithType.vb: Behavior(Of T).OnAttachedTo(BindableObject)
+  fullName.vb: Xamarin.Forms.Behavior(Of T).OnAttachedTo(Xamarin.Forms.BindableObject)
+  spec.csharp:
+  - uid: Xamarin.Forms.Behavior`1.OnAttachedTo(Xamarin.Forms.BindableObject)
+    name: OnAttachedTo
+    nameWithType: Behavior<T>.OnAttachedTo
+    fullName: Xamarin.Forms.Behavior<T>.OnAttachedTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Xamarin.Forms.BindableObject
+    name: BindableObject
+    nameWithType: BindableObject
+    fullName: Xamarin.Forms.BindableObject
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Xamarin.Forms.Behavior`1.OnAttachedTo(Xamarin.Forms.BindableObject)
+    name: OnAttachedTo
+    nameWithType: Behavior(Of T).OnAttachedTo
+    fullName: Xamarin.Forms.Behavior(Of T).OnAttachedTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Xamarin.Forms.BindableObject
+    name: BindableObject
+    nameWithType: BindableObject
+    fullName: Xamarin.Forms.BindableObject
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Xamarin.Forms.Behavior`1.OnDetachingFrom(Xamarin.Forms.BindableObject)
+  commentId: M:Xamarin.Forms.Behavior`1.OnDetachingFrom(Xamarin.Forms.BindableObject)
+  isExternal: true
+  name: OnDetachingFrom(BindableObject)
+  nameWithType: Behavior<T>.OnDetachingFrom(BindableObject)
+  fullName: Xamarin.Forms.Behavior<T>.OnDetachingFrom(Xamarin.Forms.BindableObject)
+  nameWithType.vb: Behavior(Of T).OnDetachingFrom(BindableObject)
+  fullName.vb: Xamarin.Forms.Behavior(Of T).OnDetachingFrom(Xamarin.Forms.BindableObject)
+  spec.csharp:
+  - uid: Xamarin.Forms.Behavior`1.OnDetachingFrom(Xamarin.Forms.BindableObject)
+    name: OnDetachingFrom
+    nameWithType: Behavior<T>.OnDetachingFrom
+    fullName: Xamarin.Forms.Behavior<T>.OnDetachingFrom
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Xamarin.Forms.BindableObject
+    name: BindableObject
+    nameWithType: BindableObject
+    fullName: Xamarin.Forms.BindableObject
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Xamarin.Forms.Behavior`1.OnDetachingFrom(Xamarin.Forms.BindableObject)
+    name: OnDetachingFrom
+    nameWithType: Behavior(Of T).OnDetachingFrom
+    fullName: Xamarin.Forms.Behavior(Of T).OnDetachingFrom
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Xamarin.Forms.BindableObject
+    name: BindableObject
+    nameWithType: BindableObject
+    fullName: Xamarin.Forms.BindableObject
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Xamarin.Forms.BindableProperty
+  commentId: T:Xamarin.Forms.BindableProperty
+  parent: Xamarin.Forms
+  isExternal: true
+  name: BindableProperty
+  nameWithType: BindableProperty
+  fullName: Xamarin.Forms.BindableProperty
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ShowCalloutForGeoElementBehavior.CalloutInfo*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ShowCalloutForGeoElementBehavior.CalloutInfo
+  name: CalloutInfo
+  nameWithType: ShowCalloutForGeoElementBehavior.CalloutInfo
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ShowCalloutForGeoElementBehavior.CalloutInfo
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.CalloutInfo
+  commentId: T:EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.CalloutInfo
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
+  name: CalloutInfo
+  nameWithType: CalloutInfo
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.CalloutInfo
+- uid: Xamarin.Forms.BindableObject.OnPropertyChanged(System.String)
+  commentId: M:Xamarin.Forms.BindableObject.OnPropertyChanged(System.String)
+  parent: Xamarin.Forms.BindableObject
+  isExternal: true
+  name: OnPropertyChanged(String)
+  nameWithType: BindableObject.OnPropertyChanged(String)
+  fullName: Xamarin.Forms.BindableObject.OnPropertyChanged(System.String)
+  spec.csharp:
+  - uid: Xamarin.Forms.BindableObject.OnPropertyChanged(System.String)
+    name: OnPropertyChanged
+    nameWithType: BindableObject.OnPropertyChanged
+    fullName: Xamarin.Forms.BindableObject.OnPropertyChanged
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Xamarin.Forms.BindableObject.OnPropertyChanged(System.String)
+    name: OnPropertyChanged
+    nameWithType: BindableObject.OnPropertyChanged
+    fullName: Xamarin.Forms.BindableObject.OnPropertyChanged
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ShowCalloutForGeoElementBehavior.OnPropertyChanged*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ShowCalloutForGeoElementBehavior.OnPropertyChanged
+  name: OnPropertyChanged
+  nameWithType: ShowCalloutForGeoElementBehavior.OnPropertyChanged
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ShowCalloutForGeoElementBehavior.OnPropertyChanged
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

@@ -1,0 +1,551 @@
+### YamlMime:ManagedReference
+items:
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.FormsModule
+  commentId: T:EsriCo.ArcGISRuntime.Xamarin.Forms.FormsModule
+  id: FormsModule
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms
+  children:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.FormsModule.OnInitialized(Prism.Ioc.IContainerProvider)
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.FormsModule.RegisterTypes(Prism.Ioc.IContainerRegistry)
+  langs:
+  - csharp
+  - vb
+  name: FormsModule
+  nameWithType: FormsModule
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.FormsModule
+  type: Class
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/FormsModule.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: FormsModule
+    path: FormsModule.cs
+    startLine: 8
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: 'public class FormsModule : IModule'
+    content.vb: >-
+      Public Class FormsModule
+          Implements IModule
+  inheritance:
+  - System.Object
+  implements:
+  - Prism.Modularity.IModule
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.FormsModule.OnInitialized(Prism.Ioc.IContainerProvider)
+  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.FormsModule.OnInitialized(Prism.Ioc.IContainerProvider)
+  id: OnInitialized(Prism.Ioc.IContainerProvider)
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.FormsModule
+  langs:
+  - csharp
+  - vb
+  name: OnInitialized(IContainerProvider)
+  nameWithType: FormsModule.OnInitialized(IContainerProvider)
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.FormsModule.OnInitialized(Prism.Ioc.IContainerProvider)
+  type: Method
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/FormsModule.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: OnInitialized
+    path: FormsModule.cs
+    startLine: 14
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public void OnInitialized(IContainerProvider containerProvider)
+    parameters:
+    - id: containerProvider
+      type: Prism.Ioc.IContainerProvider
+      description: ''
+    content.vb: Public Sub OnInitialized(containerProvider As IContainerProvider)
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.FormsModule.OnInitialized*
+  implements:
+  - Prism.Modularity.IModule.OnInitialized(Prism.Ioc.IContainerProvider)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.FormsModule.RegisterTypes(Prism.Ioc.IContainerRegistry)
+  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.FormsModule.RegisterTypes(Prism.Ioc.IContainerRegistry)
+  id: RegisterTypes(Prism.Ioc.IContainerRegistry)
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.FormsModule
+  langs:
+  - csharp
+  - vb
+  name: RegisterTypes(IContainerRegistry)
+  nameWithType: FormsModule.RegisterTypes(IContainerRegistry)
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.FormsModule.RegisterTypes(Prism.Ioc.IContainerRegistry)
+  type: Method
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/FormsModule.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: RegisterTypes
+    path: FormsModule.cs
+    startLine: 23
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public void RegisterTypes(IContainerRegistry containerRegistry)
+    parameters:
+    - id: containerRegistry
+      type: Prism.Ioc.IContainerRegistry
+      description: ''
+    content.vb: Public Sub RegisterTypes(containerRegistry As IContainerRegistry)
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.FormsModule.RegisterTypes*
+  implements:
+  - Prism.Modularity.IModule.RegisterTypes(Prism.Ioc.IContainerRegistry)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms
+  commentId: N:EsriCo.ArcGISRuntime.Xamarin.Forms
+  name: EsriCo.ArcGISRuntime.Xamarin.Forms
+  nameWithType: EsriCo.ArcGISRuntime.Xamarin.Forms
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Prism.Modularity.IModule
+  commentId: T:Prism.Modularity.IModule
+  parent: Prism.Modularity
+  isExternal: true
+  name: IModule
+  nameWithType: IModule
+  fullName: Prism.Modularity.IModule
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Prism.Modularity
+  commentId: N:Prism.Modularity
+  isExternal: true
+  name: Prism.Modularity
+  nameWithType: Prism.Modularity
+  fullName: Prism.Modularity
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.FormsModule.OnInitialized*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.FormsModule.OnInitialized
+  name: OnInitialized
+  nameWithType: FormsModule.OnInitialized
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.FormsModule.OnInitialized
+- uid: Prism.Modularity.IModule.OnInitialized(Prism.Ioc.IContainerProvider)
+  commentId: M:Prism.Modularity.IModule.OnInitialized(Prism.Ioc.IContainerProvider)
+  parent: Prism.Modularity.IModule
+  isExternal: true
+  name: OnInitialized(IContainerProvider)
+  nameWithType: IModule.OnInitialized(IContainerProvider)
+  fullName: Prism.Modularity.IModule.OnInitialized(Prism.Ioc.IContainerProvider)
+  spec.csharp:
+  - uid: Prism.Modularity.IModule.OnInitialized(Prism.Ioc.IContainerProvider)
+    name: OnInitialized
+    nameWithType: IModule.OnInitialized
+    fullName: Prism.Modularity.IModule.OnInitialized
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Prism.Ioc.IContainerProvider
+    name: IContainerProvider
+    nameWithType: IContainerProvider
+    fullName: Prism.Ioc.IContainerProvider
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Prism.Modularity.IModule.OnInitialized(Prism.Ioc.IContainerProvider)
+    name: OnInitialized
+    nameWithType: IModule.OnInitialized
+    fullName: Prism.Modularity.IModule.OnInitialized
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Prism.Ioc.IContainerProvider
+    name: IContainerProvider
+    nameWithType: IContainerProvider
+    fullName: Prism.Ioc.IContainerProvider
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Prism.Ioc.IContainerProvider
+  commentId: T:Prism.Ioc.IContainerProvider
+  parent: Prism.Ioc
+  isExternal: true
+  name: IContainerProvider
+  nameWithType: IContainerProvider
+  fullName: Prism.Ioc.IContainerProvider
+- uid: Prism.Ioc
+  commentId: N:Prism.Ioc
+  isExternal: true
+  name: Prism.Ioc
+  nameWithType: Prism.Ioc
+  fullName: Prism.Ioc
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.FormsModule.RegisterTypes*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.FormsModule.RegisterTypes
+  name: RegisterTypes
+  nameWithType: FormsModule.RegisterTypes
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.FormsModule.RegisterTypes
+- uid: Prism.Modularity.IModule.RegisterTypes(Prism.Ioc.IContainerRegistry)
+  commentId: M:Prism.Modularity.IModule.RegisterTypes(Prism.Ioc.IContainerRegistry)
+  parent: Prism.Modularity.IModule
+  isExternal: true
+  name: RegisterTypes(IContainerRegistry)
+  nameWithType: IModule.RegisterTypes(IContainerRegistry)
+  fullName: Prism.Modularity.IModule.RegisterTypes(Prism.Ioc.IContainerRegistry)
+  spec.csharp:
+  - uid: Prism.Modularity.IModule.RegisterTypes(Prism.Ioc.IContainerRegistry)
+    name: RegisterTypes
+    nameWithType: IModule.RegisterTypes
+    fullName: Prism.Modularity.IModule.RegisterTypes
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Prism.Ioc.IContainerRegistry
+    name: IContainerRegistry
+    nameWithType: IContainerRegistry
+    fullName: Prism.Ioc.IContainerRegistry
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Prism.Modularity.IModule.RegisterTypes(Prism.Ioc.IContainerRegistry)
+    name: RegisterTypes
+    nameWithType: IModule.RegisterTypes
+    fullName: Prism.Modularity.IModule.RegisterTypes
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Prism.Ioc.IContainerRegistry
+    name: IContainerRegistry
+    nameWithType: IContainerRegistry
+    fullName: Prism.Ioc.IContainerRegistry
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Prism.Ioc.IContainerRegistry
+  commentId: T:Prism.Ioc.IContainerRegistry
+  parent: Prism.Ioc
+  isExternal: true
+  name: IContainerRegistry
+  nameWithType: IContainerRegistry
+  fullName: Prism.Ioc.IContainerRegistry
