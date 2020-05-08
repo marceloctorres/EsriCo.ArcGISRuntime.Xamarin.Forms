@@ -1,0 +1,2357 @@
+### YamlMime:ManagedReference
+items:
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources
+  commentId: T:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources
+  id: AppResources
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms
+  children:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.Acres
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.AddPortalButtonText
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.CancelButtonText
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.CloseButtonText
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.Culture
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DecimalDegrees
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DegreesDecimalMinutes
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DegreesMinutesSeconds
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DeleteReplicaMessageCantDelete
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DeleteReplicaMessageDeleted
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DeleteReplicaMessageDone
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DescriptionStringFormat
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DownloadReplicaOkMessageMap
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DownloadReplicaOkMessageSaved
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.Feet
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.GroupLabelText
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.Hectares
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.HidePasswordLabelText
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.Kilometers
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.LegendPanelTitleText
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.LoadMapButtonText
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.LogInButtonText
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.LoginLabelText
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.MeasurementTitleText
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.Meters
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.Miles
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.ModifiedDateStringFormat
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.OKButtonText
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.OwnerStringFormat
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.PasswordLabelText
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.PortalsLabelText
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.ProcessingMessageLabelText
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.ResourceManager
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.SquareFeet
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.SquareKilometers
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.SquareMeters
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.SquareMiles
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.SquareYards
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.TextLabelText
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.TitleStringFormat
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.TOCPanelTitleText
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.UsernameLabelText
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.WebMapsLabelText
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.Yards
+  langs:
+  - csharp
+  - vb
+  name: AppResources
+  nameWithType: AppResources
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources
+  type: Class
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/AppResources.Designer.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: AppResources
+    path: AppResources.Designer.cs
+    startLine: 21
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms
+  summary: "\nClase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.\n"
+  example: []
+  syntax:
+    content: public class AppResources
+    content.vb: Public Class AppResources
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.ResourceManager
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.ResourceManager
+  id: ResourceManager
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources
+  langs:
+  - csharp
+  - vb
+  name: ResourceManager
+  nameWithType: AppResources.ResourceManager
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.ResourceManager
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/AppResources.Designer.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: ResourceManager
+    path: AppResources.Designer.cs
+    startLine: 37
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms
+  summary: "\nDevuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.\n"
+  example: []
+  syntax:
+    content: public static ResourceManager ResourceManager { get; }
+    parameters: []
+    return:
+      type: System.Resources.ResourceManager
+    content.vb: Public Shared ReadOnly Property ResourceManager As ResourceManager
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.ResourceManager*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.Culture
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.Culture
+  id: Culture
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources
+  langs:
+  - csharp
+  - vb
+  name: Culture
+  nameWithType: AppResources.Culture
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.Culture
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/AppResources.Designer.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: Culture
+    path: AppResources.Designer.cs
+    startLine: 52
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms
+  summary: "\nReemplaza la propiedad CurrentUICulture del subproceso actual para todas las\nbúsquedas de recursos mediante esta clase de recurso fuertemente tipado.\n"
+  example: []
+  syntax:
+    content: public static CultureInfo Culture { get; set; }
+    parameters: []
+    return:
+      type: System.Globalization.CultureInfo
+    content.vb: Public Shared Property Culture As CultureInfo
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.Culture*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.Acres
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.Acres
+  id: Acres
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources
+  langs:
+  - csharp
+  - vb
+  name: Acres
+  nameWithType: AppResources.Acres
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.Acres
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/AppResources.Designer.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: Acres
+    path: AppResources.Designer.cs
+    startLine: 65
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms
+  summary: "\nBusca una cadena traducida similar a Acres.\n"
+  example: []
+  syntax:
+    content: public static string Acres { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property Acres As String
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.Acres*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.AddPortalButtonText
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.AddPortalButtonText
+  id: AddPortalButtonText
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources
+  langs:
+  - csharp
+  - vb
+  name: AddPortalButtonText
+  nameWithType: AppResources.AddPortalButtonText
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.AddPortalButtonText
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/AppResources.Designer.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: AddPortalButtonText
+    path: AppResources.Designer.cs
+    startLine: 74
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms
+  summary: "\nBusca una cadena traducida similar a Add Portal.\n"
+  example: []
+  syntax:
+    content: public static string AddPortalButtonText { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property AddPortalButtonText As String
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.AddPortalButtonText*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.CancelButtonText
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.CancelButtonText
+  id: CancelButtonText
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources
+  langs:
+  - csharp
+  - vb
+  name: CancelButtonText
+  nameWithType: AppResources.CancelButtonText
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.CancelButtonText
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/AppResources.Designer.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: CancelButtonText
+    path: AppResources.Designer.cs
+    startLine: 83
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms
+  summary: "\nBusca una cadena traducida similar a Cancel.\n"
+  example: []
+  syntax:
+    content: public static string CancelButtonText { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property CancelButtonText As String
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.CancelButtonText*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.CloseButtonText
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.CloseButtonText
+  id: CloseButtonText
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources
+  langs:
+  - csharp
+  - vb
+  name: CloseButtonText
+  nameWithType: AppResources.CloseButtonText
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.CloseButtonText
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/AppResources.Designer.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: CloseButtonText
+    path: AppResources.Designer.cs
+    startLine: 92
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms
+  summary: "\nBusca una cadena traducida similar a Close.\n"
+  example: []
+  syntax:
+    content: public static string CloseButtonText { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property CloseButtonText As String
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.CloseButtonText*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DecimalDegrees
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DecimalDegrees
+  id: DecimalDegrees
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources
+  langs:
+  - csharp
+  - vb
+  name: DecimalDegrees
+  nameWithType: AppResources.DecimalDegrees
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DecimalDegrees
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/AppResources.Designer.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: DecimalDegrees
+    path: AppResources.Designer.cs
+    startLine: 101
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms
+  summary: "\nBusca una cadena traducida similar a Decimal Degrees.\n"
+  example: []
+  syntax:
+    content: public static string DecimalDegrees { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property DecimalDegrees As String
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DecimalDegrees*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DegreesDecimalMinutes
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DegreesDecimalMinutes
+  id: DegreesDecimalMinutes
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources
+  langs:
+  - csharp
+  - vb
+  name: DegreesDecimalMinutes
+  nameWithType: AppResources.DegreesDecimalMinutes
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DegreesDecimalMinutes
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/AppResources.Designer.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: DegreesDecimalMinutes
+    path: AppResources.Designer.cs
+    startLine: 110
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms
+  summary: "\nBusca una cadena traducida similar a Degrees,Decimal Minutes.\n"
+  example: []
+  syntax:
+    content: public static string DegreesDecimalMinutes { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property DegreesDecimalMinutes As String
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DegreesDecimalMinutes*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DegreesMinutesSeconds
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DegreesMinutesSeconds
+  id: DegreesMinutesSeconds
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources
+  langs:
+  - csharp
+  - vb
+  name: DegreesMinutesSeconds
+  nameWithType: AppResources.DegreesMinutesSeconds
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DegreesMinutesSeconds
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/AppResources.Designer.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: DegreesMinutesSeconds
+    path: AppResources.Designer.cs
+    startLine: 119
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms
+  summary: "\nBusca una cadena traducida similar a Degrees,Minutes,Seconds.\n"
+  example: []
+  syntax:
+    content: public static string DegreesMinutesSeconds { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property DegreesMinutesSeconds As String
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DegreesMinutesSeconds*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DeleteReplicaMessageCantDelete
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DeleteReplicaMessageCantDelete
+  id: DeleteReplicaMessageCantDelete
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources
+  langs:
+  - csharp
+  - vb
+  name: DeleteReplicaMessageCantDelete
+  nameWithType: AppResources.DeleteReplicaMessageCantDelete
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DeleteReplicaMessageCantDelete
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/AppResources.Designer.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: DeleteReplicaMessageCantDelete
+    path: AppResources.Designer.cs
+    startLine: 128
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms
+  summary: "\nBusca una cadena traducida similar a Cant&apos; delete Replica Register Id:.\n"
+  example: []
+  syntax:
+    content: public static string DeleteReplicaMessageCantDelete { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property DeleteReplicaMessageCantDelete As String
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DeleteReplicaMessageCantDelete*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DeleteReplicaMessageDeleted
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DeleteReplicaMessageDeleted
+  id: DeleteReplicaMessageDeleted
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources
+  langs:
+  - csharp
+  - vb
+  name: DeleteReplicaMessageDeleted
+  nameWithType: AppResources.DeleteReplicaMessageDeleted
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DeleteReplicaMessageDeleted
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/AppResources.Designer.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: DeleteReplicaMessageDeleted
+    path: AppResources.Designer.cs
+    startLine: 137
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms
+  summary: "\nBusca una cadena traducida similar a Replica Register deleted Id: .\n"
+  example: []
+  syntax:
+    content: public static string DeleteReplicaMessageDeleted { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property DeleteReplicaMessageDeleted As String
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DeleteReplicaMessageDeleted*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DeleteReplicaMessageDone
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DeleteReplicaMessageDone
+  id: DeleteReplicaMessageDone
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources
+  langs:
+  - csharp
+  - vb
+  name: DeleteReplicaMessageDone
+  nameWithType: AppResources.DeleteReplicaMessageDone
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DeleteReplicaMessageDone
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/AppResources.Designer.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: DeleteReplicaMessageDone
+    path: AppResources.Designer.cs
+    startLine: 146
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms
+  summary: "\nBusca una cadena traducida similar a Replica deleted.\n"
+  example: []
+  syntax:
+    content: public static string DeleteReplicaMessageDone { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property DeleteReplicaMessageDone As String
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DeleteReplicaMessageDone*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DescriptionStringFormat
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DescriptionStringFormat
+  id: DescriptionStringFormat
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources
+  langs:
+  - csharp
+  - vb
+  name: DescriptionStringFormat
+  nameWithType: AppResources.DescriptionStringFormat
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DescriptionStringFormat
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/AppResources.Designer.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: DescriptionStringFormat
+    path: AppResources.Designer.cs
+    startLine: 155
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms
+  summary: "\nBusca una cadena traducida similar a Description: {0}.\n"
+  example: []
+  syntax:
+    content: public static string DescriptionStringFormat { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property DescriptionStringFormat As String
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DescriptionStringFormat*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DownloadReplicaOkMessageMap
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DownloadReplicaOkMessageMap
+  id: DownloadReplicaOkMessageMap
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources
+  langs:
+  - csharp
+  - vb
+  name: DownloadReplicaOkMessageMap
+  nameWithType: AppResources.DownloadReplicaOkMessageMap
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DownloadReplicaOkMessageMap
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/AppResources.Designer.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: DownloadReplicaOkMessageMap
+    path: AppResources.Designer.cs
+    startLine: 164
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms
+  summary: "\nBusca una cadena traducida similar a Map.\n"
+  example: []
+  syntax:
+    content: public static string DownloadReplicaOkMessageMap { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property DownloadReplicaOkMessageMap As String
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DownloadReplicaOkMessageMap*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DownloadReplicaOkMessageSaved
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DownloadReplicaOkMessageSaved
+  id: DownloadReplicaOkMessageSaved
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources
+  langs:
+  - csharp
+  - vb
+  name: DownloadReplicaOkMessageSaved
+  nameWithType: AppResources.DownloadReplicaOkMessageSaved
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DownloadReplicaOkMessageSaved
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/AppResources.Designer.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: DownloadReplicaOkMessageSaved
+    path: AppResources.Designer.cs
+    startLine: 173
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms
+  summary: "\nBusca una cadena traducida similar a saved.\n"
+  example: []
+  syntax:
+    content: public static string DownloadReplicaOkMessageSaved { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property DownloadReplicaOkMessageSaved As String
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DownloadReplicaOkMessageSaved*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.Feet
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.Feet
+  id: Feet
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources
+  langs:
+  - csharp
+  - vb
+  name: Feet
+  nameWithType: AppResources.Feet
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.Feet
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/AppResources.Designer.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: Feet
+    path: AppResources.Designer.cs
+    startLine: 182
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms
+  summary: "\nBusca una cadena traducida similar a Feet.\n"
+  example: []
+  syntax:
+    content: public static string Feet { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property Feet As String
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.Feet*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.GroupLabelText
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.GroupLabelText
+  id: GroupLabelText
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources
+  langs:
+  - csharp
+  - vb
+  name: GroupLabelText
+  nameWithType: AppResources.GroupLabelText
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.GroupLabelText
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/AppResources.Designer.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: GroupLabelText
+    path: AppResources.Designer.cs
+    startLine: 191
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms
+  summary: "\nBusca una cadena traducida similar a Group: .\n"
+  example: []
+  syntax:
+    content: public static string GroupLabelText { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property GroupLabelText As String
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.GroupLabelText*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.Hectares
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.Hectares
+  id: Hectares
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources
+  langs:
+  - csharp
+  - vb
+  name: Hectares
+  nameWithType: AppResources.Hectares
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.Hectares
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/AppResources.Designer.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: Hectares
+    path: AppResources.Designer.cs
+    startLine: 200
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms
+  summary: "\nBusca una cadena traducida similar a Hectares.\n"
+  example: []
+  syntax:
+    content: public static string Hectares { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property Hectares As String
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.Hectares*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.HidePasswordLabelText
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.HidePasswordLabelText
+  id: HidePasswordLabelText
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources
+  langs:
+  - csharp
+  - vb
+  name: HidePasswordLabelText
+  nameWithType: AppResources.HidePasswordLabelText
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.HidePasswordLabelText
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/AppResources.Designer.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: HidePasswordLabelText
+    path: AppResources.Designer.cs
+    startLine: 209
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms
+  summary: "\nBusca una cadena traducida similar a Hide Password:.\n"
+  example: []
+  syntax:
+    content: public static string HidePasswordLabelText { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property HidePasswordLabelText As String
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.HidePasswordLabelText*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.Kilometers
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.Kilometers
+  id: Kilometers
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources
+  langs:
+  - csharp
+  - vb
+  name: Kilometers
+  nameWithType: AppResources.Kilometers
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.Kilometers
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/AppResources.Designer.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: Kilometers
+    path: AppResources.Designer.cs
+    startLine: 218
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms
+  summary: "\nBusca una cadena traducida similar a Kilometers.\n"
+  example: []
+  syntax:
+    content: public static string Kilometers { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property Kilometers As String
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.Kilometers*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.LegendPanelTitleText
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.LegendPanelTitleText
+  id: LegendPanelTitleText
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources
+  langs:
+  - csharp
+  - vb
+  name: LegendPanelTitleText
+  nameWithType: AppResources.LegendPanelTitleText
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.LegendPanelTitleText
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/AppResources.Designer.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: LegendPanelTitleText
+    path: AppResources.Designer.cs
+    startLine: 227
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms
+  summary: "\nBusca una cadena traducida similar a Legend.\n"
+  example: []
+  syntax:
+    content: public static string LegendPanelTitleText { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property LegendPanelTitleText As String
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.LegendPanelTitleText*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.LoadMapButtonText
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.LoadMapButtonText
+  id: LoadMapButtonText
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources
+  langs:
+  - csharp
+  - vb
+  name: LoadMapButtonText
+  nameWithType: AppResources.LoadMapButtonText
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.LoadMapButtonText
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/AppResources.Designer.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: LoadMapButtonText
+    path: AppResources.Designer.cs
+    startLine: 236
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms
+  summary: "\nBusca una cadena traducida similar a Load Map.\n"
+  example: []
+  syntax:
+    content: public static string LoadMapButtonText { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property LoadMapButtonText As String
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.LoadMapButtonText*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.LogInButtonText
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.LogInButtonText
+  id: LogInButtonText
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources
+  langs:
+  - csharp
+  - vb
+  name: LogInButtonText
+  nameWithType: AppResources.LogInButtonText
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.LogInButtonText
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/AppResources.Designer.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: LogInButtonText
+    path: AppResources.Designer.cs
+    startLine: 245
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms
+  summary: "\nBusca una cadena traducida similar a Log In.\n"
+  example: []
+  syntax:
+    content: public static string LogInButtonText { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property LogInButtonText As String
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.LogInButtonText*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.LoginLabelText
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.LoginLabelText
+  id: LoginLabelText
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources
+  langs:
+  - csharp
+  - vb
+  name: LoginLabelText
+  nameWithType: AppResources.LoginLabelText
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.LoginLabelText
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/AppResources.Designer.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: LoginLabelText
+    path: AppResources.Designer.cs
+    startLine: 254
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms
+  summary: "\nBusca una cadena traducida similar a Log In.\n"
+  example: []
+  syntax:
+    content: public static string LoginLabelText { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property LoginLabelText As String
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.LoginLabelText*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.MeasurementTitleText
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.MeasurementTitleText
+  id: MeasurementTitleText
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources
+  langs:
+  - csharp
+  - vb
+  name: MeasurementTitleText
+  nameWithType: AppResources.MeasurementTitleText
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.MeasurementTitleText
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/AppResources.Designer.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: MeasurementTitleText
+    path: AppResources.Designer.cs
+    startLine: 263
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms
+  summary: "\nBusca una cadena traducida similar a Measurement.\n"
+  example: []
+  syntax:
+    content: public static string MeasurementTitleText { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property MeasurementTitleText As String
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.MeasurementTitleText*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.Meters
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.Meters
+  id: Meters
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources
+  langs:
+  - csharp
+  - vb
+  name: Meters
+  nameWithType: AppResources.Meters
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.Meters
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/AppResources.Designer.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: Meters
+    path: AppResources.Designer.cs
+    startLine: 272
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms
+  summary: "\nBusca una cadena traducida similar a Meters.\n"
+  example: []
+  syntax:
+    content: public static string Meters { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property Meters As String
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.Meters*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.Miles
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.Miles
+  id: Miles
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources
+  langs:
+  - csharp
+  - vb
+  name: Miles
+  nameWithType: AppResources.Miles
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.Miles
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/AppResources.Designer.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: Miles
+    path: AppResources.Designer.cs
+    startLine: 281
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms
+  summary: "\nBusca una cadena traducida similar a Miles.\n"
+  example: []
+  syntax:
+    content: public static string Miles { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property Miles As String
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.Miles*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.ModifiedDateStringFormat
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.ModifiedDateStringFormat
+  id: ModifiedDateStringFormat
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources
+  langs:
+  - csharp
+  - vb
+  name: ModifiedDateStringFormat
+  nameWithType: AppResources.ModifiedDateStringFormat
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.ModifiedDateStringFormat
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/AppResources.Designer.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: ModifiedDateStringFormat
+    path: AppResources.Designer.cs
+    startLine: 290
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms
+  summary: "\nBusca una cadena traducida similar a Last Update: {0:yyyy-MM-dd}.\n"
+  example: []
+  syntax:
+    content: public static string ModifiedDateStringFormat { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property ModifiedDateStringFormat As String
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.ModifiedDateStringFormat*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.OKButtonText
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.OKButtonText
+  id: OKButtonText
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources
+  langs:
+  - csharp
+  - vb
+  name: OKButtonText
+  nameWithType: AppResources.OKButtonText
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.OKButtonText
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/AppResources.Designer.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: OKButtonText
+    path: AppResources.Designer.cs
+    startLine: 299
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms
+  summary: "\nBusca una cadena traducida similar a OK.\n"
+  example: []
+  syntax:
+    content: public static string OKButtonText { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property OKButtonText As String
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.OKButtonText*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.OwnerStringFormat
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.OwnerStringFormat
+  id: OwnerStringFormat
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources
+  langs:
+  - csharp
+  - vb
+  name: OwnerStringFormat
+  nameWithType: AppResources.OwnerStringFormat
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.OwnerStringFormat
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/AppResources.Designer.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: OwnerStringFormat
+    path: AppResources.Designer.cs
+    startLine: 308
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms
+  summary: "\nBusca una cadena traducida similar a Owner: {0}.\n"
+  example: []
+  syntax:
+    content: public static string OwnerStringFormat { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property OwnerStringFormat As String
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.OwnerStringFormat*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.PasswordLabelText
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.PasswordLabelText
+  id: PasswordLabelText
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources
+  langs:
+  - csharp
+  - vb
+  name: PasswordLabelText
+  nameWithType: AppResources.PasswordLabelText
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.PasswordLabelText
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/AppResources.Designer.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: PasswordLabelText
+    path: AppResources.Designer.cs
+    startLine: 317
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms
+  summary: "\nBusca una cadena traducida similar a Password:.\n"
+  example: []
+  syntax:
+    content: public static string PasswordLabelText { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property PasswordLabelText As String
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.PasswordLabelText*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.PortalsLabelText
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.PortalsLabelText
+  id: PortalsLabelText
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources
+  langs:
+  - csharp
+  - vb
+  name: PortalsLabelText
+  nameWithType: AppResources.PortalsLabelText
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.PortalsLabelText
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/AppResources.Designer.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: PortalsLabelText
+    path: AppResources.Designer.cs
+    startLine: 326
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms
+  summary: "\nBusca una cadena traducida similar a Portals.\n"
+  example: []
+  syntax:
+    content: public static string PortalsLabelText { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property PortalsLabelText As String
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.PortalsLabelText*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.ProcessingMessageLabelText
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.ProcessingMessageLabelText
+  id: ProcessingMessageLabelText
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources
+  langs:
+  - csharp
+  - vb
+  name: ProcessingMessageLabelText
+  nameWithType: AppResources.ProcessingMessageLabelText
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.ProcessingMessageLabelText
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/AppResources.Designer.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: ProcessingMessageLabelText
+    path: AppResources.Designer.cs
+    startLine: 335
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms
+  summary: "\nBusca una cadena traducida similar a Processing....\n"
+  example: []
+  syntax:
+    content: public static string ProcessingMessageLabelText { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property ProcessingMessageLabelText As String
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.ProcessingMessageLabelText*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.SquareFeet
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.SquareFeet
+  id: SquareFeet
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources
+  langs:
+  - csharp
+  - vb
+  name: SquareFeet
+  nameWithType: AppResources.SquareFeet
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.SquareFeet
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/AppResources.Designer.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: SquareFeet
+    path: AppResources.Designer.cs
+    startLine: 344
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms
+  summary: "\nBusca una cadena traducida similar a Square Feet.\n"
+  example: []
+  syntax:
+    content: public static string SquareFeet { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property SquareFeet As String
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.SquareFeet*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.SquareKilometers
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.SquareKilometers
+  id: SquareKilometers
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources
+  langs:
+  - csharp
+  - vb
+  name: SquareKilometers
+  nameWithType: AppResources.SquareKilometers
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.SquareKilometers
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/AppResources.Designer.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: SquareKilometers
+    path: AppResources.Designer.cs
+    startLine: 353
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms
+  summary: "\nBusca una cadena traducida similar a Square Kilometers.\n"
+  example: []
+  syntax:
+    content: public static string SquareKilometers { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property SquareKilometers As String
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.SquareKilometers*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.SquareMeters
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.SquareMeters
+  id: SquareMeters
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources
+  langs:
+  - csharp
+  - vb
+  name: SquareMeters
+  nameWithType: AppResources.SquareMeters
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.SquareMeters
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/AppResources.Designer.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: SquareMeters
+    path: AppResources.Designer.cs
+    startLine: 362
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms
+  summary: "\nBusca una cadena traducida similar a Square Meters.\n"
+  example: []
+  syntax:
+    content: public static string SquareMeters { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property SquareMeters As String
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.SquareMeters*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.SquareMiles
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.SquareMiles
+  id: SquareMiles
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources
+  langs:
+  - csharp
+  - vb
+  name: SquareMiles
+  nameWithType: AppResources.SquareMiles
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.SquareMiles
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/AppResources.Designer.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: SquareMiles
+    path: AppResources.Designer.cs
+    startLine: 371
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms
+  summary: "\nBusca una cadena traducida similar a Square Miles.\n"
+  example: []
+  syntax:
+    content: public static string SquareMiles { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property SquareMiles As String
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.SquareMiles*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.SquareYards
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.SquareYards
+  id: SquareYards
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources
+  langs:
+  - csharp
+  - vb
+  name: SquareYards
+  nameWithType: AppResources.SquareYards
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.SquareYards
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/AppResources.Designer.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: SquareYards
+    path: AppResources.Designer.cs
+    startLine: 380
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms
+  summary: "\nBusca una cadena traducida similar a Square Yards.\n"
+  example: []
+  syntax:
+    content: public static string SquareYards { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property SquareYards As String
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.SquareYards*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.TextLabelText
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.TextLabelText
+  id: TextLabelText
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources
+  langs:
+  - csharp
+  - vb
+  name: TextLabelText
+  nameWithType: AppResources.TextLabelText
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.TextLabelText
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/AppResources.Designer.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: TextLabelText
+    path: AppResources.Designer.cs
+    startLine: 389
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms
+  summary: "\nBusca una cadena traducida similar a Text:.\n"
+  example: []
+  syntax:
+    content: public static string TextLabelText { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property TextLabelText As String
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.TextLabelText*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.TitleStringFormat
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.TitleStringFormat
+  id: TitleStringFormat
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources
+  langs:
+  - csharp
+  - vb
+  name: TitleStringFormat
+  nameWithType: AppResources.TitleStringFormat
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.TitleStringFormat
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/AppResources.Designer.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: TitleStringFormat
+    path: AppResources.Designer.cs
+    startLine: 398
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms
+  summary: "\nBusca una cadena traducida similar a Title: {0}.\n"
+  example: []
+  syntax:
+    content: public static string TitleStringFormat { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property TitleStringFormat As String
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.TitleStringFormat*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.TOCPanelTitleText
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.TOCPanelTitleText
+  id: TOCPanelTitleText
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources
+  langs:
+  - csharp
+  - vb
+  name: TOCPanelTitleText
+  nameWithType: AppResources.TOCPanelTitleText
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.TOCPanelTitleText
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/AppResources.Designer.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: TOCPanelTitleText
+    path: AppResources.Designer.cs
+    startLine: 407
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms
+  summary: "\nBusca una cadena traducida similar a Table of Contents.\n"
+  example: []
+  syntax:
+    content: public static string TOCPanelTitleText { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property TOCPanelTitleText As String
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.TOCPanelTitleText*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.UsernameLabelText
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.UsernameLabelText
+  id: UsernameLabelText
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources
+  langs:
+  - csharp
+  - vb
+  name: UsernameLabelText
+  nameWithType: AppResources.UsernameLabelText
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.UsernameLabelText
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/AppResources.Designer.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: UsernameLabelText
+    path: AppResources.Designer.cs
+    startLine: 416
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms
+  summary: "\nBusca una cadena traducida similar a Username:.\n"
+  example: []
+  syntax:
+    content: public static string UsernameLabelText { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property UsernameLabelText As String
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.UsernameLabelText*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.WebMapsLabelText
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.WebMapsLabelText
+  id: WebMapsLabelText
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources
+  langs:
+  - csharp
+  - vb
+  name: WebMapsLabelText
+  nameWithType: AppResources.WebMapsLabelText
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.WebMapsLabelText
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/AppResources.Designer.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: WebMapsLabelText
+    path: AppResources.Designer.cs
+    startLine: 425
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms
+  summary: "\nBusca una cadena traducida similar a Web Maps.\n"
+  example: []
+  syntax:
+    content: public static string WebMapsLabelText { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property WebMapsLabelText As String
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.WebMapsLabelText*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.Yards
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.Yards
+  id: Yards
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources
+  langs:
+  - csharp
+  - vb
+  name: Yards
+  nameWithType: AppResources.Yards
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.Yards
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/AppResources.Designer.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: Yards
+    path: AppResources.Designer.cs
+    startLine: 434
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms
+  summary: "\nBusca una cadena traducida similar a Yards.\n"
+  example: []
+  syntax:
+    content: public static string Yards { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property Yards As String
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.Yards*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+references:
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms
+  commentId: N:EsriCo.ArcGISRuntime.Xamarin.Forms
+  name: EsriCo.ArcGISRuntime.Xamarin.Forms
+  nameWithType: EsriCo.ArcGISRuntime.Xamarin.Forms
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.ResourceManager*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.ResourceManager
+  name: ResourceManager
+  nameWithType: AppResources.ResourceManager
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.ResourceManager
+- uid: System.Resources.ResourceManager
+  commentId: T:System.Resources.ResourceManager
+  parent: System.Resources
+  isExternal: true
+  name: ResourceManager
+  nameWithType: ResourceManager
+  fullName: System.Resources.ResourceManager
+- uid: System.Resources
+  commentId: N:System.Resources
+  isExternal: true
+  name: System.Resources
+  nameWithType: System.Resources
+  fullName: System.Resources
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.Culture*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.Culture
+  name: Culture
+  nameWithType: AppResources.Culture
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.Culture
+- uid: System.Globalization.CultureInfo
+  commentId: T:System.Globalization.CultureInfo
+  parent: System.Globalization
+  isExternal: true
+  name: CultureInfo
+  nameWithType: CultureInfo
+  fullName: System.Globalization.CultureInfo
+- uid: System.Globalization
+  commentId: N:System.Globalization
+  isExternal: true
+  name: System.Globalization
+  nameWithType: System.Globalization
+  fullName: System.Globalization
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.Acres*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.Acres
+  name: Acres
+  nameWithType: AppResources.Acres
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.Acres
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.AddPortalButtonText*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.AddPortalButtonText
+  name: AddPortalButtonText
+  nameWithType: AppResources.AddPortalButtonText
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.AddPortalButtonText
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.CancelButtonText*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.CancelButtonText
+  name: CancelButtonText
+  nameWithType: AppResources.CancelButtonText
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.CancelButtonText
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.CloseButtonText*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.CloseButtonText
+  name: CloseButtonText
+  nameWithType: AppResources.CloseButtonText
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.CloseButtonText
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DecimalDegrees*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DecimalDegrees
+  name: DecimalDegrees
+  nameWithType: AppResources.DecimalDegrees
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DecimalDegrees
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DegreesDecimalMinutes*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DegreesDecimalMinutes
+  name: DegreesDecimalMinutes
+  nameWithType: AppResources.DegreesDecimalMinutes
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DegreesDecimalMinutes
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DegreesMinutesSeconds*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DegreesMinutesSeconds
+  name: DegreesMinutesSeconds
+  nameWithType: AppResources.DegreesMinutesSeconds
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DegreesMinutesSeconds
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DeleteReplicaMessageCantDelete*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DeleteReplicaMessageCantDelete
+  name: DeleteReplicaMessageCantDelete
+  nameWithType: AppResources.DeleteReplicaMessageCantDelete
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DeleteReplicaMessageCantDelete
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DeleteReplicaMessageDeleted*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DeleteReplicaMessageDeleted
+  name: DeleteReplicaMessageDeleted
+  nameWithType: AppResources.DeleteReplicaMessageDeleted
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DeleteReplicaMessageDeleted
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DeleteReplicaMessageDone*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DeleteReplicaMessageDone
+  name: DeleteReplicaMessageDone
+  nameWithType: AppResources.DeleteReplicaMessageDone
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DeleteReplicaMessageDone
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DescriptionStringFormat*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DescriptionStringFormat
+  name: DescriptionStringFormat
+  nameWithType: AppResources.DescriptionStringFormat
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DescriptionStringFormat
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DownloadReplicaOkMessageMap*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DownloadReplicaOkMessageMap
+  name: DownloadReplicaOkMessageMap
+  nameWithType: AppResources.DownloadReplicaOkMessageMap
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DownloadReplicaOkMessageMap
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DownloadReplicaOkMessageSaved*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DownloadReplicaOkMessageSaved
+  name: DownloadReplicaOkMessageSaved
+  nameWithType: AppResources.DownloadReplicaOkMessageSaved
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.DownloadReplicaOkMessageSaved
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.Feet*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.Feet
+  name: Feet
+  nameWithType: AppResources.Feet
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.Feet
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.GroupLabelText*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.GroupLabelText
+  name: GroupLabelText
+  nameWithType: AppResources.GroupLabelText
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.GroupLabelText
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.Hectares*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.Hectares
+  name: Hectares
+  nameWithType: AppResources.Hectares
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.Hectares
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.HidePasswordLabelText*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.HidePasswordLabelText
+  name: HidePasswordLabelText
+  nameWithType: AppResources.HidePasswordLabelText
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.HidePasswordLabelText
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.Kilometers*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.Kilometers
+  name: Kilometers
+  nameWithType: AppResources.Kilometers
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.Kilometers
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.LegendPanelTitleText*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.LegendPanelTitleText
+  name: LegendPanelTitleText
+  nameWithType: AppResources.LegendPanelTitleText
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.LegendPanelTitleText
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.LoadMapButtonText*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.LoadMapButtonText
+  name: LoadMapButtonText
+  nameWithType: AppResources.LoadMapButtonText
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.LoadMapButtonText
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.LogInButtonText*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.LogInButtonText
+  name: LogInButtonText
+  nameWithType: AppResources.LogInButtonText
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.LogInButtonText
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.LoginLabelText*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.LoginLabelText
+  name: LoginLabelText
+  nameWithType: AppResources.LoginLabelText
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.LoginLabelText
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.MeasurementTitleText*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.MeasurementTitleText
+  name: MeasurementTitleText
+  nameWithType: AppResources.MeasurementTitleText
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.MeasurementTitleText
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.Meters*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.Meters
+  name: Meters
+  nameWithType: AppResources.Meters
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.Meters
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.Miles*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.Miles
+  name: Miles
+  nameWithType: AppResources.Miles
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.Miles
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.ModifiedDateStringFormat*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.ModifiedDateStringFormat
+  name: ModifiedDateStringFormat
+  nameWithType: AppResources.ModifiedDateStringFormat
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.ModifiedDateStringFormat
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.OKButtonText*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.OKButtonText
+  name: OKButtonText
+  nameWithType: AppResources.OKButtonText
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.OKButtonText
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.OwnerStringFormat*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.OwnerStringFormat
+  name: OwnerStringFormat
+  nameWithType: AppResources.OwnerStringFormat
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.OwnerStringFormat
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.PasswordLabelText*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.PasswordLabelText
+  name: PasswordLabelText
+  nameWithType: AppResources.PasswordLabelText
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.PasswordLabelText
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.PortalsLabelText*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.PortalsLabelText
+  name: PortalsLabelText
+  nameWithType: AppResources.PortalsLabelText
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.PortalsLabelText
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.ProcessingMessageLabelText*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.ProcessingMessageLabelText
+  name: ProcessingMessageLabelText
+  nameWithType: AppResources.ProcessingMessageLabelText
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.ProcessingMessageLabelText
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.SquareFeet*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.SquareFeet
+  name: SquareFeet
+  nameWithType: AppResources.SquareFeet
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.SquareFeet
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.SquareKilometers*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.SquareKilometers
+  name: SquareKilometers
+  nameWithType: AppResources.SquareKilometers
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.SquareKilometers
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.SquareMeters*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.SquareMeters
+  name: SquareMeters
+  nameWithType: AppResources.SquareMeters
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.SquareMeters
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.SquareMiles*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.SquareMiles
+  name: SquareMiles
+  nameWithType: AppResources.SquareMiles
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.SquareMiles
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.SquareYards*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.SquareYards
+  name: SquareYards
+  nameWithType: AppResources.SquareYards
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.SquareYards
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.TextLabelText*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.TextLabelText
+  name: TextLabelText
+  nameWithType: AppResources.TextLabelText
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.TextLabelText
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.TitleStringFormat*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.TitleStringFormat
+  name: TitleStringFormat
+  nameWithType: AppResources.TitleStringFormat
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.TitleStringFormat
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.TOCPanelTitleText*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.TOCPanelTitleText
+  name: TOCPanelTitleText
+  nameWithType: AppResources.TOCPanelTitleText
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.TOCPanelTitleText
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.UsernameLabelText*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.UsernameLabelText
+  name: UsernameLabelText
+  nameWithType: AppResources.UsernameLabelText
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.UsernameLabelText
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.WebMapsLabelText*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.WebMapsLabelText
+  name: WebMapsLabelText
+  nameWithType: AppResources.WebMapsLabelText
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.WebMapsLabelText
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.Yards*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.Yards
+  name: Yards
+  nameWithType: AppResources.Yards
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.Yards

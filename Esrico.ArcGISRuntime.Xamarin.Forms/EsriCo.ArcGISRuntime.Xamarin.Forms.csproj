@@ -2,15 +2,15 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Version>1.5.0.0</Version>
+    <Version>1.5.1.0</Version>
     <Authors>Marcelo Torres</Authors>
     <Company>Esri Colombia</Company>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <Configurations>Debug;Release;Release.Android;Release.UWP</Configurations>
     <PackageId>EsriCo.ArcGISRuntime.Xamarin.Forms</PackageId>
     <Product>Esri Colombia ArcGIS Runtime Tools for Xamarin.Forms</Product>
-    <AssemblyVersion>1.5.0.0</AssemblyVersion>
-    <FileVersion>1.5.0.0</FileVersion>
+    <AssemblyVersion>1.5.1.0</AssemblyVersion>
+    <FileVersion>1.5.1.0</FileVersion>
     <RepositoryUrl>https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms</RepositoryUrl>
     <PackageReleaseNotes>Extends Xamarin.Forms ArcGIS Runtime SDK for .NET</PackageReleaseNotes>
     <Description>Extends Xamarin.Forms ArcGIS Runtime SDK for .NET</Description>
@@ -18,7 +18,7 @@
     <PackageTags>xamarin xamarin.forms esri arcgis runtime sdk dotnet esrico mtorres marceloctorres.net mtorres_esrico</PackageTags>
     <PackageLicenseExpression></PackageLicenseExpression>
     <Copyright>Esri Colombia 2020</Copyright>
-    <PackageProjectUrl>https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms</PackageProjectUrl>
+    <PackageProjectUrl>https://marceloctorres.github.io/EsriCo.ArcGISRuntime.Xamarin.Forms/</PackageProjectUrl>
     <RepositoryType>Git</RepositoryType>
     <NeutralLanguage></NeutralLanguage>
   </PropertyGroup>
@@ -97,7 +97,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Esri.ArcGISRuntime.Xamarin.Forms" Version="100.7.0" />
+    <PackageReference Include="Esri.ArcGISRuntime.Xamarin.Forms" Version="100.8.0" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
     <PackageReference Include="Xamarin.Essentials" Version="1.5.3.1" />
     <PackageReference Include="Xamarin.Forms" Version="4.6.0.726" />

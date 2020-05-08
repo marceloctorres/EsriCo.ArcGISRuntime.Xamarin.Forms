@@ -388,7 +388,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
           new GenerateTokenOptions
           {
             TokenAuthenticationType = TokenAuthenticationType,
-            TokenValidity = (int)(TokenValidDays * 24 * 60),
+            TokenExpirationInterval = TimeSpan.FromMinutes(TokenValidDays * 24 * 60),
           });
         AuthenticationManager.Current.AddCredential(Credential);
         TokenExpirationDateTime = Credential.ExpirationDate.Value;
