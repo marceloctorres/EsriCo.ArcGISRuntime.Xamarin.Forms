@@ -1,18 +1,19 @@
 {
   "metadata": [
     {
+      "dest": "../docs/output/api",
+      "disableDefaultFilter": false,
+      "disableGitFeatures": false,
+      "properties": { "TargetFramework": "netstandard2.0" },
       "src": [
         {
+          "exclude": [ "**/bin/**", "**/obj/**" ],
           "files": [
             "**.csproj"
           ],
-          "exclude": [ "**/bin/**", "**/obj/**" ],
           "src": "..\\Esrico.ArcGISRuntime.Xamarin.Forms"
         }
-      ],
-      "dest": "../docs/output/api",
-      "disableGitFeatures": false,
-      "disableDefaultFilter": false
+      ]
     }
   ],
   "build": {

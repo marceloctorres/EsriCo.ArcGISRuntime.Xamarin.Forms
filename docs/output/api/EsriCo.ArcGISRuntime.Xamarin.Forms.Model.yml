@@ -1,0 +1,40 @@
+### YamlMime:ManagedReference
+items:
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Model
+  commentId: N:EsriCo.ArcGISRuntime.Xamarin.Forms.Model
+  id: EsriCo.ArcGISRuntime.Xamarin.Forms.Model
+  children:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Model.LayerInfo
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Model.LayerInfos
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Model.LegendImageInfo
+  langs:
+  - csharp
+  - vb
+  name: EsriCo.ArcGISRuntime.Xamarin.Forms.Model
+  nameWithType: EsriCo.ArcGISRuntime.Xamarin.Forms.Model
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Model
+  type: Namespace
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+references:
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Model.LegendImageInfo
+  commentId: T:EsriCo.ArcGISRuntime.Xamarin.Forms.Model.LegendImageInfo
+  name: LegendImageInfo
+  nameWithType: LegendImageInfo
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Model.LegendImageInfo
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Model.LayerInfo
+  commentId: T:EsriCo.ArcGISRuntime.Xamarin.Forms.Model.LayerInfo
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Model
+  name: LayerInfo
+  nameWithType: LayerInfo
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Model.LayerInfo
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Model.LayerInfos
+  commentId: T:EsriCo.ArcGISRuntime.Xamarin.Forms.Model.LayerInfos
+  name: LayerInfos
+  nameWithType: LayerInfos
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Model.LayerInfos
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Model
+  commentId: N:EsriCo.ArcGISRuntime.Xamarin.Forms.Model
+  name: EsriCo.ArcGISRuntime.Xamarin.Forms.Model
+  nameWithType: EsriCo.ArcGISRuntime.Xamarin.Forms.Model
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Model

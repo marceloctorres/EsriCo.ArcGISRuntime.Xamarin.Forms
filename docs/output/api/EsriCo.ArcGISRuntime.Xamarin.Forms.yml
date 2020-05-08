@@ -1,0 +1,40 @@
+### YamlMime:ManagedReference
+items:
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms
+  commentId: N:EsriCo.ArcGISRuntime.Xamarin.Forms
+  id: EsriCo.ArcGISRuntime.Xamarin.Forms
+  children:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.FormsModule
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.LocalizeExtension
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.ResourceDictionary
+  langs:
+  - csharp
+  - vb
+  name: EsriCo.ArcGISRuntime.Xamarin.Forms
+  nameWithType: EsriCo.ArcGISRuntime.Xamarin.Forms
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms
+  type: Namespace
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+references:
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources
+  commentId: T:EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources
+  name: AppResources
+  nameWithType: AppResources
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.FormsModule
+  commentId: T:EsriCo.ArcGISRuntime.Xamarin.Forms.FormsModule
+  name: FormsModule
+  nameWithType: FormsModule
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.FormsModule
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.LocalizeExtension
+  commentId: T:EsriCo.ArcGISRuntime.Xamarin.Forms.LocalizeExtension
+  name: LocalizeExtension
+  nameWithType: LocalizeExtension
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.LocalizeExtension
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.ResourceDictionary
+  commentId: T:EsriCo.ArcGISRuntime.Xamarin.Forms.ResourceDictionary
+  name: ResourceDictionary
+  nameWithType: ResourceDictionary
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.ResourceDictionary
