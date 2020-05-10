@@ -164,7 +164,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
   /// <summary>
   /// 
   /// </summary>
-  public class ReplicaManager
+  public class ReplicaManager : IReplicaManager
   {
     private static event EventHandler<JobChangedEventArgs> JobChangedEventHandler;
     private static event EventHandler<ProgressChangedEventArgs> ProgressChangedEventHandler;
@@ -185,7 +185,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     /// <summary>
     /// 
     /// </summary>
-    public string ReplicaFolderName { get; set; }
+    public string ReplicaFolderName { get; private set; }
 
     /// <summary>
     /// 
@@ -201,18 +201,6 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     /// 
     /// </summary>
     public MobileMapPackage MobileMapPackage { get; set; }
-
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <param name="map"></param>
-    /// <param name="viewpoint"></param>
-    /// <returns></returns>
-    [Obsolete]
-    public async Task<ValidateReplicaResult> ValidateReplica(Map map, Viewpoint viewpoint)
-    {
-      return await ValidateReplicaAsync(map, viewpoint);
-    }
 
     /// <summary>
     /// 
@@ -258,21 +246,6 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
 
       }
       return new ValidateReplicaResult() { Valid = true };
-    }
-
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <param name="map"></param>
-    /// <param name="viewpoint"></param>
-    /// <param name="jobHandler"></param>
-    /// <param name="progressHandler"></param>
-    /// <returns></returns>
-    [Obsolete]
-    public async Task<DownloadReplicaResult> DownloadReplica(Map map, Viewpoint viewpoint,
-      EventHandler<JobChangedEventArgs> jobHandler, EventHandler<ProgressChangedEventArgs> progressHandler)
-    {
-      return await DownloadReplicaAsync(map, viewpoint, jobHandler, progressHandler);
     }
 
     /// <summary>
@@ -385,21 +358,6 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     /// <param name="map"></param>
     /// <param name="jobHandler"></param>
     /// <param name="progressHandler"></param>
-    /// <returns></returns>
-    [Obsolete]
-    public async Task<SynchronizeReplicaResult> SynchronizeReplica(Map map, EventHandler<JobChangedEventArgs> jobHandler,
-      EventHandler<ProgressChangedEventArgs> progressHandler)
-    {
-      return await SynchronizeReplicaAsync(map, jobHandler, progressHandler);
-    }
-
-
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <param name="map"></param>
-    /// <param name="jobHandler"></param>
-    /// <param name="progressHandler"></param>
     /// 
     /// <returns></returns>
     public async Task<SynchronizeReplicaResult> SynchronizeReplicaAsync(Map map, EventHandler<JobChangedEventArgs> jobHandler,
@@ -455,17 +413,6 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     /// </summary>
     /// <param name="map"></param>
     /// <returns></returns>
-    [Obsolete]
-    public async Task<string> DeleteReplica(Map map)
-    {
-      return await DeleteReplicaAsync(map);
-    }
-
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <param name="map"></param>
-    /// <returns></returns>
     public async Task<string> DeleteReplicaAsync(Map map)
     {
       var sb = new StringBuilder();
@@ -510,27 +457,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     /// 
     /// </summary>
     /// <returns></returns>
-    [Obsolete]
-    public async Task DeleteReplica()
-    {
-      await DeleteReplicaAsync();
-    }
-
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <returns></returns>
     public async Task DeleteReplicaAsync() => await DeleteReplicaFolderAsync();
-
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <returns></returns>
-    [Obsolete]
-    public async Task DeleteReplicaFolder()
-    {
-      await DeleteReplicaFolderAsync();
-    }
 
     /// <summary>
     /// 
@@ -588,16 +515,6 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
         return !string.IsNullOrEmpty(ReplicaFolderName) && Directory.Exists(filePath);
       }
       return false;
-    }
-
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <returns></returns>
-    [Obsolete]
-    public async Task<Map> GetReplicaMap()
-    {
-      return await GetReplicaMapAsync();
     }
 
     /// <summary>

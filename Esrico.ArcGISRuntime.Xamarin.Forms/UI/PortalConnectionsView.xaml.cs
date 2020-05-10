@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+
 using EsriCo.ArcGISRuntime.Xamarin.Forms.Extensions;
 using EsriCo.ArcGISRuntime.Xamarin.Forms.Services;
+
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -19,7 +17,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     public static readonly BindableProperty PortalConnectionsProperty = BindableProperty.Create(
       nameof(PortalConnections),
       typeof(List<PortalConnection>),
-      typeof(PortalConnectionsView), 
+      typeof(PortalConnectionsView),
       defaultBindingMode: BindingMode.TwoWay);
 
     /// <summary>

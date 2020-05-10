@@ -7,6 +7,9 @@ items:
   - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo
   - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.DownloadReplicaErrorResult
   - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.DownloadReplicaResult
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager
   - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.JobChangedEventArgs
   - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection
   - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ProgressChangedEventArgs
@@ -29,6 +32,24 @@ references:
   name: ConfigurationInfo
   nameWithType: ConfigurationInfo
   fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo
+  commentId: T:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  name: IConfigurationInfo
+  nameWithType: IConfigurationInfo
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection
+  commentId: T:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  name: IPortalConnection
+  nameWithType: IPortalConnection
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager
+  commentId: T:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  name: IReplicaManager
+  nameWithType: IReplicaManager
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection
   commentId: T:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection
   name: PortalConnection
@@ -74,3 +95,8 @@ references:
   name: ReplicaManager
   nameWithType: ReplicaManager
   fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  commentId: N:EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  name: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  nameWithType: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services

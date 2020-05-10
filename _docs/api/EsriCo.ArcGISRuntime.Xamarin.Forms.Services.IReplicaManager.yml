@@ -1,0 +1,971 @@
+### YamlMime:ManagedReference
+items:
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager
+  commentId: T:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager
+  id: IReplicaManager
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  children:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.AppFolderName
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.DeleteReplicaAsync
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.DeleteReplicaAsync(Esri.ArcGISRuntime.Mapping.Map)
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.DeleteReplicaFolderAsync
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.DownloadReplicaAsync(Esri.ArcGISRuntime.Mapping.Map,Esri.ArcGISRuntime.Mapping.Viewpoint,System.EventHandler{EsriCo.ArcGISRuntime.Xamarin.Forms.Services.JobChangedEventArgs},System.EventHandler{EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ProgressChangedEventArgs})
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.GetReplicaMapAsync
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.MaxScale
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.MinScale
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.MobileMapPackage
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.ReplicaExist
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.ReplicaFolderName
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.SynchronizeReplicaAsync(Esri.ArcGISRuntime.Mapping.Map,System.EventHandler{EsriCo.ArcGISRuntime.Xamarin.Forms.Services.JobChangedEventArgs},System.EventHandler{EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ProgressChangedEventArgs})
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.ValidateReplicaAsync(Esri.ArcGISRuntime.Mapping.Map,Esri.ArcGISRuntime.Mapping.Viewpoint)
+  langs:
+  - csharp
+  - vb
+  name: IReplicaManager
+  nameWithType: IReplicaManager
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager
+  type: Interface
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IReplicaManager.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: IReplicaManager
+    path: Services/IReplicaManager.cs
+    startLine: 7
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  syntax:
+    content: public interface IReplicaManager
+    content.vb: Public Interface IReplicaManager
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.AppFolderName
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.AppFolderName
+  id: AppFolderName
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager
+  langs:
+  - csharp
+  - vb
+  name: AppFolderName
+  nameWithType: IReplicaManager.AppFolderName
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.AppFolderName
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IReplicaManager.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: AppFolderName
+    path: Services/IReplicaManager.cs
+    startLine: 9
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  syntax:
+    content: string AppFolderName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property AppFolderName As String
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.AppFolderName*
+  modifiers.csharp:
+  - get
+  - set
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.MaxScale
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.MaxScale
+  id: MaxScale
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager
+  langs:
+  - csharp
+  - vb
+  name: MaxScale
+  nameWithType: IReplicaManager.MaxScale
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.MaxScale
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IReplicaManager.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: MaxScale
+    path: Services/IReplicaManager.cs
+    startLine: 10
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  syntax:
+    content: double MaxScale { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Property MaxScale As Double
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.MaxScale*
+  modifiers.csharp:
+  - get
+  - set
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.MinScale
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.MinScale
+  id: MinScale
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager
+  langs:
+  - csharp
+  - vb
+  name: MinScale
+  nameWithType: IReplicaManager.MinScale
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.MinScale
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IReplicaManager.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: MinScale
+    path: Services/IReplicaManager.cs
+    startLine: 11
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  syntax:
+    content: double MinScale { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Property MinScale As Double
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.MinScale*
+  modifiers.csharp:
+  - get
+  - set
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.MobileMapPackage
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.MobileMapPackage
+  id: MobileMapPackage
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager
+  langs:
+  - csharp
+  - vb
+  name: MobileMapPackage
+  nameWithType: IReplicaManager.MobileMapPackage
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.MobileMapPackage
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IReplicaManager.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: MobileMapPackage
+    path: Services/IReplicaManager.cs
+    startLine: 12
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  syntax:
+    content: MobileMapPackage MobileMapPackage { get; set; }
+    parameters: []
+    return:
+      type: Esri.ArcGISRuntime.Mapping.MobileMapPackage
+    content.vb: Property MobileMapPackage As MobileMapPackage
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.MobileMapPackage*
+  modifiers.csharp:
+  - get
+  - set
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.ReplicaFolderName
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.ReplicaFolderName
+  id: ReplicaFolderName
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager
+  langs:
+  - csharp
+  - vb
+  name: ReplicaFolderName
+  nameWithType: IReplicaManager.ReplicaFolderName
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.ReplicaFolderName
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IReplicaManager.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: ReplicaFolderName
+    path: Services/IReplicaManager.cs
+    startLine: 13
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  syntax:
+    content: string ReplicaFolderName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property ReplicaFolderName As String
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.ReplicaFolderName*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.DeleteReplicaAsync
+  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.DeleteReplicaAsync
+  id: DeleteReplicaAsync
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager
+  langs:
+  - csharp
+  - vb
+  name: DeleteReplicaAsync()
+  nameWithType: IReplicaManager.DeleteReplicaAsync()
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.DeleteReplicaAsync()
+  type: Method
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IReplicaManager.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: DeleteReplicaAsync
+    path: Services/IReplicaManager.cs
+    startLine: 14
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  syntax:
+    content: Task DeleteReplicaAsync()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function DeleteReplicaAsync As Task
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.DeleteReplicaAsync*
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.DeleteReplicaAsync(Esri.ArcGISRuntime.Mapping.Map)
+  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.DeleteReplicaAsync(Esri.ArcGISRuntime.Mapping.Map)
+  id: DeleteReplicaAsync(Esri.ArcGISRuntime.Mapping.Map)
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager
+  langs:
+  - csharp
+  - vb
+  name: DeleteReplicaAsync(Map)
+  nameWithType: IReplicaManager.DeleteReplicaAsync(Map)
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.DeleteReplicaAsync(Esri.ArcGISRuntime.Mapping.Map)
+  type: Method
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IReplicaManager.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: DeleteReplicaAsync
+    path: Services/IReplicaManager.cs
+    startLine: 15
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  syntax:
+    content: Task<string> DeleteReplicaAsync(Map map)
+    parameters:
+    - id: map
+      type: Esri.ArcGISRuntime.Mapping.Map
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+    content.vb: Function DeleteReplicaAsync(map As Map) As Task(Of String)
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.DeleteReplicaAsync*
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.DeleteReplicaFolderAsync
+  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.DeleteReplicaFolderAsync
+  id: DeleteReplicaFolderAsync
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager
+  langs:
+  - csharp
+  - vb
+  name: DeleteReplicaFolderAsync()
+  nameWithType: IReplicaManager.DeleteReplicaFolderAsync()
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.DeleteReplicaFolderAsync()
+  type: Method
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IReplicaManager.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: DeleteReplicaFolderAsync
+    path: Services/IReplicaManager.cs
+    startLine: 16
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  syntax:
+    content: Task DeleteReplicaFolderAsync()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function DeleteReplicaFolderAsync As Task
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.DeleteReplicaFolderAsync*
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.DownloadReplicaAsync(Esri.ArcGISRuntime.Mapping.Map,Esri.ArcGISRuntime.Mapping.Viewpoint,System.EventHandler{EsriCo.ArcGISRuntime.Xamarin.Forms.Services.JobChangedEventArgs},System.EventHandler{EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ProgressChangedEventArgs})
+  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.DownloadReplicaAsync(Esri.ArcGISRuntime.Mapping.Map,Esri.ArcGISRuntime.Mapping.Viewpoint,System.EventHandler{EsriCo.ArcGISRuntime.Xamarin.Forms.Services.JobChangedEventArgs},System.EventHandler{EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ProgressChangedEventArgs})
+  id: DownloadReplicaAsync(Esri.ArcGISRuntime.Mapping.Map,Esri.ArcGISRuntime.Mapping.Viewpoint,System.EventHandler{EsriCo.ArcGISRuntime.Xamarin.Forms.Services.JobChangedEventArgs},System.EventHandler{EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ProgressChangedEventArgs})
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager
+  langs:
+  - csharp
+  - vb
+  name: DownloadReplicaAsync(Map, Viewpoint, EventHandler<JobChangedEventArgs>, EventHandler<ProgressChangedEventArgs>)
+  nameWithType: IReplicaManager.DownloadReplicaAsync(Map, Viewpoint, EventHandler<JobChangedEventArgs>, EventHandler<ProgressChangedEventArgs>)
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.DownloadReplicaAsync(Esri.ArcGISRuntime.Mapping.Map, Esri.ArcGISRuntime.Mapping.Viewpoint, System.EventHandler<EsriCo.ArcGISRuntime.Xamarin.Forms.Services.JobChangedEventArgs>, System.EventHandler<EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ProgressChangedEventArgs>)
+  type: Method
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IReplicaManager.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: DownloadReplicaAsync
+    path: Services/IReplicaManager.cs
+    startLine: 17
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  syntax:
+    content: Task<DownloadReplicaResult> DownloadReplicaAsync(Map map, Viewpoint viewpoint, EventHandler<JobChangedEventArgs> jobHandler, EventHandler<ProgressChangedEventArgs> progressHandler)
+    parameters:
+    - id: map
+      type: Esri.ArcGISRuntime.Mapping.Map
+    - id: viewpoint
+      type: Esri.ArcGISRuntime.Mapping.Viewpoint
+    - id: jobHandler
+      type: System.EventHandler{EsriCo.ArcGISRuntime.Xamarin.Forms.Services.JobChangedEventArgs}
+    - id: progressHandler
+      type: System.EventHandler{EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ProgressChangedEventArgs}
+    return:
+      type: System.Threading.Tasks.Task{EsriCo.ArcGISRuntime.Xamarin.Forms.Services.DownloadReplicaResult}
+    content.vb: Function DownloadReplicaAsync(map As Map, viewpoint As Viewpoint, jobHandler As EventHandler(Of JobChangedEventArgs), progressHandler As EventHandler(Of ProgressChangedEventArgs)) As Task(Of DownloadReplicaResult)
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.DownloadReplicaAsync*
+  nameWithType.vb: IReplicaManager.DownloadReplicaAsync(Map, Viewpoint, EventHandler(Of JobChangedEventArgs), EventHandler(Of ProgressChangedEventArgs))
+  fullName.vb: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.DownloadReplicaAsync(Esri.ArcGISRuntime.Mapping.Map, Esri.ArcGISRuntime.Mapping.Viewpoint, System.EventHandler(Of EsriCo.ArcGISRuntime.Xamarin.Forms.Services.JobChangedEventArgs), System.EventHandler(Of EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ProgressChangedEventArgs))
+  name.vb: DownloadReplicaAsync(Map, Viewpoint, EventHandler(Of JobChangedEventArgs), EventHandler(Of ProgressChangedEventArgs))
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.GetReplicaMapAsync
+  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.GetReplicaMapAsync
+  id: GetReplicaMapAsync
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager
+  langs:
+  - csharp
+  - vb
+  name: GetReplicaMapAsync()
+  nameWithType: IReplicaManager.GetReplicaMapAsync()
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.GetReplicaMapAsync()
+  type: Method
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IReplicaManager.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: GetReplicaMapAsync
+    path: Services/IReplicaManager.cs
+    startLine: 18
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  syntax:
+    content: Task<Map> GetReplicaMapAsync()
+    return:
+      type: System.Threading.Tasks.Task{Esri.ArcGISRuntime.Mapping.Map}
+    content.vb: Function GetReplicaMapAsync As Task(Of Map)
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.GetReplicaMapAsync*
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.ReplicaExist
+  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.ReplicaExist
+  id: ReplicaExist
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager
+  langs:
+  - csharp
+  - vb
+  name: ReplicaExist()
+  nameWithType: IReplicaManager.ReplicaExist()
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.ReplicaExist()
+  type: Method
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IReplicaManager.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: ReplicaExist
+    path: Services/IReplicaManager.cs
+    startLine: 19
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  syntax:
+    content: bool ReplicaExist()
+    return:
+      type: System.Boolean
+    content.vb: Function ReplicaExist As Boolean
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.ReplicaExist*
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.SynchronizeReplicaAsync(Esri.ArcGISRuntime.Mapping.Map,System.EventHandler{EsriCo.ArcGISRuntime.Xamarin.Forms.Services.JobChangedEventArgs},System.EventHandler{EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ProgressChangedEventArgs})
+  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.SynchronizeReplicaAsync(Esri.ArcGISRuntime.Mapping.Map,System.EventHandler{EsriCo.ArcGISRuntime.Xamarin.Forms.Services.JobChangedEventArgs},System.EventHandler{EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ProgressChangedEventArgs})
+  id: SynchronizeReplicaAsync(Esri.ArcGISRuntime.Mapping.Map,System.EventHandler{EsriCo.ArcGISRuntime.Xamarin.Forms.Services.JobChangedEventArgs},System.EventHandler{EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ProgressChangedEventArgs})
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager
+  langs:
+  - csharp
+  - vb
+  name: SynchronizeReplicaAsync(Map, EventHandler<JobChangedEventArgs>, EventHandler<ProgressChangedEventArgs>)
+  nameWithType: IReplicaManager.SynchronizeReplicaAsync(Map, EventHandler<JobChangedEventArgs>, EventHandler<ProgressChangedEventArgs>)
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.SynchronizeReplicaAsync(Esri.ArcGISRuntime.Mapping.Map, System.EventHandler<EsriCo.ArcGISRuntime.Xamarin.Forms.Services.JobChangedEventArgs>, System.EventHandler<EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ProgressChangedEventArgs>)
+  type: Method
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IReplicaManager.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: SynchronizeReplicaAsync
+    path: Services/IReplicaManager.cs
+    startLine: 20
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  syntax:
+    content: Task<SynchronizeReplicaResult> SynchronizeReplicaAsync(Map map, EventHandler<JobChangedEventArgs> jobHandler, EventHandler<ProgressChangedEventArgs> progressHandler)
+    parameters:
+    - id: map
+      type: Esri.ArcGISRuntime.Mapping.Map
+    - id: jobHandler
+      type: System.EventHandler{EsriCo.ArcGISRuntime.Xamarin.Forms.Services.JobChangedEventArgs}
+    - id: progressHandler
+      type: System.EventHandler{EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ProgressChangedEventArgs}
+    return:
+      type: System.Threading.Tasks.Task{EsriCo.ArcGISRuntime.Xamarin.Forms.Services.SynchronizeReplicaResult}
+    content.vb: Function SynchronizeReplicaAsync(map As Map, jobHandler As EventHandler(Of JobChangedEventArgs), progressHandler As EventHandler(Of ProgressChangedEventArgs)) As Task(Of SynchronizeReplicaResult)
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.SynchronizeReplicaAsync*
+  nameWithType.vb: IReplicaManager.SynchronizeReplicaAsync(Map, EventHandler(Of JobChangedEventArgs), EventHandler(Of ProgressChangedEventArgs))
+  fullName.vb: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.SynchronizeReplicaAsync(Esri.ArcGISRuntime.Mapping.Map, System.EventHandler(Of EsriCo.ArcGISRuntime.Xamarin.Forms.Services.JobChangedEventArgs), System.EventHandler(Of EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ProgressChangedEventArgs))
+  name.vb: SynchronizeReplicaAsync(Map, EventHandler(Of JobChangedEventArgs), EventHandler(Of ProgressChangedEventArgs))
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.ValidateReplicaAsync(Esri.ArcGISRuntime.Mapping.Map,Esri.ArcGISRuntime.Mapping.Viewpoint)
+  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.ValidateReplicaAsync(Esri.ArcGISRuntime.Mapping.Map,Esri.ArcGISRuntime.Mapping.Viewpoint)
+  id: ValidateReplicaAsync(Esri.ArcGISRuntime.Mapping.Map,Esri.ArcGISRuntime.Mapping.Viewpoint)
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager
+  langs:
+  - csharp
+  - vb
+  name: ValidateReplicaAsync(Map, Viewpoint)
+  nameWithType: IReplicaManager.ValidateReplicaAsync(Map, Viewpoint)
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.ValidateReplicaAsync(Esri.ArcGISRuntime.Mapping.Map, Esri.ArcGISRuntime.Mapping.Viewpoint)
+  type: Method
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IReplicaManager.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: ValidateReplicaAsync
+    path: Services/IReplicaManager.cs
+    startLine: 21
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  syntax:
+    content: Task<ValidateReplicaResult> ValidateReplicaAsync(Map map, Viewpoint viewpoint)
+    parameters:
+    - id: map
+      type: Esri.ArcGISRuntime.Mapping.Map
+    - id: viewpoint
+      type: Esri.ArcGISRuntime.Mapping.Viewpoint
+    return:
+      type: System.Threading.Tasks.Task{EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ValidateReplicaResult}
+    content.vb: Function ValidateReplicaAsync(map As Map, viewpoint As Viewpoint) As Task(Of ValidateReplicaResult)
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.ValidateReplicaAsync*
+references:
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  commentId: N:EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  name: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  nameWithType: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.AppFolderName*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.AppFolderName
+  name: AppFolderName
+  nameWithType: IReplicaManager.AppFolderName
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.AppFolderName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.MaxScale*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.MaxScale
+  name: MaxScale
+  nameWithType: IReplicaManager.MaxScale
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.MaxScale
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.MinScale*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.MinScale
+  name: MinScale
+  nameWithType: IReplicaManager.MinScale
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.MinScale
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.MobileMapPackage*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.MobileMapPackage
+  name: MobileMapPackage
+  nameWithType: IReplicaManager.MobileMapPackage
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.MobileMapPackage
+- uid: Esri.ArcGISRuntime.Mapping.MobileMapPackage
+  commentId: T:Esri.ArcGISRuntime.Mapping.MobileMapPackage
+  parent: Esri.ArcGISRuntime.Mapping
+  isExternal: true
+  name: MobileMapPackage
+  nameWithType: MobileMapPackage
+  fullName: Esri.ArcGISRuntime.Mapping.MobileMapPackage
+- uid: Esri.ArcGISRuntime.Mapping
+  commentId: N:Esri.ArcGISRuntime.Mapping
+  isExternal: true
+  name: Esri.ArcGISRuntime.Mapping
+  nameWithType: Esri.ArcGISRuntime.Mapping
+  fullName: Esri.ArcGISRuntime.Mapping
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.ReplicaFolderName*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.ReplicaFolderName
+  name: ReplicaFolderName
+  nameWithType: IReplicaManager.ReplicaFolderName
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.ReplicaFolderName
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.DeleteReplicaAsync*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.DeleteReplicaAsync
+  name: DeleteReplicaAsync
+  nameWithType: IReplicaManager.DeleteReplicaAsync
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.DeleteReplicaAsync
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Esri.ArcGISRuntime.Mapping.Map
+  commentId: T:Esri.ArcGISRuntime.Mapping.Map
+  parent: Esri.ArcGISRuntime.Mapping
+  isExternal: true
+  name: Map
+  nameWithType: Map
+  fullName: Esri.ArcGISRuntime.Mapping.Map
+- uid: System.Threading.Tasks.Task{System.String}
+  commentId: T:System.Threading.Tasks.Task{System.String}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<String>
+  nameWithType: Task<String>
+  fullName: System.Threading.Tasks.Task<System.String>
+  nameWithType.vb: Task(Of String)
+  fullName.vb: System.Threading.Tasks.Task(Of System.String)
+  name.vb: Task(Of String)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.DeleteReplicaFolderAsync*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.DeleteReplicaFolderAsync
+  name: DeleteReplicaFolderAsync
+  nameWithType: IReplicaManager.DeleteReplicaFolderAsync
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.DeleteReplicaFolderAsync
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.DownloadReplicaAsync*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.DownloadReplicaAsync
+  name: DownloadReplicaAsync
+  nameWithType: IReplicaManager.DownloadReplicaAsync
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.DownloadReplicaAsync
+- uid: Esri.ArcGISRuntime.Mapping.Viewpoint
+  commentId: T:Esri.ArcGISRuntime.Mapping.Viewpoint
+  parent: Esri.ArcGISRuntime.Mapping
+  isExternal: true
+  name: Viewpoint
+  nameWithType: Viewpoint
+  fullName: Esri.ArcGISRuntime.Mapping.Viewpoint
+- uid: System.EventHandler{EsriCo.ArcGISRuntime.Xamarin.Forms.Services.JobChangedEventArgs}
+  commentId: T:System.EventHandler{EsriCo.ArcGISRuntime.Xamarin.Forms.Services.JobChangedEventArgs}
+  parent: System
+  definition: System.EventHandler`1
+  name: EventHandler<JobChangedEventArgs>
+  nameWithType: EventHandler<JobChangedEventArgs>
+  fullName: System.EventHandler<EsriCo.ArcGISRuntime.Xamarin.Forms.Services.JobChangedEventArgs>
+  nameWithType.vb: EventHandler(Of JobChangedEventArgs)
+  fullName.vb: System.EventHandler(Of EsriCo.ArcGISRuntime.Xamarin.Forms.Services.JobChangedEventArgs)
+  name.vb: EventHandler(Of JobChangedEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.JobChangedEventArgs
+    name: JobChangedEventArgs
+    nameWithType: JobChangedEventArgs
+    fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.JobChangedEventArgs
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.JobChangedEventArgs
+    name: JobChangedEventArgs
+    nameWithType: JobChangedEventArgs
+    fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.JobChangedEventArgs
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.EventHandler{EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ProgressChangedEventArgs}
+  commentId: T:System.EventHandler{EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ProgressChangedEventArgs}
+  parent: System
+  definition: System.EventHandler`1
+  name: EventHandler<ProgressChangedEventArgs>
+  nameWithType: EventHandler<ProgressChangedEventArgs>
+  fullName: System.EventHandler<EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ProgressChangedEventArgs>
+  nameWithType.vb: EventHandler(Of ProgressChangedEventArgs)
+  fullName.vb: System.EventHandler(Of EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ProgressChangedEventArgs)
+  name.vb: EventHandler(Of ProgressChangedEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ProgressChangedEventArgs
+    name: ProgressChangedEventArgs
+    nameWithType: ProgressChangedEventArgs
+    fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ProgressChangedEventArgs
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ProgressChangedEventArgs
+    name: ProgressChangedEventArgs
+    nameWithType: ProgressChangedEventArgs
+    fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ProgressChangedEventArgs
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{EsriCo.ArcGISRuntime.Xamarin.Forms.Services.DownloadReplicaResult}
+  commentId: T:System.Threading.Tasks.Task{EsriCo.ArcGISRuntime.Xamarin.Forms.Services.DownloadReplicaResult}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<DownloadReplicaResult>
+  nameWithType: Task<DownloadReplicaResult>
+  fullName: System.Threading.Tasks.Task<EsriCo.ArcGISRuntime.Xamarin.Forms.Services.DownloadReplicaResult>
+  nameWithType.vb: Task(Of DownloadReplicaResult)
+  fullName.vb: System.Threading.Tasks.Task(Of EsriCo.ArcGISRuntime.Xamarin.Forms.Services.DownloadReplicaResult)
+  name.vb: Task(Of DownloadReplicaResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.DownloadReplicaResult
+    name: DownloadReplicaResult
+    nameWithType: DownloadReplicaResult
+    fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.DownloadReplicaResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.DownloadReplicaResult
+    name: DownloadReplicaResult
+    nameWithType: DownloadReplicaResult
+    fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.DownloadReplicaResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.EventHandler`1
+  commentId: T:System.EventHandler`1
+  isExternal: true
+  name: EventHandler<TEventArgs>
+  nameWithType: EventHandler<TEventArgs>
+  fullName: System.EventHandler<TEventArgs>
+  nameWithType.vb: EventHandler(Of TEventArgs)
+  fullName.vb: System.EventHandler(Of TEventArgs)
+  name.vb: EventHandler(Of TEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEventArgs
+    nameWithType: TEventArgs
+    fullName: TEventArgs
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEventArgs
+    nameWithType: TEventArgs
+    fullName: TEventArgs
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.GetReplicaMapAsync*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.GetReplicaMapAsync
+  name: GetReplicaMapAsync
+  nameWithType: IReplicaManager.GetReplicaMapAsync
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.GetReplicaMapAsync
+- uid: System.Threading.Tasks.Task{Esri.ArcGISRuntime.Mapping.Map}
+  commentId: T:System.Threading.Tasks.Task{Esri.ArcGISRuntime.Mapping.Map}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Map>
+  nameWithType: Task<Map>
+  fullName: System.Threading.Tasks.Task<Esri.ArcGISRuntime.Mapping.Map>
+  nameWithType.vb: Task(Of Map)
+  fullName.vb: System.Threading.Tasks.Task(Of Esri.ArcGISRuntime.Mapping.Map)
+  name.vb: Task(Of Map)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Esri.ArcGISRuntime.Mapping.Map
+    name: Map
+    nameWithType: Map
+    fullName: Esri.ArcGISRuntime.Mapping.Map
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Esri.ArcGISRuntime.Mapping.Map
+    name: Map
+    nameWithType: Map
+    fullName: Esri.ArcGISRuntime.Mapping.Map
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.ReplicaExist*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.ReplicaExist
+  name: ReplicaExist
+  nameWithType: IReplicaManager.ReplicaExist
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.ReplicaExist
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.SynchronizeReplicaAsync*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.SynchronizeReplicaAsync
+  name: SynchronizeReplicaAsync
+  nameWithType: IReplicaManager.SynchronizeReplicaAsync
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.SynchronizeReplicaAsync
+- uid: System.Threading.Tasks.Task{EsriCo.ArcGISRuntime.Xamarin.Forms.Services.SynchronizeReplicaResult}
+  commentId: T:System.Threading.Tasks.Task{EsriCo.ArcGISRuntime.Xamarin.Forms.Services.SynchronizeReplicaResult}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<SynchronizeReplicaResult>
+  nameWithType: Task<SynchronizeReplicaResult>
+  fullName: System.Threading.Tasks.Task<EsriCo.ArcGISRuntime.Xamarin.Forms.Services.SynchronizeReplicaResult>
+  nameWithType.vb: Task(Of SynchronizeReplicaResult)
+  fullName.vb: System.Threading.Tasks.Task(Of EsriCo.ArcGISRuntime.Xamarin.Forms.Services.SynchronizeReplicaResult)
+  name.vb: Task(Of SynchronizeReplicaResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.SynchronizeReplicaResult
+    name: SynchronizeReplicaResult
+    nameWithType: SynchronizeReplicaResult
+    fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.SynchronizeReplicaResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.SynchronizeReplicaResult
+    name: SynchronizeReplicaResult
+    nameWithType: SynchronizeReplicaResult
+    fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.SynchronizeReplicaResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.ValidateReplicaAsync*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.ValidateReplicaAsync
+  name: ValidateReplicaAsync
+  nameWithType: IReplicaManager.ValidateReplicaAsync
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.ValidateReplicaAsync
+- uid: System.Threading.Tasks.Task{EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ValidateReplicaResult}
+  commentId: T:System.Threading.Tasks.Task{EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ValidateReplicaResult}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ValidateReplicaResult>
+  nameWithType: Task<ValidateReplicaResult>
+  fullName: System.Threading.Tasks.Task<EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ValidateReplicaResult>
+  nameWithType.vb: Task(Of ValidateReplicaResult)
+  fullName.vb: System.Threading.Tasks.Task(Of EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ValidateReplicaResult)
+  name.vb: Task(Of ValidateReplicaResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ValidateReplicaResult
+    name: ValidateReplicaResult
+    nameWithType: ValidateReplicaResult
+    fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ValidateReplicaResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ValidateReplicaResult
+    name: ValidateReplicaResult
+    nameWithType: ValidateReplicaResult
+    fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ValidateReplicaResult
+  - name: )
+    nameWithType: )
+    fullName: )
