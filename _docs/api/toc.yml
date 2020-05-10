@@ -61,6 +61,12 @@
     name: DownloadReplicaErrorResult
   - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.DownloadReplicaResult
     name: DownloadReplicaResult
+  - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo
+    name: IConfigurationInfo
+  - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection
+    name: IPortalConnection
+  - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager
+    name: IReplicaManager
   - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.JobChangedEventArgs
     name: JobChangedEventArgs
   - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection

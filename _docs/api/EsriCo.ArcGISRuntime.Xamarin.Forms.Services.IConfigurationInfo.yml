@@ -1,0 +1,222 @@
+### YamlMime:ManagedReference
+items:
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo
+  commentId: T:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo
+  id: IConfigurationInfo
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  children:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.FileName
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.Folder
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.LoadAsync
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.SaveAsync
+  langs:
+  - csharp
+  - vb
+  name: IConfigurationInfo
+  nameWithType: IConfigurationInfo
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo
+  type: Interface
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IConfigurationInfo.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: IConfigurationInfo
+    path: Services/IConfigurationInfo.cs
+    startLine: 10
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public interface IConfigurationInfo
+    content.vb: Public Interface IConfigurationInfo
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.FileName
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.FileName
+  id: FileName
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo
+  langs:
+  - csharp
+  - vb
+  name: FileName
+  nameWithType: IConfigurationInfo.FileName
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.FileName
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IConfigurationInfo.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: FileName
+    path: Services/IConfigurationInfo.cs
+    startLine: 15
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: string FileName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property FileName As String
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.FileName*
+  modifiers.csharp:
+  - get
+  - set
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.Folder
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.Folder
+  id: Folder
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo
+  langs:
+  - csharp
+  - vb
+  name: Folder
+  nameWithType: IConfigurationInfo.Folder
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.Folder
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IConfigurationInfo.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: Folder
+    path: Services/IConfigurationInfo.cs
+    startLine: 20
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: string Folder { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property Folder As String
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.Folder*
+  modifiers.csharp:
+  - get
+  - set
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.LoadAsync
+  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.LoadAsync
+  id: LoadAsync
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo
+  langs:
+  - csharp
+  - vb
+  name: LoadAsync()
+  nameWithType: IConfigurationInfo.LoadAsync()
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.LoadAsync()
+  type: Method
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IConfigurationInfo.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: LoadAsync
+    path: Services/IConfigurationInfo.cs
+    startLine: 26
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: Task LoadAsync()
+    return:
+      type: System.Threading.Tasks.Task
+      description: ''
+    content.vb: Function LoadAsync As Task
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.LoadAsync*
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.SaveAsync
+  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.SaveAsync
+  id: SaveAsync
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo
+  langs:
+  - csharp
+  - vb
+  name: SaveAsync()
+  nameWithType: IConfigurationInfo.SaveAsync()
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.SaveAsync()
+  type: Method
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IConfigurationInfo.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: SaveAsync
+    path: Services/IConfigurationInfo.cs
+    startLine: 32
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: Task SaveAsync()
+    return:
+      type: System.Threading.Tasks.Task
+      description: ''
+    content.vb: Function SaveAsync As Task
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.SaveAsync*
+references:
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  commentId: N:EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  name: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  nameWithType: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.FileName*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.FileName
+  name: FileName
+  nameWithType: IConfigurationInfo.FileName
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.FileName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.Folder*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.Folder
+  name: Folder
+  nameWithType: IConfigurationInfo.Folder
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.Folder
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.LoadAsync*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.LoadAsync
+  name: LoadAsync
+  nameWithType: IConfigurationInfo.LoadAsync
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.LoadAsync
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.SaveAsync*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.SaveAsync
+  name: SaveAsync
+  nameWithType: IConfigurationInfo.SaveAsync
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.SaveAsync

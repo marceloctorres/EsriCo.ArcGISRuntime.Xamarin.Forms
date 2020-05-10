@@ -21,7 +21,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
   /// <summary>
   /// 
   /// </summary>
-  public class PortalConnection : BindableBase
+  public class PortalConnection : BindableBase, IPortalConnection
   {
 
     private bool _active;
@@ -174,6 +174,11 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     /// <summary>
     /// 
     /// </summary>
+    public string Name { get; set; }
+
+    /// <summary>
+    /// 
+    /// </summary>
     public TokenCredential Credential { get; private set; }
 
     /// <summary>
@@ -204,13 +209,6 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
       TokenAuthenticationType = TokenAuthenticationType.ArcGISToken;
       TokenValidDays = 30;
     }
-
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <returns></returns>
-    [Obsolete()]
-    public async Task SignIn() => await SignInAsync();
 
     /// <summary>
     /// 
@@ -290,26 +288,11 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     /// 
     /// </summary>
     /// <returns></returns>
-    [Obsolete()]
-    public async Task<Map> GetMap() => await GetMapAsync();
-
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <returns></returns>
     public async Task<Map> GetMapAsync()
     {
       var item = await PortalItem.CreateAsync(Portal, WebMapId);
       return new Map(item);
     }
-
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <param name="webMapId"></param>
-    /// <returns></returns>
-    [Obsolete()]
-    public async Task<Map> GetMap(string webMapId) => await GetMapAsync(webMapId);
 
     /// <summary>
     /// 
@@ -327,13 +310,6 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     /// </summary>
     /// <returns></returns>
     public bool IsCredentialNull() => Credential == null;
-
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <returns></returns>
-    [Obsolete()]
-    public string LicenseInfoJson() => Portal.PortalInfo.LicenseInfo.ToJson();
 
     /// <summary>
     /// 

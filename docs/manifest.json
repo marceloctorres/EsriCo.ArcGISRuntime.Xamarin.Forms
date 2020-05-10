@@ -285,7 +285,7 @@
       "output": {
         ".html": {
           "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.html",
-          "hash": "sJfgN1h1FtUB3hKVFy0qMA=="
+          "hash": "u9LV9pK5X+4VezOFeye8XA=="
         }
       },
       "is_incremental": false,
@@ -317,6 +317,42 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "../_docs/api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.html",
+          "hash": "bfwEBycckZn84ipRw4d1dg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../_docs/api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html",
+          "hash": "sAe04+G+g9icwzp6GB1Waw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../_docs/api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.html",
+          "hash": "L94s6vFLF/hrDW+t2Nd6Dg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "../_docs/api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.JobChangedEventArgs.yml",
       "output": {
         ".html": {
@@ -333,7 +369,7 @@
       "output": {
         ".html": {
           "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.html",
-          "hash": "+AKSrAvMhpqLM12qE2LLIg=="
+          "hash": "zxqzkZ3Y1w5aTEj4VudMIQ=="
         }
       },
       "is_incremental": false,
@@ -357,7 +393,7 @@
       "output": {
         ".html": {
           "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.html",
-          "hash": "IJHLLwHcPjKjznLqUhW/mw=="
+          "hash": "I4bNuTq7TCDVyUF7/C+iAw=="
         }
       },
       "is_incremental": false,
@@ -405,7 +441,7 @@
       "output": {
         ".html": {
           "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.html",
-          "hash": "A3d9BbAcU8xhqVSF02zWHQ=="
+          "hash": "4o/kmLTbnCvE8VMEN/PE0g=="
         }
       },
       "is_incremental": false,
@@ -573,7 +609,7 @@
       "output": {
         ".html": {
           "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PortalConnectionsView.html",
-          "hash": "5ql1srzQo+ZmSBLa0Qwj5Q=="
+          "hash": "dUwgyQUZ+S9lga9ok6IZkQ=="
         }
       },
       "is_incremental": false,
@@ -645,7 +681,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "c6lV3v/VdNKtB8anT/s7Vw=="
+          "hash": "jeyqCF+ju584Pl9idj9vSw=="
         }
       },
       "is_incremental": false,
@@ -708,7 +744,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 53,
+          "total_file_count": 56,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
