@@ -11,7 +11,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     double MaxScale { get; set; }
     double MinScale { get; set; }
     MobileMapPackage MobileMapPackage { get; set; }
-    string ReplicaFolderName { get; }
+    string ReplicaFolderName { get; set; }
     Task DeleteReplicaAsync();
     Task<string> DeleteReplicaAsync(Map map);
     Task DeleteReplicaFolderAsync();
