@@ -9,7 +9,7 @@
     <Configurations>Debug;Release;Release.Android;Release.UWP</Configurations>
     <PackageId>EsriCo.ArcGISRuntime.Xamarin.Forms</PackageId>
     <Product>Esri Colombia ArcGIS Runtime Tools for Xamarin.Forms</Product>
-    <AssemblyVersion>1.6.0.1</AssemblyVersion>
+    <AssemblyVersion>1.6.0.2</AssemblyVersion>
     <FileVersion>1.6.0.2</FileVersion>
     <RepositoryUrl>https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms</RepositoryUrl>
     <PackageReleaseNotes>Extends Xamarin.Forms ArcGIS Runtime SDK for .NET</PackageReleaseNotes>
