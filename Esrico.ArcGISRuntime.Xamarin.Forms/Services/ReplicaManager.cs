@@ -185,7 +185,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     /// <summary>
     /// 
     /// </summary>
-    public string ReplicaFolderName { get; private set; }
+    public string ReplicaFolderName { get; set; }
 
     /// <summary>
     /// 
