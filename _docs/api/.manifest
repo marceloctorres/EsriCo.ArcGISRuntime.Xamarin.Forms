@@ -177,6 +177,7 @@
   "EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.ServerRegisterUrl": "EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.yml",
   "EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.SignedIn": "EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.yml",
   "EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.SignInAsync": "EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.yml",
+  "EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.SignOut": "EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.yml",
   "EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.TokenAuthenticationType": "EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.yml",
   "EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.TokenExpirationDateTime": "EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.yml",
   "EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.TokenValidDays": "EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.yml",

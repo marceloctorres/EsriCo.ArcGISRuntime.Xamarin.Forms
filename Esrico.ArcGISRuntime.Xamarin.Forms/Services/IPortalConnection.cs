@@ -31,6 +31,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     PortalUser PortalUser { get; }
     string ServerRegisterUrl { get; }
     bool SignedIn { get; }
+    void SignOut();
     TokenAuthenticationType TokenAuthenticationType { get; }
     DateTimeOffset TokenExpirationDateTime { get; set; }
     double TokenValidDays { get; set; }
