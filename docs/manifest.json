@@ -333,7 +333,7 @@
       "output": {
         ".html": {
           "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html",
-          "hash": "sAe04+G+g9icwzp6GB1Waw=="
+          "hash": "AuJayPH9VqjLNkWxQG5kng=="
         }
       },
       "is_incremental": false,
@@ -345,7 +345,7 @@
       "output": {
         ".html": {
           "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.html",
-          "hash": "L94s6vFLF/hrDW+t2Nd6Dg=="
+          "hash": "93xPueCnBj0etzAe7rNMRA=="
         }
       },
       "is_incremental": false,
@@ -393,7 +393,7 @@
       "output": {
         ".html": {
           "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.html",
-          "hash": "I4bNuTq7TCDVyUF7/C+iAw=="
+          "hash": "R2Pbbc0LDQpYIEOWapxZEw=="
         }
       },
       "is_incremental": false,

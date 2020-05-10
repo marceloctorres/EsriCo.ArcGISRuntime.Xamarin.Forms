@@ -25,6 +25,7 @@ items:
   - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.ServerRegisterUrl
   - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.SignedIn
   - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.SignInAsync
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.SignOut
   - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.TokenAuthenticationType
   - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.TokenExpirationDateTime
   - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.TokenValidDays
@@ -454,6 +455,32 @@ items:
   - get
   modifiers.vb:
   - ReadOnly
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.SignOut
+  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.SignOut
+  id: SignOut
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection
+  langs:
+  - csharp
+  - vb
+  name: SignOut()
+  nameWithType: IPortalConnection.SignOut()
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.SignOut()
+  type: Method
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IPortalConnection.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: SignOut
+    path: Services/IPortalConnection.cs
+    startLine: 33
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  syntax:
+    content: void SignOut()
+    content.vb: Sub SignOut
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.SignOut*
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.TokenAuthenticationType
   commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.TokenAuthenticationType
   id: TokenAuthenticationType
@@ -472,7 +499,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
     id: TokenAuthenticationType
     path: Services/IPortalConnection.cs
-    startLine: 33
+    startLine: 34
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -505,7 +532,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
     id: TokenExpirationDateTime
     path: Services/IPortalConnection.cs
-    startLine: 34
+    startLine: 35
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -537,7 +564,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
     id: TokenValidDays
     path: Services/IPortalConnection.cs
-    startLine: 35
+    startLine: 36
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -569,7 +596,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
     id: User
     path: Services/IPortalConnection.cs
-    startLine: 36
+    startLine: 37
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -601,7 +628,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
     id: UserImage
     path: Services/IPortalConnection.cs
-    startLine: 37
+    startLine: 38
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -633,7 +660,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
     id: UserImageString
     path: Services/IPortalConnection.cs
-    startLine: 38
+    startLine: 39
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -665,7 +692,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
     id: UserName
     path: Services/IPortalConnection.cs
-    startLine: 39
+    startLine: 40
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -697,7 +724,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
     id: WebMapId
     path: Services/IPortalConnection.cs
-    startLine: 40
+    startLine: 41
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -729,7 +756,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
     id: GetGroup
     path: Services/IPortalConnection.cs
-    startLine: 41
+    startLine: 42
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -760,7 +787,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
     id: GetLicenseInfoJsonAsync
     path: Services/IPortalConnection.cs
-    startLine: 42
+    startLine: 43
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -788,7 +815,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
     id: GetMapAsync
     path: Services/IPortalConnection.cs
-    startLine: 43
+    startLine: 44
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -816,7 +843,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
     id: GetMapAsync
     path: Services/IPortalConnection.cs
-    startLine: 44
+    startLine: 45
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -847,7 +874,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
     id: GetWebMapItemByGroupAndTitleAsync
     path: Services/IPortalConnection.cs
-    startLine: 45
+    startLine: 46
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -880,7 +907,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
     id: GetWebMapItemsByGroupAsync
     path: Services/IPortalConnection.cs
-    startLine: 46
+    startLine: 47
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -911,7 +938,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
     id: IsCredentialNull
     path: Services/IPortalConnection.cs
-    startLine: 47
+    startLine: 48
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -939,7 +966,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
     id: SignInAsync
     path: Services/IPortalConnection.cs
-    startLine: 48
+    startLine: 49
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -1075,6 +1102,11 @@ references:
   name: SignedIn
   nameWithType: IPortalConnection.SignedIn
   fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.SignedIn
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.SignOut*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.SignOut
+  name: SignOut
+  nameWithType: IPortalConnection.SignOut
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.SignOut
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.TokenAuthenticationType*
   commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.TokenAuthenticationType
   name: TokenAuthenticationType
