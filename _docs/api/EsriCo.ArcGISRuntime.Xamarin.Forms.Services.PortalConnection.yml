@@ -962,6 +962,8 @@ items:
     content: public void SignOut()
     content.vb: Public Sub SignOut
   overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.SignOut*
+  implements:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.SignOut
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -2329,6 +2331,34 @@ references:
   name: SignOut
   nameWithType: PortalConnection.SignOut
   fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.SignOut
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.SignOut
+  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.SignOut
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection
+  name: SignOut()
+  nameWithType: IPortalConnection.SignOut()
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.SignOut()
+  spec.csharp:
+  - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.SignOut
+    name: SignOut
+    nameWithType: IPortalConnection.SignOut
+    fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.SignOut
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.SignOut
+    name: SignOut
+    nameWithType: IPortalConnection.SignOut
+    fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.SignOut
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.GetMapAsync*
   commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.GetMapAsync
   name: GetMapAsync

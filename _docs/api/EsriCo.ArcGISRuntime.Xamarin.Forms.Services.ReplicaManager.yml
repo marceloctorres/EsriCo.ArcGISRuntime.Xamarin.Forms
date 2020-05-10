@@ -158,20 +158,20 @@ items:
   summary: "\n\n"
   example: []
   syntax:
-    content: public string ReplicaFolderName { get; }
+    content: public string ReplicaFolderName { get; set; }
     parameters: []
     return:
       type: System.String
-    content.vb: Public ReadOnly Property ReplicaFolderName As String
+    content.vb: Public Property ReplicaFolderName As String
   overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.ReplicaFolderName*
   implements:
   - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.ReplicaFolderName
   modifiers.csharp:
   - public
   - get
+  - set
   modifiers.vb:
   - Public
-  - ReadOnly
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.MinScale
   commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.MinScale
   id: MinScale

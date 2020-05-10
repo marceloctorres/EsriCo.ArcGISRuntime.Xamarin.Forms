@@ -196,16 +196,15 @@ items:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
   syntax:
-    content: string ReplicaFolderName { get; }
+    content: string ReplicaFolderName { get; set; }
     parameters: []
     return:
       type: System.String
-    content.vb: ReadOnly Property ReplicaFolderName As String
+    content.vb: Property ReplicaFolderName As String
   overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.ReplicaFolderName*
   modifiers.csharp:
   - get
-  modifiers.vb:
-  - ReadOnly
+  - set
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.DeleteReplicaAsync
   commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.DeleteReplicaAsync
   id: DeleteReplicaAsync
