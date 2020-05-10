@@ -27,18 +27,30 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
     id: ConfigurationInfo
     path: Services/ConfigurationInfo.cs
-    startLine: 12
+    startLine: 14
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
   summary: "\n\n"
   example: []
   syntax:
-    content: public class ConfigurationInfo
-    content.vb: Public Class ConfigurationInfo
+    content: 'public class ConfigurationInfo : BindableBase, INotifyPropertyChanged, IConfigurationInfo'
+    content.vb: >-
+      Public Class ConfigurationInfo
+          Inherits BindableBase
+          Implements INotifyPropertyChanged, IConfigurationInfo
   inheritance:
   - System.Object
+  - Prism.Mvvm.BindableBase
+  implements:
+  - System.ComponentModel.INotifyPropertyChanged
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo
   inheritedMembers:
+  - Prism.Mvvm.BindableBase.SetProperty``1({T}@,{T},System.String)
+  - Prism.Mvvm.BindableBase.SetProperty``1({T}@,{T},System.Action,System.String)
+  - Prism.Mvvm.BindableBase.RaisePropertyChanged(System.String)
+  - Prism.Mvvm.BindableBase.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+  - Prism.Mvvm.BindableBase.PropertyChanged
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetHashCode
@@ -70,7 +82,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
     id: FileName
     path: Services/ConfigurationInfo.cs
-    startLine: 17
+    startLine: 19
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -83,6 +95,8 @@ items:
       type: System.String
     content.vb: Public Property FileName As String
   overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.FileName*
+  implements:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.FileName
   modifiers.csharp:
   - public
   - get
@@ -107,7 +121,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
     id: Folder
     path: Services/ConfigurationInfo.cs
-    startLine: 22
+    startLine: 24
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -120,6 +134,8 @@ items:
       type: System.String
     content.vb: Public Property Folder As String
   overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.Folder*
+  implements:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.Folder
   modifiers.csharp:
   - public
   - get
@@ -144,7 +160,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
     id: SaveAsync
     path: Services/ConfigurationInfo.cs
-    startLine: 28
+    startLine: 30
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -157,6 +173,8 @@ items:
       description: ''
     content.vb: Public Function SaveAsync As Task
   overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.SaveAsync*
+  implements:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.SaveAsync
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -179,7 +197,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
     id: LoadAsync
     path: Services/ConfigurationInfo.cs
-    startLine: 38
+    startLine: 40
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -192,6 +210,8 @@ items:
       description: ''
     content.vb: Public Overridable Function LoadAsync As Task
   overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.LoadAsync*
+  implements:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.LoadAsync
   modifiers.csharp:
   - public
   - virtual
@@ -216,7 +236,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
     id: LoadAsync
     path: Services/ConfigurationInfo.cs
-    startLine: 45
+    startLine: 47
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -261,7 +281,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
     id: WriteTextFileAsync
     path: Services/ConfigurationInfo.cs
-    startLine: 69
+    startLine: 71
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -303,7 +323,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
     id: ReadTextFileAsync
     path: Services/ConfigurationInfo.cs
-    startLine: 83
+    startLine: 85
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -342,7 +362,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
     id: .ctor
     path: Services/ConfigurationInfo.cs
-    startLine: 100
+    startLine: 102
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -369,6 +389,267 @@ references:
   name: Object
   nameWithType: Object
   fullName: System.Object
+- uid: Prism.Mvvm.BindableBase
+  commentId: T:Prism.Mvvm.BindableBase
+  parent: Prism.Mvvm
+  isExternal: true
+  name: BindableBase
+  nameWithType: BindableBase
+  fullName: Prism.Mvvm.BindableBase
+- uid: System.ComponentModel.INotifyPropertyChanged
+  commentId: T:System.ComponentModel.INotifyPropertyChanged
+  parent: System.ComponentModel
+  isExternal: true
+  name: INotifyPropertyChanged
+  nameWithType: INotifyPropertyChanged
+  fullName: System.ComponentModel.INotifyPropertyChanged
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo
+  commentId: T:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  name: IConfigurationInfo
+  nameWithType: IConfigurationInfo
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo
+- uid: Prism.Mvvm.BindableBase.SetProperty``1({T}@,{T},System.String)
+  commentId: M:Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+  parent: Prism.Mvvm.BindableBase
+  definition: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+  name: SetProperty<T>(T, T, String)
+  nameWithType: BindableBase.SetProperty<T>(T, T, String)
+  fullName: Prism.Mvvm.BindableBase.SetProperty<T>(T, T, System.String)
+  nameWithType.vb: BindableBase.SetProperty(Of T)(T, T, String)
+  fullName.vb: Prism.Mvvm.BindableBase.SetProperty(Of T)(T, T, System.String)
+  name.vb: SetProperty(Of T)(T, T, String)
+  spec.csharp:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty<T>
+    nameWithType: BindableBase.SetProperty<T>
+    fullName: Prism.Mvvm.BindableBase.SetProperty<T>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty(Of T)
+    nameWithType: BindableBase.SetProperty(Of T)
+    fullName: Prism.Mvvm.BindableBase.SetProperty(Of T)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Prism.Mvvm.BindableBase.SetProperty``1({T}@,{T},System.Action,System.String)
+  commentId: M:Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+  parent: Prism.Mvvm.BindableBase
+  definition: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+  name: SetProperty<T>(T, T, Action, String)
+  nameWithType: BindableBase.SetProperty<T>(T, T, Action, String)
+  fullName: Prism.Mvvm.BindableBase.SetProperty<T>(T, T, System.Action, System.String)
+  nameWithType.vb: BindableBase.SetProperty(Of T)(T, T, Action, String)
+  fullName.vb: Prism.Mvvm.BindableBase.SetProperty(Of T)(T, T, System.Action, System.String)
+  name.vb: SetProperty(Of T)(T, T, Action, String)
+  spec.csharp:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+    name: SetProperty<T>
+    nameWithType: BindableBase.SetProperty<T>
+    fullName: Prism.Mvvm.BindableBase.SetProperty<T>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+    name: SetProperty(Of T)
+    nameWithType: BindableBase.SetProperty(Of T)
+    fullName: Prism.Mvvm.BindableBase.SetProperty(Of T)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Prism.Mvvm.BindableBase.RaisePropertyChanged(System.String)
+  commentId: M:Prism.Mvvm.BindableBase.RaisePropertyChanged(System.String)
+  parent: Prism.Mvvm.BindableBase
+  isExternal: true
+  name: RaisePropertyChanged(String)
+  nameWithType: BindableBase.RaisePropertyChanged(String)
+  fullName: Prism.Mvvm.BindableBase.RaisePropertyChanged(System.String)
+  spec.csharp:
+  - uid: Prism.Mvvm.BindableBase.RaisePropertyChanged(System.String)
+    name: RaisePropertyChanged
+    nameWithType: BindableBase.RaisePropertyChanged
+    fullName: Prism.Mvvm.BindableBase.RaisePropertyChanged
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Prism.Mvvm.BindableBase.RaisePropertyChanged(System.String)
+    name: RaisePropertyChanged
+    nameWithType: BindableBase.RaisePropertyChanged
+    fullName: Prism.Mvvm.BindableBase.RaisePropertyChanged
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Prism.Mvvm.BindableBase.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+  commentId: M:Prism.Mvvm.BindableBase.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+  parent: Prism.Mvvm.BindableBase
+  isExternal: true
+  name: OnPropertyChanged(PropertyChangedEventArgs)
+  nameWithType: BindableBase.OnPropertyChanged(PropertyChangedEventArgs)
+  fullName: Prism.Mvvm.BindableBase.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+  spec.csharp:
+  - uid: Prism.Mvvm.BindableBase.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+    name: OnPropertyChanged
+    nameWithType: BindableBase.OnPropertyChanged
+    fullName: Prism.Mvvm.BindableBase.OnPropertyChanged
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.ComponentModel.PropertyChangedEventArgs
+    name: PropertyChangedEventArgs
+    nameWithType: PropertyChangedEventArgs
+    fullName: System.ComponentModel.PropertyChangedEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Prism.Mvvm.BindableBase.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)
+    name: OnPropertyChanged
+    nameWithType: BindableBase.OnPropertyChanged
+    fullName: Prism.Mvvm.BindableBase.OnPropertyChanged
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.ComponentModel.PropertyChangedEventArgs
+    name: PropertyChangedEventArgs
+    nameWithType: PropertyChangedEventArgs
+    fullName: System.ComponentModel.PropertyChangedEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Prism.Mvvm.BindableBase.PropertyChanged
+  commentId: E:Prism.Mvvm.BindableBase.PropertyChanged
+  parent: Prism.Mvvm.BindableBase
+  isExternal: true
+  name: PropertyChanged
+  nameWithType: BindableBase.PropertyChanged
+  fullName: Prism.Mvvm.BindableBase.PropertyChanged
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -654,11 +935,179 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: Prism.Mvvm
+  commentId: N:Prism.Mvvm
+  isExternal: true
+  name: Prism.Mvvm
+  nameWithType: Prism.Mvvm
+  fullName: Prism.Mvvm
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: true
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+- uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+  commentId: M:Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+  isExternal: true
+  name: SetProperty<T>(T, T, String)
+  nameWithType: BindableBase.SetProperty<T>(T, T, String)
+  fullName: Prism.Mvvm.BindableBase.SetProperty<T>(T, T, System.String)
+  nameWithType.vb: BindableBase.SetProperty(Of T)(T, T, String)
+  fullName.vb: Prism.Mvvm.BindableBase.SetProperty(Of T)(T, T, System.String)
+  name.vb: SetProperty(Of T)(T, T, String)
+  spec.csharp:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty<T>
+    nameWithType: BindableBase.SetProperty<T>
+    fullName: Prism.Mvvm.BindableBase.SetProperty<T>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty(Of T)
+    nameWithType: BindableBase.SetProperty(Of T)
+    fullName: Prism.Mvvm.BindableBase.SetProperty(Of T)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+  commentId: M:Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+  isExternal: true
+  name: SetProperty<T>(T, T, Action, String)
+  nameWithType: BindableBase.SetProperty<T>(T, T, Action, String)
+  fullName: Prism.Mvvm.BindableBase.SetProperty<T>(T, T, System.Action, System.String)
+  nameWithType.vb: BindableBase.SetProperty(Of T)(T, T, Action, String)
+  fullName.vb: Prism.Mvvm.BindableBase.SetProperty(Of T)(T, T, System.Action, System.String)
+  name.vb: SetProperty(Of T)(T, T, Action, String)
+  spec.csharp:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+    name: SetProperty<T>
+    nameWithType: BindableBase.SetProperty<T>
+    fullName: Prism.Mvvm.BindableBase.SetProperty<T>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Prism.Mvvm.BindableBase.SetProperty``1(``0@,``0,System.Action,System.String)
+    name: SetProperty(Of T)
+    nameWithType: BindableBase.SetProperty(Of T)
+    fullName: Prism.Mvvm.BindableBase.SetProperty(Of T)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.FileName*
   commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.FileName
   name: FileName
   nameWithType: ConfigurationInfo.FileName
   fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.FileName
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.FileName
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.FileName
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo
+  name: FileName
+  nameWithType: IConfigurationInfo.FileName
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.FileName
 - uid: System.String
   commentId: T:System.String
   parent: System
@@ -671,11 +1120,45 @@ references:
   name: Folder
   nameWithType: ConfigurationInfo.Folder
   fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.Folder
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.Folder
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.Folder
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo
+  name: Folder
+  nameWithType: IConfigurationInfo.Folder
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.Folder
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.SaveAsync*
   commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.SaveAsync
   name: SaveAsync
   nameWithType: ConfigurationInfo.SaveAsync
   fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.SaveAsync
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.SaveAsync
+  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.SaveAsync
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo
+  name: SaveAsync()
+  nameWithType: IConfigurationInfo.SaveAsync()
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.SaveAsync()
+  spec.csharp:
+  - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.SaveAsync
+    name: SaveAsync
+    nameWithType: IConfigurationInfo.SaveAsync
+    fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.SaveAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.SaveAsync
+    name: SaveAsync
+    nameWithType: IConfigurationInfo.SaveAsync
+    fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.SaveAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
 - uid: System.Threading.Tasks.Task
   commentId: T:System.Threading.Tasks.Task
   parent: System.Threading.Tasks
@@ -694,6 +1177,34 @@ references:
   name: LoadAsync
   nameWithType: ConfigurationInfo.LoadAsync
   fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.LoadAsync
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.LoadAsync
+  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.LoadAsync
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo
+  name: LoadAsync()
+  nameWithType: IConfigurationInfo.LoadAsync()
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.LoadAsync()
+  spec.csharp:
+  - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.LoadAsync
+    name: LoadAsync
+    nameWithType: IConfigurationInfo.LoadAsync
+    fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.LoadAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.LoadAsync
+    name: LoadAsync
+    nameWithType: IConfigurationInfo.LoadAsync
+    fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.LoadAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.WriteTextFileAsync*
   commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.WriteTextFileAsync
   name: WriteTextFileAsync

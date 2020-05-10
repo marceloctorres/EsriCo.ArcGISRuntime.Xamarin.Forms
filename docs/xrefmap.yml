@@ -1696,6 +1696,601 @@ references:
   isSpec: "True"
   fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.DownloadReplicaResult.ResultErrors
   nameWithType: DownloadReplicaResult.ResultErrors
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo
+  name: IConfigurationInfo
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.html
+  commentId: T:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo
+  nameWithType: IConfigurationInfo
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.FileName
+  name: FileName
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IConfigurationInfo_FileName
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.FileName
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.FileName
+  nameWithType: IConfigurationInfo.FileName
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.FileName*
+  name: FileName
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IConfigurationInfo_FileName_
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.FileName
+  isSpec: "True"
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.FileName
+  nameWithType: IConfigurationInfo.FileName
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.Folder
+  name: Folder
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IConfigurationInfo_Folder
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.Folder
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.Folder
+  nameWithType: IConfigurationInfo.Folder
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.Folder*
+  name: Folder
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IConfigurationInfo_Folder_
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.Folder
+  isSpec: "True"
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.Folder
+  nameWithType: IConfigurationInfo.Folder
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.LoadAsync
+  name: LoadAsync()
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IConfigurationInfo_LoadAsync
+  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.LoadAsync
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.LoadAsync()
+  nameWithType: IConfigurationInfo.LoadAsync()
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.LoadAsync*
+  name: LoadAsync
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IConfigurationInfo_LoadAsync_
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.LoadAsync
+  isSpec: "True"
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.LoadAsync
+  nameWithType: IConfigurationInfo.LoadAsync
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.SaveAsync
+  name: SaveAsync()
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IConfigurationInfo_SaveAsync
+  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.SaveAsync
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.SaveAsync()
+  nameWithType: IConfigurationInfo.SaveAsync()
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.SaveAsync*
+  name: SaveAsync
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IConfigurationInfo_SaveAsync_
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.SaveAsync
+  isSpec: "True"
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.SaveAsync
+  nameWithType: IConfigurationInfo.SaveAsync
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection
+  name: IPortalConnection
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html
+  commentId: T:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection
+  nameWithType: IPortalConnection
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Active
+  name: Active
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IPortalConnection_Active
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Active
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Active
+  nameWithType: IPortalConnection.Active
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Active*
+  name: Active
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IPortalConnection_Active_
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Active
+  isSpec: "True"
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Active
+  nameWithType: IPortalConnection.Active
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.BaseUrl
+  name: BaseUrl
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IPortalConnection_BaseUrl
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.BaseUrl
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.BaseUrl
+  nameWithType: IPortalConnection.BaseUrl
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.BaseUrl*
+  name: BaseUrl
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IPortalConnection_BaseUrl_
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.BaseUrl
+  isSpec: "True"
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.BaseUrl
+  nameWithType: IPortalConnection.BaseUrl
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Credential
+  name: Credential
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IPortalConnection_Credential
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Credential
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Credential
+  nameWithType: IPortalConnection.Credential
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Credential*
+  name: Credential
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IPortalConnection_Credential_
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Credential
+  isSpec: "True"
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Credential
+  nameWithType: IPortalConnection.Credential
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetGroup(System.String)
+  name: GetGroup(String)
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IPortalConnection_GetGroup_System_String_
+  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetGroup(System.String)
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetGroup(System.String)
+  nameWithType: IPortalConnection.GetGroup(String)
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetGroup*
+  name: GetGroup
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IPortalConnection_GetGroup_
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetGroup
+  isSpec: "True"
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetGroup
+  nameWithType: IPortalConnection.GetGroup
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetLicenseInfoJsonAsync
+  name: GetLicenseInfoJsonAsync()
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IPortalConnection_GetLicenseInfoJsonAsync
+  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetLicenseInfoJsonAsync
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetLicenseInfoJsonAsync()
+  nameWithType: IPortalConnection.GetLicenseInfoJsonAsync()
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetLicenseInfoJsonAsync*
+  name: GetLicenseInfoJsonAsync
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IPortalConnection_GetLicenseInfoJsonAsync_
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetLicenseInfoJsonAsync
+  isSpec: "True"
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetLicenseInfoJsonAsync
+  nameWithType: IPortalConnection.GetLicenseInfoJsonAsync
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetMapAsync
+  name: GetMapAsync()
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IPortalConnection_GetMapAsync
+  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetMapAsync
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetMapAsync()
+  nameWithType: IPortalConnection.GetMapAsync()
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetMapAsync(System.String)
+  name: GetMapAsync(String)
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IPortalConnection_GetMapAsync_System_String_
+  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetMapAsync(System.String)
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetMapAsync(System.String)
+  nameWithType: IPortalConnection.GetMapAsync(String)
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetMapAsync*
+  name: GetMapAsync
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IPortalConnection_GetMapAsync_
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetMapAsync
+  isSpec: "True"
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetMapAsync
+  nameWithType: IPortalConnection.GetMapAsync
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetWebMapItemByGroupAndTitleAsync(Esri.ArcGISRuntime.Portal.PortalGroup,System.String)
+  name: GetWebMapItemByGroupAndTitleAsync(PortalGroup, String)
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IPortalConnection_GetWebMapItemByGroupAndTitleAsync_Esri_ArcGISRuntime_Portal_PortalGroup_System_String_
+  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetWebMapItemByGroupAndTitleAsync(Esri.ArcGISRuntime.Portal.PortalGroup,System.String)
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetWebMapItemByGroupAndTitleAsync(Esri.ArcGISRuntime.Portal.PortalGroup, System.String)
+  nameWithType: IPortalConnection.GetWebMapItemByGroupAndTitleAsync(PortalGroup, String)
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetWebMapItemByGroupAndTitleAsync*
+  name: GetWebMapItemByGroupAndTitleAsync
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IPortalConnection_GetWebMapItemByGroupAndTitleAsync_
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetWebMapItemByGroupAndTitleAsync
+  isSpec: "True"
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetWebMapItemByGroupAndTitleAsync
+  nameWithType: IPortalConnection.GetWebMapItemByGroupAndTitleAsync
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetWebMapItemsByGroupAsync(Esri.ArcGISRuntime.Portal.PortalGroup)
+  name: GetWebMapItemsByGroupAsync(PortalGroup)
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IPortalConnection_GetWebMapItemsByGroupAsync_Esri_ArcGISRuntime_Portal_PortalGroup_
+  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetWebMapItemsByGroupAsync(Esri.ArcGISRuntime.Portal.PortalGroup)
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetWebMapItemsByGroupAsync(Esri.ArcGISRuntime.Portal.PortalGroup)
+  nameWithType: IPortalConnection.GetWebMapItemsByGroupAsync(PortalGroup)
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetWebMapItemsByGroupAsync*
+  name: GetWebMapItemsByGroupAsync
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IPortalConnection_GetWebMapItemsByGroupAsync_
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetWebMapItemsByGroupAsync
+  isSpec: "True"
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetWebMapItemsByGroupAsync
+  nameWithType: IPortalConnection.GetWebMapItemsByGroupAsync
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.IsCredentialNull
+  name: IsCredentialNull()
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IPortalConnection_IsCredentialNull
+  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.IsCredentialNull
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.IsCredentialNull()
+  nameWithType: IPortalConnection.IsCredentialNull()
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.IsCredentialNull*
+  name: IsCredentialNull
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IPortalConnection_IsCredentialNull_
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.IsCredentialNull
+  isSpec: "True"
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.IsCredentialNull
+  nameWithType: IPortalConnection.IsCredentialNull
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Name
+  name: Name
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IPortalConnection_Name
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Name
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Name
+  nameWithType: IPortalConnection.Name
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Name*
+  name: Name
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IPortalConnection_Name_
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Name
+  isSpec: "True"
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Name
+  nameWithType: IPortalConnection.Name
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.OrganizationName
+  name: OrganizationName
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IPortalConnection_OrganizationName
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.OrganizationName
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.OrganizationName
+  nameWithType: IPortalConnection.OrganizationName
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.OrganizationName*
+  name: OrganizationName
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IPortalConnection_OrganizationName_
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.OrganizationName
+  isSpec: "True"
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.OrganizationName
+  nameWithType: IPortalConnection.OrganizationName
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.OrganizationSubDomain
+  name: OrganizationSubDomain
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IPortalConnection_OrganizationSubDomain
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.OrganizationSubDomain
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.OrganizationSubDomain
+  nameWithType: IPortalConnection.OrganizationSubDomain
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.OrganizationSubDomain*
+  name: OrganizationSubDomain
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IPortalConnection_OrganizationSubDomain_
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.OrganizationSubDomain
+  isSpec: "True"
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.OrganizationSubDomain
+  nameWithType: IPortalConnection.OrganizationSubDomain
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Password
+  name: Password
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IPortalConnection_Password
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Password
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Password
+  nameWithType: IPortalConnection.Password
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Password*
+  name: Password
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IPortalConnection_Password_
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Password
+  isSpec: "True"
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Password
+  nameWithType: IPortalConnection.Password
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Portal
+  name: Portal
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IPortalConnection_Portal
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Portal
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Portal
+  nameWithType: IPortalConnection.Portal
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Portal*
+  name: Portal
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IPortalConnection_Portal_
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Portal
+  isSpec: "True"
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Portal
+  nameWithType: IPortalConnection.Portal
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.PortalInfo
+  name: PortalInfo
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IPortalConnection_PortalInfo
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.PortalInfo
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.PortalInfo
+  nameWithType: IPortalConnection.PortalInfo
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.PortalInfo*
+  name: PortalInfo
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IPortalConnection_PortalInfo_
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.PortalInfo
+  isSpec: "True"
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.PortalInfo
+  nameWithType: IPortalConnection.PortalInfo
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.PortalUser
+  name: PortalUser
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IPortalConnection_PortalUser
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.PortalUser
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.PortalUser
+  nameWithType: IPortalConnection.PortalUser
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.PortalUser*
+  name: PortalUser
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IPortalConnection_PortalUser_
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.PortalUser
+  isSpec: "True"
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.PortalUser
+  nameWithType: IPortalConnection.PortalUser
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.ServerRegisterUrl
+  name: ServerRegisterUrl
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IPortalConnection_ServerRegisterUrl
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.ServerRegisterUrl
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.ServerRegisterUrl
+  nameWithType: IPortalConnection.ServerRegisterUrl
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.ServerRegisterUrl*
+  name: ServerRegisterUrl
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IPortalConnection_ServerRegisterUrl_
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.ServerRegisterUrl
+  isSpec: "True"
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.ServerRegisterUrl
+  nameWithType: IPortalConnection.ServerRegisterUrl
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.SignedIn
+  name: SignedIn
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IPortalConnection_SignedIn
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.SignedIn
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.SignedIn
+  nameWithType: IPortalConnection.SignedIn
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.SignedIn*
+  name: SignedIn
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IPortalConnection_SignedIn_
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.SignedIn
+  isSpec: "True"
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.SignedIn
+  nameWithType: IPortalConnection.SignedIn
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.SignInAsync
+  name: SignInAsync()
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IPortalConnection_SignInAsync
+  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.SignInAsync
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.SignInAsync()
+  nameWithType: IPortalConnection.SignInAsync()
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.SignInAsync*
+  name: SignInAsync
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IPortalConnection_SignInAsync_
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.SignInAsync
+  isSpec: "True"
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.SignInAsync
+  nameWithType: IPortalConnection.SignInAsync
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.TokenAuthenticationType
+  name: TokenAuthenticationType
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IPortalConnection_TokenAuthenticationType
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.TokenAuthenticationType
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.TokenAuthenticationType
+  nameWithType: IPortalConnection.TokenAuthenticationType
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.TokenAuthenticationType*
+  name: TokenAuthenticationType
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IPortalConnection_TokenAuthenticationType_
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.TokenAuthenticationType
+  isSpec: "True"
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.TokenAuthenticationType
+  nameWithType: IPortalConnection.TokenAuthenticationType
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.TokenExpirationDateTime
+  name: TokenExpirationDateTime
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IPortalConnection_TokenExpirationDateTime
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.TokenExpirationDateTime
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.TokenExpirationDateTime
+  nameWithType: IPortalConnection.TokenExpirationDateTime
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.TokenExpirationDateTime*
+  name: TokenExpirationDateTime
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IPortalConnection_TokenExpirationDateTime_
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.TokenExpirationDateTime
+  isSpec: "True"
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.TokenExpirationDateTime
+  nameWithType: IPortalConnection.TokenExpirationDateTime
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.TokenValidDays
+  name: TokenValidDays
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IPortalConnection_TokenValidDays
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.TokenValidDays
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.TokenValidDays
+  nameWithType: IPortalConnection.TokenValidDays
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.TokenValidDays*
+  name: TokenValidDays
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IPortalConnection_TokenValidDays_
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.TokenValidDays
+  isSpec: "True"
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.TokenValidDays
+  nameWithType: IPortalConnection.TokenValidDays
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.User
+  name: User
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IPortalConnection_User
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.User
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.User
+  nameWithType: IPortalConnection.User
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.User*
+  name: User
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IPortalConnection_User_
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.User
+  isSpec: "True"
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.User
+  nameWithType: IPortalConnection.User
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.UserImage
+  name: UserImage
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IPortalConnection_UserImage
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.UserImage
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.UserImage
+  nameWithType: IPortalConnection.UserImage
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.UserImage*
+  name: UserImage
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IPortalConnection_UserImage_
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.UserImage
+  isSpec: "True"
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.UserImage
+  nameWithType: IPortalConnection.UserImage
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.UserImageString
+  name: UserImageString
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IPortalConnection_UserImageString
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.UserImageString
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.UserImageString
+  nameWithType: IPortalConnection.UserImageString
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.UserImageString*
+  name: UserImageString
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IPortalConnection_UserImageString_
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.UserImageString
+  isSpec: "True"
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.UserImageString
+  nameWithType: IPortalConnection.UserImageString
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.UserName
+  name: UserName
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IPortalConnection_UserName
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.UserName
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.UserName
+  nameWithType: IPortalConnection.UserName
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.UserName*
+  name: UserName
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IPortalConnection_UserName_
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.UserName
+  isSpec: "True"
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.UserName
+  nameWithType: IPortalConnection.UserName
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.WebMapId
+  name: WebMapId
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IPortalConnection_WebMapId
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.WebMapId
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.WebMapId
+  nameWithType: IPortalConnection.WebMapId
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.WebMapId*
+  name: WebMapId
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IPortalConnection_WebMapId_
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.WebMapId
+  isSpec: "True"
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.WebMapId
+  nameWithType: IPortalConnection.WebMapId
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager
+  name: IReplicaManager
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.html
+  commentId: T:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager
+  nameWithType: IReplicaManager
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.AppFolderName
+  name: AppFolderName
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IReplicaManager_AppFolderName
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.AppFolderName
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.AppFolderName
+  nameWithType: IReplicaManager.AppFolderName
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.AppFolderName*
+  name: AppFolderName
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IReplicaManager_AppFolderName_
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.AppFolderName
+  isSpec: "True"
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.AppFolderName
+  nameWithType: IReplicaManager.AppFolderName
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.DeleteReplicaAsync
+  name: DeleteReplicaAsync()
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IReplicaManager_DeleteReplicaAsync
+  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.DeleteReplicaAsync
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.DeleteReplicaAsync()
+  nameWithType: IReplicaManager.DeleteReplicaAsync()
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.DeleteReplicaAsync(Esri.ArcGISRuntime.Mapping.Map)
+  name: DeleteReplicaAsync(Map)
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IReplicaManager_DeleteReplicaAsync_Esri_ArcGISRuntime_Mapping_Map_
+  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.DeleteReplicaAsync(Esri.ArcGISRuntime.Mapping.Map)
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.DeleteReplicaAsync(Esri.ArcGISRuntime.Mapping.Map)
+  nameWithType: IReplicaManager.DeleteReplicaAsync(Map)
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.DeleteReplicaAsync*
+  name: DeleteReplicaAsync
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IReplicaManager_DeleteReplicaAsync_
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.DeleteReplicaAsync
+  isSpec: "True"
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.DeleteReplicaAsync
+  nameWithType: IReplicaManager.DeleteReplicaAsync
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.DeleteReplicaFolderAsync
+  name: DeleteReplicaFolderAsync()
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IReplicaManager_DeleteReplicaFolderAsync
+  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.DeleteReplicaFolderAsync
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.DeleteReplicaFolderAsync()
+  nameWithType: IReplicaManager.DeleteReplicaFolderAsync()
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.DeleteReplicaFolderAsync*
+  name: DeleteReplicaFolderAsync
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IReplicaManager_DeleteReplicaFolderAsync_
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.DeleteReplicaFolderAsync
+  isSpec: "True"
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.DeleteReplicaFolderAsync
+  nameWithType: IReplicaManager.DeleteReplicaFolderAsync
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.DownloadReplicaAsync(Esri.ArcGISRuntime.Mapping.Map,Esri.ArcGISRuntime.Mapping.Viewpoint,System.EventHandler{EsriCo.ArcGISRuntime.Xamarin.Forms.Services.JobChangedEventArgs},System.EventHandler{EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ProgressChangedEventArgs})
+  name: DownloadReplicaAsync(Map, Viewpoint, EventHandler<JobChangedEventArgs>, EventHandler<ProgressChangedEventArgs>)
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IReplicaManager_DownloadReplicaAsync_Esri_ArcGISRuntime_Mapping_Map_Esri_ArcGISRuntime_Mapping_Viewpoint_System_EventHandler_EsriCo_ArcGISRuntime_Xamarin_Forms_Services_JobChangedEventArgs__System_EventHandler_EsriCo_ArcGISRuntime_Xamarin_Forms_Services_ProgressChangedEventArgs__
+  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.DownloadReplicaAsync(Esri.ArcGISRuntime.Mapping.Map,Esri.ArcGISRuntime.Mapping.Viewpoint,System.EventHandler{EsriCo.ArcGISRuntime.Xamarin.Forms.Services.JobChangedEventArgs},System.EventHandler{EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ProgressChangedEventArgs})
+  name.vb: DownloadReplicaAsync(Map, Viewpoint, EventHandler(Of JobChangedEventArgs), EventHandler(Of ProgressChangedEventArgs))
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.DownloadReplicaAsync(Esri.ArcGISRuntime.Mapping.Map, Esri.ArcGISRuntime.Mapping.Viewpoint, System.EventHandler<EsriCo.ArcGISRuntime.Xamarin.Forms.Services.JobChangedEventArgs>, System.EventHandler<EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ProgressChangedEventArgs>)
+  fullName.vb: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.DownloadReplicaAsync(Esri.ArcGISRuntime.Mapping.Map, Esri.ArcGISRuntime.Mapping.Viewpoint, System.EventHandler(Of EsriCo.ArcGISRuntime.Xamarin.Forms.Services.JobChangedEventArgs), System.EventHandler(Of EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ProgressChangedEventArgs))
+  nameWithType: IReplicaManager.DownloadReplicaAsync(Map, Viewpoint, EventHandler<JobChangedEventArgs>, EventHandler<ProgressChangedEventArgs>)
+  nameWithType.vb: IReplicaManager.DownloadReplicaAsync(Map, Viewpoint, EventHandler(Of JobChangedEventArgs), EventHandler(Of ProgressChangedEventArgs))
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.DownloadReplicaAsync*
+  name: DownloadReplicaAsync
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IReplicaManager_DownloadReplicaAsync_
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.DownloadReplicaAsync
+  isSpec: "True"
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.DownloadReplicaAsync
+  nameWithType: IReplicaManager.DownloadReplicaAsync
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.GetReplicaMapAsync
+  name: GetReplicaMapAsync()
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IReplicaManager_GetReplicaMapAsync
+  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.GetReplicaMapAsync
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.GetReplicaMapAsync()
+  nameWithType: IReplicaManager.GetReplicaMapAsync()
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.GetReplicaMapAsync*
+  name: GetReplicaMapAsync
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IReplicaManager_GetReplicaMapAsync_
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.GetReplicaMapAsync
+  isSpec: "True"
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.GetReplicaMapAsync
+  nameWithType: IReplicaManager.GetReplicaMapAsync
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.MaxScale
+  name: MaxScale
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IReplicaManager_MaxScale
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.MaxScale
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.MaxScale
+  nameWithType: IReplicaManager.MaxScale
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.MaxScale*
+  name: MaxScale
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IReplicaManager_MaxScale_
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.MaxScale
+  isSpec: "True"
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.MaxScale
+  nameWithType: IReplicaManager.MaxScale
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.MinScale
+  name: MinScale
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IReplicaManager_MinScale
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.MinScale
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.MinScale
+  nameWithType: IReplicaManager.MinScale
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.MinScale*
+  name: MinScale
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IReplicaManager_MinScale_
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.MinScale
+  isSpec: "True"
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.MinScale
+  nameWithType: IReplicaManager.MinScale
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.MobileMapPackage
+  name: MobileMapPackage
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IReplicaManager_MobileMapPackage
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.MobileMapPackage
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.MobileMapPackage
+  nameWithType: IReplicaManager.MobileMapPackage
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.MobileMapPackage*
+  name: MobileMapPackage
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IReplicaManager_MobileMapPackage_
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.MobileMapPackage
+  isSpec: "True"
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.MobileMapPackage
+  nameWithType: IReplicaManager.MobileMapPackage
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.ReplicaExist
+  name: ReplicaExist()
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IReplicaManager_ReplicaExist
+  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.ReplicaExist
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.ReplicaExist()
+  nameWithType: IReplicaManager.ReplicaExist()
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.ReplicaExist*
+  name: ReplicaExist
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IReplicaManager_ReplicaExist_
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.ReplicaExist
+  isSpec: "True"
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.ReplicaExist
+  nameWithType: IReplicaManager.ReplicaExist
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.ReplicaFolderName
+  name: ReplicaFolderName
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IReplicaManager_ReplicaFolderName
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.ReplicaFolderName
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.ReplicaFolderName
+  nameWithType: IReplicaManager.ReplicaFolderName
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.ReplicaFolderName*
+  name: ReplicaFolderName
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IReplicaManager_ReplicaFolderName_
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.ReplicaFolderName
+  isSpec: "True"
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.ReplicaFolderName
+  nameWithType: IReplicaManager.ReplicaFolderName
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.SynchronizeReplicaAsync(Esri.ArcGISRuntime.Mapping.Map,System.EventHandler{EsriCo.ArcGISRuntime.Xamarin.Forms.Services.JobChangedEventArgs},System.EventHandler{EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ProgressChangedEventArgs})
+  name: SynchronizeReplicaAsync(Map, EventHandler<JobChangedEventArgs>, EventHandler<ProgressChangedEventArgs>)
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IReplicaManager_SynchronizeReplicaAsync_Esri_ArcGISRuntime_Mapping_Map_System_EventHandler_EsriCo_ArcGISRuntime_Xamarin_Forms_Services_JobChangedEventArgs__System_EventHandler_EsriCo_ArcGISRuntime_Xamarin_Forms_Services_ProgressChangedEventArgs__
+  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.SynchronizeReplicaAsync(Esri.ArcGISRuntime.Mapping.Map,System.EventHandler{EsriCo.ArcGISRuntime.Xamarin.Forms.Services.JobChangedEventArgs},System.EventHandler{EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ProgressChangedEventArgs})
+  name.vb: SynchronizeReplicaAsync(Map, EventHandler(Of JobChangedEventArgs), EventHandler(Of ProgressChangedEventArgs))
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.SynchronizeReplicaAsync(Esri.ArcGISRuntime.Mapping.Map, System.EventHandler<EsriCo.ArcGISRuntime.Xamarin.Forms.Services.JobChangedEventArgs>, System.EventHandler<EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ProgressChangedEventArgs>)
+  fullName.vb: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.SynchronizeReplicaAsync(Esri.ArcGISRuntime.Mapping.Map, System.EventHandler(Of EsriCo.ArcGISRuntime.Xamarin.Forms.Services.JobChangedEventArgs), System.EventHandler(Of EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ProgressChangedEventArgs))
+  nameWithType: IReplicaManager.SynchronizeReplicaAsync(Map, EventHandler<JobChangedEventArgs>, EventHandler<ProgressChangedEventArgs>)
+  nameWithType.vb: IReplicaManager.SynchronizeReplicaAsync(Map, EventHandler(Of JobChangedEventArgs), EventHandler(Of ProgressChangedEventArgs))
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.SynchronizeReplicaAsync*
+  name: SynchronizeReplicaAsync
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IReplicaManager_SynchronizeReplicaAsync_
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.SynchronizeReplicaAsync
+  isSpec: "True"
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.SynchronizeReplicaAsync
+  nameWithType: IReplicaManager.SynchronizeReplicaAsync
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.ValidateReplicaAsync(Esri.ArcGISRuntime.Mapping.Map,Esri.ArcGISRuntime.Mapping.Viewpoint)
+  name: ValidateReplicaAsync(Map, Viewpoint)
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IReplicaManager_ValidateReplicaAsync_Esri_ArcGISRuntime_Mapping_Map_Esri_ArcGISRuntime_Mapping_Viewpoint_
+  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.ValidateReplicaAsync(Esri.ArcGISRuntime.Mapping.Map,Esri.ArcGISRuntime.Mapping.Viewpoint)
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.ValidateReplicaAsync(Esri.ArcGISRuntime.Mapping.Map, Esri.ArcGISRuntime.Mapping.Viewpoint)
+  nameWithType: IReplicaManager.ValidateReplicaAsync(Map, Viewpoint)
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.ValidateReplicaAsync*
+  name: ValidateReplicaAsync
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IReplicaManager_ValidateReplicaAsync_
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.ValidateReplicaAsync
+  isSpec: "True"
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.ValidateReplicaAsync
+  nameWithType: IReplicaManager.ValidateReplicaAsync
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.JobChangedEventArgs
   name: JobChangedEventArgs
   href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.JobChangedEventArgs.html
@@ -1812,25 +2407,6 @@ references:
   isSpec: "True"
   fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.GetLicenseInfoJsonAsync
   nameWithType: PortalConnection.GetLicenseInfoJsonAsync
-- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.GetMap
-  name: GetMap()
-  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_PortalConnection_GetMap
-  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.GetMap
-  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.GetMap()
-  nameWithType: PortalConnection.GetMap()
-- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.GetMap(System.String)
-  name: GetMap(String)
-  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_PortalConnection_GetMap_System_String_
-  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.GetMap(System.String)
-  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.GetMap(System.String)
-  nameWithType: PortalConnection.GetMap(String)
-- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.GetMap*
-  name: GetMap
-  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_PortalConnection_GetMap_
-  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.GetMap
-  isSpec: "True"
-  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.GetMap
-  nameWithType: PortalConnection.GetMap
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.GetMapAsync
   name: GetMapAsync()
   href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_PortalConnection_GetMapAsync
@@ -1889,19 +2465,19 @@ references:
   isSpec: "True"
   fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.IsCredentialNull
   nameWithType: PortalConnection.IsCredentialNull
-- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.LicenseInfoJson
-  name: LicenseInfoJson()
-  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_PortalConnection_LicenseInfoJson
-  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.LicenseInfoJson
-  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.LicenseInfoJson()
-  nameWithType: PortalConnection.LicenseInfoJson()
-- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.LicenseInfoJson*
-  name: LicenseInfoJson
-  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_PortalConnection_LicenseInfoJson_
-  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.LicenseInfoJson
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.Name
+  name: Name
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_PortalConnection_Name
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.Name
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.Name
+  nameWithType: PortalConnection.Name
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.Name*
+  name: Name
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_PortalConnection_Name_
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.Name
   isSpec: "True"
-  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.LicenseInfoJson
-  nameWithType: PortalConnection.LicenseInfoJson
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.Name
+  nameWithType: PortalConnection.Name
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.OrganizationName
   name: OrganizationName
   href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_PortalConnection_OrganizationName
@@ -2006,19 +2582,6 @@ references:
   isSpec: "True"
   fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.SignedIn
   nameWithType: PortalConnection.SignedIn
-- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.SignIn
-  name: SignIn()
-  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_PortalConnection_SignIn
-  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.SignIn
-  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.SignIn()
-  nameWithType: PortalConnection.SignIn()
-- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.SignIn*
-  name: SignIn
-  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_PortalConnection_SignIn_
-  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.SignIn
-  isSpec: "True"
-  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.SignIn
-  nameWithType: PortalConnection.SignIn
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.SignInAsync
   name: SignInAsync()
   href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_PortalConnection_SignInAsync
@@ -2200,25 +2763,6 @@ references:
   isSpec: "True"
   fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.AppFolderName
   nameWithType: ReplicaManager.AppFolderName
-- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.DeleteReplica
-  name: DeleteReplica()
-  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_ReplicaManager_DeleteReplica
-  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.DeleteReplica
-  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.DeleteReplica()
-  nameWithType: ReplicaManager.DeleteReplica()
-- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.DeleteReplica(Esri.ArcGISRuntime.Mapping.Map)
-  name: DeleteReplica(Map)
-  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_ReplicaManager_DeleteReplica_Esri_ArcGISRuntime_Mapping_Map_
-  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.DeleteReplica(Esri.ArcGISRuntime.Mapping.Map)
-  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.DeleteReplica(Esri.ArcGISRuntime.Mapping.Map)
-  nameWithType: ReplicaManager.DeleteReplica(Map)
-- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.DeleteReplica*
-  name: DeleteReplica
-  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_ReplicaManager_DeleteReplica_
-  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.DeleteReplica
-  isSpec: "True"
-  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.DeleteReplica
-  nameWithType: ReplicaManager.DeleteReplica
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.DeleteReplicaAsync
   name: DeleteReplicaAsync()
   href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_ReplicaManager_DeleteReplicaAsync
@@ -2238,19 +2782,6 @@ references:
   isSpec: "True"
   fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.DeleteReplicaAsync
   nameWithType: ReplicaManager.DeleteReplicaAsync
-- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.DeleteReplicaFolder
-  name: DeleteReplicaFolder()
-  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_ReplicaManager_DeleteReplicaFolder
-  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.DeleteReplicaFolder
-  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.DeleteReplicaFolder()
-  nameWithType: ReplicaManager.DeleteReplicaFolder()
-- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.DeleteReplicaFolder*
-  name: DeleteReplicaFolder
-  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_ReplicaManager_DeleteReplicaFolder_
-  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.DeleteReplicaFolder
-  isSpec: "True"
-  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.DeleteReplicaFolder
-  nameWithType: ReplicaManager.DeleteReplicaFolder
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.DeleteReplicaFolderAsync
   name: DeleteReplicaFolderAsync()
   href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_ReplicaManager_DeleteReplicaFolderAsync
@@ -2264,22 +2795,6 @@ references:
   isSpec: "True"
   fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.DeleteReplicaFolderAsync
   nameWithType: ReplicaManager.DeleteReplicaFolderAsync
-- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.DownloadReplica(Esri.ArcGISRuntime.Mapping.Map,Esri.ArcGISRuntime.Mapping.Viewpoint,System.EventHandler{EsriCo.ArcGISRuntime.Xamarin.Forms.Services.JobChangedEventArgs},System.EventHandler{EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ProgressChangedEventArgs})
-  name: DownloadReplica(Map, Viewpoint, EventHandler<JobChangedEventArgs>, EventHandler<ProgressChangedEventArgs>)
-  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_ReplicaManager_DownloadReplica_Esri_ArcGISRuntime_Mapping_Map_Esri_ArcGISRuntime_Mapping_Viewpoint_System_EventHandler_EsriCo_ArcGISRuntime_Xamarin_Forms_Services_JobChangedEventArgs__System_EventHandler_EsriCo_ArcGISRuntime_Xamarin_Forms_Services_ProgressChangedEventArgs__
-  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.DownloadReplica(Esri.ArcGISRuntime.Mapping.Map,Esri.ArcGISRuntime.Mapping.Viewpoint,System.EventHandler{EsriCo.ArcGISRuntime.Xamarin.Forms.Services.JobChangedEventArgs},System.EventHandler{EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ProgressChangedEventArgs})
-  name.vb: DownloadReplica(Map, Viewpoint, EventHandler(Of JobChangedEventArgs), EventHandler(Of ProgressChangedEventArgs))
-  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.DownloadReplica(Esri.ArcGISRuntime.Mapping.Map, Esri.ArcGISRuntime.Mapping.Viewpoint, System.EventHandler<EsriCo.ArcGISRuntime.Xamarin.Forms.Services.JobChangedEventArgs>, System.EventHandler<EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ProgressChangedEventArgs>)
-  fullName.vb: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.DownloadReplica(Esri.ArcGISRuntime.Mapping.Map, Esri.ArcGISRuntime.Mapping.Viewpoint, System.EventHandler(Of EsriCo.ArcGISRuntime.Xamarin.Forms.Services.JobChangedEventArgs), System.EventHandler(Of EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ProgressChangedEventArgs))
-  nameWithType: ReplicaManager.DownloadReplica(Map, Viewpoint, EventHandler<JobChangedEventArgs>, EventHandler<ProgressChangedEventArgs>)
-  nameWithType.vb: ReplicaManager.DownloadReplica(Map, Viewpoint, EventHandler(Of JobChangedEventArgs), EventHandler(Of ProgressChangedEventArgs))
-- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.DownloadReplica*
-  name: DownloadReplica
-  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_ReplicaManager_DownloadReplica_
-  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.DownloadReplica
-  isSpec: "True"
-  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.DownloadReplica
-  nameWithType: ReplicaManager.DownloadReplica
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.DownloadReplicaAsync(Esri.ArcGISRuntime.Mapping.Map,Esri.ArcGISRuntime.Mapping.Viewpoint,System.EventHandler{EsriCo.ArcGISRuntime.Xamarin.Forms.Services.JobChangedEventArgs},System.EventHandler{EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ProgressChangedEventArgs})
   name: DownloadReplicaAsync(Map, Viewpoint, EventHandler<JobChangedEventArgs>, EventHandler<ProgressChangedEventArgs>)
   href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_ReplicaManager_DownloadReplicaAsync_Esri_ArcGISRuntime_Mapping_Map_Esri_ArcGISRuntime_Mapping_Viewpoint_System_EventHandler_EsriCo_ArcGISRuntime_Xamarin_Forms_Services_JobChangedEventArgs__System_EventHandler_EsriCo_ArcGISRuntime_Xamarin_Forms_Services_ProgressChangedEventArgs__
@@ -2296,19 +2811,6 @@ references:
   isSpec: "True"
   fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.DownloadReplicaAsync
   nameWithType: ReplicaManager.DownloadReplicaAsync
-- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.GetReplicaMap
-  name: GetReplicaMap()
-  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_ReplicaManager_GetReplicaMap
-  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.GetReplicaMap
-  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.GetReplicaMap()
-  nameWithType: ReplicaManager.GetReplicaMap()
-- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.GetReplicaMap*
-  name: GetReplicaMap
-  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_ReplicaManager_GetReplicaMap_
-  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.GetReplicaMap
-  isSpec: "True"
-  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.GetReplicaMap
-  nameWithType: ReplicaManager.GetReplicaMap
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.GetReplicaMapAsync
   name: GetReplicaMapAsync()
   href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_ReplicaManager_GetReplicaMapAsync
@@ -2387,22 +2889,6 @@ references:
   isSpec: "True"
   fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.ReplicaFolderName
   nameWithType: ReplicaManager.ReplicaFolderName
-- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.SynchronizeReplica(Esri.ArcGISRuntime.Mapping.Map,System.EventHandler{EsriCo.ArcGISRuntime.Xamarin.Forms.Services.JobChangedEventArgs},System.EventHandler{EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ProgressChangedEventArgs})
-  name: SynchronizeReplica(Map, EventHandler<JobChangedEventArgs>, EventHandler<ProgressChangedEventArgs>)
-  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_ReplicaManager_SynchronizeReplica_Esri_ArcGISRuntime_Mapping_Map_System_EventHandler_EsriCo_ArcGISRuntime_Xamarin_Forms_Services_JobChangedEventArgs__System_EventHandler_EsriCo_ArcGISRuntime_Xamarin_Forms_Services_ProgressChangedEventArgs__
-  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.SynchronizeReplica(Esri.ArcGISRuntime.Mapping.Map,System.EventHandler{EsriCo.ArcGISRuntime.Xamarin.Forms.Services.JobChangedEventArgs},System.EventHandler{EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ProgressChangedEventArgs})
-  name.vb: SynchronizeReplica(Map, EventHandler(Of JobChangedEventArgs), EventHandler(Of ProgressChangedEventArgs))
-  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.SynchronizeReplica(Esri.ArcGISRuntime.Mapping.Map, System.EventHandler<EsriCo.ArcGISRuntime.Xamarin.Forms.Services.JobChangedEventArgs>, System.EventHandler<EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ProgressChangedEventArgs>)
-  fullName.vb: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.SynchronizeReplica(Esri.ArcGISRuntime.Mapping.Map, System.EventHandler(Of EsriCo.ArcGISRuntime.Xamarin.Forms.Services.JobChangedEventArgs), System.EventHandler(Of EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ProgressChangedEventArgs))
-  nameWithType: ReplicaManager.SynchronizeReplica(Map, EventHandler<JobChangedEventArgs>, EventHandler<ProgressChangedEventArgs>)
-  nameWithType.vb: ReplicaManager.SynchronizeReplica(Map, EventHandler(Of JobChangedEventArgs), EventHandler(Of ProgressChangedEventArgs))
-- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.SynchronizeReplica*
-  name: SynchronizeReplica
-  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_ReplicaManager_SynchronizeReplica_
-  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.SynchronizeReplica
-  isSpec: "True"
-  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.SynchronizeReplica
-  nameWithType: ReplicaManager.SynchronizeReplica
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.SynchronizeReplicaAsync(Esri.ArcGISRuntime.Mapping.Map,System.EventHandler{EsriCo.ArcGISRuntime.Xamarin.Forms.Services.JobChangedEventArgs},System.EventHandler{EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ProgressChangedEventArgs})
   name: SynchronizeReplicaAsync(Map, EventHandler<JobChangedEventArgs>, EventHandler<ProgressChangedEventArgs>)
   href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_ReplicaManager_SynchronizeReplicaAsync_Esri_ArcGISRuntime_Mapping_Map_System_EventHandler_EsriCo_ArcGISRuntime_Xamarin_Forms_Services_JobChangedEventArgs__System_EventHandler_EsriCo_ArcGISRuntime_Xamarin_Forms_Services_ProgressChangedEventArgs__
@@ -2419,19 +2905,6 @@ references:
   isSpec: "True"
   fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.SynchronizeReplicaAsync
   nameWithType: ReplicaManager.SynchronizeReplicaAsync
-- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.ValidateReplica(Esri.ArcGISRuntime.Mapping.Map,Esri.ArcGISRuntime.Mapping.Viewpoint)
-  name: ValidateReplica(Map, Viewpoint)
-  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_ReplicaManager_ValidateReplica_Esri_ArcGISRuntime_Mapping_Map_Esri_ArcGISRuntime_Mapping_Viewpoint_
-  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.ValidateReplica(Esri.ArcGISRuntime.Mapping.Map,Esri.ArcGISRuntime.Mapping.Viewpoint)
-  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.ValidateReplica(Esri.ArcGISRuntime.Mapping.Map, Esri.ArcGISRuntime.Mapping.Viewpoint)
-  nameWithType: ReplicaManager.ValidateReplica(Map, Viewpoint)
-- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.ValidateReplica*
-  name: ValidateReplica
-  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_ReplicaManager_ValidateReplica_
-  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.ValidateReplica
-  isSpec: "True"
-  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.ValidateReplica
-  nameWithType: ReplicaManager.ValidateReplica
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.ValidateReplicaAsync(Esri.ArcGISRuntime.Mapping.Map,Esri.ArcGISRuntime.Mapping.Viewpoint)
   name: ValidateReplicaAsync(Map, Viewpoint)
   href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_ReplicaManager_ValidateReplicaAsync_Esri_ArcGISRuntime_Mapping_Map_Esri_ArcGISRuntime_Mapping_Viewpoint_

@@ -1,0 +1,1443 @@
+### YamlMime:ManagedReference
+items:
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection
+  commentId: T:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection
+  id: IPortalConnection
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  children:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Active
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.BaseUrl
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Credential
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetGroup(System.String)
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetLicenseInfoJsonAsync
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetMapAsync
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetMapAsync(System.String)
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetWebMapItemByGroupAndTitleAsync(Esri.ArcGISRuntime.Portal.PortalGroup,System.String)
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetWebMapItemsByGroupAsync(Esri.ArcGISRuntime.Portal.PortalGroup)
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.IsCredentialNull
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Name
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.OrganizationName
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.OrganizationSubDomain
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Password
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Portal
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.PortalInfo
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.PortalUser
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.ServerRegisterUrl
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.SignedIn
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.SignInAsync
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.TokenAuthenticationType
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.TokenExpirationDateTime
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.TokenValidDays
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.User
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.UserImage
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.UserImageString
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.UserName
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.WebMapId
+  langs:
+  - csharp
+  - vb
+  name: IPortalConnection
+  nameWithType: IPortalConnection
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection
+  type: Interface
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IPortalConnection.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: IPortalConnection
+    path: Services/IPortalConnection.cs
+    startLine: 15
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public interface IPortalConnection
+    content.vb: Public Interface IPortalConnection
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Active
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Active
+  id: Active
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection
+  langs:
+  - csharp
+  - vb
+  name: Active
+  nameWithType: IPortalConnection.Active
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Active
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IPortalConnection.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: Active
+    path: Services/IPortalConnection.cs
+    startLine: 21
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: bool Active { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property Active As Boolean
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Active*
+  modifiers.csharp:
+  - get
+  - set
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.BaseUrl
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.BaseUrl
+  id: BaseUrl
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection
+  langs:
+  - csharp
+  - vb
+  name: BaseUrl
+  nameWithType: IPortalConnection.BaseUrl
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.BaseUrl
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IPortalConnection.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: BaseUrl
+    path: Services/IPortalConnection.cs
+    startLine: 22
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  syntax:
+    content: string BaseUrl { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property BaseUrl As String
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.BaseUrl*
+  modifiers.csharp:
+  - get
+  - set
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Credential
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Credential
+  id: Credential
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection
+  langs:
+  - csharp
+  - vb
+  name: Credential
+  nameWithType: IPortalConnection.Credential
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Credential
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IPortalConnection.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: Credential
+    path: Services/IPortalConnection.cs
+    startLine: 23
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  syntax:
+    content: TokenCredential Credential { get; }
+    parameters: []
+    return:
+      type: Esri.ArcGISRuntime.Security.TokenCredential
+    content.vb: ReadOnly Property Credential As TokenCredential
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Credential*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Name
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Name
+  id: Name
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: IPortalConnection.Name
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Name
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IPortalConnection.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: Name
+    path: Services/IPortalConnection.cs
+    startLine: 24
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  syntax:
+    content: string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property Name As String
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Name*
+  modifiers.csharp:
+  - get
+  - set
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.OrganizationName
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.OrganizationName
+  id: OrganizationName
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection
+  langs:
+  - csharp
+  - vb
+  name: OrganizationName
+  nameWithType: IPortalConnection.OrganizationName
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.OrganizationName
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IPortalConnection.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: OrganizationName
+    path: Services/IPortalConnection.cs
+    startLine: 25
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  syntax:
+    content: string OrganizationName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property OrganizationName As String
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.OrganizationName*
+  modifiers.csharp:
+  - get
+  - set
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.OrganizationSubDomain
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.OrganizationSubDomain
+  id: OrganizationSubDomain
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection
+  langs:
+  - csharp
+  - vb
+  name: OrganizationSubDomain
+  nameWithType: IPortalConnection.OrganizationSubDomain
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.OrganizationSubDomain
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IPortalConnection.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: OrganizationSubDomain
+    path: Services/IPortalConnection.cs
+    startLine: 26
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  syntax:
+    content: string OrganizationSubDomain { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property OrganizationSubDomain As String
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.OrganizationSubDomain*
+  modifiers.csharp:
+  - get
+  - set
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Password
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Password
+  id: Password
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection
+  langs:
+  - csharp
+  - vb
+  name: Password
+  nameWithType: IPortalConnection.Password
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Password
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IPortalConnection.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: Password
+    path: Services/IPortalConnection.cs
+    startLine: 27
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  syntax:
+    content: string Password { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property Password As String
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Password*
+  modifiers.csharp:
+  - get
+  - set
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Portal
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Portal
+  id: Portal
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection
+  langs:
+  - csharp
+  - vb
+  name: Portal
+  nameWithType: IPortalConnection.Portal
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Portal
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IPortalConnection.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: Portal
+    path: Services/IPortalConnection.cs
+    startLine: 28
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  syntax:
+    content: ArcGISPortal Portal { get; }
+    parameters: []
+    return:
+      type: Esri.ArcGISRuntime.Portal.ArcGISPortal
+    content.vb: ReadOnly Property Portal As ArcGISPortal
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Portal*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.PortalInfo
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.PortalInfo
+  id: PortalInfo
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection
+  langs:
+  - csharp
+  - vb
+  name: PortalInfo
+  nameWithType: IPortalConnection.PortalInfo
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.PortalInfo
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IPortalConnection.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: PortalInfo
+    path: Services/IPortalConnection.cs
+    startLine: 29
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  syntax:
+    content: PortalInfo PortalInfo { get; }
+    parameters: []
+    return:
+      type: Esri.ArcGISRuntime.Portal.PortalInfo
+    content.vb: ReadOnly Property PortalInfo As PortalInfo
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.PortalInfo*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.PortalUser
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.PortalUser
+  id: PortalUser
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection
+  langs:
+  - csharp
+  - vb
+  name: PortalUser
+  nameWithType: IPortalConnection.PortalUser
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.PortalUser
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IPortalConnection.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: PortalUser
+    path: Services/IPortalConnection.cs
+    startLine: 30
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  syntax:
+    content: PortalUser PortalUser { get; }
+    parameters: []
+    return:
+      type: Esri.ArcGISRuntime.Portal.PortalUser
+    content.vb: ReadOnly Property PortalUser As PortalUser
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.PortalUser*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.ServerRegisterUrl
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.ServerRegisterUrl
+  id: ServerRegisterUrl
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection
+  langs:
+  - csharp
+  - vb
+  name: ServerRegisterUrl
+  nameWithType: IPortalConnection.ServerRegisterUrl
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.ServerRegisterUrl
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IPortalConnection.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: ServerRegisterUrl
+    path: Services/IPortalConnection.cs
+    startLine: 31
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  syntax:
+    content: string ServerRegisterUrl { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property ServerRegisterUrl As String
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.ServerRegisterUrl*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.SignedIn
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.SignedIn
+  id: SignedIn
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection
+  langs:
+  - csharp
+  - vb
+  name: SignedIn
+  nameWithType: IPortalConnection.SignedIn
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.SignedIn
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IPortalConnection.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: SignedIn
+    path: Services/IPortalConnection.cs
+    startLine: 32
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  syntax:
+    content: bool SignedIn { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property SignedIn As Boolean
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.SignedIn*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.TokenAuthenticationType
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.TokenAuthenticationType
+  id: TokenAuthenticationType
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection
+  langs:
+  - csharp
+  - vb
+  name: TokenAuthenticationType
+  nameWithType: IPortalConnection.TokenAuthenticationType
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.TokenAuthenticationType
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IPortalConnection.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: TokenAuthenticationType
+    path: Services/IPortalConnection.cs
+    startLine: 33
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  syntax:
+    content: TokenAuthenticationType TokenAuthenticationType { get; }
+    parameters: []
+    return:
+      type: Esri.ArcGISRuntime.Security.TokenAuthenticationType
+    content.vb: ReadOnly Property TokenAuthenticationType As TokenAuthenticationType
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.TokenAuthenticationType*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.TokenExpirationDateTime
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.TokenExpirationDateTime
+  id: TokenExpirationDateTime
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection
+  langs:
+  - csharp
+  - vb
+  name: TokenExpirationDateTime
+  nameWithType: IPortalConnection.TokenExpirationDateTime
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.TokenExpirationDateTime
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IPortalConnection.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: TokenExpirationDateTime
+    path: Services/IPortalConnection.cs
+    startLine: 34
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  syntax:
+    content: DateTimeOffset TokenExpirationDateTime { get; set; }
+    parameters: []
+    return:
+      type: System.DateTimeOffset
+    content.vb: Property TokenExpirationDateTime As DateTimeOffset
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.TokenExpirationDateTime*
+  modifiers.csharp:
+  - get
+  - set
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.TokenValidDays
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.TokenValidDays
+  id: TokenValidDays
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection
+  langs:
+  - csharp
+  - vb
+  name: TokenValidDays
+  nameWithType: IPortalConnection.TokenValidDays
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.TokenValidDays
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IPortalConnection.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: TokenValidDays
+    path: Services/IPortalConnection.cs
+    startLine: 35
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  syntax:
+    content: double TokenValidDays { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Property TokenValidDays As Double
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.TokenValidDays*
+  modifiers.csharp:
+  - get
+  - set
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.User
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.User
+  id: User
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection
+  langs:
+  - csharp
+  - vb
+  name: User
+  nameWithType: IPortalConnection.User
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.User
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IPortalConnection.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: User
+    path: Services/IPortalConnection.cs
+    startLine: 36
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  syntax:
+    content: string User { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property User As String
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.User*
+  modifiers.csharp:
+  - get
+  - set
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.UserImage
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.UserImage
+  id: UserImage
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection
+  langs:
+  - csharp
+  - vb
+  name: UserImage
+  nameWithType: IPortalConnection.UserImage
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.UserImage
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IPortalConnection.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: UserImage
+    path: Services/IPortalConnection.cs
+    startLine: 37
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  syntax:
+    content: ImageSource UserImage { get; set; }
+    parameters: []
+    return:
+      type: Xamarin.Forms.ImageSource
+    content.vb: Property UserImage As ImageSource
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.UserImage*
+  modifiers.csharp:
+  - get
+  - set
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.UserImageString
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.UserImageString
+  id: UserImageString
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection
+  langs:
+  - csharp
+  - vb
+  name: UserImageString
+  nameWithType: IPortalConnection.UserImageString
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.UserImageString
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IPortalConnection.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: UserImageString
+    path: Services/IPortalConnection.cs
+    startLine: 38
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  syntax:
+    content: string UserImageString { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property UserImageString As String
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.UserImageString*
+  modifiers.csharp:
+  - get
+  - set
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.UserName
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.UserName
+  id: UserName
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection
+  langs:
+  - csharp
+  - vb
+  name: UserName
+  nameWithType: IPortalConnection.UserName
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.UserName
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IPortalConnection.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: UserName
+    path: Services/IPortalConnection.cs
+    startLine: 39
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  syntax:
+    content: string UserName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property UserName As String
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.UserName*
+  modifiers.csharp:
+  - get
+  - set
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.WebMapId
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.WebMapId
+  id: WebMapId
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection
+  langs:
+  - csharp
+  - vb
+  name: WebMapId
+  nameWithType: IPortalConnection.WebMapId
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.WebMapId
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IPortalConnection.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: WebMapId
+    path: Services/IPortalConnection.cs
+    startLine: 40
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  syntax:
+    content: string WebMapId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property WebMapId As String
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.WebMapId*
+  modifiers.csharp:
+  - get
+  - set
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetGroup(System.String)
+  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetGroup(System.String)
+  id: GetGroup(System.String)
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection
+  langs:
+  - csharp
+  - vb
+  name: GetGroup(String)
+  nameWithType: IPortalConnection.GetGroup(String)
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetGroup(System.String)
+  type: Method
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IPortalConnection.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: GetGroup
+    path: Services/IPortalConnection.cs
+    startLine: 41
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  syntax:
+    content: PortalGroup GetGroup(string groupTitle)
+    parameters:
+    - id: groupTitle
+      type: System.String
+    return:
+      type: Esri.ArcGISRuntime.Portal.PortalGroup
+    content.vb: Function GetGroup(groupTitle As String) As PortalGroup
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetGroup*
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetLicenseInfoJsonAsync
+  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetLicenseInfoJsonAsync
+  id: GetLicenseInfoJsonAsync
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection
+  langs:
+  - csharp
+  - vb
+  name: GetLicenseInfoJsonAsync()
+  nameWithType: IPortalConnection.GetLicenseInfoJsonAsync()
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetLicenseInfoJsonAsync()
+  type: Method
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IPortalConnection.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: GetLicenseInfoJsonAsync
+    path: Services/IPortalConnection.cs
+    startLine: 42
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  syntax:
+    content: Task<string> GetLicenseInfoJsonAsync()
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+    content.vb: Function GetLicenseInfoJsonAsync As Task(Of String)
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetLicenseInfoJsonAsync*
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetMapAsync
+  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetMapAsync
+  id: GetMapAsync
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection
+  langs:
+  - csharp
+  - vb
+  name: GetMapAsync()
+  nameWithType: IPortalConnection.GetMapAsync()
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetMapAsync()
+  type: Method
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IPortalConnection.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: GetMapAsync
+    path: Services/IPortalConnection.cs
+    startLine: 43
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  syntax:
+    content: Task<Map> GetMapAsync()
+    return:
+      type: System.Threading.Tasks.Task{Esri.ArcGISRuntime.Mapping.Map}
+    content.vb: Function GetMapAsync As Task(Of Map)
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetMapAsync*
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetMapAsync(System.String)
+  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetMapAsync(System.String)
+  id: GetMapAsync(System.String)
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection
+  langs:
+  - csharp
+  - vb
+  name: GetMapAsync(String)
+  nameWithType: IPortalConnection.GetMapAsync(String)
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetMapAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IPortalConnection.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: GetMapAsync
+    path: Services/IPortalConnection.cs
+    startLine: 44
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  syntax:
+    content: Task<Map> GetMapAsync(string webMapId)
+    parameters:
+    - id: webMapId
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{Esri.ArcGISRuntime.Mapping.Map}
+    content.vb: Function GetMapAsync(webMapId As String) As Task(Of Map)
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetMapAsync*
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetWebMapItemByGroupAndTitleAsync(Esri.ArcGISRuntime.Portal.PortalGroup,System.String)
+  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetWebMapItemByGroupAndTitleAsync(Esri.ArcGISRuntime.Portal.PortalGroup,System.String)
+  id: GetWebMapItemByGroupAndTitleAsync(Esri.ArcGISRuntime.Portal.PortalGroup,System.String)
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection
+  langs:
+  - csharp
+  - vb
+  name: GetWebMapItemByGroupAndTitleAsync(PortalGroup, String)
+  nameWithType: IPortalConnection.GetWebMapItemByGroupAndTitleAsync(PortalGroup, String)
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetWebMapItemByGroupAndTitleAsync(Esri.ArcGISRuntime.Portal.PortalGroup, System.String)
+  type: Method
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IPortalConnection.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: GetWebMapItemByGroupAndTitleAsync
+    path: Services/IPortalConnection.cs
+    startLine: 45
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  syntax:
+    content: Task<PortalItem> GetWebMapItemByGroupAndTitleAsync(PortalGroup group, string itemTitle)
+    parameters:
+    - id: group
+      type: Esri.ArcGISRuntime.Portal.PortalGroup
+    - id: itemTitle
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{Esri.ArcGISRuntime.Portal.PortalItem}
+    content.vb: Function GetWebMapItemByGroupAndTitleAsync(group As PortalGroup, itemTitle As String) As Task(Of PortalItem)
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetWebMapItemByGroupAndTitleAsync*
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetWebMapItemsByGroupAsync(Esri.ArcGISRuntime.Portal.PortalGroup)
+  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetWebMapItemsByGroupAsync(Esri.ArcGISRuntime.Portal.PortalGroup)
+  id: GetWebMapItemsByGroupAsync(Esri.ArcGISRuntime.Portal.PortalGroup)
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection
+  langs:
+  - csharp
+  - vb
+  name: GetWebMapItemsByGroupAsync(PortalGroup)
+  nameWithType: IPortalConnection.GetWebMapItemsByGroupAsync(PortalGroup)
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetWebMapItemsByGroupAsync(Esri.ArcGISRuntime.Portal.PortalGroup)
+  type: Method
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IPortalConnection.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: GetWebMapItemsByGroupAsync
+    path: Services/IPortalConnection.cs
+    startLine: 46
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  syntax:
+    content: Task<List<PortalItem>> GetWebMapItemsByGroupAsync(PortalGroup group)
+    parameters:
+    - id: group
+      type: Esri.ArcGISRuntime.Portal.PortalGroup
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Esri.ArcGISRuntime.Portal.PortalItem}}
+    content.vb: Function GetWebMapItemsByGroupAsync(group As PortalGroup) As Task(Of List(Of PortalItem))
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetWebMapItemsByGroupAsync*
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.IsCredentialNull
+  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.IsCredentialNull
+  id: IsCredentialNull
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection
+  langs:
+  - csharp
+  - vb
+  name: IsCredentialNull()
+  nameWithType: IPortalConnection.IsCredentialNull()
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.IsCredentialNull()
+  type: Method
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IPortalConnection.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: IsCredentialNull
+    path: Services/IPortalConnection.cs
+    startLine: 47
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  syntax:
+    content: bool IsCredentialNull()
+    return:
+      type: System.Boolean
+    content.vb: Function IsCredentialNull As Boolean
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.IsCredentialNull*
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.SignInAsync
+  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.SignInAsync
+  id: SignInAsync
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection
+  langs:
+  - csharp
+  - vb
+  name: SignInAsync()
+  nameWithType: IPortalConnection.SignInAsync()
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.SignInAsync()
+  type: Method
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IPortalConnection.cs
+      branch: devbranch
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+    id: SignInAsync
+    path: Services/IPortalConnection.cs
+    startLine: 48
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  syntax:
+    content: Task SignInAsync()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function SignInAsync As Task
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.SignInAsync*
+references:
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  commentId: N:EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  name: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  nameWithType: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Active*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Active
+  name: Active
+  nameWithType: IPortalConnection.Active
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Active
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.BaseUrl*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.BaseUrl
+  name: BaseUrl
+  nameWithType: IPortalConnection.BaseUrl
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.BaseUrl
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Credential*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Credential
+  name: Credential
+  nameWithType: IPortalConnection.Credential
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Credential
+- uid: Esri.ArcGISRuntime.Security.TokenCredential
+  commentId: T:Esri.ArcGISRuntime.Security.TokenCredential
+  parent: Esri.ArcGISRuntime.Security
+  isExternal: true
+  name: TokenCredential
+  nameWithType: TokenCredential
+  fullName: Esri.ArcGISRuntime.Security.TokenCredential
+- uid: Esri.ArcGISRuntime.Security
+  commentId: N:Esri.ArcGISRuntime.Security
+  isExternal: true
+  name: Esri.ArcGISRuntime.Security
+  nameWithType: Esri.ArcGISRuntime.Security
+  fullName: Esri.ArcGISRuntime.Security
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Name*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Name
+  name: Name
+  nameWithType: IPortalConnection.Name
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Name
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.OrganizationName*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.OrganizationName
+  name: OrganizationName
+  nameWithType: IPortalConnection.OrganizationName
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.OrganizationName
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.OrganizationSubDomain*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.OrganizationSubDomain
+  name: OrganizationSubDomain
+  nameWithType: IPortalConnection.OrganizationSubDomain
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.OrganizationSubDomain
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Password*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Password
+  name: Password
+  nameWithType: IPortalConnection.Password
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Password
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Portal*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Portal
+  name: Portal
+  nameWithType: IPortalConnection.Portal
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Portal
+- uid: Esri.ArcGISRuntime.Portal.ArcGISPortal
+  commentId: T:Esri.ArcGISRuntime.Portal.ArcGISPortal
+  parent: Esri.ArcGISRuntime.Portal
+  isExternal: true
+  name: ArcGISPortal
+  nameWithType: ArcGISPortal
+  fullName: Esri.ArcGISRuntime.Portal.ArcGISPortal
+- uid: Esri.ArcGISRuntime.Portal
+  commentId: N:Esri.ArcGISRuntime.Portal
+  isExternal: true
+  name: Esri.ArcGISRuntime.Portal
+  nameWithType: Esri.ArcGISRuntime.Portal
+  fullName: Esri.ArcGISRuntime.Portal
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.PortalInfo*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.PortalInfo
+  name: PortalInfo
+  nameWithType: IPortalConnection.PortalInfo
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.PortalInfo
+- uid: Esri.ArcGISRuntime.Portal.PortalInfo
+  commentId: T:Esri.ArcGISRuntime.Portal.PortalInfo
+  parent: Esri.ArcGISRuntime.Portal
+  isExternal: true
+  name: PortalInfo
+  nameWithType: PortalInfo
+  fullName: Esri.ArcGISRuntime.Portal.PortalInfo
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.PortalUser*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.PortalUser
+  name: PortalUser
+  nameWithType: IPortalConnection.PortalUser
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.PortalUser
+- uid: Esri.ArcGISRuntime.Portal.PortalUser
+  commentId: T:Esri.ArcGISRuntime.Portal.PortalUser
+  parent: Esri.ArcGISRuntime.Portal
+  isExternal: true
+  name: PortalUser
+  nameWithType: PortalUser
+  fullName: Esri.ArcGISRuntime.Portal.PortalUser
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.ServerRegisterUrl*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.ServerRegisterUrl
+  name: ServerRegisterUrl
+  nameWithType: IPortalConnection.ServerRegisterUrl
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.ServerRegisterUrl
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.SignedIn*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.SignedIn
+  name: SignedIn
+  nameWithType: IPortalConnection.SignedIn
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.SignedIn
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.TokenAuthenticationType*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.TokenAuthenticationType
+  name: TokenAuthenticationType
+  nameWithType: IPortalConnection.TokenAuthenticationType
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.TokenAuthenticationType
+- uid: Esri.ArcGISRuntime.Security.TokenAuthenticationType
+  commentId: T:Esri.ArcGISRuntime.Security.TokenAuthenticationType
+  parent: Esri.ArcGISRuntime.Security
+  isExternal: true
+  name: TokenAuthenticationType
+  nameWithType: TokenAuthenticationType
+  fullName: Esri.ArcGISRuntime.Security.TokenAuthenticationType
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.TokenExpirationDateTime*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.TokenExpirationDateTime
+  name: TokenExpirationDateTime
+  nameWithType: IPortalConnection.TokenExpirationDateTime
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.TokenExpirationDateTime
+- uid: System.DateTimeOffset
+  commentId: T:System.DateTimeOffset
+  parent: System
+  isExternal: true
+  name: DateTimeOffset
+  nameWithType: DateTimeOffset
+  fullName: System.DateTimeOffset
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.TokenValidDays*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.TokenValidDays
+  name: TokenValidDays
+  nameWithType: IPortalConnection.TokenValidDays
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.TokenValidDays
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.User*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.User
+  name: User
+  nameWithType: IPortalConnection.User
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.User
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.UserImage*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.UserImage
+  name: UserImage
+  nameWithType: IPortalConnection.UserImage
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.UserImage
+- uid: Xamarin.Forms.ImageSource
+  commentId: T:Xamarin.Forms.ImageSource
+  parent: Xamarin.Forms
+  isExternal: true
+  name: ImageSource
+  nameWithType: ImageSource
+  fullName: Xamarin.Forms.ImageSource
+- uid: Xamarin.Forms
+  commentId: N:Xamarin.Forms
+  isExternal: true
+  name: Xamarin.Forms
+  nameWithType: Xamarin.Forms
+  fullName: Xamarin.Forms
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.UserImageString*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.UserImageString
+  name: UserImageString
+  nameWithType: IPortalConnection.UserImageString
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.UserImageString
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.UserName*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.UserName
+  name: UserName
+  nameWithType: IPortalConnection.UserName
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.UserName
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.WebMapId*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.WebMapId
+  name: WebMapId
+  nameWithType: IPortalConnection.WebMapId
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.WebMapId
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetGroup*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetGroup
+  name: GetGroup
+  nameWithType: IPortalConnection.GetGroup
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetGroup
+- uid: Esri.ArcGISRuntime.Portal.PortalGroup
+  commentId: T:Esri.ArcGISRuntime.Portal.PortalGroup
+  parent: Esri.ArcGISRuntime.Portal
+  isExternal: true
+  name: PortalGroup
+  nameWithType: PortalGroup
+  fullName: Esri.ArcGISRuntime.Portal.PortalGroup
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetLicenseInfoJsonAsync*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetLicenseInfoJsonAsync
+  name: GetLicenseInfoJsonAsync
+  nameWithType: IPortalConnection.GetLicenseInfoJsonAsync
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetLicenseInfoJsonAsync
+- uid: System.Threading.Tasks.Task{System.String}
+  commentId: T:System.Threading.Tasks.Task{System.String}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<String>
+  nameWithType: Task<String>
+  fullName: System.Threading.Tasks.Task<System.String>
+  nameWithType.vb: Task(Of String)
+  fullName.vb: System.Threading.Tasks.Task(Of System.String)
+  name.vb: Task(Of String)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetMapAsync*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetMapAsync
+  name: GetMapAsync
+  nameWithType: IPortalConnection.GetMapAsync
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetMapAsync
+- uid: System.Threading.Tasks.Task{Esri.ArcGISRuntime.Mapping.Map}
+  commentId: T:System.Threading.Tasks.Task{Esri.ArcGISRuntime.Mapping.Map}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Map>
+  nameWithType: Task<Map>
+  fullName: System.Threading.Tasks.Task<Esri.ArcGISRuntime.Mapping.Map>
+  nameWithType.vb: Task(Of Map)
+  fullName.vb: System.Threading.Tasks.Task(Of Esri.ArcGISRuntime.Mapping.Map)
+  name.vb: Task(Of Map)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Esri.ArcGISRuntime.Mapping.Map
+    name: Map
+    nameWithType: Map
+    fullName: Esri.ArcGISRuntime.Mapping.Map
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Esri.ArcGISRuntime.Mapping.Map
+    name: Map
+    nameWithType: Map
+    fullName: Esri.ArcGISRuntime.Mapping.Map
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetWebMapItemByGroupAndTitleAsync*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetWebMapItemByGroupAndTitleAsync
+  name: GetWebMapItemByGroupAndTitleAsync
+  nameWithType: IPortalConnection.GetWebMapItemByGroupAndTitleAsync
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetWebMapItemByGroupAndTitleAsync
+- uid: System.Threading.Tasks.Task{Esri.ArcGISRuntime.Portal.PortalItem}
+  commentId: T:System.Threading.Tasks.Task{Esri.ArcGISRuntime.Portal.PortalItem}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<PortalItem>
+  nameWithType: Task<PortalItem>
+  fullName: System.Threading.Tasks.Task<Esri.ArcGISRuntime.Portal.PortalItem>
+  nameWithType.vb: Task(Of PortalItem)
+  fullName.vb: System.Threading.Tasks.Task(Of Esri.ArcGISRuntime.Portal.PortalItem)
+  name.vb: Task(Of PortalItem)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Esri.ArcGISRuntime.Portal.PortalItem
+    name: PortalItem
+    nameWithType: PortalItem
+    fullName: Esri.ArcGISRuntime.Portal.PortalItem
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Esri.ArcGISRuntime.Portal.PortalItem
+    name: PortalItem
+    nameWithType: PortalItem
+    fullName: Esri.ArcGISRuntime.Portal.PortalItem
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetWebMapItemsByGroupAsync*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetWebMapItemsByGroupAsync
+  name: GetWebMapItemsByGroupAsync
+  nameWithType: IPortalConnection.GetWebMapItemsByGroupAsync
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetWebMapItemsByGroupAsync
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{Esri.ArcGISRuntime.Portal.PortalItem}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{Esri.ArcGISRuntime.Portal.PortalItem}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<List<PortalItem>>
+  nameWithType: Task<List<PortalItem>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<Esri.ArcGISRuntime.Portal.PortalItem>>
+  nameWithType.vb: Task(Of List(Of PortalItem))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of Esri.ArcGISRuntime.Portal.PortalItem))
+  name.vb: Task(Of List(Of PortalItem))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Esri.ArcGISRuntime.Portal.PortalItem
+    name: PortalItem
+    nameWithType: PortalItem
+    fullName: Esri.ArcGISRuntime.Portal.PortalItem
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Esri.ArcGISRuntime.Portal.PortalItem
+    name: PortalItem
+    nameWithType: PortalItem
+    fullName: Esri.ArcGISRuntime.Portal.PortalItem
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.IsCredentialNull*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.IsCredentialNull
+  name: IsCredentialNull
+  nameWithType: IPortalConnection.IsCredentialNull
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.IsCredentialNull
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.SignInAsync*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.SignInAsync
+  name: SignInAsync
+  nameWithType: IPortalConnection.SignInAsync
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.SignInAsync
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task

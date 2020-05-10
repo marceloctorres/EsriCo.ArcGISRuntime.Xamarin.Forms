@@ -3,6 +3,8 @@ using System.Threading.Tasks;
 
 using Newtonsoft.Json;
 
+using Prism.Mvvm;
+
 using Xamarin.Essentials;
 
 namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -10,7 +12,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
   /// <summary>
   /// 
   /// </summary>
-  public class ConfigurationInfo
+  public class ConfigurationInfo : BindableBase, IConfigurationInfo
   {
     /// <summary>
     /// 
