@@ -29,7 +29,7 @@ Anyone can use these tools in any project by installing latest release of the Nu
 ### Services
 - **ConfigurationInfo**
 - **PortalConnection**
-- **ReplicaManger**
+- **ReplicaManager**
 
 ## Resources
 - [Documentation](docs/index.md)
