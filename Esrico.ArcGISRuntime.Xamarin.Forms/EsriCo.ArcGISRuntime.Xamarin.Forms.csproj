@@ -65,7 +65,7 @@
     <None Remove="Icons\ic_text.png" />
     <None Remove="Icons\ic_undo.png" />
     <None Remove="Icons\ic_user.png" />
-    <None Include="..\..\LICENSE">
+    <None Include="..\LICENSE">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
