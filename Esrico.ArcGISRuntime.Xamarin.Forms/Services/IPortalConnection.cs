@@ -22,6 +22,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     bool Active { get; set; }
     string BaseUrl { get; set; }
     TokenCredential Credential { get; }
+    string Domain { get; set; }
     string Name { get; set; }
     string OrganizationName { get; set; }
     string OrganizationSubDomain { get; set; }
@@ -31,7 +32,6 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     PortalUser PortalUser { get; }
     string ServerRegisterUrl { get; }
     bool SignedIn { get; }
-    void SignOut();
     TokenAuthenticationType TokenAuthenticationType { get; }
     DateTimeOffset TokenExpirationDateTime { get; set; }
     double TokenValidDays { get; set; }
@@ -40,6 +40,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     string UserImageString { get; set; }
     string UserName { get; set; }
     string WebMapId { get; set; }
+    Task<Credential> CreateCredentialAsync(CredentialRequestInfo info);
     PortalGroup GetGroup(string groupTitle);
     Task<string> GetLicenseInfoJsonAsync();
     Task<Map> GetMapAsync();
@@ -48,5 +49,6 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     Task<List<PortalItem>> GetWebMapItemsByGroupAsync(PortalGroup group);
     bool IsCredentialNull();
     Task SignInAsync();
+    void SignOut();
   }
 }

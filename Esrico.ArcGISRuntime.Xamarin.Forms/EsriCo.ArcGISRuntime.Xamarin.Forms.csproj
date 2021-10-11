@@ -2,15 +2,15 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Version>1.6.0.2</Version>
+    <Version>1.7.0.0</Version>
     <Authors>Marcelo Torres</Authors>
     <Company>Esri Colombia</Company>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
-    <Configurations>Debug;Release;Release.Android;Release.UWP</Configurations>
+    <Configurations>Debug;Release;Release.Android;Release.UWP;Debug.Android;Debug.UWP</Configurations>
     <PackageId>EsriCo.ArcGISRuntime.Xamarin.Forms</PackageId>
     <Product>Esri Colombia ArcGIS Runtime Tools for Xamarin.Forms</Product>
-    <AssemblyVersion>1.6.0.2</AssemblyVersion>
-    <FileVersion>1.6.0.2</FileVersion>
+    <AssemblyVersion>1.7.0.0</AssemblyVersion>
+    <FileVersion>1.7.0.0</FileVersion>
     <RepositoryUrl>https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms</RepositoryUrl>
     <PackageReleaseNotes>Extends Xamarin.Forms ArcGIS Runtime SDK for .NET</PackageReleaseNotes>
     <Description>Extends Xamarin.Forms ArcGIS Runtime SDK for .NET</Description>
@@ -93,15 +93,15 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="docfx.console" Version="2.52.0">
+    <PackageReference Include="docfx.console" Version="2.58.4">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Esri.ArcGISRuntime.Xamarin.Forms" Version="100.8.0" />
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.5.3.1" />
-    <PackageReference Include="Xamarin.Forms" Version="4.6.0.726" />
-    <PackageReference Include="Prism.Forms" Version="7.2.0.1422" />
+    <PackageReference Include="Esri.ArcGISRuntime.Xamarin.Forms" Version="100.12.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2125" />
+    <PackageReference Include="Prism.Forms" Version="8.1.97" />
   </ItemGroup>
 
   <ItemGroup>

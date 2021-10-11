@@ -23,8 +23,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/ConfigurationInfo.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: ConfigurationInfo
     path: Services/ConfigurationInfo.cs
     startLine: 14
@@ -78,8 +78,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/ConfigurationInfo.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: FileName
     path: Services/ConfigurationInfo.cs
     startLine: 19
@@ -117,8 +117,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/ConfigurationInfo.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: Folder
     path: Services/ConfigurationInfo.cs
     startLine: 24
@@ -156,8 +156,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/ConfigurationInfo.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: SaveAsync
     path: Services/ConfigurationInfo.cs
     startLine: 30
@@ -167,7 +167,7 @@ items:
   summary: "\n\n"
   example: []
   syntax:
-    content: public Task SaveAsync()
+    content: public async Task SaveAsync()
     return:
       type: System.Threading.Tasks.Task
       description: ''
@@ -177,6 +177,7 @@ items:
   - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.SaveAsync
   modifiers.csharp:
   - public
+  - async
   modifiers.vb:
   - Public
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.LoadAsync
@@ -193,8 +194,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/ConfigurationInfo.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: LoadAsync
     path: Services/ConfigurationInfo.cs
     startLine: 40
@@ -204,7 +205,7 @@ items:
   summary: "\n\n"
   example: []
   syntax:
-    content: public virtual Task LoadAsync()
+    content: public virtual async Task LoadAsync()
     return:
       type: System.Threading.Tasks.Task
       description: ''
@@ -215,6 +216,7 @@ items:
   modifiers.csharp:
   - public
   - virtual
+  - async
   modifiers.vb:
   - Public
   - Overridable
@@ -232,8 +234,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/ConfigurationInfo.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: LoadAsync
     path: Services/ConfigurationInfo.cs
     startLine: 47
@@ -244,7 +246,7 @@ items:
   example: []
   syntax:
     content: >-
-      protected virtual Task LoadAsync<T>()
+      protected virtual async Task LoadAsync<T>()
           where T : ConfigurationInfo
     typeParameters:
     - id: T
@@ -258,6 +260,7 @@ items:
   modifiers.csharp:
   - protected
   - virtual
+  - async
   modifiers.vb:
   - Protected
   - Overridable
@@ -277,8 +280,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/ConfigurationInfo.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: WriteTextFileAsync
     path: Services/ConfigurationInfo.cs
     startLine: 71
@@ -288,7 +291,7 @@ items:
   summary: "\n\n"
   example: []
   syntax:
-    content: protected Task WriteTextFileAsync(string filename, string text)
+    content: protected async Task WriteTextFileAsync(string filename, string text)
     parameters:
     - id: filename
       type: System.String
@@ -303,6 +306,7 @@ items:
   overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.WriteTextFileAsync*
   modifiers.csharp:
   - protected
+  - async
   modifiers.vb:
   - Protected
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.ReadTextFileAsync(System.String)
@@ -319,8 +323,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/ConfigurationInfo.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: ReadTextFileAsync
     path: Services/ConfigurationInfo.cs
     startLine: 85
@@ -330,7 +334,7 @@ items:
   summary: "\n\n"
   example: []
   syntax:
-    content: protected Task<string> ReadTextFileAsync(string filename)
+    content: protected async Task<string> ReadTextFileAsync(string filename)
     parameters:
     - id: filename
       type: System.String
@@ -342,6 +346,7 @@ items:
   overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.ReadTextFileAsync*
   modifiers.csharp:
   - protected
+  - async
   modifiers.vb:
   - Protected
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.#ctor
@@ -358,8 +363,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/ConfigurationInfo.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: .ctor
     path: Services/ConfigurationInfo.cs
     startLine: 102

@@ -59,8 +59,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/obj/Release/netstandard2.0/UI/PanelView.xaml.g.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: PanelView
     path: obj/Release/netstandard2.0/UI/PanelView.xaml.g.cs
     startLine: 15
@@ -115,7 +115,9 @@ items:
   - Xamarin.Forms.TemplatedView.LayoutChildren(System.Double,System.Double,System.Double,System.Double)
   - Xamarin.Forms.TemplatedView.OnApplyTemplate
   - Xamarin.Forms.TemplatedView.OnChildRemoved(Xamarin.Forms.Element)
+  - Xamarin.Forms.TemplatedView.OnChildRemoved(Xamarin.Forms.Element,System.Int32)
   - Xamarin.Forms.TemplatedView.GetTemplateChild(System.String)
+  - Xamarin.Forms.TemplatedView.ResolveControlTemplate
   - Xamarin.Forms.TemplatedView.ControlTemplate
   - Xamarin.Forms.Layout.IsClippedToBoundsProperty
   - Xamarin.Forms.Layout.CascadeInputTransparentProperty
@@ -131,6 +133,7 @@ items:
   - Xamarin.Forms.Layout.ShouldInvalidateOnChildAdded(Xamarin.Forms.View)
   - Xamarin.Forms.Layout.ShouldInvalidateOnChildRemoved(Xamarin.Forms.View)
   - Xamarin.Forms.Layout.UpdateChildrenLayout
+  - Xamarin.Forms.Layout.ResolveLayoutChanges
   - Xamarin.Forms.Layout.IsClippedToBounds
   - Xamarin.Forms.Layout.Padding
   - Xamarin.Forms.Layout.CascadeInputTransparent
@@ -163,9 +166,11 @@ items:
   - Xamarin.Forms.VisualElement.ScaleProperty
   - Xamarin.Forms.VisualElement.ScaleXProperty
   - Xamarin.Forms.VisualElement.ScaleYProperty
+  - Xamarin.Forms.VisualElement.ClipProperty
   - Xamarin.Forms.VisualElement.VisualProperty
   - Xamarin.Forms.VisualElement.OpacityProperty
   - Xamarin.Forms.VisualElement.BackgroundColorProperty
+  - Xamarin.Forms.VisualElement.BackgroundProperty
   - Xamarin.Forms.VisualElement.BehaviorsProperty
   - Xamarin.Forms.VisualElement.TriggersProperty
   - Xamarin.Forms.VisualElement.WidthRequestProperty
@@ -176,7 +181,6 @@ items:
   - Xamarin.Forms.VisualElement.FlowDirectionProperty
   - Xamarin.Forms.VisualElement.TabIndexProperty
   - Xamarin.Forms.VisualElement.IsTabStopProperty
-  - Xamarin.Forms.VisualElement.OnRequestedThemeChanged(Xamarin.Forms.OSAppTheme)
   - Xamarin.Forms.VisualElement.OnTabIndexPropertyChanged(System.Int32,System.Int32)
   - Xamarin.Forms.VisualElement.TabIndexDefaultValueCreator
   - Xamarin.Forms.VisualElement.OnTabStopPropertyChanged(System.Boolean,System.Boolean)
@@ -200,6 +204,7 @@ items:
   - Xamarin.Forms.VisualElement.AnchorX
   - Xamarin.Forms.VisualElement.AnchorY
   - Xamarin.Forms.VisualElement.BackgroundColor
+  - Xamarin.Forms.VisualElement.Background
   - Xamarin.Forms.VisualElement.Behaviors
   - Xamarin.Forms.VisualElement.Bounds
   - Xamarin.Forms.VisualElement.Height
@@ -225,6 +230,7 @@ items:
   - Xamarin.Forms.VisualElement.WidthRequest
   - Xamarin.Forms.VisualElement.X
   - Xamarin.Forms.VisualElement.Y
+  - Xamarin.Forms.VisualElement.Clip
   - Xamarin.Forms.VisualElement.Resources
   - Xamarin.Forms.VisualElement.ChildrenReordered
   - Xamarin.Forms.VisualElement.Focused
@@ -313,8 +319,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: Closed
     path: UI/PanelView.xaml.cs
     startLine: 14
@@ -344,8 +350,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: IsManagedProperty
     path: UI/PanelView.xaml.cs
     startLine: 19
@@ -381,8 +387,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: IsManaged
     path: UI/PanelView.xaml.cs
     startLine: 41
@@ -418,8 +424,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: CloseButtonImageProperty
     path: UI/PanelView.xaml.cs
     startLine: 50
@@ -455,8 +461,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: CloseButtonImage
     path: UI/PanelView.xaml.cs
     startLine: 58
@@ -492,8 +498,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: IsVisibleProperty
     path: UI/PanelView.xaml.cs
     startLine: 67
@@ -529,8 +535,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: IsVisible
     path: UI/PanelView.xaml.cs
     startLine: 78
@@ -566,8 +572,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: HeaderContentProperty
     path: UI/PanelView.xaml.cs
     startLine: 120
@@ -603,8 +609,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: HeaderContent
     path: UI/PanelView.xaml.cs
     startLine: 129
@@ -640,8 +646,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: IsHeaderVisibleProperty
     path: UI/PanelView.xaml.cs
     startLine: 159
@@ -677,8 +683,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: IsHeaderVisible
     path: UI/PanelView.xaml.cs
     startLine: 168
@@ -714,8 +720,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: IsFooterVisibleProperty
     path: UI/PanelView.xaml.cs
     startLine: 177
@@ -751,8 +757,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: IsFooterVisible
     path: UI/PanelView.xaml.cs
     startLine: 186
@@ -788,8 +794,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: FooterContentProperty
     path: UI/PanelView.xaml.cs
     startLine: 195
@@ -825,8 +831,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: FooterContent
     path: UI/PanelView.xaml.cs
     startLine: 204
@@ -862,8 +868,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: BodyContentProperty
     path: UI/PanelView.xaml.cs
     startLine: 234
@@ -899,8 +905,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: BodyContent
     path: UI/PanelView.xaml.cs
     startLine: 243
@@ -936,8 +942,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: TitleBorderColorProperty
     path: UI/PanelView.xaml.cs
     startLine: 273
@@ -973,8 +979,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: TitleBorderColor
     path: UI/PanelView.xaml.cs
     startLine: 282
@@ -1010,8 +1016,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: TitleBackgroundColorProperty
     path: UI/PanelView.xaml.cs
     startLine: 292
@@ -1047,8 +1053,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: TitleBackgroundColor
     path: UI/PanelView.xaml.cs
     startLine: 301
@@ -1084,8 +1090,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: TitleTextColorProperty
     path: UI/PanelView.xaml.cs
     startLine: 310
@@ -1121,8 +1127,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: TitleTextColor
     path: UI/PanelView.xaml.cs
     startLine: 319
@@ -1158,8 +1164,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: TitleTextProperty
     path: UI/PanelView.xaml.cs
     startLine: 328
@@ -1195,8 +1201,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: TitleText
     path: UI/PanelView.xaml.cs
     startLine: 336
@@ -1232,8 +1238,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: IsTitleVisibleProperty
     path: UI/PanelView.xaml.cs
     startLine: 345
@@ -1269,8 +1275,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: IsTitleVisible
     path: UI/PanelView.xaml.cs
     startLine: 354
@@ -1306,8 +1312,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: BodyBorderColorProperty
     path: UI/PanelView.xaml.cs
     startLine: 363
@@ -1343,8 +1349,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: BodyBorderColor
     path: UI/PanelView.xaml.cs
     startLine: 372
@@ -1380,8 +1386,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: BodyBackgroundColorProperty
     path: UI/PanelView.xaml.cs
     startLine: 381
@@ -1417,8 +1423,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: BodyBackgroundColor
     path: UI/PanelView.xaml.cs
     startLine: 390
@@ -1454,8 +1460,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: StatusBackgroundColorProperty
     path: UI/PanelView.xaml.cs
     startLine: 399
@@ -1491,8 +1497,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: StatusBackgroundColor
     path: UI/PanelView.xaml.cs
     startLine: 408
@@ -1528,8 +1534,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: StatusBorderColorProperty
     path: UI/PanelView.xaml.cs
     startLine: 417
@@ -1565,8 +1571,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: StatusBorderColor
     path: UI/PanelView.xaml.cs
     startLine: 426
@@ -1602,8 +1608,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: StatusTextColorProperty
     path: UI/PanelView.xaml.cs
     startLine: 435
@@ -1639,8 +1645,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: StatusTextColor
     path: UI/PanelView.xaml.cs
     startLine: 444
@@ -1676,8 +1682,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: StatusTextProperty
     path: UI/PanelView.xaml.cs
     startLine: 453
@@ -1713,8 +1719,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: StatusText
     path: UI/PanelView.xaml.cs
     startLine: 461
@@ -1750,8 +1756,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: IsStatusVisibleProperty
     path: UI/PanelView.xaml.cs
     startLine: 470
@@ -1787,8 +1793,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: IsStatusVisible
     path: UI/PanelView.xaml.cs
     startLine: 479
@@ -1824,8 +1830,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: .ctor
     path: UI/PanelView.xaml.cs
     startLine: 488
@@ -1856,8 +1862,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: OnCloseButtonClicked
     path: UI/PanelView.xaml.cs
     startLine: 506
@@ -1897,8 +1903,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: OnPanelClosed
     path: UI/PanelView.xaml.cs
     startLine: 515
@@ -2269,6 +2275,63 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: Xamarin.Forms.TemplatedView.OnChildRemoved(Xamarin.Forms.Element,System.Int32)
+  commentId: M:Xamarin.Forms.TemplatedView.OnChildRemoved(Xamarin.Forms.Element,System.Int32)
+  parent: Xamarin.Forms.TemplatedView
+  isExternal: true
+  name: OnChildRemoved(Element, Int32)
+  nameWithType: TemplatedView.OnChildRemoved(Element, Int32)
+  fullName: Xamarin.Forms.TemplatedView.OnChildRemoved(Xamarin.Forms.Element, System.Int32)
+  spec.csharp:
+  - uid: Xamarin.Forms.TemplatedView.OnChildRemoved(Xamarin.Forms.Element,System.Int32)
+    name: OnChildRemoved
+    nameWithType: TemplatedView.OnChildRemoved
+    fullName: Xamarin.Forms.TemplatedView.OnChildRemoved
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Xamarin.Forms.Element
+    name: Element
+    nameWithType: Element
+    fullName: Xamarin.Forms.Element
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Xamarin.Forms.TemplatedView.OnChildRemoved(Xamarin.Forms.Element,System.Int32)
+    name: OnChildRemoved
+    nameWithType: TemplatedView.OnChildRemoved
+    fullName: Xamarin.Forms.TemplatedView.OnChildRemoved
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Xamarin.Forms.Element
+    name: Element
+    nameWithType: Element
+    fullName: Xamarin.Forms.Element
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
 - uid: Xamarin.Forms.TemplatedView.GetTemplateChild(System.String)
   commentId: M:Xamarin.Forms.TemplatedView.GetTemplateChild(System.String)
   parent: Xamarin.Forms.TemplatedView
@@ -2307,6 +2370,37 @@ references:
     nameWithType: String
     fullName: System.String
     isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Xamarin.Forms.TemplatedView.ResolveControlTemplate
+  commentId: M:Xamarin.Forms.TemplatedView.ResolveControlTemplate
+  parent: Xamarin.Forms.TemplatedView
+  isExternal: true
+  name: ResolveControlTemplate()
+  nameWithType: TemplatedView.ResolveControlTemplate()
+  fullName: Xamarin.Forms.TemplatedView.ResolveControlTemplate()
+  spec.csharp:
+  - uid: Xamarin.Forms.TemplatedView.ResolveControlTemplate
+    name: ResolveControlTemplate
+    nameWithType: TemplatedView.ResolveControlTemplate
+    fullName: Xamarin.Forms.TemplatedView.ResolveControlTemplate
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Xamarin.Forms.TemplatedView.ResolveControlTemplate
+    name: ResolveControlTemplate
+    nameWithType: TemplatedView.ResolveControlTemplate
+    fullName: Xamarin.Forms.TemplatedView.ResolveControlTemplate
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
   - name: )
     nameWithType: )
     fullName: )
@@ -2797,6 +2891,37 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: Xamarin.Forms.Layout.ResolveLayoutChanges
+  commentId: M:Xamarin.Forms.Layout.ResolveLayoutChanges
+  parent: Xamarin.Forms.Layout
+  isExternal: true
+  name: ResolveLayoutChanges()
+  nameWithType: Layout.ResolveLayoutChanges()
+  fullName: Xamarin.Forms.Layout.ResolveLayoutChanges()
+  spec.csharp:
+  - uid: Xamarin.Forms.Layout.ResolveLayoutChanges
+    name: ResolveLayoutChanges
+    nameWithType: Layout.ResolveLayoutChanges
+    fullName: Xamarin.Forms.Layout.ResolveLayoutChanges
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Xamarin.Forms.Layout.ResolveLayoutChanges
+    name: ResolveLayoutChanges
+    nameWithType: Layout.ResolveLayoutChanges
+    fullName: Xamarin.Forms.Layout.ResolveLayoutChanges
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
 - uid: Xamarin.Forms.Layout.IsClippedToBounds
   commentId: P:Xamarin.Forms.Layout.IsClippedToBounds
   parent: Xamarin.Forms.Layout
@@ -3057,6 +3182,13 @@ references:
   name: ScaleYProperty
   nameWithType: VisualElement.ScaleYProperty
   fullName: Xamarin.Forms.VisualElement.ScaleYProperty
+- uid: Xamarin.Forms.VisualElement.ClipProperty
+  commentId: F:Xamarin.Forms.VisualElement.ClipProperty
+  parent: Xamarin.Forms.VisualElement
+  isExternal: true
+  name: ClipProperty
+  nameWithType: VisualElement.ClipProperty
+  fullName: Xamarin.Forms.VisualElement.ClipProperty
 - uid: Xamarin.Forms.VisualElement.VisualProperty
   commentId: F:Xamarin.Forms.VisualElement.VisualProperty
   parent: Xamarin.Forms.VisualElement
@@ -3078,6 +3210,13 @@ references:
   name: BackgroundColorProperty
   nameWithType: VisualElement.BackgroundColorProperty
   fullName: Xamarin.Forms.VisualElement.BackgroundColorProperty
+- uid: Xamarin.Forms.VisualElement.BackgroundProperty
+  commentId: F:Xamarin.Forms.VisualElement.BackgroundProperty
+  parent: Xamarin.Forms.VisualElement
+  isExternal: true
+  name: BackgroundProperty
+  nameWithType: VisualElement.BackgroundProperty
+  fullName: Xamarin.Forms.VisualElement.BackgroundProperty
 - uid: Xamarin.Forms.VisualElement.BehaviorsProperty
   commentId: F:Xamarin.Forms.VisualElement.BehaviorsProperty
   parent: Xamarin.Forms.VisualElement
@@ -3148,47 +3287,6 @@ references:
   name: IsTabStopProperty
   nameWithType: VisualElement.IsTabStopProperty
   fullName: Xamarin.Forms.VisualElement.IsTabStopProperty
-- uid: Xamarin.Forms.VisualElement.OnRequestedThemeChanged(Xamarin.Forms.OSAppTheme)
-  commentId: M:Xamarin.Forms.VisualElement.OnRequestedThemeChanged(Xamarin.Forms.OSAppTheme)
-  parent: Xamarin.Forms.VisualElement
-  isExternal: true
-  name: OnRequestedThemeChanged(OSAppTheme)
-  nameWithType: VisualElement.OnRequestedThemeChanged(OSAppTheme)
-  fullName: Xamarin.Forms.VisualElement.OnRequestedThemeChanged(Xamarin.Forms.OSAppTheme)
-  spec.csharp:
-  - uid: Xamarin.Forms.VisualElement.OnRequestedThemeChanged(Xamarin.Forms.OSAppTheme)
-    name: OnRequestedThemeChanged
-    nameWithType: VisualElement.OnRequestedThemeChanged
-    fullName: Xamarin.Forms.VisualElement.OnRequestedThemeChanged
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: Xamarin.Forms.OSAppTheme
-    name: OSAppTheme
-    nameWithType: OSAppTheme
-    fullName: Xamarin.Forms.OSAppTheme
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: Xamarin.Forms.VisualElement.OnRequestedThemeChanged(Xamarin.Forms.OSAppTheme)
-    name: OnRequestedThemeChanged
-    nameWithType: VisualElement.OnRequestedThemeChanged
-    fullName: Xamarin.Forms.VisualElement.OnRequestedThemeChanged
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: Xamarin.Forms.OSAppTheme
-    name: OSAppTheme
-    nameWithType: OSAppTheme
-    fullName: Xamarin.Forms.OSAppTheme
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
 - uid: Xamarin.Forms.VisualElement.OnTabIndexPropertyChanged(System.Int32,System.Int32)
   commentId: M:Xamarin.Forms.VisualElement.OnTabIndexPropertyChanged(System.Int32,System.Int32)
   parent: Xamarin.Forms.VisualElement
@@ -3938,6 +4036,13 @@ references:
   name: BackgroundColor
   nameWithType: VisualElement.BackgroundColor
   fullName: Xamarin.Forms.VisualElement.BackgroundColor
+- uid: Xamarin.Forms.VisualElement.Background
+  commentId: P:Xamarin.Forms.VisualElement.Background
+  parent: Xamarin.Forms.VisualElement
+  isExternal: true
+  name: Background
+  nameWithType: VisualElement.Background
+  fullName: Xamarin.Forms.VisualElement.Background
 - uid: Xamarin.Forms.VisualElement.Behaviors
   commentId: P:Xamarin.Forms.VisualElement.Behaviors
   parent: Xamarin.Forms.VisualElement
@@ -4113,6 +4218,13 @@ references:
   name: Y
   nameWithType: VisualElement.Y
   fullName: Xamarin.Forms.VisualElement.Y
+- uid: Xamarin.Forms.VisualElement.Clip
+  commentId: P:Xamarin.Forms.VisualElement.Clip
+  parent: Xamarin.Forms.VisualElement
+  isExternal: true
+  name: Clip
+  nameWithType: VisualElement.Clip
+  fullName: Xamarin.Forms.VisualElement.Clip
 - uid: Xamarin.Forms.VisualElement.Resources
   commentId: P:Xamarin.Forms.VisualElement.Resources
   parent: Xamarin.Forms.VisualElement

@@ -17,8 +17,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Converters/SymbolToImageConverter.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: SymbolToImageConverter
     path: Converters/SymbolToImageConverter.cs
     startLine: 16
@@ -64,8 +64,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Converters/SymbolToImageConverter.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: Convert
     path: Converters/SymbolToImageConverter.cs
     startLine: 26
@@ -114,8 +114,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Converters/SymbolToImageConverter.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: ConvertBack
     path: Converters/SymbolToImageConverter.cs
     startLine: 57

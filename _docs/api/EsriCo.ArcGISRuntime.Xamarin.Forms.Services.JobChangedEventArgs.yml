@@ -17,8 +17,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/ReplicaManager.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: JobChangedEventArgs
     path: Services/ReplicaManager.cs
     startLine: 150
@@ -64,8 +64,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/ReplicaManager.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: Status
     path: Services/ReplicaManager.cs
     startLine: 155
@@ -101,8 +101,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/ReplicaManager.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: Messages
     path: Services/ReplicaManager.cs
     startLine: 160

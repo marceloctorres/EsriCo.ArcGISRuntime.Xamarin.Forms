@@ -57,6 +57,17 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
       set => SetProperty(ref _password, value);
     }
 
+    private string _domain;
+
+    /// <summary>
+    /// 
+    /// </summary>
+    public string Domain
+    {
+      get => _domain;
+      set => SetProperty(ref _domain, value);
+    }
+
     private string _userName;
 
     /// <summary>
@@ -243,15 +254,58 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     /// <summary>
     /// 
     /// </summary>
+    /// <param name="info"></param>
+    /// <returns></returns>
+    public async Task<Credential> CreateCredentialAsync(CredentialRequestInfo info)
+    {
+      Credential credential = null;
+      try
+      {
+        if (info.AuthenticationType == AuthenticationType.NetworkCredential)
+        {
+          credential = new ArcGISNetworkCredential()
+          {
+            Credentials = new System.Net.NetworkCredential(UserName, Password, Domain),
+            ServiceUri = info.ServiceUri
+          };
+        }
+        else
+        {
+          credential = await AddCredentialAsync();
+        }
+      }
+      catch (Exception ex)
+      {
+        throw ex;
+      }
+
+      AuthenticationManager.Current.AddCredential(credential);
+      return credential;
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
     public async Task SignInAsync()
     {
       try
       {
-        await AddCredentialAsync();
-        Portal = await ArcGISPortal.CreateAsync(new Uri(BaseUrl));
-        var licenseInfo = await Portal.GetLicenseInfoAsync();
+        var loginType = await ArcGISPortal.GetLoginTypeForUriAsync(new Uri(BaseUrl));
+        AuthenticationManager.Current.ChallengeHandler = new ChallengeHandler(CreateCredentialAsync);
 
-        ArcGISRuntimeEnvironment.SetLicense(licenseInfo);
+        if (loginType != PortalLoginType.UsernamePassword)
+        {
+          CredentialRequestInfo challengeRequest = new CredentialRequestInfo
+          {
+            GenerateTokenOptions = new GenerateTokenOptions
+            {
+              TokenAuthenticationType = TokenAuthenticationType.ArcGISToken
+            },
+            ServiceUri = new Uri(BaseUrl)
+          };
+          await AuthenticationManager.Current.GetCredentialAsync(challengeRequest, false);
+        }
+        Portal = await ArcGISPortal.CreateAsync(new Uri(BaseUrl));
         PortalInfo = Portal.PortalInfo;
         PortalUser = Portal.User;
 
@@ -262,6 +316,10 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
         UserName = PortalUser.FullName;
         OrganizationName = PortalInfo.OrganizationName;
         OrganizationSubDomain = SubDomainUrl();
+
+        var licenseInfo = await Portal.GetLicenseInfoAsync();
+        ArcGISRuntimeEnvironment.SetLicense(licenseInfo);
+
         SignedIn = true;
       }
       catch(Exception ex)
@@ -326,9 +384,8 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     /// </summary>
     private void ServerRegister()
     {
-      var serverInfo = new ServerInfo
+      var serverInfo = new ServerInfo(new Uri(ServerRegisterUrl))
       {
-        ServerUri = new Uri(ServerRegisterUrl),
         TokenAuthenticationType = TokenAuthenticationType,
       };
       AuthenticationManager.Current.RegisterServer(serverInfo);
@@ -350,7 +407,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     /// 
     /// </summary>
     /// <returns></returns>
-    private async Task AddCredentialAsync()
+    private async Task<Credential> AddCredentialAsync()
     {
       try
       {
@@ -366,9 +423,9 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
             TokenAuthenticationType = TokenAuthenticationType,
             TokenExpirationInterval = TimeSpan.FromMinutes(TokenValidDays * 24 * 60),
           });
-        AuthenticationManager.Current.AddCredential(Credential);
         TokenExpirationDateTime = Credential.ExpirationDate.Value;
         TokenValidDays = (TokenExpirationDateTime - now).TotalDays;
+        return Credential;
       }
       catch
       {

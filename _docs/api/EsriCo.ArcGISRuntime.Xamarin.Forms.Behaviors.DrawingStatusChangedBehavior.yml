@@ -19,8 +19,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Behaviors/DrawingStatusChangedBehavior.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: DrawingStatusChangedBehavior
     path: Behaviors/DrawingStatusChangedBehavior.cs
     startLine: 14
@@ -96,8 +96,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Behaviors/DrawingStatusChangedBehavior.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: CommandProperty
     path: Behaviors/DrawingStatusChangedBehavior.cs
     startLine: 16
@@ -131,8 +131,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Behaviors/DrawingStatusChangedBehavior.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: Command
     path: Behaviors/DrawingStatusChangedBehavior.cs
     startLine: 24
@@ -168,8 +168,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Behaviors/DrawingStatusChangedBehavior.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: OnAttachedTo
     path: Behaviors/DrawingStatusChangedBehavior.cs
     startLine: 34
@@ -207,8 +207,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Behaviors/DrawingStatusChangedBehavior.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: OnDetachingFrom
     path: Behaviors/DrawingStatusChangedBehavior.cs
     startLine: 44

@@ -20,8 +20,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/obj/Release/netstandard2.0/UI/ProcessingView.xaml.g.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: ProcessingView
     path: obj/Release/netstandard2.0/UI/ProcessingView.xaml.g.cs
     startLine: 15
@@ -72,7 +72,9 @@ items:
   - Xamarin.Forms.TemplatedView.LayoutChildren(System.Double,System.Double,System.Double,System.Double)
   - Xamarin.Forms.TemplatedView.OnApplyTemplate
   - Xamarin.Forms.TemplatedView.OnChildRemoved(Xamarin.Forms.Element)
+  - Xamarin.Forms.TemplatedView.OnChildRemoved(Xamarin.Forms.Element,System.Int32)
   - Xamarin.Forms.TemplatedView.GetTemplateChild(System.String)
+  - Xamarin.Forms.TemplatedView.ResolveControlTemplate
   - Xamarin.Forms.TemplatedView.ControlTemplate
   - Xamarin.Forms.Layout.IsClippedToBoundsProperty
   - Xamarin.Forms.Layout.CascadeInputTransparentProperty
@@ -88,6 +90,7 @@ items:
   - Xamarin.Forms.Layout.ShouldInvalidateOnChildAdded(Xamarin.Forms.View)
   - Xamarin.Forms.Layout.ShouldInvalidateOnChildRemoved(Xamarin.Forms.View)
   - Xamarin.Forms.Layout.UpdateChildrenLayout
+  - Xamarin.Forms.Layout.ResolveLayoutChanges
   - Xamarin.Forms.Layout.IsClippedToBounds
   - Xamarin.Forms.Layout.Padding
   - Xamarin.Forms.Layout.CascadeInputTransparent
@@ -120,10 +123,12 @@ items:
   - Xamarin.Forms.VisualElement.ScaleProperty
   - Xamarin.Forms.VisualElement.ScaleXProperty
   - Xamarin.Forms.VisualElement.ScaleYProperty
+  - Xamarin.Forms.VisualElement.ClipProperty
   - Xamarin.Forms.VisualElement.VisualProperty
   - Xamarin.Forms.VisualElement.IsVisibleProperty
   - Xamarin.Forms.VisualElement.OpacityProperty
   - Xamarin.Forms.VisualElement.BackgroundColorProperty
+  - Xamarin.Forms.VisualElement.BackgroundProperty
   - Xamarin.Forms.VisualElement.BehaviorsProperty
   - Xamarin.Forms.VisualElement.TriggersProperty
   - Xamarin.Forms.VisualElement.WidthRequestProperty
@@ -134,7 +139,6 @@ items:
   - Xamarin.Forms.VisualElement.FlowDirectionProperty
   - Xamarin.Forms.VisualElement.TabIndexProperty
   - Xamarin.Forms.VisualElement.IsTabStopProperty
-  - Xamarin.Forms.VisualElement.OnRequestedThemeChanged(Xamarin.Forms.OSAppTheme)
   - Xamarin.Forms.VisualElement.OnTabIndexPropertyChanged(System.Int32,System.Int32)
   - Xamarin.Forms.VisualElement.TabIndexDefaultValueCreator
   - Xamarin.Forms.VisualElement.OnTabStopPropertyChanged(System.Boolean,System.Boolean)
@@ -158,6 +162,7 @@ items:
   - Xamarin.Forms.VisualElement.AnchorX
   - Xamarin.Forms.VisualElement.AnchorY
   - Xamarin.Forms.VisualElement.BackgroundColor
+  - Xamarin.Forms.VisualElement.Background
   - Xamarin.Forms.VisualElement.Behaviors
   - Xamarin.Forms.VisualElement.Bounds
   - Xamarin.Forms.VisualElement.Height
@@ -184,6 +189,7 @@ items:
   - Xamarin.Forms.VisualElement.WidthRequest
   - Xamarin.Forms.VisualElement.X
   - Xamarin.Forms.VisualElement.Y
+  - Xamarin.Forms.VisualElement.Clip
   - Xamarin.Forms.VisualElement.Resources
   - Xamarin.Forms.VisualElement.ChildrenReordered
   - Xamarin.Forms.VisualElement.Focused
@@ -272,8 +278,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/ProcessingView.xaml.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: IsProcessingProperty
     path: UI/ProcessingView.xaml.cs
     startLine: 13
@@ -309,8 +315,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/ProcessingView.xaml.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: IsProcessing
     path: UI/ProcessingView.xaml.cs
     startLine: 22
@@ -346,8 +352,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/ProcessingView.xaml.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: ProcessingMessageProperty
     path: UI/ProcessingView.xaml.cs
     startLine: 31
@@ -383,8 +389,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/ProcessingView.xaml.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: ProcessingMessage
     path: UI/ProcessingView.xaml.cs
     startLine: 39
@@ -420,8 +426,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/ProcessingView.xaml.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: .ctor
     path: UI/ProcessingView.xaml.cs
     startLine: 45
@@ -788,6 +794,63 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: Xamarin.Forms.TemplatedView.OnChildRemoved(Xamarin.Forms.Element,System.Int32)
+  commentId: M:Xamarin.Forms.TemplatedView.OnChildRemoved(Xamarin.Forms.Element,System.Int32)
+  parent: Xamarin.Forms.TemplatedView
+  isExternal: true
+  name: OnChildRemoved(Element, Int32)
+  nameWithType: TemplatedView.OnChildRemoved(Element, Int32)
+  fullName: Xamarin.Forms.TemplatedView.OnChildRemoved(Xamarin.Forms.Element, System.Int32)
+  spec.csharp:
+  - uid: Xamarin.Forms.TemplatedView.OnChildRemoved(Xamarin.Forms.Element,System.Int32)
+    name: OnChildRemoved
+    nameWithType: TemplatedView.OnChildRemoved
+    fullName: Xamarin.Forms.TemplatedView.OnChildRemoved
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Xamarin.Forms.Element
+    name: Element
+    nameWithType: Element
+    fullName: Xamarin.Forms.Element
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Xamarin.Forms.TemplatedView.OnChildRemoved(Xamarin.Forms.Element,System.Int32)
+    name: OnChildRemoved
+    nameWithType: TemplatedView.OnChildRemoved
+    fullName: Xamarin.Forms.TemplatedView.OnChildRemoved
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Xamarin.Forms.Element
+    name: Element
+    nameWithType: Element
+    fullName: Xamarin.Forms.Element
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
 - uid: Xamarin.Forms.TemplatedView.GetTemplateChild(System.String)
   commentId: M:Xamarin.Forms.TemplatedView.GetTemplateChild(System.String)
   parent: Xamarin.Forms.TemplatedView
@@ -826,6 +889,37 @@ references:
     nameWithType: String
     fullName: System.String
     isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Xamarin.Forms.TemplatedView.ResolveControlTemplate
+  commentId: M:Xamarin.Forms.TemplatedView.ResolveControlTemplate
+  parent: Xamarin.Forms.TemplatedView
+  isExternal: true
+  name: ResolveControlTemplate()
+  nameWithType: TemplatedView.ResolveControlTemplate()
+  fullName: Xamarin.Forms.TemplatedView.ResolveControlTemplate()
+  spec.csharp:
+  - uid: Xamarin.Forms.TemplatedView.ResolveControlTemplate
+    name: ResolveControlTemplate
+    nameWithType: TemplatedView.ResolveControlTemplate
+    fullName: Xamarin.Forms.TemplatedView.ResolveControlTemplate
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Xamarin.Forms.TemplatedView.ResolveControlTemplate
+    name: ResolveControlTemplate
+    nameWithType: TemplatedView.ResolveControlTemplate
+    fullName: Xamarin.Forms.TemplatedView.ResolveControlTemplate
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
   - name: )
     nameWithType: )
     fullName: )
@@ -1316,6 +1410,37 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: Xamarin.Forms.Layout.ResolveLayoutChanges
+  commentId: M:Xamarin.Forms.Layout.ResolveLayoutChanges
+  parent: Xamarin.Forms.Layout
+  isExternal: true
+  name: ResolveLayoutChanges()
+  nameWithType: Layout.ResolveLayoutChanges()
+  fullName: Xamarin.Forms.Layout.ResolveLayoutChanges()
+  spec.csharp:
+  - uid: Xamarin.Forms.Layout.ResolveLayoutChanges
+    name: ResolveLayoutChanges
+    nameWithType: Layout.ResolveLayoutChanges
+    fullName: Xamarin.Forms.Layout.ResolveLayoutChanges
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Xamarin.Forms.Layout.ResolveLayoutChanges
+    name: ResolveLayoutChanges
+    nameWithType: Layout.ResolveLayoutChanges
+    fullName: Xamarin.Forms.Layout.ResolveLayoutChanges
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
 - uid: Xamarin.Forms.Layout.IsClippedToBounds
   commentId: P:Xamarin.Forms.Layout.IsClippedToBounds
   parent: Xamarin.Forms.Layout
@@ -1576,6 +1701,13 @@ references:
   name: ScaleYProperty
   nameWithType: VisualElement.ScaleYProperty
   fullName: Xamarin.Forms.VisualElement.ScaleYProperty
+- uid: Xamarin.Forms.VisualElement.ClipProperty
+  commentId: F:Xamarin.Forms.VisualElement.ClipProperty
+  parent: Xamarin.Forms.VisualElement
+  isExternal: true
+  name: ClipProperty
+  nameWithType: VisualElement.ClipProperty
+  fullName: Xamarin.Forms.VisualElement.ClipProperty
 - uid: Xamarin.Forms.VisualElement.VisualProperty
   commentId: F:Xamarin.Forms.VisualElement.VisualProperty
   parent: Xamarin.Forms.VisualElement
@@ -1604,6 +1736,13 @@ references:
   name: BackgroundColorProperty
   nameWithType: VisualElement.BackgroundColorProperty
   fullName: Xamarin.Forms.VisualElement.BackgroundColorProperty
+- uid: Xamarin.Forms.VisualElement.BackgroundProperty
+  commentId: F:Xamarin.Forms.VisualElement.BackgroundProperty
+  parent: Xamarin.Forms.VisualElement
+  isExternal: true
+  name: BackgroundProperty
+  nameWithType: VisualElement.BackgroundProperty
+  fullName: Xamarin.Forms.VisualElement.BackgroundProperty
 - uid: Xamarin.Forms.VisualElement.BehaviorsProperty
   commentId: F:Xamarin.Forms.VisualElement.BehaviorsProperty
   parent: Xamarin.Forms.VisualElement
@@ -1674,47 +1813,6 @@ references:
   name: IsTabStopProperty
   nameWithType: VisualElement.IsTabStopProperty
   fullName: Xamarin.Forms.VisualElement.IsTabStopProperty
-- uid: Xamarin.Forms.VisualElement.OnRequestedThemeChanged(Xamarin.Forms.OSAppTheme)
-  commentId: M:Xamarin.Forms.VisualElement.OnRequestedThemeChanged(Xamarin.Forms.OSAppTheme)
-  parent: Xamarin.Forms.VisualElement
-  isExternal: true
-  name: OnRequestedThemeChanged(OSAppTheme)
-  nameWithType: VisualElement.OnRequestedThemeChanged(OSAppTheme)
-  fullName: Xamarin.Forms.VisualElement.OnRequestedThemeChanged(Xamarin.Forms.OSAppTheme)
-  spec.csharp:
-  - uid: Xamarin.Forms.VisualElement.OnRequestedThemeChanged(Xamarin.Forms.OSAppTheme)
-    name: OnRequestedThemeChanged
-    nameWithType: VisualElement.OnRequestedThemeChanged
-    fullName: Xamarin.Forms.VisualElement.OnRequestedThemeChanged
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: Xamarin.Forms.OSAppTheme
-    name: OSAppTheme
-    nameWithType: OSAppTheme
-    fullName: Xamarin.Forms.OSAppTheme
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: Xamarin.Forms.VisualElement.OnRequestedThemeChanged(Xamarin.Forms.OSAppTheme)
-    name: OnRequestedThemeChanged
-    nameWithType: VisualElement.OnRequestedThemeChanged
-    fullName: Xamarin.Forms.VisualElement.OnRequestedThemeChanged
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: Xamarin.Forms.OSAppTheme
-    name: OSAppTheme
-    nameWithType: OSAppTheme
-    fullName: Xamarin.Forms.OSAppTheme
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
 - uid: Xamarin.Forms.VisualElement.OnTabIndexPropertyChanged(System.Int32,System.Int32)
   commentId: M:Xamarin.Forms.VisualElement.OnTabIndexPropertyChanged(System.Int32,System.Int32)
   parent: Xamarin.Forms.VisualElement
@@ -2464,6 +2562,13 @@ references:
   name: BackgroundColor
   nameWithType: VisualElement.BackgroundColor
   fullName: Xamarin.Forms.VisualElement.BackgroundColor
+- uid: Xamarin.Forms.VisualElement.Background
+  commentId: P:Xamarin.Forms.VisualElement.Background
+  parent: Xamarin.Forms.VisualElement
+  isExternal: true
+  name: Background
+  nameWithType: VisualElement.Background
+  fullName: Xamarin.Forms.VisualElement.Background
 - uid: Xamarin.Forms.VisualElement.Behaviors
   commentId: P:Xamarin.Forms.VisualElement.Behaviors
   parent: Xamarin.Forms.VisualElement
@@ -2646,6 +2751,13 @@ references:
   name: Y
   nameWithType: VisualElement.Y
   fullName: Xamarin.Forms.VisualElement.Y
+- uid: Xamarin.Forms.VisualElement.Clip
+  commentId: P:Xamarin.Forms.VisualElement.Clip
+  parent: Xamarin.Forms.VisualElement
+  isExternal: true
+  name: Clip
+  nameWithType: VisualElement.Clip
+  fullName: Xamarin.Forms.VisualElement.Clip
 - uid: Xamarin.Forms.VisualElement.Resources
   commentId: P:Xamarin.Forms.VisualElement.Resources
   parent: Xamarin.Forms.VisualElement

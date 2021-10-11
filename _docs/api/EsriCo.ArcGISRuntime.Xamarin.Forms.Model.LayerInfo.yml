@@ -19,8 +19,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Model/LayerInfo.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: LayerInfo
     path: Model/LayerInfo.cs
     startLine: 43
@@ -73,8 +73,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Model/LayerInfo.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: Layer
     path: Model/LayerInfo.cs
     startLine: 53
@@ -110,8 +110,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Model/LayerInfo.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: ParentInfo
     path: Model/LayerInfo.cs
     startLine: 62
@@ -147,8 +147,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Model/LayerInfo.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: LegendImageInfos
     path: Model/LayerInfo.cs
     startLine: 71
@@ -184,8 +184,8 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Model/LayerInfo.cs
-      branch: devbranch
-      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms.git
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: SetLegendInfosAsync
     path: Model/LayerInfo.cs
     startLine: 81
@@ -195,7 +195,7 @@ items:
   summary: "\n\n"
   example: []
   syntax:
-    content: public Task SetLegendInfosAsync(IEnumerable<LegendInfo> legendInfos)
+    content: public async Task SetLegendInfosAsync(IEnumerable<LegendInfo> legendInfos)
     parameters:
     - id: legendInfos
       type: System.Collections.Generic.IEnumerable{Esri.ArcGISRuntime.Mapping.LegendInfo}
@@ -207,6 +207,7 @@ items:
   nameWithType.vb: LayerInfo.SetLegendInfosAsync(IEnumerable(Of LegendInfo))
   modifiers.csharp:
   - public
+  - async
   modifiers.vb:
   - Public
   fullName.vb: EsriCo.ArcGISRuntime.Xamarin.Forms.Model.LayerInfo.SetLegendInfosAsync(System.Collections.Generic.IEnumerable(Of Esri.ArcGISRuntime.Mapping.LegendInfo))

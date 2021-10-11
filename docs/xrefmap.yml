@@ -1786,6 +1786,19 @@ references:
   isSpec: "True"
   fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.BaseUrl
   nameWithType: IPortalConnection.BaseUrl
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.CreateCredentialAsync(Esri.ArcGISRuntime.Security.CredentialRequestInfo)
+  name: CreateCredentialAsync(CredentialRequestInfo)
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IPortalConnection_CreateCredentialAsync_Esri_ArcGISRuntime_Security_CredentialRequestInfo_
+  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.CreateCredentialAsync(Esri.ArcGISRuntime.Security.CredentialRequestInfo)
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.CreateCredentialAsync(Esri.ArcGISRuntime.Security.CredentialRequestInfo)
+  nameWithType: IPortalConnection.CreateCredentialAsync(CredentialRequestInfo)
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.CreateCredentialAsync*
+  name: CreateCredentialAsync
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IPortalConnection_CreateCredentialAsync_
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.CreateCredentialAsync
+  isSpec: "True"
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.CreateCredentialAsync
+  nameWithType: IPortalConnection.CreateCredentialAsync
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Credential
   name: Credential
   href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IPortalConnection_Credential
@@ -1799,6 +1812,19 @@ references:
   isSpec: "True"
   fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Credential
   nameWithType: IPortalConnection.Credential
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Domain
+  name: Domain
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IPortalConnection_Domain
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Domain
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Domain
+  nameWithType: IPortalConnection.Domain
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Domain*
+  name: Domain
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IPortalConnection_Domain_
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Domain
+  isSpec: "True"
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Domain
+  nameWithType: IPortalConnection.Domain
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.GetGroup(System.String)
   name: GetGroup(String)
   href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IPortalConnection_GetGroup_System_String_
@@ -2381,6 +2407,19 @@ references:
   isSpec: "True"
   fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.BaseUrl
   nameWithType: PortalConnection.BaseUrl
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.CreateCredentialAsync(Esri.ArcGISRuntime.Security.CredentialRequestInfo)
+  name: CreateCredentialAsync(CredentialRequestInfo)
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_PortalConnection_CreateCredentialAsync_Esri_ArcGISRuntime_Security_CredentialRequestInfo_
+  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.CreateCredentialAsync(Esri.ArcGISRuntime.Security.CredentialRequestInfo)
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.CreateCredentialAsync(Esri.ArcGISRuntime.Security.CredentialRequestInfo)
+  nameWithType: PortalConnection.CreateCredentialAsync(CredentialRequestInfo)
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.CreateCredentialAsync*
+  name: CreateCredentialAsync
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_PortalConnection_CreateCredentialAsync_
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.CreateCredentialAsync
+  isSpec: "True"
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.CreateCredentialAsync
+  nameWithType: PortalConnection.CreateCredentialAsync
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.Credential
   name: Credential
   href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_PortalConnection_Credential
@@ -2394,6 +2433,19 @@ references:
   isSpec: "True"
   fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.Credential
   nameWithType: PortalConnection.Credential
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.Domain
+  name: Domain
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_PortalConnection_Domain
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.Domain
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.Domain
+  nameWithType: PortalConnection.Domain
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.Domain*
+  name: Domain
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_PortalConnection_Domain_
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.Domain
+  isSpec: "True"
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.Domain
+  nameWithType: PortalConnection.Domain
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.GetGroup(System.String)
   name: GetGroup(String)
   href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_PortalConnection_GetGroup_System_String_
