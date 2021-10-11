@@ -25,8 +25,11 @@
 
   <ItemGroup>
     <Compile Remove="src\**" />
+    <Compile Remove="ViewModels\**" />
     <EmbeddedResource Remove="src\**" />
+    <EmbeddedResource Remove="ViewModels\**" />
     <None Remove="src\**" />
+    <None Remove="ViewModels\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -168,10 +171,6 @@
     <Compile Update="UI\MeasurementView.xaml.cs">
       <DependentUpon>MeasurementView.xaml</DependentUpon>
     </Compile>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="ViewModels\" />
   </ItemGroup>
 
   <ProjectExtensions><VisualStudio><UserProperties docfx_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
