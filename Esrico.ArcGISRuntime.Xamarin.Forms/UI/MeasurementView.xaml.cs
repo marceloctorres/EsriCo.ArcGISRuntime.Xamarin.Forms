@@ -65,8 +65,8 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="newValue"></param>
     private static void OnColorPropertyChanged(BindableObject bindable, object oldValue, object newValue)
     {
-      var view = bindable as MeasurementBarView;
-      if(newValue != null)
+      MeasurementBarView view = bindable as MeasurementBarView;
+      if (newValue != null)
       {
         view.Color = (Color)newValue;
         view.DrawingProcess.Color = view.Color;
@@ -104,8 +104,8 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="newValue"></param>
     private static void OnPointMeasurementToolImageChanged(BindableObject bindable, object oldValue, object newValue)
     {
-      var view = bindable as MeasurementBarView;
-      if(newValue == null)
+      MeasurementBarView view = bindable as MeasurementBarView;
+      if (newValue == null)
       {
         view.PointMeasurementToolImage = ImageSource.FromStream(() =>
           typeof(MeasurementBarView).Assembly.GetStreamEmbeddedResource(@"ic_coord"));
@@ -138,8 +138,8 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="newValue"></param>
     private static void OnLineMeasurementToolImageChanged(BindableObject bindable, object oldValue, object newValue)
     {
-      var view = bindable as MeasurementBarView;
-      if(newValue == null)
+      MeasurementBarView view = bindable as MeasurementBarView;
+      if (newValue == null)
       {
         view.LineMeasurementToolImage = ImageSource.FromStream(() =>
           typeof(MeasurementBarView).Assembly.GetStreamEmbeddedResource(@"ic_distance"));
@@ -172,8 +172,8 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="newValue"></param>
     private static void OnAreaMeasurementToolImageChanged(BindableObject bindable, object oldValue, object newValue)
     {
-      var view = bindable as MeasurementBarView;
-      if(newValue == null)
+      MeasurementBarView view = bindable as MeasurementBarView;
+      if (newValue == null)
       {
         view.AreaMeasurementToolImage = ImageSource.FromStream(() =>
           typeof(MeasurementBarView).Assembly.GetStreamEmbeddedResource(@"ic_area"));
@@ -206,8 +206,8 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="newValue"></param>
     private static void OnNoneMeasurementToolImageChanged(BindableObject bindable, object oldValue, object newValue)
     {
-      var view = bindable as MeasurementBarView;
-      if(newValue == null)
+      MeasurementBarView view = bindable as MeasurementBarView;
+      if (newValue == null)
       {
         view.NoneMeasurementToolImage = ImageSource.FromStream(() =>
           typeof(MeasurementBarView).Assembly.GetStreamEmbeddedResource(@"ic_cancel"));
@@ -240,10 +240,10 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="newValue"></param>
     private static void OnMapViewPropertyChanged(BindableObject bindable, object oldValue, object newValue)
     {
-      var panelView = bindable as MeasurementBarView;
-      if(newValue is MapView newMapView)
+      MeasurementBarView panelView = bindable as MeasurementBarView;
+      if (newValue is MapView newMapView)
       {
-        if(newMapView.Map != null)
+        if (newMapView.Map != null)
         {
           panelView.CheckMap(newMapView);
         }
@@ -251,7 +251,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
         {
           newMapView.PropertyChanged += (s, e) =>
           {
-            if(e.PropertyName == nameof(newMapView.Map))
+            if (e.PropertyName == nameof(newMapView.Map))
             {
               panelView.CheckMap(newMapView);
             }
@@ -267,14 +267,14 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     public void CheckMap(MapView mapView)
     {
       IsVisible = IsVisible && mapView != null && mapView.Map != null;
-      if(mapView != null && mapView.Map != null)
+      if (mapView != null && mapView.Map != null)
       {
-        if(mapView.GraphicsOverlays == null)
+        if (mapView.GraphicsOverlays == null)
         {
           mapView.GraphicsOverlays = new GraphicsOverlayCollection();
         }
-        var graphicsOverlay = mapView.GraphicsOverlays.Where(g => g.Id == DrawGrapichsOverlayId).FirstOrDefault();
-        if(graphicsOverlay == null)
+        GraphicsOverlay graphicsOverlay = mapView.GraphicsOverlays.Where(g => g.Id == DrawGrapichsOverlayId).FirstOrDefault();
+        if (graphicsOverlay == null)
         {
           DrawingProcess.DrawGraphicsOverlay.Graphics.Clear();
           mapView.GraphicsOverlays.Add(DrawingProcess.DrawGraphicsOverlay);
@@ -394,7 +394,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     {
       InitializeComponent();
       IsVisible = false;
-      var asm = GetType().Assembly;
+      System.Reflection.Assembly asm = GetType().Assembly;
       PointMeasurementToolImage = ImageSource.FromStream(() => asm.GetStreamEmbeddedResource(@"ic_coord"));
       LineMeasurementToolImage = ImageSource.FromStream(() => asm.GetStreamEmbeddedResource(@"ic_distance"));
       AreaMeasurementToolImage = ImageSource.FromStream(() => asm.GetStreamEmbeddedResource(@"ic_area"));
@@ -459,11 +459,11 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     private void SketchEditor_GeometryChanged(object sender, GeometryChangedEventArgs e)
     {
       Geometry = e.NewGeometry;
-      if(Geometry is Polyline)
+      if (Geometry is Polyline)
       {
         PolylineCreated(Geometry);
       }
-      else if(Geometry is Polygon)
+      else if (Geometry is Polygon)
       {
         PolygonCreated(Geometry);
       }
@@ -477,8 +477,8 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     {
       Geometry = geometry;
 
-      var unit = (AreaUnit)SelectedAreaUnit.Value;
-      var result = GeometryEngine.AreaGeodetic(geometry, unit, GeodeticCurveType.Geodesic);
+      AreaUnit unit = (AreaUnit)SelectedAreaUnit.Value;
+      double result = GeometryEngine.AreaGeodetic(geometry, unit, GeodeticCurveType.Geodesic);
       ResultText = $"{result:0.00} {unit.Abbreviation}";
     }
 
@@ -490,8 +490,8 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     {
       Geometry = geometry;
 
-      var unit = (LinearUnit)SelectedLinearUnit.Value;
-      var result = GeometryEngine.LengthGeodetic(geometry, unit, GeodeticCurveType.Geodesic);
+      LinearUnit unit = (LinearUnit)SelectedLinearUnit.Value;
+      double result = GeometryEngine.LengthGeodetic(geometry, unit, GeodeticCurveType.Geodesic);
       ResultText = $"{result:0.00} {unit.Abbreviation}";
     }
 
@@ -503,7 +503,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     {
       Geometry = geometry;
 
-      var result = CoordinateFormatter
+      string result = CoordinateFormatter
         .ToLatitudeLongitude((MapPoint)geometry, (LatitudeLongitudeFormat)SelectedAngularUnit.Value, 3);
       ResultText = result;
     }
@@ -513,7 +513,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// </summary>
     private void ClearMeasurement()
     {
-      if(DrawingProcess.SketchEditor.CancelCommand != null && DrawingProcess.SketchEditor.CancelCommand.CanExecute(null))
+      if (DrawingProcess.SketchEditor.CancelCommand != null && DrawingProcess.SketchEditor.CancelCommand.CanExecute(null))
       {
         DrawingProcess.SketchEditor.CancelCommand.Execute(null);
       }
@@ -533,7 +533,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="e"></param>
     private void DrawingProcess_PropertyChanged(object sender, PropertyChangedEventArgs e)
     {
-      if(e.PropertyName == nameof(DrawingProcess.IsDrawing) && DrawingProcess.IsDrawing)
+      if (e.PropertyName == nameof(DrawingProcess.IsDrawing) && DrawingProcess.IsDrawing)
       {
         IsDrawing = DrawingProcess.IsDrawing;
       }
@@ -551,7 +551,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
       ResultText = string.Empty;
 
       Units = AngularUnits;
-      if(SelectedAngularUnit == null)
+      if (SelectedAngularUnit == null)
       {
         SelectedAngularUnit = AngularUnits.Where(u => u.Key == nameof(LatitudeLongitudeFormat.DegreesMinutesSeconds)).FirstOrDefault();
       }
@@ -573,7 +573,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
       ResultText = string.Empty;
 
       Units = LinearUnits;
-      if(SelectedLinearUnit == null)
+      if (SelectedLinearUnit == null)
       {
         SelectedLinearUnit = LinearUnits.Where(u => u.Key == nameof(EsriGeometry.LinearUnits.Kilometers)).FirstOrDefault();
       }
@@ -593,7 +593,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
       ResultText = string.Empty;
 
       Units = AreaUnits;
-      if(SelectedAreaUnit == null)
+      if (SelectedAreaUnit == null)
       {
         SelectedAreaUnit = AreaUnits.Where(u => u.Key == nameof(EsriGeometry.AreaUnits.SquareKilometers)).FirstOrDefault();
       }
@@ -609,27 +609,27 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="e"></param>
     private void PickerSelectedIndexChanged(object sender, EventArgs e)
     {
-      var value = SelectedUnit?.Value;
-      if(value is LatitudeLongitudeFormat)
+      object value = SelectedUnit?.Value;
+      if (value is LatitudeLongitudeFormat)
       {
         SelectedAngularUnit = SelectedUnit;
-        if(Geometry != null)
+        if (Geometry != null)
         {
           PointCreated(Geometry);
         }
       }
-      else if(value is LinearUnit)
+      else if (value is LinearUnit)
       {
         SelectedLinearUnit = SelectedUnit;
-        if(Geometry != null)
+        if (Geometry != null)
         {
           PolylineCreated(Geometry);
         }
       }
-      else if(value is AreaUnit)
+      else if (value is AreaUnit)
       {
         SelectedAreaUnit = SelectedUnit;
-        if(Geometry != null)
+        if (Geometry != null)
         {
           PolygonCreated(Geometry);
         }

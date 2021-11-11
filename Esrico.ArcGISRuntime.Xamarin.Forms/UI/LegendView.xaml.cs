@@ -20,10 +20,10 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
 
     private void OnInnerListViewItemAppearing(object sender, ItemVisibilityEventArgs e)
     {
-      if(sender is ListView listView)
+      if (sender is ListView listView)
       {
-        var list = (List<LegendImageInfo>)listView.ItemsSource;
-        var height = list.Count * ItemRenderHeight;
+        List<LegendImageInfo> list = (List<LegendImageInfo>)listView.ItemsSource;
+        double height = list.Count * ItemRenderHeight;
         listView.HeightRequest = height;
       }
     }

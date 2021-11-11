@@ -43,7 +43,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
     protected override void OnPropertyChanged([CallerMemberName] string propertyName = null)
     {
       base.OnPropertyChanged(propertyName);
-      if(propertyName == nameof(Viewpoint))
+      if (propertyName == nameof(Viewpoint))
       {
         SetViewpoint(Viewpoint);
       }
@@ -55,10 +55,10 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
     /// <param name="viewpoint"></param>
     private async void SetViewpoint(Viewpoint viewpoint)
     {
-      if(viewpoint != null)
+      if (viewpoint != null)
       {
-        var currentViewpoint = AssociatedObject.GetCurrentViewpoint(ViewpointType.BoundingGeometry);
-        if(currentViewpoint == null || (currentViewpoint != null && !currentViewpoint.AreEquals(viewpoint)))
+        Viewpoint currentViewpoint = AssociatedObject.GetCurrentViewpoint(ViewpointType.BoundingGeometry);
+        if (currentViewpoint == null || (currentViewpoint != null && !currentViewpoint.AreEquals(viewpoint)))
         {
           await AssociatedObject.SetViewpointAsync(viewpoint);
         }

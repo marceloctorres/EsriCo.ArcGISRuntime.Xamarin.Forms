@@ -81,7 +81,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Model
     /// <param name="legendInfos"></param>
     public async Task SetLegendInfosAsync(IEnumerable<LegendInfo> legendInfos)
     {
-      if(LegendImageInfos == null)
+      if (LegendImageInfos == null)
       {
         LegendImageInfos = new List<LegendImageInfo>();
       }
@@ -90,10 +90,10 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Model
         LegendImageInfos.Clear();
       }
 
-      foreach(var li in legendInfos.ToList())
+      foreach (LegendInfo li in legendInfos.ToList())
       {
-        var imageData = await li.Symbol.CreateSwatchAsync();
-        var stream = await imageData.GetEncodedBufferAsync();
+        Esri.ArcGISRuntime.UI.RuntimeImage imageData = await li.Symbol.CreateSwatchAsync();
+        System.IO.Stream stream = await imageData.GetEncodedBufferAsync();
         LegendImageInfos.Add(new LegendImageInfo()
         {
           Name = li.Name,

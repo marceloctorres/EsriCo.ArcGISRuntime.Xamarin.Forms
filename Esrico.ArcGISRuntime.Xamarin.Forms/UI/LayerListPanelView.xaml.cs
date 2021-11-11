@@ -44,10 +44,10 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="newValue"></param>
     private static void OnMapViewPropertyChanged(BindableObject bindable, object oldValue, object newValue)
     {
-      var panelView = bindable as LayerListPanelView;
-      if(newValue is MapView newMapView)
+      LayerListPanelView panelView = bindable as LayerListPanelView;
+      if (newValue is MapView newMapView)
       {
-        if(newMapView.Map != null)
+        if (newMapView.Map != null)
         {
           panelView.SetMap(newMapView.Map);
         }
@@ -55,7 +55,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
         {
           newMapView.PropertyChanged += (s, e) =>
           {
-            if(e.PropertyName == nameof(newMapView.Map) && newMapView.Map != null)
+            if (e.PropertyName == nameof(newMapView.Map) && newMapView.Map != null)
             {
               panelView.SetMap(newMapView.Map);
             }
@@ -96,13 +96,13 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
 
     private async Task SetLoadedMapAsync()
     {
-      if(Map.OperationalLayers.Count > 0)
+      if (Map.OperationalLayers.Count > 0)
       {
         await SetLayerInfosAsync();
       }
       else
       {
-        if(!CollectionHandlerAdded)
+        if (!CollectionHandlerAdded)
         {
           Map.OperationalLayers.CollectionChanged += async (o, e) =>
           {
@@ -122,10 +122,10 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     {
       try
       {
-        if(map != null)
+        if (map != null)
         {
           Map = map;
-          if(Map.LoadStatus != LoadStatus.Loaded)
+          if (Map.LoadStatus != LoadStatus.Loaded)
           {
             Map.Loaded += async (o, e) =>
             {
@@ -139,7 +139,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
           }
         }
       }
-      catch(Exception ex)
+      catch (Exception ex)
       {
         throw new ApplicationException(message: ex.Message, ex);
       }
@@ -151,7 +151,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <returns></returns>
     private async Task SetLayerInfosFromLoadedMapAsync()
     {
-      var layerInfos = await Device.InvokeOnMainThreadAsync(() => GetLayerInfosFromLoadedMapAsync());
+      List<LayerInfos> layerInfos = await Device.InvokeOnMainThreadAsync(() => GetLayerInfosFromLoadedMapAsync());
       LayerInfosList = layerInfos != null ?
         new ObservableCollection<LayerInfos>(layerInfos) :
         null;
@@ -162,11 +162,11 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// </summary>
     private async Task<List<LayerInfos>> GetLayerInfosFromLoadedMapAsync()
     {
-      var listLayerInfos = new List<LayerInfos>();
+      List<LayerInfos> listLayerInfos = new List<LayerInfos>();
 
-      foreach(var ol in Map.OperationalLayers)
+      foreach (Layer ol in Map.OperationalLayers)
       {
-        var layerInfos = new LayerInfos()
+        LayerInfos layerInfos = new LayerInfos()
         {
           GroupLayerInfo = new LayerInfo { Layer = ol }
         };
@@ -182,12 +182,12 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
               });
         listLayerInfos.Add(layerInfos);
 
-        var legendInfos = await layerInfos.GroupLayerInfo.Layer.GetLegendInfosAsync();
+        IReadOnlyList<LegendInfo> legendInfos = await layerInfos.GroupLayerInfo.Layer.GetLegendInfosAsync();
         await layerInfos.GroupLayerInfo.SetLegendInfosAsync(legendInfos);
 
-        foreach(var sli in layerInfos.SubLayerInfos)
+        foreach (LayerInfo sli in layerInfos.SubLayerInfos)
         {
-          var subLegendInfos = await sli.Layer.GetLegendInfosAsync();
+          IReadOnlyList<LegendInfo> subLegendInfos = await sli.Layer.GetLegendInfosAsync();
           await sli.SetLegendInfosAsync(subLegendInfos);
         }
       }
@@ -200,9 +200,9 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <returns></returns>
     private async Task SetLayerInfosAsync()
     {
-      if(Map != null)
+      if (Map != null)
       {
-        if(Map.LoadStatus != LoadStatus.Loaded)
+        if (Map.LoadStatus != LoadStatus.Loaded)
         {
           Map.Loaded += async (o, e) =>
           {

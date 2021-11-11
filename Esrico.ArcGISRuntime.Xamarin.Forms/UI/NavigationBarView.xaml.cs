@@ -42,10 +42,10 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="newValue"></param>
     private static void OnMapViewPropertyChanged(BindableObject bindable, object oldValue, object newValue)
     {
-      var panelView = bindable as NavigationBarView;
-      if(newValue is MapView newMapView)
+      NavigationBarView panelView = bindable as NavigationBarView;
+      if (newValue is MapView newMapView)
       {
-        if(newMapView.Map != null)
+        if (newMapView.Map != null)
         {
           panelView.CheckMap(newMapView.Map);
         }
@@ -53,7 +53,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
         {
           newMapView.PropertyChanged += (s, e) =>
           {
-            if(e.PropertyName == nameof(newMapView.Map))
+            if (e.PropertyName == nameof(newMapView.Map))
             {
               panelView.CheckMap(newMapView.Map);
             }
@@ -130,8 +130,8 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="newValue"></param>
     private static void OnZoomInButtonImageChanged(BindableObject bindable, object oldValue, object newValue)
     {
-      var view = bindable as NavigationBarView;
-      if(newValue == null)
+      NavigationBarView view = bindable as NavigationBarView;
+      if (newValue == null)
       {
         view.ZoomInButtonImage = ImageSource.FromStream(() =>
           typeof(NavigationBarView).Assembly.GetStreamEmbeddedResource(@"ic_plus"));
@@ -153,8 +153,24 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     public static readonly BindableProperty ZoomOutButtonImageProperty = BindableProperty.Create(
       nameof(ZoomOutButtonImage),
       typeof(ImageSource),
-      typeof(NavigationBarView));
+      typeof(NavigationBarView),
+      propertyChanged: OnZoomOutButtonImageChanged);
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="bindable"></param>
+    /// <param name="oldValue"></param>
+    /// <param name="newValue"></param>
+    private static void OnZoomOutButtonImageChanged(BindableObject bindable, object oldValue, object newValue)
+    {
+      NavigationBarView view = bindable as NavigationBarView;
+      if (newValue == null)
+      {
+        view.ZoomInButtonImage = ImageSource.FromStream(() =>
+          typeof(NavigationBarView).Assembly.GetStreamEmbeddedResource(@"ic_minus"));
+      }
+    }
     /// <summary>
     /// 
     /// </summary>
@@ -170,7 +186,24 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     public static readonly BindableProperty HomeButtonImageProperty = BindableProperty.Create(
       nameof(HomeButtonImage),
       typeof(ImageSource),
-      typeof(NavigationBarView));
+      typeof(NavigationBarView),
+      propertyChanged: OnHomeButonImageChanged);
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="bindable"></param>
+    /// <param name="oldValue"></param>
+    /// <param name="newValue"></param>
+    private static void OnHomeButonImageChanged(BindableObject bindable, object oldValue, object newValue)
+    {
+      NavigationBarView view = bindable as NavigationBarView;
+      if (newValue == null)
+      {
+        view.ZoomInButtonImage = ImageSource.FromStream(() =>
+          typeof(NavigationBarView).Assembly.GetStreamEmbeddedResource(@"ic_home"));
+      }
+    }
 
     /// <summary>
     /// 
@@ -199,7 +232,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
         HomeButtonImage = ImageSource.FromStream(() => GetType().Assembly.GetStreamEmbeddedResource(@"ic_home"));
 
       }
-      catch(Exception ex)
+      catch (Exception ex)
       {
         Debug.WriteLine(ex.Message);
       }
@@ -211,11 +244,11 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="factor"></param>
     private async void UpdateViewpoint(double factor)
     {
-      var viewpoint = MapView.GetCurrentViewpoint(ViewpointType.BoundingGeometry);
-      if(viewpoint != null)
+      Viewpoint viewpoint = MapView.GetCurrentViewpoint(ViewpointType.BoundingGeometry);
+      if (viewpoint != null)
       {
-        var targetGeo = viewpoint.TargetGeometry as Envelope;
-        var eb = new EnvelopeBuilder(targetGeo);
+        Envelope targetGeo = viewpoint.TargetGeometry as Envelope;
+        EnvelopeBuilder eb = new EnvelopeBuilder(targetGeo);
         eb.Expand(factor);
 
         viewpoint = new Viewpoint(eb.Extent);
@@ -228,7 +261,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// </summary>
     private async void SetMapInitialViewpoint()
     {
-      if(MapView.Map != null)
+      if (MapView.Map != null)
       {
         await MapView.SetViewpointAsync(MapView.Map.InitialViewpoint);
       }
@@ -241,9 +274,9 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="e"></param>
     private void ZoomInButtonClicked(object sender, EventArgs e)
     {
-      if(ZoomInCommand != null)
+      if (ZoomInCommand != null)
       {
-        if(ZoomInCommand.CanExecute(null))
+        if (ZoomInCommand.CanExecute(null))
         {
           ZoomInCommand.Execute(null);
         }
@@ -261,9 +294,9 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="e"></param>
     private void HomeButtonClicked(object sender, EventArgs e)
     {
-      if(HomeCommand != null)
+      if (HomeCommand != null)
       {
-        if(HomeCommand.CanExecute(null))
+        if (HomeCommand.CanExecute(null))
         {
           HomeCommand.Execute(null);
         }
@@ -281,9 +314,9 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="e"></param>
     private void ZoomOutButtonClicked(object sender, EventArgs e)
     {
-      if(ZoomOutCommand != null)
+      if (ZoomOutCommand != null)
       {
-        if(ZoomOutCommand.CanExecute(null))
+        if (ZoomOutCommand.CanExecute(null))
         {
           ZoomOutCommand.Execute(null);
         }

@@ -27,7 +27,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// </summary>
     private void CreateModalFrame()
     {
-      var resource = Resources.MergedDictionaries
+      object resource = Resources.MergedDictionaries
         .Where(r => r.ContainsKey(ColorKey))
         .Select(r => r[ColorKey]).FirstOrDefault();
       Color backColor = resource != null ? (Color)resource : Color.Gray;
@@ -47,9 +47,9 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     protected override void OnPropertyChanged([CallerMemberName] string propertyName = null)
     {
       base.OnPropertyChanged(propertyName);
-      if(propertyName == nameof(IsVisible))
+      if (propertyName == nameof(IsVisible))
       {
-        if(IsVisible)
+        if (IsVisible)
         {
           InsertModalFrame();
         }
@@ -65,11 +65,11 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// </summary>
     private void InsertModalFrame()
     {
-      if(Parent is Layout<View> layout)
+      if (Parent is Layout<View> layout)
       {
-        if(!layout.Children.Contains(ModalFrame))
+        if (!layout.Children.Contains(ModalFrame))
         {
-          var index = layout.Children.IndexOf(this);
+          int index = layout.Children.IndexOf(this);
           layout.Children.Insert(index - 1, ModalFrame);
         }
       }
@@ -80,9 +80,9 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// </summary>
     private void RemoveModalFrame()
     {
-      if(Parent is Layout<View> layout)
+      if (Parent is Layout<View> layout)
       {
-        if(layout.Children.Contains(ModalFrame))
+        if (layout.Children.Contains(ModalFrame))
         {
           layout.Children.Remove(ModalFrame);
         }

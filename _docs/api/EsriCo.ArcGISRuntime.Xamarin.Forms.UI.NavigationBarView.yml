@@ -53,7 +53,9 @@ items:
       <XamlFilePath("UI\NavigationBarView.xaml")>
 
       Public Class NavigationBarView
+
           Inherits ContentView
+
           Implements INotifyPropertyChanged, IDynamicResourceHandler, IElement, INameScope, INavigationProxy, IStyleSelectable, IAnimatable, IResourcesProvider, IStyleElement, IFlowDirectionController, IPropertyPropagationController, IVisualController, ITabStopElement, IStylable, IViewController, IVisualElementController, IElementController, IGestureController, IGestureRecognizers, ILayout, ILayoutController, IPaddingElement, IControlTemplated
   inheritance:
   - System.Object

@@ -19,9 +19,9 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms
 
     public object ProvideValue(IServiceProvider serviceProvider)
     {
-      if(Text != null)
+      if (Text != null)
       {
-        var resourceManager = new ResourceManager(
+        ResourceManager resourceManager = new ResourceManager(
           typeof(AppResources).FullName,
           typeof(LocalizeExtension).GetTypeInfo().Assembly);
         return resourceManager.GetString(Text, CultureInfo.CurrentCulture);

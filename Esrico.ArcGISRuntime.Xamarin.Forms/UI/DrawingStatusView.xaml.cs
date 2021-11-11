@@ -26,8 +26,8 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="newValue"></param>
     private static void OnIndicatorColorPropertyChanged(BindableObject bindable, object oldValue, object newValue)
     {
-      var view = bindable as DrawingStatusView;
-      var newColor = (Color)newValue;
+      DrawingStatusView view = bindable as DrawingStatusView;
+      Color newColor = (Color)newValue;
       view.IndicatorColor = newColor;
     }
 
@@ -70,9 +70,9 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="newValue"></param>
     private static void OnMapViewPropertyChanged(BindableObject bindable, object oldValue, object newValue)
     {
-      var view = bindable as DrawingStatusView;
-      var oldMapView = oldValue as MapView;
-      var newMapView = newValue as MapView;
+      DrawingStatusView view = bindable as DrawingStatusView;
+      MapView oldMapView = oldValue as MapView;
+      MapView newMapView = newValue as MapView;
       view.AddDrawStatusChangedHandler(oldMapView, newMapView);
     }
 
@@ -83,11 +83,11 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="newMapView"></param>
     public void AddDrawStatusChangedHandler(MapView oldMapView, MapView newMapView)
     {
-      if(oldMapView != null)
+      if (oldMapView != null)
       {
         oldMapView.DrawStatusChanged -= MapViewDrawStatusChanged;
       }
-      if(newMapView != null)
+      if (newMapView != null)
       {
         newMapView.DrawStatusChanged += MapViewDrawStatusChanged;
       }

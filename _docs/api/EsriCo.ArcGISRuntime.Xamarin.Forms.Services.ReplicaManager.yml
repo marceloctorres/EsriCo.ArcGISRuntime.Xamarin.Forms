@@ -43,6 +43,7 @@ items:
     content: 'public class ReplicaManager : IReplicaManager'
     content.vb: >-
       Public Class ReplicaManager
+
           Implements IReplicaManager
   inheritance:
   - System.Object

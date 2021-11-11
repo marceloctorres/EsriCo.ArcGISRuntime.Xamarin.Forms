@@ -31,7 +31,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
     {
       get
       {
-        if(Graphic != null && Graphic.Geometry != null)
+        if (Graphic != null && Graphic.Geometry != null)
         {
           return Graphic.Geometry.Extent.GetCenter();
         }
@@ -46,7 +46,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
     {
       get
       {
-        if(Graphic != null)
+        if (Graphic != null)
         {
           return Graphic.GraphicsOverlay.Id;
         }

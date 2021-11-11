@@ -37,12 +37,12 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
 
     private void Bindable_ViewpointChanged(object sender, EventArgs e)
     {
-      if(Command != null)
+      if (Command != null)
       {
-        if(AssociatedObject != null)
+        if (AssociatedObject != null)
         {
-          var currentViewpoint = AssociatedObject.GetCurrentViewpoint(ViewpointType.BoundingGeometry);
-          if(Command.CanExecute(currentViewpoint))
+          Viewpoint currentViewpoint = AssociatedObject.GetCurrentViewpoint(ViewpointType.BoundingGeometry);
+          if (Command.CanExecute(currentViewpoint))
           {
             Command.Execute(currentViewpoint);
           }

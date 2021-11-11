@@ -55,8 +55,8 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="newValue"></param>
     private static void OnColorPropertyChanged(BindableObject bindable, object oldValue, object newValue)
     {
-      var view = bindable as DrawToolBarView;
-      if(newValue != null)
+      DrawToolBarView view = bindable as DrawToolBarView;
+      if (newValue != null)
       {
         view.Color = (Color)newValue;
         view.DrawingProcess.Color = view.Color;
@@ -81,10 +81,10 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="newValue"></param>
     private static void OnOrientationChanged(BindableObject bindable, object oldValue, object newValue)
     {
-      var view = bindable as DrawToolBarView;
-      var oldOrientation = (StackOrientation)oldValue;
-      var newOrientation = (StackOrientation)newValue;
-      if(oldOrientation != newOrientation)
+      DrawToolBarView view = bindable as DrawToolBarView;
+      StackOrientation oldOrientation = (StackOrientation)oldValue;
+      StackOrientation newOrientation = (StackOrientation)newValue;
+      if (oldOrientation != newOrientation)
       {
         view.SetControlTemplate(newOrientation);
       }
@@ -96,7 +96,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="orientation"></param>
     private void SetControlTemplate(StackOrientation orientation)
     {
-      if(orientation == StackOrientation.Horizontal)
+      if (orientation == StackOrientation.Horizontal)
       {
         ControlTemplate = (ControlTemplate)Resources["HorizontalLayoutTemplate"];
       }
@@ -160,10 +160,10 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="newValue"></param>
     private static void OnMapViewPropertyChanged(BindableObject bindable, object oldValue, object newValue)
     {
-      var panelView = bindable as DrawToolBarView;
-      if(newValue is MapView newMapView)
+      DrawToolBarView panelView = bindable as DrawToolBarView;
+      if (newValue is MapView newMapView)
       {
-        if(newMapView.Map != null)
+        if (newMapView.Map != null)
         {
           panelView.CheckMap(newMapView);
         }
@@ -171,7 +171,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
         {
           newMapView.PropertyChanged += (s, e) =>
           {
-            if(e.PropertyName == nameof(newMapView.Map))
+            if (e.PropertyName == nameof(newMapView.Map))
             {
               panelView.CheckMap(newMapView);
             }
@@ -187,14 +187,14 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     public void CheckMap(MapView mapView)
     {
       IsVisible = mapView != null && mapView.Map != null;
-      if(IsVisible)
+      if (IsVisible)
       {
-        if(mapView.GraphicsOverlays == null)
+        if (mapView.GraphicsOverlays == null)
         {
           mapView.GraphicsOverlays = new GraphicsOverlayCollection();
         }
-        var graphicsOverlay = mapView.GraphicsOverlays.Where(g => g.Id == DrawGrapichsOverlayId).FirstOrDefault();
-        if(graphicsOverlay == null)
+        GraphicsOverlay graphicsOverlay = mapView.GraphicsOverlays.Where(g => g.Id == DrawGrapichsOverlayId).FirstOrDefault();
+        if (graphicsOverlay == null)
         {
           DrawingProcess.DrawGraphicsOverlay.Graphics.Clear();
           mapView.GraphicsOverlays.Add(DrawingProcess.DrawGraphicsOverlay);
@@ -229,8 +229,8 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="newValue"></param>
     private static void OnDrawPointToolImageChanged(BindableObject bindable, object oldValue, object newValue)
     {
-      var view = bindable as DrawToolBarView;
-      if(newValue == null)
+      DrawToolBarView view = bindable as DrawToolBarView;
+      if (newValue == null)
       {
         view.DrawPointToolImage = ImageSource.FromStream(() =>
           typeof(DrawToolBarView).Assembly.GetStreamEmbeddedResource(@"ic_point"));
@@ -263,8 +263,8 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="newValue"></param>
     private static void OnDrawPolylineToolImageChanged(BindableObject bindable, object oldValue, object newValue)
     {
-      var view = bindable as DrawToolBarView;
-      if(newValue == null)
+      DrawToolBarView view = bindable as DrawToolBarView;
+      if (newValue == null)
       {
         view.DrawPolylineToolImage = ImageSource.FromStream(() =>
           typeof(DrawToolBarView).Assembly.GetStreamEmbeddedResource(@"ic_polyline"));
@@ -297,8 +297,8 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="newValue"></param>
     private static void OnDrawPolygonToolImageChanged(BindableObject bindable, object oldValue, object newValue)
     {
-      var view = bindable as DrawToolBarView;
-      if(newValue == null)
+      DrawToolBarView view = bindable as DrawToolBarView;
+      if (newValue == null)
       {
         view.DrawPolygonToolImage = ImageSource.FromStream(() =>
           typeof(DrawToolBarView).Assembly.GetStreamEmbeddedResource(@"ic_polygon"));
@@ -331,8 +331,8 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="newValue"></param>
     private static void OnDrawRectangleToolImageChanged(BindableObject bindable, object oldValue, object newValue)
     {
-      var view = bindable as DrawToolBarView;
-      if(newValue == null)
+      DrawToolBarView view = bindable as DrawToolBarView;
+      if (newValue == null)
       {
         view.DrawRectangleToolImage = ImageSource.FromStream(() =>
           typeof(DrawToolBarView).Assembly.GetStreamEmbeddedResource(@"ic_rectangle"));
@@ -365,8 +365,8 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="newValue"></param>
     private static void OnDrawEraseToolImageChanged(BindableObject bindable, object oldValue, object newValue)
     {
-      var view = bindable as DrawToolBarView;
-      if(newValue == null)
+      DrawToolBarView view = bindable as DrawToolBarView;
+      if (newValue == null)
       {
         view.DrawEraseToolImage = ImageSource.FromStream(() =>
           typeof(DrawToolBarView).Assembly.GetStreamEmbeddedResource(@"ic_erase"));
@@ -399,8 +399,8 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="newValue"></param>
     private static void DrawFreehandLineToolImageChanged(BindableObject bindable, object oldValue, object newValue)
     {
-      var view = bindable as DrawToolBarView;
-      if(newValue == null)
+      DrawToolBarView view = bindable as DrawToolBarView;
+      if (newValue == null)
       {
         view.DrawFreehandLineToolImage = ImageSource.FromStream(() =>
           typeof(DrawToolBarView).Assembly.GetStreamEmbeddedResource(@"ic_erase"));
@@ -433,8 +433,8 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="newValue"></param>
     private static void DrawTextToolImageChanged(BindableObject bindable, object oldValue, object newValue)
     {
-      var view = bindable as DrawToolBarView;
-      if(newValue == null)
+      DrawToolBarView view = bindable as DrawToolBarView;
+      if (newValue == null)
       {
         view.DrawTextToolImage = ImageSource.FromStream(() =>
           typeof(DrawToolBarView).Assembly.GetStreamEmbeddedResource(@"ic_text"));
@@ -467,8 +467,8 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="newValue"></param>
     private static void OnDrawNoneToolImageChanged(BindableObject bindable, object oldValue, object newValue)
     {
-      var view = bindable as DrawToolBarView;
-      if(newValue == null)
+      DrawToolBarView view = bindable as DrawToolBarView;
+      if (newValue == null)
       {
         view.DrawNoneToolImage = ImageSource.FromStream(() =>
           typeof(DrawToolBarView).Assembly.GetStreamEmbeddedResource(@"ic_cancel"));
@@ -504,7 +504,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
       InitializeComponent();
 
       IsVisible = false;
-      var asm = GetType().Assembly;
+      System.Reflection.Assembly asm = GetType().Assembly;
 
       DrawPointToolImage = ImageSource.FromStream(() => asm.GetStreamEmbeddedResource(@"ic_point"));
       DrawPolylineToolImage = ImageSource.FromStream(() => asm.GetStreamEmbeddedResource(@"ic_polyline"));
@@ -535,7 +535,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="e"></param>
     private void DrawingProcess_PropertyChanged(object sender, PropertyChangedEventArgs e)
     {
-      if(e.PropertyName == nameof(DrawingProcess.IsDrawing) && DrawingProcess.IsDrawing)
+      if (e.PropertyName == nameof(DrawingProcess.IsDrawing) && DrawingProcess.IsDrawing)
       {
         IsDrawing = DrawingProcess.IsDrawing;
       }
@@ -550,7 +550,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     {
       Debug.WriteLine("x");
       Debug.WriteLine($"NewGeometry: {e.NewGeometry.ToJson()}");
-      if(Geometry != null && Geometry.Equals(e.NewGeometry))
+      if (Geometry != null && Geometry.Equals(e.NewGeometry))
       {
         IsDrawing = false;
       }
@@ -591,9 +591,9 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="e"></param>
     private void DrawTextToolClicked(object senter, EventArgs e)
     {
-      if(Parent is Layout<View> layout)
+      if (Parent is Layout<View> layout)
       {
-        if(!layout.Children.Contains(Dialog))
+        if (!layout.Children.Contains(Dialog))
         {
           layout.Children.Add(Dialog);
         }
@@ -632,7 +632,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     private void DrawEraseToolClicked(object sender, EventArgs e)
     {
       DrawingProcess.DrawGraphicsOverlay.Graphics.Clear();
-      if(DrawingProcess.SketchEditor.CancelCommand.CanExecute(null))
+      if (DrawingProcess.SketchEditor.CancelCommand.CanExecute(null))
       {
         DrawingProcess.SketchEditor.CancelCommand.Execute(null);
       }
@@ -646,7 +646,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     private void DrawNoneToolClicked(object sender, EventArgs e)
     {
       DrawingProcess.SketchEditor.Stop();
-      if(DrawingProcess.SketchEditor.CancelCommand != null && DrawingProcess.SketchEditor.CancelCommand.CanExecute(null))
+      if (DrawingProcess.SketchEditor.CancelCommand != null && DrawingProcess.SketchEditor.CancelCommand.CanExecute(null))
       {
         DrawingProcess.SketchEditor.CancelCommand.Execute(null);
       }

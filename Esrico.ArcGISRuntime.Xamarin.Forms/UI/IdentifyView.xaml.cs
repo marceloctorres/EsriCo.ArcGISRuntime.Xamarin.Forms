@@ -84,9 +84,9 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="newValue"></param>
     private static void OnIdentifyResultsChanged(BindableObject bindable, object oldValue, object newValue)
     {
-      var identifyView = bindable as IdentifyView;
-      var identifyResults = newValue as IdentifyResults;
-      var oldidentifyResults = oldValue as IdentifyResults;
+      IdentifyView identifyView = bindable as IdentifyView;
+      IdentifyResults identifyResults = newValue as IdentifyResults;
+      IdentifyResults oldidentifyResults = oldValue as IdentifyResults;
 
       identifyView.ClearSelection(oldidentifyResults);
 
@@ -107,17 +107,17 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
       try
       {
         Popup popup;
-        var geoElementResult = identifyResults.GeoElementResults.ElementAt(identifyView.CurrentElementIndex);
+        IdentifyGeoElementResult geoElementResult = identifyResults.GeoElementResults.ElementAt(identifyView.CurrentElementIndex);
         (geoElementResult.Layer as FeatureLayer).SelectFeature(geoElementResult.GeoElement as Feature);
 
         identifyView.TitleText = (geoElementResult.Layer is FeatureLayer) ?
           (geoElementResult.Layer as FeatureLayer).FeatureTable.DisplayName :
           string.Empty;
 
-        if(geoElementResult.Layer is IPopupSource)
+        if (geoElementResult.Layer is IPopupSource)
         {
-          var popupSource = geoElementResult.Layer as IPopupSource;
-          var popupDefinition = popupSource.PopupDefinition;
+          IPopupSource popupSource = geoElementResult.Layer as IPopupSource;
+          PopupDefinition popupDefinition = popupSource.PopupDefinition;
           popup = popupDefinition != null ?
             new Popup(geoElementResult.GeoElement, popupDefinition) :
             Popup.FromGeoElement(geoElementResult.GeoElement);
@@ -126,14 +126,14 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
         {
           popup = Popup.FromGeoElement(geoElementResult.GeoElement);
         }
-        if(popup != null)
+        if (popup != null)
         {
-          var popManager = new PopupManager(popup as Popup);
+          PopupManager popManager = new PopupManager(popup as Popup);
           identifyView.PopupManager = popManager;
         }
         identifyView.StatusText = $"{identifyView.CurrentElementIndex + 1} / {identifyResults.GeoElementResults.Count}";
       }
-      catch(Exception ex)
+      catch (Exception ex)
       {
         Console.WriteLine(ex.Message);
       }
@@ -145,11 +145,11 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// </summary>
     private void ClearSelection(IdentifyResults identifyResuls = null)
     {
-      if(identifyResuls == null)
+      if (identifyResuls == null)
       {
         identifyResuls = IdentifyResults;
       }
-      var geoElementResult = identifyResuls.GeoElementResults.ElementAt(CurrentElementIndex);
+      IdentifyGeoElementResult geoElementResult = identifyResuls.GeoElementResults.ElementAt(CurrentElementIndex);
       (geoElementResult.Layer as FeatureLayer).ClearSelection();
     }
 

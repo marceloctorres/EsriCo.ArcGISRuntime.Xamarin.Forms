@@ -22,11 +22,11 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Converters
     /// <returns></returns>
     public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
     {
-      if(value.GetType() == typeof(double) && targetType == typeof(string))
+      if (value.GetType() == typeof(double) && targetType == typeof(string))
       {
         return ((double)value).ToDms((string)parameter);
       }
-      else if(value.GetType() == typeof(MapPoint) && targetType == typeof(string))
+      else if (value.GetType() == typeof(MapPoint) && targetType == typeof(string))
       {
         return ((MapPoint)value).ToDms();
       }

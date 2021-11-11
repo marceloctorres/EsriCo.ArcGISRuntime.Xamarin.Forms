@@ -129,22 +129,22 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
 
     private async void GeoViewTapped(object sender, GeoViewInputEventArgs e)
     {
-      if(Command != null && AssociatedObject.Map != null)
+      if (Command != null && AssociatedObject.Map != null)
       {
         object item = null;
-        if(Command.CanExecute(item))
+        if (Command.CanExecute(item))
         {
-          var identifyResults = new IdentifyResults();
+          IdentifyResults identifyResults = new IdentifyResults();
 
-          if(GraphicsOverlays != null && GraphicsOverlays.Count > 0)
+          if (GraphicsOverlays != null && GraphicsOverlays.Count > 0)
           {
-            var identifyGraphicOverlayResults = await AssociatedObject.IdentifyGraphicsOverlaysAsync(
+            IReadOnlyList<IdentifyGraphicsOverlayResult> identifyGraphicOverlayResults = await AssociatedObject.IdentifyGraphicsOverlaysAsync(
               e.Position,
               Tolerance,
               ReturnOnlyPopups,
               MaxResults);
 
-            if(identifyGraphicOverlayResults != null)
+            if (identifyGraphicOverlayResults != null)
             {
               identifyResults
                 .GraphicsResults = (from r in identifyGraphicOverlayResults
@@ -158,14 +158,14 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
               ;
             }
           }
-          if(Layers != null && Layers.Count > 0)
+          if (Layers != null && Layers.Count > 0)
           {
-            var identifyLayerResults = await AssociatedObject.IdentifyLayersAsync(
+            IReadOnlyList<IdentifyLayerResult> identifyLayerResults = await AssociatedObject.IdentifyLayersAsync(
               e.Position,
               Tolerance,
               ReturnOnlyPopups,
               MaxResults);
-            if(identifyLayerResults != null)
+            if (identifyLayerResults != null)
             {
               identifyResults
                 .GeoElementResults
@@ -188,7 +188,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
                          });
             }
 
-            foreach(var ir in identifyLayerResults)
+            foreach (IdentifyLayerResult ir in identifyLayerResults)
             {
             }
           }

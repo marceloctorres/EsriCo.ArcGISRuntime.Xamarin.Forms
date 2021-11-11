@@ -37,7 +37,9 @@ items:
       <XamlFilePath("UI\TableOfContentsView.xaml")>
 
       Public Class TableOfContentsView
+
           Inherits LayerListPanelView
+
           Implements INotifyPropertyChanged, IDynamicResourceHandler, IElement, INameScope, INavigationProxy, IStyleSelectable, IAnimatable, IResourcesProvider, IStyleElement, IFlowDirectionController, IPropertyPropagationController, IVisualController, ITabStopElement, IStylable, IViewController, IVisualElementController, IElementController, IGestureController, IGestureRecognizers, ILayout, ILayoutController, IPaddingElement, IControlTemplated
   inheritance:
   - System.Object

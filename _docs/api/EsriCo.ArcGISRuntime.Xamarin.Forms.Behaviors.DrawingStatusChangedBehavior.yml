@@ -33,7 +33,9 @@ items:
     content: 'public class DrawingStatusChangedBehavior : BehaviorBase<GeoView>, INotifyPropertyChanged, IDynamicResourceHandler, IAttachedObject'
     content.vb: >-
       Public Class DrawingStatusChangedBehavior
+
           Inherits BehaviorBase(Of GeoView)
+
           Implements INotifyPropertyChanged, IDynamicResourceHandler, IAttachedObject
   inheritance:
   - System.Object

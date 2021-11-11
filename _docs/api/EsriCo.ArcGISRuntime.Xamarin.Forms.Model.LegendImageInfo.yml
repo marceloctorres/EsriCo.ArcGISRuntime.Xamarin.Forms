@@ -31,7 +31,9 @@ items:
     content: 'public class LegendImageInfo : BindableBase, INotifyPropertyChanged'
     content.vb: >-
       Public Class LegendImageInfo
+
           Inherits BindableBase
+
           Implements INotifyPropertyChanged
   inheritance:
   - System.Object

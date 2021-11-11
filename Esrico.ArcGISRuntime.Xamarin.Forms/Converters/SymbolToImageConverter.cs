@@ -26,14 +26,14 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Converters
     /// <returns></returns>
     public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
     {
-      if(value is Symbol && targetType == typeof(ImageSource))
+      if (value is Symbol && targetType == typeof(ImageSource))
       {
-        var symbol = (Symbol)value;
-        var task = GetImageAsync(symbol);
-        var awaiter = task.GetAwaiter();
+        Symbol symbol = (Symbol)value;
+        Task<ImageSource> task = GetImageAsync(symbol);
+        System.Runtime.CompilerServices.TaskAwaiter<ImageSource> awaiter = task.GetAwaiter();
         awaiter.OnCompleted(() =>
         {
-          var image = task.Result;
+          ImageSource image = task.Result;
         });
         return awaiter.GetResult();
       }
@@ -42,9 +42,9 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Converters
 
     private async Task<ImageSource> GetImageAsync(Symbol symbol)
     {
-      var imageData = await symbol.CreateSwatchAsync();
-      var stream = await imageData.GetEncodedBufferAsync();
-      var imageSource = ImageSource.FromStream(() => stream);
+      Esri.ArcGISRuntime.UI.RuntimeImage imageData = await symbol.CreateSwatchAsync();
+      System.IO.Stream stream = await imageData.GetEncodedBufferAsync();
+      ImageSource imageSource = ImageSource.FromStream(() => stream);
       return imageSource;
     }
     /// <summary>

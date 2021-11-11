@@ -55,10 +55,10 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
     /// <param name="e"></param>
     private void Bindable_DrawStatusChanged(object sender, DrawStatusChangedEventArgs e)
     {
-      if(Command != null)
+      if (Command != null)
       {
         bool inProgress = e.Status == DrawStatus.InProgress;
-        if(Command.CanExecute(inProgress))
+        if (Command.CanExecute(inProgress))
         {
           Command.Execute(inProgress);
         }

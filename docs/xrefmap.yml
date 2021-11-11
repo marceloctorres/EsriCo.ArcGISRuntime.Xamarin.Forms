@@ -1493,6 +1493,19 @@ references:
   isSpec: "True"
   fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.ConfigurationInfo
   nameWithType: ConfigurationInfo.ConfigurationInfo
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.FileExist
+  name: FileExist()
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_ConfigurationInfo_FileExist
+  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.FileExist
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.FileExist()
+  nameWithType: ConfigurationInfo.FileExist()
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.FileExist*
+  name: FileExist
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_ConfigurationInfo_FileExist_
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.FileExist
+  isSpec: "True"
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.FileExist
+  nameWithType: ConfigurationInfo.FileExist
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.FileName
   name: FileName
   href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_ConfigurationInfo_FileName
@@ -1541,6 +1554,12 @@ references:
   fullName.vb: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.LoadAsync(Of T)()
   nameWithType: ConfigurationInfo.LoadAsync<T>()
   nameWithType.vb: ConfigurationInfo.LoadAsync(Of T)()
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.ReadTextFileAsync
+  name: ReadTextFileAsync()
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_ConfigurationInfo_ReadTextFileAsync
+  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.ReadTextFileAsync
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.ReadTextFileAsync()
+  nameWithType: ConfigurationInfo.ReadTextFileAsync()
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.ReadTextFileAsync(System.String)
   name: ReadTextFileAsync(String)
   href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_ConfigurationInfo_ReadTextFileAsync_System_String_
@@ -1567,6 +1586,12 @@ references:
   isSpec: "True"
   fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.SaveAsync
   nameWithType: ConfigurationInfo.SaveAsync
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.WriteTextFileAsync(System.String)
+  name: WriteTextFileAsync(String)
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_ConfigurationInfo_WriteTextFileAsync_System_String_
+  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.WriteTextFileAsync(System.String)
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.WriteTextFileAsync(System.String)
+  nameWithType: ConfigurationInfo.WriteTextFileAsync(String)
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.WriteTextFileAsync(System.String,System.String)
   name: WriteTextFileAsync(String, String)
   href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_ConfigurationInfo_WriteTextFileAsync_System_String_System_String_

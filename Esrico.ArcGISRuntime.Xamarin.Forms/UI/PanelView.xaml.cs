@@ -32,7 +32,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="newValue"></param>
     private static void OnIsManagedPropertyChanged(BindableObject bindable, object oldValue, object newValue)
     {
-      var view = bindable as PanelView;
+      PanelView view = bindable as PanelView;
       view.IsManaged = (bool)newValue;
     }
 
@@ -90,12 +90,12 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="newValue"></param>
     private static void OnIsVisibleChanged(BindableObject bindable, object oldValue, object newValue)
     {
-      var panelView = bindable as PanelView;
+      PanelView panelView = bindable as PanelView;
       bool newVisible = (bool)newValue;
       bool oldVisible = (bool)oldValue;
       panelView.SetVisible(newVisible);
 
-      if(newVisible != oldVisible)
+      if (newVisible != oldVisible)
       {
       }
     }
@@ -109,7 +109,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
       base.IsVisible = visible;
       Content.TranslationX = 0;
       Content.TranslationY = 0;
-      if(visible && IsManaged)
+      if (visible && IsManaged)
       {
         MessagingCenter.Send<PanelView>(this, "IsVisible");
       }
@@ -141,10 +141,10 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="newValue"></param>
     private static void OnHeaderContentChanged(BindableObject bindable, object oldValue, object newValue)
     {
-      if(!ReferenceEquals(newValue, bindable))
+      if (!ReferenceEquals(newValue, bindable))
       {
-        var panelView = (PanelView)bindable;
-        var newView = (View)newValue;
+        PanelView panelView = (PanelView)bindable;
+        View newView = (View)newValue;
 
         panelView.HeaderContentView.Content = newView;
       }
@@ -216,10 +216,10 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="newValue"></param>
     private static void OnFooterContentChanged(BindableObject bindable, object oldValue, object newValue)
     {
-      if(!ReferenceEquals(newValue, bindable))
+      if (!ReferenceEquals(newValue, bindable))
       {
-        var panelView = (PanelView)bindable;
-        var newView = (View)newValue;
+        PanelView panelView = (PanelView)bindable;
+        View newView = (View)newValue;
 
         panelView.FooterContentView.Content = newView;
       }
@@ -255,10 +255,10 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="newValue"></param>
     private static void OnBodyContentPropertyChanged(BindableObject bindable, object oldValue, object newValue)
     {
-      if(!ReferenceEquals(newValue, bindable))
+      if (!ReferenceEquals(newValue, bindable))
       {
-        var panelView = (PanelView)bindable;
-        var newView = (View)newValue;
+        PanelView panelView = (PanelView)bindable;
+        View newView = (View)newValue;
 
         panelView.BodyContentView.Content = newView;
       }
@@ -492,7 +492,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
       CloseButtonImage = ImageSource.FromStream(() => GetType().Assembly.GetStreamEmbeddedResource(@"ic_close"));
       MessagingCenter.Subscribe<PanelView>(this, "IsVisible", (panel) =>
       {
-        if(!ReferenceEquals(this, panel) && IsManaged && IsVisible && panel.IsVisible)
+        if (!ReferenceEquals(this, panel) && IsManaged && IsVisible && panel.IsVisible)
         {
           IsVisible = false;
         }
@@ -524,14 +524,14 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="e"></param>
     private void OnPanUpdated(object sender, PanUpdatedEventArgs e)
     {
-      if(Parent is View parentView)
+      if (Parent is View parentView)
       {
-        var bounds = Bounds;
-        var parentBounds = parentView.Bounds;
-        var x0 = 0.0;
-        var y0 = 0.0;
+        Rectangle bounds = Bounds;
+        Rectangle parentBounds = parentView.Bounds;
+        double x0 = 0.0;
+        double y0 = 0.0;
 
-        switch(e.StatusType)
+        switch (e.StatusType)
         {
           case GestureStatus.Started:
             x0 = bounds.Left;

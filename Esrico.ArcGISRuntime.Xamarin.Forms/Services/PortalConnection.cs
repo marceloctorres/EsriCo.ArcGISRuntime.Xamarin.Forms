@@ -133,10 +133,10 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
       get => _baseUrl;
       set
       {
-        if(_baseUrl != value)
+        if (_baseUrl != value)
         {
           _baseUrl = value;
-          if(!string.IsNullOrEmpty(_baseUrl))
+          if (!string.IsNullOrEmpty(_baseUrl))
           {
             ServerRegisterUrl = ResetSharingUrl(_baseUrl);
             ServerRegister();
@@ -228,7 +228,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     /// <returns></returns>
     private string ResetSharingUrl(string baseUrl)
     {
-      var uriBuilder = new UriBuilder(baseUrl);
+      UriBuilder uriBuilder = new UriBuilder(baseUrl);
       uriBuilder.Path = !baseUrl.Contains("/sharing/rest") ?
         string.Concat(uriBuilder.Path, uriBuilder.Path.EndsWith("/") ?
           "sharing/rest" :
@@ -243,7 +243,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     /// <returns></returns>
     private string SubDomainUrl()
     {
-      var uriBuilder = new UriBuilder(BaseUrl);
+      UriBuilder uriBuilder = new UriBuilder(BaseUrl);
       uriBuilder.Host = !string.IsNullOrEmpty(PortalInfo.OrganizationSubdomain) ?
         string.Concat(PortalInfo.OrganizationSubdomain, ".", PortalInfo.CustomBaseDomain) :
         uriBuilder.Host;
@@ -290,7 +290,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     {
       try
       {
-        var loginType = await ArcGISPortal.GetLoginTypeForUriAsync(new Uri(BaseUrl));
+        PortalLoginType loginType = await ArcGISPortal.GetLoginTypeForUriAsync(new Uri(BaseUrl));
         AuthenticationManager.Current.ChallengeHandler = new ChallengeHandler(CreateCredentialAsync);
 
         if (loginType != PortalLoginType.UsernamePassword)
@@ -317,12 +317,12 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
         OrganizationName = PortalInfo.OrganizationName;
         OrganizationSubDomain = SubDomainUrl();
 
-        var licenseInfo = await Portal.GetLicenseInfoAsync();
+        LicenseInfo licenseInfo = await Portal.GetLicenseInfoAsync();
         ArcGISRuntimeEnvironment.SetLicense(licenseInfo);
 
         SignedIn = true;
       }
-      catch(Exception ex)
+      catch (Exception ex)
       {
         Console.WriteLine(ex);
         throw ex;
@@ -348,7 +348,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     /// <returns></returns>
     public async Task<Map> GetMapAsync()
     {
-      var item = await PortalItem.CreateAsync(Portal, WebMapId);
+      PortalItem item = await PortalItem.CreateAsync(Portal, WebMapId);
       return new Map(item);
     }
 
@@ -359,7 +359,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     /// <returns></returns>
     public async Task<Map> GetMapAsync(string webMapId)
     {
-      var item = await PortalItem.CreateAsync(Portal, webMapId);
+      PortalItem item = await PortalItem.CreateAsync(Portal, webMapId);
       return new Map(item);
     }
 
@@ -375,7 +375,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     /// <returns></returns>
     public async Task<string> GetLicenseInfoJsonAsync()
     {
-      var licenseInfo = await Portal.GetLicenseInfoAsync();
+      LicenseInfo licenseInfo = await Portal.GetLicenseInfoAsync();
       return licenseInfo.ToJson();
     }
 
@@ -384,7 +384,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     /// </summary>
     private void ServerRegister()
     {
-      var serverInfo = new ServerInfo(new Uri(ServerRegisterUrl))
+      ServerInfo serverInfo = new ServerInfo(new Uri(ServerRegisterUrl))
       {
         TokenAuthenticationType = TokenAuthenticationType,
       };
@@ -396,7 +396,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     /// </summary>
     private void GetUserImageString()
     {
-      var token = CancellationToken.None;
+      CancellationToken token = CancellationToken.None;
       Task<Stream> task = PortalUser.GetThumbnailDataAsync(token);
       Stream s = task.Result ?? GetType().Assembly.GetStreamEmbeddedResource("ic_user");
 
@@ -411,8 +411,8 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     {
       try
       {
-        var uri = new Uri($"{ServerRegisterUrl}");
-        var now = DateTime.Now;
+        Uri uri = new Uri($"{ServerRegisterUrl}");
+        DateTime now = DateTime.Now;
 
         Credential = await AuthenticationManager.Current.GenerateCredentialAsync(
           uri,
@@ -440,9 +440,9 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     /// <returns></returns>
     public PortalGroup GetGroup(string groupTitle)
     {
-      if(PortalUser != null)
+      if (PortalUser != null)
       {
-        var groups = PortalUser.Groups;
+        IEnumerable<PortalGroup> groups = PortalUser.Groups;
         return groups.Where(g => g.Title == groupTitle).FirstOrDefault();
       }
       return null;
@@ -455,12 +455,12 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     /// <returns></returns>
     public async Task<List<PortalItem>> GetWebMapItemsByGroupAsync(PortalGroup group)
     {
-      var portalQueryParams = new PortalQueryParameters($"type:\"web map\" group:{group.GroupId}")
+      PortalQueryParameters portalQueryParams = new PortalQueryParameters($"type:\"web map\" group:{group.GroupId}")
       {
         SortField = "Title",
         SortOrder = PortalQuerySortOrder.Ascending,
       };
-      var results = await Portal.FindItemsAsync(portalQueryParams);
+      PortalQueryResultSet<PortalItem> results = await Portal.FindItemsAsync(portalQueryParams);
       return results.Results.ToList();
     }
 
@@ -472,8 +472,8 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     /// <returns></returns>
     public async Task<PortalItem> GetWebMapItemByGroupAndTitleAsync(PortalGroup group, string itemTitle)
     {
-      var webMapItems = await GetWebMapItemsByGroupAsync(group);
-      if(webMapItems != null)
+      List<PortalItem> webMapItems = await GetWebMapItemsByGroupAsync(group);
+      if (webMapItems != null)
       {
         return webMapItems.Where(i => i.Title == itemTitle).FirstOrDefault();
       }

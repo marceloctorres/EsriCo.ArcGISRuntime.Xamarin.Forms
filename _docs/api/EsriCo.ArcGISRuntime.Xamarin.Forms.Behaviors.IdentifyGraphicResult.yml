@@ -32,7 +32,9 @@ items:
     content: 'public class IdentifyGraphicResult : BindableBase, INotifyPropertyChanged'
     content.vb: >-
       Public Class IdentifyGraphicResult
+
           Inherits BindableBase
+
           Implements INotifyPropertyChanged
   inheritance:
   - System.Object

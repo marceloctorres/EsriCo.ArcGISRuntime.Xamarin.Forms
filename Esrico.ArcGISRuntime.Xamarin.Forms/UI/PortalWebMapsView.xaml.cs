@@ -110,7 +110,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
       {
         InitializeComponent();
       }
-      catch(Exception ex)
+      catch (Exception ex)
       {
         Debug.WriteLine(ex.Message);
       }

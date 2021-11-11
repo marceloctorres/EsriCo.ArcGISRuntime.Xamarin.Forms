@@ -27,19 +27,19 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Extensions
     /// <returns></returns>
     public static string ToDms(this double value, string axis)
     {
-      var sSing = string.Empty;
-      var sign = Math.Sign(value);
+      string sSing = string.Empty;
+      int sign = Math.Sign(value);
       value = Math.Abs(value);
 
-      if(!string.IsNullOrEmpty(axis))
+      if (!string.IsNullOrEmpty(axis))
       {
         sSing = axis.ToUpper() == "X" ? sign > 0 ? "E" : "W" : sign > 0 ? "N" : "S";
         sign = 1;
       }
 
-      var degree = Math.Floor(value);
-      var minutes = Math.Floor((value - degree) * 60);
-      var seconds = ((value - degree) * 60 - minutes) * 60;
+      double degree = Math.Floor(value);
+      double minutes = Math.Floor((value - degree) * 60);
+      double seconds = ((value - degree) * 60 - minutes) * 60;
 
       return string.Format("{0:0}°{1:00}'{2:00.000}\" {3}", sign * degree, minutes, seconds, sSing);
     }
@@ -60,8 +60,8 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Extensions
     public static bool AreEquals(this Viewpoint vp, Viewpoint otro)
     {
 
-      var json = vp.ToJson();
-      var jsonOtro = otro != null ? otro.ToJson() : string.Empty;
+      string json = vp.ToJson();
+      string jsonOtro = otro != null ? otro.ToJson() : string.Empty;
       Debug.WriteLine($"Viewpoint 1:{json}");
       Debug.WriteLine($"Viewpoint 2:{jsonOtro}");
 
@@ -98,7 +98,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Extensions
     public static string ToBase64String(this Stream s)
     {
       byte[] bytes = null;
-      using(var ms = new MemoryStream())
+      using (MemoryStream ms = new MemoryStream())
       {
         s.CopyTo(ms);
         bytes = ms.ToArray();
@@ -114,8 +114,8 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Extensions
     /// <returns></returns>
     public static Stream GetStreamEmbeddedResource(this Assembly assembly, string resource)
     {
-      var fullName = assembly.GetManifestResourceNames().Where(s => s.Contains(resource)).FirstOrDefault();
-      if(!string.IsNullOrEmpty(fullName))
+      string fullName = assembly.GetManifestResourceNames().Where(s => s.Contains(resource)).FirstOrDefault();
+      if (!string.IsNullOrEmpty(fullName))
       {
         return assembly.GetManifestResourceStream(fullName);
       }

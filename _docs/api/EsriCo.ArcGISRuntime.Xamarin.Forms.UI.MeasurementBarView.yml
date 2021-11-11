@@ -63,7 +63,9 @@ items:
       <XamlFilePath("UI\MeasurementView.xaml")>
 
       Public Class MeasurementBarView
+
           Inherits PanelView
+
           Implements INotifyPropertyChanged, IDynamicResourceHandler, IElement, INameScope, INavigationProxy, IStyleSelectable, IAnimatable, IResourcesProvider, IStyleElement, IFlowDirectionController, IPropertyPropagationController, IVisualController, ITabStopElement, IStylable, IViewController, IVisualElementController, IElementController, IGestureController, IGestureRecognizers, ILayout, ILayoutController, IPaddingElement, IControlTemplated
   inheritance:
   - System.Object

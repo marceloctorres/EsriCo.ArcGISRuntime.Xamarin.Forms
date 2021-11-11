@@ -30,9 +30,9 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     private void OKButton_Clicked(object sender, EventArgs e)
     {
       IsVisible = false;
-      if(AcceptCommand != null)
+      if (AcceptCommand != null)
       {
-        if(AcceptCommand.CanExecute(null))
+        if (AcceptCommand.CanExecute(null))
         {
           AcceptCommand.Execute(Text);
         }

@@ -101,7 +101,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
         InitializeComponent();
         IsPasswordHidden = true;
       }
-      catch(Exception ex)
+      catch (Exception ex)
       {
         Console.WriteLine(ex.Message);
       }

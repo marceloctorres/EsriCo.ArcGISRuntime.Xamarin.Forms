@@ -97,16 +97,16 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
         IsDrawing = true;
         MapView.SketchEditor = SketchEditor;
 
-        var geometry = await SketchEditor.StartAsync(mode, false);
+        Geometry geometry = await SketchEditor.StartAsync(mode, false);
         Symbol symbol = null;
 
-        if(!string.IsNullOrEmpty(text))
+        if (!string.IsNullOrEmpty(text))
         {
           symbol = TextSymbol(text);
         }
         else
         {
-          switch(mode)
+          switch (mode)
           {
             case SketchCreationMode.Point:
               symbol = PointSymbol();
@@ -133,11 +133,11 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
         DrawGraphicsOverlay?.Graphics.Add(new Graphic() { Geometry = geometry, Symbol = symbol });
         IsDrawing = false;
       }
-      catch(TaskCanceledException ex)
+      catch (TaskCanceledException ex)
       {
         Debug.WriteLine(ex.Message);
       }
-      catch(Exception ex)
+      catch (Exception ex)
       {
         Debug.WriteLine(ex.Message);
       }
@@ -153,7 +153,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <returns></returns>
     private Symbol PointSymbol()
     {
-      var fillColor = Color.FromArgb(128, Color);
+      Color fillColor = Color.FromArgb(128, Color);
       return new SimpleMarkerSymbol()
       {
         Color = fillColor,
@@ -179,7 +179,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <returns></returns>
     private Symbol PolygonSymbol()
     {
-      var fillColor = Color.FromArgb(128, Color);
+      Color fillColor = Color.FromArgb(128, Color);
       return new SimpleFillSymbol()
       {
         Color = fillColor,
@@ -213,7 +213,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     protected override void OnPropertyChanged(PropertyChangedEventArgs args)
     {
       base.OnPropertyChanged(args);
-      if(args.PropertyName == nameof(SketchEditor))
+      if (args.PropertyName == nameof(SketchEditor))
       {
         SketchEditor.GeometryChanged += SketchEditor_GeometryChanged;
       }
@@ -226,7 +226,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="e"></param>
     private void SketchEditor_GeometryChanged(object sender, GeometryChangedEventArgs e)
     {
-      if(e.NewGeometry.Equals(e.OldGeometry))
+      if (e.NewGeometry.Equals(e.OldGeometry))
       {
         Debug.WriteLine(e);
       }

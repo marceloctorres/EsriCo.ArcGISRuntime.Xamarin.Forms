@@ -55,7 +55,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     public PortalConnectionsView()
     {
       InitializeComponent();
-      var asm = GetType().Assembly;
+      System.Reflection.Assembly asm = GetType().Assembly;
 
       LoginImage = ImageSource.FromStream(() => asm.GetStreamEmbeddedResource(@"ic_key"));
       ActiveImage = ImageSource.FromStream(() => asm.GetStreamEmbeddedResource(@"ic_checked"));

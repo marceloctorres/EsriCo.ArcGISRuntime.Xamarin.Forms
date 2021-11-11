@@ -32,7 +32,9 @@ items:
     content: 'public class SetViewpointBehavior : BehaviorBase<GeoView>, INotifyPropertyChanged, IDynamicResourceHandler, IAttachedObject'
     content.vb: >-
       Public Class SetViewpointBehavior
+
           Inherits BehaviorBase(Of GeoView)
+
           Implements INotifyPropertyChanged, IDynamicResourceHandler, IAttachedObject
   inheritance:
   - System.Object

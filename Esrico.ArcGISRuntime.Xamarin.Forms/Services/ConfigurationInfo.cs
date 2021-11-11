@@ -1,4 +1,5 @@
 ﻿using System.IO;
+using System.Linq;
 using System.Threading.Tasks;
 
 using Newtonsoft.Json;
@@ -30,8 +31,8 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     /// <returns></returns>
     public async Task SaveAsync()
     {
-      string json = JsonConvert.SerializeObject(this);
-      await WriteTextFileAsync(FileName, json);
+      string text = JsonConvert.SerializeObject(this);
+      await WriteTextFileAsync(text);
     }
 
     /// <summary>
@@ -43,19 +44,29 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     /// <summary>
     /// 
     /// </summary>
+    /// <returns></returns>
+    public virtual bool FileExist()
+    {
+      string filePath = Path.Combine(Folder, FileName);
+      return File.Exists(filePath);
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
     /// <typeparam name="T"></typeparam>
     /// <returns></returns>
     protected virtual async Task LoadAsync<T>() where T : ConfigurationInfo
     {
-      var json = await ReadTextFileAsync(FileName);
-      if(!string.IsNullOrEmpty(json))
+      string text = await ReadTextFileAsync();
+      if (!string.IsNullOrEmpty(text))
       {
-        T configuration = JsonConvert.DeserializeObject<T>(json);
+        T configuration = JsonConvert.DeserializeObject<T>(text);
 
-        var t = configuration.GetType();
-        var propertyInfos = t.GetProperties();
+        System.Type t = configuration.GetType();
+        System.Reflection.PropertyInfo[] propertyInfos = t.GetProperties().Where(pi => pi.CanWrite).ToArray();
 
-        foreach(var pi in propertyInfos)
+        foreach (System.Reflection.PropertyInfo pi in propertyInfos)
         {
           object value = pi.GetValue(configuration);
           pi.SetValue(this, value);
@@ -66,16 +77,35 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     /// <summary>
     /// 
     /// </summary>
+    /// <param name="text"></param>
+    /// <returns></returns>
+    protected async Task WriteTextFileAsync(string text)
+    {
+      await WriteTextFileAsync(FileName, text);
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
     /// <param name="filename"></param>
     /// <param name="text"></param>
     /// <returns></returns>
     protected async Task WriteTextFileAsync(string filename, string text)
     {
-      var filePath = Path.Combine(Folder, filename);
-      using(StreamWriter writer = File.CreateText(filePath))
+      string filePath = Path.Combine(Folder, filename);
+      using (StreamWriter writer = File.CreateText(filePath))
       {
         await writer.WriteAsync(text);
       }
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <returns></returns>
+    protected async Task<string> ReadTextFileAsync()
+    {
+      return await ReadTextFileAsync(FileName);
     }
 
     /// <summary>
@@ -85,10 +115,10 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     /// <returns></returns>
     protected async Task<string> ReadTextFileAsync(string filename)
     {
-      var filePath = Path.Combine(Folder, filename);
-      if(File.Exists(filePath))
+      string filePath = Path.Combine(Folder, filename);
+      if (File.Exists(filePath))
       {
-        using(StreamReader reader = File.OpenText(filePath))
+        using (StreamReader reader = File.OpenText(filePath))
         {
           return await reader.ReadToEndAsync();
         }
@@ -96,10 +126,10 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
       return string.Empty;
     }
 
-
     /// <summary>
     /// 
     /// </summary>
     public ConfigurationInfo() => Folder = FileSystem.AppDataDirectory;
   }
 }
+ 

@@ -6,12 +6,15 @@ items:
   parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
   children:
   - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.#ctor
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.FileExist
   - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.FileName
   - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.Folder
   - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.LoadAsync
   - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.LoadAsync``1
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.ReadTextFileAsync
   - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.ReadTextFileAsync(System.String)
   - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.SaveAsync
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.WriteTextFileAsync(System.String)
   - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.WriteTextFileAsync(System.String,System.String)
   langs:
   - csharp
@@ -27,7 +30,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: ConfigurationInfo
     path: Services/ConfigurationInfo.cs
-    startLine: 14
+    startLine: 15
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -37,7 +40,9 @@ items:
     content: 'public class ConfigurationInfo : BindableBase, INotifyPropertyChanged, IConfigurationInfo'
     content.vb: >-
       Public Class ConfigurationInfo
+
           Inherits BindableBase
+
           Implements INotifyPropertyChanged, IConfigurationInfo
   inheritance:
   - System.Object
@@ -82,7 +87,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: FileName
     path: Services/ConfigurationInfo.cs
-    startLine: 19
+    startLine: 20
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -121,7 +126,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: Folder
     path: Services/ConfigurationInfo.cs
-    startLine: 24
+    startLine: 25
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -160,7 +165,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: SaveAsync
     path: Services/ConfigurationInfo.cs
-    startLine: 30
+    startLine: 31
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -198,7 +203,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: LoadAsync
     path: Services/ConfigurationInfo.cs
-    startLine: 40
+    startLine: 41
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -220,6 +225,43 @@ items:
   modifiers.vb:
   - Public
   - Overridable
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.FileExist
+  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.FileExist
+  id: FileExist
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo
+  langs:
+  - csharp
+  - vb
+  name: FileExist()
+  nameWithType: ConfigurationInfo.FileExist()
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.FileExist()
+  type: Method
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/ConfigurationInfo.cs
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
+    id: FileExist
+    path: Services/ConfigurationInfo.cs
+    startLine: 47
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public virtual bool FileExist()
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Overridable Function FileExist As Boolean
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.FileExist*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.LoadAsync``1
   commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.LoadAsync``1
   id: LoadAsync``1
@@ -238,7 +280,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: LoadAsync
     path: Services/ConfigurationInfo.cs
-    startLine: 47
+    startLine: 58
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -247,6 +289,7 @@ items:
   syntax:
     content: >-
       protected virtual async Task LoadAsync<T>()
+
           where T : ConfigurationInfo
     typeParameters:
     - id: T
@@ -266,6 +309,46 @@ items:
   - Overridable
   fullName.vb: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.LoadAsync(Of T)()
   name.vb: LoadAsync(Of T)()
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.WriteTextFileAsync(System.String)
+  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.WriteTextFileAsync(System.String)
+  id: WriteTextFileAsync(System.String)
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo
+  langs:
+  - csharp
+  - vb
+  name: WriteTextFileAsync(String)
+  nameWithType: ConfigurationInfo.WriteTextFileAsync(String)
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.WriteTextFileAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/ConfigurationInfo.cs
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
+    id: WriteTextFileAsync
+    path: Services/ConfigurationInfo.cs
+    startLine: 81
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: protected async Task WriteTextFileAsync(string text)
+    parameters:
+    - id: text
+      type: System.String
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task
+      description: ''
+    content.vb: Protected Function WriteTextFileAsync(text As String) As Task
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.WriteTextFileAsync*
+  modifiers.csharp:
+  - protected
+  - async
+  modifiers.vb:
+  - Protected
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.WriteTextFileAsync(System.String,System.String)
   commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.WriteTextFileAsync(System.String,System.String)
   id: WriteTextFileAsync(System.String,System.String)
@@ -284,7 +367,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: WriteTextFileAsync
     path: Services/ConfigurationInfo.cs
-    startLine: 71
+    startLine: 92
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -309,6 +392,42 @@ items:
   - async
   modifiers.vb:
   - Protected
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.ReadTextFileAsync
+  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.ReadTextFileAsync
+  id: ReadTextFileAsync
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo
+  langs:
+  - csharp
+  - vb
+  name: ReadTextFileAsync()
+  nameWithType: ConfigurationInfo.ReadTextFileAsync()
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.ReadTextFileAsync()
+  type: Method
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/ConfigurationInfo.cs
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
+    id: ReadTextFileAsync
+    path: Services/ConfigurationInfo.cs
+    startLine: 105
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: protected async Task<string> ReadTextFileAsync()
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+      description: ''
+    content.vb: Protected Function ReadTextFileAsync As Task(Of String)
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.ReadTextFileAsync*
+  modifiers.csharp:
+  - protected
+  - async
+  modifiers.vb:
+  - Protected
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.ReadTextFileAsync(System.String)
   commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.ReadTextFileAsync(System.String)
   id: ReadTextFileAsync(System.String)
@@ -327,7 +446,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: ReadTextFileAsync
     path: Services/ConfigurationInfo.cs
-    startLine: 85
+    startLine: 115
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -367,7 +486,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: .ctor
     path: Services/ConfigurationInfo.cs
-    startLine: 102
+    startLine: 131
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -1210,6 +1329,18 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.FileExist*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.FileExist
+  name: FileExist
+  nameWithType: ConfigurationInfo.FileExist
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.FileExist
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.WriteTextFileAsync*
   commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.WriteTextFileAsync
   name: WriteTextFileAsync
