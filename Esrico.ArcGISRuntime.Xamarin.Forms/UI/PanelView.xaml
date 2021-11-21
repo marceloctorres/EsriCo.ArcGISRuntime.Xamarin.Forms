@@ -65,19 +65,19 @@
                   <ColumnDefinition Width="*" />
                   <ColumnDefinition Width="auto" />
                 </Grid.ColumnDefinitions>
-                <Label Margin="0"
-                       Style="{StaticResource TitleLabel}"
-                       Text="{Binding TitleText, Source={x:Reference view}}"
-                       TextColor="{Binding TitleTextColor,Source={x:Reference view}}"
-                       HorizontalOptions="Start"
-                       VerticalOptions="CenterAndExpand"
-                       HorizontalTextAlignment="Start"
-                       VerticalTextAlignment="Center" />
-                <Button Grid.Column="1"
-                        Style="{StaticResource TitleBarToolButton}"
-                        ImageSource="{Binding CloseButtonImage,Source={x:Reference view}}"
-                        Clicked="OnCloseButtonClicked" />
-              </Grid>
+              <Label Margin="0"
+                     Style="{DynamicResource TitleLabel}"
+                     Text="{Binding TitleText, Source={x:Reference view}}"
+                     TextColor="{Binding TitleTextColor,Source={x:Reference view}}"
+                     HorizontalOptions="Start"
+                     VerticalOptions="CenterAndExpand"
+                     HorizontalTextAlignment="Start"
+                     VerticalTextAlignment="Center" />
+              <Button Grid.Column="1"
+                      Style="{DynamicResource TitleBarToolButton}"
+                      ImageSource="{Binding CloseButtonImage,Source={x:Reference view}}"
+                      Clicked="OnCloseButtonClicked" />
+            </Grid>
             </Frame>
             <Frame x:Name="BodyFrame"
                    Grid.Row="1"
@@ -129,15 +129,15 @@
                            HorizontalOptions="FillAndExpand">
                 <Label Margin="0"
                        Text="" />
-                <Label Margin="0"
-                       Style="{StaticResource NormalLabel}"
-                       Text="{Binding StatusText,Source={x:Reference view}} "
-                       TextColor="{Binding StatusTextColor,Source={x:Reference view}}"
-                       HorizontalOptions="StartAndExpand"
-                       VerticalOptions="CenterAndExpand"
-                       HorizontalTextAlignment="Start"
-                       VerticalTextAlignment="Center" />
-              </StackLayout>
+              <Label Margin="0"
+                     Style="{DynamicResource NormalLabel}"
+                     Text="{Binding StatusText,Source={x:Reference view}} "
+                     TextColor="{Binding StatusTextColor,Source={x:Reference view}}"
+                     HorizontalOptions="StartAndExpand"
+                     VerticalOptions="CenterAndExpand"
+                     HorizontalTextAlignment="Start"
+                     VerticalTextAlignment="Center" />
+            </StackLayout>
             </Frame>
           </Grid>
         </Frame>

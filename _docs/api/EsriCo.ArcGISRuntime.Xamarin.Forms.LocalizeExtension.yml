@@ -36,7 +36,6 @@ items:
       <ContentProperty("Text")>
 
       Public Class LocalizeExtension
-
           Implements IMarkupExtension
   inheritance:
   - System.Object

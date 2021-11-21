@@ -31,7 +31,6 @@ items:
     content: 'public class SymbolToImageConverter : IValueConverter'
     content.vb: >-
       Public Class SymbolToImageConverter
-
           Implements IValueConverter
   inheritance:
   - System.Object

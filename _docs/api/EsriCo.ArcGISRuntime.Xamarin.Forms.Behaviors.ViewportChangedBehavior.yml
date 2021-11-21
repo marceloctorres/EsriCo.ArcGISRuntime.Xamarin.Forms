@@ -31,9 +31,7 @@ items:
     content: 'public class ViewportChangedBehavior : BehaviorBase<GeoView>, INotifyPropertyChanged, IDynamicResourceHandler, IAttachedObject'
     content.vb: >-
       Public Class ViewportChangedBehavior
-
           Inherits BehaviorBase(Of GeoView)
-
           Implements INotifyPropertyChanged, IDynamicResourceHandler, IAttachedObject
   inheritance:
   - System.Object

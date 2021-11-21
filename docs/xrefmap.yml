@@ -1532,6 +1532,19 @@ references:
   isSpec: "True"
   fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.Folder
   nameWithType: ConfigurationInfo.Folder
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.IsLoaded
+  name: IsLoaded
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_ConfigurationInfo_IsLoaded
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.IsLoaded
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.IsLoaded
+  nameWithType: ConfigurationInfo.IsLoaded
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.IsLoaded*
+  name: IsLoaded
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_ConfigurationInfo_IsLoaded_
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.IsLoaded
+  isSpec: "True"
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.IsLoaded
+  nameWithType: ConfigurationInfo.IsLoaded
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.LoadAsync
   name: LoadAsync()
   href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_ConfigurationInfo_LoadAsync
@@ -1727,6 +1740,19 @@ references:
   commentId: T:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo
   fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo
   nameWithType: IConfigurationInfo
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.FileExist
+  name: FileExist()
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IConfigurationInfo_FileExist
+  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.FileExist
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.FileExist()
+  nameWithType: IConfigurationInfo.FileExist()
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.FileExist*
+  name: FileExist
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IConfigurationInfo_FileExist_
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.FileExist
+  isSpec: "True"
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.FileExist
+  nameWithType: IConfigurationInfo.FileExist
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.FileName
   name: FileName
   href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IConfigurationInfo_FileName
@@ -1753,6 +1779,19 @@ references:
   isSpec: "True"
   fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.Folder
   nameWithType: IConfigurationInfo.Folder
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.IsLoaded
+  name: IsLoaded
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IConfigurationInfo_IsLoaded
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.IsLoaded
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.IsLoaded
+  nameWithType: IConfigurationInfo.IsLoaded
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.IsLoaded*
+  name: IsLoaded
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IConfigurationInfo_IsLoaded_
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.IsLoaded
+  isSpec: "True"
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.IsLoaded
+  nameWithType: IConfigurationInfo.IsLoaded
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.LoadAsync
   name: LoadAsync()
   href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IConfigurationInfo_LoadAsync

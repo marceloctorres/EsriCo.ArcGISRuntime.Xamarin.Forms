@@ -38,9 +38,7 @@ items:
       <XamlFilePath("UI\ModalPanelView.xaml")>
 
       Public Class ModalPanelView
-
           Inherits PanelView
-
           Implements INotifyPropertyChanged, IDynamicResourceHandler, IElement, INameScope, INavigationProxy, IStyleSelectable, IAnimatable, IResourcesProvider, IStyleElement, IFlowDirectionController, IPropertyPropagationController, IVisualController, ITabStopElement, IStylable, IViewController, IVisualElementController, IElementController, IGestureController, IGestureRecognizers, ILayout, ILayoutController, IPaddingElement, IControlTemplated
   inheritance:
   - System.Object

@@ -5,8 +5,10 @@ items:
   id: IConfigurationInfo
   parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
   children:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.FileExist
   - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.FileName
   - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.Folder
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.IsLoaded
   - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.LoadAsync
   - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.SaveAsync
   langs:
@@ -106,6 +108,72 @@ items:
   modifiers.csharp:
   - get
   - set
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.IsLoaded
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.IsLoaded
+  id: IsLoaded
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo
+  langs:
+  - csharp
+  - vb
+  name: IsLoaded
+  nameWithType: IConfigurationInfo.IsLoaded
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.IsLoaded
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IConfigurationInfo.cs
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
+    id: IsLoaded
+    path: Services/IConfigurationInfo.cs
+    startLine: 25
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: bool IsLoaded { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsLoaded As Boolean
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.IsLoaded*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.FileExist
+  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.FileExist
+  id: FileExist
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo
+  langs:
+  - csharp
+  - vb
+  name: FileExist()
+  nameWithType: IConfigurationInfo.FileExist()
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.FileExist()
+  type: Method
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IConfigurationInfo.cs
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
+    id: FileExist
+    path: Services/IConfigurationInfo.cs
+    startLine: 31
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: bool FileExist()
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Function FileExist As Boolean
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.FileExist*
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.LoadAsync
   commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.LoadAsync
   id: LoadAsync
@@ -124,7 +192,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: LoadAsync
     path: Services/IConfigurationInfo.cs
-    startLine: 26
+    startLine: 37
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -155,7 +223,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: SaveAsync
     path: Services/IConfigurationInfo.cs
-    startLine: 32
+    startLine: 43
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -197,6 +265,23 @@ references:
   name: Folder
   nameWithType: IConfigurationInfo.Folder
   fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.Folder
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.IsLoaded*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.IsLoaded
+  name: IsLoaded
+  nameWithType: IConfigurationInfo.IsLoaded
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.IsLoaded
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.FileExist*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.FileExist
+  name: FileExist
+  nameWithType: IConfigurationInfo.FileExist
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.FileExist
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.LoadAsync*
   commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.LoadAsync
   name: LoadAsync

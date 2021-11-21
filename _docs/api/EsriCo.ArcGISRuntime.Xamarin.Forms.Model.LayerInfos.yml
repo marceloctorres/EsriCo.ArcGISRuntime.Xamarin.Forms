@@ -31,9 +31,7 @@ items:
     content: 'public class LayerInfos : List<LayerInfo>, IList<LayerInfo>, ICollection<LayerInfo>, IReadOnlyList<LayerInfo>, IReadOnlyCollection<LayerInfo>, IEnumerable<LayerInfo>, IList, ICollection, IEnumerable'
     content.vb: >-
       Public Class LayerInfos
-
           Inherits List(Of LayerInfo)
-
           Implements IList(Of LayerInfo), ICollection(Of LayerInfo), IReadOnlyList(Of LayerInfo), IReadOnlyCollection(Of LayerInfo), IEnumerable(Of LayerInfo), IList, ICollection, IEnumerable
   inheritance:
   - System.Object

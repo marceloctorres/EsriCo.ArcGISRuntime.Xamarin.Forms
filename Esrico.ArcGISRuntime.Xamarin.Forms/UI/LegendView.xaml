@@ -23,7 +23,7 @@
             <RowDefinition Height="Auto" />
           </Grid.RowDefinitions>
           <Label  Grid.Column="0"
-                  Style="{StaticResource NormalLabel}"
+                  Style="{DynamicResource NormalLabel}"
                   Text="{Binding Layer.Name}"
                   VerticalOptions="Center" />
           <Label Grid.Column="1"
@@ -46,7 +46,7 @@
           <Label Grid.Row="0"
                  Margin="0"
                  Text="{Binding GroupLayerInfo.Layer.Name}"
-                 Style="{StaticResource BoldLabel}"
+                 Style="{DynamicResource BoldLabel}"
                  VerticalOptions="Center" />
           <ListView x:Name="innerListView"
                     Grid.Row="1"
@@ -74,7 +74,7 @@
                            HorizontalOptions="EndAndExpand"
                            VerticalOptions="CenterAndExpand" />
                     <Label Grid.Column="1"
-                           Style="{StaticResource NormalLabel}"
+                           Style="{DynamicResource NormalLabel}"
                            Text="{Binding Name}"
                            Margin="1"
                            HorizontalOptions="StartAndExpand"

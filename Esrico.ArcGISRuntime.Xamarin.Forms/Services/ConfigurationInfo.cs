@@ -28,6 +28,11 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     /// <summary>
     /// 
     /// </summary>
+    public bool IsLoaded { get; set; }
+
+    /// <summary>
+    /// 
+    /// </summary>
     /// <returns></returns>
     public async Task SaveAsync()
     {
@@ -39,7 +44,10 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     /// 
     /// </summary>
     /// <returns></returns>
-    public virtual async Task LoadAsync() => await Task.Delay(0);
+    public virtual async Task LoadAsync()
+    {
+      await Task.Delay(0);
+    }
 
     /// <summary>
     /// 

@@ -27,15 +27,15 @@
         <RowDefinition Height="*" />
       </Grid.RowDefinitions>
       <Button Clicked="ZoomInButtonClicked"
-              Style="{StaticResource ToolButton}"
+              Style="{DynamicResource ToolButton}"
               Image="{Binding ZoomInButtonImage,Source={x:Reference view}}"/>
       <Button Grid.Row="1"
               Clicked="HomeButtonClicked"
-              Style="{StaticResource ToolButton}"
+              Style="{DynamicResource ToolButton}"
               Image="{Binding HomeButtonImage,Source={x:Reference view}}"/>
       <Button Grid.Row="2"
               Clicked="ZoomOutButtonClicked"
-              Style="{StaticResource ToolButton}"
+              Style="{DynamicResource ToolButton}"
               Image="{Binding ZoomOutButtonImage,Source={x:Reference view}}"/>
     </Grid>
   </ContentView.Content>

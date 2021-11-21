@@ -45,7 +45,7 @@
                 VerticalOptions="StartAndExpand"
                 BackgroundColor="White">
             <Label Text="{x:Static root:AppResources.PortalsLabelText}"
-                   Style="{StaticResource TitleFont}"
+                   Style="{DynamicResource TitleFont}"
                    FontAttributes="Bold"
                    TextColor="Black" />
           </Grid>
@@ -133,20 +133,20 @@
                   </RelativeLayout>
                   <Label Grid.Row="0"
                          Grid.Column="1"
-                         Text="{Binding UserName}" 
-                         Style="{StaticResource BoldLabel}"/>
+                         Text="{Binding UserName}"
+                         Style="{DynamicResource BoldLabel}"/>
                   <Label Grid.Row="1"
                          Grid.Column="1"
                          Text="{Binding User}"
-                         Style="{StaticResource NormalLabel}"/>
+                         Style="{DynamicResource NormalLabel}"/>
                   <Label Grid.Row="2"
                          Grid.Column="1"
                          Text="{Binding OrganizationName}"
-                         Style="{StaticResource NormalLabel}" />
+                         Style="{DynamicResource NormalLabel}" />
                   <Label Grid.Row="3"
                          Grid.Column="1"
                          Text="{Binding BaseUrl}"
-                         Style="{StaticResource SmallLabel}" />
+                         Style="{DynamicResource SmallLabel}" />
                 </Grid>
               </DataTemplate>
             </BindableLayout.ItemTemplate>

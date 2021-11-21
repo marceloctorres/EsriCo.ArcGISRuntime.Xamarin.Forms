@@ -80,9 +80,7 @@ items:
       <XamlFilePath("UI\PanelView.xaml")>
 
       Public Class PanelView
-
           Inherits ContentView
-
           Implements INotifyPropertyChanged, IDynamicResourceHandler, IElement, INameScope, INavigationProxy, IStyleSelectable, IAnimatable, IResourcesProvider, IStyleElement, IFlowDirectionController, IPropertyPropagationController, IVisualController, ITabStopElement, IStylable, IViewController, IVisualElementController, IElementController, IGestureController, IGestureRecognizers, ILayout, ILayoutController, IPaddingElement, IControlTemplated
   inheritance:
   - System.Object

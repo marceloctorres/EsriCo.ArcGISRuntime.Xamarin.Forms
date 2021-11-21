@@ -23,6 +23,17 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     /// <summary>
     /// 
     /// </summary>
+    bool IsLoaded { get; }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <returns></returns>
+    bool FileExist();
+
+    /// <summary>
+    /// 
+    /// </summary>
     /// <returns></returns>
     Task LoadAsync();
 

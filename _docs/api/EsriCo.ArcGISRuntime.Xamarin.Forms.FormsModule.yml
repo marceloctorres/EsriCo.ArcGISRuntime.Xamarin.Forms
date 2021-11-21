@@ -31,7 +31,6 @@ items:
     content: 'public class FormsModule : IModule'
     content.vb: >-
       Public Class FormsModule
-
           Implements IModule
   inheritance:
   - System.Object

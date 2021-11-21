@@ -19,12 +19,12 @@
             <RowDefinition Height="auto" />
           </Grid.RowDefinitions>
           <Label Text="{Binding Field.Label, StringFormat='\{0\} :'}"
-                 Style="{StaticResource BoldLabel}"
+                 Style="{DynamicResource BoldLabel}"
                  Margin="0"
                  HorizontalOptions="FillAndExpand"
                  VerticalOptions="EndAndExpand" />
           <Label Text="{Binding FormattedValue}"
-                 Style="{StaticResource NormalLabel}"
+                 Style="{DynamicResource NormalLabel}"
                  Grid.Row="1"
                  Margin="0"
                  HorizontalOptions="FillAndExpand"

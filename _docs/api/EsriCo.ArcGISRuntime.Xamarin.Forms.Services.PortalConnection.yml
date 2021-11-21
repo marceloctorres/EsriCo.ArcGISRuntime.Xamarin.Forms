@@ -61,9 +61,7 @@ items:
     content: 'public class PortalConnection : BindableBase, INotifyPropertyChanged, IPortalConnection'
     content.vb: >-
       Public Class PortalConnection
-
           Inherits BindableBase
-
           Implements INotifyPropertyChanged, IPortalConnection
   inheritance:
   - System.Object

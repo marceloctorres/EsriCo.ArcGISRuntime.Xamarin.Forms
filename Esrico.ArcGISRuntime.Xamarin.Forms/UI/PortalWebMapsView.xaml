@@ -66,10 +66,10 @@
                    HorizontalTextAlignment="Start"
                    VerticalTextAlignment="Center"
                    Text="{x:Static root:AppResources.WebMapsLabelText}"
-                   Style="{StaticResource TitleLabel}" />
+                   Style="{DynamicResource TitleLabel}" />
           </Grid>
           <BoxView Grid.Row="1"
-                   Style="{StaticResource SeparatorBoxView}" />
+                   Style="{DynamicResource SeparatorBoxView}" />
           <Grid Grid.Row="2"
                 Margin="5"
                 ColumnSpacing="5">
@@ -81,14 +81,14 @@
                    HorizontalTextAlignment="End"
                    VerticalTextAlignment="Center"
                    Text="{x:Static root:AppResources.GroupLabelText}"
-                   Style="{StaticResource BoldLabel}" />
+                   Style="{DynamicResource BoldLabel}" />
             <Label Grid.Column="1"
                    HorizontalOptions="FillAndExpand"
                    HorizontalTextAlignment="Start"
                    VerticalOptions="CenterAndExpand"
                    VerticalTextAlignment="Center"
                    Text="{Binding Path=GroupName, Source={x:Reference view}}"
-                   Style="{StaticResource NormalLabel}" />
+                   Style="{DynamicResource NormalLabel}" />
           </Grid>
           <CollectionView Grid.Row="3"
                           Margin="5"
@@ -128,35 +128,35 @@
                            VerticalOptions="CenterAndExpand"
                            VerticalTextAlignment="Center"
                            Text="{Binding Title,StringFormat={x:Static root:AppResources.TitleStringFormat}}"
-                           Style="{StaticResource BoldLabel}" />
+                           Style="{DynamicResource BoldLabel}" />
                     <Label Grid.Row="1"
                            Grid.Column="1"
                            HorizontalTextAlignment="Start"
                            VerticalOptions="CenterAndExpand"
                            VerticalTextAlignment="Center"
                            Text="{Binding Description,StringFormat={x:Static root:AppResources.DescriptionStringFormat}}"
-                           Style="{StaticResource NormalLabel}" />
+                           Style="{DynamicResource NormalLabel}" />
                     <Label Grid.Row="2"
                            Grid.Column="1"
                            HorizontalTextAlignment="Start"
                            VerticalOptions="CenterAndExpand"
                            VerticalTextAlignment="Center"
                            Text="{Binding Owner,StringFormat={x:Static root:AppResources.OwnerStringFormat}}"
-                           Style="{StaticResource NormalLabel}" />
+                           Style="{DynamicResource NormalLabel}" />
                     <Label Grid.Row="3"
                            Grid.Column="1"
                            HorizontalTextAlignment="Start"
                            VerticalOptions="CenterAndExpand"
                            VerticalTextAlignment="Center"
                            Text="{Binding Modified,StringFormat={x:Static root:AppResources.ModifiedDateStringFormat}}"
-                           Style="{StaticResource NormalLabel}" />
+                           Style="{DynamicResource NormalLabel}" />
                   </Grid>
                 </Frame>
               </DataTemplate>
             </CollectionView.ItemTemplate>
           </CollectionView>
           <BoxView Grid.Row="4"
-                   Style="{StaticResource SeparatorBoxView}" />
+                   Style="{DynamicResource SeparatorBoxView}" />
           <StackLayout Grid.Row="5"
                        Orientation="Horizontal"
                        Margin="10"

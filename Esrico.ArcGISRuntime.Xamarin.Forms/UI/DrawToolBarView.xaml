@@ -14,35 +14,35 @@
     <ResourceDictionary>
       <Button x:Key="DrawPointTool"
               Clicked="DrawPointToolClicked"
-              Style="{StaticResource ToolButton}"
+              Style="{DynamicResource ToolButton}"
               Image="{Binding DrawPointToolImage, Source={x:Reference view}}" />
       <Button x:Key="DrawPolylineTool"
               Clicked="DrawPolylineToolClicked"
-              Style="{StaticResource ToolButton}"
+              Style="{DynamicResource ToolButton}"
               Image="{Binding DrawPolylineToolImage, Source={x:Reference view}}" />
       <Button x:Key="DrawFreehandLineTool"
               Clicked="DrawFreehandLineToolClicked"
-              Style="{StaticResource ToolButton}"
+              Style="{DynamicResource ToolButton}"
               Image="{Binding DrawFreehandLineToolImage, Source={x:Reference view}}" />
       <Button x:Key="DrawPolygonTool"
               Clicked="DrawPolygonToolClicked"
-              Style="{StaticResource ToolButton}"
+              Style="{DynamicResource ToolButton}"
               Image="{Binding DrawPolygonToolImage, Source={x:Reference view}}" />
       <Button x:Key="DrawRectangleTool"
               Clicked="DrawRectangleToolClicked"
-              Style="{StaticResource ToolButton}"
+              Style="{DynamicResource ToolButton}"
               Image="{Binding DrawRectangleToolImage, Source={x:Reference view}}" />
       <Button x:Key="DrawTextTool"
               Clicked="DrawTextToolClicked"
-              Style="{StaticResource ToolButton}"
+              Style="{DynamicResource ToolButton}"
               Image="{Binding DrawTextToolImage, Source={x:Reference view}}" />
       <Button x:Key="DrawEraseTool"
               Clicked="DrawEraseToolClicked"
-              Style="{StaticResource ToolButton}"
+              Style="{DynamicResource ToolButton}"
               Image="{Binding DrawEraseToolImage, Source={x:Reference view}}" />
       <Button x:Key="DrawNoneTool"
               Clicked="DrawNoneToolClicked"
-              Style="{StaticResource ToolButton}"
+              Style="{DynamicResource ToolButton}"
               Image="{Binding DrawNoneToolImage, Source={x:Reference view}}" />
       <ControlTemplate x:Key="HorizontalLayoutTemplate">
         <Grid BackgroundColor="Transparent"

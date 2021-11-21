@@ -19,7 +19,7 @@
             <ColumnDefinition Width="auto" />
           </Grid.ColumnDefinitions>
           <Label  Grid.Column="0"
-                  Style="{StaticResource NormalLabel}"
+                  Style="{DynamicResource NormalLabel}"
                   Text="{Binding Layer.Name}"
                   IsEnabled="{Binding ParentInfo.Layer.IsVisible}"
                   VerticalOptions="Center" />
@@ -43,7 +43,7 @@
           </Grid.ColumnDefinitions>
           <Label Grid.Column="0"
                  Text="{Binding GroupLayerInfo.Layer.Name}"
-                 Style="{StaticResource BoldLabel}"
+                 Style="{DynamicResource BoldLabel}"
                  VerticalOptions="Center" />
           <Switch Grid.Column="1"
                   IsToggled="{Binding GroupLayerInfo.Layer.IsVisible,Mode=TwoWay}"

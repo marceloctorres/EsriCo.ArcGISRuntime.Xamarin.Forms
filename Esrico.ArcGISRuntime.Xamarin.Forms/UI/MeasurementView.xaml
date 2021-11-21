@@ -37,22 +37,22 @@
         <Button x:Name="PointMeasurementTool" 
                 Grid.Column="0"
                 Clicked="PointMeasurementToolClicked"
-                Style="{StaticResource ToolButton}"
+                Style="{DynamicResource ToolButton}"
                 Image="{Binding PointMeasurementToolImage, Source={x:Reference measureView}}" />
         <Button x:Name="LineMeasurementTool"
                 Grid.Column="1"
                 Clicked="LineMeasurementToolClicked"
-                Style="{StaticResource ToolButton}"
+                Style="{DynamicResource ToolButton}"
                 Image="{Binding LineMeasurementToolImage, Source={x:Reference measureView}}" />
         <Button x:Name="AreaMeasurementTool"
                 Grid.Column="2"
                 Clicked="AreaMeasurementToolClicked"
-                Style="{StaticResource ToolButton}"
+                Style="{DynamicResource ToolButton}"
                 Image="{Binding AreaMeasurementToolImage, Source={x:Reference measureView}}" />
         <Button x:Name="NoneMeasurementTool"
                 Grid.Column="3"
                 Clicked="NoneMeasurementToolClicked"
-                Style="{StaticResource ToolButton}"
+                Style="{DynamicResource ToolButton}"
                 Image="{Binding NoneMeasurementToolImage, Source={x:Reference measureView}}" />
         <Picker Grid.Column="4"
                 ItemDisplayBinding="{Binding DisplayName}"
