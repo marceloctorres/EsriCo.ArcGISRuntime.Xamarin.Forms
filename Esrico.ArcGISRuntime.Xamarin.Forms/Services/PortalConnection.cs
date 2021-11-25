@@ -309,8 +309,13 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services {
     /// 
     /// </summary>
     public void SignOut() {
-      AuthenticationManager.Current.RemoveCredential(Credential);
-      Credential = null;
+      if(Credential != null) {
+        AuthenticationManager.Current.RemoveCredential(Credential);
+        Credential = null;
+      }
+      Name = null;
+      OrganizationName = null;
+      OrganizationSubDomain = null;
       UserName = string.Empty;
       UserImage = null;
       UserImageString = string.Empty;
