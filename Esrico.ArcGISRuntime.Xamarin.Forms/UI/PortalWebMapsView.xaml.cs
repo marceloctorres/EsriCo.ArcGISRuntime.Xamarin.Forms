@@ -8,11 +8,9 @@ using Esri.ArcGISRuntime.Portal;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
-{
+namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
   [XamlCompilation(XamlCompilationOptions.Compile)]
-  public partial class PortalWebMapsView : ContentView
-  {
+  public partial class PortalWebMapsView : ContentView {
     /// <summary>
     /// 
     /// </summary>
@@ -25,8 +23,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    public IEnumerable<PortalItem> WebMapItems
-    {
+    public IEnumerable<PortalItem> WebMapItems {
       get => (List<PortalItem>)GetValue(WebMapItemsProperty);
       set => SetValue(WebMapItemsProperty, value);
     }
@@ -43,8 +40,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    public string GroupName
-    {
+    public string GroupName {
       get => (string)GetValue(GroupNameProperty);
       set => SetValue(GroupNameProperty, value);
     }
@@ -61,8 +57,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    public PortalItem SelectedItem
-    {
+    public PortalItem SelectedItem {
       get => (PortalItem)GetValue(SelectedItemProperty);
       set => SetValue(SelectedItemProperty, value);
     }
@@ -78,8 +73,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    public ICommand LoadMapCommand
-    {
+    public ICommand LoadMapCommand {
       get => (ICommand)GetValue(LoadMapCommandProperty);
       set => SetValue(LoadMapCommandProperty, value);
     }
@@ -95,8 +89,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    public ICommand CloseCommand
-    {
+    public ICommand CloseCommand {
       get => (ICommand)GetValue(CloseCommandProperty);
       set => SetValue(CloseCommandProperty, value);
     }
@@ -104,14 +97,11 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    public PortalWebMapsView()
-    {
-      try
-      {
+    public PortalWebMapsView() {
+      try {
         InitializeComponent();
       }
-      catch (Exception ex)
-      {
+      catch(Exception ex) {
         Debug.WriteLine(ex.Message);
       }
     }

@@ -4,11 +4,9 @@ using Esri.ArcGISRuntime.Xamarin.Forms;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
-{
+namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
   [XamlCompilation(XamlCompilationOptions.Compile)]
-  public partial class DrawingStatusView : ContentView
-  {
+  public partial class DrawingStatusView : ContentView {
     /// <summary>
     /// 
     /// </summary>
@@ -24,21 +22,18 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="bindable"></param>
     /// <param name="oldValue"></param>
     /// <param name="newValue"></param>
-    private static void OnIndicatorColorPropertyChanged(BindableObject bindable, object oldValue, object newValue)
-    {
-      DrawingStatusView view = bindable as DrawingStatusView;
-      Color newColor = (Color)newValue;
+    private static void OnIndicatorColorPropertyChanged(BindableObject bindable, object oldValue, object newValue) {
+      var view = bindable as DrawingStatusView;
+      var newColor = (Color)newValue;
       view.IndicatorColor = newColor;
     }
 
     /// <summary>
     /// 
     /// </summary>
-    public Color IndicatorColor
-    {
+    public Color IndicatorColor {
       get => (Color)GetValue(IndicatorColorProperty);
-      set
-      {
+      set {
         SetValue(IndicatorColorProperty, value);
         OnPropertyChanged(nameof(IndicatorColor));
       }
@@ -56,8 +51,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    public MapView MapView
-    {
+    public MapView MapView {
       get => (MapView)GetValue(MapViewProperty);
       set => SetValue(MapViewProperty, value);
     }
@@ -68,11 +62,10 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="bindable"></param>
     /// <param name="oldValue"></param>
     /// <param name="newValue"></param>
-    private static void OnMapViewPropertyChanged(BindableObject bindable, object oldValue, object newValue)
-    {
-      DrawingStatusView view = bindable as DrawingStatusView;
-      MapView oldMapView = oldValue as MapView;
-      MapView newMapView = newValue as MapView;
+    private static void OnMapViewPropertyChanged(BindableObject bindable, object oldValue, object newValue) {
+      var view = bindable as DrawingStatusView;
+      var oldMapView = oldValue as MapView;
+      var newMapView = newValue as MapView;
       view.AddDrawStatusChangedHandler(oldMapView, newMapView);
     }
 
@@ -81,14 +74,11 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// </summary> c 
     /// <param name="oldMapView"></param>
     /// <param name="newMapView"></param>
-    public void AddDrawStatusChangedHandler(MapView oldMapView, MapView newMapView)
-    {
-      if (oldMapView != null)
-      {
+    public void AddDrawStatusChangedHandler(MapView oldMapView, MapView newMapView) {
+      if(oldMapView != null) {
         oldMapView.DrawStatusChanged -= MapViewDrawStatusChanged;
       }
-      if (newMapView != null)
-      {
+      if(newMapView != null) {
         newMapView.DrawStatusChanged += MapViewDrawStatusChanged;
       }
     }
@@ -103,8 +93,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    public DrawingStatusView()
-    {
+    public DrawingStatusView() {
       InitializeComponent();
       IsVisible = false;
       IndicatorColor = (Color)ActivityIndicator.ColorProperty.DefaultValue;

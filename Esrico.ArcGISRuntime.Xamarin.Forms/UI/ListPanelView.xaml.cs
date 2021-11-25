@@ -4,11 +4,9 @@ using System.Collections;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
-{
+namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
   [XamlCompilation(XamlCompilationOptions.Compile)]
-  public partial class ListPanelView : PanelView
-  {
+  public partial class ListPanelView : PanelView {
     /// <summary>
     /// 
     /// </summary>
@@ -20,8 +18,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    public object ListBindingContext
-    {
+    public object ListBindingContext {
       get => GetValue(ListBindingContextProperty);
       set => SetValue(ListBindingContextProperty, value);
     }
@@ -37,8 +34,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    public IEnumerable ItemsSource
-    {
+    public IEnumerable ItemsSource {
       get => (IEnumerable)GetValue(ItemsSourceProperty);
       set => SetValue(ItemsSourceProperty, value);
     }
@@ -55,8 +51,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    public bool IsGroupingEnabled
-    {
+    public bool IsGroupingEnabled {
       get => (bool)GetValue(IsGroupingEnabledProperty);
       set => SetValue(IsGroupingEnabledProperty, value);
     }
@@ -72,8 +67,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    public DataTemplate ItemTemplate
-    {
+    public DataTemplate ItemTemplate {
       get => (DataTemplate)GetValue(ItemTemplateProperty);
       set => SetValue(ItemTemplateProperty, value);
     }
@@ -89,8 +83,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    public DataTemplate HeaderTemplate
-    {
+    public DataTemplate HeaderTemplate {
       get => (DataTemplate)GetValue(HeaderTemplateProperty);
       set => SetValue(HeaderTemplateProperty, value);
     }
@@ -106,8 +99,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    public DataTemplate FooterTemplate
-    {
+    public DataTemplate FooterTemplate {
       get => (DataTemplate)GetValue(FooterTemplateProperty);
       set => SetValue(FooterTemplateProperty, value);
     }
@@ -123,8 +115,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    public DataTemplate GroupHeaderTemplate
-    {
+    public DataTemplate GroupHeaderTemplate {
       get => (DataTemplate)GetValue(GroupHeaderTemplateProperty);
       set => SetValue(GroupHeaderTemplateProperty, value);
     }

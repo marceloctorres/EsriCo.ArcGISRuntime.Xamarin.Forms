@@ -3,11 +3,9 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
-{
+namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
   [XamlCompilation(XamlCompilationOptions.Compile)]
-  public partial class ProcessingView : ContentView
-  {
+  public partial class ProcessingView : ContentView {
     /// <summary>
     /// 
     /// </summary>
@@ -20,8 +18,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    public bool IsProcessing
-    {
+    public bool IsProcessing {
       get => (bool)GetValue(IsProcessingProperty);
       set => SetValue(IsProcessingProperty, value);
     }
@@ -37,21 +34,17 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    public string ProcessingMessage
-    {
+    public string ProcessingMessage {
       get => (string)GetValue(ProcessingMessageProperty);
       set => SetValue(ProcessingMessageProperty, value);
     }
 
-    public ProcessingView()
-    {
-      try
-      {
+    public ProcessingView() {
+      try {
         InitializeComponent();
         ProcessingMessage = AppResources.ProcessingMessageLabelText;
       }
-      catch (Exception ex)
-      {
+      catch(Exception ex) {
         Console.WriteLine(ex.Message);
       }
     }

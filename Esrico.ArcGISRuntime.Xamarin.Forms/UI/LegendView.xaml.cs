@@ -5,25 +5,20 @@ using EsriCo.ArcGISRuntime.Xamarin.Forms.Model;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
-{
+namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
   [XamlCompilation(XamlCompilationOptions.Compile)]
-  public partial class LegendView : LayerListPanelView
-  {
+  public partial class LegendView : LayerListPanelView {
     public double ItemRenderHeight { get; set; }
 
-    public LegendView()
-    {
+    public LegendView() {
       ItemRenderHeight = 25;
       InitializeComponent();
     }
 
-    private void OnInnerListViewItemAppearing(object sender, ItemVisibilityEventArgs e)
-    {
-      if (sender is ListView listView)
-      {
-        List<LegendImageInfo> list = (List<LegendImageInfo>)listView.ItemsSource;
-        double height = list.Count * ItemRenderHeight;
+    private void OnInnerListViewItemAppearing(object sender, ItemVisibilityEventArgs e) {
+      if(sender is ListView listView) {
+        var list = (List<LegendImageInfo>)listView.ItemsSource;
+        var height = list.Count * ItemRenderHeight;
         listView.HeightRequest = height;
       }
     }

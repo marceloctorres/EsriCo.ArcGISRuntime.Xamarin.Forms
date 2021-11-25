@@ -3,10 +3,8 @@ using System.Threading.Tasks;
 
 using Esri.ArcGISRuntime.Mapping;
 
-namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
-{
-  public interface IReplicaManager
-  {
+namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services {
+  public interface IReplicaManager {
     string AppFolderName { get; set; }
     double MaxScale { get; set; }
     double MinScale { get; set; }

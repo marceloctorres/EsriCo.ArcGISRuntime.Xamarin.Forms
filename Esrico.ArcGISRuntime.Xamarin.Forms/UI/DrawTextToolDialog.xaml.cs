@@ -3,16 +3,13 @@ using System.Windows.Input;
 
 using Xamarin.Forms.Xaml;
 
-namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
-{
+namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
   [XamlCompilation(XamlCompilationOptions.Compile)]
-  public partial class DrawTextToolDialog : ModalPanelView
-  {
+  public partial class DrawTextToolDialog : ModalPanelView {
     /// <summary>
     /// 
     /// </summary>
-    public DrawTextToolDialog()
-    {
+    public DrawTextToolDialog() {
       InitializeComponent();
       IsVisible = false;
     }
@@ -27,13 +24,10 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// </summary>
     public string Text { get; set; }
 
-    private void OKButton_Clicked(object sender, EventArgs e)
-    {
+    private void OKButton_Clicked(object sender, EventArgs e) {
       IsVisible = false;
-      if (AcceptCommand != null)
-      {
-        if (AcceptCommand.CanExecute(null))
-        {
+      if(AcceptCommand != null) {
+        if(AcceptCommand.CanExecute(null)) {
           AcceptCommand.Execute(Text);
         }
       }

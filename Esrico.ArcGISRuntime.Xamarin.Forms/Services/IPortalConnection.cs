@@ -8,13 +8,11 @@ using Esri.ArcGISRuntime.Security;
 
 using Xamarin.Forms;
 
-namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
-{
+namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services {
   /// <summary>
   /// 
   /// </summary>
-  public interface IPortalConnection
-  {
+  public interface IPortalConnection {
     /// <summary>
     /// 
     /// </summary>
@@ -32,7 +30,8 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
     PortalUser PortalUser { get; }
     string ServerRegisterUrl { get; }
     bool SignedIn { get; }
-    TokenAuthenticationType TokenAuthenticationType { get; }
+    TokenAuthenticationType TokenAuthenticationType { get; set; }
+    AuthenticationType AuthenticationType { get; set; }
     DateTimeOffset TokenExpirationDateTime { get; set; }
     double TokenValidDays { get; set; }
     string User { get; set; }

@@ -3,20 +3,17 @@ using Esri.ArcGISRuntime.Mapping;
 
 using Prism.Mvvm;
 
-namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
-{
+namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors {
   /// <summary>
   /// 
   /// </summary>
-  public class IdentifyGeoElementResult : BindableBase
-  {
+  public class IdentifyGeoElementResult : BindableBase {
     private GeoElement _geoElement;
 
     /// <summary>
     /// 
     /// </summary>
-    public GeoElement GeoElement
-    {
+    public GeoElement GeoElement {
       get => _geoElement;
       set => SetProperty(ref _geoElement, value);
     }
@@ -26,14 +23,12 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
     /// <summary>
     /// 
     /// </summary>
-    public Layer Layer
-    {
+    public Layer Layer {
       get => _layer;
       set => SetProperty(ref _layer, value);
     }
 
-    public IdentifyGeoElementResult()
-    {
+    public IdentifyGeoElementResult() {
 
     }
 

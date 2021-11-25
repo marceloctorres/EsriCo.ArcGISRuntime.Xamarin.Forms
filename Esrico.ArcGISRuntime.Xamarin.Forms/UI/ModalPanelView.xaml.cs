@@ -4,11 +4,9 @@ using System.Runtime.CompilerServices;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
-{
+namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
   [XamlCompilation(XamlCompilationOptions.Compile)]
-  public partial class ModalPanelView : PanelView
-  {
+  public partial class ModalPanelView : PanelView {
     private readonly string ColorKey = "DarkGrayTransparent";
 
     private Frame ModalFrame { get; set; }
@@ -16,8 +14,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    public ModalPanelView()
-    {
+    public ModalPanelView() {
       InitializeComponent();
       CreateModalFrame();
     }
@@ -25,14 +22,12 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    private void CreateModalFrame()
-    {
-      object resource = Resources.MergedDictionaries
+    private void CreateModalFrame() {
+      var resource = Resources.MergedDictionaries
         .Where(r => r.ContainsKey(ColorKey))
         .Select(r => r[ColorKey]).FirstOrDefault();
-      Color backColor = resource != null ? (Color)resource : Color.Gray;
-      ModalFrame = new Frame()
-      {
+      var backColor = resource != null ? (Color)resource : Color.Gray;
+      ModalFrame = new Frame() {
         BackgroundColor = backColor,
         Padding = 0,
         HorizontalOptions = LayoutOptions.FillAndExpand,
@@ -44,17 +39,13 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// 
     /// </summary>
     /// <param name="propertyName"></param>
-    protected override void OnPropertyChanged([CallerMemberName] string propertyName = null)
-    {
+    protected override void OnPropertyChanged([CallerMemberName] string propertyName = null) {
       base.OnPropertyChanged(propertyName);
-      if (propertyName == nameof(IsVisible))
-      {
-        if (IsVisible)
-        {
+      if(propertyName == nameof(IsVisible)) {
+        if(IsVisible) {
           InsertModalFrame();
         }
-        else
-        {
+        else {
           RemoveModalFrame();
         }
       }
@@ -63,13 +54,10 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    private void InsertModalFrame()
-    {
-      if (Parent is Layout<View> layout)
-      {
-        if (!layout.Children.Contains(ModalFrame))
-        {
-          int index = layout.Children.IndexOf(this);
+    private void InsertModalFrame() {
+      if(Parent is Layout<View> layout) {
+        if(!layout.Children.Contains(ModalFrame)) {
+          var index = layout.Children.IndexOf(this);
           layout.Children.Insert(index - 1, ModalFrame);
         }
       }
@@ -78,12 +66,9 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    private void RemoveModalFrame()
-    {
-      if (Parent is Layout<View> layout)
-      {
-        if (layout.Children.Contains(ModalFrame))
-        {
+    private void RemoveModalFrame() {
+      if(Parent is Layout<View> layout) {
+        if(layout.Children.Contains(ModalFrame)) {
           layout.Children.Remove(ModalFrame);
         }
       }

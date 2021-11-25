@@ -8,21 +8,18 @@ using Prism.Mvvm;
 
 using Xamarin.Forms;
 
-namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Model
-{
+namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Model {
   /// <summary>
   /// 
   /// </summary>
-  public class LegendImageInfo : BindableBase
-  {
+  public class LegendImageInfo : BindableBase {
     private ImageSource _imageSource;
     private string _name;
 
     /// <summary>
     /// 
     /// </summary>
-    public ImageSource ImageSource
-    {
+    public ImageSource ImageSource {
       get => _imageSource;
       set => SetProperty(ref _imageSource, value);
     }
@@ -30,8 +27,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Model
     /// <summary>
     /// 
     /// </summary>
-    public string Name
-    {
+    public string Name {
       get => _name;
       set => SetProperty(ref _name, value);
     }
@@ -41,8 +37,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Model
   /// <summary>
   /// 
   /// </summary>
-  public class LayerInfo : BindableBase
-  {
+  public class LayerInfo : BindableBase {
     private Layer _layer;
     private LayerInfo _parentInfoLayer;
     private List<LegendImageInfo> _legendInfos;
@@ -51,8 +46,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Model
     /// <summary>
     /// 
     /// </summary>
-    public Layer Layer
-    {
+    public Layer Layer {
       get => _layer;
       set => SetProperty(ref _layer, value);
     }
@@ -60,8 +54,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Model
     /// <summary>
     /// 
     /// </summary>
-    public LayerInfo ParentInfo
-    {
+    public LayerInfo ParentInfo {
       get => _parentInfoLayer;
       set => SetProperty(ref _parentInfoLayer, value);
     }
@@ -69,8 +62,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Model
     /// <summary>
     /// 
     /// </summary>
-    public List<LegendImageInfo> LegendImageInfos
-    {
+    public List<LegendImageInfo> LegendImageInfos {
       get => _legendInfos;
       set => SetProperty(ref _legendInfos, value);
     }
@@ -79,23 +71,18 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Model
     /// 
     /// </summary>
     /// <param name="legendInfos"></param>
-    public async Task SetLegendInfosAsync(IEnumerable<LegendInfo> legendInfos)
-    {
-      if (LegendImageInfos == null)
-      {
+    public async Task SetLegendInfosAsync(IEnumerable<LegendInfo> legendInfos) {
+      if(LegendImageInfos == null) {
         LegendImageInfos = new List<LegendImageInfo>();
       }
-      else
-      {
+      else {
         LegendImageInfos.Clear();
       }
 
-      foreach (LegendInfo li in legendInfos.ToList())
-      {
-        Esri.ArcGISRuntime.UI.RuntimeImage imageData = await li.Symbol.CreateSwatchAsync();
-        System.IO.Stream stream = await imageData.GetEncodedBufferAsync();
-        LegendImageInfos.Add(new LegendImageInfo()
-        {
+      foreach(var li in legendInfos.ToList()) {
+        var imageData = await li.Symbol.CreateSwatchAsync();
+        var stream = await imageData.GetEncodedBufferAsync();
+        LegendImageInfos.Add(new LegendImageInfo() {
           Name = li.Name,
           ImageSource = ImageSource.FromStream(() => stream)
         });
@@ -106,8 +93,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Model
   /// <summary>
   /// 
   /// </summary>
-  public class LayerInfos : List<LayerInfo>
-  {
+  public class LayerInfos : List<LayerInfo> {
     /// <summary>
     /// 
     /// </summary>

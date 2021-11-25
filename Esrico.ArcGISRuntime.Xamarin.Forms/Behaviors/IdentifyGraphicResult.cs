@@ -3,13 +3,11 @@ using Esri.ArcGISRuntime.UI;
 
 using Prism.Mvvm;
 
-namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
-{
+namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors {
   /// <summary>
   /// 
   /// </summary>
-  public class IdentifyGraphicResult : BindableBase
-  {
+  public class IdentifyGraphicResult : BindableBase {
     /// <summary>
     /// 
     /// </summary>
@@ -18,8 +16,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
     /// <summary>
     ///
     /// </summary>
-    public Graphic Graphic
-    {
+    public Graphic Graphic {
       get => _graphic;
       set => SetProperty(ref _graphic, value);
     }
@@ -27,31 +24,11 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
     /// <summary>
     /// 
     /// </summary>
-    public MapPoint Center
-    {
-      get
-      {
-        if (Graphic != null && Graphic.Geometry != null)
-        {
-          return Graphic.Geometry.Extent.GetCenter();
-        }
-        return null;
-      }
-    }
+    public MapPoint Center => Graphic != null && Graphic.Geometry != null ? Graphic.Geometry.Extent.GetCenter() : null;
 
     /// <summary>
     /// 
     /// </summary>
-    public string GraphicsOverlayId
-    {
-      get
-      {
-        if (Graphic != null)
-        {
-          return Graphic.GraphicsOverlay.Id;
-        }
-        return string.Empty;
-      }
-    }
+    public string GraphicsOverlayId => Graphic != null ? Graphic.GraphicsOverlay.Id : string.Empty;
   }
 }

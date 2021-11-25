@@ -1,16 +1,13 @@
 ﻿using System;
-using System.Diagnostics;
 
 using EsriCo.ArcGISRuntime.Xamarin.Forms.Extensions;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
-{
+namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
   [XamlCompilation(XamlCompilationOptions.Compile)]
-  public partial class PanelView : ContentView
-  {
+  public partial class PanelView : ContentView {
 
     public event EventHandler Closed;
 
@@ -30,17 +27,15 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="bindable"></param>
     /// <param name="oldValue"></param>
     /// <param name="newValue"></param>
-    private static void OnIsManagedPropertyChanged(BindableObject bindable, object oldValue, object newValue)
-    {
-      PanelView view = bindable as PanelView;
+    private static void OnIsManagedPropertyChanged(BindableObject bindable, object oldValue, object newValue) {
+      var view = bindable as PanelView;
       view.IsManaged = (bool)newValue;
     }
 
     /// <summary>
     /// 
     /// </summary>
-    public bool IsManaged
-    {
+    public bool IsManaged {
       get => (bool)GetValue(IsManagedProperty);
       set => SetValue(IsManagedProperty, value);
     }
@@ -56,8 +51,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    public ImageSource CloseButtonImage
-    {
+    public ImageSource CloseButtonImage {
       get => (ImageSource)GetValue(CloseButtonImageProperty);
       set => SetValue(CloseButtonImageProperty, value);
     }
@@ -76,8 +70,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    public new bool IsVisible
-    {
+    public new bool IsVisible {
       get => (bool)GetValue(IsVisibleProperty);
       set => SetValue(IsVisibleProperty, value);
     }
@@ -88,15 +81,13 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="bindable"></param>
     /// <param name="oldValue"></param>
     /// <param name="newValue"></param>
-    private static void OnIsVisibleChanged(BindableObject bindable, object oldValue, object newValue)
-    {
-      PanelView panelView = bindable as PanelView;
-      bool newVisible = (bool)newValue;
-      bool oldVisible = (bool)oldValue;
+    private static void OnIsVisibleChanged(BindableObject bindable, object oldValue, object newValue) {
+      var panelView = bindable as PanelView;
+      var newVisible = (bool)newValue;
+      var oldVisible = (bool)oldValue;
       panelView.SetVisible(newVisible);
 
-      if (newVisible != oldVisible)
-      {
+      if(newVisible != oldVisible) {
       }
     }
 
@@ -104,13 +95,11 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// 
     /// </summary>
     /// <param name="visible"></param>
-    private void SetVisible(bool visible)
-    {
+    private void SetVisible(bool visible) {
       base.IsVisible = visible;
       Content.TranslationX = 0;
       Content.TranslationY = 0;
-      if (visible && IsManaged)
-      {
+      if(visible && IsManaged) {
         MessagingCenter.Send<PanelView>(this, "IsVisible");
       }
     }
@@ -127,8 +116,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    public View HeaderContent
-    {
+    public View HeaderContent {
       get => (View)GetValue(HeaderContentProperty);
       set => SetValue(HeaderContentProperty, value);
     }
@@ -139,17 +127,14 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="bindable"></param>
     /// <param name="oldValue"></param>
     /// <param name="newValue"></param>
-    private static void OnHeaderContentChanged(BindableObject bindable, object oldValue, object newValue)
-    {
-      if (!ReferenceEquals(newValue, bindable))
-      {
-        PanelView panelView = (PanelView)bindable;
-        View newView = (View)newValue;
+    private static void OnHeaderContentChanged(BindableObject bindable, object oldValue, object newValue) {
+      if(!ReferenceEquals(newValue, bindable)) {
+        var panelView = (PanelView)bindable;
+        var newView = (View)newValue;
 
         panelView.HeaderContentView.Content = newView;
       }
-      else
-      {
+      else {
         Console.WriteLine(bindable);
       }
     }
@@ -166,8 +151,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    public bool IsHeaderVisible
-    {
+    public bool IsHeaderVisible {
       get => (bool)GetValue(IsHeaderVisibleProperty);
       set => SetValue(IsHeaderVisibleProperty, value);
     }
@@ -184,8 +168,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    public bool IsFooterVisible
-    {
+    public bool IsFooterVisible {
       get => (bool)GetValue(IsFooterVisibleProperty);
       set => SetValue(IsFooterVisibleProperty, value);
     }
@@ -202,8 +185,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    public View FooterContent
-    {
+    public View FooterContent {
       get => (View)GetValue(FooterContentProperty);
       set => SetValue(FooterContentProperty, value);
     }
@@ -214,17 +196,14 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="bindable"></param>
     /// <param name="oldValue"></param>
     /// <param name="newValue"></param>
-    private static void OnFooterContentChanged(BindableObject bindable, object oldValue, object newValue)
-    {
-      if (!ReferenceEquals(newValue, bindable))
-      {
-        PanelView panelView = (PanelView)bindable;
-        View newView = (View)newValue;
+    private static void OnFooterContentChanged(BindableObject bindable, object oldValue, object newValue) {
+      if(!ReferenceEquals(newValue, bindable)) {
+        var panelView = (PanelView)bindable;
+        var newView = (View)newValue;
 
         panelView.FooterContentView.Content = newView;
       }
-      else
-      {
+      else {
         Console.WriteLine(bindable);
       }
     }
@@ -241,8 +220,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    public View BodyContent
-    {
+    public View BodyContent {
       get => (View)GetValue(BodyContentProperty);
       set => SetValue(BodyContentProperty, value);
     }
@@ -253,17 +231,14 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="bindable"></param>
     /// <param name="oldValue"></param>
     /// <param name="newValue"></param>
-    private static void OnBodyContentPropertyChanged(BindableObject bindable, object oldValue, object newValue)
-    {
-      if (!ReferenceEquals(newValue, bindable))
-      {
-        PanelView panelView = (PanelView)bindable;
-        View newView = (View)newValue;
+    private static void OnBodyContentPropertyChanged(BindableObject bindable, object oldValue, object newValue) {
+      if(!ReferenceEquals(newValue, bindable)) {
+        var panelView = (PanelView)bindable;
+        var newView = (View)newValue;
 
         panelView.BodyContentView.Content = newView;
       }
-      else
-      {
+      else {
         Console.WriteLine(bindable);
       }
     }
@@ -280,8 +255,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    public Color TitleBorderColor
-    {
+    public Color TitleBorderColor {
       get => (Color)GetValue(TitleBorderColorProperty);
       set => SetValue(TitleBorderColorProperty, value);
     }
@@ -299,8 +273,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    public Color TitleBackgroundColor
-    {
+    public Color TitleBackgroundColor {
       get => (Color)GetValue(TitleBackgroundColorProperty);
       set => SetValue(TitleBackgroundColorProperty, value);
     }
@@ -317,8 +290,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    public Color TitleTextColor
-    {
+    public Color TitleTextColor {
       get => (Color)GetValue(TitleTextColorProperty);
       set => SetValue(TitleTextColorProperty, value);
     }
@@ -334,8 +306,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    public string TitleText
-    {
+    public string TitleText {
       get => (string)GetValue(TitleTextProperty);
       set => SetValue(TitleTextProperty, value);
     }
@@ -352,8 +323,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    public bool IsTitleVisible
-    {
+    public bool IsTitleVisible {
       get => (bool)GetValue(IsTitleVisibleProperty);
       set => SetValue(IsTitleVisibleProperty, value);
     }
@@ -370,8 +340,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    public Color BodyBorderColor
-    {
+    public Color BodyBorderColor {
       get => (Color)GetValue(BodyBorderColorProperty);
       set => SetValue(BodyBorderColorProperty, value);
     }
@@ -388,8 +357,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    public Color BodyBackgroundColor
-    {
+    public Color BodyBackgroundColor {
       get => (Color)GetValue(BodyBackgroundColorProperty);
       set => SetValue(BodyBackgroundColorProperty, value);
     }
@@ -406,8 +374,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    public Color StatusBackgroundColor
-    {
+    public Color StatusBackgroundColor {
       get => (Color)GetValue(StatusBackgroundColorProperty);
       set => SetValue(StatusBackgroundColorProperty, value);
     }
@@ -424,8 +391,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    public Color StatusBorderColor
-    {
+    public Color StatusBorderColor {
       get => (Color)GetValue(StatusBorderColorProperty);
       set => SetValue(StatusBorderColorProperty, value);
     }
@@ -442,8 +408,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    public Color StatusTextColor
-    {
+    public Color StatusTextColor {
       get => (Color)GetValue(StatusTextColorProperty);
       set => SetValue(StatusTextColorProperty, value);
     }
@@ -459,8 +424,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    public string StatusText
-    {
+    public string StatusText {
       get => (string)GetValue(StatusTextProperty);
       set => SetValue(StatusTextProperty, value);
     }
@@ -477,8 +441,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    public bool IsStatusVisible
-    {
+    public bool IsStatusVisible {
       get => (bool)GetValue(IsStatusVisibleProperty);
       set => SetValue(IsStatusVisibleProperty, value);
     }
@@ -486,14 +449,11 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    public PanelView()
-    {
+    public PanelView() {
       InitializeComponent();
       CloseButtonImage = ImageSource.FromStream(() => GetType().Assembly.GetStreamEmbeddedResource(@"ic_close"));
-      MessagingCenter.Subscribe<PanelView>(this, "IsVisible", (panel) =>
-      {
-        if (!ReferenceEquals(this, panel) && IsManaged && IsVisible && panel.IsVisible)
-        {
+      MessagingCenter.Subscribe<PanelView>(this, "IsVisible", (panel) => {
+        if(!ReferenceEquals(this, panel) && IsManaged && IsVisible && panel.IsVisible) {
           IsVisible = false;
         }
       });
@@ -504,8 +464,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
-    protected virtual void OnCloseButtonClicked(object sender, EventArgs e)
-    {
+    protected virtual void OnCloseButtonClicked(object sender, EventArgs e) {
       IsVisible = false;
       OnPanelClosed();
     }
@@ -522,17 +481,14 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
-    private void OnPanUpdated(object sender, PanUpdatedEventArgs e)
-    {
-      if (Parent is View parentView)
-      {
-        Rectangle bounds = Bounds;
-        Rectangle parentBounds = parentView.Bounds;
-        double x0 = 0.0;
-        double y0 = 0.0;
+    private void OnPanUpdated(object sender, PanUpdatedEventArgs e) {
+      if(Parent is View parentView) {
+        var bounds = Bounds;
+        var parentBounds = parentView.Bounds;
+        var x0 = 0.0;
+        var y0 = 0.0;
 
-        switch (e.StatusType)
-        {
+        switch(e.StatusType) {
           case GestureStatus.Started:
             x0 = bounds.Left;
             y0 = bounds.Top;

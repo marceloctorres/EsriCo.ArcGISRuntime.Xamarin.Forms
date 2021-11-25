@@ -11,11 +11,9 @@ using EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
-{
+namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
   [XamlCompilation(XamlCompilationOptions.Compile)]
-  public partial class IdentifyView : ListPanelView
-  {
+  public partial class IdentifyView : ListPanelView {
     /// <summary>
     /// 
     /// </summary>
@@ -29,8 +27,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    public IdentifyResults IdentifyResults
-    {
+    public IdentifyResults IdentifyResults {
       get => (IdentifyResults)GetValue(IdentifyResultsProperty);
       set => SetValue(IdentifyResultsProperty, value);
     }
@@ -43,11 +40,9 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    public PopupManager PopupManager
-    {
+    public PopupManager PopupManager {
       get => _popupManager;
-      set
-      {
+      set {
         _popupManager = value;
         OnPropertyChanged(nameof(PopupManager));
       }
@@ -65,8 +60,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    public int CurrentElementIndex
-    {
+    public int CurrentElementIndex {
       get => (int)GetValue(CurrentElementIndexProperty);
       set => SetValue(CurrentElementIndexProperty, value);
     }
@@ -82,11 +76,10 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <param name="bindable"></param>
     /// <param name="oldValue"></param>
     /// <param name="newValue"></param>
-    private static void OnIdentifyResultsChanged(BindableObject bindable, object oldValue, object newValue)
-    {
-      IdentifyView identifyView = bindable as IdentifyView;
-      IdentifyResults identifyResults = newValue as IdentifyResults;
-      IdentifyResults oldidentifyResults = oldValue as IdentifyResults;
+    private static void OnIdentifyResultsChanged(BindableObject bindable, object oldValue, object newValue) {
+      var identifyView = bindable as IdentifyView;
+      var identifyResults = newValue as IdentifyResults;
+      var oldidentifyResults = oldValue as IdentifyResults;
 
       identifyView.ClearSelection(oldidentifyResults);
 
@@ -102,39 +95,33 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// </summary>
     /// <param name="identifyView"></param>
     /// <param name="identifyResults"></param>
-    private static void GetPopupManager(IdentifyView identifyView, IdentifyResults identifyResults)
-    {
-      try
-      {
+    private static void GetPopupManager(IdentifyView identifyView, IdentifyResults identifyResults) {
+      try {
         Popup popup;
-        IdentifyGeoElementResult geoElementResult = identifyResults.GeoElementResults.ElementAt(identifyView.CurrentElementIndex);
+        var geoElementResult = identifyResults.GeoElementResults.ElementAt(identifyView.CurrentElementIndex);
         (geoElementResult.Layer as FeatureLayer).SelectFeature(geoElementResult.GeoElement as Feature);
 
         identifyView.TitleText = (geoElementResult.Layer is FeatureLayer) ?
           (geoElementResult.Layer as FeatureLayer).FeatureTable.DisplayName :
           string.Empty;
 
-        if (geoElementResult.Layer is IPopupSource)
-        {
-          IPopupSource popupSource = geoElementResult.Layer as IPopupSource;
-          PopupDefinition popupDefinition = popupSource.PopupDefinition;
+        if(geoElementResult.Layer is IPopupSource) {
+          var popupSource = geoElementResult.Layer as IPopupSource;
+          var popupDefinition = popupSource.PopupDefinition;
           popup = popupDefinition != null ?
             new Popup(geoElementResult.GeoElement, popupDefinition) :
             Popup.FromGeoElement(geoElementResult.GeoElement);
         }
-        else
-        {
+        else {
           popup = Popup.FromGeoElement(geoElementResult.GeoElement);
         }
-        if (popup != null)
-        {
-          PopupManager popManager = new PopupManager(popup as Popup);
+        if(popup != null) {
+          var popManager = new PopupManager(popup);
           identifyView.PopupManager = popManager;
         }
         identifyView.StatusText = $"{identifyView.CurrentElementIndex + 1} / {identifyResults.GeoElementResults.Count}";
       }
-      catch (Exception ex)
-      {
+      catch(Exception ex) {
         Console.WriteLine(ex.Message);
       }
 
@@ -143,13 +130,11 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    private void ClearSelection(IdentifyResults identifyResuls = null)
-    {
-      if (identifyResuls == null)
-      {
+    private void ClearSelection(IdentifyResults identifyResuls = null) {
+      if(identifyResuls == null) {
         identifyResuls = IdentifyResults;
       }
-      IdentifyGeoElementResult geoElementResult = identifyResuls.GeoElementResults.ElementAt(CurrentElementIndex);
+      var geoElementResult = identifyResuls.GeoElementResults.ElementAt(CurrentElementIndex);
       (geoElementResult.Layer as FeatureLayer).ClearSelection();
     }
 
@@ -158,8 +143,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
-    private void PreviousResulteClicked(object sender, EventArgs e)
-    {
+    private void PreviousResulteClicked(object sender, EventArgs e) {
       ClearSelection();
       CurrentElementIndex -= 1;
       PreviousButton.IsEnabled = CurrentElementIndex > 0;
@@ -172,8 +156,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
-    private void NextResultClicked(object sender, EventArgs e)
-    {
+    private void NextResultClicked(object sender, EventArgs e) {
       ClearSelection();
 
       CurrentElementIndex += 1;
@@ -188,8 +171,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
-    protected override void OnCloseButtonClicked(object sender, EventArgs e)
-    {
+    protected override void OnCloseButtonClicked(object sender, EventArgs e) {
       base.OnCloseButtonClicked(sender, e);
       ClearSelection();
     }

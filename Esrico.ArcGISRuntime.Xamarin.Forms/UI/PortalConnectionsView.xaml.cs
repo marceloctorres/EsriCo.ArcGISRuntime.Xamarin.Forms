@@ -6,11 +6,9 @@ using EsriCo.ArcGISRuntime.Xamarin.Forms.Services;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
-{
+namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
   [XamlCompilation(XamlCompilationOptions.Compile)]
-  public partial class PortalConnectionsView : ContentView
-  {
+  public partial class PortalConnectionsView : ContentView {
     /// <summary>
     /// 
     /// </summary>
@@ -23,8 +21,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    public List<PortalConnection> PortalConnections
-    {
+    public List<PortalConnection> PortalConnections {
       get => (List<PortalConnection>)GetValue(PortalConnectionsProperty);
       set => SetValue(PortalConnectionsProperty, value);
     }
@@ -34,8 +31,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    public ImageSource LoginImage
-    {
+    public ImageSource LoginImage {
       get => _logedInImage;
       set => _logedInImage = value;
     }
@@ -45,17 +41,15 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    public ImageSource ActiveImage
-    {
+    public ImageSource ActiveImage {
       get => _activeImage;
       set => _activeImage = value;
     }
 
 
-    public PortalConnectionsView()
-    {
+    public PortalConnectionsView() {
       InitializeComponent();
-      System.Reflection.Assembly asm = GetType().Assembly;
+      var asm = GetType().Assembly;
 
       LoginImage = ImageSource.FromStream(() => asm.GetStreamEmbeddedResource(@"ic_key"));
       ActiveImage = ImageSource.FromStream(() => asm.GetStreamEmbeddedResource(@"ic_checked"));

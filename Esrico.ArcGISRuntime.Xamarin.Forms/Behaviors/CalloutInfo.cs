@@ -2,10 +2,8 @@
 using Esri.ArcGISRuntime.Geometry;
 using Esri.ArcGISRuntime.UI;
 
-namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
-{
-  public class CalloutInfo
-  {
+namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors {
+  public class CalloutInfo {
     /// <summary>
     /// 
     /// </summary>

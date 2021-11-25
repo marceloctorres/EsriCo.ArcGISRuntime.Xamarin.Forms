@@ -1,9 +1,7 @@
 ﻿using System.Collections.Generic;
 
-namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
-{
-  public class IdentifyResults
-  {
+namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors {
+  public class IdentifyResults {
     /// <summary>
     /// 
     /// </summary>
@@ -17,8 +15,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
     /// <summary>
     /// 
     /// </summary>
-    public IdentifyResults()
-    {
+    public IdentifyResults() {
       GraphicsResults = new List<IdentifyGraphicResult>();
       GeoElementResults = new List<IdentifyGeoElementResult>();
     }

@@ -12,10 +12,8 @@ using Prism.Behaviors;
 
 using Xamarin.Forms;
 
-namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
-{
-  public class IdentifyBehavior : BehaviorBase<MapView>
-  {
+namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors {
+  public class IdentifyBehavior : BehaviorBase<MapView> {
     /// <summary>
     /// 
     /// </summary>
@@ -63,8 +61,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
     /// <summary>
     /// 
     /// </summary>
-    public ICommand Command
-    {
+    public ICommand Command {
       get => (ICommand)GetValue(CommandProperty);
       set => SetValue(CommandProperty, value);
     }
@@ -72,8 +69,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
     /// <summary>
     /// 
     /// </summary>
-    public List<GraphicsOverlay> GraphicsOverlays
-    {
+    public List<GraphicsOverlay> GraphicsOverlays {
       get => (List<GraphicsOverlay>)GetValue(GraphicsOverlaysProperty);
       set => SetValue(GraphicsOverlaysProperty, value);
     }
@@ -81,8 +77,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
     /// <summary>
     /// 
     /// </summary>
-    public List<Layer> Layers
-    {
+    public List<Layer> Layers {
       get => (List<Layer>)GetValue(LayersProperty);
       set => SetValue(LayersProperty, value);
     }
@@ -90,8 +85,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
     /// <summary>
     /// 
     /// </summary>
-    public double Tolerance
-    {
+    public double Tolerance {
       get => (double)GetValue(ToleranceProperty);
       set => SetValue(ToleranceProperty, value);
     }
@@ -99,8 +93,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
     /// <summary>
     /// 
     /// </summary>
-    public long MaxResults
-    {
+    public long MaxResults {
       get => (long)GetValue(MaxResultsProperty);
       set => SetValue(MaxResultsProperty, value);
     }
@@ -108,44 +101,36 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
     /// <summary>
     /// 
     /// </summary>
-    public bool ReturnOnlyPopups
-    {
+    public bool ReturnOnlyPopups {
       get => (bool)GetValue(ReturnOnlyPopupsProperty);
       set => SetValue(ReturnOnlyPopupsProperty, value);
     }
 
-    public IdentifyBehavior()
-    {
+    public IdentifyBehavior() {
       Tolerance = 1;
       MaxResults = 10;
       ReturnOnlyPopups = false;
     }
 
-    protected override void OnAttachedTo(MapView bindable)
-    {
+    protected override void OnAttachedTo(MapView bindable) {
       base.OnAttachedTo(bindable);
       bindable.GeoViewTapped += GeoViewTapped;
     }
 
-    private async void GeoViewTapped(object sender, GeoViewInputEventArgs e)
-    {
-      if (Command != null && AssociatedObject.Map != null)
-      {
+    private async void GeoViewTapped(object sender, GeoViewInputEventArgs e) {
+      if(Command != null && AssociatedObject.Map != null) {
         object item = null;
-        if (Command.CanExecute(item))
-        {
-          IdentifyResults identifyResults = new IdentifyResults();
+        if(Command.CanExecute(item)) {
+          var identifyResults = new IdentifyResults();
 
-          if (GraphicsOverlays != null && GraphicsOverlays.Count > 0)
-          {
-            IReadOnlyList<IdentifyGraphicsOverlayResult> identifyGraphicOverlayResults = await AssociatedObject.IdentifyGraphicsOverlaysAsync(
+          if(GraphicsOverlays != null && GraphicsOverlays.Count > 0) {
+            var identifyGraphicOverlayResults = await AssociatedObject.IdentifyGraphicsOverlaysAsync(
               e.Position,
               Tolerance,
               ReturnOnlyPopups,
               MaxResults);
 
-            if (identifyGraphicOverlayResults != null)
-            {
+            if(identifyGraphicOverlayResults != null) {
               identifyResults
                 .GraphicsResults = (from r in identifyGraphicOverlayResults
                                     from g in r.Graphics
@@ -158,21 +143,18 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
               ;
             }
           }
-          if (Layers != null && Layers.Count > 0)
-          {
-            IReadOnlyList<IdentifyLayerResult> identifyLayerResults = await AssociatedObject.IdentifyLayersAsync(
+          if(Layers != null && Layers.Count > 0) {
+            var identifyLayerResults = await AssociatedObject.IdentifyLayersAsync(
               e.Position,
               Tolerance,
               ReturnOnlyPopups,
               MaxResults);
-            if (identifyLayerResults != null)
-            {
+            if(identifyLayerResults != null) {
               identifyResults
                 .GeoElementResults
                 .AddRange(from ir in identifyLayerResults
                           from ge in ir.GeoElements
-                          select new IdentifyGeoElementResult
-                          {
+                          select new IdentifyGeoElementResult {
                             GeoElement = (ge as Feature),
                             Layer = ir.LayerContent as Layer
                           });
@@ -181,15 +163,13 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
                 AddRange(from ir in identifyLayerResults
                          from sr in ir.SublayerResults
                          from ge in sr.GeoElements
-                         select new IdentifyGeoElementResult
-                         {
+                         select new IdentifyGeoElementResult {
                            GeoElement = (ge as Feature),
                            Layer = sr.LayerContent as Layer
                          });
             }
 
-            foreach (IdentifyLayerResult ir in identifyLayerResults)
-            {
+            foreach(var ir in identifyLayerResults) {
             }
           }
           Command.Execute(identifyResults);

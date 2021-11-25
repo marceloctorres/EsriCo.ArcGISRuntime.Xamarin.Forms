@@ -4,11 +4,9 @@ using System.Windows.Input;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
-{
+namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
   [XamlCompilation(XamlCompilationOptions.Compile)]
-  public partial class LogInView : ContentView
-  {
+  public partial class LogInView : ContentView {
     public static readonly BindableProperty LogInCommandProperty = BindableProperty.Create(
       nameof(LogInCommand),
       typeof(ICommand),
@@ -17,8 +15,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    public ICommand LogInCommand
-    {
+    public ICommand LogInCommand {
       get => (ICommand)GetValue(LogInCommandProperty);
       set => SetValue(LogInCommandProperty, value);
     }
@@ -34,8 +31,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    public ICommand CancelCommand
-    {
+    public ICommand CancelCommand {
       get => (ICommand)GetValue(CancelCommandProperty);
       set => SetValue(CancelCommandProperty, value);
     }
@@ -52,8 +48,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    public string Username
-    {
+    public string Username {
       get => (string)GetValue(UsernameProperty);
       set => SetValue(UsernameProperty, value);
     }
@@ -70,8 +65,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    public string Password
-    {
+    public string Password {
       get => (string)GetValue(PasswordProperty);
       set => SetValue(PasswordProperty, value);
     }
@@ -81,11 +75,9 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    public bool IsPasswordHidden
-    {
+    public bool IsPasswordHidden {
       get => _isPasswordHidden;
-      set
-      {
+      set {
         _isPasswordHidden = value;
         OnPropertyChanged(nameof(IsPasswordHidden));
       }
@@ -94,15 +86,12 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI
     /// <summary>
     /// 
     /// </summary>
-    public LogInView()
-    {
-      try
-      {
+    public LogInView() {
+      try {
         InitializeComponent();
         IsPasswordHidden = true;
       }
-      catch (Exception ex)
-      {
+      catch(Exception ex) {
         Console.WriteLine(ex.Message);
       }
     }

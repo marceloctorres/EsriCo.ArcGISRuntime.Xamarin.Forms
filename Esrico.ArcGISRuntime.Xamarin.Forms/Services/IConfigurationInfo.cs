@@ -3,13 +3,11 @@
 /// <summary>
 /// 
 /// </summary>
-namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services
-{
+namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services {
   /// <summary>
   /// 
   /// </summary>
-  public interface IConfigurationInfo
-  {
+  public interface IConfigurationInfo {
     /// <summary>
     /// 
     /// </summary>

@@ -8,42 +8,33 @@ using Prism.Behaviors;
 
 using Xamarin.Forms;
 
-namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
-{
-  public class ViewportChangedBehavior : BehaviorBase<GeoView>
-  {
+namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors {
+  public class ViewportChangedBehavior : BehaviorBase<GeoView> {
     public static readonly BindableProperty CommandProperty = BindableProperty.Create(
       nameof(Command),
       typeof(ICommand),
       typeof(ViewportChangedBehavior));
 
-    public ICommand Command
-    {
+    public ICommand Command {
       get => (ICommand)GetValue(CommandProperty);
       set => SetValue(CommandProperty, value);
     }
 
-    protected override void OnAttachedTo(GeoView bindable)
-    {
+    protected override void OnAttachedTo(GeoView bindable) {
       base.OnAttachedTo(bindable);
       bindable.ViewpointChanged += Bindable_ViewpointChanged;
     }
 
-    protected override void OnDetachingFrom(GeoView bindable)
-    {
+    protected override void OnDetachingFrom(GeoView bindable) {
       base.OnDetachingFrom(bindable);
       bindable.ViewpointChanged -= Bindable_ViewpointChanged;
     }
 
-    private void Bindable_ViewpointChanged(object sender, EventArgs e)
-    {
-      if (Command != null)
-      {
-        if (AssociatedObject != null)
-        {
-          Viewpoint currentViewpoint = AssociatedObject.GetCurrentViewpoint(ViewpointType.BoundingGeometry);
-          if (Command.CanExecute(currentViewpoint))
-          {
+    private void Bindable_ViewpointChanged(object sender, EventArgs e) {
+      if(Command != null) {
+        if(AssociatedObject != null) {
+          var currentViewpoint = AssociatedObject.GetCurrentViewpoint(ViewpointType.BoundingGeometry);
+          if(Command.CanExecute(currentViewpoint)) {
             Command.Execute(currentViewpoint);
           }
         }
