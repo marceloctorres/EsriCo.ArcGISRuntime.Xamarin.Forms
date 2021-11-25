@@ -21,7 +21,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services {
     string BaseUrl { get; set; }
     TokenCredential Credential { get; }
     Func<CredentialRequestInfo, Task<Credential>> ChallengeHandlerAsync { get; set; }
-    string Domain { get; }
+    string Domain { get; set;  }
     string Name { get; }
     string OrganizationName { get; }
     string OrganizationSubDomain { get; }
