@@ -16,14 +16,15 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services {
     /// <summary>
     /// 
     /// </summary>
-
     bool Active { get; set; }
+    AuthenticationType AuthenticationType { get; set; }
     string BaseUrl { get; set; }
     TokenCredential Credential { get; }
-    string Domain { get; set; }
-    string Name { get; set; }
-    string OrganizationName { get; set; }
-    string OrganizationSubDomain { get; set; }
+    Func<CredentialRequestInfo, Task<Credential>> ChallengeHandlerAsync { get; set; }
+    string Domain { get; }
+    string Name { get; }
+    string OrganizationName { get; }
+    string OrganizationSubDomain { get; }
     string Password { get; set; }
     ArcGISPortal Portal { get; }
     PortalInfo PortalInfo { get; }
@@ -31,13 +32,12 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services {
     string ServerRegisterUrl { get; }
     bool SignedIn { get; }
     TokenAuthenticationType TokenAuthenticationType { get; set; }
-    AuthenticationType AuthenticationType { get; set; }
-    DateTimeOffset TokenExpirationDateTime { get; set; }
+    DateTimeOffset TokenExpirationDateTime { get; }
     double TokenValidDays { get; set; }
     string User { get; set; }
     ImageSource UserImage { get; set; }
-    string UserImageString { get; set; }
-    string UserName { get; set; }
+    string UserImageString { get; }
+    string UserName { get; }
     string WebMapId { get; set; }
     Task<Credential> CreateCredentialAsync(CredentialRequestInfo info);
     PortalGroup GetGroup(string groupTitle);

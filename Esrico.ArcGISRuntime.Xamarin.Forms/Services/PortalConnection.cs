@@ -68,7 +68,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services {
     /// </summary>
     public string UserName {
       get => _userName;
-      set => SetProperty(ref _userName, value);
+      private set => SetProperty(ref _userName, value);
     }
 
     private string _organizationName;
@@ -78,7 +78,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services {
     /// </summary>
     public string OrganizationName {
       get => _organizationName;
-      set => SetProperty(ref _organizationName, value);
+      private set => SetProperty(ref _organizationName, value);
     }
 
     private string _organizationSubDomain;
@@ -88,7 +88,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services {
     /// </summary>
     public string OrganizationSubDomain {
       get => _organizationSubDomain;
-      set => SetProperty(ref _organizationSubDomain, value);
+      private set => SetProperty(ref _organizationSubDomain, value);
     }
 
     private ImageSource _imageSource;
@@ -108,7 +108,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services {
     /// </summary>
     public string UserImageString {
       get => _imageUserString;
-      set => SetProperty(ref _imageUserString, value);
+      private set => SetProperty(ref _imageUserString, value);
     }
 
     private string _baseUrl;
@@ -146,7 +146,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services {
     /// </summary>
     public DateTimeOffset TokenExpirationDateTime {
       get => _tokenExpirationDateTime;
-      set => SetProperty(ref _tokenExpirationDateTime, value);
+      private set => SetProperty(ref _tokenExpirationDateTime, value);
     }
 
     /// <summary>
@@ -202,9 +202,14 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services {
     /// <summary>
     /// 
     /// </summary>
+    public Func<CredentialRequestInfo, Task<Credential>> ChallengeHandlerAsync { get; set; }
+
+    /// <summary>
+    /// 
+    /// </summary>
     public PortalConnection() {
       TokenAuthenticationType = TokenAuthenticationType.ArcGISToken;
-      TokenValidDays = 30;
+      TokenValidDays = 14;
     }
 
     /// <summary>
@@ -263,7 +268,9 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services {
     public async Task SignInAsync() {
       try {
         var loginType = await ArcGISPortal.GetLoginTypeForUriAsync(new Uri(BaseUrl));
-        AuthenticationManager.Current.ChallengeHandler = new ChallengeHandler(CreateCredentialAsync);
+        AuthenticationManager.Current.ChallengeHandler = ChallengeHandlerAsync != null 
+          ? new ChallengeHandler(ChallengeHandlerAsync)
+          : new ChallengeHandler(CreateCredentialAsync);
 
         if(loginType != PortalLoginType.UsernamePassword && loginType != PortalLoginType.Unknown) {
           var challengeRequest = new CredentialRequestInfo

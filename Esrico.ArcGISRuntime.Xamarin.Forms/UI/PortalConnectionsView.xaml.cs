@@ -1,7 +1,10 @@
 ﻿using System.Collections.Generic;
+using System.Windows.Input;
 
 using EsriCo.ArcGISRuntime.Xamarin.Forms.Extensions;
 using EsriCo.ArcGISRuntime.Xamarin.Forms.Services;
+
+using Prism.Commands;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -46,6 +49,11 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
       set => _activeImage = value;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    public ICommand CloseCommand { get; private set; }
+
 
     public PortalConnectionsView() {
       InitializeComponent();
@@ -53,7 +61,13 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
 
       LoginImage = ImageSource.FromStream(() => asm.GetStreamEmbeddedResource(@"ic_key"));
       ActiveImage = ImageSource.FromStream(() => asm.GetStreamEmbeddedResource(@"ic_checked"));
+      CloseCommand = new DelegateCommand(() => {
+        IsVisible = false;
+        }
+      );
 
     }
+
+    private void CloseButton_Clicked(object sender, System.EventArgs e) => IsVisible = false;
   }
 }

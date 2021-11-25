@@ -7,6 +7,7 @@ items:
   children:
   - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.#ctor
   - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.Active
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.AuthenticationType
   - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.BaseUrl
   - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.CreateCredentialAsync(Esri.ArcGISRuntime.Security.CredentialRequestInfo)
   - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.Credential
@@ -51,7 +52,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: PortalConnection
     path: Services/PortalConnection.cs
-    startLine: 23
+    startLine: 21
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -106,7 +107,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: Active
     path: Services/PortalConnection.cs
-    startLine: 31
+    startLine: 28
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -145,7 +146,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: User
     path: Services/PortalConnection.cs
-    startLine: 42
+    startLine: 38
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -184,7 +185,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: Password
     path: Services/PortalConnection.cs
-    startLine: 53
+    startLine: 48
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -223,7 +224,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: Domain
     path: Services/PortalConnection.cs
-    startLine: 64
+    startLine: 58
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -262,27 +263,27 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: UserName
     path: Services/PortalConnection.cs
-    startLine: 75
+    startLine: 68
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
   summary: "\n\n"
   example: []
   syntax:
-    content: public string UserName { get; set; }
+    content: public string UserName { get; }
     parameters: []
     return:
       type: System.String
-    content.vb: Public Property UserName As String
+    content.vb: Public ReadOnly Property UserName As String
   overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.UserName*
   implements:
   - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.UserName
   modifiers.csharp:
   - public
   - get
-  - set
   modifiers.vb:
   - Public
+  - ReadOnly
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.OrganizationName
   commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.OrganizationName
   id: OrganizationName
@@ -301,27 +302,27 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: OrganizationName
     path: Services/PortalConnection.cs
-    startLine: 86
+    startLine: 78
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
   summary: "\n\n"
   example: []
   syntax:
-    content: public string OrganizationName { get; set; }
+    content: public string OrganizationName { get; }
     parameters: []
     return:
       type: System.String
-    content.vb: Public Property OrganizationName As String
+    content.vb: Public ReadOnly Property OrganizationName As String
   overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.OrganizationName*
   implements:
   - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.OrganizationName
   modifiers.csharp:
   - public
   - get
-  - set
   modifiers.vb:
   - Public
+  - ReadOnly
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.OrganizationSubDomain
   commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.OrganizationSubDomain
   id: OrganizationSubDomain
@@ -340,27 +341,27 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: OrganizationSubDomain
     path: Services/PortalConnection.cs
-    startLine: 97
+    startLine: 88
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
   summary: "\n\n"
   example: []
   syntax:
-    content: public string OrganizationSubDomain { get; set; }
+    content: public string OrganizationSubDomain { get; }
     parameters: []
     return:
       type: System.String
-    content.vb: Public Property OrganizationSubDomain As String
+    content.vb: Public ReadOnly Property OrganizationSubDomain As String
   overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.OrganizationSubDomain*
   implements:
   - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.OrganizationSubDomain
   modifiers.csharp:
   - public
   - get
-  - set
   modifiers.vb:
   - Public
+  - ReadOnly
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.UserImage
   commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.UserImage
   id: UserImage
@@ -379,7 +380,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: UserImage
     path: Services/PortalConnection.cs
-    startLine: 108
+    startLine: 98
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -418,27 +419,27 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: UserImageString
     path: Services/PortalConnection.cs
-    startLine: 119
+    startLine: 108
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
   summary: "\n\n"
   example: []
   syntax:
-    content: public string UserImageString { get; set; }
+    content: public string UserImageString { get; }
     parameters: []
     return:
       type: System.String
-    content.vb: Public Property UserImageString As String
+    content.vb: Public ReadOnly Property UserImageString As String
   overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.UserImageString*
   implements:
   - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.UserImageString
   modifiers.csharp:
   - public
   - get
-  - set
   modifiers.vb:
   - Public
+  - ReadOnly
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.BaseUrl
   commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.BaseUrl
   id: BaseUrl
@@ -457,7 +458,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: BaseUrl
     path: Services/PortalConnection.cs
-    startLine: 130
+    startLine: 118
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -496,7 +497,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: TokenValidDays
     path: Services/PortalConnection.cs
-    startLine: 152
+    startLine: 136
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -535,27 +536,27 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: TokenExpirationDateTime
     path: Services/PortalConnection.cs
-    startLine: 163
+    startLine: 146
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
   summary: "\n\n"
   example: []
   syntax:
-    content: public DateTimeOffset TokenExpirationDateTime { get; set; }
+    content: public DateTimeOffset TokenExpirationDateTime { get; }
     parameters: []
     return:
       type: System.DateTimeOffset
-    content.vb: Public Property TokenExpirationDateTime As DateTimeOffset
+    content.vb: Public ReadOnly Property TokenExpirationDateTime As DateTimeOffset
   overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.TokenExpirationDateTime*
   implements:
   - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.TokenExpirationDateTime
   modifiers.csharp:
   - public
   - get
-  - set
   modifiers.vb:
   - Public
+  - ReadOnly
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.SignedIn
   commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.SignedIn
   id: SignedIn
@@ -574,7 +575,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: SignedIn
     path: Services/PortalConnection.cs
-    startLine: 172
+    startLine: 154
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -613,7 +614,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: WebMapId
     path: Services/PortalConnection.cs
-    startLine: 177
+    startLine: 159
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -652,7 +653,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: ServerRegisterUrl
     path: Services/PortalConnection.cs
-    startLine: 182
+    startLine: 164
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -691,7 +692,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: Name
     path: Services/PortalConnection.cs
-    startLine: 187
+    startLine: 169
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -730,7 +731,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: Credential
     path: Services/PortalConnection.cs
-    startLine: 192
+    startLine: 174
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -769,7 +770,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: Portal
     path: Services/PortalConnection.cs
-    startLine: 197
+    startLine: 179
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -808,7 +809,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: PortalUser
     path: Services/PortalConnection.cs
-    startLine: 202
+    startLine: 184
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -847,7 +848,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: PortalInfo
     path: Services/PortalConnection.cs
-    startLine: 207
+    startLine: 189
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -886,27 +887,66 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: TokenAuthenticationType
     path: Services/PortalConnection.cs
-    startLine: 212
+    startLine: 194
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
   summary: "\n\n"
   example: []
   syntax:
-    content: public TokenAuthenticationType TokenAuthenticationType { get; }
+    content: public TokenAuthenticationType TokenAuthenticationType { get; set; }
     parameters: []
     return:
       type: Esri.ArcGISRuntime.Security.TokenAuthenticationType
-    content.vb: Public ReadOnly Property TokenAuthenticationType As TokenAuthenticationType
+    content.vb: Public Property TokenAuthenticationType As TokenAuthenticationType
   overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.TokenAuthenticationType*
   implements:
   - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.TokenAuthenticationType
   modifiers.csharp:
   - public
   - get
+  - set
   modifiers.vb:
   - Public
-  - ReadOnly
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.AuthenticationType
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.AuthenticationType
+  id: AuthenticationType
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection
+  langs:
+  - csharp
+  - vb
+  name: AuthenticationType
+  nameWithType: PortalConnection.AuthenticationType
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.AuthenticationType
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/PortalConnection.cs
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
+    id: AuthenticationType
+    path: Services/PortalConnection.cs
+    startLine: 199
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public AuthenticationType AuthenticationType { get; set; }
+    parameters: []
+    return:
+      type: Esri.ArcGISRuntime.Security.AuthenticationType
+    content.vb: Public Property AuthenticationType As AuthenticationType
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.AuthenticationType*
+  implements:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.AuthenticationType
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.#ctor
   commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.#ctor
   id: '#ctor'
@@ -925,7 +965,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: .ctor
     path: Services/PortalConnection.cs
-    startLine: 217
+    startLine: 204
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -957,7 +997,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: CreateCredentialAsync
     path: Services/PortalConnection.cs
-    startLine: 258
+    startLine: 242
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -999,7 +1039,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: SignInAsync
     path: Services/PortalConnection.cs
-    startLine: 288
+    startLine: 262
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -1036,7 +1076,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: SignOut
     path: Services/PortalConnection.cs
-    startLine: 334
+    startLine: 303
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -1070,7 +1110,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: GetMapAsync
     path: Services/PortalConnection.cs
-    startLine: 348
+    startLine: 316
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -1108,7 +1148,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: GetMapAsync
     path: Services/PortalConnection.cs
-    startLine: 359
+    startLine: 326
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -1150,7 +1190,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: IsCredentialNull
     path: Services/PortalConnection.cs
-    startLine: 369
+    startLine: 335
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -1187,7 +1227,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: GetLicenseInfoJsonAsync
     path: Services/PortalConnection.cs
-    startLine: 375
+    startLine: 341
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -1225,7 +1265,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: GetGroup
     path: Services/PortalConnection.cs
-    startLine: 440
+    startLine: 399
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -1266,7 +1306,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: GetWebMapItemsByGroupAsync
     path: Services/PortalConnection.cs
-    startLine: 455
+    startLine: 412
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -1308,7 +1348,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: GetWebMapItemByGroupAndTitleAsync
     path: Services/PortalConnection.cs
-    startLine: 472
+    startLine: 428
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -2375,6 +2415,24 @@ references:
   name: TokenAuthenticationType
   nameWithType: TokenAuthenticationType
   fullName: Esri.ArcGISRuntime.Security.TokenAuthenticationType
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.AuthenticationType*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.AuthenticationType
+  name: AuthenticationType
+  nameWithType: PortalConnection.AuthenticationType
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.AuthenticationType
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.AuthenticationType
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.AuthenticationType
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection
+  name: AuthenticationType
+  nameWithType: IPortalConnection.AuthenticationType
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.AuthenticationType
+- uid: Esri.ArcGISRuntime.Security.AuthenticationType
+  commentId: T:Esri.ArcGISRuntime.Security.AuthenticationType
+  parent: Esri.ArcGISRuntime.Security
+  isExternal: true
+  name: AuthenticationType
+  nameWithType: AuthenticationType
+  fullName: Esri.ArcGISRuntime.Security.AuthenticationType
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.#ctor*
   commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.#ctor
   name: PortalConnection

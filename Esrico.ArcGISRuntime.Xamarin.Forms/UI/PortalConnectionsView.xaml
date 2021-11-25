@@ -158,6 +158,7 @@
             <Button Text="{x:Static root:AppResources.AddPortalButtonText}"
                     Command="{Binding AddAccountCommand, Source={x:Reference view}}" />
             <Button Text="{x:Static root:AppResources.CloseButtonText}"
+                    Clicked="CloseButton_Clicked"  
                     Command="{Binding CloseCommand, Source={x:Reference view}}" />
           </StackLayout>
         </Grid>

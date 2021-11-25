@@ -1837,6 +1837,19 @@ references:
   isSpec: "True"
   fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.Active
   nameWithType: IPortalConnection.Active
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.AuthenticationType
+  name: AuthenticationType
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IPortalConnection_AuthenticationType
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.AuthenticationType
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.AuthenticationType
+  nameWithType: IPortalConnection.AuthenticationType
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.AuthenticationType*
+  name: AuthenticationType
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IPortalConnection_AuthenticationType_
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.AuthenticationType
+  isSpec: "True"
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.AuthenticationType
+  nameWithType: IPortalConnection.AuthenticationType
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.BaseUrl
   name: BaseUrl
   href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IPortalConnection_BaseUrl
@@ -2458,6 +2471,19 @@ references:
   isSpec: "True"
   fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.Active
   nameWithType: PortalConnection.Active
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.AuthenticationType
+  name: AuthenticationType
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_PortalConnection_AuthenticationType
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.AuthenticationType
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.AuthenticationType
+  nameWithType: PortalConnection.AuthenticationType
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.AuthenticationType*
+  name: AuthenticationType
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_PortalConnection_AuthenticationType_
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.AuthenticationType
+  isSpec: "True"
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.AuthenticationType
+  nameWithType: PortalConnection.AuthenticationType
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.BaseUrl
   name: BaseUrl
   href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_PortalConnection_BaseUrl
@@ -5034,6 +5060,19 @@ references:
   isSpec: "True"
   fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PortalConnectionsView.ActiveImage
   nameWithType: PortalConnectionsView.ActiveImage
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PortalConnectionsView.CloseCommand
+  name: CloseCommand
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PortalConnectionsView.html#EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PortalConnectionsView_CloseCommand
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PortalConnectionsView.CloseCommand
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PortalConnectionsView.CloseCommand
+  nameWithType: PortalConnectionsView.CloseCommand
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PortalConnectionsView.CloseCommand*
+  name: CloseCommand
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PortalConnectionsView.html#EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PortalConnectionsView_CloseCommand_
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PortalConnectionsView.CloseCommand
+  isSpec: "True"
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PortalConnectionsView.CloseCommand
+  nameWithType: PortalConnectionsView.CloseCommand
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PortalConnectionsView.LoginImage
   name: LoginImage
   href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PortalConnectionsView.html#EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PortalConnectionsView_LoginImage

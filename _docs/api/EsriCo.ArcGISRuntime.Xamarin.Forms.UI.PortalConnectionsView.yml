@@ -7,6 +7,7 @@ items:
   children:
   - EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PortalConnectionsView.#ctor
   - EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PortalConnectionsView.ActiveImage
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PortalConnectionsView.CloseCommand
   - EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PortalConnectionsView.LoginImage
   - EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PortalConnectionsView.PortalConnections
   - EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PortalConnectionsView.PortalConnectionsProperty
@@ -282,7 +283,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: PortalConnectionsProperty
     path: UI/PortalConnectionsView.xaml.cs
-    startLine: 16
+    startLine: 17
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -319,7 +320,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: PortalConnections
     path: UI/PortalConnectionsView.xaml.cs
-    startLine: 25
+    startLine: 26
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -393,7 +394,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: ActiveImage
     path: UI/PortalConnectionsView.xaml.cs
-    startLine: 47
+    startLine: 46
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -412,6 +413,43 @@ items:
   - set
   modifiers.vb:
   - Public
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PortalConnectionsView.CloseCommand
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PortalConnectionsView.CloseCommand
+  id: CloseCommand
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PortalConnectionsView
+  langs:
+  - csharp
+  - vb
+  name: CloseCommand
+  nameWithType: PortalConnectionsView.CloseCommand
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PortalConnectionsView.CloseCommand
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/PortalConnectionsView.xaml.cs
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
+    id: CloseCommand
+    path: UI/PortalConnectionsView.xaml.cs
+    startLine: 54
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public ICommand CloseCommand { get; }
+    parameters: []
+    return:
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property CloseCommand As ICommand
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PortalConnectionsView.CloseCommand*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PortalConnectionsView.#ctor
   commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PortalConnectionsView.#ctor
   id: '#ctor'
@@ -430,7 +468,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: .ctor
     path: UI/PortalConnectionsView.xaml.cs
-    startLine: 54
+    startLine: 57
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -4309,6 +4347,24 @@ references:
   name: ActiveImage
   nameWithType: PortalConnectionsView.ActiveImage
   fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PortalConnectionsView.ActiveImage
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PortalConnectionsView.CloseCommand*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PortalConnectionsView.CloseCommand
+  name: CloseCommand
+  nameWithType: PortalConnectionsView.CloseCommand
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PortalConnectionsView.CloseCommand
+- uid: System.Windows.Input.ICommand
+  commentId: T:System.Windows.Input.ICommand
+  parent: System.Windows.Input
+  isExternal: true
+  name: ICommand
+  nameWithType: ICommand
+  fullName: System.Windows.Input.ICommand
+- uid: System.Windows.Input
+  commentId: N:System.Windows.Input
+  isExternal: true
+  name: System.Windows.Input
+  nameWithType: System.Windows.Input
+  fullName: System.Windows.Input
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PortalConnectionsView.#ctor*
   commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PortalConnectionsView.#ctor
   name: PortalConnectionsView
