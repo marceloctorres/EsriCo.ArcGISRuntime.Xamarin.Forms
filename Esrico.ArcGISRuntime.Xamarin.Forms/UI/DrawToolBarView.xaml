@@ -15,35 +15,35 @@
       <Button x:Key="DrawPointTool"
               Clicked="DrawPointToolClicked"
               Style="{DynamicResource ToolButton}"
-              Image="{Binding DrawPointToolImage, Source={x:Reference view}}" />
+              ImageSource="{Binding DrawPointToolImage, Source={x:Reference view}}" />
       <Button x:Key="DrawPolylineTool"
               Clicked="DrawPolylineToolClicked"
               Style="{DynamicResource ToolButton}"
-              Image="{Binding DrawPolylineToolImage, Source={x:Reference view}}" />
+              ImageSource="{Binding DrawPolylineToolImage, Source={x:Reference view}}" />
       <Button x:Key="DrawFreehandLineTool"
               Clicked="DrawFreehandLineToolClicked"
               Style="{DynamicResource ToolButton}"
-              Image="{Binding DrawFreehandLineToolImage, Source={x:Reference view}}" />
+              ImageSource="{Binding DrawFreehandLineToolImage, Source={x:Reference view}}" />
       <Button x:Key="DrawPolygonTool"
               Clicked="DrawPolygonToolClicked"
               Style="{DynamicResource ToolButton}"
-              Image="{Binding DrawPolygonToolImage, Source={x:Reference view}}" />
+              ImageSource="{Binding DrawPolygonToolImage, Source={x:Reference view}}" />
       <Button x:Key="DrawRectangleTool"
               Clicked="DrawRectangleToolClicked"
               Style="{DynamicResource ToolButton}"
-              Image="{Binding DrawRectangleToolImage, Source={x:Reference view}}" />
+              ImageSource="{Binding DrawRectangleToolImage, Source={x:Reference view}}" />
       <Button x:Key="DrawTextTool"
               Clicked="DrawTextToolClicked"
               Style="{DynamicResource ToolButton}"
-              Image="{Binding DrawTextToolImage, Source={x:Reference view}}" />
+              ImageSource="{Binding DrawTextToolImage, Source={x:Reference view}}" />
       <Button x:Key="DrawEraseTool"
               Clicked="DrawEraseToolClicked"
               Style="{DynamicResource ToolButton}"
-              Image="{Binding DrawEraseToolImage, Source={x:Reference view}}" />
+              ImageSource="{Binding DrawEraseToolImage, Source={x:Reference view}}" />
       <Button x:Key="DrawNoneTool"
               Clicked="DrawNoneToolClicked"
               Style="{DynamicResource ToolButton}"
-              Image="{Binding DrawNoneToolImage, Source={x:Reference view}}" />
+              ImageSource="{Binding DrawNoneToolImage, Source={x:Reference view}}" />
       <ControlTemplate x:Key="HorizontalLayoutTemplate">
         <Grid BackgroundColor="Transparent"
               Margin="10">

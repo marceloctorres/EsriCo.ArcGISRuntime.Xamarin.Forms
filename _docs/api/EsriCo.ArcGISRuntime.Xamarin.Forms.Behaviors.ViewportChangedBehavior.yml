@@ -7,8 +7,14 @@ items:
   children:
   - EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.Command
   - EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.CommandProperty
-  - EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.OnAttachedTo(Esri.ArcGISRuntime.Xamarin.Forms.GeoView)
-  - EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.OnDetachingFrom(Esri.ArcGISRuntime.Xamarin.Forms.GeoView)
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.MapScale
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.MapScaleProperty
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.OnAttachedTo(Esri.ArcGISRuntime.Xamarin.Forms.MapView)
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.OnDetachingFrom(Esri.ArcGISRuntime.Xamarin.Forms.MapView)
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.UnitsPerPixel
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.UnitsPerPixelProperty
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.VisibleArea
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.VisibleAreaProperty
   langs:
   - csharp
   - vb
@@ -23,29 +29,29 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: ViewportChangedBehavior
     path: Behaviors/ViewportChangedBehavior.cs
-    startLine: 11
+    startLine: 12
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
   syntax:
-    content: 'public class ViewportChangedBehavior : BehaviorBase<GeoView>, INotifyPropertyChanged, IDynamicResourceHandler, IAttachedObject'
+    content: 'public class ViewportChangedBehavior : BehaviorBase<MapView>, INotifyPropertyChanged, IDynamicResourceHandler, IAttachedObject'
     content.vb: >-
       Public Class ViewportChangedBehavior
-          Inherits BehaviorBase(Of GeoView)
+          Inherits BehaviorBase(Of MapView)
           Implements INotifyPropertyChanged, IDynamicResourceHandler, IAttachedObject
   inheritance:
   - System.Object
   - Xamarin.Forms.BindableObject
   - Xamarin.Forms.Behavior
-  - Xamarin.Forms.Behavior{Esri.ArcGISRuntime.Xamarin.Forms.GeoView}
-  - Prism.Behaviors.BehaviorBase{Esri.ArcGISRuntime.Xamarin.Forms.GeoView}
+  - Xamarin.Forms.Behavior{Esri.ArcGISRuntime.Xamarin.Forms.MapView}
+  - Prism.Behaviors.BehaviorBase{Esri.ArcGISRuntime.Xamarin.Forms.MapView}
   implements:
   - System.ComponentModel.INotifyPropertyChanged
   inheritedMembers:
-  - Prism.Behaviors.BehaviorBase{Esri.ArcGISRuntime.Xamarin.Forms.GeoView}.OnBindingContextChanged
-  - Prism.Behaviors.BehaviorBase{Esri.ArcGISRuntime.Xamarin.Forms.GeoView}.AssociatedObject
-  - Xamarin.Forms.Behavior{Esri.ArcGISRuntime.Xamarin.Forms.GeoView}.OnAttachedTo(Xamarin.Forms.BindableObject)
-  - Xamarin.Forms.Behavior{Esri.ArcGISRuntime.Xamarin.Forms.GeoView}.OnDetachingFrom(Xamarin.Forms.BindableObject)
+  - Prism.Behaviors.BehaviorBase{Esri.ArcGISRuntime.Xamarin.Forms.MapView}.OnBindingContextChanged
+  - Prism.Behaviors.BehaviorBase{Esri.ArcGISRuntime.Xamarin.Forms.MapView}.AssociatedObject
+  - Xamarin.Forms.Behavior{Esri.ArcGISRuntime.Xamarin.Forms.MapView}.OnAttachedTo(Xamarin.Forms.BindableObject)
+  - Xamarin.Forms.Behavior{Esri.ArcGISRuntime.Xamarin.Forms.MapView}.OnDetachingFrom(Xamarin.Forms.BindableObject)
   - Xamarin.Forms.Behavior.AssociatedType
   - Xamarin.Forms.BindableObject.BindingContextProperty
   - Xamarin.Forms.BindableObject.ClearValue(Xamarin.Forms.BindableProperty)
@@ -80,6 +86,226 @@ items:
   modifiers.vb:
   - Public
   - Class
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.VisibleAreaProperty
+  commentId: F:EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.VisibleAreaProperty
+  id: VisibleAreaProperty
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior
+  langs:
+  - csharp
+  - vb
+  name: VisibleAreaProperty
+  nameWithType: ViewportChangedBehavior.VisibleAreaProperty
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.VisibleAreaProperty
+  type: Field
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/Behaviors/ViewportChangedBehavior.cs
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
+    id: VisibleAreaProperty
+    path: Behaviors/ViewportChangedBehavior.cs
+    startLine: 17
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public static readonly BindableProperty VisibleAreaProperty
+    return:
+      type: Xamarin.Forms.BindableProperty
+    content.vb: Public Shared ReadOnly VisibleAreaProperty As BindableProperty
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.VisibleArea
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.VisibleArea
+  id: VisibleArea
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior
+  langs:
+  - csharp
+  - vb
+  name: VisibleArea
+  nameWithType: ViewportChangedBehavior.VisibleArea
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.VisibleArea
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/Behaviors/ViewportChangedBehavior.cs
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
+    id: VisibleArea
+    path: Behaviors/ViewportChangedBehavior.cs
+    startLine: 26
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public Polygon VisibleArea { get; set; }
+    parameters: []
+    return:
+      type: Esri.ArcGISRuntime.Geometry.Polygon
+    content.vb: Public Property VisibleArea As Polygon
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.VisibleArea*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.UnitsPerPixelProperty
+  commentId: F:EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.UnitsPerPixelProperty
+  id: UnitsPerPixelProperty
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior
+  langs:
+  - csharp
+  - vb
+  name: UnitsPerPixelProperty
+  nameWithType: ViewportChangedBehavior.UnitsPerPixelProperty
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.UnitsPerPixelProperty
+  type: Field
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/Behaviors/ViewportChangedBehavior.cs
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
+    id: UnitsPerPixelProperty
+    path: Behaviors/ViewportChangedBehavior.cs
+    startLine: 34
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public static readonly BindableProperty UnitsPerPixelProperty
+    return:
+      type: Xamarin.Forms.BindableProperty
+    content.vb: Public Shared ReadOnly UnitsPerPixelProperty As BindableProperty
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.UnitsPerPixel
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.UnitsPerPixel
+  id: UnitsPerPixel
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior
+  langs:
+  - csharp
+  - vb
+  name: UnitsPerPixel
+  nameWithType: ViewportChangedBehavior.UnitsPerPixel
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.UnitsPerPixel
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/Behaviors/ViewportChangedBehavior.cs
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
+    id: UnitsPerPixel
+    path: Behaviors/ViewportChangedBehavior.cs
+    startLine: 40
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
+  syntax:
+    content: public double UnitsPerPixel { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property UnitsPerPixel As Double
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.UnitsPerPixel*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.MapScaleProperty
+  commentId: F:EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.MapScaleProperty
+  id: MapScaleProperty
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior
+  langs:
+  - csharp
+  - vb
+  name: MapScaleProperty
+  nameWithType: ViewportChangedBehavior.MapScaleProperty
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.MapScaleProperty
+  type: Field
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/Behaviors/ViewportChangedBehavior.cs
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
+    id: MapScaleProperty
+    path: Behaviors/ViewportChangedBehavior.cs
+    startLine: 48
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public static readonly BindableProperty MapScaleProperty
+    return:
+      type: Xamarin.Forms.BindableProperty
+    content.vb: Public Shared ReadOnly MapScaleProperty As BindableProperty
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.MapScale
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.MapScale
+  id: MapScale
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior
+  langs:
+  - csharp
+  - vb
+  name: MapScale
+  nameWithType: ViewportChangedBehavior.MapScale
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.MapScale
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/Behaviors/ViewportChangedBehavior.cs
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
+    id: MapScale
+    path: Behaviors/ViewportChangedBehavior.cs
+    startLine: 57
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public double MapScale { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property MapScale As Double
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.MapScale*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.CommandProperty
   commentId: F:EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.CommandProperty
   id: CommandProperty
@@ -98,10 +324,12 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: CommandProperty
     path: Behaviors/ViewportChangedBehavior.cs
-    startLine: 12
+    startLine: 65
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
+  summary: "\n\n"
+  example: []
   syntax:
     content: public static readonly BindableProperty CommandProperty
     return:
@@ -133,10 +361,12 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: Command
     path: Behaviors/ViewportChangedBehavior.cs
-    startLine: 17
+    startLine: 73
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
+  summary: "\n\n"
+  example: []
   syntax:
     content: public ICommand Command { get; set; }
     parameters: []
@@ -150,16 +380,16 @@ items:
   - set
   modifiers.vb:
   - Public
-- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.OnAttachedTo(Esri.ArcGISRuntime.Xamarin.Forms.GeoView)
-  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.OnAttachedTo(Esri.ArcGISRuntime.Xamarin.Forms.GeoView)
-  id: OnAttachedTo(Esri.ArcGISRuntime.Xamarin.Forms.GeoView)
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.OnAttachedTo(Esri.ArcGISRuntime.Xamarin.Forms.MapView)
+  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.OnAttachedTo(Esri.ArcGISRuntime.Xamarin.Forms.MapView)
+  id: OnAttachedTo(Esri.ArcGISRuntime.Xamarin.Forms.MapView)
   parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior
   langs:
   - csharp
   - vb
-  name: OnAttachedTo(GeoView)
-  nameWithType: ViewportChangedBehavior.OnAttachedTo(GeoView)
-  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.OnAttachedTo(Esri.ArcGISRuntime.Xamarin.Forms.GeoView)
+  name: OnAttachedTo(MapView)
+  nameWithType: ViewportChangedBehavior.OnAttachedTo(MapView)
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.OnAttachedTo(Esri.ArcGISRuntime.Xamarin.Forms.MapView)
   type: Method
   source:
     remote:
@@ -168,17 +398,20 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: OnAttachedTo
     path: Behaviors/ViewportChangedBehavior.cs
-    startLine: 22
+    startLine: 82
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
+  summary: "\n\n"
+  example: []
   syntax:
-    content: protected override void OnAttachedTo(GeoView bindable)
+    content: protected override void OnAttachedTo(MapView bindable)
     parameters:
     - id: bindable
-      type: Esri.ArcGISRuntime.Xamarin.Forms.GeoView
-    content.vb: Protected Overrides Sub OnAttachedTo(bindable As GeoView)
-  overridden: Prism.Behaviors.BehaviorBase{Esri.ArcGISRuntime.Xamarin.Forms.GeoView}.OnAttachedTo(Esri.ArcGISRuntime.Xamarin.Forms.GeoView)
+      type: Esri.ArcGISRuntime.Xamarin.Forms.MapView
+      description: ''
+    content.vb: Protected Overrides Sub OnAttachedTo(bindable As MapView)
+  overridden: Prism.Behaviors.BehaviorBase{Esri.ArcGISRuntime.Xamarin.Forms.MapView}.OnAttachedTo(Esri.ArcGISRuntime.Xamarin.Forms.MapView)
   overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.OnAttachedTo*
   modifiers.csharp:
   - protected
@@ -186,16 +419,16 @@ items:
   modifiers.vb:
   - Protected
   - Overrides
-- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.OnDetachingFrom(Esri.ArcGISRuntime.Xamarin.Forms.GeoView)
-  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.OnDetachingFrom(Esri.ArcGISRuntime.Xamarin.Forms.GeoView)
-  id: OnDetachingFrom(Esri.ArcGISRuntime.Xamarin.Forms.GeoView)
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.OnDetachingFrom(Esri.ArcGISRuntime.Xamarin.Forms.MapView)
+  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.OnDetachingFrom(Esri.ArcGISRuntime.Xamarin.Forms.MapView)
+  id: OnDetachingFrom(Esri.ArcGISRuntime.Xamarin.Forms.MapView)
   parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior
   langs:
   - csharp
   - vb
-  name: OnDetachingFrom(GeoView)
-  nameWithType: ViewportChangedBehavior.OnDetachingFrom(GeoView)
-  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.OnDetachingFrom(Esri.ArcGISRuntime.Xamarin.Forms.GeoView)
+  name: OnDetachingFrom(MapView)
+  nameWithType: ViewportChangedBehavior.OnDetachingFrom(MapView)
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.OnDetachingFrom(Esri.ArcGISRuntime.Xamarin.Forms.MapView)
   type: Method
   source:
     remote:
@@ -204,17 +437,20 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: OnDetachingFrom
     path: Behaviors/ViewportChangedBehavior.cs
-    startLine: 27
+    startLine: 92
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
+  summary: "\n\n"
+  example: []
   syntax:
-    content: protected override void OnDetachingFrom(GeoView bindable)
+    content: protected override void OnDetachingFrom(MapView bindable)
     parameters:
     - id: bindable
-      type: Esri.ArcGISRuntime.Xamarin.Forms.GeoView
-    content.vb: Protected Overrides Sub OnDetachingFrom(bindable As GeoView)
-  overridden: Prism.Behaviors.BehaviorBase{Esri.ArcGISRuntime.Xamarin.Forms.GeoView}.OnDetachingFrom(Esri.ArcGISRuntime.Xamarin.Forms.GeoView)
+      type: Esri.ArcGISRuntime.Xamarin.Forms.MapView
+      description: ''
+    content.vb: Protected Overrides Sub OnDetachingFrom(bindable As MapView)
+  overridden: Prism.Behaviors.BehaviorBase{Esri.ArcGISRuntime.Xamarin.Forms.MapView}.OnDetachingFrom(Esri.ArcGISRuntime.Xamarin.Forms.MapView)
   overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.OnDetachingFrom*
   modifiers.csharp:
   - protected
@@ -249,16 +485,16 @@ references:
   name: Behavior
   nameWithType: Behavior
   fullName: Xamarin.Forms.Behavior
-- uid: Xamarin.Forms.Behavior{Esri.ArcGISRuntime.Xamarin.Forms.GeoView}
-  commentId: T:Xamarin.Forms.Behavior{Esri.ArcGISRuntime.Xamarin.Forms.GeoView}
+- uid: Xamarin.Forms.Behavior{Esri.ArcGISRuntime.Xamarin.Forms.MapView}
+  commentId: T:Xamarin.Forms.Behavior{Esri.ArcGISRuntime.Xamarin.Forms.MapView}
   parent: Xamarin.Forms
   definition: Xamarin.Forms.Behavior`1
-  name: Behavior<GeoView>
-  nameWithType: Behavior<GeoView>
-  fullName: Xamarin.Forms.Behavior<Esri.ArcGISRuntime.Xamarin.Forms.GeoView>
-  nameWithType.vb: Behavior(Of GeoView)
-  fullName.vb: Xamarin.Forms.Behavior(Of Esri.ArcGISRuntime.Xamarin.Forms.GeoView)
-  name.vb: Behavior(Of GeoView)
+  name: Behavior<MapView>
+  nameWithType: Behavior<MapView>
+  fullName: Xamarin.Forms.Behavior<Esri.ArcGISRuntime.Xamarin.Forms.MapView>
+  nameWithType.vb: Behavior(Of MapView)
+  fullName.vb: Xamarin.Forms.Behavior(Of Esri.ArcGISRuntime.Xamarin.Forms.MapView)
+  name.vb: Behavior(Of MapView)
   spec.csharp:
   - uid: Xamarin.Forms.Behavior`1
     name: Behavior
@@ -268,10 +504,10 @@ references:
   - name: <
     nameWithType: <
     fullName: <
-  - uid: Esri.ArcGISRuntime.Xamarin.Forms.GeoView
-    name: GeoView
-    nameWithType: GeoView
-    fullName: Esri.ArcGISRuntime.Xamarin.Forms.GeoView
+  - uid: Esri.ArcGISRuntime.Xamarin.Forms.MapView
+    name: MapView
+    nameWithType: MapView
+    fullName: Esri.ArcGISRuntime.Xamarin.Forms.MapView
     isExternal: true
   - name: '>'
     nameWithType: '>'
@@ -285,24 +521,24 @@ references:
   - name: '(Of '
     nameWithType: '(Of '
     fullName: '(Of '
-  - uid: Esri.ArcGISRuntime.Xamarin.Forms.GeoView
-    name: GeoView
-    nameWithType: GeoView
-    fullName: Esri.ArcGISRuntime.Xamarin.Forms.GeoView
+  - uid: Esri.ArcGISRuntime.Xamarin.Forms.MapView
+    name: MapView
+    nameWithType: MapView
+    fullName: Esri.ArcGISRuntime.Xamarin.Forms.MapView
     isExternal: true
   - name: )
     nameWithType: )
     fullName: )
-- uid: Prism.Behaviors.BehaviorBase{Esri.ArcGISRuntime.Xamarin.Forms.GeoView}
-  commentId: T:Prism.Behaviors.BehaviorBase{Esri.ArcGISRuntime.Xamarin.Forms.GeoView}
+- uid: Prism.Behaviors.BehaviorBase{Esri.ArcGISRuntime.Xamarin.Forms.MapView}
+  commentId: T:Prism.Behaviors.BehaviorBase{Esri.ArcGISRuntime.Xamarin.Forms.MapView}
   parent: Prism.Behaviors
   definition: Prism.Behaviors.BehaviorBase`1
-  name: BehaviorBase<GeoView>
-  nameWithType: BehaviorBase<GeoView>
-  fullName: Prism.Behaviors.BehaviorBase<Esri.ArcGISRuntime.Xamarin.Forms.GeoView>
-  nameWithType.vb: BehaviorBase(Of GeoView)
-  fullName.vb: Prism.Behaviors.BehaviorBase(Of Esri.ArcGISRuntime.Xamarin.Forms.GeoView)
-  name.vb: BehaviorBase(Of GeoView)
+  name: BehaviorBase<MapView>
+  nameWithType: BehaviorBase<MapView>
+  fullName: Prism.Behaviors.BehaviorBase<Esri.ArcGISRuntime.Xamarin.Forms.MapView>
+  nameWithType.vb: BehaviorBase(Of MapView)
+  fullName.vb: Prism.Behaviors.BehaviorBase(Of Esri.ArcGISRuntime.Xamarin.Forms.MapView)
+  name.vb: BehaviorBase(Of MapView)
   spec.csharp:
   - uid: Prism.Behaviors.BehaviorBase`1
     name: BehaviorBase
@@ -312,10 +548,10 @@ references:
   - name: <
     nameWithType: <
     fullName: <
-  - uid: Esri.ArcGISRuntime.Xamarin.Forms.GeoView
-    name: GeoView
-    nameWithType: GeoView
-    fullName: Esri.ArcGISRuntime.Xamarin.Forms.GeoView
+  - uid: Esri.ArcGISRuntime.Xamarin.Forms.MapView
+    name: MapView
+    nameWithType: MapView
+    fullName: Esri.ArcGISRuntime.Xamarin.Forms.MapView
     isExternal: true
   - name: '>'
     nameWithType: '>'
@@ -329,10 +565,10 @@ references:
   - name: '(Of '
     nameWithType: '(Of '
     fullName: '(Of '
-  - uid: Esri.ArcGISRuntime.Xamarin.Forms.GeoView
-    name: GeoView
-    nameWithType: GeoView
-    fullName: Esri.ArcGISRuntime.Xamarin.Forms.GeoView
+  - uid: Esri.ArcGISRuntime.Xamarin.Forms.MapView
+    name: MapView
+    nameWithType: MapView
+    fullName: Esri.ArcGISRuntime.Xamarin.Forms.MapView
     isExternal: true
   - name: )
     nameWithType: )
@@ -344,20 +580,20 @@ references:
   name: INotifyPropertyChanged
   nameWithType: INotifyPropertyChanged
   fullName: System.ComponentModel.INotifyPropertyChanged
-- uid: Prism.Behaviors.BehaviorBase{Esri.ArcGISRuntime.Xamarin.Forms.GeoView}.OnBindingContextChanged
-  commentId: M:Prism.Behaviors.BehaviorBase{Esri.ArcGISRuntime.Xamarin.Forms.GeoView}.OnBindingContextChanged
-  parent: Prism.Behaviors.BehaviorBase{Esri.ArcGISRuntime.Xamarin.Forms.GeoView}
+- uid: Prism.Behaviors.BehaviorBase{Esri.ArcGISRuntime.Xamarin.Forms.MapView}.OnBindingContextChanged
+  commentId: M:Prism.Behaviors.BehaviorBase{Esri.ArcGISRuntime.Xamarin.Forms.MapView}.OnBindingContextChanged
+  parent: Prism.Behaviors.BehaviorBase{Esri.ArcGISRuntime.Xamarin.Forms.MapView}
   definition: Prism.Behaviors.BehaviorBase`1.OnBindingContextChanged
   name: OnBindingContextChanged()
-  nameWithType: BehaviorBase<GeoView>.OnBindingContextChanged()
-  fullName: Prism.Behaviors.BehaviorBase<Esri.ArcGISRuntime.Xamarin.Forms.GeoView>.OnBindingContextChanged()
-  nameWithType.vb: BehaviorBase(Of GeoView).OnBindingContextChanged()
-  fullName.vb: Prism.Behaviors.BehaviorBase(Of Esri.ArcGISRuntime.Xamarin.Forms.GeoView).OnBindingContextChanged()
+  nameWithType: BehaviorBase<MapView>.OnBindingContextChanged()
+  fullName: Prism.Behaviors.BehaviorBase<Esri.ArcGISRuntime.Xamarin.Forms.MapView>.OnBindingContextChanged()
+  nameWithType.vb: BehaviorBase(Of MapView).OnBindingContextChanged()
+  fullName.vb: Prism.Behaviors.BehaviorBase(Of Esri.ArcGISRuntime.Xamarin.Forms.MapView).OnBindingContextChanged()
   spec.csharp:
   - uid: Prism.Behaviors.BehaviorBase`1.OnBindingContextChanged
     name: OnBindingContextChanged
-    nameWithType: BehaviorBase<GeoView>.OnBindingContextChanged
-    fullName: Prism.Behaviors.BehaviorBase<Esri.ArcGISRuntime.Xamarin.Forms.GeoView>.OnBindingContextChanged
+    nameWithType: BehaviorBase<MapView>.OnBindingContextChanged
+    fullName: Prism.Behaviors.BehaviorBase<Esri.ArcGISRuntime.Xamarin.Forms.MapView>.OnBindingContextChanged
     isExternal: true
   - name: (
     nameWithType: (
@@ -368,8 +604,8 @@ references:
   spec.vb:
   - uid: Prism.Behaviors.BehaviorBase`1.OnBindingContextChanged
     name: OnBindingContextChanged
-    nameWithType: BehaviorBase(Of GeoView).OnBindingContextChanged
-    fullName: Prism.Behaviors.BehaviorBase(Of Esri.ArcGISRuntime.Xamarin.Forms.GeoView).OnBindingContextChanged
+    nameWithType: BehaviorBase(Of MapView).OnBindingContextChanged
+    fullName: Prism.Behaviors.BehaviorBase(Of Esri.ArcGISRuntime.Xamarin.Forms.MapView).OnBindingContextChanged
     isExternal: true
   - name: (
     nameWithType: (
@@ -377,29 +613,29 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Prism.Behaviors.BehaviorBase{Esri.ArcGISRuntime.Xamarin.Forms.GeoView}.AssociatedObject
-  commentId: P:Prism.Behaviors.BehaviorBase{Esri.ArcGISRuntime.Xamarin.Forms.GeoView}.AssociatedObject
-  parent: Prism.Behaviors.BehaviorBase{Esri.ArcGISRuntime.Xamarin.Forms.GeoView}
+- uid: Prism.Behaviors.BehaviorBase{Esri.ArcGISRuntime.Xamarin.Forms.MapView}.AssociatedObject
+  commentId: P:Prism.Behaviors.BehaviorBase{Esri.ArcGISRuntime.Xamarin.Forms.MapView}.AssociatedObject
+  parent: Prism.Behaviors.BehaviorBase{Esri.ArcGISRuntime.Xamarin.Forms.MapView}
   definition: Prism.Behaviors.BehaviorBase`1.AssociatedObject
   name: AssociatedObject
-  nameWithType: BehaviorBase<GeoView>.AssociatedObject
-  fullName: Prism.Behaviors.BehaviorBase<Esri.ArcGISRuntime.Xamarin.Forms.GeoView>.AssociatedObject
-  nameWithType.vb: BehaviorBase(Of GeoView).AssociatedObject
-  fullName.vb: Prism.Behaviors.BehaviorBase(Of Esri.ArcGISRuntime.Xamarin.Forms.GeoView).AssociatedObject
-- uid: Xamarin.Forms.Behavior{Esri.ArcGISRuntime.Xamarin.Forms.GeoView}.OnAttachedTo(Xamarin.Forms.BindableObject)
-  commentId: M:Xamarin.Forms.Behavior{Esri.ArcGISRuntime.Xamarin.Forms.GeoView}.OnAttachedTo(Xamarin.Forms.BindableObject)
-  parent: Xamarin.Forms.Behavior{Esri.ArcGISRuntime.Xamarin.Forms.GeoView}
+  nameWithType: BehaviorBase<MapView>.AssociatedObject
+  fullName: Prism.Behaviors.BehaviorBase<Esri.ArcGISRuntime.Xamarin.Forms.MapView>.AssociatedObject
+  nameWithType.vb: BehaviorBase(Of MapView).AssociatedObject
+  fullName.vb: Prism.Behaviors.BehaviorBase(Of Esri.ArcGISRuntime.Xamarin.Forms.MapView).AssociatedObject
+- uid: Xamarin.Forms.Behavior{Esri.ArcGISRuntime.Xamarin.Forms.MapView}.OnAttachedTo(Xamarin.Forms.BindableObject)
+  commentId: M:Xamarin.Forms.Behavior{Esri.ArcGISRuntime.Xamarin.Forms.MapView}.OnAttachedTo(Xamarin.Forms.BindableObject)
+  parent: Xamarin.Forms.Behavior{Esri.ArcGISRuntime.Xamarin.Forms.MapView}
   definition: Xamarin.Forms.Behavior`1.OnAttachedTo(Xamarin.Forms.BindableObject)
   name: OnAttachedTo(BindableObject)
-  nameWithType: Behavior<GeoView>.OnAttachedTo(BindableObject)
-  fullName: Xamarin.Forms.Behavior<Esri.ArcGISRuntime.Xamarin.Forms.GeoView>.OnAttachedTo(Xamarin.Forms.BindableObject)
-  nameWithType.vb: Behavior(Of GeoView).OnAttachedTo(BindableObject)
-  fullName.vb: Xamarin.Forms.Behavior(Of Esri.ArcGISRuntime.Xamarin.Forms.GeoView).OnAttachedTo(Xamarin.Forms.BindableObject)
+  nameWithType: Behavior<MapView>.OnAttachedTo(BindableObject)
+  fullName: Xamarin.Forms.Behavior<Esri.ArcGISRuntime.Xamarin.Forms.MapView>.OnAttachedTo(Xamarin.Forms.BindableObject)
+  nameWithType.vb: Behavior(Of MapView).OnAttachedTo(BindableObject)
+  fullName.vb: Xamarin.Forms.Behavior(Of Esri.ArcGISRuntime.Xamarin.Forms.MapView).OnAttachedTo(Xamarin.Forms.BindableObject)
   spec.csharp:
   - uid: Xamarin.Forms.Behavior`1.OnAttachedTo(Xamarin.Forms.BindableObject)
     name: OnAttachedTo
-    nameWithType: Behavior<GeoView>.OnAttachedTo
-    fullName: Xamarin.Forms.Behavior<Esri.ArcGISRuntime.Xamarin.Forms.GeoView>.OnAttachedTo
+    nameWithType: Behavior<MapView>.OnAttachedTo
+    fullName: Xamarin.Forms.Behavior<Esri.ArcGISRuntime.Xamarin.Forms.MapView>.OnAttachedTo
     isExternal: true
   - name: (
     nameWithType: (
@@ -415,8 +651,8 @@ references:
   spec.vb:
   - uid: Xamarin.Forms.Behavior`1.OnAttachedTo(Xamarin.Forms.BindableObject)
     name: OnAttachedTo
-    nameWithType: Behavior(Of GeoView).OnAttachedTo
-    fullName: Xamarin.Forms.Behavior(Of Esri.ArcGISRuntime.Xamarin.Forms.GeoView).OnAttachedTo
+    nameWithType: Behavior(Of MapView).OnAttachedTo
+    fullName: Xamarin.Forms.Behavior(Of Esri.ArcGISRuntime.Xamarin.Forms.MapView).OnAttachedTo
     isExternal: true
   - name: (
     nameWithType: (
@@ -429,20 +665,20 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Xamarin.Forms.Behavior{Esri.ArcGISRuntime.Xamarin.Forms.GeoView}.OnDetachingFrom(Xamarin.Forms.BindableObject)
-  commentId: M:Xamarin.Forms.Behavior{Esri.ArcGISRuntime.Xamarin.Forms.GeoView}.OnDetachingFrom(Xamarin.Forms.BindableObject)
-  parent: Xamarin.Forms.Behavior{Esri.ArcGISRuntime.Xamarin.Forms.GeoView}
+- uid: Xamarin.Forms.Behavior{Esri.ArcGISRuntime.Xamarin.Forms.MapView}.OnDetachingFrom(Xamarin.Forms.BindableObject)
+  commentId: M:Xamarin.Forms.Behavior{Esri.ArcGISRuntime.Xamarin.Forms.MapView}.OnDetachingFrom(Xamarin.Forms.BindableObject)
+  parent: Xamarin.Forms.Behavior{Esri.ArcGISRuntime.Xamarin.Forms.MapView}
   definition: Xamarin.Forms.Behavior`1.OnDetachingFrom(Xamarin.Forms.BindableObject)
   name: OnDetachingFrom(BindableObject)
-  nameWithType: Behavior<GeoView>.OnDetachingFrom(BindableObject)
-  fullName: Xamarin.Forms.Behavior<Esri.ArcGISRuntime.Xamarin.Forms.GeoView>.OnDetachingFrom(Xamarin.Forms.BindableObject)
-  nameWithType.vb: Behavior(Of GeoView).OnDetachingFrom(BindableObject)
-  fullName.vb: Xamarin.Forms.Behavior(Of Esri.ArcGISRuntime.Xamarin.Forms.GeoView).OnDetachingFrom(Xamarin.Forms.BindableObject)
+  nameWithType: Behavior<MapView>.OnDetachingFrom(BindableObject)
+  fullName: Xamarin.Forms.Behavior<Esri.ArcGISRuntime.Xamarin.Forms.MapView>.OnDetachingFrom(Xamarin.Forms.BindableObject)
+  nameWithType.vb: Behavior(Of MapView).OnDetachingFrom(BindableObject)
+  fullName.vb: Xamarin.Forms.Behavior(Of Esri.ArcGISRuntime.Xamarin.Forms.MapView).OnDetachingFrom(Xamarin.Forms.BindableObject)
   spec.csharp:
   - uid: Xamarin.Forms.Behavior`1.OnDetachingFrom(Xamarin.Forms.BindableObject)
     name: OnDetachingFrom
-    nameWithType: Behavior<GeoView>.OnDetachingFrom
-    fullName: Xamarin.Forms.Behavior<Esri.ArcGISRuntime.Xamarin.Forms.GeoView>.OnDetachingFrom
+    nameWithType: Behavior<MapView>.OnDetachingFrom
+    fullName: Xamarin.Forms.Behavior<Esri.ArcGISRuntime.Xamarin.Forms.MapView>.OnDetachingFrom
     isExternal: true
   - name: (
     nameWithType: (
@@ -458,8 +694,8 @@ references:
   spec.vb:
   - uid: Xamarin.Forms.Behavior`1.OnDetachingFrom(Xamarin.Forms.BindableObject)
     name: OnDetachingFrom
-    nameWithType: Behavior(Of GeoView).OnDetachingFrom
-    fullName: Xamarin.Forms.Behavior(Of Esri.ArcGISRuntime.Xamarin.Forms.GeoView).OnDetachingFrom
+    nameWithType: Behavior(Of MapView).OnDetachingFrom
+    fullName: Xamarin.Forms.Behavior(Of Esri.ArcGISRuntime.Xamarin.Forms.MapView).OnDetachingFrom
     isExternal: true
   - name: (
     nameWithType: (
@@ -1635,6 +1871,41 @@ references:
   name: BindableProperty
   nameWithType: BindableProperty
   fullName: Xamarin.Forms.BindableProperty
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.VisibleArea*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.VisibleArea
+  name: VisibleArea
+  nameWithType: ViewportChangedBehavior.VisibleArea
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.VisibleArea
+- uid: Esri.ArcGISRuntime.Geometry.Polygon
+  commentId: T:Esri.ArcGISRuntime.Geometry.Polygon
+  parent: Esri.ArcGISRuntime.Geometry
+  isExternal: true
+  name: Polygon
+  nameWithType: Polygon
+  fullName: Esri.ArcGISRuntime.Geometry.Polygon
+- uid: Esri.ArcGISRuntime.Geometry
+  commentId: N:Esri.ArcGISRuntime.Geometry
+  isExternal: true
+  name: Esri.ArcGISRuntime.Geometry
+  nameWithType: Esri.ArcGISRuntime.Geometry
+  fullName: Esri.ArcGISRuntime.Geometry
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.UnitsPerPixel*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.UnitsPerPixel
+  name: UnitsPerPixel
+  nameWithType: ViewportChangedBehavior.UnitsPerPixel
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.UnitsPerPixel
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.MapScale*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.MapScale
+  name: MapScale
+  nameWithType: ViewportChangedBehavior.MapScale
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.MapScale
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.Command*
   commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.Command
   name: Command
@@ -1653,28 +1924,28 @@ references:
   name: System.Windows.Input
   nameWithType: System.Windows.Input
   fullName: System.Windows.Input
-- uid: Prism.Behaviors.BehaviorBase{Esri.ArcGISRuntime.Xamarin.Forms.GeoView}.OnAttachedTo(Esri.ArcGISRuntime.Xamarin.Forms.GeoView)
-  commentId: M:Prism.Behaviors.BehaviorBase{Esri.ArcGISRuntime.Xamarin.Forms.GeoView}.OnAttachedTo(Esri.ArcGISRuntime.Xamarin.Forms.GeoView)
-  parent: Prism.Behaviors.BehaviorBase{Esri.ArcGISRuntime.Xamarin.Forms.GeoView}
+- uid: Prism.Behaviors.BehaviorBase{Esri.ArcGISRuntime.Xamarin.Forms.MapView}.OnAttachedTo(Esri.ArcGISRuntime.Xamarin.Forms.MapView)
+  commentId: M:Prism.Behaviors.BehaviorBase{Esri.ArcGISRuntime.Xamarin.Forms.MapView}.OnAttachedTo(Esri.ArcGISRuntime.Xamarin.Forms.MapView)
+  parent: Prism.Behaviors.BehaviorBase{Esri.ArcGISRuntime.Xamarin.Forms.MapView}
   definition: Prism.Behaviors.BehaviorBase`1.OnAttachedTo(`0)
-  name: OnAttachedTo(GeoView)
-  nameWithType: BehaviorBase<GeoView>.OnAttachedTo(GeoView)
-  fullName: Prism.Behaviors.BehaviorBase<Esri.ArcGISRuntime.Xamarin.Forms.GeoView>.OnAttachedTo(Esri.ArcGISRuntime.Xamarin.Forms.GeoView)
-  nameWithType.vb: BehaviorBase(Of GeoView).OnAttachedTo(GeoView)
-  fullName.vb: Prism.Behaviors.BehaviorBase(Of Esri.ArcGISRuntime.Xamarin.Forms.GeoView).OnAttachedTo(Esri.ArcGISRuntime.Xamarin.Forms.GeoView)
+  name: OnAttachedTo(MapView)
+  nameWithType: BehaviorBase<MapView>.OnAttachedTo(MapView)
+  fullName: Prism.Behaviors.BehaviorBase<Esri.ArcGISRuntime.Xamarin.Forms.MapView>.OnAttachedTo(Esri.ArcGISRuntime.Xamarin.Forms.MapView)
+  nameWithType.vb: BehaviorBase(Of MapView).OnAttachedTo(MapView)
+  fullName.vb: Prism.Behaviors.BehaviorBase(Of Esri.ArcGISRuntime.Xamarin.Forms.MapView).OnAttachedTo(Esri.ArcGISRuntime.Xamarin.Forms.MapView)
   spec.csharp:
   - uid: Prism.Behaviors.BehaviorBase`1.OnAttachedTo(`0)
     name: OnAttachedTo
-    nameWithType: BehaviorBase<GeoView>.OnAttachedTo
-    fullName: Prism.Behaviors.BehaviorBase<Esri.ArcGISRuntime.Xamarin.Forms.GeoView>.OnAttachedTo
+    nameWithType: BehaviorBase<MapView>.OnAttachedTo
+    fullName: Prism.Behaviors.BehaviorBase<Esri.ArcGISRuntime.Xamarin.Forms.MapView>.OnAttachedTo
     isExternal: true
   - name: (
     nameWithType: (
     fullName: (
-  - uid: Esri.ArcGISRuntime.Xamarin.Forms.GeoView
-    name: GeoView
-    nameWithType: GeoView
-    fullName: Esri.ArcGISRuntime.Xamarin.Forms.GeoView
+  - uid: Esri.ArcGISRuntime.Xamarin.Forms.MapView
+    name: MapView
+    nameWithType: MapView
+    fullName: Esri.ArcGISRuntime.Xamarin.Forms.MapView
     isExternal: true
   - name: )
     nameWithType: )
@@ -1682,16 +1953,16 @@ references:
   spec.vb:
   - uid: Prism.Behaviors.BehaviorBase`1.OnAttachedTo(`0)
     name: OnAttachedTo
-    nameWithType: BehaviorBase(Of GeoView).OnAttachedTo
-    fullName: Prism.Behaviors.BehaviorBase(Of Esri.ArcGISRuntime.Xamarin.Forms.GeoView).OnAttachedTo
+    nameWithType: BehaviorBase(Of MapView).OnAttachedTo
+    fullName: Prism.Behaviors.BehaviorBase(Of Esri.ArcGISRuntime.Xamarin.Forms.MapView).OnAttachedTo
     isExternal: true
   - name: (
     nameWithType: (
     fullName: (
-  - uid: Esri.ArcGISRuntime.Xamarin.Forms.GeoView
-    name: GeoView
-    nameWithType: GeoView
-    fullName: Esri.ArcGISRuntime.Xamarin.Forms.GeoView
+  - uid: Esri.ArcGISRuntime.Xamarin.Forms.MapView
+    name: MapView
+    nameWithType: MapView
+    fullName: Esri.ArcGISRuntime.Xamarin.Forms.MapView
     isExternal: true
   - name: )
     nameWithType: )
@@ -1701,13 +1972,13 @@ references:
   name: OnAttachedTo
   nameWithType: ViewportChangedBehavior.OnAttachedTo
   fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.OnAttachedTo
-- uid: Esri.ArcGISRuntime.Xamarin.Forms.GeoView
-  commentId: T:Esri.ArcGISRuntime.Xamarin.Forms.GeoView
+- uid: Esri.ArcGISRuntime.Xamarin.Forms.MapView
+  commentId: T:Esri.ArcGISRuntime.Xamarin.Forms.MapView
   parent: Esri.ArcGISRuntime.Xamarin.Forms
   isExternal: true
-  name: GeoView
-  nameWithType: GeoView
-  fullName: Esri.ArcGISRuntime.Xamarin.Forms.GeoView
+  name: MapView
+  nameWithType: MapView
+  fullName: Esri.ArcGISRuntime.Xamarin.Forms.MapView
 - uid: Prism.Behaviors.BehaviorBase`1.OnAttachedTo(`0)
   commentId: M:Prism.Behaviors.BehaviorBase`1.OnAttachedTo(`0)
   isExternal: true
@@ -1752,28 +2023,28 @@ references:
   name: Esri.ArcGISRuntime.Xamarin.Forms
   nameWithType: Esri.ArcGISRuntime.Xamarin.Forms
   fullName: Esri.ArcGISRuntime.Xamarin.Forms
-- uid: Prism.Behaviors.BehaviorBase{Esri.ArcGISRuntime.Xamarin.Forms.GeoView}.OnDetachingFrom(Esri.ArcGISRuntime.Xamarin.Forms.GeoView)
-  commentId: M:Prism.Behaviors.BehaviorBase{Esri.ArcGISRuntime.Xamarin.Forms.GeoView}.OnDetachingFrom(Esri.ArcGISRuntime.Xamarin.Forms.GeoView)
-  parent: Prism.Behaviors.BehaviorBase{Esri.ArcGISRuntime.Xamarin.Forms.GeoView}
+- uid: Prism.Behaviors.BehaviorBase{Esri.ArcGISRuntime.Xamarin.Forms.MapView}.OnDetachingFrom(Esri.ArcGISRuntime.Xamarin.Forms.MapView)
+  commentId: M:Prism.Behaviors.BehaviorBase{Esri.ArcGISRuntime.Xamarin.Forms.MapView}.OnDetachingFrom(Esri.ArcGISRuntime.Xamarin.Forms.MapView)
+  parent: Prism.Behaviors.BehaviorBase{Esri.ArcGISRuntime.Xamarin.Forms.MapView}
   definition: Prism.Behaviors.BehaviorBase`1.OnDetachingFrom(`0)
-  name: OnDetachingFrom(GeoView)
-  nameWithType: BehaviorBase<GeoView>.OnDetachingFrom(GeoView)
-  fullName: Prism.Behaviors.BehaviorBase<Esri.ArcGISRuntime.Xamarin.Forms.GeoView>.OnDetachingFrom(Esri.ArcGISRuntime.Xamarin.Forms.GeoView)
-  nameWithType.vb: BehaviorBase(Of GeoView).OnDetachingFrom(GeoView)
-  fullName.vb: Prism.Behaviors.BehaviorBase(Of Esri.ArcGISRuntime.Xamarin.Forms.GeoView).OnDetachingFrom(Esri.ArcGISRuntime.Xamarin.Forms.GeoView)
+  name: OnDetachingFrom(MapView)
+  nameWithType: BehaviorBase<MapView>.OnDetachingFrom(MapView)
+  fullName: Prism.Behaviors.BehaviorBase<Esri.ArcGISRuntime.Xamarin.Forms.MapView>.OnDetachingFrom(Esri.ArcGISRuntime.Xamarin.Forms.MapView)
+  nameWithType.vb: BehaviorBase(Of MapView).OnDetachingFrom(MapView)
+  fullName.vb: Prism.Behaviors.BehaviorBase(Of Esri.ArcGISRuntime.Xamarin.Forms.MapView).OnDetachingFrom(Esri.ArcGISRuntime.Xamarin.Forms.MapView)
   spec.csharp:
   - uid: Prism.Behaviors.BehaviorBase`1.OnDetachingFrom(`0)
     name: OnDetachingFrom
-    nameWithType: BehaviorBase<GeoView>.OnDetachingFrom
-    fullName: Prism.Behaviors.BehaviorBase<Esri.ArcGISRuntime.Xamarin.Forms.GeoView>.OnDetachingFrom
+    nameWithType: BehaviorBase<MapView>.OnDetachingFrom
+    fullName: Prism.Behaviors.BehaviorBase<Esri.ArcGISRuntime.Xamarin.Forms.MapView>.OnDetachingFrom
     isExternal: true
   - name: (
     nameWithType: (
     fullName: (
-  - uid: Esri.ArcGISRuntime.Xamarin.Forms.GeoView
-    name: GeoView
-    nameWithType: GeoView
-    fullName: Esri.ArcGISRuntime.Xamarin.Forms.GeoView
+  - uid: Esri.ArcGISRuntime.Xamarin.Forms.MapView
+    name: MapView
+    nameWithType: MapView
+    fullName: Esri.ArcGISRuntime.Xamarin.Forms.MapView
     isExternal: true
   - name: )
     nameWithType: )
@@ -1781,16 +2052,16 @@ references:
   spec.vb:
   - uid: Prism.Behaviors.BehaviorBase`1.OnDetachingFrom(`0)
     name: OnDetachingFrom
-    nameWithType: BehaviorBase(Of GeoView).OnDetachingFrom
-    fullName: Prism.Behaviors.BehaviorBase(Of Esri.ArcGISRuntime.Xamarin.Forms.GeoView).OnDetachingFrom
+    nameWithType: BehaviorBase(Of MapView).OnDetachingFrom
+    fullName: Prism.Behaviors.BehaviorBase(Of Esri.ArcGISRuntime.Xamarin.Forms.MapView).OnDetachingFrom
     isExternal: true
   - name: (
     nameWithType: (
     fullName: (
-  - uid: Esri.ArcGISRuntime.Xamarin.Forms.GeoView
-    name: GeoView
-    nameWithType: GeoView
-    fullName: Esri.ArcGISRuntime.Xamarin.Forms.GeoView
+  - uid: Esri.ArcGISRuntime.Xamarin.Forms.MapView
+    name: MapView
+    nameWithType: MapView
+    fullName: Esri.ArcGISRuntime.Xamarin.Forms.MapView
     isExternal: true
   - name: )
     nameWithType: )

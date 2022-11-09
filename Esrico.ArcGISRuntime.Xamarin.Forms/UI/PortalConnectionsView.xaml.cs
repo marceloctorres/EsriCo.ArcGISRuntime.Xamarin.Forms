@@ -63,7 +63,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
       ActiveImage = ImageSource.FromStream(() => asm.GetStreamEmbeddedResource(@"ic_checked"));
       CloseCommand = new DelegateCommand(() => {
         IsVisible = false;
-        }
+      }
       );
 
     }

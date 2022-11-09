@@ -974,6 +974,25 @@ references:
   commentId: T:EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.SetViewpointBehavior
   fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.SetViewpointBehavior
   nameWithType: SetViewpointBehavior
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.SetViewpointBehavior.MapScale
+  name: MapScale
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.SetViewpointBehavior.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Behaviors_SetViewpointBehavior_MapScale
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.SetViewpointBehavior.MapScale
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.SetViewpointBehavior.MapScale
+  nameWithType: SetViewpointBehavior.MapScale
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.SetViewpointBehavior.MapScale*
+  name: MapScale
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.SetViewpointBehavior.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Behaviors_SetViewpointBehavior_MapScale_
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.SetViewpointBehavior.MapScale
+  isSpec: "True"
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.SetViewpointBehavior.MapScale
+  nameWithType: SetViewpointBehavior.MapScale
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.SetViewpointBehavior.MapScaleProperty
+  name: MapScaleProperty
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.SetViewpointBehavior.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Behaviors_SetViewpointBehavior_MapScaleProperty
+  commentId: F:EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.SetViewpointBehavior.MapScaleProperty
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.SetViewpointBehavior.MapScaleProperty
+  nameWithType: SetViewpointBehavior.MapScaleProperty
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.SetViewpointBehavior.OnPropertyChanged(System.String)
   name: OnPropertyChanged(String)
   href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.SetViewpointBehavior.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Behaviors_SetViewpointBehavior_OnPropertyChanged_System_String_
@@ -1006,6 +1025,25 @@ references:
   commentId: F:EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.SetViewpointBehavior.ViewpointProperty
   fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.SetViewpointBehavior.ViewpointProperty
   nameWithType: SetViewpointBehavior.ViewpointProperty
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.SetViewpointBehavior.VisibleArea
+  name: VisibleArea
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.SetViewpointBehavior.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Behaviors_SetViewpointBehavior_VisibleArea
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.SetViewpointBehavior.VisibleArea
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.SetViewpointBehavior.VisibleArea
+  nameWithType: SetViewpointBehavior.VisibleArea
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.SetViewpointBehavior.VisibleArea*
+  name: VisibleArea
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.SetViewpointBehavior.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Behaviors_SetViewpointBehavior_VisibleArea_
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.SetViewpointBehavior.VisibleArea
+  isSpec: "True"
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.SetViewpointBehavior.VisibleArea
+  nameWithType: SetViewpointBehavior.VisibleArea
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.SetViewpointBehavior.VisibleAreaProperty
+  name: VisibleAreaProperty
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.SetViewpointBehavior.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Behaviors_SetViewpointBehavior_VisibleAreaProperty
+  commentId: F:EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.SetViewpointBehavior.VisibleAreaProperty
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.SetViewpointBehavior.VisibleAreaProperty
+  nameWithType: SetViewpointBehavior.VisibleAreaProperty
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ShowCalloutForGeoElementBehavior
   name: ShowCalloutForGeoElementBehavior
   href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ShowCalloutForGeoElementBehavior.html
@@ -1069,12 +1107,31 @@ references:
   commentId: F:EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.CommandProperty
   fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.CommandProperty
   nameWithType: ViewportChangedBehavior.CommandProperty
-- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.OnAttachedTo(Esri.ArcGISRuntime.Xamarin.Forms.GeoView)
-  name: OnAttachedTo(GeoView)
-  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Behaviors_ViewportChangedBehavior_OnAttachedTo_Esri_ArcGISRuntime_Xamarin_Forms_GeoView_
-  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.OnAttachedTo(Esri.ArcGISRuntime.Xamarin.Forms.GeoView)
-  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.OnAttachedTo(Esri.ArcGISRuntime.Xamarin.Forms.GeoView)
-  nameWithType: ViewportChangedBehavior.OnAttachedTo(GeoView)
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.MapScale
+  name: MapScale
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Behaviors_ViewportChangedBehavior_MapScale
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.MapScale
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.MapScale
+  nameWithType: ViewportChangedBehavior.MapScale
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.MapScale*
+  name: MapScale
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Behaviors_ViewportChangedBehavior_MapScale_
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.MapScale
+  isSpec: "True"
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.MapScale
+  nameWithType: ViewportChangedBehavior.MapScale
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.MapScaleProperty
+  name: MapScaleProperty
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Behaviors_ViewportChangedBehavior_MapScaleProperty
+  commentId: F:EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.MapScaleProperty
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.MapScaleProperty
+  nameWithType: ViewportChangedBehavior.MapScaleProperty
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.OnAttachedTo(Esri.ArcGISRuntime.Xamarin.Forms.MapView)
+  name: OnAttachedTo(MapView)
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Behaviors_ViewportChangedBehavior_OnAttachedTo_Esri_ArcGISRuntime_Xamarin_Forms_MapView_
+  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.OnAttachedTo(Esri.ArcGISRuntime.Xamarin.Forms.MapView)
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.OnAttachedTo(Esri.ArcGISRuntime.Xamarin.Forms.MapView)
+  nameWithType: ViewportChangedBehavior.OnAttachedTo(MapView)
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.OnAttachedTo*
   name: OnAttachedTo
   href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Behaviors_ViewportChangedBehavior_OnAttachedTo_
@@ -1082,12 +1139,12 @@ references:
   isSpec: "True"
   fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.OnAttachedTo
   nameWithType: ViewportChangedBehavior.OnAttachedTo
-- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.OnDetachingFrom(Esri.ArcGISRuntime.Xamarin.Forms.GeoView)
-  name: OnDetachingFrom(GeoView)
-  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Behaviors_ViewportChangedBehavior_OnDetachingFrom_Esri_ArcGISRuntime_Xamarin_Forms_GeoView_
-  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.OnDetachingFrom(Esri.ArcGISRuntime.Xamarin.Forms.GeoView)
-  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.OnDetachingFrom(Esri.ArcGISRuntime.Xamarin.Forms.GeoView)
-  nameWithType: ViewportChangedBehavior.OnDetachingFrom(GeoView)
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.OnDetachingFrom(Esri.ArcGISRuntime.Xamarin.Forms.MapView)
+  name: OnDetachingFrom(MapView)
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Behaviors_ViewportChangedBehavior_OnDetachingFrom_Esri_ArcGISRuntime_Xamarin_Forms_MapView_
+  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.OnDetachingFrom(Esri.ArcGISRuntime.Xamarin.Forms.MapView)
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.OnDetachingFrom(Esri.ArcGISRuntime.Xamarin.Forms.MapView)
+  nameWithType: ViewportChangedBehavior.OnDetachingFrom(MapView)
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.OnDetachingFrom*
   name: OnDetachingFrom
   href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Behaviors_ViewportChangedBehavior_OnDetachingFrom_
@@ -1095,6 +1152,44 @@ references:
   isSpec: "True"
   fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.OnDetachingFrom
   nameWithType: ViewportChangedBehavior.OnDetachingFrom
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.UnitsPerPixel
+  name: UnitsPerPixel
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Behaviors_ViewportChangedBehavior_UnitsPerPixel
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.UnitsPerPixel
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.UnitsPerPixel
+  nameWithType: ViewportChangedBehavior.UnitsPerPixel
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.UnitsPerPixel*
+  name: UnitsPerPixel
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Behaviors_ViewportChangedBehavior_UnitsPerPixel_
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.UnitsPerPixel
+  isSpec: "True"
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.UnitsPerPixel
+  nameWithType: ViewportChangedBehavior.UnitsPerPixel
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.UnitsPerPixelProperty
+  name: UnitsPerPixelProperty
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Behaviors_ViewportChangedBehavior_UnitsPerPixelProperty
+  commentId: F:EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.UnitsPerPixelProperty
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.UnitsPerPixelProperty
+  nameWithType: ViewportChangedBehavior.UnitsPerPixelProperty
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.VisibleArea
+  name: VisibleArea
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Behaviors_ViewportChangedBehavior_VisibleArea
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.VisibleArea
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.VisibleArea
+  nameWithType: ViewportChangedBehavior.VisibleArea
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.VisibleArea*
+  name: VisibleArea
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Behaviors_ViewportChangedBehavior_VisibleArea_
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.VisibleArea
+  isSpec: "True"
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.VisibleArea
+  nameWithType: ViewportChangedBehavior.VisibleArea
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.VisibleAreaProperty
+  name: VisibleAreaProperty
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Behaviors_ViewportChangedBehavior_VisibleAreaProperty
+  commentId: F:EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.VisibleAreaProperty
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.VisibleAreaProperty
+  nameWithType: ViewportChangedBehavior.VisibleAreaProperty
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Converters
   name: EsriCo.ArcGISRuntime.Xamarin.Forms.Converters
   href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Converters.html
@@ -1863,6 +1958,19 @@ references:
   isSpec: "True"
   fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.BaseUrl
   nameWithType: IPortalConnection.BaseUrl
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.ChallengeHandlerAsync
+  name: ChallengeHandlerAsync
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IPortalConnection_ChallengeHandlerAsync
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.ChallengeHandlerAsync
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.ChallengeHandlerAsync
+  nameWithType: IPortalConnection.ChallengeHandlerAsync
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.ChallengeHandlerAsync*
+  name: ChallengeHandlerAsync
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IPortalConnection_ChallengeHandlerAsync_
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.ChallengeHandlerAsync
+  isSpec: "True"
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.ChallengeHandlerAsync
+  nameWithType: IPortalConnection.ChallengeHandlerAsync
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.CreateCredentialAsync(Esri.ArcGISRuntime.Security.CredentialRequestInfo)
   name: CreateCredentialAsync(CredentialRequestInfo)
   href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_IPortalConnection_CreateCredentialAsync_Esri_ArcGISRuntime_Security_CredentialRequestInfo_
@@ -2497,6 +2605,19 @@ references:
   isSpec: "True"
   fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.BaseUrl
   nameWithType: PortalConnection.BaseUrl
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.ChallengeHandlerAsync
+  name: ChallengeHandlerAsync
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_PortalConnection_ChallengeHandlerAsync
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.ChallengeHandlerAsync
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.ChallengeHandlerAsync
+  nameWithType: PortalConnection.ChallengeHandlerAsync
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.ChallengeHandlerAsync*
+  name: ChallengeHandlerAsync
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_PortalConnection_ChallengeHandlerAsync_
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.ChallengeHandlerAsync
+  isSpec: "True"
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.ChallengeHandlerAsync
+  nameWithType: PortalConnection.ChallengeHandlerAsync
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.CreateCredentialAsync(Esri.ArcGISRuntime.Security.CredentialRequestInfo)
   name: CreateCredentialAsync(CredentialRequestInfo)
   href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_PortalConnection_CreateCredentialAsync_Esri_ArcGISRuntime_Security_CredentialRequestInfo_

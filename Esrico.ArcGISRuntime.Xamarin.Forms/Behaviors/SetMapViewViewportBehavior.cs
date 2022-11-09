@@ -1,5 +1,6 @@
 ﻿using System.Runtime.CompilerServices;
 
+using Esri.ArcGISRuntime.Geometry;
 using Esri.ArcGISRuntime.Mapping;
 using Esri.ArcGISRuntime.Xamarin.Forms;
 
@@ -16,7 +17,41 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors {
   /// <summary>
   /// 
   /// </summary>
-  public class SetViewpointBehavior : BehaviorBase<GeoView> {
+  public class SetViewpointBehavior : BehaviorBase<MapView> {
+    /// <summary>
+    /// 
+    /// </summary>
+    public static readonly BindableProperty VisibleAreaProperty = BindableProperty.Create(
+      nameof(VisibleArea),
+      typeof(Polygon),
+      typeof(ViewportChangedBehavior),
+      defaultBindingMode: BindingMode.OneWayToSource);
+
+    /// <summary>
+    /// 
+    /// </summary>
+    public Polygon VisibleArea {
+      get => (Polygon)GetValue(VisibleAreaProperty);
+      set => SetValue(VisibleAreaProperty, value);
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    public static readonly BindableProperty MapScaleProperty = BindableProperty.Create(
+      nameof(MapScale),
+      typeof(double),
+      typeof(ViewportChangedBehavior),
+      defaultBindingMode: BindingMode.OneWayToSource);
+
+    /// <summary>
+    /// 
+    /// </summary>
+    public double MapScale {
+      get => (double)GetValue(MapScaleProperty);
+      set => SetValue(MapScaleProperty, value);
+    }
+
     /// <summary>
     /// 
     /// </summary>
@@ -53,6 +88,8 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors {
         var currentViewpoint = AssociatedObject.GetCurrentViewpoint(ViewpointType.BoundingGeometry);
         if(currentViewpoint == null || (currentViewpoint != null && !currentViewpoint.AreEquals(viewpoint))) {
           await AssociatedObject.SetViewpointAsync(viewpoint);
+          VisibleArea = AssociatedObject.VisibleArea;
+          MapScale = AssociatedObject.MapScale;
         }
       }
     }

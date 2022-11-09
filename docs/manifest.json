@@ -93,7 +93,7 @@
       "output": {
         ".html": {
           "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.SetViewpointBehavior.html",
-          "hash": "QxJ0/sPS7BcNcRjp8IkIgQM+z0ex30N4WJq7U9gNxXU="
+          "hash": "7Oqu6VI2fd4N1IdtCXIFgAegSCcVFBKBwFnDn8zbshA="
         }
       },
       "is_incremental": true,
@@ -117,7 +117,7 @@
       "output": {
         ".html": {
           "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.html",
-          "hash": "ubv+SkI1bg6aFvFTHmV1+zABlnDV+8D8O0jeK3GyDZ0="
+          "hash": "L7pQ6/ZYmryHATcIwu5sn6RCgb5RKS+AECvkM6+84o0="
         }
       },
       "is_incremental": true,
@@ -333,7 +333,7 @@
       "output": {
         ".html": {
           "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html",
-          "hash": "khYNv7MY1WtXUzygwVaTMDBXMl6mqtRu8vMb7tNEfcM="
+          "hash": "viX/YqW8zLJiltf37+Ld5DLkGCeObxoWbkvxtQiEQyA="
         }
       },
       "is_incremental": true,
@@ -369,7 +369,7 @@
       "output": {
         ".html": {
           "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.html",
-          "hash": "vgf7KRS8W7IWbWOmyt/X8RPmvq4wWE1kz6RBEgWN5q0="
+          "hash": "pMPUw5/LzOeuu5qiCLEbOq5Nqi0yA5hfKt1xrdM/GD4="
         }
       },
       "is_incremental": true,

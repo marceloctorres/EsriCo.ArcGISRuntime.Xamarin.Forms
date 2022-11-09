@@ -9,6 +9,7 @@ items:
   - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.Active
   - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.AuthenticationType
   - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.BaseUrl
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.ChallengeHandlerAsync
   - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.CreateCredentialAsync(Esri.ArcGISRuntime.Security.CredentialRequestInfo)
   - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.Credential
   - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.Domain
@@ -947,6 +948,45 @@ items:
   - set
   modifiers.vb:
   - Public
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.ChallengeHandlerAsync
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.ChallengeHandlerAsync
+  id: ChallengeHandlerAsync
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection
+  langs:
+  - csharp
+  - vb
+  name: ChallengeHandlerAsync
+  nameWithType: PortalConnection.ChallengeHandlerAsync
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.ChallengeHandlerAsync
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/PortalConnection.cs
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
+    id: ChallengeHandlerAsync
+    path: Services/PortalConnection.cs
+    startLine: 204
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public Func<CredentialRequestInfo, Task<Credential>> ChallengeHandlerAsync { get; set; }
+    parameters: []
+    return:
+      type: System.Func{Esri.ArcGISRuntime.Security.CredentialRequestInfo,System.Threading.Tasks.Task{Esri.ArcGISRuntime.Security.Credential}}
+    content.vb: Public Property ChallengeHandlerAsync As Func(Of CredentialRequestInfo, Task(Of Credential))
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.ChallengeHandlerAsync*
+  implements:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.ChallengeHandlerAsync
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.#ctor
   commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.#ctor
   id: '#ctor'
@@ -965,7 +1005,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: .ctor
     path: Services/PortalConnection.cs
-    startLine: 204
+    startLine: 209
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -997,7 +1037,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: CreateCredentialAsync
     path: Services/PortalConnection.cs
-    startLine: 242
+    startLine: 247
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -1039,7 +1079,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: SignInAsync
     path: Services/PortalConnection.cs
-    startLine: 262
+    startLine: 267
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -1076,7 +1116,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: SignOut
     path: Services/PortalConnection.cs
-    startLine: 303
+    startLine: 310
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -1110,7 +1150,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: GetMapAsync
     path: Services/PortalConnection.cs
-    startLine: 316
+    startLine: 328
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -1148,7 +1188,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: GetMapAsync
     path: Services/PortalConnection.cs
-    startLine: 326
+    startLine: 338
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -1190,7 +1230,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: IsCredentialNull
     path: Services/PortalConnection.cs
-    startLine: 335
+    startLine: 347
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -1227,7 +1267,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: GetLicenseInfoJsonAsync
     path: Services/PortalConnection.cs
-    startLine: 341
+    startLine: 353
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -1265,7 +1305,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: GetGroup
     path: Services/PortalConnection.cs
-    startLine: 399
+    startLine: 411
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -1306,7 +1346,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: GetWebMapItemsByGroupAsync
     path: Services/PortalConnection.cs
-    startLine: 412
+    startLine: 424
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -1348,7 +1388,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: GetWebMapItemByGroupAndTitleAsync
     path: Services/PortalConnection.cs
-    startLine: 428
+    startLine: 440
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -2433,6 +2473,150 @@ references:
   name: AuthenticationType
   nameWithType: AuthenticationType
   fullName: Esri.ArcGISRuntime.Security.AuthenticationType
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.ChallengeHandlerAsync*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.ChallengeHandlerAsync
+  name: ChallengeHandlerAsync
+  nameWithType: PortalConnection.ChallengeHandlerAsync
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.ChallengeHandlerAsync
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.ChallengeHandlerAsync
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.ChallengeHandlerAsync
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection
+  name: ChallengeHandlerAsync
+  nameWithType: IPortalConnection.ChallengeHandlerAsync
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.ChallengeHandlerAsync
+- uid: System.Func{Esri.ArcGISRuntime.Security.CredentialRequestInfo,System.Threading.Tasks.Task{Esri.ArcGISRuntime.Security.Credential}}
+  commentId: T:System.Func{Esri.ArcGISRuntime.Security.CredentialRequestInfo,System.Threading.Tasks.Task{Esri.ArcGISRuntime.Security.Credential}}
+  parent: System
+  definition: System.Func`2
+  name: Func<CredentialRequestInfo, Task<Credential>>
+  nameWithType: Func<CredentialRequestInfo, Task<Credential>>
+  fullName: System.Func<Esri.ArcGISRuntime.Security.CredentialRequestInfo, System.Threading.Tasks.Task<Esri.ArcGISRuntime.Security.Credential>>
+  nameWithType.vb: Func(Of CredentialRequestInfo, Task(Of Credential))
+  fullName.vb: System.Func(Of Esri.ArcGISRuntime.Security.CredentialRequestInfo, System.Threading.Tasks.Task(Of Esri.ArcGISRuntime.Security.Credential))
+  name.vb: Func(Of CredentialRequestInfo, Task(Of Credential))
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Esri.ArcGISRuntime.Security.CredentialRequestInfo
+    name: CredentialRequestInfo
+    nameWithType: CredentialRequestInfo
+    fullName: Esri.ArcGISRuntime.Security.CredentialRequestInfo
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Esri.ArcGISRuntime.Security.Credential
+    name: Credential
+    nameWithType: Credential
+    fullName: Esri.ArcGISRuntime.Security.Credential
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Esri.ArcGISRuntime.Security.CredentialRequestInfo
+    name: CredentialRequestInfo
+    nameWithType: CredentialRequestInfo
+    fullName: Esri.ArcGISRuntime.Security.CredentialRequestInfo
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Esri.ArcGISRuntime.Security.Credential
+    name: Credential
+    nameWithType: Credential
+    fullName: Esri.ArcGISRuntime.Security.Credential
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.#ctor*
   commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.#ctor
   name: PortalConnection

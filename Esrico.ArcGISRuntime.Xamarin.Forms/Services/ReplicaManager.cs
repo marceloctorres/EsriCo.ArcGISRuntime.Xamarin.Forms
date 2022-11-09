@@ -328,8 +328,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services {
       EventHandler<ProgressChangedEventArgs> progressHandler) {
       var errors = new List<SyncReplicaErrorResult>();
       var task = await OfflineMapSyncTask.CreateAsync(map);
-      var param = new OfflineMapSyncParameters()
-      {
+      var param = new OfflineMapSyncParameters() {
         RollbackOnFailure = true,
         SyncDirection = SyncDirection.Bidirectional
       };
@@ -489,8 +488,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services {
         }
       }
       if(blockedFolders.Count > 0) {
-        var max = blockedFolders.Select(bf =>
-        {
+        var max = blockedFolders.Select(bf => {
           var sufix = bf.Replace(AppFolderName, string.Empty);
           return int.TryParse(sufix, out var index) ? index : -1;
         }).Max();

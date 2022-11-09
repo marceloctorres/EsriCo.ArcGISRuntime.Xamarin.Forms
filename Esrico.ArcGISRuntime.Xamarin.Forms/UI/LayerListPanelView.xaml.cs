@@ -136,8 +136,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
       var listLayerInfos = new List<LayerInfos>();
 
       foreach(var ol in Map.OperationalLayers) {
-        var layerInfos = new LayerInfos()
-        {
+        var layerInfos = new LayerInfos() {
           GroupLayerInfo = new LayerInfo { Layer = ol }
         };
         ol.SublayerContents

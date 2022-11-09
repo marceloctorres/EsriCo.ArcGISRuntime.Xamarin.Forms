@@ -267,22 +267,21 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services {
     /// </summary>
     public async Task SignInAsync() {
       try {
-        var loginType = await ArcGISPortal.GetLoginTypeForUriAsync(new Uri(BaseUrl));
-        AuthenticationManager.Current.ChallengeHandler = ChallengeHandlerAsync != null 
+        AuthenticationManager.Current.ChallengeHandler = ChallengeHandlerAsync != null
           ? new ChallengeHandler(ChallengeHandlerAsync)
           : new ChallengeHandler(CreateCredentialAsync);
 
+        var loginType = await ArcGISPortal.GetLoginTypeForUriAsync(new Uri(BaseUrl));
         if(loginType != PortalLoginType.UsernamePassword && loginType != PortalLoginType.Unknown) {
-          var challengeRequest = new CredentialRequestInfo
-          {
-            GenerateTokenOptions = new GenerateTokenOptions
-            {
+          var challengeRequest = new CredentialRequestInfo {
+            GenerateTokenOptions = new GenerateTokenOptions {
               TokenAuthenticationType = TokenAuthenticationType
             },
             ServiceUri = new Uri(BaseUrl)
           };
           await AuthenticationManager.Current.GetCredentialAsync(challengeRequest, false);
         }
+
         Portal = await ArcGISPortal.CreateAsync(new Uri(BaseUrl));
         PortalInfo = Portal.PortalInfo;
         PortalUser = Portal.User;
@@ -360,8 +359,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services {
     /// 
     /// </summary>
     private void ServerRegister() {
-      var serverInfo = new ServerInfo(new Uri(ServerRegisterUrl))
-      {
+      var serverInfo = new ServerInfo(new Uri(ServerRegisterUrl)) {
         TokenAuthenticationType = TokenAuthenticationType,
       };
       AuthenticationManager.Current.RegisterServer(serverInfo);
@@ -423,8 +421,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services {
     /// <param name="group"></param>
     /// <returns></returns>
     public async Task<List<PortalItem>> GetWebMapItemsByGroupAsync(PortalGroup group) {
-      var portalQueryParams = new PortalQueryParameters($"type:\"web map\" group:{group.GroupId}")
-      {
+      var portalQueryParams = new PortalQueryParameters($"type:\"web map\" group:{group.GroupId}") {
         SortField = "Title",
         SortOrder = PortalQuerySortOrder.Ascending,
       };
