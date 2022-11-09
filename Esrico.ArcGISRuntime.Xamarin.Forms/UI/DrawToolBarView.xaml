@@ -2,89 +2,51 @@
 <ContentView xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:prism="http://prismlibrary.com"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:root="clr-namespace:EsriCo.ArcGISRuntime.Xamarin.Forms"
              mc:Ignorable="d"
              x:Name="view"
              x:Class="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView"
              HorizontalOptions="Start"
              VerticalOptions="Start">
-  <ContentView.Resources>
-    <ResourceDictionary>
-      <Button x:Key="DrawPointTool"
-              Clicked="DrawPointToolClicked"
-              Style="{DynamicResource ToolButton}"
-              ImageSource="{Binding DrawPointToolImage, Source={x:Reference view}}" />
-      <Button x:Key="DrawPolylineTool"
-              Clicked="DrawPolylineToolClicked"
-              Style="{DynamicResource ToolButton}"
-              ImageSource="{Binding DrawPolylineToolImage, Source={x:Reference view}}" />
-      <Button x:Key="DrawFreehandLineTool"
-              Clicked="DrawFreehandLineToolClicked"
-              Style="{DynamicResource ToolButton}"
-              ImageSource="{Binding DrawFreehandLineToolImage, Source={x:Reference view}}" />
-      <Button x:Key="DrawPolygonTool"
-              Clicked="DrawPolygonToolClicked"
-              Style="{DynamicResource ToolButton}"
-              ImageSource="{Binding DrawPolygonToolImage, Source={x:Reference view}}" />
-      <Button x:Key="DrawRectangleTool"
-              Clicked="DrawRectangleToolClicked"
-              Style="{DynamicResource ToolButton}"
-              ImageSource="{Binding DrawRectangleToolImage, Source={x:Reference view}}" />
-      <Button x:Key="DrawTextTool"
-              Clicked="DrawTextToolClicked"
-              Style="{DynamicResource ToolButton}"
-              ImageSource="{Binding DrawTextToolImage, Source={x:Reference view}}" />
-      <Button x:Key="DrawEraseTool"
-              Clicked="DrawEraseToolClicked"
-              Style="{DynamicResource ToolButton}"
-              ImageSource="{Binding DrawEraseToolImage, Source={x:Reference view}}" />
-      <Button x:Key="DrawNoneTool"
-              Clicked="DrawNoneToolClicked"
-              Style="{DynamicResource ToolButton}"
-              ImageSource="{Binding DrawNoneToolImage, Source={x:Reference view}}" />
-      <ControlTemplate x:Key="HorizontalLayoutTemplate">
-        <Grid BackgroundColor="Transparent"
-              WidthRequest="50"
-              HeightRequest="200"
-              Margin="10">
-          <StackLayout Orientation="Horizontal" 
-                       Spacing="1">
-            <StaticResource Key="DrawPointTool" />
-            <StaticResource Key="DrawPolylineTool" />
-            <StaticResource Key="DrawFreehandLineTool" />
-            <StaticResource Key="DrawPolygonTool" />
-            <StaticResource Key="DrawRectangleTool" />
-            <StaticResource Key="DrawTextTool" />
-            <StaticResource Key="DrawEraseTool" />
-            <StaticResource Key="DrawNoneTool" />
-          </StackLayout>
-        </Grid>
-      </ControlTemplate>
-      <ControlTemplate x:Key="VerticalLayoutTemplate">
-        <Grid BackgroundColor="Transparent"
-              Margin="10">
-          <StackLayout Orientation="Vertical" 
-                       Spacing="1"
-                       BackgroundColor="Transparent">
-            <StaticResource Key="DrawPointTool" />
-            <StaticResource Key="DrawPolylineTool" />
-            <StaticResource Key="DrawFreehandLineTool" />
-            <StaticResource Key="DrawPolygonTool" />
-            <StaticResource Key="DrawRectangleTool" />
-            <StaticResource Key="DrawTextTool" />
-            <StaticResource Key="DrawEraseTool" />
-            <StaticResource Key="DrawNoneTool" />
-          </StackLayout>
-        </Grid>
-      </ControlTemplate>
-      <ResourceDictionary.MergedDictionaries>
-        <root:ResourceDictionary />
-      </ResourceDictionary.MergedDictionaries>
-    </ResourceDictionary>
-  </ContentView.Resources>
-  <ContentView.ControlTemplate>
-    <StaticResource Key="HorizontalLayoutTemplate" />
-  </ContentView.ControlTemplate>
+  <Grid
+    BackgroundColor="Transparent"
+    Margin="10">
+    <StackLayout
+      Orientation="{Binding Orientation, Source={x:Reference view}}"
+      BackgroundColor="Transparent"
+      Spacing="1">
+      <Button
+        Clicked="DrawPointToolClicked"
+        Style="{DynamicResource ToolButton}"
+        ImageSource="{Binding DrawPointToolImage, Source={x:Reference view}}" />
+      <Button
+        Clicked="DrawPolylineToolClicked"
+        Style="{DynamicResource ToolButton}"
+        ImageSource="{Binding DrawPolylineToolImage, Source={x:Reference view}}" />
+      <Button
+        Clicked="DrawFreehandLineToolClicked"
+        Style="{DynamicResource ToolButton}"
+        ImageSource="{Binding DrawFreehandLineToolImage, Source={x:Reference view}}" />
+      <Button
+        Clicked="DrawPolygonToolClicked"
+        Style="{DynamicResource ToolButton}"
+        ImageSource="{Binding DrawPolygonToolImage, Source={x:Reference view}}" />
+      <Button
+        Clicked="DrawRectangleToolClicked"
+        Style="{DynamicResource ToolButton}"
+        ImageSource="{Binding DrawRectangleToolImage, Source={x:Reference view}}" />
+      <Button
+        Clicked="DrawTextToolClicked"
+        Style="{DynamicResource ToolButton}"
+        ImageSource="{Binding DrawTextToolImage, Source={x:Reference view}}" />
+      <Button
+        Clicked="DrawEraseToolClicked"
+        Style="{DynamicResource ToolButton}"
+        ImageSource="{Binding DrawEraseToolImage, Source={x:Reference view}}" />
+      <Button
+        Clicked="DrawNoneToolClicked"
+        Style="{DynamicResource ToolButton}"
+        ImageSource="{Binding DrawNoneToolImage, Source={x:Reference view}}" />
+    </StackLayout>
+  </Grid>
 </ContentView>

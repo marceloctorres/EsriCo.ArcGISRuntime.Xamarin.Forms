@@ -30,13 +30,13 @@ items:
   summary: "\n\n"
   example: []
   syntax:
-    content: 'public class DrawingStatusChangedBehavior : BehaviorBase<GeoView>, INotifyPropertyChanged, IDynamicResourceHandler, IAttachedObject'
+    content: 'public class DrawingStatusChangedBehavior : BehaviorBase<GeoView>, INotifyPropertyChanged, IDynamicResourceHandler'
     content.vb: >-
       Public Class DrawingStatusChangedBehavior
 
           Inherits BehaviorBase(Of GeoView)
 
-          Implements INotifyPropertyChanged, IDynamicResourceHandler, IAttachedObject
+          Implements INotifyPropertyChanged, IDynamicResourceHandler
   inheritance:
   - System.Object
   - Xamarin.Forms.BindableObject

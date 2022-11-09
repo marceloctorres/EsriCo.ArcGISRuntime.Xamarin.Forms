@@ -38,13 +38,13 @@ items:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
   syntax:
-    content: 'public class IdentifyBehavior : BehaviorBase<MapView>, INotifyPropertyChanged, IDynamicResourceHandler, IAttachedObject'
+    content: 'public class IdentifyBehavior : BehaviorBase<MapView>, INotifyPropertyChanged, IDynamicResourceHandler'
     content.vb: >-
       Public Class IdentifyBehavior
 
           Inherits BehaviorBase(Of MapView)
 
-          Implements INotifyPropertyChanged, IDynamicResourceHandler, IAttachedObject
+          Implements INotifyPropertyChanged, IDynamicResourceHandler
   inheritance:
   - System.Object
   - Xamarin.Forms.BindableObject

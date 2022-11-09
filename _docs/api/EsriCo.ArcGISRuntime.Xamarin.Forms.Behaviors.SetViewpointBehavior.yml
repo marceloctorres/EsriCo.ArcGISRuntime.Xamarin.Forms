@@ -33,13 +33,13 @@ items:
   summary: "\n\n"
   example: []
   syntax:
-    content: 'public class SetViewpointBehavior : BehaviorBase<MapView>, INotifyPropertyChanged, IDynamicResourceHandler, IAttachedObject'
+    content: 'public class SetViewpointBehavior : BehaviorBase<MapView>, INotifyPropertyChanged, IDynamicResourceHandler'
     content.vb: >-
       Public Class SetViewpointBehavior
 
           Inherits BehaviorBase(Of MapView)
 
-          Implements INotifyPropertyChanged, IDynamicResourceHandler, IAttachedObject
+          Implements INotifyPropertyChanged, IDynamicResourceHandler
   inheritance:
   - System.Object
   - Xamarin.Forms.BindableObject

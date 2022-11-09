@@ -66,30 +66,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
       nameof(Orientation),
       typeof(StackOrientation),
       typeof(DrawToolBarView),
-      defaultValue: StackOrientation.Horizontal, propertyChanged: OnOrientationChanged);
-
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <param name="bindable"></param>
-    /// <param name="oldValue"></param>
-    /// <param name="newValue"></param>
-    private static void OnOrientationChanged(BindableObject bindable, object oldValue, object newValue) {
-      var view = bindable as DrawToolBarView;
-      var oldOrientation = (StackOrientation)oldValue;
-      var newOrientation = (StackOrientation)newValue;
-      if(oldOrientation != newOrientation) {
-        view.SetControlTemplate(newOrientation);
-      }
-    }
-
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <param name="orientation"></param>
-    private void SetControlTemplate(StackOrientation orientation) => ControlTemplate = orientation == StackOrientation.Horizontal
-          ? (ControlTemplate)Resources["HorizontalLayoutTemplate"]
-          : (ControlTemplate)Resources["VerticalLayoutTemplate"];
+      defaultValue: StackOrientation.Horizontal);
 
     /// <summary>
     /// 
@@ -451,6 +428,8 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
       InitializeComponent();
 
       IsVisible = false;
+      Orientation = StackOrientation.Horizontal;
+
       var asm = GetType().Assembly;
 
       DrawPointToolImage = ImageSource.FromStream(() => asm.GetStreamEmbeddedResource(@"ic_point"));
