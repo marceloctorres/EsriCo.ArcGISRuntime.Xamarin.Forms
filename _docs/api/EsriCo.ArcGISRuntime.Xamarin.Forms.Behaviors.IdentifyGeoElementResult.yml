@@ -32,7 +32,9 @@ items:
     content: 'public class IdentifyGeoElementResult : BindableBase, INotifyPropertyChanged'
     content.vb: >-
       Public Class IdentifyGeoElementResult
+
           Inherits BindableBase
+
           Implements INotifyPropertyChanged
   inheritance:
   - System.Object

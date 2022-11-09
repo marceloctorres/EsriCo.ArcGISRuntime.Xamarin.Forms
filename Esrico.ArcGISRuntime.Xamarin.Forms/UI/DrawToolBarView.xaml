@@ -46,8 +46,10 @@
               ImageSource="{Binding DrawNoneToolImage, Source={x:Reference view}}" />
       <ControlTemplate x:Key="HorizontalLayoutTemplate">
         <Grid BackgroundColor="Transparent"
+              WidthRequest="50"
+              HeightRequest="200"
               Margin="10">
-          <!--<StackLayout Orientation="Horizontal" 
+          <StackLayout Orientation="Horizontal" 
                        Spacing="1">
             <StaticResource Key="DrawPointTool" />
             <StaticResource Key="DrawPolylineTool" />
@@ -57,13 +59,13 @@
             <StaticResource Key="DrawTextTool" />
             <StaticResource Key="DrawEraseTool" />
             <StaticResource Key="DrawNoneTool" />
-          </StackLayout>-->
+          </StackLayout>
         </Grid>
       </ControlTemplate>
       <ControlTemplate x:Key="VerticalLayoutTemplate">
         <Grid BackgroundColor="Transparent"
               Margin="10">
-          <!--<StackLayout Orientation="Vertical" 
+          <StackLayout Orientation="Vertical" 
                        Spacing="1"
                        BackgroundColor="Transparent">
             <StaticResource Key="DrawPointTool" />
@@ -74,7 +76,7 @@
             <StaticResource Key="DrawTextTool" />
             <StaticResource Key="DrawEraseTool" />
             <StaticResource Key="DrawNoneTool" />
-          </StackLayout>-->
+          </StackLayout>
         </Grid>
       </ControlTemplate>
       <ResourceDictionary.MergedDictionaries>

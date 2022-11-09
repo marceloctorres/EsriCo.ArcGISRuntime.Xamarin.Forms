@@ -41,7 +41,9 @@ items:
     content: 'public class IdentifyBehavior : BehaviorBase<MapView>, INotifyPropertyChanged, IDynamicResourceHandler, IAttachedObject'
     content.vb: >-
       Public Class IdentifyBehavior
+
           Inherits BehaviorBase(Of MapView)
+
           Implements INotifyPropertyChanged, IDynamicResourceHandler, IAttachedObject
   inheritance:
   - System.Object

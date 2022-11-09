@@ -30,6 +30,7 @@ items:
     content: 'public class ProgressChangedEventArgs : EventArgs'
     content.vb: >-
       Public Class ProgressChangedEventArgs
+
           Inherits EventArgs
   inheritance:
   - System.Object

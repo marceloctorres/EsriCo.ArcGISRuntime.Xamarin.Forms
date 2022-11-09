@@ -33,7 +33,9 @@ items:
     content: 'public class LayerInfo : BindableBase, INotifyPropertyChanged'
     content.vb: >-
       Public Class LayerInfo
+
           Inherits BindableBase
+
           Implements INotifyPropertyChanged
   inheritance:
   - System.Object

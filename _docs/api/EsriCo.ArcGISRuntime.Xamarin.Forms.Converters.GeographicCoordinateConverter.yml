@@ -29,6 +29,7 @@ items:
     content: 'public class GeographicCoordinateConverter : IValueConverter'
     content.vb: >-
       Public Class GeographicCoordinateConverter
+
           Implements IValueConverter
   inheritance:
   - System.Object

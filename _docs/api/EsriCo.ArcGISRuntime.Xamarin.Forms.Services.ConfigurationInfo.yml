@@ -41,7 +41,9 @@ items:
     content: 'public class ConfigurationInfo : BindableBase, INotifyPropertyChanged, IConfigurationInfo'
     content.vb: >-
       Public Class ConfigurationInfo
+
           Inherits BindableBase
+
           Implements INotifyPropertyChanged, IConfigurationInfo
   inheritance:
   - System.Object
@@ -329,6 +331,7 @@ items:
   syntax:
     content: >-
       protected virtual async Task LoadAsync<T>()
+
           where T : ConfigurationInfo
     typeParameters:
     - id: T
