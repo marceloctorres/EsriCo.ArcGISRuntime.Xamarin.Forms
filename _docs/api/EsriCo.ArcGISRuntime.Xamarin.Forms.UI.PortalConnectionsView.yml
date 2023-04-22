@@ -42,9 +42,7 @@ items:
       <XamlFilePath("UI\PortalConnectionsView.xaml")>
 
       Public Class PortalConnectionsView
-
           Inherits ContentView
-
           Implements INotifyPropertyChanged, IDynamicResourceHandler, INameScope, INavigationProxy, IAnimatable, ITabStopElement, IViewController, IVisualElementController, IElementController, IGestureController, IGestureRecognizers, ILayout, ILayoutController, IPaddingElement
   inheritance:
   - System.Object

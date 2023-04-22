@@ -5,6 +5,9 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
+  /// <summary>
+  /// 
+  /// </summary>
   [XamlCompilation(XamlCompilationOptions.Compile)]
   public partial class ListPanelView : PanelView {
     /// <summary>
@@ -123,8 +126,17 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
     /// <summary>
     /// 
     /// </summary>
-    public ListPanelView() => InitializeComponent();
+    public ListPanelView() {
+      InitializeComponent();
+    }
 
-    private void ListView_BindingContextChanged(object sender, EventArgs e) => Console.WriteLine(sender);
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    private void ListView_BindingContextChanged(object sender, EventArgs e) {
+      Console.WriteLine(sender);
+    }
   }
 }

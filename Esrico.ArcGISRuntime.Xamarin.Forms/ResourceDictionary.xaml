@@ -3,16 +3,9 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                     xmlns:d="http://xamarin.com/schemas/2014/forms/design"
                     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                    xmlns:ui="clr-namespace:EsriCo.ArcGISRuntime.Xamarin.Forms.UI"
                     mc:Ignorable="d"
                     x:Class="EsriCo.ArcGISRuntime.Xamarin.Forms.ResourceDictionary">
-  <Color x:Key="DarkGrayTransparent">
-    <x:Arguments>
-      <x:Double>0.8</x:Double>
-      <x:Double>0.8</x:Double>
-      <x:Double>0.8</x:Double>
-      <x:Double>0.5</x:Double>
-    </x:Arguments>
-  </Color>
   <OnPlatform x:Key="SmallFont"
               x:TypeArguments="Font">
     <On Platform="iOS"
@@ -22,7 +15,6 @@
     <On Platform="UWP"
         Value="Segoe UI Light,12" />
   </OnPlatform>
-  
   <OnPlatform x:Key="NormalFont"
               x:TypeArguments="Font">
     <On Platform="iOS"
@@ -41,7 +33,6 @@
     <On Platform="UWP"
         Value="Segoe UI Light,Bold,14" />
   </OnPlatform>
-
   <OnPlatform x:Key="TitleFont"
               x:TypeArguments="Font">
     <On Platform="iOS"
@@ -51,7 +42,39 @@
     <On Platform="UWP"
         Value="Segoe UI Light,Bold,16" />
   </OnPlatform>
-  
+  <Color x:Key="DarkGrayTransparent">
+    <x:Arguments>
+      <x:Double>0.8</x:Double>
+      <x:Double>0.8</x:Double>
+      <x:Double>0.8</x:Double>
+      <x:Double>0.5</x:Double>
+    </x:Arguments>
+  </Color>
+  <Color x:Key="LightPrimaryColor">white</Color>
+  <Color x:Key="LightSecondaryColor">Black</Color>
+  <Color x:Key="DarkPrimaryColor">White</Color>
+  <Color x:Key="DarkSecondaryColor">Black</Color>
+  <Style TargetType="Frame">
+    <Setter Property="BackgroundColor"
+            Value="{AppThemeBinding {StaticResource LightPrimaryColor},Light={StaticResource LightPrimaryColor}, Dark={StaticResource DarkPrimaryColor}}" />
+    <Setter Property="BorderColor"
+            Value="{AppThemeBinding {StaticResource LightSecondaryColor},Light={StaticResource LightSecondaryColor}, Dark={StaticResource DarkSecondaryColor}}" />
+  </Style>
+  <Style x:Key="PanelViewStyle"
+         TargetType="ui:PanelView">
+    <Setter Property="TitleBackgroundColor"
+            Value="{AppThemeBinding {StaticResource LightPrimaryColor},Light={StaticResource LightPrimaryColor}, Dark={StaticResource DarkPrimaryColor}}" />
+    <Setter Property="TitleBorderColor"
+            Value="{AppThemeBinding {StaticResource LightSecondaryColor},Light={StaticResource LightSecondaryColor}, Dark={StaticResource DarkSecondaryColor}}" />
+    <Setter Property="BodyBackgroundColor"
+            Value="{AppThemeBinding {StaticResource LightPrimaryColor},Light={StaticResource LightPrimaryColor}, Dark={StaticResource DarkPrimaryColor}}" />
+    <Setter Property="BodyBorderColor"
+            Value="{AppThemeBinding {StaticResource LightSecondaryColor},Light={StaticResource LightSecondaryColor}, Dark={StaticResource DarkSecondaryColor}}" />
+    <Setter Property="StatusBackgroundColor"
+            Value="{AppThemeBinding {StaticResource LightPrimaryColor},Light={StaticResource LightPrimaryColor}, Dark={StaticResource DarkPrimaryColor}}" />
+    <Setter Property="StatusBorderColor"
+            Value="{AppThemeBinding {StaticResource LightSecondaryColor},Light={StaticResource LightSecondaryColor}, Dark={StaticResource DarkSecondaryColor}}" />
+  </Style>
   <Style x:Key="SmallLabel"
          TargetType="Label">
     <Setter Property="Font">
@@ -68,7 +91,6 @@
       </Setter.Value>
     </Setter>
   </Style>
-
   <Style x:Key="BoldLabel"
          TargetType="Label">
     <Setter Property="Font">
@@ -77,7 +99,6 @@
       </Setter.Value>
     </Setter>
   </Style>
-
   <Style x:Key="TitleLabel"
          TargetType="Label">
     <Setter Property="Font">
@@ -86,7 +107,6 @@
       </Setter.Value>
     </Setter>
   </Style>
-  
   <Style x:Key="TitleBarToolButton"
          TargetType="Button">
     <Setter Property="ContentLayout"

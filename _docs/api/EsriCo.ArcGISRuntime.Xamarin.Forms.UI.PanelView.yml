@@ -12,6 +12,8 @@ items:
   - EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.BodyBorderColorProperty
   - EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.BodyContent
   - EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.BodyContentProperty
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.BorderThickness
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.BorderThicknessProperty
   - EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.CloseButtonImage
   - EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.CloseButtonImageProperty
   - EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.Closed
@@ -45,6 +47,8 @@ items:
   - EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.TitleBackgroundColorProperty
   - EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.TitleBorderColor
   - EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.TitleBorderColorProperty
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.TitleHorizontalTextAlignment
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.TitleHorizontalTextAlignmentProperty
   - EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.TitleText
   - EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.TitleTextColor
   - EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.TitleTextColorProperty
@@ -80,9 +84,7 @@ items:
       <XamlFilePath("UI\PanelView.xaml")>
 
       Public Class PanelView
-
           Inherits ContentView
-
           Implements INotifyPropertyChanged, IDynamicResourceHandler, INameScope, INavigationProxy, IAnimatable, ITabStopElement, IViewController, IVisualElementController, IElementController, IGestureController, IGestureRecognizers, ILayout, ILayoutController, IPaddingElement
   inheritance:
   - System.Object
@@ -467,7 +469,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: CloseButtonImage
     path: UI/PanelView.xaml.cs
-    startLine: 54
+    startLine: 71
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -504,7 +506,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: IsVisibleProperty
     path: UI/PanelView.xaml.cs
-    startLine: 62
+    startLine: 79
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -541,7 +543,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: IsVisible
     path: UI/PanelView.xaml.cs
-    startLine: 73
+    startLine: 90
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -554,6 +556,80 @@ items:
       type: System.Boolean
     content.vb: Public Property IsVisible As Boolean
   overload: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.IsVisible*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.BorderThicknessProperty
+  commentId: F:EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.BorderThicknessProperty
+  id: BorderThicknessProperty
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView
+  langs:
+  - csharp
+  - vb
+  name: BorderThicknessProperty
+  nameWithType: PanelView.BorderThicknessProperty
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.BorderThicknessProperty
+  type: Field
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
+    id: BorderThicknessProperty
+    path: UI/PanelView.xaml.cs
+    startLine: 127
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public static readonly BindableProperty BorderThicknessProperty
+    return:
+      type: Xamarin.Forms.BindableProperty
+    content.vb: Public Shared ReadOnly BorderThicknessProperty As BindableProperty
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.BorderThickness
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.BorderThickness
+  id: BorderThickness
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView
+  langs:
+  - csharp
+  - vb
+  name: BorderThickness
+  nameWithType: PanelView.BorderThickness
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.BorderThickness
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
+    id: BorderThickness
+    path: UI/PanelView.xaml.cs
+    startLine: 136
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public Thickness BorderThickness { get; set; }
+    parameters: []
+    return:
+      type: Xamarin.Forms.Thickness
+    content.vb: Public Property BorderThickness As Thickness
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.BorderThickness*
   modifiers.csharp:
   - public
   - get
@@ -578,7 +654,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: HeaderContentProperty
     path: UI/PanelView.xaml.cs
-    startLine: 110
+    startLine: 144
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -615,7 +691,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: HeaderContent
     path: UI/PanelView.xaml.cs
-    startLine: 119
+    startLine: 153
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -652,7 +728,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: IsHeaderVisibleProperty
     path: UI/PanelView.xaml.cs
-    startLine: 145
+    startLine: 179
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -689,7 +765,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: IsHeaderVisible
     path: UI/PanelView.xaml.cs
-    startLine: 154
+    startLine: 188
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -726,7 +802,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: IsFooterVisibleProperty
     path: UI/PanelView.xaml.cs
-    startLine: 162
+    startLine: 196
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -763,7 +839,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: IsFooterVisible
     path: UI/PanelView.xaml.cs
-    startLine: 171
+    startLine: 205
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -800,7 +876,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: FooterContentProperty
     path: UI/PanelView.xaml.cs
-    startLine: 179
+    startLine: 213
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -837,7 +913,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: FooterContent
     path: UI/PanelView.xaml.cs
-    startLine: 188
+    startLine: 222
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -874,7 +950,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: BodyContentProperty
     path: UI/PanelView.xaml.cs
-    startLine: 214
+    startLine: 248
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -911,7 +987,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: BodyContent
     path: UI/PanelView.xaml.cs
-    startLine: 223
+    startLine: 257
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -948,7 +1024,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: TitleBorderColorProperty
     path: UI/PanelView.xaml.cs
-    startLine: 249
+    startLine: 283
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -985,7 +1061,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: TitleBorderColor
     path: UI/PanelView.xaml.cs
-    startLine: 258
+    startLine: 291
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -1022,7 +1098,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: TitleBackgroundColorProperty
     path: UI/PanelView.xaml.cs
-    startLine: 267
+    startLine: 299
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -1059,7 +1135,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: TitleBackgroundColor
     path: UI/PanelView.xaml.cs
-    startLine: 276
+    startLine: 307
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -1096,7 +1172,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: TitleTextColorProperty
     path: UI/PanelView.xaml.cs
-    startLine: 284
+    startLine: 315
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -1133,7 +1209,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: TitleTextColor
     path: UI/PanelView.xaml.cs
-    startLine: 293
+    startLine: 323
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -1170,7 +1246,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: TitleTextProperty
     path: UI/PanelView.xaml.cs
-    startLine: 301
+    startLine: 331
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -1207,7 +1283,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: TitleText
     path: UI/PanelView.xaml.cs
-    startLine: 309
+    startLine: 339
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -1220,6 +1296,80 @@ items:
       type: System.String
     content.vb: Public Property TitleText As String
   overload: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.TitleText*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.TitleHorizontalTextAlignmentProperty
+  commentId: F:EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.TitleHorizontalTextAlignmentProperty
+  id: TitleHorizontalTextAlignmentProperty
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView
+  langs:
+  - csharp
+  - vb
+  name: TitleHorizontalTextAlignmentProperty
+  nameWithType: PanelView.TitleHorizontalTextAlignmentProperty
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.TitleHorizontalTextAlignmentProperty
+  type: Field
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
+    id: TitleHorizontalTextAlignmentProperty
+    path: UI/PanelView.xaml.cs
+    startLine: 347
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public static readonly BindableProperty TitleHorizontalTextAlignmentProperty
+    return:
+      type: Xamarin.Forms.BindableProperty
+    content.vb: Public Shared ReadOnly TitleHorizontalTextAlignmentProperty As BindableProperty
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.TitleHorizontalTextAlignment
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.TitleHorizontalTextAlignment
+  id: TitleHorizontalTextAlignment
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView
+  langs:
+  - csharp
+  - vb
+  name: TitleHorizontalTextAlignment
+  nameWithType: PanelView.TitleHorizontalTextAlignment
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.TitleHorizontalTextAlignment
+  type: Property
+  source:
+    remote:
+      path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/PanelView.xaml.cs
+      branch: master
+      repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
+    id: TitleHorizontalTextAlignment
+    path: UI/PanelView.xaml.cs
+    startLine: 355
+  assemblies:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms
+  namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public TextAlignment TitleHorizontalTextAlignment { get; set; }
+    parameters: []
+    return:
+      type: Xamarin.Forms.TextAlignment
+    content.vb: Public Property TitleHorizontalTextAlignment As TextAlignment
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.TitleHorizontalTextAlignment*
   modifiers.csharp:
   - public
   - get
@@ -1244,7 +1394,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: IsTitleVisibleProperty
     path: UI/PanelView.xaml.cs
-    startLine: 317
+    startLine: 363
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -1281,7 +1431,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: IsTitleVisible
     path: UI/PanelView.xaml.cs
-    startLine: 326
+    startLine: 372
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -1318,7 +1468,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: BodyBorderColorProperty
     path: UI/PanelView.xaml.cs
-    startLine: 334
+    startLine: 380
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -1355,7 +1505,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: BodyBorderColor
     path: UI/PanelView.xaml.cs
-    startLine: 343
+    startLine: 388
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -1392,7 +1542,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: BodyBackgroundColorProperty
     path: UI/PanelView.xaml.cs
-    startLine: 351
+    startLine: 396
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -1429,7 +1579,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: BodyBackgroundColor
     path: UI/PanelView.xaml.cs
-    startLine: 360
+    startLine: 404
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -1466,7 +1616,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: StatusBackgroundColorProperty
     path: UI/PanelView.xaml.cs
-    startLine: 368
+    startLine: 412
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -1503,7 +1653,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: StatusBackgroundColor
     path: UI/PanelView.xaml.cs
-    startLine: 377
+    startLine: 420
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -1540,7 +1690,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: StatusBorderColorProperty
     path: UI/PanelView.xaml.cs
-    startLine: 385
+    startLine: 428
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -1577,7 +1727,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: StatusBorderColor
     path: UI/PanelView.xaml.cs
-    startLine: 394
+    startLine: 436
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -1614,7 +1764,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: StatusTextColorProperty
     path: UI/PanelView.xaml.cs
-    startLine: 402
+    startLine: 444
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -1651,7 +1801,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: StatusTextColor
     path: UI/PanelView.xaml.cs
-    startLine: 411
+    startLine: 452
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -1688,7 +1838,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: StatusTextProperty
     path: UI/PanelView.xaml.cs
-    startLine: 419
+    startLine: 460
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -1725,7 +1875,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: StatusText
     path: UI/PanelView.xaml.cs
-    startLine: 427
+    startLine: 468
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -1762,7 +1912,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: IsStatusVisibleProperty
     path: UI/PanelView.xaml.cs
-    startLine: 435
+    startLine: 476
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -1799,7 +1949,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: IsStatusVisible
     path: UI/PanelView.xaml.cs
-    startLine: 444
+    startLine: 485
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -1836,7 +1986,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: .ctor
     path: UI/PanelView.xaml.cs
-    startLine: 452
+    startLine: 493
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -1868,7 +2018,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: OnCloseButtonClicked
     path: UI/PanelView.xaml.cs
-    startLine: 467
+    startLine: 515
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -1909,7 +2059,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: OnPanelClosed
     path: UI/PanelView.xaml.cs
-    startLine: 475
+    startLine: 523
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -5705,6 +5855,18 @@ references:
   name: IsVisible
   nameWithType: PanelView.IsVisible
   fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.IsVisible
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.BorderThickness*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.BorderThickness
+  name: BorderThickness
+  nameWithType: PanelView.BorderThickness
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.BorderThickness
+- uid: Xamarin.Forms.Thickness
+  commentId: T:Xamarin.Forms.Thickness
+  parent: Xamarin.Forms
+  isExternal: true
+  name: Thickness
+  nameWithType: Thickness
+  fullName: Xamarin.Forms.Thickness
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.HeaderContent*
   commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.HeaderContent
   name: HeaderContent
@@ -5764,6 +5926,18 @@ references:
   name: String
   nameWithType: String
   fullName: System.String
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.TitleHorizontalTextAlignment*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.TitleHorizontalTextAlignment
+  name: TitleHorizontalTextAlignment
+  nameWithType: PanelView.TitleHorizontalTextAlignment
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.TitleHorizontalTextAlignment
+- uid: Xamarin.Forms.TextAlignment
+  commentId: T:Xamarin.Forms.TextAlignment
+  parent: Xamarin.Forms
+  isExternal: true
+  name: TextAlignment
+  nameWithType: TextAlignment
+  fullName: Xamarin.Forms.TextAlignment
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.IsTitleVisible*
   commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.IsTitleVisible
   name: IsTitleVisible

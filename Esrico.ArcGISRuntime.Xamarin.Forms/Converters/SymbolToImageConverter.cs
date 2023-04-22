@@ -6,9 +6,6 @@ using Esri.ArcGISRuntime.Symbology;
 
 using Xamarin.Forms;
 
-/// <summary>
-/// 
-/// </summary>
 namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Converters {
   /// <summary>
   /// 
@@ -27,20 +24,23 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Converters {
         var symbol = symbol1;
         var task = GetImageAsync(symbol);
         var awaiter = task.GetAwaiter();
-        awaiter.OnCompleted(() => {
-          var image = task.Result;
-        });
         return awaiter.GetResult();
       }
       return value;
     }
 
-    private async Task<ImageSource> GetImageAsync(Symbol symbol) {
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="symbol"></param>
+    /// <returns></returns>
+    private static async Task<ImageSource> GetImageAsync(Symbol symbol) {
       var imageData = await symbol.CreateSwatchAsync();
       var stream = await imageData.GetEncodedBufferAsync();
       var imageSource = ImageSource.FromStream(() => stream);
       return imageSource;
     }
+
     /// <summary>
     /// 
     /// </summary>
@@ -49,6 +49,8 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Converters {
     /// <param name="parameter"></param>
     /// <param name="culture"></param>
     /// <returns></returns>
-    public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture) => throw new NotImplementedException();
+    public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture) {
+      throw new NotImplementedException();
+    }
   }
 }

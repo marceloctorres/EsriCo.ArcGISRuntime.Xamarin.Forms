@@ -1,4 +1,5 @@
 ﻿using System.Runtime.CompilerServices;
+using System.Threading.Tasks;
 
 using Esri.ArcGISRuntime.Geometry;
 using Esri.ArcGISRuntime.Mapping;
@@ -10,9 +11,6 @@ using Prism.Behaviors;
 
 using Xamarin.Forms;
 
-/// <summary>
-/// 
-/// </summary>
 namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors {
   /// <summary>
   /// 
@@ -75,7 +73,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors {
     protected override void OnPropertyChanged([CallerMemberName] string propertyName = null) {
       base.OnPropertyChanged(propertyName);
       if(propertyName == nameof(Viewpoint)) {
-        SetViewpoint(Viewpoint);
+        SetViewpoint(Viewpoint).Await();
       }
     }
 
@@ -83,11 +81,12 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors {
     /// 
     /// </summary>
     /// <param name="viewpoint"></param>
-    private async void SetViewpoint(Viewpoint viewpoint) {
+    private async Task SetViewpoint(Viewpoint viewpoint) {
       if(viewpoint != null) {
         var currentViewpoint = AssociatedObject.GetCurrentViewpoint(ViewpointType.BoundingGeometry);
-        if(currentViewpoint == null || (currentViewpoint != null && !currentViewpoint.AreEquals(viewpoint))) {
-          await AssociatedObject.SetViewpointAsync(viewpoint);
+        var equals = currentViewpoint?.AreEquals(viewpoint);
+        if(equals.HasValue && !equals.Value) {
+          _ = await AssociatedObject.SetViewpointAsync(viewpoint);
           VisibleArea = AssociatedObject.VisibleArea;
           MapScale = AssociatedObject.MapScale;
         }

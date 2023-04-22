@@ -46,9 +46,7 @@ items:
       <XamlFilePath("UI\LogInView.xaml")>
 
       Public Class LogInView
-
           Inherits ContentView
-
           Implements INotifyPropertyChanged, IDynamicResourceHandler, INameScope, INavigationProxy, IAnimatable, ITabStopElement, IViewController, IVisualElementController, IElementController, IGestureController, IGestureRecognizers, ILayout, ILayoutController, IPaddingElement
   inheritance:
   - System.Object

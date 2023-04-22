@@ -37,9 +37,7 @@ items:
       <XamlFilePath("ResourceDictionary.xaml")>
 
       Public Class ResourceDictionary
-
           Inherits ResourceDictionary
-
           Implements IResourceDictionary, IDictionary(Of String, Object), ICollection(Of KeyValuePair(Of String, Object)), IEnumerable(Of KeyValuePair(Of String, Object)), IEnumerable
   inheritance:
   - System.Object

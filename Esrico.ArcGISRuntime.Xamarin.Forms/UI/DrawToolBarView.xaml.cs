@@ -2,6 +2,7 @@
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Windows.Input;
 
 using Esri.ArcGISRuntime.Geometry;
@@ -51,13 +52,12 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
     /// <param name="oldValue"></param>
     /// <param name="newValue"></param>
     private static void OnColorPropertyChanged(BindableObject bindable, object oldValue, object newValue) {
-      var view = bindable as DrawToolBarView;
+      var contentView = bindable as DrawToolBarView;
       if(newValue != null) {
-        view.Color = (Color)newValue;
-        view.DrawingProcess.Color = view.Color;
+        contentView.Color = (Color)newValue;
+        contentView.DrawingProcess.Color = contentView.Color;
       }
     }
-
 
     /// <summary>
     /// 
@@ -136,19 +136,22 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
     /// <summary>
     /// 
     /// </summary>
-    /// <param name="map"></param>
+    /// <param name="mapView"></param>
     public void CheckMap(MapView mapView) {
-      IsVisible = mapView != null && mapView.Map != null;
-      if(IsVisible) {
+      if(mapView != null && mapView.Map != null) {
+        IsVisible = true;
         if(mapView.GraphicsOverlays == null) {
           mapView.GraphicsOverlays = new GraphicsOverlayCollection();
         }
-        var graphicsOverlay = mapView.GraphicsOverlays.Where(g => g.Id == DrawGrapichsOverlayId).FirstOrDefault();
+        var graphicsOverlay = mapView.GraphicsOverlays.FirstOrDefault(g => g.Id == DrawGrapichsOverlayId);
         if(graphicsOverlay == null) {
           DrawingProcess.DrawGraphicsOverlay.Graphics.Clear();
           mapView.GraphicsOverlays.Add(DrawingProcess.DrawGraphicsOverlay);
         }
         DrawingProcess.MapView = mapView;
+      }
+      else {
+        IsVisible = false;
       }
     }
 
@@ -176,9 +179,9 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
     /// <param name="oldValue"></param>
     /// <param name="newValue"></param>
     private static void OnDrawPointToolImageChanged(BindableObject bindable, object oldValue, object newValue) {
-      var view = bindable as DrawToolBarView;
+      var contentView = bindable as DrawToolBarView;
       if(newValue == null) {
-        view.DrawPointToolImage = ImageSource.FromStream(() =>
+        contentView.DrawPointToolImage = ImageSource.FromStream(() =>
           typeof(DrawToolBarView).Assembly.GetStreamEmbeddedResource(@"ic_point"));
       }
     }
@@ -207,9 +210,9 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
     /// <param name="oldValue"></param>
     /// <param name="newValue"></param>
     private static void OnDrawPolylineToolImageChanged(BindableObject bindable, object oldValue, object newValue) {
-      var view = bindable as DrawToolBarView;
+      var drawToolbarView = bindable as DrawToolBarView;
       if(newValue == null) {
-        view.DrawPolylineToolImage = ImageSource.FromStream(() =>
+        drawToolbarView.DrawPolylineToolImage = ImageSource.FromStream(() =>
           typeof(DrawToolBarView).Assembly.GetStreamEmbeddedResource(@"ic_polyline"));
       }
     }
@@ -238,9 +241,9 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
     /// <param name="oldValue"></param>
     /// <param name="newValue"></param>
     private static void OnDrawPolygonToolImageChanged(BindableObject bindable, object oldValue, object newValue) {
-      var view = bindable as DrawToolBarView;
+      var drawToolbarView = bindable as DrawToolBarView;
       if(newValue == null) {
-        view.DrawPolygonToolImage = ImageSource.FromStream(() =>
+        drawToolbarView.DrawPolygonToolImage = ImageSource.FromStream(() =>
           typeof(DrawToolBarView).Assembly.GetStreamEmbeddedResource(@"ic_polygon"));
       }
     }
@@ -269,9 +272,9 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
     /// <param name="oldValue"></param>
     /// <param name="newValue"></param>
     private static void OnDrawRectangleToolImageChanged(BindableObject bindable, object oldValue, object newValue) {
-      var view = bindable as DrawToolBarView;
+      var drawToolbarView = bindable as DrawToolBarView;
       if(newValue == null) {
-        view.DrawRectangleToolImage = ImageSource.FromStream(() =>
+        drawToolbarView.DrawRectangleToolImage = ImageSource.FromStream(() =>
           typeof(DrawToolBarView).Assembly.GetStreamEmbeddedResource(@"ic_rectangle"));
       }
     }
@@ -300,9 +303,9 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
     /// <param name="oldValue"></param>
     /// <param name="newValue"></param>
     private static void OnDrawEraseToolImageChanged(BindableObject bindable, object oldValue, object newValue) {
-      var view = bindable as DrawToolBarView;
+      var drawToolbarView = bindable as DrawToolBarView;
       if(newValue == null) {
-        view.DrawEraseToolImage = ImageSource.FromStream(() =>
+        drawToolbarView.DrawEraseToolImage = ImageSource.FromStream(() =>
           typeof(DrawToolBarView).Assembly.GetStreamEmbeddedResource(@"ic_erase"));
       }
     }
@@ -331,9 +334,9 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
     /// <param name="oldValue"></param>
     /// <param name="newValue"></param>
     private static void DrawFreehandLineToolImageChanged(BindableObject bindable, object oldValue, object newValue) {
-      var view = bindable as DrawToolBarView;
+      var drawToolbarView = bindable as DrawToolBarView;
       if(newValue == null) {
-        view.DrawFreehandLineToolImage = ImageSource.FromStream(() =>
+        drawToolbarView.DrawFreehandLineToolImage = ImageSource.FromStream(() =>
           typeof(DrawToolBarView).Assembly.GetStreamEmbeddedResource(@"ic_erase"));
       }
     }
@@ -362,9 +365,9 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
     /// <param name="oldValue"></param>
     /// <param name="newValue"></param>
     private static void DrawTextToolImageChanged(BindableObject bindable, object oldValue, object newValue) {
-      var view = bindable as DrawToolBarView;
+      var drawToolbarView = bindable as DrawToolBarView;
       if(newValue == null) {
-        view.DrawTextToolImage = ImageSource.FromStream(() =>
+        drawToolbarView.DrawTextToolImage = ImageSource.FromStream(() =>
           typeof(DrawToolBarView).Assembly.GetStreamEmbeddedResource(@"ic_text"));
       }
     }
@@ -393,13 +396,12 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
     /// <param name="oldValue"></param>
     /// <param name="newValue"></param>
     private static void OnDrawNoneToolImageChanged(BindableObject bindable, object oldValue, object newValue) {
-      var view = bindable as DrawToolBarView;
+      var drawToolbarView = bindable as DrawToolBarView;
       if(newValue == null) {
-        view.DrawNoneToolImage = ImageSource.FromStream(() =>
+        drawToolbarView.DrawNoneToolImage = ImageSource.FromStream(() =>
           typeof(DrawToolBarView).Assembly.GetStreamEmbeddedResource(@"ic_cancel"));
       }
     }
-
 
     /// <summary>
     /// 
@@ -449,7 +451,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
       DrawingProcess.SketchEditor.GeometryChanged += SketchEditor_GeometryChanged;
       DrawingProcess.PropertyChanged += DrawingProcess_PropertyChanged;
 
-      OKCommand = new DelegateCommand<string>((s) => DrawText(s));
+      OKCommand = new DelegateCommand<string>(async (s) => await DrawText(s));
       Dialog = new DrawTextToolDialog() { AcceptCommand = OKCommand };
     }
 
@@ -470,7 +472,6 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
     /// <param name="sender"></param>
     /// <param name="e"></param>
     private void SketchEditor_GeometryChanged(object sender, GeometryChangedEventArgs e) {
-      Debug.WriteLine("x");
       Debug.WriteLine($"NewGeometry: {e.NewGeometry.ToJson()}");
       if(Geometry != null && Geometry.Equals(e.NewGeometry)) {
         IsDrawing = false;
@@ -485,24 +486,27 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
     /// </summary>7
     /// <param name="sender"></param>
     /// <param name="e"></param>
-    private async void DrawPointToolClicked(object sender, EventArgs e) =>
+    private async void DrawPointToolClicked(object sender, EventArgs e) {
       await DrawingProcess.DrawGeometryAsync(SketchCreationMode.Point);
+    }
 
     /// <summary>
     /// 
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
-    private async void DrawPolylineToolClicked(object sender, EventArgs e) =>
+    private async void DrawPolylineToolClicked(object sender, EventArgs e) {
       await DrawingProcess.DrawGeometryAsync(SketchCreationMode.Polyline);
+    }
 
     /// <summary>
     /// 
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
-    private async void DrawFreehandLineToolClicked(object sender, EventArgs e) =>
+    private async void DrawFreehandLineToolClicked(object sender, EventArgs e) {
       await DrawingProcess.DrawGeometryAsync(SketchCreationMode.FreehandLine);
+    }
 
     /// <summary>
     /// 
@@ -522,24 +526,27 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
     /// 
     /// </summary>
     /// <param name="text"></param>
-    private async void DrawText(string text) =>
+    private async Task DrawText(string text) {
       await DrawingProcess.DrawGeometryAsync(SketchCreationMode.Point, text);
+    }
 
     /// <summary>
     /// 
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
-    private async void DrawPolygonToolClicked(object sender, EventArgs e) =>
+    private async void DrawPolygonToolClicked(object sender, EventArgs e) {
       await DrawingProcess.DrawGeometryAsync(SketchCreationMode.Polygon);
+    }
 
     /// <summary>
     /// 
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
-    private async void DrawRectangleToolClicked(object sender, EventArgs e) =>
+    private async void DrawRectangleToolClicked(object sender, EventArgs e) {
       await DrawingProcess.DrawGeometryAsync(SketchCreationMode.Rectangle);
+    }
 
     /// <summary>
     /// 

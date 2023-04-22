@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ui="clr-namespace:EsriCo.ArcGISRuntime.Xamarin.Forms.UI"
+             x:Class="EsriCo.ArcGISRuntime.Xamarin.Forms.UI.ColorPaletteView"
+             x:Name="view">
+  <ContentView.Content>
+    <StackLayout HorizontalOptions="FillAndExpand">
+      <ListView x:Name="list" 
+                VerticalScrollBarVisibility="Always"
+                ItemsSource="{Binding ColorList,Source={x:Reference view}}"
+                HorizontalOptions="FillAndExpand">
+        <ListView.ItemTemplate>
+          <DataTemplate >
+            <ViewCell> 
+              <Grid BackgroundColor="Cyan">
+                <Grid.RowDefinitions>
+                  <RowDefinition Height="Auto" />
+                  <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                  <ColumnDefinition Width="Auto" />
+                  <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <BoxView HeightRequest="60"
+                         WidthRequest="60"
+                         Grid.RowSpan="2"
+                         Color="{Binding Color}" />
+                <Label Grid.Column="1"
+                       FontAttributes="Bold"
+                       FontSize="Default"
+                       Text="{Binding Name}" />
+                <Label Grid.Row="1"
+                       Grid.Column="1"
+                       FontSize="Default"
+                       Text="{Binding Color}" />
+              </Grid>
+            </ViewCell>
+          </DataTemplate>
+        </ListView.ItemTemplate>
+      </ListView>
+    </StackLayout>
+  </ContentView.Content>
+</ContentView>

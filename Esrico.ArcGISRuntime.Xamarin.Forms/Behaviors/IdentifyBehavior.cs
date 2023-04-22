@@ -13,6 +13,9 @@ using Prism.Behaviors;
 using Xamarin.Forms;
 
 namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors {
+  /// <summary>
+  /// 
+  /// </summary>
   public class IdentifyBehavior : BehaviorBase<MapView> {
     /// <summary>
     /// 
@@ -32,31 +35,41 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors {
       typeof(IdentifyBehavior)
       );
 
+    /// <summary>
+    /// 
+    /// </summary>
     public static readonly BindableProperty LayersProperty = BindableProperty.Create(
       nameof(Layers),
       typeof(List<Layer>),
       typeof(IdentifyBehavior)
       );
 
+    /// <summary>
+    /// 
+    /// </summary>
     public static readonly BindableProperty ToleranceProperty = BindableProperty.Create(
       nameof(Tolerance),
       typeof(double),
       typeof(IdentifyBehavior)
       );
 
+    /// <summary>
+    /// 
+    /// </summary>
     public static readonly BindableProperty ReturnOnlyPopupsProperty = BindableProperty.Create(
       nameof(ReturnOnlyPopups),
       typeof(bool),
       typeof(IdentifyBehavior)
       );
 
-
+    /// <summary>
+    /// 
+    /// </summary>
     public static readonly BindableProperty MaxResultsProperty = BindableProperty.Create(
       nameof(MaxResults),
       typeof(long),
       typeof(IdentifyBehavior)
       );
-
 
     /// <summary>
     /// 
@@ -106,17 +119,29 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors {
       set => SetValue(ReturnOnlyPopupsProperty, value);
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
     public IdentifyBehavior() {
       Tolerance = 1;
       MaxResults = 10;
       ReturnOnlyPopups = false;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="bindable"></param>
     protected override void OnAttachedTo(MapView bindable) {
       base.OnAttachedTo(bindable);
       bindable.GeoViewTapped += GeoViewTapped;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
     private async void GeoViewTapped(object sender, GeoViewInputEventArgs e) {
       if(Command != null && AssociatedObject.Map != null) {
         object item = null;
@@ -136,11 +161,9 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors {
                                     from g in r.Graphics
                                     where !(g.Symbol is TextSymbol) &&
                                     GraphicsOverlays.Select(go => go.Id)
-                                      .ToArray()
                                       .Contains(g.GraphicsOverlay.Id)
                                     select new IdentifyGraphicResult() { Graphic = g })
                                     .ToList();
-              ;
             }
           }
           if(Layers != null && Layers.Count > 0) {
@@ -155,7 +178,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors {
                 .AddRange(from ir in identifyLayerResults
                           from ge in ir.GeoElements
                           select new IdentifyGeoElementResult {
-                            GeoElement = (ge as Feature),
+                            GeoElement = ge as Feature,
                             Layer = ir.LayerContent as Layer
                           });
               identifyResults.
@@ -164,12 +187,9 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors {
                          from sr in ir.SublayerResults
                          from ge in sr.GeoElements
                          select new IdentifyGeoElementResult {
-                           GeoElement = (ge as Feature),
+                           GeoElement = ge as Feature,
                            Layer = sr.LayerContent as Layer
                          });
-            }
-
-            foreach(var ir in identifyLayerResults) {
             }
           }
           Command.Execute(identifyResults);

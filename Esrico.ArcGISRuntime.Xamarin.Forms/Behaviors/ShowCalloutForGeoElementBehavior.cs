@@ -34,7 +34,6 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors {
       if(propertyName == nameof(CalloutInfo)) {
         ShowCallout();
       }
-
     }
 
     /// <summary>

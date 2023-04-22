@@ -4,6 +4,9 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
+  /// <summary>
+  /// 
+  /// </summary>
   [XamlCompilation(XamlCompilationOptions.Compile)]
   public partial class ProcessingView : ContentView {
     /// <summary>
@@ -39,6 +42,9 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
       set => SetValue(ProcessingMessageProperty, value);
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
     public ProcessingView() {
       try {
         InitializeComponent();

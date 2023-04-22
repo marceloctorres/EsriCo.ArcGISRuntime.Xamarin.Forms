@@ -5,10 +5,19 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
+  /// <summary>
+  /// 
+  /// </summary>
   [XamlCompilation(XamlCompilationOptions.Compile)]
   public partial class ModalPanelView : PanelView {
+    /// <summary>
+    /// 
+    /// </summary>
     private readonly string ColorKey = "DarkGrayTransparent";
 
+    /// <summary>
+    /// 
+    /// </summary>
     private Frame ModalFrame { get; set; }
 
     /// <summary>
@@ -55,11 +64,9 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
     /// 
     /// </summary>
     private void InsertModalFrame() {
-      if(Parent is Layout<View> layout) {
-        if(!layout.Children.Contains(ModalFrame)) {
-          var index = layout.Children.IndexOf(this);
-          layout.Children.Insert(index - 1, ModalFrame);
-        }
+      if(Parent is Layout<View> layout && !layout.Children.Contains(ModalFrame)) {
+        var index = layout.Children.IndexOf(this);
+        layout.Children.Insert(index - 1, ModalFrame);
       }
     }
 
@@ -67,10 +74,8 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
     /// 
     /// </summary>
     private void RemoveModalFrame() {
-      if(Parent is Layout<View> layout) {
-        if(layout.Children.Contains(ModalFrame)) {
-          layout.Children.Remove(ModalFrame);
-        }
+      if(Parent is Layout<View> layout && layout.Children.Contains(ModalFrame)) {
+        _ = layout.Children.Remove(ModalFrame);
       }
     }
   }

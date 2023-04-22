@@ -119,7 +119,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: ToDms
     path: Extensions/Extensions.cs
-    startLine: 47
+    startLine: 49
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Extensions
@@ -164,7 +164,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: AreEquals
     path: Extensions/Extensions.cs
-    startLine: 55
+    startLine: 57
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Extensions
@@ -212,7 +212,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: AreEquals
     path: Extensions/Extensions.cs
-    startLine: 72
+    startLine: 74
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Extensions
@@ -263,7 +263,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: ToImageSource
     path: Extensions/Extensions.cs
-    startLine: 81
+    startLine: 83
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Extensions
@@ -308,7 +308,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: ToBase64String
     path: Extensions/Extensions.cs
-    startLine: 91
+    startLine: 93
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Extensions
@@ -353,7 +353,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: GetStreamEmbeddedResource
     path: Extensions/Extensions.cs
-    startLine: 106
+    startLine: 108
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Extensions

@@ -3328,6 +3328,70 @@ references:
   commentId: N:EsriCo.ArcGISRuntime.Xamarin.Forms.UI
   fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
   nameWithType: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.ColorInfo
+  name: ColorInfo
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.ColorInfo.html
+  commentId: T:EsriCo.ArcGISRuntime.Xamarin.Forms.UI.ColorInfo
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.ColorInfo
+  nameWithType: ColorInfo
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.ColorInfo.Color
+  name: Color
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.ColorInfo.html#EsriCo_ArcGISRuntime_Xamarin_Forms_UI_ColorInfo_Color
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.UI.ColorInfo.Color
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.ColorInfo.Color
+  nameWithType: ColorInfo.Color
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.ColorInfo.Color*
+  name: Color
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.ColorInfo.html#EsriCo_ArcGISRuntime_Xamarin_Forms_UI_ColorInfo_Color_
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.UI.ColorInfo.Color
+  isSpec: "True"
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.ColorInfo.Color
+  nameWithType: ColorInfo.Color
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.ColorInfo.Name
+  name: Name
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.ColorInfo.html#EsriCo_ArcGISRuntime_Xamarin_Forms_UI_ColorInfo_Name
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.UI.ColorInfo.Name
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.ColorInfo.Name
+  nameWithType: ColorInfo.Name
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.ColorInfo.Name*
+  name: Name
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.ColorInfo.html#EsriCo_ArcGISRuntime_Xamarin_Forms_UI_ColorInfo_Name_
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.UI.ColorInfo.Name
+  isSpec: "True"
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.ColorInfo.Name
+  nameWithType: ColorInfo.Name
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.ColorPaletteView
+  name: ColorPaletteView
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.ColorPaletteView.html
+  commentId: T:EsriCo.ArcGISRuntime.Xamarin.Forms.UI.ColorPaletteView
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.ColorPaletteView
+  nameWithType: ColorPaletteView
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.ColorPaletteView.#ctor
+  name: ColorPaletteView()
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.ColorPaletteView.html#EsriCo_ArcGISRuntime_Xamarin_Forms_UI_ColorPaletteView__ctor
+  commentId: M:EsriCo.ArcGISRuntime.Xamarin.Forms.UI.ColorPaletteView.#ctor
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.ColorPaletteView.ColorPaletteView()
+  nameWithType: ColorPaletteView.ColorPaletteView()
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.ColorPaletteView.#ctor*
+  name: ColorPaletteView
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.ColorPaletteView.html#EsriCo_ArcGISRuntime_Xamarin_Forms_UI_ColorPaletteView__ctor_
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.UI.ColorPaletteView.#ctor
+  isSpec: "True"
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.ColorPaletteView.ColorPaletteView
+  nameWithType: ColorPaletteView.ColorPaletteView
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.ColorPaletteView.ColorList
+  name: ColorList
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.ColorPaletteView.html#EsriCo_ArcGISRuntime_Xamarin_Forms_UI_ColorPaletteView_ColorList
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.UI.ColorPaletteView.ColorList
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.ColorPaletteView.ColorList
+  nameWithType: ColorPaletteView.ColorList
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.ColorPaletteView.ColorList*
+  name: ColorList
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.ColorPaletteView.html#EsriCo_ArcGISRuntime_Xamarin_Forms_UI_ColorPaletteView_ColorList_
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.UI.ColorPaletteView.ColorList
+  isSpec: "True"
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.ColorPaletteView.ColorList
+  nameWithType: ColorPaletteView.ColorList
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawingStatusView
   name: DrawingStatusView
   href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawingStatusView.html
@@ -4794,6 +4858,25 @@ references:
   commentId: F:EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.BodyContentProperty
   fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.BodyContentProperty
   nameWithType: PanelView.BodyContentProperty
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.BorderThickness
+  name: BorderThickness
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.html#EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_BorderThickness
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.BorderThickness
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.BorderThickness
+  nameWithType: PanelView.BorderThickness
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.BorderThickness*
+  name: BorderThickness
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.html#EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_BorderThickness_
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.BorderThickness
+  isSpec: "True"
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.BorderThickness
+  nameWithType: PanelView.BorderThickness
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.BorderThicknessProperty
+  name: BorderThicknessProperty
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.html#EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_BorderThicknessProperty
+  commentId: F:EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.BorderThicknessProperty
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.BorderThicknessProperty
+  nameWithType: PanelView.BorderThicknessProperty
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.CloseButtonImage
   name: CloseButtonImage
   href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.html#EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_CloseButtonImage
@@ -5111,6 +5194,25 @@ references:
   commentId: F:EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.TitleBorderColorProperty
   fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.TitleBorderColorProperty
   nameWithType: PanelView.TitleBorderColorProperty
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.TitleHorizontalTextAlignment
+  name: TitleHorizontalTextAlignment
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.html#EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_TitleHorizontalTextAlignment
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.TitleHorizontalTextAlignment
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.TitleHorizontalTextAlignment
+  nameWithType: PanelView.TitleHorizontalTextAlignment
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.TitleHorizontalTextAlignment*
+  name: TitleHorizontalTextAlignment
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.html#EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_TitleHorizontalTextAlignment_
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.TitleHorizontalTextAlignment
+  isSpec: "True"
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.TitleHorizontalTextAlignment
+  nameWithType: PanelView.TitleHorizontalTextAlignment
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.TitleHorizontalTextAlignmentProperty
+  name: TitleHorizontalTextAlignmentProperty
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.html#EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_TitleHorizontalTextAlignmentProperty
+  commentId: F:EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.TitleHorizontalTextAlignmentProperty
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.TitleHorizontalTextAlignmentProperty
+  nameWithType: PanelView.TitleHorizontalTextAlignmentProperty
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.TitleText
   name: TitleText
   href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.html#EsriCo_ArcGISRuntime_Xamarin_Forms_UI_PanelView_TitleText

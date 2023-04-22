@@ -11,7 +11,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms {
     /// </summary>
     /// <param name="containerProvider"></param>
     public void OnInitialized(IContainerProvider containerProvider) {
-
+      // Not implemented yet.
     }
 
     /// <summary>
@@ -19,6 +19,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms {
     /// </summary>
     /// <param name="containerRegistry"></param>
     public void RegisterTypes(IContainerRegistry containerRegistry) {
+      // Not implemented yet.
     }
   }
 }
