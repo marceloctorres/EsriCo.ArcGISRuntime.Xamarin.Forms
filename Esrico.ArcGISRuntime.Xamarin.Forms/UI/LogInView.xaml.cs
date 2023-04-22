@@ -5,8 +5,14 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
+  /// <summary>
+  /// 
+  /// </summary>
   [XamlCompilation(XamlCompilationOptions.Compile)]
   public partial class LogInView : ContentView {
+    /// <summary>
+    /// 
+    /// </summary>
     public static readonly BindableProperty LogInCommandProperty = BindableProperty.Create(
       nameof(LogInCommand),
       typeof(ICommand),

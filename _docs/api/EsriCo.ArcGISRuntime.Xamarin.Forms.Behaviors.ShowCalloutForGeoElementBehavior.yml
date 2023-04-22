@@ -32,9 +32,7 @@ items:
     content: 'public class ShowCalloutForGeoElementBehavior : BehaviorBase<MapView>, INotifyPropertyChanged, IDynamicResourceHandler'
     content.vb: >-
       Public Class ShowCalloutForGeoElementBehavior
-
           Inherits BehaviorBase(Of MapView)
-
           Implements INotifyPropertyChanged, IDynamicResourceHandler
   inheritance:
   - System.Object

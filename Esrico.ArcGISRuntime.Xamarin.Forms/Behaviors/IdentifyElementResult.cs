@@ -28,9 +28,11 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors {
       set => SetProperty(ref _layer, value);
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
     public IdentifyGeoElementResult() {
 
     }
-
   }
 }

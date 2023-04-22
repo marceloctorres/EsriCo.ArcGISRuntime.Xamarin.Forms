@@ -5,6 +5,9 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
+  /// <summary>
+  /// 
+  /// </summary>
   [XamlCompilation(XamlCompilationOptions.Compile)]
   public partial class DrawingStatusView : ContentView {
     /// <summary>
@@ -23,9 +26,9 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
     /// <param name="oldValue"></param>
     /// <param name="newValue"></param>
     private static void OnIndicatorColorPropertyChanged(BindableObject bindable, object oldValue, object newValue) {
-      var view = bindable as DrawingStatusView;
+      var contentView = bindable as DrawingStatusView;
       var newColor = (Color)newValue;
-      view.IndicatorColor = newColor;
+      contentView.IndicatorColor = newColor;
     }
 
     /// <summary>
@@ -63,10 +66,10 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
     /// <param name="oldValue"></param>
     /// <param name="newValue"></param>
     private static void OnMapViewPropertyChanged(BindableObject bindable, object oldValue, object newValue) {
-      var view = bindable as DrawingStatusView;
+      var contentView = bindable as DrawingStatusView;
       var oldMapView = oldValue as MapView;
       var newMapView = newValue as MapView;
-      view.AddDrawStatusChangedHandler(oldMapView, newMapView);
+      contentView.AddDrawStatusChangedHandler(oldMapView, newMapView);
     }
 
     /// <summary>
@@ -88,7 +91,9 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
-    private void MapViewDrawStatusChanged(object sender, DrawStatusChangedEventArgs e) => IsVisible = e.Status == DrawStatus.InProgress;
+    private void MapViewDrawStatusChanged(object sender, DrawStatusChangedEventArgs e) {
+      IsVisible = e.Status == DrawStatus.InProgress;
+    }
 
     /// <summary>
     /// 

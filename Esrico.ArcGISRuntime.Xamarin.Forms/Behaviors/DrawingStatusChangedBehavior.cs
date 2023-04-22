@@ -12,6 +12,9 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors {
   /// 
   /// </summary>
   public class DrawingStatusChangedBehavior : BehaviorBase<GeoView> {
+    /// <summary>
+    /// 
+    /// </summary>
     public static readonly BindableProperty CommandProperty = BindableProperty.Create(
       nameof(Command),
       typeof(ICommand),

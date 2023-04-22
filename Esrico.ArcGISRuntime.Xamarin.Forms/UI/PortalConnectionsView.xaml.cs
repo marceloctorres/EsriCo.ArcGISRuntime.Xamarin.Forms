@@ -10,6 +10,9 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
+  /// <summary>
+  /// 
+  /// </summary>
   [XamlCompilation(XamlCompilationOptions.Compile)]
   public partial class PortalConnectionsView : ContentView {
     /// <summary>
@@ -29,32 +32,24 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
       set => SetValue(PortalConnectionsProperty, value);
     }
 
-    private ImageSource _logedInImage;
+    /// <summary>
+    /// 
+    /// </summary>
+    public ImageSource LoginImage { get; set; }
 
     /// <summary>
     /// 
     /// </summary>
-    public ImageSource LoginImage {
-      get => _logedInImage;
-      set => _logedInImage = value;
-    }
-
-    private ImageSource _activeImage;
-
-    /// <summary>
-    /// 
-    /// </summary>
-    public ImageSource ActiveImage {
-      get => _activeImage;
-      set => _activeImage = value;
-    }
+    public ImageSource ActiveImage { get; set; }
 
     /// <summary>
     /// 
     /// </summary>
     public ICommand CloseCommand { get; private set; }
 
-
+    /// <summary>
+    /// 
+    /// </summary>
     public PortalConnectionsView() {
       InitializeComponent();
       var asm = GetType().Assembly;
@@ -68,6 +63,8 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
 
     }
 
-    private void CloseButton_Clicked(object sender, System.EventArgs e) => IsVisible = false;
+    private void CloseButton_Clicked(object sender, System.EventArgs e) {
+      IsVisible = false;
+    }
   }
 }

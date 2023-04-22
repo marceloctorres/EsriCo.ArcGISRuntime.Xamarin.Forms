@@ -43,7 +43,6 @@ items:
     content: 'public class ReplicaManager : IReplicaManager'
     content.vb: >-
       Public Class ReplicaManager
-
           Implements IReplicaManager
   inheritance:
   - System.Object
@@ -353,7 +352,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: DownloadReplicaAsync
     path: Services/ReplicaManager.cs
-    startLine: 242
+    startLine: 241
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -407,7 +406,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: SynchronizeReplicaAsync
     path: Services/ReplicaManager.cs
-    startLine: 326
+    startLine: 325
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -458,7 +457,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: DeleteReplicaAsync
     path: Services/ReplicaManager.cs
-    startLine: 368
+    startLine: 363
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -500,7 +499,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: DeleteReplicaAsync
     path: Services/ReplicaManager.cs
-    startLine: 405
+    startLine: 397
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -538,7 +537,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: DeleteReplicaFolderAsync
     path: Services/ReplicaManager.cs
-    startLine: 411
+    startLine: 403
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -576,7 +575,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: ReplicaExist
     path: Services/ReplicaManager.cs
-    startLine: 445
+    startLine: 435
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -613,7 +612,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: GetReplicaMapAsync
     path: Services/ReplicaManager.cs
-    startLine: 457
+    startLine: 447
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services

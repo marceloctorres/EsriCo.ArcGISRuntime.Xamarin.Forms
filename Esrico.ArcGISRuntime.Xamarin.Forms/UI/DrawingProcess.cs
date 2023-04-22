@@ -12,7 +12,6 @@ using Prism.Mvvm;
 
 using Color = System.Drawing.Color;
 
-
 namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
   /// <summary>
   /// 
@@ -85,6 +84,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
     /// 
     /// </summary>
     /// <param name="mode"></param>
+    /// <param name="text"></param>
     /// <returns></returns>
     internal async Task DrawGeometryAsync(SketchCreationMode mode, string text = null) {
       try {
@@ -152,11 +152,13 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
     /// 
     /// </summary>
     /// <returns></returns>
-    private Symbol PolylineSymbol() => new SimpleLineSymbol() {
-      Color = Color,
-      Style = SimpleLineSymbolStyle.Solid,
-      Width = 2
-    };
+    private Symbol PolylineSymbol() {
+      return new SimpleLineSymbol() {
+        Color = Color,
+        Style = SimpleLineSymbolStyle.Solid,
+        Width = 2
+      };
+    }
 
     /// <summary>
     /// 
@@ -179,13 +181,15 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
     /// 
     /// </summary>
     /// <returns></returns>
-    private Symbol TextSymbol(string text) => new TextSymbol() {
-      Text = text,
-      Color = Color.Black,
-      HorizontalAlignment = HorizontalAlignment.Center,
-      VerticalAlignment = VerticalAlignment.Middle,
-      Size = 20
-    };
+    private static Symbol TextSymbol(string text) {
+      return new TextSymbol() {
+        Text = text,
+        Color = Color.Black,
+        HorizontalAlignment = HorizontalAlignment.Center,
+        VerticalAlignment = VerticalAlignment.Middle,
+        Size = 20
+      };
+    }
 
     /// <summary>
     /// 
@@ -209,5 +213,4 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
       }
     }
   }
-
 }

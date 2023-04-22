@@ -37,9 +37,7 @@ items:
     content: 'public class ViewportChangedBehavior : BehaviorBase<MapView>, INotifyPropertyChanged, IDynamicResourceHandler'
     content.vb: >-
       Public Class ViewportChangedBehavior
-
           Inherits BehaviorBase(Of MapView)
-
           Implements INotifyPropertyChanged, IDynamicResourceHandler
   inheritance:
   - System.Object

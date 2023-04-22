@@ -4,6 +4,9 @@ using System.Windows.Input;
 using Xamarin.Forms.Xaml;
 
 namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
+  /// <summary>
+  /// 
+  /// </summary>
   [XamlCompilation(XamlCompilationOptions.Compile)]
   public partial class DrawTextToolDialog : ModalPanelView {
     /// <summary>
@@ -26,10 +29,8 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
 
     private void OKButton_Clicked(object sender, EventArgs e) {
       IsVisible = false;
-      if(AcceptCommand != null) {
-        if(AcceptCommand.CanExecute(null)) {
-          AcceptCommand.Execute(Text);
-        }
+      if(AcceptCommand != null && AcceptCommand.CanExecute(null)) {
+        AcceptCommand.Execute(Text);
       }
     }
 
@@ -38,6 +39,8 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
-    private void CloseButton_Clicked(object sender, EventArgs e) => IsVisible = false;
+    private void CloseButton_Clicked(object sender, EventArgs e) {
+      IsVisible = false;
+    }
   }
 }

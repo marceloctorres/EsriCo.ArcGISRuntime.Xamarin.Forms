@@ -20,6 +20,9 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
   /// </summary>
   [XamlCompilation(XamlCompilationOptions.Compile)]
   public partial class MeasurementBarView : PanelView {
+    /// <summary>
+    /// 
+    /// </summary>
     public class UnitItem {
       /// <summary>
       /// 
@@ -31,7 +34,9 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
       /// </summary>
       public string Key { get; set; }
 
-
+      /// <summary>
+      /// 
+      /// </summary>
       public object Value { get; set; }
     }
 
@@ -238,14 +243,14 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
     /// <summary>
     /// 
     /// </summary>
-    /// <param name="map"></param>
+    /// <param name="mapView"></param>
     public void CheckMap(MapView mapView) {
       IsVisible = IsVisible && mapView != null && mapView.Map != null;
       if(mapView != null && mapView.Map != null) {
         if(mapView.GraphicsOverlays == null) {
           mapView.GraphicsOverlays = new GraphicsOverlayCollection();
         }
-        var graphicsOverlay = mapView.GraphicsOverlays.Where(g => g.Id == DrawGrapichsOverlayId).FirstOrDefault();
+        var graphicsOverlay = mapView.GraphicsOverlays.FirstOrDefault(g => g.Id == DrawGrapichsOverlayId);
         if(graphicsOverlay == null) {
           DrawingProcess.DrawGraphicsOverlay.Graphics.Clear();
           mapView.GraphicsOverlays.Add(DrawingProcess.DrawGraphicsOverlay);
@@ -376,7 +381,6 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
         new UnitItem() { DisplayName = AppResources.Feet, Key = "Feet", Value = EsriGeometry.LinearUnits.Feet},
         new UnitItem() { DisplayName = AppResources.Yards, Key = "Yards", Value = EsriGeometry.LinearUnits.Yards},
         new UnitItem() { DisplayName = AppResources.Miles, Key = "Miles", Value = EsriGeometry.LinearUnits.Miles}
-
       };
       AreaUnits = new List<UnitItem>()
       {
@@ -498,7 +502,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
 
       Units = AngularUnits;
       if(SelectedAngularUnit == null) {
-        SelectedAngularUnit = AngularUnits.Where(u => u.Key == nameof(LatitudeLongitudeFormat.DegreesMinutesSeconds)).FirstOrDefault();
+        SelectedAngularUnit = AngularUnits.FirstOrDefault(u => u.Key == nameof(LatitudeLongitudeFormat.DegreesMinutesSeconds));
       }
       SelectedUnit = SelectedAngularUnit;
 
@@ -518,7 +522,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
 
       Units = LinearUnits;
       if(SelectedLinearUnit == null) {
-        SelectedLinearUnit = LinearUnits.Where(u => u.Key == nameof(EsriGeometry.LinearUnits.Kilometers)).FirstOrDefault();
+        SelectedLinearUnit = LinearUnits.FirstOrDefault(u => u.Key == nameof(EsriGeometry.LinearUnits.Kilometers));
       }
       SelectedUnit = SelectedLinearUnit;
       await DrawingProcess.DrawGeometryAsync(SketchCreationMode.Polyline);
@@ -536,7 +540,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
 
       Units = AreaUnits;
       if(SelectedAreaUnit == null) {
-        SelectedAreaUnit = AreaUnits.Where(u => u.Key == nameof(EsriGeometry.AreaUnits.SquareKilometers)).FirstOrDefault();
+        SelectedAreaUnit = AreaUnits.FirstOrDefault(u => u.Key == nameof(EsriGeometry.AreaUnits.SquareKilometers));
       }
       SelectedUnit = SelectedAreaUnit;
 
@@ -575,13 +579,17 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
-    private void MeasureViewClosed(object sender, EventArgs e) => ClearMeasurement();
+    private void MeasureViewClosed(object sender, EventArgs e) {
+      ClearMeasurement();
+    }
 
     /// <summary>
     /// 
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
-    private void NoneMeasurementToolClicked(object sender, EventArgs e) => ClearMeasurement();
+    private void NoneMeasurementToolClicked(object sender, EventArgs e) {
+      ClearMeasurement();
+    }
   }
 }

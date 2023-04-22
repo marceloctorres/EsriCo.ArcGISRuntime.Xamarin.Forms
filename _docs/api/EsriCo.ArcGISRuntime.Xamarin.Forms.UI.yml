@@ -4,6 +4,8 @@ items:
   commentId: N:EsriCo.ArcGISRuntime.Xamarin.Forms.UI
   id: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
   children:
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.UI.ColorInfo
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.UI.ColorPaletteView
   - EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawingStatusView
   - EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawTextToolDialog
   - EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView
@@ -31,6 +33,16 @@ items:
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
 references:
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.ColorInfo
+  commentId: T:EsriCo.ArcGISRuntime.Xamarin.Forms.UI.ColorInfo
+  name: ColorInfo
+  nameWithType: ColorInfo
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.ColorInfo
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.ColorPaletteView
+  commentId: T:EsriCo.ArcGISRuntime.Xamarin.Forms.UI.ColorPaletteView
+  name: ColorPaletteView
+  nameWithType: ColorPaletteView
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.ColorPaletteView
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawingStatusView
   commentId: T:EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawingStatusView
   name: DrawingStatusView

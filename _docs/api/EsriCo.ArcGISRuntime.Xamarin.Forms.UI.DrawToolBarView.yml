@@ -67,9 +67,7 @@ items:
       <XamlFilePath("UI\DrawToolBarView.xaml")>
 
       Public Class DrawToolBarView
-
           Inherits ContentView
-
           Implements INotifyPropertyChanged, IDynamicResourceHandler, INameScope, INavigationProxy, IAnimatable, ITabStopElement, IViewController, IVisualElementController, IElementController, IGestureController, IGestureRecognizers, ILayout, ILayoutController, IPaddingElement
   inheritance:
   - System.Object
@@ -310,7 +308,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: ColorProperty
     path: UI/DrawToolBarView.xaml.cs
-    startLine: 31
+    startLine: 32
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -347,7 +345,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: Color
     path: UI/DrawToolBarView.xaml.cs
-    startLine: 41
+    startLine: 42
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -1233,7 +1231,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: OKCommand
     path: UI/DrawToolBarView.xaml.cs
-    startLine: 406
+    startLine: 405
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -1270,7 +1268,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: Dialog
     path: UI/DrawToolBarView.xaml.cs
-    startLine: 411
+    startLine: 410
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -1307,7 +1305,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: Geometry
     path: UI/DrawToolBarView.xaml.cs
-    startLine: 421
+    startLine: 420
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -1344,7 +1342,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: .ctor
     path: UI/DrawToolBarView.xaml.cs
-    startLine: 426
+    startLine: 425
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI

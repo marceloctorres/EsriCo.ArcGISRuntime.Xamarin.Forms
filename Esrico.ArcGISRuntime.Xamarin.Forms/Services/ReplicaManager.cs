@@ -84,7 +84,9 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services {
     /// <summary>
     /// 
     /// </summary>
-    public DownloadReplicaResult() => ResultErrors = new List<DownloadReplicaErrorResult>();
+    public DownloadReplicaResult() {
+      ResultErrors = new List<DownloadReplicaErrorResult>();
+    }
   }
 
   /// <summary>
@@ -119,13 +121,14 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services {
     /// <summary>
     /// 
     /// </summary>
-    public List<SyncReplicaErrorResult> ResultErrors;
+    public List<SyncReplicaErrorResult> ResultErrors { get; set; }
 
     /// <summary>
     /// 
     /// </summary>
-    public SynchronizeReplicaResult() => ResultErrors = new List<SyncReplicaErrorResult>();
-
+    public SynchronizeReplicaResult() {
+      ResultErrors = new List<SyncReplicaErrorResult>();
+    }
   }
 
   /// <summary>
@@ -157,8 +160,8 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services {
   /// 
   /// </summary>
   public class ReplicaManager : IReplicaManager {
-    private static event EventHandler<JobChangedEventArgs> JobChangedEventHandler;
-    private static event EventHandler<ProgressChangedEventArgs> ProgressChangedEventHandler;
+    private event EventHandler<JobChangedEventArgs> JobChangedEventHandler;
+    private event EventHandler<ProgressChangedEventArgs> ProgressChangedEventHandler;
 
     /// <summary>
     /// 
@@ -227,7 +230,6 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services {
           Debug.WriteLine(ex.Message);
           return new ValidateReplicaResult();
         }
-
       }
       return new ValidateReplicaResult() { Valid = true };
     }
@@ -259,14 +261,14 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services {
       var errors = new List<DownloadReplicaErrorResult>();
       var capabilitiesResults = await task.GetOfflineMapCapabilitiesAsync(parameters);
       if(capabilitiesResults.HasErrors) {
-        errors.AddRange(capabilitiesResults.LayerCapabilities.ToList()
+        errors.AddRange(capabilitiesResults.LayerCapabilities
           .Where(l => !l.Value.SupportsOffline || l.Value.Error != null)
           .Select(l => new DownloadReplicaErrorResult {
             Name = l.Key.Name,
             SupportOffline = l.Value.SupportsOffline,
             Error = l.Value.Error
           }));
-        errors.AddRange(capabilitiesResults.TableCapabilities.ToList()
+        errors.AddRange(capabilitiesResults.TableCapabilities
           .Where(t => !t.Value.SupportsOffline || t.Value.Error != null)
           .Select(t => new DownloadReplicaErrorResult {
             Name = t.Key.TableName,
@@ -280,11 +282,11 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services {
       else {
         var job = task.GenerateOfflineMap(parameters, pathToOutputPackage);
         if(jobHandler != null) {
-          JobChangedEventHandler += jobHandler;
-          job.JobChanged += (o, e) => JobChangedEventHandler?.Invoke(job, new JobChangedEventArgs() { Messages = job.Messages, Status = job.Status });
+          JobChangedEventHandler = jobHandler;
+          job.StatusChanged += (o, e) => JobChangedEventHandler?.Invoke(job, new JobChangedEventArgs() { Messages = job.Messages, Status = job.Status });
         }
         if(progressHandler != null) {
-          ProgressChangedEventHandler += progressHandler;
+          ProgressChangedEventHandler = progressHandler;
           job.ProgressChanged += (o, e) => ProgressChangedEventHandler?.Invoke(job, new ProgressChangedEventArgs() { Progress = job.Progress });
         }
         var generateOfflineMapResults = await job.GetResultAsync();
@@ -299,12 +301,12 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services {
           };
         }
         else {
-          errors.AddRange(generateOfflineMapResults.LayerErrors.ToList()
+          errors.AddRange(generateOfflineMapResults.LayerErrors
             .Select(l => new DownloadReplicaErrorResult {
               Name = l.Key.Name,
               Message = l.Value.Message
             }));
-          errors.AddRange(generateOfflineMapResults.TableErrors.ToList()
+          errors.AddRange(generateOfflineMapResults.TableErrors
             .Select(t => new DownloadReplicaErrorResult {
               Name = t.Key.TableName,
               Message = t.Value.Message
@@ -336,11 +338,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services {
       var job = task.SyncOfflineMap(param);
       if(jobHandler != null) {
         JobChangedEventHandler += jobHandler;
-        job.JobChanged += (o, e) => {
-          if(JobChangedEventHandler != null) {
-            JobChangedEventHandler.Invoke(job, new JobChangedEventArgs() { Messages = job.Messages, Status = job.Status });
-          }
-        };
+        job.StatusChanged += (o, e) => JobChangedEventHandler?.Invoke(job, new JobChangedEventArgs() { Messages = job.Messages, Status = job.Status });
       }
       if(progressHandler != null) {
         ProgressChangedEventHandler += progressHandler;
@@ -379,18 +377,15 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services {
             await task.UnregisterGeodatabaseAsync(gdb);
 
             gdb.Close();
-            sb.Append($"{AppResources.DeleteReplicaMessageDeleted} {syncId}.");
+            _ = sb.Append($"{AppResources.DeleteReplicaMessageDeleted} {syncId}.");
           }
           catch(ArcGISWebException ex) {
             Debug.WriteLine(ex.Message);
-            sb.Append($"{AppResources.DeleteReplicaMessageCantDelete} {syncId}.");
-          }
-          catch {
-            throw;
+            _ = sb.Append($"{AppResources.DeleteReplicaMessageCantDelete} {syncId}.");
           }
           finally {
             gdb.Close();
-            sb.Append($"{AppResources.DeleteReplicaMessageDone}.");
+            _ = sb.Append($"{AppResources.DeleteReplicaMessageDone}.");
           }
         }
       }
@@ -403,7 +398,9 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services {
     /// 
     /// </summary>
     /// <returns></returns>
-    public async Task DeleteReplicaAsync() => await DeleteReplicaFolderAsync();
+    public async Task DeleteReplicaAsync() {
+      await DeleteReplicaFolderAsync();
+    }
 
     /// <summary>
     /// 
@@ -413,25 +410,23 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services {
       var folderPath = GetReplicaFullPath();
       try {
         var folders = Directory.GetDirectories(folderPath);
-        foreach(var f in folders) {
-          if(f.Contains("p13")) {
-            var gdbs = Directory.GetFiles(f);
-            foreach(var file in gdbs) {
-              try {
-                if(file.Contains(".geodatabase")) {
-                  var gdb = await Geodatabase.OpenAsync(file);
-                  gdb.Close();
-                }
-              }
-              catch(Exception ex) {
-                Debug.WriteLine(ex.Message);
-              }
+        foreach(var file in from f in folders
+                            where f.Contains("p13")
+                            let gdbs = Directory.GetFiles(f)
+                            from file in gdbs
+                            select file) {
+          try {
+            if(file.Contains(".geodatabase")) {
+              var gdb = await Geodatabase.OpenAsync(file);
+              gdb.Close();
             }
           }
+          catch(Exception ex) {
+            Debug.WriteLine(ex.Message);
+          }
         }
-        if(MobileMapPackage != null) {
-          MobileMapPackage.Close();
-        }
+
+        MobileMapPackage?.Close();
         Directory.Delete(folderPath, true);
       }
       catch(Exception ex) {
@@ -466,7 +461,9 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services {
     /// 
     /// </summary>
     /// <returns></returns>
-    private string GetReplicaFullPath() => Path.Combine(FileSystem.AppDataDirectory, ReplicaFolderName);
+    private string GetReplicaFullPath() {
+      return Path.Combine(FileSystem.AppDataDirectory, ReplicaFolderName);
+    }
 
     /// <summary>
     /// 
@@ -476,17 +473,16 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services {
       var blockedFolders = new List<string>();
       var basePath = FileSystem.AppDataDirectory;
       var folders = Directory.GetDirectories(basePath);
-      foreach(var f in folders) {
-        if(f.Contains(AppFolderName)) {
-          try {
-            Directory.Delete(f, true);
-          }
-          catch(Exception ex) {
-            Debug.WriteLine(ex.Message);
-            blockedFolders.Add(f);
-          }
+      foreach(var f in folders.Where(f => f.Contains(AppFolderName))) {
+        try {
+          Directory.Delete(f, true);
+        }
+        catch(Exception ex) {
+          Debug.WriteLine(ex.Message);
+          blockedFolders.Add(f);
         }
       }
+
       if(blockedFolders.Count > 0) {
         var max = blockedFolders.Select(bf => {
           var sufix = bf.Replace(AppFolderName, string.Empty);
@@ -504,7 +500,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services {
     /// </summary>
     /// <param name="map"></param>
     /// <returns></returns>
-    private IEnumerable<Geodatabase> GetGeodatabases(Map map) {
+    private static IEnumerable<Geodatabase> GetGeodatabases(Map map) {
       var query = map.AllLayers
         .Where(l => (l is FeatureLayer) && (l as FeatureLayer).FeatureTable is GeodatabaseFeatureTable)
         .Select(l => ((l as FeatureLayer).FeatureTable as GeodatabaseFeatureTable).Geodatabase)
@@ -512,6 +508,4 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services {
       return query;
     }
   }
-
-
 }

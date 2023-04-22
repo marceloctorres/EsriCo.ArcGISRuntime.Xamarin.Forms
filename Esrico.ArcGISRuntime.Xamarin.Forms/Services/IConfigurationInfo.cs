@@ -1,8 +1,5 @@
 ﻿using System.Threading.Tasks;
 
-/// <summary>
-/// 
-/// </summary>
 namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services {
   /// <summary>
   /// 

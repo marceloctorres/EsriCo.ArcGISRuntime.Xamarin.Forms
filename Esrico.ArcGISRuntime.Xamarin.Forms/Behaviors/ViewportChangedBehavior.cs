@@ -10,6 +10,9 @@ using Prism.Behaviors;
 using Xamarin.Forms;
 
 namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors {
+  /// <summary>
+  /// 
+  /// </summary>
   public class ViewportChangedBehavior : BehaviorBase<MapView> {
 
     /// <summary>
@@ -38,6 +41,9 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors {
       typeof(ViewportChangedBehavior),
       defaultBindingMode: BindingMode.OneWayToSource);
 
+    /// <summary>
+    /// 
+    /// </summary>
     public double UnitsPerPixel {
       get => (double)GetValue(UnitsPerPixelProperty);
       set => SetValue(UnitsPerPixelProperty, value);
@@ -104,12 +110,10 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors {
       MapScale = AssociatedObject.MapScale;
       VisibleArea = AssociatedObject.VisibleArea;
 
-      if(Command != null) {
-        if(AssociatedObject != null) {
-          var currentViewpoint = AssociatedObject.GetCurrentViewpoint(ViewpointType.BoundingGeometry);
-          if(Command.CanExecute(currentViewpoint)) {
-            Command.Execute(currentViewpoint);
-          }
+      if(Command != null && AssociatedObject != null) {
+        var currentViewpoint = AssociatedObject.GetCurrentViewpoint(ViewpointType.BoundingGeometry);
+        if(Command.CanExecute(currentViewpoint)) {
+          Command.Execute(currentViewpoint);
         }
       }
     }

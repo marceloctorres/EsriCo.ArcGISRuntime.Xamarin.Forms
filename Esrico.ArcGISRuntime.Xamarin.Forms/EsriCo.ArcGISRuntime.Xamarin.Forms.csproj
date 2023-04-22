@@ -2,25 +2,46 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Version>1.7.5.0</Version>
+    <Version>1.7.7.0</Version>
     <Authors>Marcelo Torres</Authors>
     <Company>Esri Colombia</Company>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <Configurations>Debug;Release;Release.Android;Release.UWP;Debug.Android;Debug.UWP</Configurations>
     <PackageId>EsriCo.ArcGISRuntime.Xamarin.Forms</PackageId>
     <Product>Esri Colombia ArcGIS Runtime Tools for Xamarin.Forms</Product>
-    <AssemblyVersion>1.7.5.0</AssemblyVersion>
-    <FileVersion>1.7.5.0</FileVersion>
+    <AssemblyVersion>1.7.7.0</AssemblyVersion>
+    <FileVersion>1.7.7.0</FileVersion>
     <RepositoryUrl>https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms</RepositoryUrl>
     <PackageReleaseNotes>Extends Xamarin.Forms ArcGIS Runtime SDK for .NET</PackageReleaseNotes>
     <Description>Extends Xamarin.Forms ArcGIS Runtime SDK for .NET</Description>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageTags>xamarin xamarin.forms esri arcgis runtime sdk dotnet esrico mtorres marceloctorres.net mtorres_esrico</PackageTags>
     <PackageLicenseExpression></PackageLicenseExpression>
-    <Copyright>Esri Colombia 2020</Copyright>
+    <Copyright>Esri Colombia 2023</Copyright>
     <PackageProjectUrl>https://marceloctorres.github.io/EsriCo.ArcGISRuntime.Xamarin.Forms/</PackageProjectUrl>
     <RepositoryType>Git</RepositoryType>
     <NeutralLanguage></NeutralLanguage>
+    <ProduceReferenceAssembly>True</ProduceReferenceAssembly>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
+    <EnableNETAnalyzers>True</EnableNETAnalyzers>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release.Android|AnyCPU'">
+    <Optimize>True</Optimize>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release.UWP|AnyCPU'">
+    <Optimize>True</Optimize>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug.Android|AnyCPU'">
+    <Optimize>True</Optimize>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug.UWP|AnyCPU'">
+    <Optimize>True</Optimize>
   </PropertyGroup>
 
   <ItemGroup>
@@ -65,6 +86,7 @@
     <None Remove="Icons\ic_text.png" />
     <None Remove="Icons\ic_undo.png" />
     <None Remove="Icons\ic_user.png" />
+    <None Include="..\..\.editorconfig" Link=".editorconfig" />
     <None Include="..\LICENSE">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
@@ -100,10 +122,10 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Esri.ArcGISRuntime.Xamarin.Forms" Version="100.15.0" />
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.7.3" />
-    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2515" />
+    <PackageReference Include="Esri.ArcGISRuntime.Xamarin.Forms" Version="100.15.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.5" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2578" />
     <PackageReference Include="Prism.Forms" Version="8.1.97" />
   </ItemGroup>
 
@@ -113,6 +135,9 @@
       <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="ResourceDictionary.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\ColorPaletteView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="UI\DrawingStatusView.xaml">

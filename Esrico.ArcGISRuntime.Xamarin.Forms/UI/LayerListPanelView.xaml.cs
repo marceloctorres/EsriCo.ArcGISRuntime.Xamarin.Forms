@@ -14,6 +14,9 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
+  /// <summary>
+  /// 
+  /// </summary>
   [XamlCompilation(XamlCompilationOptions.Compile)]
   public partial class LayerListPanelView : ListPanelView {
     /// <summary>
@@ -43,12 +46,12 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
       var panelView = bindable as LayerListPanelView;
       if(newValue is MapView newMapView) {
         if(newMapView.Map != null) {
-          panelView.SetMap(newMapView.Map);
+          panelView.SetMap(newMapView.Map).Await();
         }
         else {
           newMapView.PropertyChanged += (s, e) => {
             if(e.PropertyName == nameof(newMapView.Map) && newMapView.Map != null) {
-              panelView.SetMap(newMapView.Map);
+              panelView.SetMap(newMapView.Map).Await();
             }
           };
         }
@@ -93,14 +96,13 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
           CollectionHandlerAdded = true;
         }
       }
-
     }
 
     /// <summary>
     /// 
     /// </summary>
     /// <param name="map"></param>
-    protected async void SetMap(Map map) {
+    protected async Task SetMap(Map map) {
       try {
         if(map != null) {
           Map = map;
@@ -174,6 +176,11 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
       }
     }
 
-    public LayerListPanelView() => InitializeComponent();
+    /// <summary>
+    /// 
+    /// </summary>
+    public LayerListPanelView() {
+      InitializeComponent();
+    }
   }
 }

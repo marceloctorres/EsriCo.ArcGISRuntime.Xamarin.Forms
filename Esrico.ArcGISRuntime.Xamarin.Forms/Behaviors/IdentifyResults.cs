@@ -1,6 +1,9 @@
 ﻿using System.Collections.Generic;
 
 namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors {
+  /// <summary>
+  /// 
+  /// </summary>
   public class IdentifyResults {
     /// <summary>
     /// 

@@ -7,9 +7,15 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
+  /// <summary>
+  /// 
+  /// </summary>
   [XamlCompilation(XamlCompilationOptions.Compile)]
   public partial class PanelView : ContentView {
 
+    /// <summary>
+    /// 
+    /// </summary>
     public event EventHandler Closed;
 
     /// <summary>
@@ -29,8 +35,8 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
     /// <param name="oldValue"></param>
     /// <param name="newValue"></param>
     private static void OnIsManagedPropertyChanged(BindableObject bindable, object oldValue, object newValue) {
-      var view = bindable as PanelView;
-      view.IsManaged = (bool)newValue;
+      var panelView = bindable as PanelView;
+      panelView.IsManaged = (bool)newValue;
     }
 
     /// <summary>
@@ -47,7 +53,24 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
     public static readonly BindableProperty CloseButtonImageProperty = BindableProperty.Create(
       nameof(CloseButtonImage),
       typeof(ImageSource),
-      typeof(PanelView));
+      typeof(PanelView),
+      propertyChanged: OnCloseButtonImageChanged);
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="bindable"></param>
+    /// <param name="oldValue"></param>
+    /// <param name="newValue"></param>
+    /// <exception cref="NotImplementedException"></exception>
+    private static void OnCloseButtonImageChanged(BindableObject bindable, object oldValue, object newValue) {
+      var panelView = bindable as PanelView;
+
+      if(newValue == null) {
+        panelView.CloseButtonImage = ImageSource.FromStream(() =>
+          typeof(PanelView).Assembly.GetStreamEmbeddedResource(@"ic_close"));
+      }
+    }
 
     /// <summary>
     /// 
@@ -85,11 +108,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
     private static void OnIsVisibleChanged(BindableObject bindable, object oldValue, object newValue) {
       var panelView = bindable as PanelView;
       var newVisible = (bool)newValue;
-      var oldVisible = (bool)oldValue;
       panelView.SetVisible(newVisible);
-
-      if(newVisible != oldVisible) {
-      }
     }
 
     /// <summary>
@@ -103,6 +122,23 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
       if(visible && IsManaged) {
         MessagingCenter.Send<PanelView>(this, "IsVisible");
       }
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    public static readonly BindableProperty BorderThicknessProperty = BindableProperty.Create(
+      nameof(BorderThickness),
+      typeof(Thickness),
+      typeof(PanelView),
+      defaultValue: new Thickness(1, 1, 1, 1));
+
+    /// <summary>
+    /// 
+    /// </summary>
+    public Thickness BorderThickness {
+      get => (Thickness)GetValue(BorderThicknessProperty);
+      set => SetValue(BorderThicknessProperty, value);
     }
 
     /// <summary>
@@ -250,8 +286,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
     public static readonly BindableProperty TitleBorderColorProperty = BindableProperty.Create(
       nameof(TitleBorderColor),
       typeof(Color),
-      typeof(PanelView),
-      defaultValue: null);
+      typeof(PanelView));
 
     /// <summary>
     /// 
@@ -261,15 +296,13 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
       set => SetValue(TitleBorderColorProperty, value);
     }
 
-
     /// <summary>
     /// 
     /// </summary>
     public static readonly BindableProperty TitleBackgroundColorProperty = BindableProperty.Create(
       nameof(TitleBackgroundColor),
       typeof(Color),
-      typeof(PanelView),
-      defaultValue: Color.White);
+      typeof(PanelView));
 
     /// <summary>
     /// 
@@ -285,8 +318,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
     public static readonly BindableProperty TitleTextColorProperty = BindableProperty.Create(
       nameof(TitleTextColor),
       typeof(Color),
-      typeof(PanelView),
-      defaultValue: Color.Black);
+      typeof(PanelView));
 
     /// <summary>
     /// 
@@ -315,6 +347,22 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
     /// <summary>
     /// 
     /// </summary>
+    public static readonly BindableProperty TitleHorizontalTextAlignmentProperty = BindableProperty.Create(
+      nameof(TitleHorizontalTextAlignment),
+      typeof(TextAlignment),
+      typeof(PanelView));
+
+    /// <summary>
+    /// 
+    /// </summary>
+    public TextAlignment TitleHorizontalTextAlignment {
+      get => (TextAlignment)GetValue(TitleHorizontalTextAlignmentProperty);
+      set => SetValue(TitleHorizontalTextAlignmentProperty, value);
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
     public static readonly BindableProperty IsTitleVisibleProperty = BindableProperty.Create(
       nameof(IsTitleVisible),
       typeof(bool),
@@ -335,8 +383,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
     public static readonly BindableProperty BodyBorderColorProperty = BindableProperty.Create(
       nameof(BodyBorderColor),
       typeof(Color),
-      typeof(PanelView),
-      defaultValue: null);
+      typeof(PanelView));
 
     /// <summary>
     /// 
@@ -352,8 +399,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
     public static readonly BindableProperty BodyBackgroundColorProperty = BindableProperty.Create(
       nameof(BodyBackgroundColor),
       typeof(Color),
-      typeof(PanelView),
-      defaultValue: Color.White);
+      typeof(PanelView));
 
     /// <summary>
     /// 
@@ -369,8 +415,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
     public static readonly BindableProperty StatusBackgroundColorProperty = BindableProperty.Create(
       nameof(StatusBackgroundColor),
       typeof(Color),
-      typeof(PanelView),
-      defaultValue: Color.White);
+      typeof(PanelView));
 
     /// <summary>
     /// 
@@ -386,8 +431,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
     public static readonly BindableProperty StatusBorderColorProperty = BindableProperty.Create(
       nameof(StatusBorderColor),
       typeof(Color),
-      typeof(PanelView),
-      defaultValue: null);
+      typeof(PanelView));
 
     /// <summary>
     /// 
@@ -403,8 +447,7 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
     public static readonly BindableProperty StatusTextColorProperty = BindableProperty.Create(
       nameof(StatusTextColor),
       typeof(Color),
-      typeof(PanelView),
-      defaultValue: Color.Black);
+      typeof(PanelView));
 
     /// <summary>
     /// 
@@ -452,12 +495,19 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
     /// </summary>
     public PanelView() {
       InitializeComponent();
-      CloseButtonImage = ImageSource.FromStream(() => GetType().Assembly.GetStreamEmbeddedResource(@"ic_close"));
+      CloseButtonImage = ImageSource.FromStream(() => typeof(PanelView).Assembly.GetStreamEmbeddedResource(@"ic_close"));
       MessagingCenter.Subscribe<PanelView>(this, "IsVisible", (panel) => {
         if(!ReferenceEquals(this, panel) && IsManaged && IsVisible && panel.IsVisible) {
           IsVisible = false;
         }
       });
+#if !DEBUG
+      Debug.WriteLine(ExternalPanelFrame.BackgroundColor);
+      Debug.WriteLine(ExternalPanelFrame.BorderColor);
+      Debug.WriteLine(PanelFrame.BackgroundColor);
+      Debug.WriteLine(PanelFrame.BorderColor);
+#endif
+
     }
 
     /// <summary>
@@ -473,7 +523,9 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
     /// <summary>
     /// 
     /// </summary>
-    protected virtual void OnPanelClosed() => Closed?.Invoke(this, new EventArgs());
+    protected virtual void OnPanelClosed() {
+      Closed?.Invoke(this, new EventArgs());
+    }
 
     private double x, y;
 
@@ -486,13 +538,9 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
       if(Parent is View parentView) {
         var bounds = Bounds;
         var parentBounds = parentView.Bounds;
-        var x0 = 0.0;
-        var y0 = 0.0;
 
         switch(e.StatusType) {
           case GestureStatus.Started:
-            x0 = bounds.Left;
-            y0 = bounds.Top;
             break;
           case GestureStatus.Running:
             TranslationX = x + e.TotalX + bounds.X >= 0 ?

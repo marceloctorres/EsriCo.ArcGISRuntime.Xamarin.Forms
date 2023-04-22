@@ -1,11 +1,16 @@
 ﻿using Xamarin.Forms.Xaml;
 
-/// <summary>
-/// 
-/// </summary>
 namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
+  /// <summary>
+  /// 
+  /// </summary>
   [XamlCompilation(XamlCompilationOptions.Compile)]
   public partial class TableOfContentsView : LayerListPanelView {
-    public TableOfContentsView() => InitializeComponent();
+    /// <summary>
+    /// 
+    /// </summary>
+    public TableOfContentsView() {
+      InitializeComponent();
+    }
   }
 }

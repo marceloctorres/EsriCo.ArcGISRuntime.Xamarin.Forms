@@ -43,9 +43,7 @@ items:
       <XamlFilePath("UI\IdentifyView.xaml")>
 
       Public Class IdentifyView
-
           Inherits ListPanelView
-
           Implements INotifyPropertyChanged, IDynamicResourceHandler, INameScope, INavigationProxy, IAnimatable, ITabStopElement, IViewController, IVisualElementController, IElementController, IGestureController, IGestureRecognizers, ILayout, ILayoutController, IPaddingElement
   inheritance:
   - System.Object
@@ -92,6 +90,8 @@ items:
   - EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.CloseButtonImage
   - EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.IsVisibleProperty
   - EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.IsVisible
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.BorderThicknessProperty
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.BorderThickness
   - EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.HeaderContentProperty
   - EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.HeaderContent
   - EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.IsHeaderVisibleProperty
@@ -110,6 +110,8 @@ items:
   - EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.TitleTextColor
   - EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.TitleTextProperty
   - EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.TitleText
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.TitleHorizontalTextAlignmentProperty
+  - EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.TitleHorizontalTextAlignment
   - EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.IsTitleVisibleProperty
   - EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.IsTitleVisible
   - EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.BodyBorderColorProperty
@@ -559,7 +561,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: OnCloseButtonClicked
     path: UI/IdentifyView.xaml.cs
-    startLine: 173
+    startLine: 172
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -860,6 +862,18 @@ references:
   name: IsVisible
   nameWithType: PanelView.IsVisible
   fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.IsVisible
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.BorderThicknessProperty
+  commentId: F:EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.BorderThicknessProperty
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView
+  name: BorderThicknessProperty
+  nameWithType: PanelView.BorderThicknessProperty
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.BorderThicknessProperty
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.BorderThickness
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.BorderThickness
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView
+  name: BorderThickness
+  nameWithType: PanelView.BorderThickness
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.BorderThickness
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.HeaderContentProperty
   commentId: F:EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.HeaderContentProperty
   parent: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView
@@ -968,6 +982,18 @@ references:
   name: TitleText
   nameWithType: PanelView.TitleText
   fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.TitleText
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.TitleHorizontalTextAlignmentProperty
+  commentId: F:EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.TitleHorizontalTextAlignmentProperty
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView
+  name: TitleHorizontalTextAlignmentProperty
+  nameWithType: PanelView.TitleHorizontalTextAlignmentProperty
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.TitleHorizontalTextAlignmentProperty
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.TitleHorizontalTextAlignment
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.TitleHorizontalTextAlignment
+  parent: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView
+  name: TitleHorizontalTextAlignment
+  nameWithType: PanelView.TitleHorizontalTextAlignment
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.TitleHorizontalTextAlignment
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.IsTitleVisibleProperty
   commentId: F:EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.IsTitleVisibleProperty
   parent: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView

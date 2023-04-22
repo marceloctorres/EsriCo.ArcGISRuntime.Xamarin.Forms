@@ -63,9 +63,7 @@ items:
     content: 'public class PortalConnection : BindableBase, INotifyPropertyChanged, IPortalConnection'
     content.vb: >-
       Public Class PortalConnection
-
           Inherits BindableBase
-
           Implements INotifyPropertyChanged, IPortalConnection
   inheritance:
   - System.Object
@@ -1081,7 +1079,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: SignInAsync
     path: Services/PortalConnection.cs
-    startLine: 267
+    startLine: 259
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -1118,7 +1116,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: SignOut
     path: Services/PortalConnection.cs
-    startLine: 309
+    startLine: 301
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -1152,7 +1150,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: GetMapAsync
     path: Services/PortalConnection.cs
-    startLine: 327
+    startLine: 319
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -1190,7 +1188,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: GetMapAsync
     path: Services/PortalConnection.cs
-    startLine: 337
+    startLine: 329
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -1232,7 +1230,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: IsCredentialNull
     path: Services/PortalConnection.cs
-    startLine: 346
+    startLine: 338
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -1269,7 +1267,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: GetLicenseInfoJsonAsync
     path: Services/PortalConnection.cs
-    startLine: 352
+    startLine: 344
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -1307,7 +1305,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: GetGroup
     path: Services/PortalConnection.cs
-    startLine: 409
+    startLine: 396
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -1348,7 +1346,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: GetWebMapItemsByGroupAsync
     path: Services/PortalConnection.cs
-    startLine: 422
+    startLine: 409
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -1390,7 +1388,7 @@ items:
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: GetWebMapItemByGroupAndTitleAsync
     path: Services/PortalConnection.cs
-    startLine: 437
+    startLine: 424
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services

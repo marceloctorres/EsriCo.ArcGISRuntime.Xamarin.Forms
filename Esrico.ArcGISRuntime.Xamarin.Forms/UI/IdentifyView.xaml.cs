@@ -12,6 +12,9 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
+  /// <summary>
+  /// 
+  /// </summary>
   [XamlCompilation(XamlCompilationOptions.Compile)]
   public partial class IdentifyView : ListPanelView {
     /// <summary>
@@ -68,7 +71,9 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
     /// <summary>
     /// 
     /// </summary>
-    public IdentifyView() => InitializeComponent();
+    public IdentifyView() {
+      InitializeComponent();
+    }
 
     /// <summary>
     /// 
@@ -124,7 +129,6 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.UI {
       catch(Exception ex) {
         Console.WriteLine(ex.Message);
       }
-
     }
 
     /// <summary>
