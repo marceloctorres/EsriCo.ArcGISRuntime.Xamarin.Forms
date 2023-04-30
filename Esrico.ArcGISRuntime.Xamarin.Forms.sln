@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NugetPackage", "NugetPackage", "{F7670559-8868-458F-9A7F-1E294732E2B9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{64163628-71D4-4C85-8528-4154456AD0F1}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EsriCo.ArcGISRuntime.Xamarin.Forms", "Esrico.ArcGISRuntime.Xamarin.Forms\EsriCo.ArcGISRuntime.Xamarin.Forms.csproj", "{5BDF30ED-BEE9-4028-8A3E-47FFEFA5EEC4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug.Android|Any CPU = Debug.Android|Any CPU
+		Debug.UWP|Any CPU = Debug.UWP|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Release.Android|Any CPU = Release.Android|Any CPU
+		Release.UWP|Any CPU = Release.UWP|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5BDF30ED-BEE9-4028-8A3E-47FFEFA5EEC4}.Debug.Android|Any CPU.ActiveCfg = Debug.Android|Any CPU
+		{5BDF30ED-BEE9-4028-8A3E-47FFEFA5EEC4}.Debug.Android|Any CPU.Build.0 = Debug.Android|Any CPU
+		{5BDF30ED-BEE9-4028-8A3E-47FFEFA5EEC4}.Debug.UWP|Any CPU.ActiveCfg = Debug.UWP|Any CPU
+		{5BDF30ED-BEE9-4028-8A3E-47FFEFA5EEC4}.Debug.UWP|Any CPU.Build.0 = Debug.UWP|Any CPU
+		{5BDF30ED-BEE9-4028-8A3E-47FFEFA5EEC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BDF30ED-BEE9-4028-8A3E-47FFEFA5EEC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BDF30ED-BEE9-4028-8A3E-47FFEFA5EEC4}.Release.Android|Any CPU.ActiveCfg = Release.Android|Any CPU
+		{5BDF30ED-BEE9-4028-8A3E-47FFEFA5EEC4}.Release.Android|Any CPU.Build.0 = Release.Android|Any CPU
+		{5BDF30ED-BEE9-4028-8A3E-47FFEFA5EEC4}.Release.UWP|Any CPU.ActiveCfg = Release.UWP|Any CPU
+		{5BDF30ED-BEE9-4028-8A3E-47FFEFA5EEC4}.Release.UWP|Any CPU.Build.0 = Release.UWP|Any CPU
+		{5BDF30ED-BEE9-4028-8A3E-47FFEFA5EEC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BDF30ED-BEE9-4028-8A3E-47FFEFA5EEC4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5B3CAFAE-EE71-424D-8094-1B595DBA951F}
+	EndGlobalSection
+EndGlobal

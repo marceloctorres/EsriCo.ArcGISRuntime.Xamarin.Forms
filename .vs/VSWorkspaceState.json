@@ -1,8 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Esrico.ArcGISRuntime.Xamarin.Forms"
+    "\\Esrico.ArcGISRuntime.Xamarin.Forms",
+    "\\_docs\\template-override",
+    "\\_docs\\template-override\\partials",
+    "\\_docs\\template-override\\styles"
   ],
-  "SelectedNode": "\\Esrico.ArcGISRuntime.Xamarin.Forms",
+  "SelectedNode": "\\Esrico.ArcGISRuntime.Xamarin.Forms\\.gitignore",
   "PreviewInSolutionExplorer": false
 }
