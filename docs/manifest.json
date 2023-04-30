@@ -9,7 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.AppResources.html",
-          "hash": "DMf/CrJ7oSFRrGeY5T26QngRu8ea+0DGh4cHaCwAoJY="
+          "hash": "x+8dNM+6qZVlX6mUj3NKX6QVTnUjSji4ptOLfhEZm/g="
         }
       },
       "is_incremental": false,
@@ -21,10 +21,10 @@
       "output": {
         ".html": {
           "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.CalloutInfo.html",
-          "hash": "prli016lX+wRVr1Z0IWBffbtjYTbU+sC2BvLqwBS8gU="
+          "hash": "O8/0eCTq8UEJTem6SMi24Vk9C6yG6ae2gMzWOtwiJug="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -33,10 +33,10 @@
       "output": {
         ".html": {
           "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.DrawingStatusChangedBehavior.html",
-          "hash": "ywvaiWnJl6aG1xqcpwTvPcHLdUCJDpPv9Rx2yOw0Pto="
+          "hash": "YHjAGSq4i5Z+21qECWHCmp3Bz8PY2Ix6uUHOUIf588g="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -45,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.IdentifyBehavior.html",
-          "hash": "j0LK3ZKwbbOrkU+HE6S+2+051ELPPRueIzAutqnWp4c="
+          "hash": "/WniX2WkG6x+YREftBKWVd2tKFw6Pz95BVlL4Pndd9c="
         }
       },
       "is_incremental": false,
@@ -57,10 +57,10 @@
       "output": {
         ".html": {
           "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.IdentifyGeoElementResult.html",
-          "hash": "Iyk/7ZfDQe8lIGdgm0N5Q/rMd0uwaVS1VnwH5PEjuhE="
+          "hash": "P/FexdQ+IkwtwW9rIPIOEtgf99oRzZky1H5h2TjakY8="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -69,10 +69,10 @@
       "output": {
         ".html": {
           "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.IdentifyGraphicResult.html",
-          "hash": "aZtt6JNpiiqtJyomd5sN/C81K7oMBhSSzP+gmEMxoX4="
+          "hash": "UOyjnr0uViAJwjENaWuu6pYAYladBvDPHXx3AoBCG1c="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -81,10 +81,10 @@
       "output": {
         ".html": {
           "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.IdentifyResults.html",
-          "hash": "V0ytf/IHIvRAypzGbJBOuQ+Tv+kFtox0YqrGNZZeeMo="
+          "hash": "BPlqZOMGSnUKbiT7ep0iga/WVZfECChu6IxbV1rHwHA="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -93,10 +93,10 @@
       "output": {
         ".html": {
           "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.SetViewpointBehavior.html",
-          "hash": "zjmDvvzGRWxT3ZsqS612R022Dq5Q5AI1Y+DqrCjTCLc="
+          "hash": "BWIDAxBUfmV2GNf2iYDFMqfW9HLRnJctZfyi6SNgYG0="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -105,10 +105,10 @@
       "output": {
         ".html": {
           "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ShowCalloutForGeoElementBehavior.html",
-          "hash": "kNes9wh3Zk6nlWFVfo4t9fs4P/eK34Q8HkrKkp3JN6I="
+          "hash": "d7NSo195b9z7wFDD0eX7VdMbN+T/uwuntxCotVxXs+s="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -117,10 +117,10 @@
       "output": {
         ".html": {
           "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.ViewportChangedBehavior.html",
-          "hash": "n3zUDOYHGkjgogv1dkN7osjg0EBNIo0Igfj9bY6304g="
+          "hash": "M6Z+IlRrh7RAYm0WvjlFjAhdrIDISpnAKlTATnKf+Nc="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -141,10 +141,10 @@
       "output": {
         ".html": {
           "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Converters.GeographicCoordinateConverter.html",
-          "hash": "hz/08XBYGxzpkPN/bgHwUhRph/DAotn1i6JljRyxmnE="
+          "hash": "WYYfJiUXnuZOFMdFyg18MLLfJBfCt8BWfbWqrELngYQ="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -153,10 +153,10 @@
       "output": {
         ".html": {
           "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Converters.SymbolToImageConverter.html",
-          "hash": "gyFB2C+0ShhsZAiDZ8kiU9gnFP4mmsj2EgRt6EUXOxI="
+          "hash": "eRMYQux/Q3HFfv4JDvt8f4gc+WPU8S3p5gyIybkxWMc="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -168,7 +168,7 @@
           "hash": "Z7BZh49TrEjQtGRFO1MLEtb3Ku6o0BocPlb5VxHllrQ="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -177,10 +177,10 @@
       "output": {
         ".html": {
           "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Extensions.Extensions.html",
-          "hash": "eSKxzxO2XOgi46qC83JRMIq/qK3y/yd3BHIhBX8eWEY="
+          "hash": "HNQ0+6ywdJqHDe/3IW6Vyqwg/lsEwb8KxAqYSWOkpnw="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -192,7 +192,7 @@
           "hash": "hw1TMQzfzeqIv7dGWzHnh9pR6fn9udka31074hrBc+U="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -201,10 +201,10 @@
       "output": {
         ".html": {
           "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.FormsModule.html",
-          "hash": "IET3dCLSMkpCEmTgJ57d4i6fCQBTlsLoAaYDM0IASic="
+          "hash": "6Vmo1nD5lkezmwdrLeGdlXrmc8lCuVcocFZ5rKGQONo="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -213,10 +213,10 @@
       "output": {
         ".html": {
           "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.LocalizeExtension.html",
-          "hash": "tKvnKrraRrZtmJj0P1wDho4lBz0jegoZMUiaNWNadL0="
+          "hash": "Rq2kRn1a/rl0p4mTWqFjxgR0OCpf6js+15wXsAMaewg="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -225,10 +225,10 @@
       "output": {
         ".html": {
           "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Model.LayerInfo.html",
-          "hash": "Bml3N/5oJHMFE3nQG1UadBZKTZ3eUR1BKjjHd8n0bzY="
+          "hash": "YH9BONOc0lMg41mPzOnXP4BuKsDJV8ttONyGftUhV/c="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -237,10 +237,10 @@
       "output": {
         ".html": {
           "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Model.LayerInfos.html",
-          "hash": "gEz8oqaOikKLHeof6KFhbYttu6JWdRq/6wEgUoJWuIw="
+          "hash": "IjWX43ottu7X/ZZJLZrxrTms8OOGb3dhW1tKtmzJdok="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -249,10 +249,10 @@
       "output": {
         ".html": {
           "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Model.LegendImageInfo.html",
-          "hash": "8bIhVyAMvj2WVYFl0PN7GxroD++HnMTnLLLndZN5shE="
+          "hash": "BluA/xWIOosIv+QlKPbl6u/BIcwV3GVrZBaBpH71cSI="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -264,7 +264,7 @@
           "hash": "Pd2nEJYJBzgn2AMvHmLBKqEsy4sBaeMYpW2GqY4KdOw="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -273,10 +273,10 @@
       "output": {
         ".html": {
           "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.ResourceDictionary.html",
-          "hash": "NTp7B6brxMZ90dUnADzUAN5JyewkW54uAx4h0e85mqk="
+          "hash": "UzNyEabvmAi+EPfErq516gcA9RQlpQpiqrGvd1Rdwf0="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -285,10 +285,10 @@
       "output": {
         ".html": {
           "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ConfigurationInfo.html",
-          "hash": "+3Ta3Eu0RGpre7RAGM6oAQQpY6P89U4ITBfaW7+upqs="
+          "hash": "dZEm4Bd52gAlYyCM5ijjgBe12HI5cVBg/08MeTznDOY="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -297,10 +297,10 @@
       "output": {
         ".html": {
           "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.DownloadReplicaErrorResult.html",
-          "hash": "tp0DW+H6dK1tIipdMEgX6IcKDOz5mQGMXPBOb4utHrM="
+          "hash": "gL1CjFyjKPBlZbdtMJtdwCitmTr9bmUIF7uG6bbWxxs="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -309,10 +309,10 @@
       "output": {
         ".html": {
           "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.DownloadReplicaResult.html",
-          "hash": "WqrQ4Rc8yDe49p9XHXgL6/r6kE8HtwSTC4L22hcWqRc="
+          "hash": "Jw7yfAHZ2+HveXwKrT8/J2pfz9FwhY8jBB6VPlMKotI="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -321,10 +321,10 @@
       "output": {
         ".html": {
           "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IConfigurationInfo.html",
-          "hash": "RVPqycsx/1cix+fjOl9WVqJK58rnF0ke1l89MkL2jyM="
+          "hash": "HNSpWMEq9MOspJSPA+oD4qRzbaQN0TTTkHKGVMAOC4s="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -333,10 +333,10 @@
       "output": {
         ".html": {
           "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IPortalConnection.html",
-          "hash": "CL+t1wCx0ubtKgErEArSfEKZ390lFJqGNnCCJhV8/hQ="
+          "hash": "c9WoKieTA7wacl/edU4LkWM6lh8Fh+r0zxGL83MXoxM="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -345,10 +345,10 @@
       "output": {
         ".html": {
           "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.html",
-          "hash": "kr+zb7Lsz9ZhojJWobHl8v3AyQjf61U2ARDEVY72o8w="
+          "hash": "ziadRIAVzB/ZiasKxpIX1lUx1gjwJdpyLkH1LQr33MY="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -357,10 +357,10 @@
       "output": {
         ".html": {
           "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.JobChangedEventArgs.html",
-          "hash": "xjv2ADx0aD/nDrDcbkpPq69dSO8A38Hqe2sLTRSn+H8="
+          "hash": "+ji3mw+wr4oq0V/IUh3RPG9hIl4UbzmJsGR01EL/9DA="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -369,10 +369,10 @@
       "output": {
         ".html": {
           "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.PortalConnection.html",
-          "hash": "n5Y/f8IxTu/vDTcOR3M+JAIh+o2FSs4wsrRlYyWizgU="
+          "hash": "ojo1Zf6MOSzOUC2K/80lhweYLV03Q3sfMnzUVP7Xi88="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -381,10 +381,10 @@
       "output": {
         ".html": {
           "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ProgressChangedEventArgs.html",
-          "hash": "kjF5X81TfT66NSIWLAf6J5AtqBCMsmFHliEh4CKLti0="
+          "hash": "cdOZ1QJg8Z6XLla3vxcPb6fO1UyAIrd1QNIwSzRFXR8="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -393,10 +393,10 @@
       "output": {
         ".html": {
           "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ReplicaManager.html",
-          "hash": "GyXS6ZedSFbOvPMmiWNXYUB9D9JJL9i+NMxi2QsNn+k="
+          "hash": "N9YXe3XE+9P9RrVWH1Z8Tkw5se7Vd4Ck6CN0E9zCCNU="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -405,10 +405,10 @@
       "output": {
         ".html": {
           "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.SyncReplicaErrorResult.html",
-          "hash": "e8BX+bIEmgSx17VEhI5BweLi408unAJ0rVricra/+vY="
+          "hash": "WcPsEF+QK3DTQ8DL5ptG883to5Cu5xkJRFZw3rpV6a4="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -417,10 +417,10 @@
       "output": {
         ".html": {
           "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.SynchronizeReplicaResult.html",
-          "hash": "b6KEtkN4jqDSsNUykhW7W+MISXlTD+BXO9tCeh1BwTI="
+          "hash": "+oOrVrHeMtzufCO+mie/diefx9DJ8Z9IucBxfrt9MBE="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -429,10 +429,10 @@
       "output": {
         ".html": {
           "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ValidateReplicaResult.html",
-          "hash": "Z47zB52uqyo4ACWA0OVt5srWkkvsYa0/Y1WqDceSqxA="
+          "hash": "EBrjlvQMFBJAgNUGLJnIcsoH0DBQbP/lvX2DOijsk1c="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -444,7 +444,7 @@
           "hash": "FrSCd9sj5t1uQjAGEHxXT4kxtVVzTA7W+/2ZaBqFM8U="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -453,10 +453,10 @@
       "output": {
         ".html": {
           "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.ColorInfo.html",
-          "hash": "/v6Ihwx2CE08GEOBrARwhXMOcAdatTxuFzzcWGUzCxw="
+          "hash": "bep2GE7CSvvz3IG8lO4Il8zx1Yj9vka4Xi7fiYh7PQY="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -465,10 +465,10 @@
       "output": {
         ".html": {
           "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.ColorPaletteView.html",
-          "hash": "snLYdvAk1iJW7A2c3y/SaCV8G1APz3JGJHoeh0myhBg="
+          "hash": "evx6Mv8PqsZGS42YzXUfhrrfeLFvMbL2HrGMcdjkXBk="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -477,10 +477,10 @@
       "output": {
         ".html": {
           "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawTextToolDialog.html",
-          "hash": "yjt0wtYHOcQ4P/Sgu5JpuJDBHZDOG38BIC3qZDHq0hg="
+          "hash": "5BHyWunLwm3x9DZU2XmQGWyi2zZg+viqkqLGJ77ies8="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -489,10 +489,10 @@
       "output": {
         ".html": {
           "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawToolBarView.html",
-          "hash": "1NRYLXbOMfvPtSSdbnhEfx8P/8cwJRi6aMGoml4/xAU="
+          "hash": "6bdOGSbVNr0bOcJ/1eI1uFj758g35kLwAefnFH9t6O4="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -501,10 +501,10 @@
       "output": {
         ".html": {
           "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.DrawingStatusView.html",
-          "hash": "njU0fSXofHODu4ihcrhID100JJ3b8RW8MYQR5RhQW1A="
+          "hash": "1sUxiqM93fPmyYqtVGlRbg2fouu/Rv1GWvmfkdn1XQ8="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -513,10 +513,10 @@
       "output": {
         ".html": {
           "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.IdentifyView.html",
-          "hash": "3Ejr4j7l/+r2bc/Sw+9rPWKmt7vXbxkCYbP9GcxcHII="
+          "hash": "ZtX1k5/CHmzYAN/hPEGaweOg/aDjUH5i+vekKu1RgGs="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -525,10 +525,10 @@
       "output": {
         ".html": {
           "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.LayerListPanelView.html",
-          "hash": "6dH5h8II4/J9z9J1zhflgNCIuAiNrPvRCrohsv6L3Ns="
+          "hash": "NG/p3DI2QdKJld87HTUpeGnxWq5hq20Gz3MT2dFq4T0="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -537,10 +537,10 @@
       "output": {
         ".html": {
           "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.LegendView.html",
-          "hash": "l+0W+oJ0tj3sGT2gcjyAlHEF8CyFucCMFwwuJbfwZ4I="
+          "hash": "lJcs24HhHNHLneebx05URbSAvbqlGDQ6f77t9+KqLZM="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -549,10 +549,10 @@
       "output": {
         ".html": {
           "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.ListPanelView.html",
-          "hash": "iGOgzf6RtGky+RxFG/R8lfuyFKN0KO/8lOPSt03kotc="
+          "hash": "AjSlHACuWJZA8i+Z/vtS0lpPF5X8INtvjvdvWbN0dq0="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -561,10 +561,10 @@
       "output": {
         ".html": {
           "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.LogInView.html",
-          "hash": "bl83U8gwQWZ8+pQJUbK1T6cqJ5U6Yn+bCbXYjVpNI/8="
+          "hash": "13NLEbfyjrH28D9aW/g/sEOo0YR8nBLoLgFFn/PAh8Q="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -573,10 +573,10 @@
       "output": {
         ".html": {
           "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.MeasurementBarView.UnitItem.html",
-          "hash": "4kcIgBpNwfM+g9rBARs/H9aFfKXjNsW1HMVtq+ctFiU="
+          "hash": "BrVbZ00dZ4a4MxP74zhq1CZnTEmoS4E+Qex4BvS7Jy0="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -585,10 +585,10 @@
       "output": {
         ".html": {
           "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.MeasurementBarView.html",
-          "hash": "weog0/q2+5QXPW1Pr14tKky+7O6+zl0lDsZa63nRWgA="
+          "hash": "4x9pSPoN12+fxW7qc8QZG3VnJP+a5ikezqbQmnqdr0Y="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -597,10 +597,10 @@
       "output": {
         ".html": {
           "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.ModalPanelView.html",
-          "hash": "Ra38vpSlrgydQ1Fl1b43vuHaYEbtMTkCtK3KZxouB58="
+          "hash": "4N59mvxWwRZNk87t4W4QwLNDxdZtKq1YSjFy5kI/Wh8="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -609,10 +609,10 @@
       "output": {
         ".html": {
           "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.NavigationBarView.html",
-          "hash": "6RVbfxB51IT9BhKAYhd104Ay9S/n/tBtsAlTYvY48iE="
+          "hash": "sdy3z+2z/hMhFhpIMBPdto72NCmvyUjUUt9F0j+8ucU="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -621,10 +621,10 @@
       "output": {
         ".html": {
           "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PanelView.html",
-          "hash": "nHwwNnqOlQXYl16Ca3pKA+prx1cyT9p+op0xmTf3Tpc="
+          "hash": "DhHBE4tSoLi1No/15kJR2O9MtVxVFt/5FQSU1gVEz0w="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -633,10 +633,10 @@
       "output": {
         ".html": {
           "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PortalConnectionsView.html",
-          "hash": "nWHrXC7FFYIYDn/z0+6Sw6xFglvzyavJHkZPHEVUI2c="
+          "hash": "ow3go5/OSKGkO669Kn8nqU3vvZBBWxxx9kNjLUOAtU8="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -645,10 +645,10 @@
       "output": {
         ".html": {
           "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.PortalWebMapsView.html",
-          "hash": "zjkTekJhy+ptMKCkhrNqdn2frg3Xxqp1QZ89ImPUJhU="
+          "hash": "AtDop3YFd9bBFIz1ckDMhzlEIZW4aMabajTIzFBwXRA="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -657,10 +657,10 @@
       "output": {
         ".html": {
           "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.ProcessingView.html",
-          "hash": "/R4NPHn0Xvs7mlTsQ3dafWIMhSF/G2gsHVjtGaZGbjw="
+          "hash": "MBQt3sBQOzlyC1nHeEePa/YNBYSoYGfr3Bfp+u32Uqs="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -669,10 +669,10 @@
       "output": {
         ".html": {
           "relative_path": "api/EsriCo.ArcGISRuntime.Xamarin.Forms.UI.TableOfContentsView.html",
-          "hash": "HgdISVjZWYAoWnhOfXWbGVQw7IGzMV/1hWEpvuZWb4Q="
+          "hash": "7g+AzKt+bycR1JfqoiRuepK6ybc37mnee6pShKSEypQ="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -684,7 +684,7 @@
           "hash": "aDoA8yF0BZXokHpAut/nizqM+jN/6zDyBk6f90DLey8="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -710,22 +710,66 @@
       },
       "is_incremental": false,
       "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "../_docs/articles/myarticle.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/myarticle.html",
+          "hash": "pZ2dr5dfsM8QNeIbKXvGX0AcHfK16jOPXNf2l4UMDoI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "../_docs/features.md",
+      "output": {
+        ".html": {
+          "relative_path": "features.html",
+          "hash": "pDwEuGn2QNBz/FkjsYAzv8/bp6D4yJRDiLtAD4cmOUg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "../_docs/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "DO/p5Uo5WsaN/c9K4Ajro35ToCIl5iN9SYN+J8Gvy34="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
     }
   ],
   "incremental_info": [
     {
       "status": {
-        "can_incremental": true,
+        "can_incremental": false,
+        "details": "Disable incremental build by force rebuild option.",
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0
+        "skipped_file_count": 0,
+        "full_build_reason_code": "ForceRebuild"
       },
       "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 0
+        },
         "ManagedReferenceDocumentProcessor": {
-          "can_incremental": true,
+          "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 58,
-          "skipped_file_count": 56
+          "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
           "can_incremental": false,
@@ -738,8 +782,8 @@
     },
     {
       "status": {
-        "can_incremental": true,
-        "details": "Can support incremental post processing.",
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: it's disabled.",
         "incrementalPhase": "postProcessing",
         "total_file_count": 0,
         "skipped_file_count": 0

@@ -20,7 +20,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/obj/Release/netstandard2.0/UI/LayerListPanelView.xaml.g.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: LayerListPanelView
     path: obj/Release/netstandard2.0/UI/LayerListPanelView.xaml.g.cs
@@ -28,6 +28,8 @@ items:
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
+  summary: "\n\n"
+  example: []
   syntax:
     content: >-
       [XamlCompilation(XamlCompilationOptions.Compile)]
@@ -342,11 +344,11 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/LayerListPanelView.xaml.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: MapViewProperty
     path: UI/LayerListPanelView.xaml.cs
-    startLine: 21
+    startLine: 24
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -379,11 +381,11 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/LayerListPanelView.xaml.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: MapView
     path: UI/LayerListPanelView.xaml.cs
-    startLine: 30
+    startLine: 33
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -416,11 +418,11 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/LayerListPanelView.xaml.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: LayerInfosList
     path: UI/LayerListPanelView.xaml.cs
-    startLine: 70
+    startLine: 73
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -453,23 +455,25 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/LayerListPanelView.xaml.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: SetMap
     path: UI/LayerListPanelView.xaml.cs
-    startLine: 101
+    startLine: 104
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
   summary: "\n\n"
   example: []
   syntax:
-    content: protected async void SetMap(Map map)
+    content: protected async Task SetMap(Map map)
     parameters:
     - id: map
       type: Esri.ArcGISRuntime.Mapping.Map
       description: ''
-    content.vb: Protected Sub SetMap(map As Map)
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Protected Function SetMap(map As Map) As Task
   overload: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.LayerListPanelView.SetMap*
   modifiers.csharp:
   - protected
@@ -490,14 +494,16 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/LayerListPanelView.xaml.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: .ctor
     path: UI/LayerListPanelView.xaml.cs
-    startLine: 175
+    startLine: 181
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
+  summary: "\n\n"
+  example: []
   syntax:
     content: public LayerListPanelView()
     content.vb: Public Sub New
@@ -4821,12 +4827,25 @@ references:
   name: Map
   nameWithType: Map
   fullName: Esri.ArcGISRuntime.Mapping.Map
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
 - uid: Esri.ArcGISRuntime.Mapping
   commentId: N:Esri.ArcGISRuntime.Mapping
   isExternal: true
   name: Esri.ArcGISRuntime.Mapping
   nameWithType: Esri.ArcGISRuntime.Mapping
   fullName: Esri.ArcGISRuntime.Mapping
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.LayerListPanelView.#ctor*
   commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.UI.LayerListPanelView.#ctor
   name: LayerListPanelView

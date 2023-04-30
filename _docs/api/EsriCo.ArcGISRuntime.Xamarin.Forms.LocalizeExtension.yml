@@ -17,11 +17,11 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/LocalizeExtension.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: LocalizeExtension
     path: LocalizeExtension.cs
-    startLine: 13
+    startLine: 12
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms
@@ -75,14 +75,16 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/LocalizeExtension.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: Text
     path: LocalizeExtension.cs
-    startLine: 15
+    startLine: 17
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms
+  summary: "\n\n"
+  example: []
   syntax:
     content: public string Text { get; set; }
     parameters: []
@@ -110,21 +112,25 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/LocalizeExtension.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: ProvideValue
     path: LocalizeExtension.cs
-    startLine: 17
+    startLine: 24
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms
+  summary: "\n\n"
+  example: []
   syntax:
     content: public object ProvideValue(IServiceProvider serviceProvider)
     parameters:
     - id: serviceProvider
       type: System.IServiceProvider
+      description: ''
     return:
       type: System.Object
+      description: ''
     content.vb: Public Function ProvideValue(serviceProvider As IServiceProvider) As Object
   overload: EsriCo.ArcGISRuntime.Xamarin.Forms.LocalizeExtension.ProvideValue*
   implements:
