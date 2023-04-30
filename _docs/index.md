@@ -32,6 +32,7 @@ Anyone can use these tools in any project by installing latest release of the Nu
 - **ReplicaManger**
 
 ## Resources
+- [API](api/EsriCo.ArcGISRuntime.Xamarin.Forms.html)
 - [List of Features](features.md)
 - [System Requirements](https://esri.github.io/arcgis-toolkit-dotnet/requirements.html)
 - [ArcGIS Runtime SDK for .NET](https://developers.arcgis.com/net/latest/)
