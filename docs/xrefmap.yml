@@ -3216,7 +3216,14 @@ references:
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.SynchronizeReplicaResult.ResultErrors
   name: ResultErrors
   href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.SynchronizeReplicaResult.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_SynchronizeReplicaResult_ResultErrors
-  commentId: F:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.SynchronizeReplicaResult.ResultErrors
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.SynchronizeReplicaResult.ResultErrors
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.SynchronizeReplicaResult.ResultErrors
+  nameWithType: SynchronizeReplicaResult.ResultErrors
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.SynchronizeReplicaResult.ResultErrors*
+  name: ResultErrors
+  href: api/EsriCo.ArcGISRuntime.Xamarin.Forms.Services.SynchronizeReplicaResult.html#EsriCo_ArcGISRuntime_Xamarin_Forms_Services_SynchronizeReplicaResult_ResultErrors_
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.SynchronizeReplicaResult.ResultErrors
+  isSpec: "True"
   fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.SynchronizeReplicaResult.ResultErrors
   nameWithType: SynchronizeReplicaResult.ResultErrors
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.SynchronizeReplicaResult.Synchronized

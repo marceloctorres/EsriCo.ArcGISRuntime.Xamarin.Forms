@@ -18,11 +18,11 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/ReplicaManager.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: SynchronizeReplicaResult
     path: Services/ReplicaManager.cs
-    startLine: 112
+    startLine: 114
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -61,11 +61,11 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/ReplicaManager.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: Synchronized
     path: Services/ReplicaManager.cs
-    startLine: 116
+    startLine: 118
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -85,7 +85,7 @@ items:
   modifiers.vb:
   - Public
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.SynchronizeReplicaResult.ResultErrors
-  commentId: F:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.SynchronizeReplicaResult.ResultErrors
+  commentId: P:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.SynchronizeReplicaResult.ResultErrors
   id: ResultErrors
   parent: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.SynchronizeReplicaResult
   langs:
@@ -94,27 +94,31 @@ items:
   name: ResultErrors
   nameWithType: SynchronizeReplicaResult.ResultErrors
   fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.SynchronizeReplicaResult.ResultErrors
-  type: Field
+  type: Property
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/ReplicaManager.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: ResultErrors
     path: Services/ReplicaManager.cs
-    startLine: 121
+    startLine: 123
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
   summary: "\n\n"
   example: []
   syntax:
-    content: public List<SyncReplicaErrorResult> ResultErrors
+    content: public List<SyncReplicaErrorResult> ResultErrors { get; set; }
+    parameters: []
     return:
       type: System.Collections.Generic.List{EsriCo.ArcGISRuntime.Xamarin.Forms.Services.SyncReplicaErrorResult}
-    content.vb: Public ResultErrors As List(Of SyncReplicaErrorResult)
+    content.vb: Public Property ResultErrors As List(Of SyncReplicaErrorResult)
+  overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.SynchronizeReplicaResult.ResultErrors*
   modifiers.csharp:
   - public
+  - get
+  - set
   modifiers.vb:
   - Public
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.SynchronizeReplicaResult.#ctor
@@ -131,11 +135,11 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/ReplicaManager.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: .ctor
     path: Services/ReplicaManager.cs
-    startLine: 126
+    startLine: 128
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
@@ -459,6 +463,11 @@ references:
   name: Boolean
   nameWithType: Boolean
   fullName: System.Boolean
+- uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.SynchronizeReplicaResult.ResultErrors*
+  commentId: Overload:EsriCo.ArcGISRuntime.Xamarin.Forms.Services.SynchronizeReplicaResult.ResultErrors
+  name: ResultErrors
+  nameWithType: SynchronizeReplicaResult.ResultErrors
+  fullName: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.SynchronizeReplicaResult.ResultErrors
 - uid: System.Collections.Generic.List{EsriCo.ArcGISRuntime.Xamarin.Forms.Services.SyncReplicaErrorResult}
   commentId: T:System.Collections.Generic.List{EsriCo.ArcGISRuntime.Xamarin.Forms.Services.SyncReplicaErrorResult}
   parent: System.Collections.Generic

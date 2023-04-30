@@ -28,14 +28,16 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IReplicaManager.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: IReplicaManager
     path: Services/IReplicaManager.cs
-    startLine: 6
+    startLine: 9
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  summary: "\n\n"
+  example: []
   syntax:
     content: public interface IReplicaManager
     content.vb: Public Interface IReplicaManager
@@ -59,14 +61,16 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IReplicaManager.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: AppFolderName
     path: Services/IReplicaManager.cs
-    startLine: 7
+    startLine: 13
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  summary: "\n\n"
+  example: []
   syntax:
     content: string AppFolderName { get; set; }
     parameters: []
@@ -91,14 +95,16 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IReplicaManager.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: MaxScale
     path: Services/IReplicaManager.cs
-    startLine: 8
+    startLine: 18
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  summary: "\n\n"
+  example: []
   syntax:
     content: double MaxScale { get; set; }
     parameters: []
@@ -123,14 +129,16 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IReplicaManager.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: MinScale
     path: Services/IReplicaManager.cs
-    startLine: 9
+    startLine: 23
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  summary: "\n\n"
+  example: []
   syntax:
     content: double MinScale { get; set; }
     parameters: []
@@ -155,14 +163,16 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IReplicaManager.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: MobileMapPackage
     path: Services/IReplicaManager.cs
-    startLine: 10
+    startLine: 28
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  summary: "\n\n"
+  example: []
   syntax:
     content: MobileMapPackage MobileMapPackage { get; set; }
     parameters: []
@@ -187,14 +197,16 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IReplicaManager.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: ReplicaFolderName
     path: Services/IReplicaManager.cs
-    startLine: 11
+    startLine: 33
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  summary: "\n\n"
+  example: []
   syntax:
     content: string ReplicaFolderName { get; set; }
     parameters: []
@@ -219,18 +231,21 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IReplicaManager.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: DeleteReplicaAsync
     path: Services/IReplicaManager.cs
-    startLine: 12
+    startLine: 39
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  summary: "\n\n"
+  example: []
   syntax:
     content: Task DeleteReplicaAsync()
     return:
       type: System.Threading.Tasks.Task
+      description: ''
     content.vb: Function DeleteReplicaAsync As Task
   overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.DeleteReplicaAsync*
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.DeleteReplicaAsync(Esri.ArcGISRuntime.Mapping.Map)
@@ -247,21 +262,25 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IReplicaManager.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: DeleteReplicaAsync
     path: Services/IReplicaManager.cs
-    startLine: 13
+    startLine: 46
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  summary: "\n\n"
+  example: []
   syntax:
     content: Task<string> DeleteReplicaAsync(Map map)
     parameters:
     - id: map
       type: Esri.ArcGISRuntime.Mapping.Map
+      description: ''
     return:
       type: System.Threading.Tasks.Task{System.String}
+      description: ''
     content.vb: Function DeleteReplicaAsync(map As Map) As Task(Of String)
   overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.DeleteReplicaAsync*
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.DeleteReplicaFolderAsync
@@ -278,18 +297,21 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IReplicaManager.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: DeleteReplicaFolderAsync
     path: Services/IReplicaManager.cs
-    startLine: 14
+    startLine: 52
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  summary: "\n\n"
+  example: []
   syntax:
     content: Task DeleteReplicaFolderAsync()
     return:
       type: System.Threading.Tasks.Task
+      description: ''
     content.vb: Function DeleteReplicaFolderAsync As Task
   overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.DeleteReplicaFolderAsync*
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.DownloadReplicaAsync(Esri.ArcGISRuntime.Mapping.Map,Esri.ArcGISRuntime.Mapping.Viewpoint,System.EventHandler{EsriCo.ArcGISRuntime.Xamarin.Forms.Services.JobChangedEventArgs},System.EventHandler{EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ProgressChangedEventArgs})
@@ -306,27 +328,34 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IReplicaManager.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: DownloadReplicaAsync
     path: Services/IReplicaManager.cs
-    startLine: 15
+    startLine: 62
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  summary: "\n\n"
+  example: []
   syntax:
     content: Task<DownloadReplicaResult> DownloadReplicaAsync(Map map, Viewpoint viewpoint, EventHandler<JobChangedEventArgs> jobHandler, EventHandler<ProgressChangedEventArgs> progressHandler)
     parameters:
     - id: map
       type: Esri.ArcGISRuntime.Mapping.Map
+      description: ''
     - id: viewpoint
       type: Esri.ArcGISRuntime.Mapping.Viewpoint
+      description: ''
     - id: jobHandler
       type: System.EventHandler{EsriCo.ArcGISRuntime.Xamarin.Forms.Services.JobChangedEventArgs}
+      description: ''
     - id: progressHandler
       type: System.EventHandler{EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ProgressChangedEventArgs}
+      description: ''
     return:
       type: System.Threading.Tasks.Task{EsriCo.ArcGISRuntime.Xamarin.Forms.Services.DownloadReplicaResult}
+      description: ''
     content.vb: Function DownloadReplicaAsync(map As Map, viewpoint As Viewpoint, jobHandler As EventHandler(Of JobChangedEventArgs), progressHandler As EventHandler(Of ProgressChangedEventArgs)) As Task(Of DownloadReplicaResult)
   overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.DownloadReplicaAsync*
   nameWithType.vb: IReplicaManager.DownloadReplicaAsync(Map, Viewpoint, EventHandler(Of JobChangedEventArgs), EventHandler(Of ProgressChangedEventArgs))
@@ -346,18 +375,21 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IReplicaManager.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: GetReplicaMapAsync
     path: Services/IReplicaManager.cs
-    startLine: 16
+    startLine: 68
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  summary: "\n\n"
+  example: []
   syntax:
     content: Task<Map> GetReplicaMapAsync()
     return:
       type: System.Threading.Tasks.Task{Esri.ArcGISRuntime.Mapping.Map}
+      description: ''
     content.vb: Function GetReplicaMapAsync As Task(Of Map)
   overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.GetReplicaMapAsync*
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.ReplicaExist
@@ -374,18 +406,21 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IReplicaManager.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: ReplicaExist
     path: Services/IReplicaManager.cs
-    startLine: 17
+    startLine: 74
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  summary: "\n\n"
+  example: []
   syntax:
     content: bool ReplicaExist()
     return:
       type: System.Boolean
+      description: ''
     content.vb: Function ReplicaExist As Boolean
   overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.ReplicaExist*
 - uid: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.SynchronizeReplicaAsync(Esri.ArcGISRuntime.Mapping.Map,System.EventHandler{EsriCo.ArcGISRuntime.Xamarin.Forms.Services.JobChangedEventArgs},System.EventHandler{EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ProgressChangedEventArgs})
@@ -402,25 +437,31 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IReplicaManager.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: SynchronizeReplicaAsync
     path: Services/IReplicaManager.cs
-    startLine: 18
+    startLine: 83
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  summary: "\n\n"
+  example: []
   syntax:
     content: Task<SynchronizeReplicaResult> SynchronizeReplicaAsync(Map map, EventHandler<JobChangedEventArgs> jobHandler, EventHandler<ProgressChangedEventArgs> progressHandler)
     parameters:
     - id: map
       type: Esri.ArcGISRuntime.Mapping.Map
+      description: ''
     - id: jobHandler
       type: System.EventHandler{EsriCo.ArcGISRuntime.Xamarin.Forms.Services.JobChangedEventArgs}
+      description: ''
     - id: progressHandler
       type: System.EventHandler{EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ProgressChangedEventArgs}
+      description: ''
     return:
       type: System.Threading.Tasks.Task{EsriCo.ArcGISRuntime.Xamarin.Forms.Services.SynchronizeReplicaResult}
+      description: ''
     content.vb: Function SynchronizeReplicaAsync(map As Map, jobHandler As EventHandler(Of JobChangedEventArgs), progressHandler As EventHandler(Of ProgressChangedEventArgs)) As Task(Of SynchronizeReplicaResult)
   overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.SynchronizeReplicaAsync*
   nameWithType.vb: IReplicaManager.SynchronizeReplicaAsync(Map, EventHandler(Of JobChangedEventArgs), EventHandler(Of ProgressChangedEventArgs))
@@ -440,23 +481,28 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IReplicaManager.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: ValidateReplicaAsync
     path: Services/IReplicaManager.cs
-    startLine: 19
+    startLine: 91
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Services
+  summary: "\n\n"
+  example: []
   syntax:
     content: Task<ValidateReplicaResult> ValidateReplicaAsync(Map map, Viewpoint viewpoint)
     parameters:
     - id: map
       type: Esri.ArcGISRuntime.Mapping.Map
+      description: ''
     - id: viewpoint
       type: Esri.ArcGISRuntime.Mapping.Viewpoint
+      description: ''
     return:
       type: System.Threading.Tasks.Task{EsriCo.ArcGISRuntime.Xamarin.Forms.Services.ValidateReplicaResult}
+      description: ''
     content.vb: Function ValidateReplicaAsync(map As Map, viewpoint As Viewpoint) As Task(Of ValidateReplicaResult)
   overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Services.IReplicaManager.ValidateReplicaAsync*
 references:

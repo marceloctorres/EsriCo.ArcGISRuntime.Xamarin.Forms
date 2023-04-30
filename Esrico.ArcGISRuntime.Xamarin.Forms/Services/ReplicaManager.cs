@@ -453,8 +453,9 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services {
     public async Task<Map> GetReplicaMapAsync() {
       var pathToOutputPackage = GetReplicaFullPath();
       MobileMapPackage = await MobileMapPackage.OpenAsync(pathToOutputPackage);
+      var map = MobileMapPackage.Maps.Count > 0 ? MobileMapPackage.Maps[0] : null;
 
-      return MobileMapPackage.Maps.FirstOrDefault();
+      return map;
     }
 
     /// <summary>
