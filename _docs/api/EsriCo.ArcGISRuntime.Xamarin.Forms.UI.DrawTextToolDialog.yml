@@ -18,7 +18,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/obj/Release/netstandard2.0/UI/DrawTextToolDialog.xaml.g.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: DrawTextToolDialog
     path: obj/Release/netstandard2.0/UI/DrawTextToolDialog.xaml.g.cs
@@ -325,7 +325,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/DrawTextToolDialog.xaml.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: .ctor
     path: UI/DrawTextToolDialog.xaml.cs
@@ -357,7 +357,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/DrawTextToolDialog.xaml.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: AcceptCommand
     path: UI/DrawTextToolDialog.xaml.cs
@@ -394,7 +394,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/DrawTextToolDialog.xaml.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: Text
     path: UI/DrawTextToolDialog.xaml.cs

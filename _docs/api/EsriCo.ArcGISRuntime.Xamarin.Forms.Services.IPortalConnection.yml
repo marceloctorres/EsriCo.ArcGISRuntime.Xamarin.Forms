@@ -48,7 +48,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IPortalConnection.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: IPortalConnection
     path: Services/IPortalConnection.cs
@@ -81,7 +81,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IPortalConnection.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: Active
     path: Services/IPortalConnection.cs
@@ -115,7 +115,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IPortalConnection.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: AuthenticationType
     path: Services/IPortalConnection.cs
@@ -149,7 +149,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IPortalConnection.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: BaseUrl
     path: Services/IPortalConnection.cs
@@ -183,7 +183,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IPortalConnection.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: Credential
     path: Services/IPortalConnection.cs
@@ -218,7 +218,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IPortalConnection.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: ChallengeHandlerAsync
     path: Services/IPortalConnection.cs
@@ -252,7 +252,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IPortalConnection.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: Domain
     path: Services/IPortalConnection.cs
@@ -286,7 +286,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IPortalConnection.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: Name
     path: Services/IPortalConnection.cs
@@ -321,7 +321,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IPortalConnection.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: OrganizationName
     path: Services/IPortalConnection.cs
@@ -356,7 +356,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IPortalConnection.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: OrganizationSubDomain
     path: Services/IPortalConnection.cs
@@ -391,7 +391,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IPortalConnection.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: Password
     path: Services/IPortalConnection.cs
@@ -425,7 +425,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IPortalConnection.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: Portal
     path: Services/IPortalConnection.cs
@@ -460,7 +460,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IPortalConnection.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: PortalInfo
     path: Services/IPortalConnection.cs
@@ -495,7 +495,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IPortalConnection.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: PortalUser
     path: Services/IPortalConnection.cs
@@ -530,7 +530,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IPortalConnection.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: ServerRegisterUrl
     path: Services/IPortalConnection.cs
@@ -565,7 +565,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IPortalConnection.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: SignedIn
     path: Services/IPortalConnection.cs
@@ -600,7 +600,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IPortalConnection.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: TokenAuthenticationType
     path: Services/IPortalConnection.cs
@@ -634,7 +634,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IPortalConnection.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: TokenExpirationDateTime
     path: Services/IPortalConnection.cs
@@ -669,7 +669,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IPortalConnection.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: TokenValidDays
     path: Services/IPortalConnection.cs
@@ -703,7 +703,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IPortalConnection.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: User
     path: Services/IPortalConnection.cs
@@ -737,7 +737,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IPortalConnection.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: UserImage
     path: Services/IPortalConnection.cs
@@ -771,7 +771,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IPortalConnection.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: UserImageString
     path: Services/IPortalConnection.cs
@@ -806,7 +806,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IPortalConnection.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: UserName
     path: Services/IPortalConnection.cs
@@ -841,7 +841,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IPortalConnection.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: WebMapId
     path: Services/IPortalConnection.cs
@@ -875,7 +875,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IPortalConnection.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: CreateCredentialAsync
     path: Services/IPortalConnection.cs
@@ -910,7 +910,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IPortalConnection.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: GetGroup
     path: Services/IPortalConnection.cs
@@ -945,7 +945,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IPortalConnection.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: GetLicenseInfoJsonAsync
     path: Services/IPortalConnection.cs
@@ -976,7 +976,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IPortalConnection.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: GetMapAsync
     path: Services/IPortalConnection.cs
@@ -1007,7 +1007,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IPortalConnection.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: GetMapAsync
     path: Services/IPortalConnection.cs
@@ -1042,7 +1042,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IPortalConnection.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: GetWebMapItemByGroupAndTitleAsync
     path: Services/IPortalConnection.cs
@@ -1080,7 +1080,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IPortalConnection.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: GetWebMapItemsByGroupAsync
     path: Services/IPortalConnection.cs
@@ -1115,7 +1115,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IPortalConnection.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: IsCredentialNull
     path: Services/IPortalConnection.cs
@@ -1146,7 +1146,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IPortalConnection.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: SignInAsync
     path: Services/IPortalConnection.cs
@@ -1177,7 +1177,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/IPortalConnection.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: SignOut
     path: Services/IPortalConnection.cs

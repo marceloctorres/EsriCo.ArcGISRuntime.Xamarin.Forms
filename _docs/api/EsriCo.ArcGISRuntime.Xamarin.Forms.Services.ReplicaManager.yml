@@ -29,7 +29,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/ReplicaManager.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: ReplicaManager
     path: Services/ReplicaManager.cs
@@ -76,7 +76,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/ReplicaManager.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: .ctor
     path: Services/ReplicaManager.cs
@@ -108,7 +108,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/ReplicaManager.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: AppFolderName
     path: Services/ReplicaManager.cs
@@ -147,7 +147,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/ReplicaManager.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: ReplicaFolderName
     path: Services/ReplicaManager.cs
@@ -186,7 +186,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/ReplicaManager.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: MinScale
     path: Services/ReplicaManager.cs
@@ -225,7 +225,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/ReplicaManager.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: MaxScale
     path: Services/ReplicaManager.cs
@@ -264,7 +264,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/ReplicaManager.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: MobileMapPackage
     path: Services/ReplicaManager.cs
@@ -303,7 +303,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/ReplicaManager.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: ValidateReplicaAsync
     path: Services/ReplicaManager.cs
@@ -348,7 +348,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/ReplicaManager.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: DownloadReplicaAsync
     path: Services/ReplicaManager.cs
@@ -402,7 +402,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/ReplicaManager.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: SynchronizeReplicaAsync
     path: Services/ReplicaManager.cs
@@ -453,7 +453,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/ReplicaManager.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: DeleteReplicaAsync
     path: Services/ReplicaManager.cs
@@ -495,7 +495,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/ReplicaManager.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: DeleteReplicaAsync
     path: Services/ReplicaManager.cs
@@ -533,7 +533,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/ReplicaManager.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: DeleteReplicaFolderAsync
     path: Services/ReplicaManager.cs
@@ -571,7 +571,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/ReplicaManager.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: ReplicaExist
     path: Services/ReplicaManager.cs
@@ -608,7 +608,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Services/ReplicaManager.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: GetReplicaMapAsync
     path: Services/ReplicaManager.cs

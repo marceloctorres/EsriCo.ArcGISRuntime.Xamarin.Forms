@@ -18,7 +18,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/MeasurementView.xaml.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: UnitItem
     path: UI/MeasurementView.xaml.cs
@@ -61,7 +61,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/MeasurementView.xaml.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: DisplayName
     path: UI/MeasurementView.xaml.cs
@@ -98,7 +98,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/MeasurementView.xaml.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: Key
     path: UI/MeasurementView.xaml.cs
@@ -135,7 +135,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/MeasurementView.xaml.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: Value
     path: UI/MeasurementView.xaml.cs

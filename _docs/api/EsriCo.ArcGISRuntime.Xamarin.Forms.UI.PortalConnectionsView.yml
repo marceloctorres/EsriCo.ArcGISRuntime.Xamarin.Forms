@@ -21,7 +21,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/obj/Release/netstandard2.0/UI/PortalConnectionsView.xaml.g.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: PortalConnectionsView
     path: obj/Release/netstandard2.0/UI/PortalConnectionsView.xaml.g.cs
@@ -281,7 +281,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/PortalConnectionsView.xaml.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: PortalConnectionsProperty
     path: UI/PortalConnectionsView.xaml.cs
@@ -318,7 +318,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/PortalConnectionsView.xaml.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: PortalConnections
     path: UI/PortalConnectionsView.xaml.cs
@@ -355,7 +355,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/PortalConnectionsView.xaml.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: LoginImage
     path: UI/PortalConnectionsView.xaml.cs
@@ -392,7 +392,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/PortalConnectionsView.xaml.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: ActiveImage
     path: UI/PortalConnectionsView.xaml.cs
@@ -429,7 +429,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/PortalConnectionsView.xaml.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: CloseCommand
     path: UI/PortalConnectionsView.xaml.cs
@@ -466,7 +466,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/PortalConnectionsView.xaml.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: .ctor
     path: UI/PortalConnectionsView.xaml.cs

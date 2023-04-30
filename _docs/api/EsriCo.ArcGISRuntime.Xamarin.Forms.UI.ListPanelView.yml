@@ -30,7 +30,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/obj/Release/netstandard2.0/UI/ListPanelView.xaml.g.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: ListPanelView
     path: obj/Release/netstandard2.0/UI/ListPanelView.xaml.g.cs
@@ -339,7 +339,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/ListPanelView.xaml.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: ListBindingContextProperty
     path: UI/ListPanelView.xaml.cs
@@ -376,7 +376,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/ListPanelView.xaml.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: ListBindingContext
     path: UI/ListPanelView.xaml.cs
@@ -413,7 +413,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/ListPanelView.xaml.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: ItemsSourceProperty
     path: UI/ListPanelView.xaml.cs
@@ -450,7 +450,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/ListPanelView.xaml.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: ItemsSource
     path: UI/ListPanelView.xaml.cs
@@ -487,7 +487,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/ListPanelView.xaml.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: IsGroupingEnabledProperty
     path: UI/ListPanelView.xaml.cs
@@ -524,7 +524,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/ListPanelView.xaml.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: IsGroupingEnabled
     path: UI/ListPanelView.xaml.cs
@@ -561,7 +561,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/ListPanelView.xaml.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: ItemTemplateProperty
     path: UI/ListPanelView.xaml.cs
@@ -598,7 +598,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/ListPanelView.xaml.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: ItemTemplate
     path: UI/ListPanelView.xaml.cs
@@ -635,7 +635,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/ListPanelView.xaml.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: HeaderTemplateProperty
     path: UI/ListPanelView.xaml.cs
@@ -672,7 +672,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/ListPanelView.xaml.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: HeaderTemplate
     path: UI/ListPanelView.xaml.cs
@@ -709,7 +709,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/ListPanelView.xaml.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: FooterTemplateProperty
     path: UI/ListPanelView.xaml.cs
@@ -746,7 +746,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/ListPanelView.xaml.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: FooterTemplate
     path: UI/ListPanelView.xaml.cs
@@ -783,7 +783,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/ListPanelView.xaml.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: GroupHeaderTemplateProperty
     path: UI/ListPanelView.xaml.cs
@@ -820,7 +820,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/ListPanelView.xaml.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: GroupHeaderTemplate
     path: UI/ListPanelView.xaml.cs
@@ -857,7 +857,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/ListPanelView.xaml.cs
-      branch: dev2023_177
+      branch: dev_r178
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: .ctor
     path: UI/ListPanelView.xaml.cs
