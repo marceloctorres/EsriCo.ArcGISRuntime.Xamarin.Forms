@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Model/LayerInfo.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: LegendImageInfo
     path: Model/LayerInfo.cs
@@ -71,7 +71,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Model/LayerInfo.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: ImageSource
     path: Model/LayerInfo.cs
@@ -108,7 +108,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Model/LayerInfo.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: Name
     path: Model/LayerInfo.cs

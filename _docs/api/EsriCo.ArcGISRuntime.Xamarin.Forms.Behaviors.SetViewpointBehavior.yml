@@ -22,11 +22,11 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Behaviors/SetMapViewViewportBehavior.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: SetViewpointBehavior
     path: Behaviors/SetMapViewViewportBehavior.cs
-    startLine: 19
+    startLine: 17
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
@@ -100,11 +100,11 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Behaviors/SetMapViewViewportBehavior.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: VisibleAreaProperty
     path: Behaviors/SetMapViewViewportBehavior.cs
-    startLine: 23
+    startLine: 21
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
@@ -137,11 +137,11 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Behaviors/SetMapViewViewportBehavior.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: VisibleArea
     path: Behaviors/SetMapViewViewportBehavior.cs
-    startLine: 32
+    startLine: 30
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
@@ -174,11 +174,11 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Behaviors/SetMapViewViewportBehavior.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: MapScaleProperty
     path: Behaviors/SetMapViewViewportBehavior.cs
-    startLine: 40
+    startLine: 38
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
@@ -211,11 +211,11 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Behaviors/SetMapViewViewportBehavior.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: MapScale
     path: Behaviors/SetMapViewViewportBehavior.cs
-    startLine: 49
+    startLine: 47
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
@@ -248,11 +248,11 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Behaviors/SetMapViewViewportBehavior.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: ViewpointProperty
     path: Behaviors/SetMapViewViewportBehavior.cs
-    startLine: 57
+    startLine: 55
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
@@ -285,11 +285,11 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Behaviors/SetMapViewViewportBehavior.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: Viewpoint
     path: Behaviors/SetMapViewViewportBehavior.cs
-    startLine: 65
+    startLine: 63
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
@@ -322,11 +322,11 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Behaviors/SetMapViewViewportBehavior.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: OnPropertyChanged
     path: Behaviors/SetMapViewViewportBehavior.cs
-    startLine: 74
+    startLine: 72
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors

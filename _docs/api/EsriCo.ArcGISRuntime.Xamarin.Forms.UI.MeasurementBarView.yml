@@ -40,7 +40,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/obj/Release/netstandard2.0/UI/MeasurementView.xaml.g.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: MeasurementBarView
     path: obj/Release/netstandard2.0/UI/MeasurementView.xaml.g.cs
@@ -346,11 +346,11 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/MeasurementView.xaml.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: ColorProperty
     path: UI/MeasurementView.xaml.cs
-    startLine: 40
+    startLine: 45
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -383,11 +383,11 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/MeasurementView.xaml.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: Color
     path: UI/MeasurementView.xaml.cs
-    startLine: 50
+    startLine: 55
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -420,11 +420,11 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/MeasurementView.xaml.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: PointMeasurementToolImageProperty
     path: UI/MeasurementView.xaml.cs
-    startLine: 77
+    startLine: 82
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -457,11 +457,11 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/MeasurementView.xaml.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: PointMeasurementToolImage
     path: UI/MeasurementView.xaml.cs
-    startLine: 86
+    startLine: 91
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -494,11 +494,11 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/MeasurementView.xaml.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: LineMeasurementToolImageProperty
     path: UI/MeasurementView.xaml.cs
-    startLine: 108
+    startLine: 113
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -531,11 +531,11 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/MeasurementView.xaml.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: LineMeasurementToolImage
     path: UI/MeasurementView.xaml.cs
-    startLine: 117
+    startLine: 122
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -568,11 +568,11 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/MeasurementView.xaml.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: AreaMeasurementToolImageProperty
     path: UI/MeasurementView.xaml.cs
-    startLine: 139
+    startLine: 144
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -605,11 +605,11 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/MeasurementView.xaml.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: AreaMeasurementToolImage
     path: UI/MeasurementView.xaml.cs
-    startLine: 148
+    startLine: 153
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -642,11 +642,11 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/MeasurementView.xaml.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: NoneMeasurementToolImageProperty
     path: UI/MeasurementView.xaml.cs
-    startLine: 170
+    startLine: 175
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -679,11 +679,11 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/MeasurementView.xaml.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: NoneMeasurementToolImage
     path: UI/MeasurementView.xaml.cs
-    startLine: 179
+    startLine: 184
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -716,11 +716,11 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/MeasurementView.xaml.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: MapViewProperty
     path: UI/MeasurementView.xaml.cs
-    startLine: 201
+    startLine: 206
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -753,11 +753,11 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/MeasurementView.xaml.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: MapView
     path: UI/MeasurementView.xaml.cs
-    startLine: 210
+    startLine: 215
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -790,11 +790,11 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/MeasurementView.xaml.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: CheckMap
     path: UI/MeasurementView.xaml.cs
-    startLine: 241
+    startLine: 246
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -805,6 +805,7 @@ items:
     parameters:
     - id: mapView
       type: Esri.ArcGISRuntime.Xamarin.Forms.MapView
+      description: ''
     content.vb: Public Sub CheckMap(mapView As MapView)
   overload: EsriCo.ArcGISRuntime.Xamarin.Forms.UI.MeasurementBarView.CheckMap*
   modifiers.csharp:
@@ -825,11 +826,11 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/MeasurementView.xaml.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: IsDrawingProperty
     path: UI/MeasurementView.xaml.cs
-    startLine: 259
+    startLine: 264
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -862,11 +863,11 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/MeasurementView.xaml.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: IsDrawing
     path: UI/MeasurementView.xaml.cs
-    startLine: 269
+    startLine: 274
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -899,11 +900,11 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/MeasurementView.xaml.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: ResultText
     path: UI/MeasurementView.xaml.cs
-    startLine: 284
+    startLine: 289
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -936,11 +937,11 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/MeasurementView.xaml.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: SelectedUnit
     path: UI/MeasurementView.xaml.cs
-    startLine: 297
+    startLine: 302
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -973,11 +974,11 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/MeasurementView.xaml.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: Units
     path: UI/MeasurementView.xaml.cs
-    startLine: 310
+    startLine: 315
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -1010,11 +1011,11 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/MeasurementView.xaml.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: SelectedAngularUnit
     path: UI/MeasurementView.xaml.cs
-    startLine: 321
+    startLine: 326
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -1047,11 +1048,11 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/MeasurementView.xaml.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: SelectedLinearUnit
     path: UI/MeasurementView.xaml.cs
-    startLine: 326
+    startLine: 331
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -1084,11 +1085,11 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/MeasurementView.xaml.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: SelectedAreaUnit
     path: UI/MeasurementView.xaml.cs
-    startLine: 331
+    startLine: 336
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -1121,11 +1122,11 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/MeasurementView.xaml.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: AngularUnits
     path: UI/MeasurementView.xaml.cs
-    startLine: 336
+    startLine: 341
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -1158,11 +1159,11 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/MeasurementView.xaml.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: LinearUnits
     path: UI/MeasurementView.xaml.cs
-    startLine: 341
+    startLine: 346
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -1195,11 +1196,11 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/MeasurementView.xaml.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: AreaUnits
     path: UI/MeasurementView.xaml.cs
-    startLine: 346
+    startLine: 351
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -1232,11 +1233,11 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/MeasurementView.xaml.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: .ctor
     path: UI/MeasurementView.xaml.cs
-    startLine: 356
+    startLine: 361
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI

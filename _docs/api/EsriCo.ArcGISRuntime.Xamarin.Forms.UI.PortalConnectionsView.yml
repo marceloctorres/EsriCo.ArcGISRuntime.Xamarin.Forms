@@ -21,7 +21,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/obj/Release/netstandard2.0/UI/PortalConnectionsView.xaml.g.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: PortalConnectionsView
     path: obj/Release/netstandard2.0/UI/PortalConnectionsView.xaml.g.cs
@@ -29,6 +29,8 @@ items:
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
+  summary: "\n\n"
+  example: []
   syntax:
     content: >-
       [XamlCompilation(XamlCompilationOptions.Compile)]
@@ -279,11 +281,11 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/PortalConnectionsView.xaml.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: PortalConnectionsProperty
     path: UI/PortalConnectionsView.xaml.cs
-    startLine: 17
+    startLine: 20
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -316,11 +318,11 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/PortalConnectionsView.xaml.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: PortalConnections
     path: UI/PortalConnectionsView.xaml.cs
-    startLine: 26
+    startLine: 29
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -353,11 +355,11 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/PortalConnectionsView.xaml.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: LoginImage
     path: UI/PortalConnectionsView.xaml.cs
-    startLine: 36
+    startLine: 37
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -390,11 +392,11 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/PortalConnectionsView.xaml.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: ActiveImage
     path: UI/PortalConnectionsView.xaml.cs
-    startLine: 46
+    startLine: 42
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -427,11 +429,11 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/PortalConnectionsView.xaml.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: CloseCommand
     path: UI/PortalConnectionsView.xaml.cs
-    startLine: 54
+    startLine: 47
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -464,14 +466,16 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/PortalConnectionsView.xaml.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: .ctor
     path: UI/PortalConnectionsView.xaml.cs
-    startLine: 57
+    startLine: 52
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
+  summary: "\n\n"
+  example: []
   syntax:
     content: public PortalConnectionsView()
     content.vb: Public Sub New

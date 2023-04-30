@@ -17,14 +17,16 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Converters/GeographicCoordinateConverter.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: GeographicCoordinateConverter
     path: Converters/GeographicCoordinateConverter.cs
-    startLine: 10
+    startLine: 13
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Converters
+  summary: "\n\n"
+  example: []
   syntax:
     content: 'public class GeographicCoordinateConverter : IValueConverter'
     content.vb: >-
@@ -62,11 +64,11 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Converters/GeographicCoordinateConverter.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: Convert
     path: Converters/GeographicCoordinateConverter.cs
-    startLine: 20
+    startLine: 23
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Converters
@@ -77,19 +79,19 @@ items:
     parameters:
     - id: value
       type: System.Object
-      description: ''
+      description: Input value
     - id: targetType
       type: System.Type
-      description: ''
+      description: Target Type
     - id: parameter
       type: System.Object
-      description: ''
+      description: Parameter
     - id: culture
       type: System.Globalization.CultureInfo
-      description: ''
+      description: Culture Info
     return:
       type: System.Object
-      description: ''
+      description: Converted value
     content.vb: Public Function Convert(value As Object, targetType As Type, parameter As Object, culture As CultureInfo) As Object
   overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Converters.GeographicCoordinateConverter.Convert*
   implements:
@@ -112,11 +114,11 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Converters/GeographicCoordinateConverter.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: ConvertBack
     path: Converters/GeographicCoordinateConverter.cs
-    startLine: 38
+    startLine: 41
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Converters

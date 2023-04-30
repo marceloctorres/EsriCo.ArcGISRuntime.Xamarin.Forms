@@ -29,14 +29,16 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Behaviors/IdentifyBehavior.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: IdentifyBehavior
     path: Behaviors/IdentifyBehavior.cs
-    startLine: 15
+    startLine: 18
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
+  summary: "\n\n"
+  example: []
   syntax:
     content: 'public class IdentifyBehavior : BehaviorBase<MapView>, INotifyPropertyChanged, IDynamicResourceHandler'
     content.vb: >-
@@ -105,11 +107,11 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Behaviors/IdentifyBehavior.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: CommandProperty
     path: Behaviors/IdentifyBehavior.cs
-    startLine: 19
+    startLine: 22
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
@@ -142,11 +144,11 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Behaviors/IdentifyBehavior.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: GraphicsOverlaysProperty
     path: Behaviors/IdentifyBehavior.cs
-    startLine: 28
+    startLine: 31
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
@@ -179,14 +181,16 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Behaviors/IdentifyBehavior.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: LayersProperty
     path: Behaviors/IdentifyBehavior.cs
-    startLine: 34
+    startLine: 40
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
+  summary: "\n\n"
+  example: []
   syntax:
     content: public static readonly BindableProperty LayersProperty
     return:
@@ -214,14 +218,16 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Behaviors/IdentifyBehavior.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: ToleranceProperty
     path: Behaviors/IdentifyBehavior.cs
-    startLine: 40
+    startLine: 49
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
+  summary: "\n\n"
+  example: []
   syntax:
     content: public static readonly BindableProperty ToleranceProperty
     return:
@@ -249,14 +255,16 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Behaviors/IdentifyBehavior.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: ReturnOnlyPopupsProperty
     path: Behaviors/IdentifyBehavior.cs
-    startLine: 46
+    startLine: 58
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
+  summary: "\n\n"
+  example: []
   syntax:
     content: public static readonly BindableProperty ReturnOnlyPopupsProperty
     return:
@@ -284,14 +292,16 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Behaviors/IdentifyBehavior.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: MaxResultsProperty
     path: Behaviors/IdentifyBehavior.cs
-    startLine: 52
+    startLine: 67
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
+  summary: "\n\n"
+  example: []
   syntax:
     content: public static readonly BindableProperty MaxResultsProperty
     return:
@@ -319,11 +329,11 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Behaviors/IdentifyBehavior.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: Command
     path: Behaviors/IdentifyBehavior.cs
-    startLine: 61
+    startLine: 76
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
@@ -356,11 +366,11 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Behaviors/IdentifyBehavior.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: GraphicsOverlays
     path: Behaviors/IdentifyBehavior.cs
-    startLine: 69
+    startLine: 84
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
@@ -393,11 +403,11 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Behaviors/IdentifyBehavior.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: Layers
     path: Behaviors/IdentifyBehavior.cs
-    startLine: 77
+    startLine: 92
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
@@ -430,11 +440,11 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Behaviors/IdentifyBehavior.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: Tolerance
     path: Behaviors/IdentifyBehavior.cs
-    startLine: 85
+    startLine: 100
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
@@ -467,11 +477,11 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Behaviors/IdentifyBehavior.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: MaxResults
     path: Behaviors/IdentifyBehavior.cs
-    startLine: 93
+    startLine: 108
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
@@ -504,11 +514,11 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Behaviors/IdentifyBehavior.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: ReturnOnlyPopups
     path: Behaviors/IdentifyBehavior.cs
-    startLine: 101
+    startLine: 116
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
@@ -541,14 +551,16 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Behaviors/IdentifyBehavior.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: .ctor
     path: Behaviors/IdentifyBehavior.cs
-    startLine: 106
+    startLine: 124
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
+  summary: "\n\n"
+  example: []
   syntax:
     content: public IdentifyBehavior()
     content.vb: Public Sub New
@@ -571,19 +583,22 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Behaviors/IdentifyBehavior.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: OnAttachedTo
     path: Behaviors/IdentifyBehavior.cs
-    startLine: 112
+    startLine: 134
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
+  summary: "\n\n"
+  example: []
   syntax:
     content: protected override void OnAttachedTo(MapView bindable)
     parameters:
     - id: bindable
       type: Esri.ArcGISRuntime.Xamarin.Forms.MapView
+      description: ''
     content.vb: Protected Overrides Sub OnAttachedTo(bindable As MapView)
   overridden: Prism.Behaviors.BehaviorBase{Esri.ArcGISRuntime.Xamarin.Forms.MapView}.OnAttachedTo(Esri.ArcGISRuntime.Xamarin.Forms.MapView)
   overload: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors.IdentifyBehavior.OnAttachedTo*

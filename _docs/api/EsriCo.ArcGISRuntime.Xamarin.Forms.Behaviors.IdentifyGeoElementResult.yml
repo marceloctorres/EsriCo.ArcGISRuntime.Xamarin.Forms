@@ -18,7 +18,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Behaviors/IdentifyElementResult.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: IdentifyGeoElementResult
     path: Behaviors/IdentifyElementResult.cs
@@ -72,7 +72,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Behaviors/IdentifyElementResult.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: GeoElement
     path: Behaviors/IdentifyElementResult.cs
@@ -109,7 +109,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Behaviors/IdentifyElementResult.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: Layer
     path: Behaviors/IdentifyElementResult.cs
@@ -146,14 +146,16 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Behaviors/IdentifyElementResult.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: .ctor
     path: Behaviors/IdentifyElementResult.cs
-    startLine: 30
+    startLine: 33
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.Behaviors
+  summary: "\n\n"
+  example: []
   syntax:
     content: public IdentifyGeoElementResult()
     content.vb: Public Sub New

@@ -18,7 +18,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Behaviors/ShowCalloutForGeoElementBehavior.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: ShowCalloutForGeoElementBehavior
     path: Behaviors/ShowCalloutForGeoElementBehavior.cs
@@ -96,7 +96,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Behaviors/ShowCalloutForGeoElementBehavior.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: CalloutInfoProperty
     path: Behaviors/ShowCalloutForGeoElementBehavior.cs
@@ -133,7 +133,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Behaviors/ShowCalloutForGeoElementBehavior.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: CalloutInfo
     path: Behaviors/ShowCalloutForGeoElementBehavior.cs
@@ -170,7 +170,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/Behaviors/ShowCalloutForGeoElementBehavior.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: OnPropertyChanged
     path: Behaviors/ShowCalloutForGeoElementBehavior.cs

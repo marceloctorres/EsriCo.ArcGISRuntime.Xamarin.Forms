@@ -18,7 +18,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/obj/Release/netstandard2.0/UI/DrawTextToolDialog.xaml.g.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: DrawTextToolDialog
     path: obj/Release/netstandard2.0/UI/DrawTextToolDialog.xaml.g.cs
@@ -26,6 +26,8 @@ items:
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
+  summary: "\n\n"
+  example: []
   syntax:
     content: >-
       [XamlCompilation(XamlCompilationOptions.Compile)]
@@ -323,11 +325,11 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/DrawTextToolDialog.xaml.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: .ctor
     path: UI/DrawTextToolDialog.xaml.cs
-    startLine: 11
+    startLine: 14
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -355,11 +357,11 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/DrawTextToolDialog.xaml.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: AcceptCommand
     path: UI/DrawTextToolDialog.xaml.cs
-    startLine: 19
+    startLine: 22
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -392,11 +394,11 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/DrawTextToolDialog.xaml.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: Text
     path: UI/DrawTextToolDialog.xaml.cs
-    startLine: 24
+    startLine: 27
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI

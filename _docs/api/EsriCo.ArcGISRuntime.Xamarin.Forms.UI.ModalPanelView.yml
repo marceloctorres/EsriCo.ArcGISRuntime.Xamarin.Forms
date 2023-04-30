@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/obj/Release/netstandard2.0/UI/ModalPanelView.xaml.g.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: ModalPanelView
     path: obj/Release/netstandard2.0/UI/ModalPanelView.xaml.g.cs
@@ -25,6 +25,8 @@ items:
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
+  summary: "\n\n"
+  example: []
   syntax:
     content: >-
       [XamlCompilation(XamlCompilationOptions.Compile)]
@@ -322,11 +324,11 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/ModalPanelView.xaml.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: .ctor
     path: UI/ModalPanelView.xaml.cs
-    startLine: 16
+    startLine: 25
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
@@ -354,11 +356,11 @@ items:
   source:
     remote:
       path: Esrico.ArcGISRuntime.Xamarin.Forms/UI/ModalPanelView.xaml.cs
-      branch: master
+      branch: dev2023_177
       repo: https://github.com/marceloctorres/EsriCo.ArcGISRuntime.Xamarin.Forms
     id: OnPropertyChanged
     path: UI/ModalPanelView.xaml.cs
-    startLine: 41
+    startLine: 50
   assemblies:
   - EsriCo.ArcGISRuntime.Xamarin.Forms
   namespace: EsriCo.ArcGISRuntime.Xamarin.Forms.UI
