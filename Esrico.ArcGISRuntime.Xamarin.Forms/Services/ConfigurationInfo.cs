@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -9,10 +10,21 @@ using Prism.Mvvm;
 using Xamarin.Essentials;
 
 namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services {
+
   /// <summary>
   /// 
   /// </summary>
-  public class ConfigurationInfo : BindableBase, IConfigurationInfo {
+  public abstract class ConfigurationInfo : BindableBase, IConfigurationInfo {
+    /// <summary>
+    /// 
+    /// </summary>
+    public event EventHandler Loaded;
+
+    /// <summary>
+    /// 
+    /// </summary>
+    public event EventHandler Saved;
+
     /// <summary>
     /// 
     /// </summary>
@@ -31,17 +43,24 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services {
     /// <summary>
     /// 
     /// </summary>
+    public bool IsSaved { get; set; }
+
+    /// <summary>
+    /// 
+    /// </summary>
     /// <returns></returns>
-    public async Task SaveAsync() {
+    public virtual async Task SaveAsync() {
       var text = JsonConvert.SerializeObject(this);
       await WriteTextFileAsync(text);
+      IsSaved = true;
+      OnSaved();
     }
 
     /// <summary>
     /// 
     /// </summary>
     /// <returns></returns>
-    public virtual async Task LoadAsync() => await Task.Delay(0);
+    public virtual async Task LoadAsync() { await Task.Delay(500); }
 
     /// <summary>
     /// 
@@ -70,6 +89,8 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services {
           pi.SetValue(this, value);
         }
       }
+      IsLoaded = true;
+      OnLoaded();
     }
 
     /// <summary>
@@ -77,7 +98,9 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services {
     /// </summary>
     /// <param name="text"></param>
     /// <returns></returns>
-    protected async Task WriteTextFileAsync(string text) => await WriteTextFileAsync(FileName, text);
+    protected async Task WriteTextFileAsync(string text) {
+      await WriteTextFileAsync(FileName, text);
+    }
 
     /// <summary>
     /// 
@@ -96,7 +119,9 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services {
     /// 
     /// </summary>
     /// <returns></returns>
-    protected async Task<string> ReadTextFileAsync() => await ReadTextFileAsync(FileName);
+    protected async Task<string> ReadTextFileAsync() {
+      return await ReadTextFileAsync(FileName);
+    }
 
     /// <summary>
     /// 
@@ -116,6 +141,32 @@ namespace EsriCo.ArcGISRuntime.Xamarin.Forms.Services {
     /// <summary>
     /// 
     /// </summary>
-    public ConfigurationInfo() => Folder = FileSystem.AppDataDirectory;
+    private void OnLoaded() {
+      Loaded?.Invoke(this, EventArgs.Empty);
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    private void OnSaved() {
+      Saved?.Invoke(this, EventArgs.Empty);
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    protected ConfigurationInfo() {
+      Folder = FileSystem.AppDataDirectory;
+      PropertyChanged += PropertyChangedEventHandler;
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    private void PropertyChangedEventHandler(object sender, System.ComponentModel.PropertyChangedEventArgs e) {
+      IsSaved = false;
+    }
   }
 }
