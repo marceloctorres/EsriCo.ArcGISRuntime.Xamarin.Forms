@@ -2,16 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\docs",
-    "\\Esrico.ArcGISRuntime.Xamarin.Forms",
-    "\\Esrico.ArcGISRuntime.Xamarin.Forms\\.vs",
-    "\\Esrico.ArcGISRuntime.Xamarin.Forms\\.vs\\EsriCo.ArcGISRuntime.Xamarin.Forms",
-    "\\Esrico.ArcGISRuntime.Xamarin.Forms\\.vs\\EsriCo.ArcGISRuntime.Xamarin.Forms\\DesignTimeBuild",
-    "\\_docs\\api",
-    "\\_docs\\articles",
-    "\\_docs\\template-override",
-    "\\_docs\\template-override\\partials",
-    "\\_docs\\template-override\\styles"
+    "\\Esrico.ArcGISRuntime.Xamarin.Forms"
   ],
-  "SelectedNode": "\\docs\\index.html",
+  "SelectedNode": "\\docs\\favicon.ico",
   "PreviewInSolutionExplorer": false
 }

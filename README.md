@@ -32,8 +32,8 @@ Anyone can use these tools in any project by installing latest release of the Nu
 - **ReplicaManager**
 
 ## Resources
-- [Documentation](docs/index.md)
-- [List of Features](docs/features.md)
+- [Documentation](_docs/index.md)
+- [List of Features](_docs/features.md)
 - [System Requirements](https://esri.github.io/arcgis-toolkit-dotnet/requirements.html)
 - [ArcGIS Runtime SDK for .NET](https://developers.arcgis.com/net/latest/)
 
